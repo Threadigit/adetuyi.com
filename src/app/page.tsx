@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <main className="max-w-[680px] mx-auto px-6 py-16 md:py-24">
       {/* ── Header ── */}
-      <header className="mb-6">
+      <header className="mb-6 animate-fade-up delay-100">
         <h1 className="text-[28px] md:text-[32px] font-semibold tracking-tight leading-snug mb-4">
           Tolu Adetuyi
         </h1>
@@ -22,7 +22,7 @@ export default function Home() {
       </header>
 
       {/* ── About ── */}
-      <section className="mb-14">
+      <section className="mb-14 animate-fade-up delay-200">
         <p className="text-[15px] leading-[1.8] text-muted">
           I build technology products and businesses. My background spans software engineering, business building, and
           finance, and I&apos;ve spent the last decade turning that into
@@ -33,12 +33,12 @@ export default function Home() {
           <span className="text-foreground font-medium">First Class degree in Computer Science</span> from
           Adekunle Ajasin University and an{" "}
           <span className="text-foreground font-medium">MBA with a Finance concentration</span> from
-          Morgan State University.
+          Morgan State University in the US.
         </p>
       </section>
 
       {/* ── Current Work ── */}
-      <section className="mb-16">
+      <section className="mb-16 animate-fade-up delay-300">
         <h2 className="text-[13px] font-medium uppercase tracking-[0.1em] text-muted mb-6">
           Current Work
         </h2>
@@ -97,7 +97,7 @@ export default function Home() {
       </section>
 
       {/* ── Featured Video ── */}
-      <section className="mb-16">
+      <section className="mb-16 animate-fade-up delay-400">
         <h2 className="text-[13px] font-medium uppercase tracking-[0.1em] text-muted mb-6">
           Featured
         </h2>
@@ -119,7 +119,7 @@ export default function Home() {
 
 
       {/* ── Speaking ── */}
-      <section className="mb-16">
+      <section className="mb-16 animate-fade-up delay-500">
         <h2 className="text-[13px] font-medium uppercase tracking-[0.1em] text-muted mb-6">
           Speaking & Panels
         </h2>
@@ -138,7 +138,9 @@ export default function Home() {
             <span className="text-[15px] link-hover">
               Closing the Compliance Gap for African Startups
             </span>
-            <span className="text-muted text-[13px]">Slide deck ↗</span>
+            <span className="text-muted text-[13px]">
+              Slide deck <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">↗</span>
+            </span>
           </a>
           <div className="border-t border-border" />
           <a
@@ -150,7 +152,9 @@ export default function Home() {
             <span className="text-[15px] link-hover">
               Bootstrapping & Making Your Idea Attractive to Investors
             </span>
-            <span className="text-muted text-[13px]">Slide deck ↗</span>
+            <span className="text-muted text-[13px]">
+              Slide deck <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">↗</span>
+            </span>
           </a>
           <div className="border-t border-border" />
           <a
@@ -168,7 +172,7 @@ export default function Home() {
       </section>
 
       {/* ── Press & Writing ── */}
-      <section className="mb-16">
+      <section className="mb-16 animate-fade-up delay-600">
         <h2 className="text-[13px] font-medium uppercase tracking-[0.1em] text-muted mb-6">
           Featured Press & Publications
         </h2>
@@ -238,15 +242,15 @@ export default function Home() {
       </section>
 
       {/* ── Contact ── */}
-      <footer className="pt-8 border-t border-border">
+      <footer className="pt-8 border-t border-border animate-fade-up delay-700">
         <div className="flex flex-wrap gap-x-6 gap-y-2 text-[14px]">
           <a
             href="https://calendly.com/toluadetuyi/one-on-one"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-medium link-hover"
+            className="font-medium link-hover group"
           >
-            Book a session ↗
+            Book a session <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">↗</span>
           </a>
           <a
             href="https://www.linkedin.com/in/adetuyitolu/"
