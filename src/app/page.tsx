@@ -313,40 +313,33 @@ export default function Home() {
       </section>
 
       {/* ── Contact ── */}
-      <footer className="pt-8 border-t border-border animate-fade-up delay-700">
-        <div className="flex flex-wrap items-center gap-x-6 gap-y-4 text-[14px]">
-          <a
-            href="https://calendly.com/toluadetuyi/one-on-one"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 rounded-full hover:bg-accent/90 transition-colors font-medium group shadow-sm hover:shadow-md"
-          >
-            Book a session <span className="transition-transform duration-300 group-hover:translate-x-1">↗</span>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/adetuyitolu/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted link-hover"
-          >
-            LinkedIn
-          </a>
-          <a
-            href="https://twitter.com/adetuyitolu"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted link-hover"
-          >
-            Twitter
-          </a>
-          <a
-            href="https://instagram.com/adetuyitolu"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted link-hover"
-          >
-            Instagram
-          </a>
+      <footer className="pt-10 border-t border-border animate-fade-up delay-700">
+        {/* Headline */}
+        <p className="text-[13px] uppercase tracking-[0.15em] text-accent font-medium mb-3">
+          Work with me
+        </p>
+        <h2 className="text-[22px] font-medium text-foreground tracking-tight leading-snug mb-2">
+          If you are building in Africa or allocating into it, let&apos;s talk.
+        </h2>
+        <p className="text-[14px] text-muted mb-7">
+          Founders, investors, and operators, book a direct session or find me on the links below.
+        </p>
+
+        {/* Primary CTA */}
+        <a
+          href="https://calendly.com/toluadetuyi/one-on-one"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3.5 rounded-full hover:bg-accent/90 transition-all font-medium text-[15px] group shadow-sm hover:shadow-md mb-10"
+        >
+          Book a session <span className="transition-transform duration-300 group-hover:translate-x-1">↗</span>
+        </a>
+
+        {/* Secondary — social links */}
+        <div className="flex flex-wrap items-center gap-x-5 gap-y-3 text-[13px] text-muted border-t border-border/50 pt-6">
+          <a href="https://www.linkedin.com/in/adetuyitolu/" target="_blank" rel="noopener noreferrer" className="link-hover">LinkedIn</a>
+          <a href="https://twitter.com/adetuyitolu" target="_blank" rel="noopener noreferrer" className="link-hover">Twitter</a>
+          <a href="https://instagram.com/adetuyitolu" target="_blank" rel="noopener noreferrer" className="link-hover">Instagram</a>
         </div>
       </footer>
     </main>
