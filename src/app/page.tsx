@@ -282,7 +282,7 @@ export default function Home() {
       {/* ── Bridge ── */}
       <p className="text-[15px] leading-[1.8] text-muted mb-10">
         Beyond my work at Prembly, I am quietly building a capital formation vehicle for founders
-        and allocators who understand that Africa&apos;s digital economy cannot outrun its energy
+        and allocators who understand that Africa&apos;s digital economy cannot outrun its infrastructure
         deficit. This is not a distraction. It is the next logical layer.
       </p>
 
