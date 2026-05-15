@@ -64,7 +64,7 @@ export default function Home() {
           Current Work
         </h2>
         <div className="space-y-5">
-          <div className="flex justify-between items-baseline">
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-0.5">
             <div>
               <a
                 href="https://prembly.com/"
@@ -78,11 +78,11 @@ export default function Home() {
                 Co-Founder & CIO
               </span>
             </div>
-            <span className="text-muted text-[13px]">Identity, Fraud Prevention & Compliance</span>
+            <span className="text-muted text-[13px] sm:text-right">Identity, Fraud Prevention & Compliance</span>
           </div>
           <div className="border-t border-accent/20" />
 
-          <div className="flex justify-between items-baseline">
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-0.5">
             <div>
               <a
                 href="https://www.chroniclesofinnovation.com"
@@ -96,11 +96,11 @@ export default function Home() {
                 Executive Curator
               </span>
             </div>
-            <span className="text-muted text-[13px]">Innovation Documentary Series</span>
+            <span className="text-muted text-[13px] sm:text-right">Innovation Documentary Series</span>
           </div>
           <div className="border-t border-accent/20" />
 
-          <div className="flex justify-between items-baseline">
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-0.5">
             <div>
               <a
                 href="https://zerotoact.com/"
@@ -112,7 +112,7 @@ export default function Home() {
               </a>
               <span className="text-muted text-[13px] ml-3">Author</span>
             </div>
-            <span className="text-muted text-[13px]">Intelligence Newsletter</span>
+            <span className="text-muted text-[13px] sm:text-right">Intelligence Newsletter</span>
           </div>
         </div>
       </section>
