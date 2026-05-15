@@ -26,11 +26,13 @@ export default function StructuredData() {
       {
         "@type": "CollegeOrUniversity",
         "name": "Morgan State University",
-        "url": "https://www.morgan.edu"
+        "url": "https://www.morgan.edu",
+        "location": "United States"
       },
       {
         "@type": "CollegeOrUniversity",
-        "name": "Adekunle Ajasin University"
+        "name": "Adekunle Ajasin University",
+        "location": "Nigeria"
       }
     ],
     "knowsAbout": [

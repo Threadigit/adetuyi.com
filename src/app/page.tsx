@@ -3,11 +3,28 @@ export default function Home() {
     <main className="max-w-[680px] mx-auto px-6 py-16 md:py-24">
       {/* ── Header ── */}
       <header className="mb-6 animate-fade-up delay-100">
-        <h1 className="text-[28px] md:text-[32px] font-semibold tracking-tight leading-snug mb-4">
-          Tolu Adetuyi
-        </h1>
+        <div className="flex items-center gap-5 mb-5">
+          {/* Avatar */}
+          <div className="relative flex-shrink-0 w-[72px] h-[72px] rounded-full overflow-hidden ring-2 ring-accent/20">
+            <img
+              src="/tolu-new.png"
+              alt="Tolu Adetuyi"
+              className="w-full h-full object-cover object-top transition-all duration-700"
+              style={{filter: "grayscale(20%)"}}
+            />
+          </div>
+          {/* Name + label */}
+          <div>
+            <h1 className="text-[32px] md:text-[38px] font-medium tracking-tight leading-tight mb-1 text-foreground">
+              Tolu Adetuyi
+            </h1>
+            <p className="text-[11px] uppercase tracking-[0.18em] text-accent font-medium">
+              Innovator&nbsp;&nbsp;·&nbsp;&nbsp;Venture Architect
+            </p>
+          </div>
+        </div>
         <p className="text-muted text-[15px] leading-relaxed max-w-[520px]">
-          Chief Innovation Officer at{" "}
+          Co-Founder &amp; Chief Innovation Officer at{" "}
           <a
             href="https://prembly.com/"
             target="_blank"
@@ -16,30 +33,34 @@ export default function Home() {
           >
             Prembly
           </a>
-          . Building trust infrastructure for identity verification, fraud
-          prevention and compliance across Africa.
+          . <span className="text-accent font-medium relative inline-block after:absolute after:bottom-[-2px] after:left-0 after:w-full after:h-[1px] after:bg-accent">Building trust infrastructure</span> that helps businesses combat fraud and stay compliant across emerging markets.
         </p>
       </header>
 
       {/* ── About ── */}
-      <section className="mb-14 animate-fade-up delay-200">
+      <section className="mb-10 animate-fade-up delay-200">
         <p className="text-[15px] leading-[1.8] text-muted">
-          I build technology products and businesses. My background spans software engineering, business building, and
-          finance, and I&apos;ve spent the last decade turning that into
-          companies and systems that work. Previously, I served as Head of Business Growth
-          at{" "}
-          <a href="https://moniepoint.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">Moniepoint</a>, where I helped scale the agent network to serve
-          millions of Nigerians. I hold a{" "}
-          <span className="text-foreground font-medium">First Class degree in Computer Science</span> from
-          Adekunle Ajasin University and an{" "}
-          <span className="text-foreground font-medium">MBA with a Finance concentration</span> from
-          Morgan State University in the US.
+          I&apos;ve spent the better part of a decade building the identity, compliance, and financial
+          infrastructure layer of Africa&apos;s economic participation stack. Before Prembly, I led
+          growth at{" "}
+          <a href="https://moniepoint.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">Moniepoint</a>,
+          where I helped build the distribution network that now powers billions of transactions
+          across the continent. What that experience taught me is this: code is never the bottleneck.
+          The real constraint is always the absence of foundational trust and distribution rails.
+          Prembly exists because that infrastructure did not.
+        </p>
+        <p className="text-[15px] leading-[1.8] text-muted mt-4">
+          I hold a first-class degree in Computer Science and an MBA with a concentration in Finance
+          from Morgan State University. I am an active participant at the intersection of technology,
+          capital, and African economic development. I am not done.
         </p>
       </section>
 
+
+
       {/* ── Current Work ── */}
       <section className="mb-16 animate-fade-up delay-300">
-        <h2 className="text-[13px] font-medium uppercase tracking-[0.1em] text-muted mb-6">
+        <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
           Current Work
         </h2>
         <div className="space-y-5">
@@ -57,9 +78,9 @@ export default function Home() {
                 Co-Founder & CIO
               </span>
             </div>
-            <span className="text-muted text-[13px]">Identity & Compliance</span>
+            <span className="text-muted text-[13px]">Identity, Fraud Prevention & Compliance</span>
           </div>
-          <div className="border-t border-border" />
+          <div className="border-t border-accent/20" />
 
           <div className="flex justify-between items-baseline">
             <div>
@@ -75,9 +96,9 @@ export default function Home() {
                 Executive Curator
               </span>
             </div>
-            <span className="text-muted text-[13px]">Documentary Series</span>
+            <span className="text-muted text-[13px]">Innovation Documentary Series</span>
           </div>
-          <div className="border-t border-border" />
+          <div className="border-t border-accent/20" />
 
           <div className="flex justify-between items-baseline">
             <div>
@@ -91,17 +112,17 @@ export default function Home() {
               </a>
               <span className="text-muted text-[13px] ml-3">Author</span>
             </div>
-            <span className="text-muted text-[13px]">Newsletter</span>
+            <span className="text-muted text-[13px]">Intelligence Newsletter</span>
           </div>
         </div>
       </section>
 
       {/* ── Featured Video ── */}
       <section className="mb-16 animate-fade-up delay-400">
-        <h2 className="text-[13px] font-medium uppercase tracking-[0.1em] text-muted mb-6">
+        <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
           Featured
         </h2>
-        <div className="aspect-video w-full bg-foreground/5 overflow-hidden">
+        <div className="aspect-video w-full bg-accent/5 ring-1 ring-border overflow-hidden">
           <iframe
             src="https://www.youtube.com/embed/7JIjYZJO5jQ"
             title="Lagos Tech Fest 2023"
@@ -120,15 +141,22 @@ export default function Home() {
 
       {/* ── Speaking ── */}
       <section className="mb-16 animate-fade-up delay-500">
-        <h2 className="text-[13px] font-medium uppercase tracking-[0.1em] text-muted mb-6">
+        <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
           Speaking & Panels
         </h2>
         <div className="space-y-4">
           <div className="flex justify-between items-baseline">
-            <span className="text-[15px]">Lagos Tech Fest 2023</span>
+            <a
+              href="https://www.youtube.com/watch?v=7JIjYZJO5jQ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[15px] link-hover font-medium"
+            >
+              Lagos Tech Fest 2023
+            </a>
             <span className="text-muted text-[13px]">Panel</span>
           </div>
-          <div className="border-t border-border" />
+          <div className="border-t border-accent/20" />
           <a
             href="https://docs.google.com/presentation/d/e/2PACX-1vRYTONvzPUFRxh2qtI0i9Kyp7jSzxSmRgW-fU0ABvt73cXZn5nNtv36UGavwScf6YqarMn0I4KgprJz/pub?start=true&loop=true&delayms=3000"
             target="_blank"
@@ -139,10 +167,10 @@ export default function Home() {
               Closing the Compliance Gap for African Startups
             </span>
             <span className="text-muted text-[13px]">
-              Slide deck <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">↗</span>
+              Slide deck <span className="inline-block transition-transform duration-300 group-hover:translate-x-1 group-hover:text-accent">↗</span>
             </span>
           </a>
-          <div className="border-t border-border" />
+          <div className="border-t border-accent/20" />
           <a
             href="https://docs.google.com/presentation/d/e/2PACX-1vRfUMs41WRijX2FtvJ59M-q-NumD5Y2oJlvGrrw_or0rqU9QAGtK6WbvvZjLKhPeBlDBaq17ZHYV5zO/pub?start=true&loop=true&delayms=3000"
             target="_blank"
@@ -153,10 +181,10 @@ export default function Home() {
               Bootstrapping & Making Your Idea Attractive to Investors
             </span>
             <span className="text-muted text-[13px]">
-              Slide deck <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">↗</span>
+              Slide deck <span className="inline-block transition-transform duration-300 group-hover:translate-x-1 group-hover:text-accent">↗</span>
             </span>
           </a>
-          <div className="border-t border-border" />
+          <div className="border-t border-accent/20" />
           <a
             href="https://programmes.podbean.com/e/tts-creating-a-positive-work-security-culture/"
             target="_blank"
@@ -173,10 +201,22 @@ export default function Home() {
 
       {/* ── Press & Writing ── */}
       <section className="mb-16 animate-fade-up delay-600">
-        <h2 className="text-[13px] font-medium uppercase tracking-[0.1em] text-muted mb-6">
+        <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
           Featured Press & Publications
         </h2>
         <div className="space-y-4">
+          <a
+            href="https://businessday.ng/technology/article/cbn-aml-directive-triggers-tech-reset-as-banks-fintechs-battle-data-talent-gaps/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex justify-between items-baseline group"
+          >
+            <span className="text-[15px] link-hover">
+              CBN AML Directive Triggers Tech Reset as Banks, Fintechs Battle Data &amp; Talent Gaps
+            </span>
+            <span className="text-muted text-[13px]">BusinessDay</span>
+          </a>
+          <div className="border-t border-accent/20" />
           <a
             href="https://thecondia.com/zero-to-scale-tolu-adetuyi-head-of-growth-at-moniepoint/"
             target="_blank"
@@ -188,7 +228,7 @@ export default function Home() {
             </span>
             <span className="text-muted text-[13px]">The Condia</span>
           </a>
-          <div className="border-t border-border" />
+          <div className="border-t border-accent/20" />
           <a
             href="https://vanguardngr.com/ai-is-strongest-ally-in-war-against-financial-fraud-tolu-adetuyi/"
             target="_blank"
@@ -200,7 +240,7 @@ export default function Home() {
             </span>
             <span className="text-muted text-[13px]">Vanguard</span>
           </a>
-          <div className="border-t border-border" />
+          <div className="border-t border-accent/20" />
           <a
             href="https://techcabal.com/2026/03/10/nigerias-prembly-launches-shared-open-source-database/"
             target="_blank"
@@ -212,9 +252,9 @@ export default function Home() {
             </span>
             <span className="text-muted text-[13px]">TechCabal</span>
           </a>
-          <div className="border-t border-border" />
+          <div className="border-t border-accent/20" />
           <a
-            href="https://secureidentityalliance.org/utilities/news-en/on-the-road-to-user-centricity-digital-identity-in-the-electronic-wallet-era-1"
+            href="https://secureidentityalliance.org/reports/on-the-road-to-user-centricity-digital-identity-in-the-electronic-wallet-era/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex justify-between items-baseline group"
@@ -226,7 +266,7 @@ export default function Home() {
               Secure Identity Alliance
             </span>
           </a>
-          <div className="border-t border-border" />
+          <div className="border-t border-accent/20" />
           <a
             href="https://www.researchgate.net/profile/Tolu-Adetuyi"
             target="_blank"
@@ -241,16 +281,41 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── Active Investment Thesis ── */}
+      <section className="mb-16 animate-fade-up delay-700">
+        <div className="p-8 bg-accent/5 ring-1 ring-border rounded-xl relative overflow-hidden">
+          <div className="absolute top-0 left-0 w-1 h-full bg-accent"></div>
+          <h2 className="text-[13px] font-medium uppercase tracking-widest text-accent mb-3">
+            Active Investment Thesis
+          </h2>
+          <h3 className="text-[20px] md:text-[24px] font-medium text-foreground leading-snug mb-3 tracking-tight">
+            Powering Nigeria: Infrastructure Fund 1
+          </h3>
+          <p className="text-[15px] text-muted leading-relaxed mb-4">
+            Over the past decade, I built and scaled Africa's digital trust infrastructure. Now, I am targeting the physical foundation. The Nigerian energy deficit is not a technical problem; it is a 100 billion dollar capital allocation opportunity.
+          </p>
+          <p className="text-[15px] text-muted leading-relaxed mb-6">
+            Infrastructure Fund 1 is structured to completely bypass the legacy grid. By deploying private capital into highly efficient commercial power assets with proven demand, we generate resilient, asset backed yield while solving a generational bottleneck. For fellow founders and capital allocators ready to build, I invite you to review the core thesis.
+          </p>
+          <a
+            href="/thesis"
+            className="inline-flex items-center gap-2 border border-accent text-accent px-5 py-2.5 rounded-full hover:bg-accent hover:text-white transition-all font-medium text-[14px] group"
+          >
+            Read the Manifesto <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+          </a>
+        </div>
+      </section>
+
       {/* ── Contact ── */}
       <footer className="pt-8 border-t border-border animate-fade-up delay-700">
-        <div className="flex flex-wrap gap-x-6 gap-y-2 text-[14px]">
+        <div className="flex flex-wrap items-center gap-x-6 gap-y-4 text-[14px]">
           <a
             href="https://calendly.com/toluadetuyi/one-on-one"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-medium link-hover group"
+            className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 rounded-full hover:bg-accent/90 transition-colors font-medium group shadow-sm hover:shadow-md"
           >
-            Book a session <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">↗</span>
+            Book a session <span className="transition-transform duration-300 group-hover:translate-x-1">↗</span>
           </a>
           <a
             href="https://www.linkedin.com/in/adetuyitolu/"

@@ -1,0 +1,367 @@
+ Nigeria Power Sector Infrastructure Report  |   Confidential  |   2025 
+ INVESTMENT OPPORTUNITY REPORT 
+ Nigeria Power and Energy Sector 
+ Financing the Root Crisis: A Case for Private Capital in Nigeria's Energy 
+ Infrastructure 
+ Prepared by 
+ Tolu Adetuyi, MBA 
+ Co-Founder and Chief Innovation Officer 
+ Prembly Inc. 
+ Report Date 
+ March 2026 
+ Classification 
+ Confidential 
+ $100bn+ 
+ Power Sector Deficit 
+ 4GW / 
+ 30GW+ 
+ Delivered vs. Required 
+ 80 million+ 
+ Nigerians Without 
+ Electricity 
+ 15% to 25%+ 
+ Target Equity IRR 
+ SECTION 01 
+ Private and ConfidentialPage  1 
+ Nigeria Power Sector Infrastructure Report  |   Confidential  |   2025 
+ Executive Summary 
+ Nigeria  is  the  fourth  largest  economy  in  Africa,  with  a  nominal  GDP  of  approximately  $300  billion 
+ and  a  population  exceeding  200  million.  Yet  the  country's  productive  capacity  is  fundamentally 
+ constrained  by  a  single,  persistent  failure:  the  inability  to  generate,  transmit,  and  distribute  adequate 
+ electricity to its citizens, businesses, and institutions. 
+ The  power  sector  deficit  sits  at  over  $100  billion  in  unmet  infrastructure  need.  The  national  grid 
+ delivers  fewer  than  4  gigawatts  of  electricity  on  most  days  against  a  suppressed  demand  of  at  least 
+ 30  gigawatts.  Over  80  million  Nigerians  have  no  access  to  electricity  at  all.  Those  who  do  face  an 
+ unreliable  supply  that  averages  fewer  than  12  hours  per  day  in  most  commercial  areas.  In 
+ response,  the  private  sector  collectively  spends  an  estimated  $12  to  $14  billion  annually  on  diesel 
+ generators  to  maintain  basic  operations.  That  expenditure  produces  no  productive  asset,  generates 
+ no return, and compounds year over year. 
+ This  report  makes  a  straightforward  case:  the  power  crisis  is  not  primarily  a  technical  problem.  It  is 
+ a  capital  allocation  and  deal-structuring  problem.  The  technology  exists.  The  policy  frameworks  are 
+ improving,  anchored  by  the  landmark  Electricity  Act  of  2023.  The  demand  is  unambiguous  and 
+ backed  by  demonstrated  willingness  to  pay.  What  is  absent  is  the  structured  deployment  of  private 
+ capital at scale. 
+ This  report  identifies  five  investment  models  within  the  power  sector  that  are  viable  today, 
+ executable  at  multiple  entry  scales,  and  capable  of  delivering  equity  returns  between  15  and  35 
+ percent  depending  on  the  model  and  structure.  It  also  briefly  identifies  four  adjacent  sectors  where 
+ energy  access  is  the  primary  constraint,  and  whose  productivity  gains  will  compound  the  returns 
+ available to power investors. 
+ If  Nigeria's  electricity  problem  is  solved,  it  does  not  merely  improve  one  sector.  It  unlocks 
+ the  productive  capacity  of  every  other  sector  simultaneously.  Power  is  the  master  variable 
+ in Nigeria's economic equation. 
+ SECTION 02 
+ The Power Sector: A Structural Diagnosis 
+ 2.1  The Generation Gap 
+ Private and ConfidentialPage  1 
+ Nigeria Power Sector Infrastructure Report  |   Confidential  |   2025 
+ Nigeria's  installed  electricity  generation  capacity  stands  at  approximately  13  gigawatts  across 
+ thermal  and  hydropower  plants.  In  practice,  the  grid  delivers  between  3,500  and  5,000  megawatts 
+ on  any  given  day.  The  difference  between  installed  and  delivered  capacity  is  accounted  for  by  gas 
+ supply  disruptions,  aging  infrastructure,  transmission  constraints,  and  persistent  commercial  losses 
+ across the value chain. 
+ The  government's  target  is  30  gigawatts  of  accessible  generation  capacity  by  2030.  Reaching  that 
+ figure  requires  an  investment  of  over  $100  billion  across  generation,  transmission,  and  distribution 
+ infrastructure.  Current  budgetary  allocations,  which  amount  to  approximately  5  percent  of  the  stated 
+ annual  requirement,  make  public  funding  alone  categorically  insufficient.  Private  capital  is  not  an 
+ option in this equation. It is a necessity. 
+ Indicator  Current Status  Implication for Investors 
+ Installed generation 
+ capacity 
+ 13 GW  Significant headroom exists between installed and 
+ delivered capacity 
+ Electricity actually 
+ delivered 
+ 3.5 to 4.0 GW  Structural delivery failure creates demand for 
+ off-grid and embedded generation 
+ Population without 
+ electricity 
+ 80 million+  Captive, underserved market with demonstrated 
+ willingness to pay 
+ Annual private diesel 
+ spend 
+ $12 to $14 billion  Confirms price tolerance; any solution cheaper 
+ than diesel is immediately competitive 
+ Government budget 
+ allocation 
+ 5% of annual 
+ need 
+ Public funding gap is structural; private capital is 
+ the only viable bridge 
+ Revenue collection 
+ improvement 
+ 40% rise in 2024  Tariff reform is working; collection environment is 
+ materially improving 
+ 2.2  The Policy Turning Point: Electricity Act 2023 
+ The  Electricity  Act  of  2023  is  the  most  consequential  regulatory  reform  in  Nigeria's  power  sector  in 
+ two  decades.  It  decentralised  authority  over  electricity  markets,  empowering  state  governments  to 
+ license,  regulate,  and  develop  independent  power  systems  without  federal  approval.  This  single 
+ structural  change  removes  the  primary  bureaucratic  bottleneck  that  stalled  private  sector 
+ participation for years. 
+ State  governors  can  now  serve  as  direct  off-takers  for  power  purchase  agreements.  Lagos,  Rivers, 
+ Kano,  Ogun,  and  Oyo,  all  of  which  have  significant  commercial  and  industrial  activity,  can  anchor 
+ Private and ConfidentialPage  1 
+ Nigeria Power Sector Infrastructure Report  |   Confidential  |   2025 
+ solar  and  embedded  generation  projects  under  commercially  negotiated  terms.  This  creates  a  new 
+ class of creditworthy counterparty for private developers and investors. 
+ Complementing  the  Electricity  Act,  the  National  Integrated  Electricity  Policy  endorsed  in  2025  aligns 
+ federal  and  state  priorities,  while  tariff  adjustments  in  2024  raised  Band  A  electricity  tariffs  to  N225 
+ per  kilowatt-hour,  improving  revenue  collection  by  40  percent  within  the  year.  These  are  not 
+ cosmetic reforms. They represent a structurally improved investment environment. 
+ The  Electricity  Act  2023  changed  the  answer  to  the  question:  'Who  is  the  off-taker?' 
+ Previously,  that  answer  was  a  single,  struggling  federal  utility.  Today,  it  can  be  a  state 
+ government,  a  university,  a  hospital,  a  manufacturer,  or  a  commercial  estate.  The  risk 
+ profile of the sector has fundamentally changed. 
+ 2.3  The Diesel Economy as Market Proof 
+ Nigeria's  private  sector  spends  between  $12  and  $14  billion  annually  on  diesel-powered  generators. 
+ At  an  average  cost  of  $0.35  per  kilowatt-hour,  this  is  the  most  expensive  form  of  electricity 
+ consumption  in  any  large  economy  in  the  world.  It  is  also  the  clearest  possible  evidence  that 
+ demand exists and that the market will pay. 
+ Any  investor  offering  electricity  at  $0.10  to  $0.18  per  kilowatt-hour,  which  is  the  realistic  price  range 
+ for  solar-generated  power  under  a  commercial  power  purchase  agreement,  is  immediately 
+ competitive  with  diesel.  The  customer  does  not  need  to  be  convinced  to  switch.  The  switching 
+ decision  is  self-evident  once  the  alternative  is  structured  and  available.  This  is  a  rare  investment 
+ context:  the  demand  is  proven,  the  willingness  to  pay  is  established,  and  the  competing  product  is 
+ more  expensive,  noisier,  more  polluting,  and  less  reliable  than  what  a  well-structured  solar  solution 
+ can offer. 
+ SECTION 03 
+ Investment Models: Five Viable Entry Points 
+ The  power  sector  is  not  a  monolithic  investment  proposition.  It  disaggregates  into  five  distinct 
+ models,  each  with  a  different  capital  requirement,  risk  profile,  revenue  structure,  and  return 
+ expectation.  An  investor  entering  this  space  does  not  need  to  build  a  power  plant.  There  is  a  viable 
+ Private and ConfidentialPage  1 
+ Nigeria Power Sector Infrastructure Report  |   Confidential  |   2025 
+ entry  at  every  scale,  from  $200,000  to  $200  million,  and  each  model  has  documented  precedents  in 
+ the Nigerian market. 
+ Model 1  |  Solar Mini-Grids 
+ Entry Scale: $500,000 to $5 million per site 
+ A  solar  mini-grid  serves  a  defined  cluster  of  residential,  commercial,  and  institutional  customers  in 
+ areas  where  the  national  grid  is  absent  or  unreliable.  The  developer  installs  solar  panels,  battery 
+ storage,  and  a  local  distribution  network,  then  sells  metered  electricity  directly  to  end-users  at 
+ regulated  tariff  rates.  Revenue  is  collected  via  prepaid  meters  and  payment  platforms,  eliminating 
+ credit risk at the customer level. 
+ The  Rural  Electrification  Agency  provides  licensing  and,  in  certain  cases,  viability  gap  funding  to 
+ mini-grid  developers  to  improve  project  economics  in  lower-income  areas.  The  government's  target 
+ of  achieving  30,000  mini-grid  projects  nationwide  by  2030  creates  a  well-defined  pipeline.  Nigeria 
+ currently  has  fewer  than  200  functional  commercial  mini-grids.  The  gap  between  200  and  30,000  is 
+ not a policy ambiguity. It is an investment opportunity. 
+ •  Revenue:  Revenue  mode  is  metered  electricity  sales  to  residential  and  commercial 
+ customers at N50 to N120 per kilowatt-hour 
+ •  Scale:  Average  generation  capacity  per  site:  50  to  500  kilowatts  depending  on  community 
+ size and demand density 
+ •  Return:  Project  IRR  is  estimated  around  18  to  25  percent  depending  on  community  size, 
+ REA viability gap funding, and operational cost management 
+ •  Payback:  Payback period of 4 to 6 years 
+ •  Primary  Risk:  Key  risk  is  customer  payment  discipline,  managed  through  prepaid  metering 
+ and payment integration 
+ The  proof  of  concept  for  this  model  exists.  Power  Africa's  programme  has  facilitated  over  1,005 
+ megawatts  of  capacity  and  unlocked  $1.48  billion  in  investments  for  on-grid  and  off-grid  projects  in 
+ Nigeria.  Multiple  developers,  including  Husk  Power  Systems,  Nayo  Tropical  Technology,  and  Rural 
+ Spark,  have  demonstrated  viable  unit  economics  in  Nigerian  mini-grid  deployments.  This  is  not  an 
+ experimental model. It is a replicable one. 
+ Model 2  |  Commercial and Industrial Solar (Power Purchase 
+ Agreements) 
+ Private and ConfidentialPage  1 
+ Nigeria Power Sector Infrastructure Report  |   Confidential  |   2025 
+ Entry Scale: $2 million to $50 million 
+ The  Commercial  and  Industrial  solar  model  addresses  the  single  largest  direct  cost  of  doing 
+ business  in  Nigeria.  A  developer  installs  rooftop  or  ground-mounted  solar  generation  at  a  factory, 
+ hospital,  university,  retail  centre,  or  industrial  estate,  then  sells  the  electricity  generated  to  that 
+ facility  under  a  long-term  Power  Purchase  Agreement  at  a  rate  below  what  the  facility  currently  pays 
+ for  diesel-generated  power.  The  customer  saves  money  immediately.  The  developer  earns  a 
+ contracted cash flow for 10 to 25 years. 
+ This  model  entirely  bypasses  the  national  grid.  It  does  not  depend  on  distribution  companies,  does 
+ not  require  wheeling  agreements,  and  does  not  expose  the  investor  to  grid  instability.  The  risk 
+ profile  is  anchored  to  the  creditworthiness  of  the  corporate  off-taker,  not  the  government  or  the  utility 
+ sector.  For  a  large  bank,  a  cement  manufacturer,  a  supermarket  chain,  or  a  pharmaceutical 
+ company, the credit risk is materially different from sovereign risk. 
+ •  Pricing:  Electricity  price  to  customer  between  $0.10  to  $0.16  per  kilowatt-hour,  compared  to 
+ $0.30 to $0.40 per kilowatt-hour for diesel 
+ •  Contract:  Contract  structure  of  10  to  25  year  Power  Purchase  Agreement  with  creditworthy 
+ corporate counterparty 
+ •  Return:  Project  IR  of  18  to  24  percent;  leveraged  returns  can  exceed  30  percent  with 
+ favourable debt structuring 
+ •  Market:  Addressable  market  is  every  manufacturer,  bank,  hospital,  hotel,  and  educational 
+ institution  currently  running  a  diesel  generator,  estimated  at  over  60  million  generators 
+ nationally 
+ •  Payback:  Payback period of 4 to 7 years 
+ The  Commercial  and  Industrial  solar  model  is  the  cleanest  risk  proposition  in  Nigeria's 
+ energy  sector  today.  The  customer  is  a  business  that  already  pays  for  electricity.  You  are 
+ simply  offering  it  to  them  at  a  lower  price  from  a  more  reliable  source.  No  subsidy  required. 
+ No  government  dependency.  No  currency  mismatch  if  contracts  are  structured  in 
+ dollar-equivalent terms. 
+ Model 3  |  PAYGO Home Solar Systems 
+ Entry Scale: $1 million to $20 million (portfolio financing) 
+ Pay-as-you-go  solar  financing  solves  the  access  problem  at  the  household  level.  A  company 
+ provides  a  solar  home  system  comprising  panels,  battery  storage,  and  basic  appliances  to  a 
+ household  in  exchange  for  small,  regular  payments  made  via  payment  apps.  The  system  is 
+ remotely  monitored  and  can  be  deactivated  if  payments  lapse,  eliminating  the  moral  hazard  of 
+ Private and ConfidentialPage  1 
+ Nigeria Power Sector Infrastructure Report  |   Confidential  |   2025 
+ non-payment.  Once  the  customer  completes  payment,  typically  over  12  to  36  months,  they  own  the 
+ system outright. 
+ For  investors,  the  proposition  is  a  receivables  portfolio.  Investing  in  a  PAYGO  solar  company  means 
+ financing  the  receivables  generated  by  household  payment  plans  across  thousands  or  hundreds  of 
+ thousands  of  customers.  The  aggregated  receivables  are  predictable,  diversified,  and  secured 
+ against  an  asset  that  can  be  deactivated  and  recovered.  The  model  has  been  successfully 
+ implemented  at  scale  in  Kenya,  Tanzania,  and  Rwanda  by  companies  such  as  M-KOPA  and  d.light, 
+ and is expanding in Nigeria. 
+ •  Revenue:  Revenue  mode  is  monthly  repayments  from  household  customers  via  payment 
+ platform, typically N3,000 to N8,000 per month 
+ •  Return:  Target IRR for receivables investors is around  20 to 28 percent 
+ •  DFI  Access:  Development  Finance  Institution  appetite  such  as  DFC,  IFC,  and  Norfund  have 
+ all financed PAYGO portfolios in sub-Saharan Africa 
+ •  Blending:  Blended  finance  opportunity  for  First-loss  tranche  from  DFIs  reduces  effective  risk 
+ and improves returns for commercial investors 
+ Model 4  |  Metering Infrastructure (Distribution Company Partnerships) 
+ Entry Scale: $1 million to $30 million 
+ Nigeria's  11  electricity  distribution  companies  collectively  under-meter  their  customer  base  by  an 
+ estimated  40  to  60  percent.  Unmetered  customers  are  billed  on  estimated  consumption,  which 
+ suppresses  collection,  enables  energy  theft,  and  prevents  accurate  load  management.  The  Meter 
+ Asset  Provider  regulatory  framework,  introduced  by  the  Nigerian  Electricity  Regulatory  Commission, 
+ enables  private  companies  to  finance,  install,  and  own  electricity  meters  that  are  then  leased  to 
+ distribution companies under shared-savings agreements. 
+ A  Meter  Asset  Provider  installs  prepaid  smart  meters  at  customer  premises.  The  distribution 
+ company  collects  metered  revenue  and  remits  a  monthly  lease  payment  to  the  Meter  Asset 
+ Provider.  The  federal  government  has  committed  to  installing  1.1  million  meters  in  the  near  term 
+ under  the  National  Mass  Metering  Programme.  The  total  metering  gap  is  estimated  at  over  7  million 
+ connections.  The  gap  between  government  programme  targets  and  total  need  is  the  investment 
+ pipeline. 
+ •  Revenue:  Revenue  model  is  a  monthly  lease  payments  from  distribution  companies  per 
+ meter installed 
+ Private and ConfidentialPage  1 
+ Nigeria Power Sector Infrastructure Report  |   Confidential  |   2025 
+ •  Return:  Target  IRR  is  around  16  to  22  percent  in  naira  terms,  with  hedging  mechanisms 
+ available through indexed contracts 
+ •  Policy:  Government  supports  through  National  Mass  Metering  Programme  provides  partial 
+ subsidy for low-income meter deployment 
+ •  Payback:  Payback period is around 3 to 5 years 
+ Model 5  |  Utility-Scale Independent Power Projects 
+ Entry Scale: $50 million to $500 million+ 
+ Utility-scale  Independent  Power  Projects  are  the  conventional  infrastructure  investment  model  in 
+ which  a  private  developer  constructs  and  operates  a  large  generation  facility,  selling  output  to  a 
+ utility,  state  government,  or  large  industrial  off-taker  under  a  long-term  Power  Purchase  Agreement. 
+ Nigeria  has  commissioned  several  utility-scale  projects,  including  the  Azura-Edo  IPP  and  the  Kainji 
+ hydropower  privatisation.  The  Jigawa  Solar  PV  initiative,  currently  in  development,  targets  50  to  100 
+ megawatts in its initial phase with long-term expansion to 1,000 megawatts. 
+ Utility-scale  projects  carry  higher  capital  requirements  and  longer  development  timelines,  but  also 
+ attract  the  deepest  pool  of  institutional  capital,  including  pension  funds,  sovereign  wealth  funds,  and 
+ major  DFIs.  The  African  Development  Bank,  IFC,  and  the  US  International  Development  Finance 
+ Corporation  have  all  provided  debt  and  equity  financing  to  Nigerian  IPPs.  Blended  finance 
+ structures,  in  which  DFIs  absorb  first-loss  risk,  materially  improve  the  economics  for  commercial 
+ equity investors. 
+ •  Return:  Target  equity  IRR  is  around  14  to  18  percent  for  well-structured  projects  with 
+ creditworthy off-takers 
+ •  Structure:  Debt  financing,  typically  60  to  70  percent  leverage  from  DFIs  and  commercial 
+ banks 
+ •  Timeline:  Development  timeline  estimated  around  24  to  48  months  from  financial  close  to 
+ commercial operation 
+ •  Risk:  Key  requirement  is  a  Bankable  Power  Purchase  Agreement  with  sovereign  guarantee 
+ or creditworthy state government as off-taker 
+ SECTION 04 
+ Consolidated Return Summary 
+ Private and ConfidentialPage  1 
+ Nigeria Power Sector Infrastructure Report  |   Confidential  |   2025 
+ The  table  below  summarises  the  five  investment  models  described  in  this  report  across  their  key 
+ financial  parameters.  Returns  are  expressed  as  equity  Internal  Rate  of  Return  under  well-structured 
+ commercial  or  blended  finance  arrangements.  These  figures  reflect  documented  market  data  from 
+ comparable projects across Nigeria and sub-Saharan Africa. 
+ Investment Model  Entry Capital  Equity IRR  Payback Period 
+ PAYGO home solar (portfolio)  $1M to $20M  20% to 28%  3 to 5 years 
+ Commercial and Industrial solar 
+ (PPA) 
+ $2M to $50M  18% to 24%  4 to 7 years 
+ Solar mini-grid (per site)  $500K to $5M  18% to 25%  4 to 6 years 
+ Metering infrastructure (MAP)  $1M to $30M  16% to 22%  3 to 5 years 
+ Utility-scale IPP (50MW+)  $50M to $500M+  14% to 18%  7 to 10 years 
+ Returns  at  the  lower  end  of  each  range  reflect  conservative  assumptions:  higher  capital 
+ costs,  moderate  utilisation,  and  standard  commercial  financing.  Returns  at  the  upper  end 
+ reflect  well-structured  blended  finance  arrangements  with  DFI  first-loss  support,  optimised 
+ capital stacks, and experienced operational teams. 
+ SECTION 05 
+ Adjacent Sectors: Unlocked by Energy Access 
+ The  power  sector  is  the  enabling  variable  for  Nigeria's  broader  infrastructure  recovery.  The  table 
+ below  identifies  four  sectors  where  electricity  is  the  primary  binding  constraint.  Resolving  the  energy 
+ deficit  does  not  merely  improve  these  sectors  incrementally.  In  several  cases,  it  transforms  their 
+ viability entirely. 
+ Sector  Financing 
+ Gap 
+ How Energy Access Unlocks It 
+ Affordable Housing  $46.7 billion  Reliable power makes high-density urban housing viable, 
+ reduces cement and construction costs, and enables 
+ Private and ConfidentialPage  1 
+ Nigeria Power Sector Infrastructure Report  |   Confidential  |   2025 
+ Sector  Financing 
+ Gap 
+ How Energy Access Unlocks It 
+ property technology platforms that depend on consistent 
+ connectivity. 
+ Cold Chain and 
+ Agri-Logistics 
+ $4.5 billion  Cold storage is entirely electricity-dependent. Nigeria loses 
+ 40 percent of perishable food production annually due to 
+ absence of cold chain infrastructure. Affordable, reliable 
+ power makes refrigerated storage economically viable for 
+ the first time in secondary cities. 
+ Digital Infrastructure  $15 billion  Data centres, fibre repeater stations, and mobile towers all 
+ require stable power. Nigeria's data centre sector cannot 
+ scale to its projected 400 MW requirement without a credible 
+ electricity supply. Energy and digital infrastructure 
+ investment are inseparable. 
+ Transport and 
+ Logistics 
+ $40 billion  Electric freight vehicles, automated port and warehouse 
+ systems, and rail electrification all depend on grid stability. 
+ Logistics cost reduction in Nigeria is materially linked to the 
+ cost and reliability of power for cold storage, warehousing, 
+ and vehicle charging. 
+ Each  of  the  sectors  above  represents  a  standalone  investment  thesis  with  compelling  return 
+ profiles.  They  are  noted  here  not  to  dilute  the  focus  of  this  report,  but  to  establish  the  compounding 
+ logic  of  energy  investment:  a  dollar  deployed  in  Nigerian  power  infrastructure  does  not  earn  a 
+ single-sector return. It earns a cross-sector multiplier. 
+ SECTION 06 
+ Risk Considerations and Mitigants 
+ No  investment  report  on  Nigerian  infrastructure  is  complete  without  an  honest  account  of  the  risks. 
+ The  following  risks  are  material,  well-understood  by  experienced  market  participants,  and 
+ manageable through appropriate deal structuring. 
+ •  Currency  Risk:  Currency  risk  is  the  primary  concern  for  US  dollar  investors.  Naira 
+ depreciation reduces the dollar value of naira-denominated revenues. 
+ •  Mitigant:  Structure  Commercial  and  Industrial  PPAs  in  dollar-equivalent  terms  indexed  to  the 
+ official  exchange  rate,  or  pair  investments  with  dollar-revenue  generating  assets  such  as 
+ export-facing businesses. 
+ Private and ConfidentialPage  1 
+ Nigeria Power Sector Infrastructure Report  |   Confidential  |   2025 
+ •  Counterparty  Risk:  Counterparty  risk  exists  where  government  entities  or  distribution 
+ companies are the off-taker. 
+ •  Mitigant:  Prioritise  creditworthy  private  sector  counterparties  at  entry  stage;  access  World 
+ Bank partial risk guarantees for projects with government off-takers. 
+ •  Regulatory  Risk:  Regulatory  and  policy  risk  remains  despite  improvements.  The  regulatory 
+ environment,  while  materially  better  than  five  years  ago,  can  shift  with  changes  in 
+ administration. 
+ •  Mitigant:  Engage  international  arbitration  clauses  in  all  project  agreements;  partner  with  DFIs 
+ whose participation serves as a political risk deterrent. 
+ •  Execution  Risk:  Operational  execution  risk  in  Nigeria's  environment  requires  experienced 
+ local partners. 
+ •  Mitigant:  Do  not  attempt  to  operate  remotely.  Build  or  partner  with  local  project  management 
+ capability from the outset. 
+ SECTION 07 
+ Conclusion 
+ Nigeria's  power  sector  deficit  is,  at  its  core,  a  capital  deployment  problem.  The  technology  is 
+ available.  The  demand  is  proven  beyond  reasonable  doubt.  The  regulatory  environment  has 
+ undergone  its  most  significant  reform  in  two  decades.  The  returns  available  to  structured  private 
+ capital are among the highest of any infrastructure asset class globally. 
+ What  remains  is  the  architecture  of  the  deal:  identifying  the  right  investment  model  for  the  available 
+ capital,  structuring  agreements  that  appropriately  allocate  risk  between  private  investors  and  public 
+ sector partners, and building the operational track record that unlocks institutional capital at scale. 
+ This  report  is  a  first-principles  framework  for  that  architecture.  It  is  intended  to  be  a  working 
+ document,  not  a  static  study,  and  is  designed  to  support  ongoing  investor  conversations,  deal 
+ origination, and fund formation activity in Nigeria's energy infrastructure market. 
+ For investment enquiries, deal structuring discussions, or fund formation conversations, please contact 
+ the author directly. 
+ Private and ConfidentialPage  1 
+ Nigeria Power Sector Infrastructure Report  |   Confidential  |   2025 
+ Disclaimer 
+ This  report  is  prepared  for  informational  and  discussion  purposes  only.  It  does  not  constitute  investment  advice,  a  solicitation  to 
+ invest,  or  a  guarantee  of  returns.  All  financial  projections  and  return  estimates  are  indicative  and  based  on  comparable  market 
+ data.  Actual  results  may  differ  materially  from  those  projected.  Prospective  investors  should  conduct  their  own  due  diligence  and 
+ consult qualified financial and legal advisors before making any investment decision. 
+ Private and ConfidentialPage  1 

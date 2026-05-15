@@ -1,12 +1,13 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-background: #fafafa;
-  --color-foreground: #111111;
-  --color-muted: #6b6b6b;
-  --color-border: #e5e5e5;
+  --color-background: #fdfcf9;
+  --color-foreground: #1e293b;
+  --color-accent: #d95c2e;
+  --color-muted: #64748b;
+  --color-border: #e2e8f0;
   --color-surface: #ffffff;
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-sans: var(--font-lora), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 body {
@@ -18,8 +19,8 @@ body {
 }
 
 ::selection {
-  background: #111111;
-  color: #ffffff;
+  background: var(--color-accent);
+  color: var(--color-surface);
 }
 
 /* Minimal link underline animation */
@@ -35,7 +36,7 @@ body {
   height: 1px;
   bottom: -2px;
   left: 0;
-  background-color: var(--color-foreground);
+  background-color: var(--color-accent);
   transition: width 0.3s ease;
 }
 
@@ -44,10 +45,10 @@ body {
 }
 
 /* Page load animations */
-@keyframes fade-up {
+@keyframes custom-fade-up {
   0% {
     opacity: 0;
-    transform: translateY(8px);
+    transform: translateY(12px);
   }
   100% {
     opacity: 1;
@@ -56,14 +57,13 @@ body {
 }
 
 .animate-fade-up {
-  opacity: 0;
-  animation: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: custom-fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) both !important;
 }
 
-.delay-100 { animation-delay: 100ms; }
-.delay-200 { animation-delay: 200ms; }
-.delay-300 { animation-delay: 300ms; }
-.delay-400 { animation-delay: 400ms; }
-.delay-500 { animation-delay: 500ms; }
-.delay-600 { animation-delay: 600ms; }
-.delay-700 { animation-delay: 700ms; }
+.delay-100 { animation-delay: 100ms !important; }
+.delay-200 { animation-delay: 200ms !important; }
+.delay-300 { animation-delay: 300ms !important; }
+.delay-400 { animation-delay: 400ms !important; }
+.delay-500 { animation-delay: 500ms !important; }
+.delay-600 { animation-delay: 600ms !important; }
+.delay-700 { animation-delay: 700ms !important; }
