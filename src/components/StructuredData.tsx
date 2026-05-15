@@ -7,14 +7,16 @@ export default function StructuredData() {
     "name": "Tolu Adetuyi",
     "givenName": "Tolu",
     "familyName": "Adetuyi",
-    "jobTitle": "Chief Innovation Officer",
-    "description": "Technology and business leader building trust infrastructure for identity verification, fraud prevention and compliance across Africa.",
+    "jobTitle": "Co-Founder & Chief Innovation Officer",
+    "description": "Co-Founder & Chief Innovation Officer at Prembly, building trust infrastructure that helps businesses combat fraud and stay compliant across emerging markets. Previously led growth at Moniepoint. Active at the intersection of technology, capital, and African economic development.",
+    "image": "https://adetuyi.com/tolu-new.png",
+    "url": "https://adetuyi.com",
     "worksFor": {
       "@type": "Organization",
       "name": "Prembly",
-      "url": "https://prembly.com"
+      "url": "https://prembly.com",
+      "description": "Trust infrastructure company helping businesses combat fraud and stay compliant across emerging markets."
     },
-    "url": "https://adetuyi.com",
     "sameAs": [
       "https://www.linkedin.com/in/adetuyitolu/",
       "https://twitter.com/adetuyitolu",
@@ -39,17 +41,21 @@ export default function StructuredData() {
       "Digital Identity",
       "Identity Verification",
       "Fraud Prevention",
+      "Anti-Money Laundering (AML)",
+      "Know Your Customer (KYC)",
       "Compliance Infrastructure",
+      "Trust Infrastructure",
       "African Financial Systems",
+      "Emerging Markets",
+      "Distribution Infrastructure",
+      "Venture Building",
+      "African Economic Development",
       "Product Strategy",
       "Software Engineering",
       "Business Administration",
       "Finance",
       "Fintech",
-      "Financial Technology",
-      "Payments",
-      "Digital Payments",
-      "Money"
+      "Financial Technology"
     ]
   };
 
@@ -58,7 +64,7 @@ export default function StructuredData() {
     "@type": "WebSite",
     "name": "Tolu Adetuyi",
     "url": "https://adetuyi.com",
-    "description": "Executive profile of Tolu Adetuyi, CIO at Prembly."
+    "description": "Personal site of Tolu Adetuyi — Co-Founder & Chief Innovation Officer at Prembly, building trust infrastructure for identity, fraud prevention and compliance across emerging markets."
   };
 
   return (
