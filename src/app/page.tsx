@@ -218,30 +218,6 @@ export default function Home() {
           </a>
           <div className="border-t border-accent/20" />
           <a
-            href="https://thecondia.com/zero-to-scale-tolu-adetuyi-head-of-growth-at-moniepoint/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex justify-between items-baseline group"
-          >
-            <span className="text-[15px] link-hover">
-              Zero to Scale Interview
-            </span>
-            <span className="text-muted text-[13px]">The Condia</span>
-          </a>
-          <div className="border-t border-accent/20" />
-          <a
-            href="https://vanguardngr.com/ai-is-strongest-ally-in-war-against-financial-fraud-tolu-adetuyi/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex justify-between items-baseline group"
-          >
-            <span className="text-[15px] link-hover">
-              AI Is Strongest Ally in War Against Financial Fraud
-            </span>
-            <span className="text-muted text-[13px]">Vanguard</span>
-          </a>
-          <div className="border-t border-accent/20" />
-          <a
             href="https://techcabal.com/2026/03/10/nigerias-prembly-launches-shared-open-source-database/"
             target="_blank"
             rel="noopener noreferrer"
@@ -262,9 +238,31 @@ export default function Home() {
             <span className="text-[15px] link-hover">
               Digital Identity in the Electronic Wallet Era
             </span>
-            <span className="text-muted text-[13px]">
-              Secure Identity Alliance
+            <span className="text-muted text-[13px]">Secure Identity Alliance</span>
+          </a>
+          <div className="border-t border-accent/20" />
+          <a
+            href="https://vanguardngr.com/ai-is-strongest-ally-in-war-against-financial-fraud-tolu-adetuyi/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex justify-between items-baseline group"
+          >
+            <span className="text-[15px] link-hover">
+              AI Is Strongest Ally in War Against Financial Fraud
             </span>
+            <span className="text-muted text-[13px]">Vanguard</span>
+          </a>
+          <div className="border-t border-accent/20" />
+          <a
+            href="https://thecondia.com/zero-to-scale-tolu-adetuyi-head-of-growth-at-moniepoint/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex justify-between items-baseline group"
+          >
+            <span className="text-[15px] link-hover">
+              Zero to Scale Interview
+            </span>
+            <span className="text-muted text-[13px]">The Condia</span>
           </a>
           <div className="border-t border-accent/20" />
           <a
@@ -281,7 +279,15 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── Bridge ── */}
+      <p className="text-[15px] leading-[1.8] text-muted mb-10">
+        Beyond my work at Prembly, I am quietly building a capital formation vehicle for founders
+        and allocators who understand that Africa&apos;s digital economy cannot outrun its energy
+        deficit. This is not a distraction. It is the next logical layer.
+      </p>
+
       {/* ── Active Investment Thesis ── */}
+
       <section className="mb-16 animate-fade-up delay-700">
         <div className="p-8 bg-accent/5 ring-1 ring-border rounded-xl relative overflow-hidden">
           <div className="absolute top-0 left-0 w-1 h-full bg-accent"></div>
