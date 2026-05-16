@@ -115,7 +115,7 @@ export default function Home() {
               </a>
               <span className="text-muted text-[13px]">Author</span>
             </div>
-            <span className="text-muted/80 text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Global Intelligence Brief</span>
+            <span className="text-muted/80 text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Actionable Global Intelligence Brief</span>
           </div>
         </div>
       </section>
