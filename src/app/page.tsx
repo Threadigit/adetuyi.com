@@ -18,9 +18,10 @@ export default function Home() {
             <h1 className="text-[32px] md:text-[38px] font-medium tracking-tight leading-tight mb-1 text-foreground">
               Tolu Adetuyi
             </h1>
-            <p className="text-[11px] uppercase tracking-[0.18em] text-accent font-medium flex flex-wrap items-center mt-1">
+            <p className="text-[11px] uppercase tracking-[0.18em] text-accent font-medium flex flex-wrap items-center mt-1 gap-y-1">
               <span className="whitespace-nowrap">Innovator <span className="mx-2">·</span></span>
-              <span className="whitespace-nowrap">Venture Architect</span>
+              <span className="whitespace-nowrap">Venture Architect <span className="mx-2">·</span></span>
+              <span className="whitespace-nowrap">Forbes Tech Council &apos;24</span>
             </p>
           </div>
         </div>
@@ -34,6 +35,7 @@ export default function Home() {
           >
             Prembly
           </a>
+          <span className="text-[#f26522] text-[13px] font-medium ml-1">(YC W22)</span>
           . <span className="text-accent font-medium relative inline-block after:absolute after:bottom-[-2px] after:left-0 after:w-full after:h-[1px] after:bg-accent">Building trust infrastructure</span> that helps businesses combat fraud and stay compliant across emerging markets.
         </p>
       </header>
@@ -65,14 +67,17 @@ export default function Home() {
         <div className="space-y-5">
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-0.5">
             <div className="flex flex-wrap items-baseline gap-x-3">
-              <a
-                href="https://prembly.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[15px] font-medium link-hover"
-              >
-                Prembly
-              </a>
+              <span>
+                <a
+                  href="https://prembly.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[15px] font-medium link-hover"
+                >
+                  Prembly
+                </a>
+                <span className="text-[#f26522] text-[13px] font-medium ml-1">(YC W22)</span>
+              </span>
               <span className="text-muted text-[13px]">
                 Co-Founder & CIO
               </span>
