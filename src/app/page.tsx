@@ -338,11 +338,16 @@ export default function Home() {
           Book a session <span className="transition-transform duration-300 group-hover:translate-x-1">↗</span>
         </a>
 
-        {/* Secondary — social links */}
-        <div className="flex flex-wrap items-center gap-x-5 gap-y-3 text-[13px] text-muted border-t border-border/50 pt-6">
-          <a href="https://www.linkedin.com/in/adetuyitolu/" target="_blank" rel="noopener noreferrer" className="link-hover">LinkedIn</a>
-          <a href="https://twitter.com/adetuyitolu" target="_blank" rel="noopener noreferrer" className="link-hover">Twitter</a>
-          <a href="https://instagram.com/adetuyitolu" target="_blank" rel="noopener noreferrer" className="link-hover">Instagram</a>
+        {/* Footer Bottom */}
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-y-5 text-[13px] border-t border-border/50 pt-6">
+          <p className="text-muted max-w-[300px] leading-relaxed">
+            Building infrastructure for economic participation across emerging markets.
+          </p>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-3 text-muted">
+            <a href="https://www.linkedin.com/in/adetuyitolu/" target="_blank" rel="noopener noreferrer" className="link-hover hover:text-foreground transition-colors">LinkedIn</a>
+            <a href="https://twitter.com/adetuyitolu" target="_blank" rel="noopener noreferrer" className="link-hover hover:text-foreground transition-colors">Twitter</a>
+            <a href="https://instagram.com/adetuyitolu" target="_blank" rel="noopener noreferrer" className="link-hover hover:text-foreground transition-colors">Instagram</a>
+          </div>
         </div>
       </footer>
     </main>
