@@ -18,8 +18,9 @@ export default function Home() {
             <h1 className="text-[32px] md:text-[38px] font-medium tracking-tight leading-tight mb-1 text-foreground">
               Tolu Adetuyi
             </h1>
-            <p className="text-[11px] uppercase tracking-[0.18em] text-accent font-medium">
-              Innovator&nbsp;&nbsp;·&nbsp;&nbsp;Venture Architect
+            <p className="text-[11px] uppercase tracking-[0.18em] text-accent font-medium flex flex-wrap items-center mt-1">
+              <span className="whitespace-nowrap">Innovator <span className="mx-2">·</span></span>
+              <span className="whitespace-nowrap">Venture Architect</span>
             </p>
           </div>
         </div>
