@@ -119,6 +119,30 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* ── Core Areas of Focus ── */}
+      <section className="mb-16 animate-fade-up delay-300">
+        <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
+          Core Areas of Focus
+        </h2>
+        <div className="flex flex-wrap gap-2.5">
+          {[
+            "Trust Infrastructure",
+            "Applied AI",
+            "Digital Identity & Compliance",
+            "Cross-Border Financial Systems",
+            "Capital Formation",
+            "Distribution Infrastructure",
+            "African Industrial & Energy Infrastructure",
+            "E-Mobility & Energy Transition",
+            "Human Capital Development",
+            "Emerging Market Economic Systems"
+          ].map((area) => (
+            <span key={area} className="inline-flex items-center px-3 py-1.5 rounded bg-accent/5 border border-accent/10 text-muted text-[13px] leading-none">
+              {area}
+            </span>
+          ))}
+        </div>
+      </section>
 
       {/* ── Featured Video ── */}
       <section className="mb-16 animate-fade-up delay-400">
