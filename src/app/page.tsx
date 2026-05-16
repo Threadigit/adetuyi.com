@@ -41,18 +41,16 @@ export default function Home() {
       <section className="mb-10 animate-fade-up delay-200">
         <p className="text-[15px] leading-[1.8] text-muted">
           I&apos;ve spent the better part of a decade building the identity, compliance, and financial
-          infrastructure layer of Africa&apos;s economic participation stack. Before Prembly, I led
+          infrastructure layers that power economic participation across Africa. Before Prembly, I led
           growth at{" "}
           <a href="https://moniepoint.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">Moniepoint</a>,
-          where I helped build the distribution network that now powers billions of transactions
-          across the continent. What that experience taught me is this: code is never the bottleneck.
-          The real constraint is always the absence of foundational trust and distribution rails.
-          Prembly exists because that infrastructure did not.
+          where I helped build the distribution network that now powers billions of dollars in transactions
+          across Africa. Through that experience, I witnessed firsthand that the greatest barrier to scale was not a lack of technology, but a lack of underlying distribution and trust infrastructure.
         </p>
         <p className="text-[15px] leading-[1.8] text-muted mt-4">
           I hold a first-class degree in Computer Science and an MBA with a concentration in Finance
-          from Morgan State University. I am an active participant at the intersection of technology,
-          capital, and African economic development. I am not done.
+          from Morgan State University. I am an active voice at the intersection of technology,
+          capital, and African economic development.
         </p>
       </section>
 
@@ -64,8 +62,8 @@ export default function Home() {
           Current Work
         </h2>
         <div className="space-y-5">
-          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-0.5">
-            <div>
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-0.5">
+            <div className="flex flex-wrap items-baseline gap-x-3">
               <a
                 href="https://prembly.com/"
                 target="_blank"
@@ -74,16 +72,16 @@ export default function Home() {
               >
                 Prembly
               </a>
-              <span className="text-muted text-[13px] ml-3">
+              <span className="text-muted text-[13px]">
                 Co-Founder & CIO
               </span>
             </div>
-            <span className="text-muted text-[13px] sm:text-right">Identity, Fraud Prevention & Compliance</span>
+            <span className="text-muted/80 text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Identity, Fraud Prevention & Compliance</span>
           </div>
           <div className="border-t border-accent/20" />
 
-          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-0.5">
-            <div>
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-0.5">
+            <div className="flex flex-wrap items-baseline gap-x-3">
               <a
                 href="https://www.chroniclesofinnovation.com"
                 target="_blank"
@@ -92,16 +90,16 @@ export default function Home() {
               >
                 Chronicles of Innovation
               </a>
-              <span className="text-muted text-[13px] ml-3">
+              <span className="text-muted text-[13px]">
                 Executive Curator
               </span>
             </div>
-            <span className="text-muted text-[13px] sm:text-right">Innovation Documentary Series</span>
+            <span className="text-muted/80 text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Innovation Documentary Series</span>
           </div>
           <div className="border-t border-accent/20" />
 
-          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-0.5">
-            <div>
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-0.5">
+            <div className="flex flex-wrap items-baseline gap-x-3">
               <a
                 href="https://zerotoact.com/"
                 target="_blank"
@@ -110,9 +108,9 @@ export default function Home() {
               >
                 ZeroToAct
               </a>
-              <span className="text-muted text-[13px] ml-3">Author</span>
+              <span className="text-muted text-[13px]">Author</span>
             </div>
-            <span className="text-muted text-[13px] sm:text-right">Intelligence Newsletter</span>
+            <span className="text-muted/80 text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Intelligence Brief</span>
           </div>
         </div>
       </section>
