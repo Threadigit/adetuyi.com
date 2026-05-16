@@ -18,9 +18,9 @@ export default function Home() {
             <h1 className="text-[32px] md:text-[38px] font-medium tracking-tight leading-tight mb-1 text-foreground">
               Tolu Adetuyi
             </h1>
-            <p className="text-[11px] uppercase tracking-[0.18em] text-accent font-medium flex flex-wrap items-center mt-1 gap-y-1">
-              <span className="whitespace-nowrap">Innovator <span className="mx-2">·</span></span>
-              <span className="whitespace-nowrap">Venture Architect <span className="mx-2">·</span></span>
+            <p className="text-[11px] uppercase tracking-[0.18em] text-accent font-medium flex flex-wrap items-center mt-1 gap-x-3 gap-y-1.5">
+              <span className="whitespace-nowrap flex items-center gap-3">Innovator <span className="opacity-60 text-[15px] leading-none">·</span></span>
+              <span className="whitespace-nowrap flex items-center gap-3">Venture Architect <span className="opacity-60 text-[15px] leading-none">·</span></span>
               <span className="whitespace-nowrap">Forbes Tech Council &apos;24</span>
             </p>
           </div>
@@ -48,11 +48,10 @@ export default function Home() {
           growth at{" "}
           <a href="https://moniepoint.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">Moniepoint</a>,
           where I helped build the distribution network that now powers billions of dollars in transactions
-          across Africa. Through that experience, I witnessed firsthand that the greatest barrier to scale was not a lack of technology, but a lack of underlying distribution and trust infrastructure.
-        </p>
+          across Africa. Through that experience, I witnessed firsthand that the greatest barrier to scale was not technology itself, but the absence of trusted infrastructure and effective distribution.</p>
         <p className="text-[15px] leading-[1.8] text-muted mt-4">
           I hold a first-class degree in Computer Science and an MBA with a concentration in Finance
-          from Morgan State University. I am an active voice at the intersection of technology,
+          from Morgan State University. My work sits at the intersection of technology,
           capital, and African economic development.
         </p>
       </section>
@@ -287,7 +286,7 @@ export default function Home() {
       <p className="text-[15px] leading-[1.8] text-muted mb-10">
         Beyond my work at Prembly, I am quietly building a capital formation vehicle for founders
         and allocators who understand that Africa&apos;s digital economy cannot outrun its infrastructure
-        deficit. This is not a distraction. It is the next logical layer.
+        deficit.
       </p>
 
       {/* ── Active Investment Thesis ── */}
@@ -305,7 +304,7 @@ export default function Home() {
             Over the past decade, I built and scaled Africa's digital trust infrastructure. Now, I am targeting the physical foundation. The Nigerian energy deficit is not a technical problem; it is a 100 billion dollar capital allocation opportunity.
           </p>
           <p className="text-[15px] text-muted leading-relaxed mb-6">
-            Infrastructure Fund 1 is structured to completely bypass the legacy grid. By deploying private capital into highly efficient commercial power assets with proven demand, we generate resilient, asset backed yield while solving a generational bottleneck. For fellow founders and capital allocators ready to build, I invite you to review the core thesis.
+            Infrastructure Fund 1 is structured to completely bypass the legacy grid. By deploying private capital into highly efficient commercial power assets with proven demand, we generate resilient, asset backed yield while solving a generational bottleneck. Our initial focus is embedded commercial and industrial energy infrastructure with predictable demand, strong cash flow characteristics, and clear expansion pathways across underserved economic clusters. For fellow founders and capital allocators ready to build, I invite you to review the core thesis.
           </p>
           <a
             href="/thesis"
