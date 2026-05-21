@@ -245,6 +245,18 @@ export default function Home() {
           </a>
           <div className="border-t border-accent/20" />
           <a
+            href="https://guardian.ng/news/leadership-innovation-and-industry-impact-the-work-of-tolu-adetuyi-at-prembly/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex justify-between items-baseline gap-4 group"
+          >
+            <span className="text-[15px] link-hover">
+              Leadership, Innovation, and Industry Impact: The Work of Tolu Adetuyi at Prembly
+            </span>
+            <span className="text-muted text-[13px] whitespace-nowrap flex-shrink-0">The Guardian</span>
+          </a>
+          <div className="border-t border-accent/20" />
+          <a
             href="https://techcabal.com/2026/03/10/nigerias-prembly-launches-shared-open-source-database/"
             target="_blank"
             rel="noopener noreferrer"
