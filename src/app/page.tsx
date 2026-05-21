@@ -46,7 +46,7 @@ export default function Home() {
       <section className="mb-10 animate-fade-up delay-200">
         <p className="text-[15px] leading-[1.8] text-muted">
           I&apos;ve spent the better part of a decade building the identity, compliance, and financial
-          infrastructure layers that power economic participation across Africa. Before Prembly, I led
+          infrastructure layers that power economic participation across Africa. Before <a href="https://prembly.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">Prembly</a>, I led
           growth at{" "}
           <a href="https://moniepoint.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">Moniepoint</a>,
           where I helped build the distribution network that now powers billions of dollars in transactions
