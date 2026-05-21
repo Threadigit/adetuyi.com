@@ -58,7 +58,7 @@ export const metadata: Metadata = {
         url: "/tolu-new.png",
         width: 1200,
         height: 1200,
-        alt: "Tolu Adetuyi — Co-Founder & CIO at Prembly",
+        alt: "Tolu Adetuyi, Co-Founder & CIO at Prembly",
       },
     ],
   },

@@ -64,7 +64,7 @@ export default function StructuredData() {
     "@type": "WebSite",
     "name": "Tolu Adetuyi",
     "url": "https://adetuyi.com",
-    "description": "Personal site of Tolu Adetuyi — Co-Founder & Chief Innovation Officer at Prembly, building trust infrastructure for identity, fraud prevention and compliance across emerging markets."
+    "description": "Personal site of Tolu Adetuyi, Co-Founder & Chief Innovation Officer at Prembly, building trust infrastructure for identity, fraud prevention and compliance across emerging markets."
   };
 
   return (

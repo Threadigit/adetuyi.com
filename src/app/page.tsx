@@ -1,3 +1,5 @@
+import { getLatestPosts } from "@/lib/writing";
+
 export default function Home() {
   return (
     <main className="max-w-[680px] mx-auto px-6 py-16 md:py-24">
@@ -160,7 +162,7 @@ export default function Home() {
           />
         </div>
         <p className="text-muted text-[13px] mt-3">
-          Lagos Tech Fest 2023 — Identity verification, compliance, and reducing
+          Lagos Tech Fest 2023: Identity verification, compliance, and reducing
           fraud for African startups.
         </p>
       </section>
@@ -223,6 +225,44 @@ export default function Home() {
             </span>
             <span className="text-muted text-[13px]">ATR Panel · 2023</span>
           </a>
+        </div>
+      </section>
+
+      {/* ── Latest Writing ── */}
+      <section className="mb-16 animate-fade-up delay-600">
+        <div className="flex justify-between items-baseline mb-6">
+          <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3">
+            Latest Writing
+          </h2>
+          <a
+            href="/writing"
+            className="text-[13px] text-muted hover:text-accent transition-colors group flex items-center gap-1.5"
+          >
+            View all <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
+          </a>
+        </div>
+        <div className="space-y-0">
+          {getLatestPosts(3).map((post, index, arr) => (
+            <div key={post.slug}>
+              <a
+                href={`/writing/${post.slug}`}
+                className="group block py-4"
+              >
+                <div className="flex items-center gap-2.5 mb-2">
+                  <span className="text-[11px] uppercase tracking-widest text-accent font-medium">{post.category}</span>
+                </div>
+                <h3 className="text-[15px] font-medium text-foreground tracking-tight leading-snug mb-1.5 group-hover:text-accent transition-colors duration-300">
+                  {post.title}
+                </h3>
+                <p className="text-[13px] leading-relaxed text-muted line-clamp-1">
+                  {post.excerpt}
+                </p>
+              </a>
+              {index < arr.length - 1 && (
+                <div className="border-t border-accent/15" />
+              )}
+            </div>
+          ))}
         </div>
       </section>
 
