@@ -12,7 +12,7 @@ export default function Home() {
               src="/tolu-new.png"
               alt="Tolu Adetuyi"
               className="w-full h-full object-cover object-top transition-all duration-700"
-              style={{filter: "grayscale(20%)"}}
+              style={{ filter: "grayscale(20%)" }}
             />
           </div>
           {/* Name + label */}
@@ -53,7 +53,7 @@ export default function Home() {
           across Africa. Through that experience, I witnessed firsthand that the greatest barrier to scale was not technology itself, but the absence of trusted infrastructure and effective distribution.</p>
         <p className="text-[15px] leading-[1.8] text-muted mt-4">
           I hold a first-class degree in Computer Science and an MBA with a concentration in Finance
-          from Morgan State University. My work sits at the intersection of technology,
+          from Morgan State University,where I graduated as a GSBM Scholar. My work sits at the intersection of technology,
           capital, and African economic development.
         </p>
       </section>
