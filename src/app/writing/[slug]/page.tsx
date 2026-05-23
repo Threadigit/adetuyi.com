@@ -116,6 +116,7 @@ export default async function WritingPost({ params }: PageProps) {
                 year: "numeric",
                 month: "long",
                 day: "numeric",
+                timeZone: "UTC",
               })}
             </time>
             <span className="text-muted/30">·</span>
