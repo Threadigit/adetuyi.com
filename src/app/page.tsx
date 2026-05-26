@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="max-w-[680px] mx-auto px-6 py-16 md:py-24">
       {/* ── Header ── */}
-      <header className="mb-6 animate-fade-up delay-100">
+      <header className="mb-3 animate-fade-up delay-100">
         <div className="flex items-center gap-5 mb-5">
           {/* Avatar */}
           <div className="relative flex-shrink-0 w-[72px] h-[72px] rounded-full overflow-hidden ring-2 ring-accent/20">
@@ -27,7 +27,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <p className="text-muted text-[15px] leading-relaxed max-w-[520px]">
+        <p className="text-foreground font-medium text-[16px] mt-2.5 mb-1.5">
           Co-Founder &amp; Chief Innovation Officer at{" "}
           <a
             href="https://prembly.com/"
@@ -38,20 +38,23 @@ export default function Home() {
             Prembly
           </a>
           <span className="text-[#f26522] text-[13px] font-medium ml-1">(YC W22)</span>
-          . <span className="text-accent font-medium relative inline-block after:absolute after:bottom-[-2px] after:left-0 after:w-full after:h-[1px] after:bg-accent">Building trust infrastructure</span> that helps businesses combat fraud and stay compliant across emerging markets.
+        </p>
+        <p className="text-muted text-[15px] leading-relaxed max-w-[520px]">
+          I build interconnected systems that expand economic participation and infrastructure across emerging markets.
         </p>
       </header>
 
       {/* ── About ── */}
       <section className="mb-10 animate-fade-up delay-200">
         <p className="text-[15px] leading-[1.8] text-muted">
-          I&apos;ve spent the better part of a decade building the identity, compliance, and financial
-          infrastructure layers that power economic participation across Africa. Before <a href="https://prembly.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">Prembly</a>, I led
-          growth at{" "}
+          My work entails gathering and synthesizing global and local intelligence, building strategic relationships, and converting both into ventures, systems, products, partnerships, deals, capital, and institutional leverage. I do this through hands-on venture design, deal structuring, entity architecture, operational systems building, direct investing, and founder development.
+        </p>
+        <p className="text-[15px] leading-[1.8] text-muted mt-3">
+          Over the past decade I have built at the intersection of identity, compliance, financial infrastructure, and capital formation across Africa. At <a href="https://prembly.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">Prembly</a> I am <span className="text-accent font-medium relative inline-block after:absolute after:bottom-[-2px] after:left-0 after:w-full after:h-[1px] after:bg-accent">building the trust infrastructure</span> layer that enables businesses to verify, transact, and grow with confidence. Before <a href="https://prembly.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">Prembly</a>, I led growth at{" "}
           <a href="https://moniepoint.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">Moniepoint</a>,
-          where I helped build the distribution network that now powers billions of dollars in transactions
-          across Africa. Through that experience, I witnessed firsthand that the greatest barrier to scale was not technology itself, but the absence of trusted infrastructure and effective distribution.</p>
-        <p className="text-[15px] leading-[1.8] text-muted mt-4">
+          where I helped build the distribution network that now powers billions of dollars in transactions across Africa. Through that experience, I witnessed firsthand that the greatest barrier to scale was not technology itself, but the absence of trusted infrastructure and effective distribution.
+        </p>
+        <p className="text-[15px] leading-[1.8] text-muted mt-3">
           I hold a first-class degree in Computer Science and an MBA with a concentration in Finance
           from Morgan State University, where I graduated as a GSBM Scholar. My work sits at the intersection of technology,
           capital, and African economic development.
@@ -372,12 +375,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Bridge ── */}
-      <p className="text-[15px] leading-[1.8] text-muted mb-10">
-        Beyond my work at Prembly, I am quietly building a capital formation vehicle for founders
-        and allocators who understand that Africa&apos;s digital economy cannot outrun its physical
-        infrastructure deficit.
-      </p>
 
       {/* ── Active Investment Thesis ── */}
 
@@ -391,7 +388,7 @@ export default function Home() {
             Powering Nigeria: Infrastructure Fund 1
           </h3>
           <p className="text-[15px] text-muted leading-relaxed mb-4">
-            Over the past decade, I built and scaled Africa's digital trust infrastructure. Now, I am targeting the physical foundation. The Nigerian energy deficit is not a technical problem; it is a 100 billion dollar capital allocation opportunity.
+            Over the past decade, I built and scaled Africa's digital trust infrastructure. Now, I am targeting the physical foundation, building this fund for those who believe that Africa's digital economy cannot outrun its physical infrastructure deficit. The energy bottleneck is a 100 billion dollar capital allocation opportunity.
           </p>
           <p className="text-[15px] text-muted leading-relaxed mb-6">
             Infrastructure Fund 1 is structured to completely bypass the legacy grid. By deploying private capital into highly efficient commercial power assets with proven demand, we generate resilient, asset backed yield while solving a generational bottleneck. Our initial focus is embedded commercial and industrial energy infrastructure with predictable demand, strong cash flow characteristics, and clear expansion pathways across underserved economic clusters. For fellow founders and capital allocators ready to build, I invite you to review the core thesis.
@@ -430,8 +427,8 @@ export default function Home() {
 
         {/* Footer Bottom */}
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-y-5 text-[13px] border-t border-border/50 pt-6">
-          <p className="text-muted max-w-[300px] leading-relaxed">
-            Building infrastructure for economic participation across emerging markets.
+          <p className="text-muted max-w-[360px] leading-relaxed">
+            Building interconnected systems that expand economic participation and infrastructure across emerging markets.
           </p>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-3 text-muted">
             <a href="https://www.linkedin.com/in/adetuyitolu/" target="_blank" rel="noopener noreferrer" className="link-hover hover:text-foreground transition-colors">LinkedIn</a>
