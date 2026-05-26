@@ -75,7 +75,7 @@ function renderBlock(block: ContentBlock, index: number) {
       return (
         <blockquote
           key={index}
-          className="my-8 pl-6 border-l-[3px] border-accent text-[17px] md:text-[18px] italic text-foreground/80 leading-relaxed"
+          className="my-8 pl-6 border-l-[3px] border-accent text-[15px] md:text-[16px] italic text-foreground/80 leading-relaxed whitespace-pre-line"
         >
           {block.text}
         </blockquote>

@@ -37,6 +37,10 @@ const posts: Post[] = [
         text: "Four things shaped how I think about building. Not as neat chapters but as lenses, each adding something the last could not give you on its own."
       },
       {
+        type: "quote",
+        text: "Engineering: How systems work, and how to build.\nProduct: What people need, and what to build.\nVenture: How markets move, and how to commercialize.\nInstitution: How societies scale, and how to make ventures endure."
+      },
+      {
         type: "paragraph",
         text: "Engineering taught me that systems do not care about your narrative. The architecture works or it crashes. That discipline follows you everywhere and makes you allergic to strategies that only hold up in a pitch deck."
       },
