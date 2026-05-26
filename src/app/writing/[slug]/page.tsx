@@ -26,11 +26,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       type: "article",
       publishedTime: post.date,
       authors: ["Tolu Adetuyi"],
+      images: [
+        {
+          url: "/tolu-new.png",
+          width: 1200,
+          height: 1200,
+          alt: post.title,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: post.title,
       description: post.excerpt,
+      images: ["/tolu-new.png"],
     },
   };
 }
