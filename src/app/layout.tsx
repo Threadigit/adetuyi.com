@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | Tolu Adetuyi",
   },
   description:
-    "Tolu Adetuyi is the Co-Founder & Chief Innovation Officer at Prembly, building trust infrastructure that helps businesses combat fraud and stay compliant across emerging markets. Previously led growth at Moniepoint.",
+    "Tolu Adetuyi is the Co-Founder & Chief Innovation Officer at Prembly. I build interconnected systems that expand economic participation and infrastructure across emerging markets. Over the past decade, I have built at the intersection of identity, compliance, financial infrastructure, and capital formation across Africa.",
   keywords: [
     "Tolu Adetuyi",
     "Adetuyi",
@@ -42,6 +42,17 @@ export const metadata: Metadata = {
     "ZeroToAct",
     "Morgan State University",
     "distribution infrastructure",
+    "venture design",
+    "deal structuring",
+    "capital formation",
+    "physical infrastructure",
+    "energy deficit",
+    "product",
+    "product management",
+    "product strategy",
+    "artificial intelligence",
+    "AI",
+    "applied AI",
   ],
   authors: [{ name: "Tolu Adetuyi", url: "https://adetuyi.com" }],
   creator: "Tolu Adetuyi",
@@ -52,7 +63,7 @@ export const metadata: Metadata = {
     siteName: "Tolu Adetuyi",
     title: "Tolu Adetuyi | Co-Founder, Prembly · Innovator & Venture Architect",
     description:
-      "Co-Founder & Chief Innovation Officer at Prembly. Building trust infrastructure that helps businesses combat fraud and stay compliant across emerging markets.",
+      "Co-Founder & Chief Innovation Officer at Prembly. Building interconnected systems that expand economic participation and infrastructure across emerging markets.",
     images: [
       {
         url: "/tolu-new.png",
@@ -66,7 +77,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Tolu Adetuyi | Co-Founder, Prembly · Innovator & Venture Architect",
     description:
-      "Co-Founder & CIO at Prembly. Building trust infrastructure for identity, fraud prevention & compliance across emerging markets.",
+      "Co-Founder & CIO at Prembly. Building interconnected systems that expand economic participation and infrastructure across emerging markets.",
     creator: "@adetuyitolu",
     images: ["/tolu-new.png"],
   },

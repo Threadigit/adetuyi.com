@@ -8,7 +8,7 @@ export default function StructuredData() {
     "givenName": "Tolu",
     "familyName": "Adetuyi",
     "jobTitle": "Co-Founder & Chief Innovation Officer",
-    "description": "Co-Founder & Chief Innovation Officer at Prembly, building trust infrastructure that helps businesses combat fraud and stay compliant across emerging markets. Previously led growth at Moniepoint. Active at the intersection of technology, capital, and African economic development.",
+    "description": "Co-Founder & Chief Innovation Officer at Prembly. Building interconnected systems that expand economic participation and infrastructure across emerging markets. Active at the intersection of technology, capital, and emerging market development.",
     "image": "https://adetuyi.com/tolu-new.png",
     "url": "https://adetuyi.com",
     "worksFor": {
@@ -41,6 +41,8 @@ export default function StructuredData() {
       "Digital Identity",
       "Identity Verification",
       "Fraud Prevention",
+      "Artificial Intelligence",
+      "Applied AI",
       "Anti-Money Laundering (AML)",
       "Know Your Customer (KYC)",
       "Compliance Infrastructure",
@@ -51,11 +53,18 @@ export default function StructuredData() {
       "Venture Building",
       "African Economic Development",
       "Product Strategy",
+      "Product Management",
+      "Product Design",
       "Software Engineering",
       "Business Administration",
       "Finance",
       "Fintech",
-      "Financial Technology"
+      "Financial Technology",
+      "Venture Design",
+      "Deal Structuring",
+      "Capital Formation",
+      "Physical Infrastructure",
+      "Energy Infrastructure"
     ]
   };
 
@@ -64,7 +73,7 @@ export default function StructuredData() {
     "@type": "WebSite",
     "name": "Tolu Adetuyi",
     "url": "https://adetuyi.com",
-    "description": "Personal site of Tolu Adetuyi, Co-Founder & Chief Innovation Officer at Prembly, building trust infrastructure for identity, fraud prevention and compliance across emerging markets."
+    "description": "Personal site of Tolu Adetuyi, Co-Founder & Chief Innovation Officer at Prembly. Building interconnected systems that expand economic participation and infrastructure across emerging markets."
   };
 
   return (
