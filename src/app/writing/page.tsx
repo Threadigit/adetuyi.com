@@ -12,6 +12,9 @@ export const metadata: Metadata = {
       "Essays on trust infrastructure, leadership, venture building, distribution, capital formation, and building across emerging markets.",
     url: "https://adetuyi.com/writing",
   },
+  alternates: {
+    canonical: "https://adetuyi.com/writing",
+  },
 };
 
 export default function WritingPage() {

@@ -4,6 +4,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Powering Nigeria: Infrastructure Fund 1 | Tolu Adetuyi",
   description: "A manifesto for solving Nigeria's power infrastructure deficit.",
+  alternates: {
+    canonical: "https://adetuyi.com/thesis",
+  },
 };
 
 export default function ThesisPage() {

@@ -19,6 +19,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: post.title,
     description: post.excerpt,
+    alternates: {
+      canonical: `https://adetuyi.com/writing/${post.slug}`,
+    },
     openGraph: {
       title: `${post.title} | Tolu Adetuyi`,
       description: post.excerpt,
