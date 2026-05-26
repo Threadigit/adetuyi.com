@@ -20,6 +20,49 @@ export interface Post {
 
 const posts: Post[] = [
   {
+    slug: "from-code-to-bedrock",
+    title: "From Code to Bedrock",
+    excerpt:
+      "Looking back at the arc of building, each phase—Engineering, Product, Venture, and Institution—has a distinct logic and adds a critical lens that the previous one could not provide alone.",
+    date: "2026-05-26",
+    category: "Venture Building",
+    readingTime: "2 min read",
+    content: [
+      {
+        type: "paragraph",
+        text: "I did not plan the arc. Looking back at it now, though, each phase had a logic I could not have articulated while I was inside it."
+      },
+      {
+        type: "paragraph",
+        text: "Four things shaped how I think about building. Not as neat chapters but as lenses, each adding something the last could not give you on its own."
+      },
+      {
+        type: "paragraph",
+        text: "Engineering taught me that systems do not care about your narrative. The architecture works or it crashes. That discipline follows you everywhere and makes you allergic to strategies that only hold up in a pitch deck."
+      },
+      {
+        type: "paragraph",
+        text: "Product was humbling. A clean codebase nobody uses is just expensive art. Moving from engineering into product forced me to stop being in love with what I built and start paying attention to what people were actually trying to do before I showed up. The whole job is translation."
+      },
+      {
+        type: "paragraph",
+        text: "Venture taught me that building something people need is table stakes. You still have to get it to them faster than someone else does, with enough capital efficiency that the engine does not stall before it has momentum. Product superiority alone does not win markets. Distribution does. Speed does. And the window where those advantages compound is shorter than you want it to be."
+      },
+      {
+        type: "paragraph",
+        text: "Institution is where the tension lives for me right now. I have not left venture thinking behind. I am still deeply inside it, competing for market share, watching unit economics, moving fast. But running alongside that, sometimes uncomfortably so, is a different frame entirely: that what we are building at Prembly is not just a company in a market but infrastructure the market depends on. Both are true at the same time and they pull in different directions. Venture wants speed and agility. Institution wants permanence and standards. Navigating that tension without losing either is the hardest thing I have done as a builder."
+      },
+      {
+        type: "paragraph",
+        text: "At this layer the moat is not your code or your growth rate. It is becoming the default rail that everyone else builds on top of."
+      },
+      {
+        type: "paragraph",
+        text: "Each phase teaches you something the previous one cannot. The only way to see the next layer is to go fully through the one you are in."
+      }
+    ]
+  },
+  {
     slug: "the-5am-internal-sandbox",
     title: "The 5 AM Internal Sandbox, Architecture, Debate, and the Paradox of Action",
     excerpt:
