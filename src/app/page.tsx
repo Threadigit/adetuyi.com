@@ -39,7 +39,7 @@ export default function Home() {
           </a>
           <span className="text-[#f26522] text-[13px] font-medium ml-1">(YC W22)</span>
         </p>
-        <p className="text-muted text-[15px] leading-relaxed max-w-[520px]">
+        <p className="text-muted text-[15px] leading-relaxed max-w-[640px]">
           I build interconnected systems that expand economic participation and infrastructure across emerging markets.
         </p>
       </header>
