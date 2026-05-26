@@ -47,7 +47,7 @@ export default function Home() {
       {/* ── About ── */}
       <section className="mb-10 animate-fade-up delay-200">
         <p className="text-[15px] leading-[1.8] text-muted">
-          My work entails gathering and synthesizing global and local intelligence, building strategic relationships, and converting both into ventures, systems, products, partnerships, deals, capital, and institutional leverage. I do this through hands-on venture design, deal structuring, entity architecture, operational systems building, direct investing, and founder development.
+          My work entails gathering and synthesizing global and local intelligence, building strategic relationships, and converting both into tangible products, scalable ventures, high-value deals, and institutional leverage. I do this through hands-on venture design, deal structuring, entity architecture, operational systems building, direct investing, and founder development.
         </p>
         <p className="text-[15px] leading-[1.8] text-muted mt-3">
           Over the past decade I have built at the intersection of identity, compliance, financial infrastructure, and capital formation across Africa. At <a href="https://prembly.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">Prembly</a> I am <span className="text-accent font-medium relative inline-block after:absolute after:bottom-[-2px] after:left-0 after:w-full after:h-[1px] after:bg-accent">building the trust infrastructure</span> layer that enables businesses to verify, transact, and grow with confidence. Before <a href="https://prembly.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">Prembly</a>, I led growth at{" "}
