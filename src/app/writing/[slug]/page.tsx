@@ -53,7 +53,7 @@ function renderBlock(block: ContentBlock, index: number) {
       return (
         <p
           key={index}
-          className={`text-[15px] leading-[1.85] text-muted mb-6 ${
+          className={`text-[15px] leading-[1.85] text-muted mb-5 ${
             index === 0
               ? "first-letter:text-[48px] first-letter:font-bold first-letter:text-foreground first-letter:mr-3 first-letter:float-left first-letter:leading-[0.8]"
               : ""
@@ -65,7 +65,7 @@ function renderBlock(block: ContentBlock, index: number) {
       return (
         <h3
           key={index}
-          className="text-[18px] font-medium text-foreground mt-10 mb-4 tracking-tight"
+          className="text-[18px] font-medium text-foreground mt-8 mb-3 tracking-tight"
           dangerouslySetInnerHTML={{ __html: block.text }}
         />
       );
@@ -73,7 +73,7 @@ function renderBlock(block: ContentBlock, index: number) {
       return (
         <blockquote
           key={index}
-          className="my-8 pl-6 border-l-[3px] border-accent text-[15px] md:text-[16px] italic text-foreground/80 leading-relaxed whitespace-pre-line"
+          className="my-6 pl-6 border-l-[3px] border-accent text-[15px] md:text-[16px] italic text-foreground/80 leading-relaxed whitespace-pre-line"
           dangerouslySetInnerHTML={{ __html: block.text }}
         />
       );
@@ -81,13 +81,13 @@ function renderBlock(block: ContentBlock, index: number) {
       return (
         <div
           key={index}
-          className="my-8 p-6 bg-accent/5 ring-1 ring-border rounded-xl text-[14px] leading-relaxed text-muted"
+          className="my-6 p-6 bg-accent/5 ring-1 ring-border rounded-xl text-[14px] leading-relaxed text-muted"
           dangerouslySetInnerHTML={{ __html: block.text }}
         />
       );
     case "image":
       return (
-        <figure key={index} className="my-10">
+        <figure key={index} className="my-8">
           <img src={block.url} alt={block.alt} className="w-full rounded-xl border border-border" />
           {block.caption && (
             <figcaption className="text-center text-[13px] text-muted mt-3">
