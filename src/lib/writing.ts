@@ -2,7 +2,8 @@ export type ContentBlock =
   | { type: "paragraph"; text: string }
   | { type: "heading"; text: string }
   | { type: "quote"; text: string }
-  | { type: "callout"; text: string };
+  | { type: "callout"; text: string }
+  | { type: "image"; url: string; alt: string; caption?: string };
 
 export interface Post {
   slug: string;
@@ -19,6 +20,34 @@ export interface Post {
 // They'll appear in reverse-chronological order automatically.
 
 const posts: Post[] = [
+  {
+    slug: "the-closed-loop-trust-system",
+    title: "The Closed-Loop Trust System",
+    excerpt:
+      "Most fintech compliance systems are built backwards. Financial trust does not work in isolated steps. It works as an interconnected system.",
+    date: "2026-05-29",
+    category: "Trust Infrastructure",
+    readingTime: "4 min read",
+    content: [
+      { type: "paragraph", text: "Most fintech compliance systems are built backwards. They start with verification, then add monitoring, then patch fraud response when something breaks. But in reality, financial trust does not work in steps. It works as a system." },
+      { type: "paragraph", text: "When you treat compliance as a checklist, you inevitably leave gaps. Bad actors do not exploit the rules. They exploit the spaces between the rules. If your verification system does not talk to your transaction monitoring, and your transaction monitoring does not talk to your escalation workflows, you are not managing risk. You are just reacting to it." },
+      { type: "image", url: "/closed-loop-trust-system.jpg", alt: "The Closed-Loop Trust System diagram", caption: "Five questions every serious fintech should constantly ask about their customers." },
+      { type: "paragraph", text: "The real question every serious fintech should be asking is simple. What do we need to continuously understand about this customer to stay ahead of risk? That breaks down into five ongoing questions." },
+      { type: "heading", text: "Who is this customer?" },
+      { type: "paragraph", text: "Identity and verification form the absolute foundation of trust. Without a definitive answer to who is accessing your platform, everything built on top of that relationship is structurally compromised." },
+      { type: "heading", text: "Is anything suspicious about this customer?" },
+      { type: "paragraph", text: "This is early risk detection across fraud, AML, and sanctions signals. It is not enough to verify an identity once. The environment changes, watchlists update, and new patterns emerge. Detection must begin the moment the relationship starts." },
+      { type: "heading", text: "What is happening through this customer's activities?" },
+      { type: "paragraph", text: "Behavioral and transaction level monitoring must happen in real time. Static profiles are useless against dynamic threats. Understanding normal behavior is the only reliable way to flag anomalous activity." },
+      { type: "heading", text: "If something goes wrong, what do we do?" },
+      { type: "paragraph", text: "Detection without action is just expensive surveillance. You need clear decisioning, escalation, case management, and enforcement workflows. When a signal trips, the system must either stop the threat automatically or route it to the right human instantly." },
+      { type: "heading", text: "What have we learned over time?" },
+      { type: "paragraph", text: "Analytics and feedback loops are what turn a static defense into an adapting intelligence. Every incident, false positive, and verified threat must feed back into the system to improve the next decision." },
+      { type: "quote", text: "This is not a checklist. It is a closed-loop system of trust." },
+      { type: "paragraph", text: "At <a href='https://prembly.com/' target='_blank' rel='noopener noreferrer' className='text-foreground link-hover font-medium'>Prembly</a>, this is how we think about modern compliance infrastructure. Not as isolated tools, but as connected layers that continuously identify, detect, respond, and learn." },
+      { type: "paragraph", text: "Because in fast growing markets like emerging economies, fraud does not wait for periodic reviews. It adapts in real time. The systems that survive are not the ones that verify customers the fastest. They are the ones that understand customers continuously." }
+    ]
+  },
   {
     slug: "from-code-to-bedrock",
     title: "From Code to Bedrock",

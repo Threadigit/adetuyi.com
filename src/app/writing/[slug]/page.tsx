@@ -85,6 +85,17 @@ function renderBlock(block: ContentBlock, index: number) {
           dangerouslySetInnerHTML={{ __html: block.text }}
         />
       );
+    case "image":
+      return (
+        <figure key={index} className="my-10">
+          <img src={block.url} alt={block.alt} className="w-full rounded-xl border border-border" />
+          {block.caption && (
+            <figcaption className="text-center text-[13px] text-muted mt-3">
+              {block.caption}
+            </figcaption>
+          )}
+        </figure>
+      );
     default:
       return null;
   }
