@@ -38,7 +38,7 @@ export default function ThesisPage() {
 
         <div className="prose prose-slate prose-p:leading-relaxed prose-p:text-[15px] prose-p:text-muted prose-strong:text-foreground prose-strong:font-medium prose-a:text-accent prose-a:no-underline hover:prose-a:underline max-w-none">
           <p className="first-letter:text-[48px] first-letter:font-bold first-letter:text-foreground first-letter:mr-3 first-letter:float-left first-letter:leading-[0.8]">
-            Over the past decade, I have dedicated my career to building Africa's digital infrastructure. From scaling financial agency networks at Moniepoint to establishing identity trust layers at Prembly, we have proven that complex, continental scale problems can be solved with the right combination of technology, capital, and relentless execution.
+            Over the past decade, I have dedicated my career to building Africa's digital infrastructure. From scaling financial agency networks at Moniepoint to establishing identity trust layers at <a href="https://prembly.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">Prembly</a>, we have proven that complex, continental scale problems can be solved with the right combination of technology, capital, and relentless execution.
           </p>
           <p>
             However, we have reached an inflection point. The digital economy we have painstakingly built rests atop a fragile physical foundation. The energy deficit in Nigeria is not merely an inconvenience; it is the single largest bottleneck to continental GDP growth, technological advancement, and human flourishing. It represents a 100 billion dollar unmet infrastructure need.

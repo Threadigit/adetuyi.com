@@ -54,7 +54,7 @@ const posts: Post[] = [
       },
       {
         type: "paragraph",
-        text: "Institution is where the tension lives for me right now. I have not left venture thinking behind. I am still deeply inside it, competing for market share, watching unit economics, moving fast. But running alongside that, sometimes uncomfortably so, is a different frame entirely: that what we are building at Prembly is not just a company in a market but infrastructure the market depends on. Both are true at the same time and they pull in different directions. Venture wants speed and agility. Institution wants permanence and standards. Navigating that tension without losing either is the hardest thing I have done as a builder."
+        text: "Institution is where the tension lives for me right now. I have not left venture thinking behind. I am still deeply inside it, competing for market share, watching unit economics, moving fast. But running alongside that, sometimes uncomfortably so, is a different frame entirely: that what we are building at <a href='https://prembly.com/' target='_blank' rel='noopener noreferrer' className='text-foreground link-hover font-medium'>Prembly</a> is not just a company in a market but infrastructure the market depends on. Both are true at the same time and they pull in different directions. Venture wants speed and agility. Institution wants permanence and standards. Navigating that tension without losing either is the hardest thing I have done as a builder."
       },
       {
         type: "paragraph",
@@ -305,7 +305,7 @@ const posts: Post[] = [
       { type: "heading", text: "The Foundational Layer" },
       { type: "paragraph", text: "Every fintech company, from neobanks to crypto exchanges to lending platforms, must solve these trust problems before it can deliver its core product." },
       { type: "quote", text: "This is why trust infrastructure companies are not just service providers. We are the foundational layer enabling Africa's entire digital economy." },
-      { type: "paragraph", text: "Identity verification, fraud detection, payment rails, AI-powered risk systems. These are the building blocks. At Prembly, we are not building a feature. We are building the layer that every other company in the ecosystem needs to exist." },
+      { type: "paragraph", text: "Identity verification, fraud detection, payment rails, AI-powered risk systems. These are the building blocks. At <a href='https://prembly.com/' target='_blank' rel='noopener noreferrer' className='text-foreground link-hover font-medium'>Prembly</a>, we are not building a feature. We are building the layer that every other company in the ecosystem needs to exist." },
     ],
   },
   {
@@ -358,12 +358,12 @@ const posts: Post[] = [
       { type: "paragraph", text: "Regulators across Nigeria, Kenya, Ghana, and South Africa are no longer asking \"can you move money?\" They are asking \"can you prove this money is legitimate?\" The Central Bank of Nigeria's enhanced AML directives, Kenya's updated KYC frameworks, and South Africa's FICA amendments all point to the same conclusion: compliance is no longer a cost center. It is the product." },
       { type: "heading", text: "The Compliance Paradox" },
       { type: "paragraph", text: "Here is the paradox most founders miss: the harder you make it to onboard bad actors, the easier it becomes to scale. Every fintech that has hit regulatory trouble in the last three years did so not because their technology failed, but because their trust infrastructure was an afterthought. They optimized for growth and treated compliance as a checkbox." },
-      { type: "paragraph", text: "At Prembly, we have seen this pattern repeat across hundreds of integrations. The companies that invest in real-time identity verification, continuous transaction monitoring, and automated regulatory reporting do not just avoid fines. They grow faster. Their conversion rates are higher because legitimate users complete onboarding. Their churn is lower because they are not constantly dealing with fraud-related account freezes." },
+      { type: "paragraph", text: "At <a href='https://prembly.com/' target='_blank' rel='noopener noreferrer' className='text-foreground link-hover font-medium'>Prembly</a>, we have seen this pattern repeat across hundreds of integrations. The companies that invest in real-time identity verification, continuous transaction monitoring, and automated regulatory reporting do not just avoid fines. They grow faster. Their conversion rates are higher because legitimate users complete onboarding. Their churn is lower because they are not constantly dealing with fraud-related account freezes." },
       { type: "heading", text: "What Trust Infrastructure Actually Means" },
       { type: "paragraph", text: "Trust infrastructure is not a single API call. It is a layered system that answers three questions simultaneously: Is this person who they claim to be? Is this transaction consistent with known patterns? And does this activity comply with the regulatory framework of every jurisdiction it touches?" },
       { type: "paragraph", text: "Building this requires stitching together identity databases across fragmented government systems, training models on transaction patterns unique to African commerce, and maintaining regulatory mapping across 54 different legal frameworks. It is unglamorous, deeply technical work. And it is precisely why it constitutes a moat." },
       { type: "quote", text: "The companies that will dominate African fintech in the next decade will not be the ones that move money the fastest. They will be the ones that can prove, in real time, across borders, that the money is clean." },
-      { type: "paragraph", text: "This is the thesis we are executing at Prembly. Not because compliance is interesting (it rarely is), but because it is the foundation upon which every other layer of the digital economy depends. You cannot build a payments company, a lending platform, or an insurance product without first solving trust. Everything else is a feature. Trust is the infrastructure." },
+      { type: "paragraph", text: "This is the thesis we are executing at <a href='https://prembly.com/' target='_blank' rel='noopener noreferrer' className='text-foreground link-hover font-medium'>Prembly</a>. Not because compliance is interesting (it rarely is), but because it is the foundation upon which every other layer of the digital economy depends. You cannot build a payments company, a lending platform, or an insurance product without first solving trust. Everything else is a feature. Trust is the infrastructure." },
     ],
   },
   {
@@ -384,7 +384,7 @@ const posts: Post[] = [
       { type: "heading", text: "Distribution as a Competitive Moat" },
       { type: "paragraph", text: "What most people miss is that distribution networks, once built, become extraordinarily defensible. They are expensive to replicate, deeply embedded in local trust relationships, and they compound over time. Every agent you add makes the network more valuable for every other agent." },
       { type: "quote", text: "The greatest barrier to scale in Africa is not technology. It has never been technology. It is the absence of trusted distribution infrastructure that connects innovation to the people who need it most." },
-      { type: "paragraph", text: "This insight now drives everything I do. At Prembly, we are building the trust layer that enables other companies to distribute safely. Because without verified identity and compliance at the last mile, distribution networks become vectors for fraud rather than engines for inclusion." },
+      { type: "paragraph", text: "This insight now drives everything I do. At <a href='https://prembly.com/' target='_blank' rel='noopener noreferrer' className='text-foreground link-hover font-medium'>Prembly</a>, we are building the trust layer that enables other companies to distribute safely. Because without verified identity and compliance at the last mile, distribution networks become vectors for fraud rather than engines for inclusion." },
       { type: "paragraph", text: "If you are building in Africa and you have not yet developed a clear distribution thesis, you are not building a company. You are building a demo." },
     ],
   },

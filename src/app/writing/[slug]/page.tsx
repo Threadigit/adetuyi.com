@@ -58,36 +58,32 @@ function renderBlock(block: ContentBlock, index: number) {
               ? "first-letter:text-[48px] first-letter:font-bold first-letter:text-foreground first-letter:mr-3 first-letter:float-left first-letter:leading-[0.8]"
               : ""
           }`}
-        >
-          {block.text}
-        </p>
+          dangerouslySetInnerHTML={{ __html: block.text }}
+        />
       );
     case "heading":
       return (
         <h3
           key={index}
           className="text-[18px] font-medium text-foreground mt-10 mb-4 tracking-tight"
-        >
-          {block.text}
-        </h3>
+          dangerouslySetInnerHTML={{ __html: block.text }}
+        />
       );
     case "quote":
       return (
         <blockquote
           key={index}
           className="my-8 pl-6 border-l-[3px] border-accent text-[15px] md:text-[16px] italic text-foreground/80 leading-relaxed whitespace-pre-line"
-        >
-          {block.text}
-        </blockquote>
+          dangerouslySetInnerHTML={{ __html: block.text }}
+        />
       );
     case "callout":
       return (
         <div
           key={index}
           className="my-8 p-6 bg-accent/5 ring-1 ring-border rounded-xl text-[14px] leading-relaxed text-muted"
-        >
-          {block.text}
-        </div>
+          dangerouslySetInnerHTML={{ __html: block.text }}
+        />
       );
     default:
       return null;
