@@ -3,7 +3,8 @@ export type ContentBlock =
   | { type: "heading"; text: string }
   | { type: "quote"; text: string }
   | { type: "callout"; text: string }
-  | { type: "image"; url: string; alt: string; caption?: string };
+  | { type: "image"; url: string; alt: string; caption?: string }
+  | { type: "youtube"; videoId: string };
 
 export interface Post {
   slug: string;
@@ -20,6 +21,36 @@ export interface Post {
 // They'll appear in reverse-chronological order automatically.
 
 const posts: Post[] = [
+  {
+    slug: "actuators-and-mitigators",
+    title: "Every System Fails the Same Way",
+    excerpt:
+      "When designing any system like a product, a process, or a deal, you must map it across two forces. Actuators create velocity, while mitigators protect equilibrium. Most systems are built with only one, and that is where the failure lives.",
+    date: "2026-05-31",
+    category: "Execution",
+    readingTime: "4 min read",
+    content: [
+      { type: "paragraph", text: "Just yesterday, I stumbled on a short documentary about how the electrical grid is being rebuilt to handle the immense power demands of AI and data centers. When you spend your time thinking about infrastructure, specifically how trust layers scale, how money should move across borders, or how to solve the infrastructure deficit we have in emerging markets, these systems stop being mere utilities and start looking like the clearest case studies in balance you will ever find." },
+      { type: "paragraph", text: "An electric grid is one of the most finely engineered systems humans have built. Generation and demand have to match in real time, or the whole thing destabilizes. When demand overwhelms capacity, frequency drops, voltage turns erratic, and if nothing intervenes, the grid collapses. Not slowly. Fast." },
+      { type: "paragraph", text: "The engineers solved this not by building bigger power plants, but by introducing something called a synchronous compensator. It does not generate power. It does not consume it. It absorbs excess reactive power when the grid is overloaded and releases it when the system dips. It exists purely to hold the structure together while everything else swings." },
+      { type: "paragraph", text: "That device is a mitigator. If you care enough to know what sparked this writing, you can watch the documentary below." },
+      { type: "youtube", videoId: "8KOYyfZbPzo" },
+      { type: "heading", text: "Actuators and Mitigators" },
+      { type: "paragraph", text: "Whenever I design anything, whether it is a product, a process, or a deal, I map it across two fundamental forces." },
+      { type: "paragraph", text: "<strong>Actuators</strong> are what make a system move. Transaction flows, growth incentives, demand signals. They create velocity. Builders love actuators because they are visible, measurable, and look fantastic in a pitch deck." },
+      { type: "paragraph", text: "<strong>Mitigators</strong> are what keep a system from destroying itself. Compliance frameworks, feedback loops, governance, the honest conversation nobody wants to have during a record quarter. They do not generate output. They protect the conditions that make output sustainable." },
+      { type: "paragraph", text: "Most systems are built with one and not the other. That is where the failure lives." },
+      { type: "heading", text: "The Trap of Imbalance" },
+      { type: "paragraph", text: "A system with actuators but no mitigators moves fast until the load hits. I watched a fintech scale onboarding aggressively, raise a strong round, then spend the following eighteen months retrofitting fraud controls they should have built from day one. The product survived. Barely. It is the exact business equivalent of running a grid without a synchronous compensator. Everything looks fine until peak demand arrives." },
+      { type: "paragraph", text: "Conversely, a system with mitigators but no actuators does not collapse. It ossifies. Every decision needs approval. Every transaction gets frozen. It becomes technically alive, but practically useless." },
+      { type: "quote", text: "The design question is never speed versus safety. It is always whether your actuators and mitigators are in proportion." },
+      { type: "paragraph", text: "In corporate settings, people call this scenario mapping or risk management. I call it the only honest way to build anything meant to last." },
+      { type: "heading", text: "Resilience over Perfection" },
+      { type: "paragraph", text: "This does not mean things will not go wrong. It means the probability of catastrophic failure drops significantly. The grid still experiences faults. The synchronous compensator does not prevent every outage. What it does is give the system enough stability to absorb a shock and recover, rather than cascade into a full blackout." },
+      { type: "paragraph", text: "That is the goal. Not a perfect system. A resilient one." },
+      { type: "quote", text: "Before you scale, map the actuators driving your velocity and the mitigators protecting your equilibrium. That answer will tell you more about your future than your growth metrics ever will." }
+    ]
+  },
   {
     slug: "the-closed-loop-trust-system",
     title: "The Closed-Loop Trust System",

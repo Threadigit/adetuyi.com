@@ -96,6 +96,20 @@ function renderBlock(block: ContentBlock, index: number) {
           )}
         </figure>
       );
+    case "youtube":
+      return (
+        <div key={index} className="my-8 aspect-video rounded-xl overflow-hidden border border-border">
+          <iframe
+            width="100%"
+            height="100%"
+            src={`https://www.youtube.com/embed/${block.videoId}`}
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+      );
     default:
       return null;
   }
