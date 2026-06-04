@@ -103,11 +103,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <StructuredData />
       </head>
-      <body className={`${lora.variable} font-sans`}>{children}</body>
+      <body className={`${lora.variable} font-sans`} suppressHydrationWarning>
+        {children}
+      </body>
     </html>
   );
 }
