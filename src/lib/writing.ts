@@ -12,6 +12,7 @@ export interface Post {
   excerpt: string;
   date: string; // YYYY-MM-DD
   category: string;
+  ogImage?: string;
   readingTime: string;
   content: ContentBlock[];
 }
@@ -28,6 +29,7 @@ const posts: Post[] = [
       "For over a decade, the NIBSS Instant Payments rail moved money fast and asked no questions. The National Payment Stack ends that era. Every transaction now carries structured proof of who sent it, why, and what it settles. That turns every payment into a compliance record at the point of origination.",
     date: "2026-06-04",
     category: "Trust Infrastructure",
+    ogImage: "/iso-20022-payment-layers.jpg",
     readingTime: "7 min read",
     content: [
       { type: "paragraph", text: "For over a decade, the NIBSS Instant Payments rail did one thing very well. It moved money fast. Amount, account number, timestamp, a short text narration. That was it. The system was built to clear transactions, not to understand them. And for a long time, that was enough." },

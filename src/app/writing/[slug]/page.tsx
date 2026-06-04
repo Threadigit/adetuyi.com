@@ -16,6 +16,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const post = getPostBySlug(slug);
   if (!post) return {};
 
+  const image = post.ogImage || "/tolu-new.png";
+
   return {
     title: post.title,
     description: post.excerpt,
@@ -31,9 +33,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       authors: ["Tolu Adetuyi"],
       images: [
         {
-          url: "/tolu-new.png",
+          url: image,
           width: 1200,
-          height: 1200,
+          height: 630, // Updated height for standard OG image ratio, though 1200x1200 works for square too
           alt: post.title,
         },
       ],
@@ -42,7 +44,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       card: "summary_large_image",
       title: post.title,
       description: post.excerpt,
-      images: ["/tolu-new.png"],
+      images: [image],
     },
   };
 }
