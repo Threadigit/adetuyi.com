@@ -53,9 +53,9 @@ function renderBlock(block: ContentBlock, index: number) {
       return (
         <p
           key={index}
-          className={`text-[15px] leading-[1.85] text-muted mb-5 ${
+          className={`text-[15px] leading-[1.85] text-muted ${
             index === 0
-              ? "first-letter:text-[48px] first-letter:font-bold first-letter:text-foreground first-letter:mr-3 first-letter:float-left first-letter:leading-[0.8]"
+              ? "first-letter:text-[48px] first-letter:font-bold first-letter:text-foreground first-letter:mr-3 first-letter:float-left first-letter:leading-[0.8] after:content-[''] after:block after:clear-both"
               : ""
           }`}
           dangerouslySetInnerHTML={{ __html: block.text }}
@@ -157,7 +157,7 @@ export default async function WritingPost({ params }: PageProps) {
           </div>
         </header>
 
-        <div className="mb-16">
+        <div className="mb-16 space-y-4">
           {post.content.map((block, index) => renderBlock(block, index))}
         </div>
 

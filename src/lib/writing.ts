@@ -22,6 +22,50 @@ export interface Post {
 
 const posts: Post[] = [
   {
+    slug: "when-a-payment-becomes-evidence",
+    title: "When a Payment Becomes Evidence",
+    excerpt:
+      "For over a decade, the NIBSS Instant Payments rail moved money fast and asked no questions. The National Payment Stack ends that era. Every transaction now carries structured proof of who sent it, why, and what it settles. That turns every payment into a compliance record at the point of origination.",
+    date: "2026-06-04",
+    category: "Trust Infrastructure",
+    readingTime: "7 min read",
+    content: [
+      { type: "paragraph", text: "For over a decade, the NIBSS Instant Payments rail did one thing very well. It moved money fast. Amount, account number, timestamp, a short text narration. That was it. The system was built to clear transactions, not to understand them. And for a long time, that was enough." },
+      { type: "paragraph", text: "The National Payment Stack changes that deal completely. NIBSS is migrating the country's payment infrastructure to ISO 20022, a messaging standard that turns every transaction into a structured data packet. Not a lean message that says ₦5 million moved from A to B. A rich message that says who A and B actually are, what the money is for, what invoice it ties to, and a permanent tracking ID that follows the transaction across every institution it touches." },
+      { type: "paragraph", text: "That shift, from moving money to documenting the story behind the money, is what this piece is about." },
+      { type: "heading", text: "The thing nobody talks about with legacy payments" },
+      { type: "paragraph", text: "When you transferred money on the old NIP rail, the system captured about five data points. The amount, the accounts, the time, the channel, and whatever you typed in the narration box. Most people type something like &ldquo;funds&rdquo; or &ldquo;reimbursement&rdquo; or nothing at all." },
+      { type: "paragraph", text: "That narration field was 30 characters long. Thirty. It was not built for commercial documentation. It was built to get out of the way." },
+      { type: "paragraph", text: "This created a structural problem the entire risk and compliance industry learned to work around rather than solve. Fraud detection systems were running on almost no real information. When a large transfer happened, the system had to make a binary decision based on amount and velocity because that is genuinely all it had. Either the number looked normal compared to your history, or it did not. That was the model." },
+      { type: "quote", text: "The result was predictable. Enormous volumes of false positives, legitimate transactions flagged, real fraud slipping through because it mimicked your historical average." },
+      { type: "heading", text: "What ISO 20022 actually does" },
+      { type: "paragraph", text: "Under the National Payment Stack, a payment message carries four layers of information." },
+      { type: "image", url: "/iso-20022-payment-layers.jpg", alt: "ISO 20022 Payment Message structure showing the four layers: Core Transaction, Intent and Purpose, Identity and Entity, and Life-Cycle Traceability", caption: "The four layers of an ISO 20022 payment message. Source: Prembly" },
+      { type: "paragraph", text: "The core transaction layer still has the basics. Amount, timestamp, channel. That part has not changed." },
+      { type: "paragraph", text: "What is new is everything above it. There is now an intent layer that uses standardized purpose codes to declare why money is moving. Not a free-text narration you typed. A structured code like COMMERCIAL_SUPPLIER_PAYMENT or GOVERNMENT_SOCIAL_INTERVENTION that the system can actually read and reason about." },
+      { type: "paragraph", text: "There is an entity layer that embeds BVNs for individuals and TINs or RC numbers for companies directly inside the transaction. Not as a separate lookup that happens later. Inside the payment itself." },
+      { type: "paragraph", text: "And there is a traceability layer with persistent IDs that stay attached to the payment as it moves through multiple institutions. Every node the transaction passes through, the ID follows it." },
+      { type: "quote", text: "A ₦5 million transfer no longer arrives as a number. It arrives as a statement. Here is who sent it, here is who received it, here is the invoice it settles, and here is the full chain of custody." },
+      { type: "heading", text: "Why this matters for fraud" },
+      { type: "paragraph", text: "Let me use a concrete example because the technical framing can make this feel abstract when the actual implication is quite practical." },
+      { type: "paragraph", text: "Imagine account A sends ₦5 million to account B. Under the old system, a fraud engine looks at that and asks whether ₦5 million is unusual for this account. If yes, flag it. If no, let it go." },
+      { type: "paragraph", text: "Under the NPS framework, that same transaction arrives with a structured metadata packet. Purpose code shows commercial supplier settlement. Invoice reference is attached. Originator entity ID is tied to a verified corporate TIN. Counterparty history shows this exact invoice sequence from 90 days prior." },
+      { type: "paragraph", text: "The fraud engine is no longer asking whether ₦5 million is unusual. It is asking whether this transaction makes sense as a whole. And it can answer that question because the data is actually there." },
+      { type: "paragraph", text: "Now flip it. A fraudster takes over account A and tries to move ₦5 million out. But they do not have access to valid invoice references, counterparty histories, or the commercial purpose codes associated with that account's normal activity. The transaction arrives without those markers, or with markers that do not match the entity's established patterns. The mismatch is immediate and structural. The fraud gets caught before settlement, not during a reconciliation exercise three days later." },
+      { type: "heading", text: "What this means for compliance teams" },
+      { type: "paragraph", text: "A compliance analyst investigating a suspicious transaction alert today spends most of their time not analyzing but gathering. They call the originating institution. They request invoice copies. They manually cross-reference entity registrations. A single case can take days, not because the analysis is hard but because the information is scattered across too many places." },
+      { type: "paragraph", text: "The NPS closes most of those gaps at the source. When an alert fires, the ISO 20022 payload is already attached to the transaction. The invoice reference is there. The entity identifiers are there. The complete lifecycle of that payment from initiation through every intermediary node is already in the record." },
+      { type: "paragraph", text: "For AML work specifically, this changes something important. A lot of false positives in traditional AML screening come from poor name matching. Systems try to match &ldquo;Mohammed A. Bello&rdquo; against a sanctions list using phonetic algorithms and generate hits that take hours to clear. When the transaction carries a verified TIN or BVN instead, you are matching against a definitive key, not a fuzzy string. The precision improvement is significant." },
+      { type: "paragraph", text: "For money laundering typologies like structuring or trade-based layering, the underlying commercial pretext has always been where the crime hides. Those schemes depend on the financial system not being able to see what the money claims to be doing. When every transaction explicitly states its purpose in a structured, machine-readable format, schemes that rely on vague or absent commercial documentation become visible in ways they simply were not before." },
+      { type: "heading", text: "The bigger shift" },
+      { type: "paragraph", text: "The speed of Nigerian payments stopped being a differentiator years ago. Real-time settlement is table stakes. Every serious player has it. The question of who leads the next decade of financial services in this market is a different question entirely." },
+      { type: "paragraph", text: "It is a question about who can turn payment data into intelligence. Who can tell a financial institution not just that a transaction happened, but what it means, whether it fits the customer's profile, whether the commercial context holds up, and what the network of entities around it looks like over time." },
+      { type: "paragraph", text: "The National Payment Stack builds the foundational infrastructure for exactly that kind of understanding. It mandates data richness at the point of origination, which means every system downstream gets to work with real information instead of running inference on fragments." },
+      { type: "paragraph", text: "For companies operating in the trust infrastructure space, this is not a future trend to track. It is the current environment taking shape. The question for product teams is how to use this data density to build systems that compliance officers and fraud analysts can actually rely on, rather than systems they have to constantly second-guess and manually supplement." },
+      { type: "quote", text: "The payment itself has changed. The infrastructure that sits around it needs to catch up." }
+    ]
+  },
+  {
     slug: "actuators-and-mitigators",
     title: "Every System Fails the Same Way",
     excerpt:
