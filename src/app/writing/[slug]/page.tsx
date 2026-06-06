@@ -16,7 +16,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const post = getPostBySlug(slug);
   if (!post) return {};
 
-  const image = post.ogImage || "/tolu-new.png";
+  const baseUrl = "https://adetuyi.com";
+  const image = post.ogImage ? `${baseUrl}${post.ogImage}` : `${baseUrl}/tolu-new.png`;
 
   return {
     title: post.title,
