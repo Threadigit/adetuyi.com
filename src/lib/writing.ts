@@ -29,7 +29,7 @@ const posts: Post[] = [
       "When you are highly analytical, the biggest friction to taking action is the sheer weight of the first step. You are trying to build the engine before you have verified that the fuel line works. Here are the tactical frameworks I have adopted to bridge the gap between theoretical optimism and a live operational loop.",
     date: "2026-06-06",
     category: "Execution",
-    ogImage: "/execution.png",
+    ogImage: "/execution-og.jpg",
     readingTime: "5 min read",
     content: [
       { type: "paragraph", text: "When you are highly analytical, the biggest friction to taking action is the sheer weight of the first step. If a project feels too heavy to start, it is almost always because the scope of that first step is wrong. You are trying to build the engine before you have even verified that the fuel line works." },
@@ -68,7 +68,7 @@ const posts: Post[] = [
       "If you spend enough time looking at broken systems, structural friction, or fragmented markets, it is incredibly easy to mistake sharp commentary for actual impact. It is a trap that catches some of the most brilliant minds. To break out of the commentary loop, we have to understand the five distinct stages of how we process problems and identify exactly where we are getting stuck.",
     date: "2026-06-06",
     category: "Execution",
-    ogImage: "/progress.png",
+    ogImage: "/progress-og.jpg",
     readingTime: "5 min read",
     content: [
       { type: "paragraph", text: "If you spend enough time looking at broken systems, structural friction, or fragmented markets, it is incredibly easy to mistake sharp commentary for actual impact. It is a trap that catches some of the most brilliant minds. We look at a glaring issue and dissect it with flawless accuracy, yet nothing changes." },
