@@ -76,6 +76,55 @@ export default function StructuredData() {
     "description": "Personal site of Tolu Adetuyi, Co-Founder & Chief Innovation Officer at Prembly. Building interconnected systems that expand economic participation and infrastructure across emerging markets."
   };
 
+  const navigationSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "SiteNavigationElement",
+        "position": 1,
+        "name": "Writing & Essays",
+        "description": "Essays on trust infrastructure, venture building, and emerging markets.",
+        "url": "https://adetuyi.com/writing"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "position": 2,
+        "name": "The 5 Mindsets of Real Progress",
+        "description": "Moving from intellectual cynicism to raw execution.",
+        "url": "https://adetuyi.com/writing/the-spectrum-of-agency"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "position": 3,
+        "name": "The Framework of Agency",
+        "description": "Tactical frameworks to bridge the gap between optimism and operations.",
+        "url": "https://adetuyi.com/writing/the-framework-of-agency"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "position": 4,
+        "name": "When a Payment Becomes Evidence",
+        "description": "How the National Payment Stack changes fraud and compliance.",
+        "url": "https://adetuyi.com/writing/when-a-payment-becomes-evidence"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "position": 5,
+        "name": "Every System Fails the Same Way",
+        "description": "Balancing actuators and mitigators to build resilient systems.",
+        "url": "https://adetuyi.com/writing/actuators-and-mitigators"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "position": 6,
+        "name": "The Infrastructure Thesis",
+        "description": "My core thesis on infrastructure and the future of African economic development.",
+        "url": "https://adetuyi.com/thesis"
+      }
+    ]
+  };
+
   return (
     <>
       <script
@@ -85,6 +134,10 @@ export default function StructuredData() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(navigationSchema) }}
       />
     </>
   );
