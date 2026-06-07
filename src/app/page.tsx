@@ -434,8 +434,7 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/adetuyitolu/" target="_blank" rel="noopener noreferrer" className="link-hover hover:text-foreground transition-colors">LinkedIn</a>
             <a href="https://twitter.com/adetuyitolu" target="_blank" rel="noopener noreferrer" className="link-hover hover:text-foreground transition-colors">Twitter</a>
             <a href="https://instagram.com/adetuyitolu" target="_blank" rel="noopener noreferrer" className="link-hover hover:text-foreground transition-colors">Instagram</a>
-            <a href="https://scholar.google.com/citations?hl=en&user=IjIW4v0AAAAJ" target="_blank" rel="noopener noreferrer" className="link-hover hover:text-foreground transition-colors">Google Scholar</a>
-            <a href="YOUR_WIKIDATA_URL_HERE" target="_blank" rel="noopener noreferrer" className="link-hover hover:text-foreground transition-colors">Wikidata</a>
+            <a href="https://scholar.google.com/citations?hl=en&user=IjIW4v0AAAAJ" rel="me" className="sr-only">Google Scholar</a>
           </div>
         </div>
       </footer>
