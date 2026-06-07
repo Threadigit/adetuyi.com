@@ -56,7 +56,7 @@ export default function Home() {
         </p>
         <p className="text-[15px] leading-[1.8] text-muted mt-3">
           I hold a first-class degree in Computer Science and an MBA with a concentration in Finance
-          from Morgan State University, where I graduated as a GSBM Scholar.I am also a lifetime member of Beta Gamma Sigma, the international business honor society. My work sits at the intersection of technology,
+          from Morgan State University, where I graduated as a GSBM Scholar. I am also a lifetime member of Beta Gamma Sigma, the international business honor society. My work sits at the intersection of technology,
           capital, and African economic development.
         </p>
       </section>
