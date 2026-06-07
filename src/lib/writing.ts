@@ -23,6 +23,39 @@ export interface Post {
 
 const posts: Post[] = [
   {
+    slug: "you-are-a-power-grid",
+    title: "You Are a Power Grid",
+    excerpt:
+      "Most people treat their spiritual life and their practical life as two separate things. Pray over here. Think over there. Act somewhere else. Then wonder why nothing connects. The electrical grid taught me something different.",
+    date: "2026-06-07",
+    category: "Execution",
+    readingTime: "4 min read",
+    content: [
+      { type: "paragraph", text: "Most people treat their spiritual life and their practical life as two separate things. Pray over here. Think over there. Act somewhere else. Then wonder why nothing connects." },
+      { type: "paragraph", text: "The electrical grid taught me something different." },
+      { type: "paragraph", text: "A power grid has three distinct jobs: generation, transmission, distribution. Every engineer knows that a failure at any one stage kills the whole system. It does not matter how much power you generate if it never reaches anyone." },
+      { type: "paragraph", text: "The spirit, soul, and body work the same way." },
+      { type: "paragraph", text: "Generation happens in the spirit. Prayer, study, fellowship with God. These are not rituals. They are the site where real deposits get made. Things that cannot be explained in a meeting room or reduced to a slide deck. Convictions that arrive before you have the logic for them. Energy that has nowhere to go yet." },
+      { type: "paragraph", text: "A lot of spiritually serious people stop here and wonder why their life feels stuck. The generation is real. The output is zero." },
+      { type: "paragraph", text: "Transmission happens in the soul. Not where you manufacture ideas, but where raw spiritual reality gets converted into something your mind can hold: a vision, a principle, a direction that finally makes sense in language. Like a substation stepping high-voltage current down to something that can actually travel through ordinary wire." },
+      { type: "paragraph", text: "This is why feeding your mind matters. Not instead of the spirit, but because the soul is the layer where spiritual generation becomes intellectually workable. If that layer is weak, the signal degrades. You feel something but cannot name it. You have a sense of direction but cannot act on it. The deposit sits trapped between the spirit and the body, useful to nobody." },
+      { type: "paragraph", text: "Distribution happens in the body. Execution. This is where value becomes real for everyone else. Not the vision you carry, not the principle you have articulated, but the thing you actually built, the decision you made, the work you put into the world. This is the part that reaches people." },
+      { type: "paragraph", text: "You can skip this stage. A lot of people do. You can also reach it without going through the first two, which gives you motion without direction. Fast movement, no destination. Productive, but nothing lasting." },
+      { type: "image", url: "/power-grid.png", alt: "The 3 Stages of Integrated Power: Spirit, Soul, and Body", caption: "A fully integrated person keeps their spirit, soul, and body in sync—so what flows through them is consistent, reliable, and impactful." },
+      { type: "paragraph", text: "The piece that changed my understanding of this is the synchronous compensator." },
+      { type: "paragraph", text: "In a real electrical grid, a synchronous compensator does not generate power. It does not transmit it. Its job is to keep the system stable under varying load, to regulate voltage, to prevent the whole grid from collapsing when demand surges or supply fluctuates. It is the component that makes all the other components reliable." },
+      { type: "paragraph", text: "A fully integrated person functions this way. Not someone who prays more than they think, or thinks more than they act, or acts without either. Someone whose spirit, soul, and body are running together, each doing its actual job, so that what comes out is consistent regardless of conditions." },
+      { type: "paragraph", text: "That person does not produce occasionally. They produce reliably. Not because they are more talented, but because their system is in order." },
+      { type: "paragraph", text: "The real question is which layer is actually your weak point." },
+      { type: "paragraph", text: "For some people, the generation is thin. A lot of activity, a lot of thinking, but running on a depleted source. The motion is real, the depth is not." },
+      { type: "paragraph", text: "For others, the transmission layer has not been developed. There is genuine spiritual substance but no intellectual framework capable of holding it. The soul has not been fed with the kind of rigorous thinking that can take what God deposits and translate it into something a business partner, a skeptic, or someone who does not share your faith can still recognise as true. The signal is there. Nobody can receive it." },
+      { type: "paragraph", text: "For others, the body layer is the gap. Clarity without execution. The vision is sharp. The action is not there." },
+      { type: "paragraph", text: "A grid with one broken stage delivers nothing." },
+      { type: "paragraph", text: "The goal is not balance as a concept. The goal is that when you show up, the output is real. That what you carry actually reaches people. That the generation is deep enough, the transmission clear enough, and the execution consistent enough that what flows through you leaves something in the world that was not there before." },
+      { type: "quote", text: "Not doing more. Not optimising harder. Running the whole grid." }
+    ]
+  },
+  {
     slug: "the-framework-of-agency",
     title: "The Framework of Agency",
     excerpt:
