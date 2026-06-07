@@ -22,7 +22,40 @@ export default function StructuredData() {
       "https://twitter.com/adetuyitolu",
       "https://instagram.com/adetuyitolu",
       "https://www.researchgate.net/profile/Tolu-Adetuyi",
-      "https://zerotoact.com"
+      "https://zerotoact.com",
+      "https://www.crunchbase.com/person/tolulope-adetuyi",
+      "https://officehours.com/tolu-adetuyi",
+      "https://www.chroniclesofinnovation.com/"
+    ],
+    "subjectOf": [
+      {
+        "@type": "Article",
+        "url": "https://businessday.ng/technology/article/cbn-aml-directive-triggers-tech-reset-as-banks-fintechs-battle-data-talent-gaps/"
+      },
+      {
+        "@type": "Article",
+        "url": "https://guardian.ng/news/leadership-innovation-and-industry-impact-the-work-of-tolu-adetuyi-at-prembly/"
+      },
+      {
+        "@type": "Article",
+        "url": "https://techcabal.com/2026/03/10/nigerias-prembly-launches-shared-open-source-database/"
+      },
+      {
+        "@type": "Article",
+        "url": "https://secureidentityalliance.org/reports/on-the-road-to-user-centricity-digital-identity-in-the-electronic-wallet-era/"
+      },
+      {
+        "@type": "Article",
+        "url": "https://vanguardngr.com/ai-is-strongest-ally-in-war-against-financial-fraud-tolu-adetuyi/"
+      },
+      {
+        "@type": "Article",
+        "url": "https://thecondia.com/zero-to-scale-tolu-adetuyi-head-of-growth-at-moniepoint/"
+      },
+      {
+        "@type": "VideoObject",
+        "url": "https://youtube.com/shorts/Z1PppJZj8JQ?si=57vjYNt4v5Zs7Nzf"
+      }
     ],
     "alumniOf": [
       {
