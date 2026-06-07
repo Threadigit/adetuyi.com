@@ -25,7 +25,9 @@ export default function StructuredData() {
       "https://zerotoact.com",
       "https://www.crunchbase.com/person/tolulope-adetuyi",
       "https://officehours.com/tolu-adetuyi",
-      "https://www.chroniclesofinnovation.com/"
+      "https://www.chroniclesofinnovation.com/",
+      "https://scholar.google.com/citations?hl=en&user=IjIW4v0AAAAJ",
+      "YOUR_WIKIDATA_URL_HERE"
     ],
     "subjectOf": [
       {
