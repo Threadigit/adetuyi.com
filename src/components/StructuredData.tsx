@@ -27,7 +27,7 @@ export default function StructuredData() {
       "https://officehours.com/tolu-adetuyi",
       "https://www.chroniclesofinnovation.com/",
       "https://scholar.google.com/citations?hl=en&user=IjIW4v0AAAAJ",
-      "YOUR_WIKIDATA_URL_HERE"
+      "https://www.wikidata.org/wiki/Q140088103"
     ],
     "subjectOf": [
       {
