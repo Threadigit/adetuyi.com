@@ -158,6 +158,19 @@ export default function StructuredData() {
     ]
   };
 
+  const videoSchema = {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Lagos Tech Fest 2023: Closing the Compliance Gap for African Startups",
+    "description": "Tolu Adetuyi speaking at Lagos Tech Fest 2023 on identity verification, compliance, and reducing fraud for African startups.",
+    "thumbnailUrl": [
+      "https://img.youtube.com/vi/7JIjYZJO5jQ/maxresdefault.jpg",
+      "https://img.youtube.com/vi/7JIjYZJO5jQ/hqdefault.jpg"
+    ],
+    "uploadDate": "2023-02-15T08:00:00+08:00",
+    "embedUrl": "https://www.youtube.com/embed/7JIjYZJO5jQ"
+  };
+
   return (
     <>
       <script
@@ -171,6 +184,10 @@ export default function StructuredData() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(navigationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }}
       />
     </>
   );
