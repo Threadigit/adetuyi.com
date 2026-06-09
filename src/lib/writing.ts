@@ -253,6 +253,12 @@ const posts: Post[] = [
         text: "Engineering: How systems work, and how to build.\nProduct: What people need, and what to build.\nVenture: How markets move, and how to commercialize.\nInstitution: How societies scale, and how to make ventures endure."
       },
       {
+        type: "image",
+        url: "/building-sustainably.png",
+        alt: "The four phases of building: Engineering, Product, Venture, Institution",
+        caption: "Each phase adds a critical lens that the previous one could not provide alone."
+      },
+      {
         type: "paragraph",
         text: "Engineering taught me that systems do not care about your narrative. The architecture works or it crashes. That discipline follows you everywhere and makes you allergic to strategies that only hold up in a pitch deck."
       },
