@@ -14,7 +14,7 @@ export default function ThesisPage() {
     <main className="max-w-[680px] mx-auto px-6 py-16 md:py-24">
       <Link
         href="/"
-        className="inline-flex items-center text-[13px] font-medium uppercase tracking-widest text-muted hover:text-foreground transition-colors mb-12"
+        className="inline-flex items-center text-[12px] font-ui font-medium uppercase tracking-[0.18em] text-muted hover:text-foreground transition-colors mb-12"
       >
         <span className="mr-2">←</span> Back
       </Link>
@@ -23,7 +23,7 @@ export default function ThesisPage() {
         <header className="mb-12">
           <div className="flex items-center gap-3 mb-6">
             <div className="h-[1px] w-8 bg-accent"></div>
-            <span className="text-[13px] font-medium uppercase tracking-widest text-accent">
+            <span className="text-[12px] font-ui font-semibold uppercase tracking-[0.18em] text-accent">
               Active Thesis
             </span>
           </div>
@@ -68,14 +68,14 @@ export default function ThesisPage() {
             The technology exists. The policy frameworks are improving. The demand is unambiguous and backed by a demonstrated willingness to pay. What is absent is the structured deployment of private capital at scale.
           </p>
           
-          <div className="my-12 p-8 bg-accent/5 ring-1 ring-border rounded-xl">
+          <div className="my-12 p-8 md:p-10 bg-gradient-to-br from-accent/[0.07] via-accent/[0.03] to-transparent ring-1 ring-accent/15 rounded-2xl shadow-[0_8px_30px_rgba(30,41,59,0.06)]">
             <h4 className="text-[15px] font-semibold text-foreground mb-3">Join the Mission</h4>
             <p className="text-[14px] mb-6">
               This is a generational challenge requiring operators, policymakers, and capital to align perfectly. If this thesis resonates with the future you want to build, the fund is currently in its capital formation phase.
             </p>
             <a
               href="mailto:tolu@adetuyi.com?subject=Powering Nigeria IF1"
-              className="inline-flex items-center gap-2 bg-foreground text-white px-6 py-3 rounded-full hover:bg-foreground/90 transition-colors font-medium text-[14px]"
+              className="inline-flex items-center gap-2 bg-foreground text-white px-6 py-3 rounded-full hover:bg-foreground/90 hover:-translate-y-0.5 transition-all duration-300 font-medium text-[14px] shadow-[0_4px_14px_rgba(30,41,59,0.2)] hover:shadow-[0_8px_24px_rgba(30,41,59,0.28)]"
             >
               Reach out to discuss <span className="text-accent">↗</span>
             </a>

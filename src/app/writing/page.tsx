@@ -24,7 +24,7 @@ export default function WritingPage() {
     <main className="max-w-[680px] mx-auto px-6 py-16 md:py-24">
       <Link
         href="/"
-        className="inline-flex items-center text-[13px] font-medium uppercase tracking-widest text-muted hover:text-foreground transition-colors mb-12"
+        className="inline-flex items-center text-[12px] font-ui font-medium uppercase tracking-[0.18em] text-muted hover:text-foreground transition-colors mb-12"
       >
         <span className="mr-2">←</span> Back
       </Link>
@@ -32,7 +32,7 @@ export default function WritingPage() {
       <header className="mb-14 animate-fade-up delay-100">
         <div className="flex items-center gap-3 mb-6">
           <div className="h-[1px] w-8 bg-accent"></div>
-          <span className="text-[13px] font-medium uppercase tracking-widest text-accent">
+          <span className="text-[12px] font-ui font-semibold uppercase tracking-[0.18em] text-accent">
             Writing
           </span>
         </div>
@@ -49,16 +49,16 @@ export default function WritingPage() {
           <article key={post.slug}>
             <Link
               href={`/writing/${post.slug}`}
-              className="group block py-7"
+              className="group block py-7 -mx-4 px-4 rounded-xl hover:bg-accent/[0.04] transition-colors duration-300"
             >
               <div className="flex items-center gap-3 mb-3">
-                <span className="text-[12px] uppercase tracking-widest text-accent font-medium">
+                <span className="text-[11px] font-ui uppercase tracking-widest text-accent font-medium">
                   {post.category}
                 </span>
                 <span className="text-muted/40 text-[10px]">·</span>
                 <time
                   dateTime={post.date}
-                  className="text-[12px] uppercase tracking-widest text-muted/60"
+                  className="text-[11px] font-ui uppercase tracking-widest text-muted/60"
                 >
                   {new Date(post.date).toLocaleDateString("en-US", {
                     year: "numeric",

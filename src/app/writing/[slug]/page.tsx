@@ -84,14 +84,14 @@ function renderBlock(block: ContentBlock, index: number) {
       return (
         <div
           key={index}
-          className="my-6 p-6 bg-accent/5 ring-1 ring-border rounded-xl text-[14px] leading-relaxed text-muted"
+          className="my-6 p-6 bg-gradient-to-br from-accent/[0.07] via-accent/[0.03] to-transparent ring-1 ring-accent/15 rounded-xl text-[14px] leading-relaxed text-muted"
           dangerouslySetInnerHTML={{ __html: block.text }}
         />
       );
     case "image":
       return (
         <figure key={index} className="my-8">
-          <img src={block.url} alt={block.alt} className="w-full rounded-xl border border-border" />
+          <img src={block.url} alt={block.alt} className="w-full rounded-xl border border-border shadow-[0_8px_30px_rgba(30,41,59,0.08)]" />
           {block.caption && (
             <figcaption className="text-center text-[13px] text-muted mt-3">
               {block.caption}
@@ -130,7 +130,7 @@ export default async function WritingPost({ params }: PageProps) {
     <main className="max-w-[680px] mx-auto px-6 py-16 md:py-24">
       <Link
         href="/writing"
-        className="inline-flex items-center text-[13px] font-medium uppercase tracking-widest text-muted hover:text-foreground transition-colors mb-12"
+        className="inline-flex items-center text-[12px] font-ui font-medium uppercase tracking-[0.18em] text-muted hover:text-foreground transition-colors mb-12"
       >
         <span className="mr-2">←</span> All Writing
       </Link>
@@ -139,7 +139,7 @@ export default async function WritingPost({ params }: PageProps) {
         <header className="mb-12">
           <div className="flex items-center gap-3 mb-6">
             <div className="h-[1px] w-8 bg-accent"></div>
-            <span className="text-[12px] font-medium uppercase tracking-widest text-accent">
+            <span className="text-[12px] font-ui font-semibold uppercase tracking-[0.18em] text-accent">
               {post.category}
             </span>
           </div>

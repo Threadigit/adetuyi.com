@@ -7,12 +7,11 @@ export default function Home() {
       <header className="mb-3 animate-fade-up delay-100">
         <div className="flex items-center gap-5 mb-5">
           {/* Avatar */}
-          <div className="relative flex-shrink-0 w-[72px] h-[72px] rounded-full overflow-hidden ring-2 ring-accent/20">
+          <div className="relative flex-shrink-0 w-[72px] h-[72px] rounded-full overflow-hidden ring-1 ring-accent/30 ring-offset-[3px] ring-offset-background shadow-[0_4px_16px_rgba(30,41,59,0.12)]">
             <img
               src="/tolu-new.png"
               alt="Tolu Adetuyi"
-              className="w-full h-full object-cover object-top transition-all duration-700"
-              style={{ filter: "grayscale(20%)" }}
+              className="w-full h-full object-cover object-top grayscale-[20%] hover:grayscale-0 transition-all duration-700"
             />
           </div>
           {/* Name + label */}
@@ -20,7 +19,7 @@ export default function Home() {
             <h1 className="text-[32px] md:text-[38px] font-medium tracking-tight leading-tight mb-1 text-foreground">
               Tolu Adetuyi
             </h1>
-            <p className="text-[11px] uppercase tracking-[0.18em] text-accent font-medium flex flex-wrap items-center mt-1 gap-x-3 gap-y-1.5">
+            <p className="text-[11px] font-ui uppercase tracking-[0.18em] text-accent font-medium flex flex-wrap items-center mt-1 gap-x-3 gap-y-1.5">
               <span className="whitespace-nowrap flex items-center gap-3">Innovator <span className="opacity-60 text-[15px] leading-none">·</span></span>
               <span className="whitespace-nowrap flex items-center gap-3">Venture Architect <span className="opacity-60 text-[15px] leading-none">·</span></span>
               <span className="whitespace-nowrap">Forbes Tech Council &apos;24</span>
@@ -65,7 +64,7 @@ export default function Home() {
 
       {/* ── Current Work ── */}
       <section className="mb-16 animate-fade-up delay-300">
-        <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
+        <h2 className="section-label text-[12px] font-ui font-semibold uppercase tracking-[0.18em] text-foreground/70 mb-6">
           Current Work
         </h2>
         <div className="space-y-5">
@@ -98,7 +97,7 @@ export default function Home() {
               >
                 Infrastructure Fund I
               </a>
-              <span className="text-[10px] uppercase tracking-widest text-accent/70 font-medium border border-accent/25 rounded-full px-2 py-0.5">In Formation</span>
+              <span className="text-[10px] font-ui uppercase tracking-widest text-accent/70 font-medium border border-accent/25 rounded-full px-2 py-0.5">In Formation</span>
             </div>
             <span className="text-muted/80 text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Energy &amp; Physical Infrastructure</span>
           </div>
@@ -140,7 +139,7 @@ export default function Home() {
       </section>
       {/* ── Core Areas of Focus ── */}
       <section className="mb-16 animate-fade-up delay-300">
-        <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
+        <h2 className="section-label text-[12px] font-ui font-semibold uppercase tracking-[0.18em] text-foreground/70 mb-6">
           Core Areas of Focus
         </h2>
         <div className="flex flex-wrap gap-2.5">
@@ -156,7 +155,7 @@ export default function Home() {
             "Human Capital Development",
             "Emerging Market Economic Systems"
           ].map((area) => (
-            <span key={area} className="inline-flex items-center px-3 py-1.5 rounded bg-accent/5 border border-accent/10 text-muted text-[13px] leading-none">
+            <span key={area} className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-accent/[0.06] border border-accent/15 text-muted text-[13px] leading-none hover:border-accent/35 hover:text-foreground transition-colors duration-300">
               {area}
             </span>
           ))}
@@ -165,10 +164,10 @@ export default function Home() {
 
       {/* ── Featured Video ── */}
       <section className="mb-16 animate-fade-up delay-400">
-        <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
+        <h2 className="section-label text-[12px] font-ui font-semibold uppercase tracking-[0.18em] text-foreground/70 mb-6">
           Featured
         </h2>
-        <div className="aspect-video w-full bg-accent/5 ring-1 ring-border overflow-hidden">
+        <div className="aspect-video w-full bg-accent/5 ring-1 ring-border overflow-hidden rounded-xl shadow-[0_8px_30px_rgba(30,41,59,0.08)]">
           <iframe
             src="https://www.youtube.com/embed/7JIjYZJO5jQ"
             title="Lagos Tech Fest 2023"
@@ -187,7 +186,7 @@ export default function Home() {
 
       {/* ── Speaking ── */}
       <section className="mb-16 animate-fade-up delay-500">
-        <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
+        <h2 className="section-label text-[12px] font-ui font-semibold uppercase tracking-[0.18em] text-foreground/70 mb-6">
           Speaking & Panels
         </h2>
         <div className="space-y-4">
@@ -207,7 +206,7 @@ export default function Home() {
             href="https://docs.google.com/presentation/d/e/2PACX-1vRYTONvzPUFRxh2qtI0i9Kyp7jSzxSmRgW-fU0ABvt73cXZn5nNtv36UGavwScf6YqarMn0I4KgprJz/pub?start=true&loop=true&delayms=3000"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex justify-between items-baseline group"
+            className="flex justify-between items-baseline group -mx-3 px-3 py-1.5 rounded-lg hover:bg-accent/[0.04] transition-colors duration-300"
           >
             <span className="text-[15px] link-hover">
               Closing the Compliance Gap for African Startups
@@ -221,7 +220,7 @@ export default function Home() {
             href="https://docs.google.com/presentation/d/e/2PACX-1vRfUMs41WRijX2FtvJ59M-q-NumD5Y2oJlvGrrw_or0rqU9QAGtK6WbvvZjLKhPeBlDBaq17ZHYV5zO/pub?start=true&loop=true&delayms=3000"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex justify-between items-baseline group"
+            className="flex justify-between items-baseline group -mx-3 px-3 py-1.5 rounded-lg hover:bg-accent/[0.04] transition-colors duration-300"
           >
             <span className="text-[15px] link-hover">
               Bootstrapping & Making Your Idea Attractive to Investors
@@ -235,7 +234,7 @@ export default function Home() {
             href="https://programmes.podbean.com/e/tts-creating-a-positive-work-security-culture/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex justify-between items-baseline group"
+            className="flex justify-between items-baseline group -mx-3 px-3 py-1.5 rounded-lg hover:bg-accent/[0.04] transition-colors duration-300"
           >
             <span className="text-[15px] link-hover">
               Creating a Positive Work Security Culture
@@ -248,7 +247,7 @@ export default function Home() {
       {/* ── Latest Writing ── */}
       <section className="mb-16 animate-fade-up delay-600">
         <div className="flex justify-between items-baseline mb-6">
-          <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3">
+          <h2 className="section-label text-[12px] font-ui font-semibold uppercase tracking-[0.18em] text-foreground/70">
             Latest Writing
           </h2>
           <a
@@ -263,10 +262,10 @@ export default function Home() {
             <div key={post.slug}>
               <a
                 href={`/writing/${post.slug}`}
-                className="group block py-4"
+                className="group block py-4 -mx-3 px-3 rounded-lg hover:bg-accent/[0.04] transition-colors duration-300"
               >
                 <div className="flex items-center gap-2.5 mb-2">
-                  <span className="text-[11px] uppercase tracking-widest text-accent font-medium">{post.category}</span>
+                  <span className="text-[11px] font-ui uppercase tracking-widest text-accent font-medium">{post.category}</span>
                 </div>
                 <h3 className="text-[15px] font-medium text-foreground tracking-tight leading-snug mb-1.5 group-hover:text-accent transition-colors duration-300">
                   {post.title}
@@ -285,7 +284,7 @@ export default function Home() {
 
       {/* ── Press & Writing ── */}
       <section className="mb-16 animate-fade-up delay-600">
-        <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
+        <h2 className="section-label text-[12px] font-ui font-semibold uppercase tracking-[0.18em] text-foreground/70 mb-6">
           Featured Press & Publications
         </h2>
         <div className="space-y-4">
@@ -293,7 +292,7 @@ export default function Home() {
             href="https://businessday.ng/technology/article/cbn-aml-directive-triggers-tech-reset-as-banks-fintechs-battle-data-talent-gaps/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex justify-between items-baseline group"
+            className="flex justify-between items-baseline group -mx-3 px-3 py-1.5 rounded-lg hover:bg-accent/[0.04] transition-colors duration-300"
           >
             <span className="text-[15px] link-hover">
               CBN AML Directive Triggers Tech Reset as Banks, Fintechs Battle Data &amp; Talent Gaps
@@ -305,7 +304,7 @@ export default function Home() {
             href="https://guardian.ng/news/leadership-innovation-and-industry-impact-the-work-of-tolu-adetuyi-at-prembly/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex justify-between items-baseline gap-4 group"
+            className="flex justify-between items-baseline gap-4 group -mx-3 px-3 py-1.5 rounded-lg hover:bg-accent/[0.04] transition-colors duration-300"
           >
             <span className="text-[15px] link-hover">
               Leadership, Innovation, and Industry Impact: The Work of Tolu Adetuyi at Prembly
@@ -317,7 +316,7 @@ export default function Home() {
             href="https://techcabal.com/2026/03/10/nigerias-prembly-launches-shared-open-source-database/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex justify-between items-baseline group"
+            className="flex justify-between items-baseline group -mx-3 px-3 py-1.5 rounded-lg hover:bg-accent/[0.04] transition-colors duration-300"
           >
             <span className="text-[15px] link-hover">
               Prembly Launches FraudLens
@@ -329,7 +328,7 @@ export default function Home() {
             href="https://secureidentityalliance.org/reports/on-the-road-to-user-centricity-digital-identity-in-the-electronic-wallet-era/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex justify-between items-baseline group"
+            className="flex justify-between items-baseline group -mx-3 px-3 py-1.5 rounded-lg hover:bg-accent/[0.04] transition-colors duration-300"
           >
             <span className="text-[15px] link-hover">
               Digital Identity in the Electronic Wallet Era
@@ -341,7 +340,7 @@ export default function Home() {
             href="https://vanguardngr.com/ai-is-strongest-ally-in-war-against-financial-fraud-tolu-adetuyi/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex justify-between items-baseline group"
+            className="flex justify-between items-baseline group -mx-3 px-3 py-1.5 rounded-lg hover:bg-accent/[0.04] transition-colors duration-300"
           >
             <span className="text-[15px] link-hover">
               AI Is Strongest Ally in War Against Financial Fraud
@@ -353,7 +352,7 @@ export default function Home() {
             href="https://thecondia.com/zero-to-scale-tolu-adetuyi-head-of-growth-at-moniepoint/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex justify-between items-baseline group"
+            className="flex justify-between items-baseline group -mx-3 px-3 py-1.5 rounded-lg hover:bg-accent/[0.04] transition-colors duration-300"
           >
             <span className="text-[15px] link-hover">
               Zero to Scale Interview
@@ -365,7 +364,7 @@ export default function Home() {
             href="https://www.researchgate.net/profile/Tolu-Adetuyi"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex justify-between items-baseline group"
+            className="flex justify-between items-baseline group -mx-3 px-3 py-1.5 rounded-lg hover:bg-accent/[0.04] transition-colors duration-300"
           >
             <span className="text-[15px] link-hover">
               Academic Research Publications
@@ -379,9 +378,9 @@ export default function Home() {
       {/* ── Active Investment Thesis ── */}
 
       <section className="mb-16 animate-fade-up delay-700">
-        <div className="p-8 bg-accent/5 ring-1 ring-border rounded-xl relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-1 h-full bg-accent"></div>
-          <h2 className="text-[13px] font-medium uppercase tracking-widest text-accent mb-3">
+        <div className="p-8 md:p-10 bg-gradient-to-br from-accent/[0.07] via-accent/[0.03] to-transparent ring-1 ring-accent/15 rounded-2xl relative overflow-hidden shadow-[0_8px_30px_rgba(30,41,59,0.06)]">
+          <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-accent to-accent/30"></div>
+          <h2 className="text-[12px] font-ui font-semibold uppercase tracking-[0.18em] text-accent mb-3">
             Active Investment Thesis
           </h2>
           <h3 className="text-[20px] md:text-[24px] font-medium text-foreground leading-snug mb-3 tracking-tight">
@@ -395,7 +394,7 @@ export default function Home() {
           </p>
           <a
             href="/thesis"
-            className="inline-flex items-center gap-2 border border-accent text-accent px-5 py-2.5 rounded-full hover:bg-accent hover:text-white transition-all font-medium text-[14px] group"
+            className="inline-flex items-center gap-2 border border-accent text-accent px-5 py-2.5 rounded-full hover:bg-accent hover:text-white hover:shadow-[0_4px_14px_rgba(217,92,46,0.3)] transition-all duration-300 font-medium text-[14px] group"
           >
             Read the Manifesto <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
           </a>
@@ -405,7 +404,7 @@ export default function Home() {
       {/* ── Contact ── */}
       <footer className="pt-10 border-t border-border animate-fade-up delay-700">
         {/* Headline */}
-        <p className="text-[13px] uppercase tracking-[0.15em] text-accent font-medium mb-3">
+        <p className="text-[12px] font-ui font-semibold uppercase tracking-[0.18em] text-accent mb-3">
           Work with me
         </p>
         <h2 className="text-[22px] font-medium text-foreground tracking-tight leading-snug mb-2">
@@ -420,7 +419,7 @@ export default function Home() {
           href="https://calendly.com/toluadetuyi/one-on-one"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3.5 rounded-full hover:bg-accent/90 transition-all font-medium text-[15px] group shadow-sm hover:shadow-md mb-10"
+          className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3.5 rounded-full hover:bg-accent/90 hover:-translate-y-0.5 transition-all duration-300 font-medium text-[15px] group shadow-[0_4px_14px_rgba(217,92,46,0.25)] hover:shadow-[0_8px_24px_rgba(217,92,46,0.35)] mb-10"
         >
           Book a session <span className="transition-transform duration-300 group-hover:translate-x-1">↗</span>
         </a>
