@@ -23,6 +23,40 @@ export interface Post {
 
 const posts: Post[] = [
   {
+    slug: "the-tragedy-of-anything",
+    title: "The Tragedy of Anything",
+    excerpt: "My inbox tells the same story every week. Dozens of messages from brilliant, recently graduated young Africans reaching out for work. The ambition is real. The hunger is real. And far too many of these messages end the same way.",
+    date: "2026-06-17",
+    category: "Leadership",
+    readingTime: "4 min read",
+    content: [
+      { type: "paragraph", text: "My inbox tells the same story every week." },
+      { type: "paragraph", text: "Dozens of messages from brilliant, recently graduated young Africans reaching out for work. The ambition is real. The hunger is real. And far too many of these messages end the same way." },
+      { type: "quote", text: "I am ready to do anything. Just give me any role to work with." },
+      { type: "paragraph", text: "I want to speak directly to the next generation of African builders, engineers, and creators reading this. I understand the economic pressure you are under. I know the environment conditions you to think about survival first. But treating your career like a lottery ticket, hoping any random hand pulls you somewhere, is the fastest way to stall your own growth before it has even started." },
+      { type: "quote", text: "You cannot build a specialized career on a foundation of anything." },
+      { type: "heading", text: "The real work starts in year two" },
+      { type: "paragraph", text: "There is a gap in how our universities operate. Students rarely get exposed to what an industry actually looks like until they already have the degree in hand. That needs to change at the institutional level, but you cannot afford to wait for the curriculum to catch up to you." },
+      { type: "paragraph", text: "Your second and third years should not just be about passing exams. They should be about reconnaissance. Go find out what data engineering actually looks like on a Tuesday. What venture design or financial infrastructure or product operations actually involves day to day, not the version described in a brochure." },
+      { type: "paragraph", text: "If you cannot get a structured internship, ask for less. Ask to shadow someone. Ask to sit in on a project meeting for an afternoon, or follow someone's workflow for a few days. You will not know what actually fits you until you have built a real comparison across a few different options, not just the one path everyone around you happens to be taking." },
+      { type: "heading", text: "Narrow focus moves faster than wide nets" },
+      { type: "paragraph", text: "The urge to get a job quickly is completely valid. But the widest net usually catches the fewest fish, not the most." },
+      { type: "paragraph", text: "When you narrow your search to one specific domain, everything about how you move changes. You stop sending the same copy-paste resume to forty different companies. You learn the actual entry-level requirements for that specific role instead of guessing. You gather enough understanding of that world to walk into a conversation and show a hiring manager that you don't just want a job, you understand this particular job." },
+      { type: "paragraph", text: "Executives notice that difference immediately. A candidate who can speak the actual language of a specific problem will always outrun a candidate who is just offering generalized desperation, no matter how hardworking that second candidate genuinely is." },
+      { type: "heading", text: "Why clarity changes what you notice" },
+      { type: "paragraph", text: "There is something I have seen play out enough times that I no longer think of it as luck. The moment someone becomes genuinely clear on what they want, relevant opportunities start showing up in places that used to feel empty." },
+      { type: "paragraph", text: "This is not mysticism. There is an actual explanation for it, and it comes down to a part of your brain called the Reticular Activating System, a cluster of nerves at the base of the brain that acts as a filter for everything your senses are picking up." },
+      { type: "paragraph", text: "Your brain takes in far more information every second than your conscious mind could ever process. The RAS decides what gets through and what gets quietly discarded. And what tells it what to let through is whatever you have told yourself you are actually looking for." },
+      { type: "paragraph", text: "When your internal instruction is \"I just need any job,\" the RAS has nothing specific to search for. It filters out almost everything because there is no signal to lock onto. But the moment you make an actual decision, say, \"I am building a career in fintech compliance architecture,\" you have just reprogrammed that filter." },
+      { type: "paragraph", text: "Suddenly you start noticing the panel discussion you would have scrolled past before. You start tracking shifts in that specific industry. You start recognizing the names of the people actually building in that space. You start spotting the gaps in the market that were always there but never registered because you were not looking for them specifically." },
+      { type: "paragraph", text: "The opportunities were not hiding. Your filter just was not tuned to pick them up." },
+      { type: "heading", text: "Move from survival to execution" },
+      { type: "paragraph", text: "If you are a student or a recent graduate reading this, do not let a survival environment take away your ability to think strategically about your own path." },
+      { type: "paragraph", text: "Before you send your next message asking for \"anything,\" do the work first. Pick a domain. Understand how it actually works. Learn what it takes to get in at the entry level. Then approach the market like someone who already knows what they are looking for." },
+      { type: "paragraph", text: "Information is everywhere right now. Execution is what is actually scarce. Stop asking for anything. Pick something specific, and give the market a real reason to say yes to you." }
+    ]
+  },
+  {
     slug: "why-builders-wait-and-how-to-stop",
     title: "Why Builders Wait, and How to Stop",
     excerpt: "There is a gap in how most people talk about initiative. We treat it like a switch. You either have it or you don't. What I have actually observed is quieter than that.",
