@@ -23,6 +23,31 @@ export interface Post {
 
 const posts: Post[] = [
   {
+    slug: "why-builders-wait-and-how-to-stop",
+    title: "Why Builders Wait, and How to Stop",
+    excerpt: "There is a gap in how most people talk about initiative. We treat it like a switch. You either have it or you don't. What I have actually observed is quieter than that.",
+    date: "2026-06-17",
+    category: "Leadership",
+    readingTime: "4 min read",
+    content: [
+      { type: "paragraph", text: "There is a gap in how most people talk about initiative." },
+      { type: "paragraph", text: "We treat it like a switch. You either have it or you don't. I have spent years building systems and working alongside young talent, and what I have actually observed is quieter than that. Most people don't fail to take initiative because they lack ambition. They fail because nobody ever showed them where to place their hands on the problem." },
+      { type: "paragraph", text: "We have conditioned a generation of builders to treat initiative as an emergency response. Something you deploy when a crisis appears or when a clean opportunity lands fully formed on your desk. We call that seizing the moment. But initiative that only shows up when conditions are perfect is not initiative at all. It is reaction wearing a better name." },
+      { type: "quote", text: "Real initiative is a hunt, not a reflex." },
+      { type: "paragraph", text: "Waiting for the right opportunity before you move is a losing position. It is standing in an open field hoping lightning strikes and calling that a strategy. If you are looking for work, you do not sit and wait for someone to hand you an offer letter. You study the market, find where you are needed, and insert yourself into it before anyone asks you to. Initiative works the same way. You do not wait for the opportunity to appear. You build the conditions that create one." },
+      { type: "paragraph", text: "The most meaningful chances to make an impact rarely look like a fire that needs putting out. Most of the time they are sitting in plain view. A legacy process nobody questions anymore. A workflow everyone complains about in the same breath they accept it. A bottleneck that has been there so long it stopped being a problem and became \"how we do things here.\"" },
+      { type: "paragraph", text: "That is the moment a broken process calcifies into culture. And the people who actually build things are the ones who refuse to let that happen quietly." },
+      { type: "paragraph", text: "Underneath all of this sits something simpler than a framework. Curiosity. You cannot take meaningful initiative without being genuinely curious about how things work underneath the surface. You have to be the kind of person who looks at something mundane and asks why it takes three days instead of three minutes. Who decided this was the best way to route this. What is the quiet cost we keep paying because nobody bothered to fix the small friction in front of them." },
+      { type: "paragraph", text: "Once you start looking at your environment that way, it stops feeling finished. Everything around you starts looking like a draft that is still waiting for its next version." },
+      { type: "heading", text: "So how do you actually move from watching to building?" },
+      { type: "paragraph", text: "You start by paying attention to what everyone has normalized. The things people complain about constantly but have stopped trying to fix because complaining has become the accepted substitute for action. That irritation is data. It is showing you exactly where the gap is." },
+      { type: "paragraph", text: "Then you build something small. You do not need permission, a budget, or a mandate to prove an idea works. Write the cleaner script. Fix the one broken step in the process. Document the thing nobody bothered to write down properly. Prove your thinking at a scale small enough that nobody has to approve it first." },
+      { type: "paragraph", text: "Then you bring the finished thing, not the pitch for it. You do not walk in asking for permission to try something. You walk in showing what already works. The optimized process. The resolved bottleneck. The cleaner version of whatever was broken before. People argue with proposals. It is much harder to argue with something that already runs." },
+      { type: "paragraph", text: "Initiative is not a personality trait that belongs to whoever is loudest in the room. It is closer to a discipline. A habit of paying attention to what has quietly gone wrong around you and choosing to do something about it before anyone tells you to." },
+      { type: "paragraph", text: "The next time you find yourself waiting for the right moment, it is worth asking whether that moment was ever going to arrive on its own. Most of the builders I respect did not wait for a stage to be set for them. They built the stage. Then they got to work." }
+    ]
+  },
+  {
     slug: "the-accept-always-trap",
     title: "The \"Accept Always\" Trap: The Catastrophic Security Risk of Autonomous AI",
     excerpt: "I woke up at 400 AM with my mind absolutely racing. I’d just had a vivid highly specific dream. In it, I wasn’t just designing systems, nor was I orchestrating deals or looking at lines of code; I was experiencing a full scale jailbreak event.",
