@@ -23,6 +23,34 @@ export interface Post {
 
 const posts: Post[] = [
   {
+    slug: "pick-your-problems",
+    title: "Pick Your Problems",
+    excerpt: "We are told to follow our passion, or to master the required skill set for a role. Both miss something basic. Every career is a specific flavor of problem solving in disguise.",
+    date: "2026-06-19",
+    category: "Leadership",
+    readingTime: "5 min read",
+    content: [
+      { type: "paragraph", text: "We are told to follow our passion, or to master the required skill set for a role. Both miss something basic. Every career is a specific flavor of problem solving in disguise." },
+      { type: "paragraph", text: "Before you master the tools of a trade, you have to be fascinated by the exact type of problem that trade forces you to face every day. Engineers fight technical breakdown and optimization problems. Founders fight market uncertainty and value creation problems. Investors fight capital allocation and selection problems. Doctors fight diagnosis and patient care. Lawyers fight legal friction and negotiation. Product managers fight customer friction and prioritization. Operations leaders fight efficiency and execution. Sales and marketing people fight persuasion and attention. Data scientists fight pattern discovery and prediction." },
+      { type: "paragraph", text: "The people who go furthest are not always the most skilled. They are the ones who genuinely enjoy fighting the messy problems that make everyone else want to quit." },
+      { type: "heading", text: "I learned this before I had a name for it" },
+      { type: "paragraph", text: "I took a professional development course in business school, spread across two semesters, that studied the psychology of peak performance. One lesson stuck with me more than any other. Stop watching your title. Start watching your own state while you work." },
+      { type: "paragraph", text: "I began tracking the moments where time disappeared. Where a problem was hard enough to hurt and somehow left me more energized than when I started. That tracking did not put me on a new path. I was already on it. What it did was show me, in plain terms, exactly what I loved about the work I was already doing. I was fortunate to be in the right lane before I had the language for why." },
+      { type: "paragraph", text: "When a problem genuinely fuels you, the tools around it stop being a wall. You stop procrastinating on the hard skills and the unfamiliar tools because the puzzle itself pulls you through the learning curve. That clarity is what I want to hand to anyone still trying to name what they are actually looking for." },
+      { type: "heading", text: "The zone that actually matters" },
+      { type: "paragraph", text: "Mihaly Csikszentmihalyi called it flow. The best signal for your real problem type is not that the work is easy. It is that solving it charges your battery instead of draining it." },
+      { type: "image", url: "/energy-impact-matrix.png", alt: "The Energy-Impact Matrix: a 2x2 grid mapping problem difficulty against personal energy. Zone 1 (hard, energizing) is your problem domain. Zone 2 (hard, draining) is high burnout risk. Zone 3 (simple, energizing) is maintenance. Zone 4 (simple, draining) should be delegated.", caption: "Focus your energy. Multiply your impact." },
+      { type: "paragraph", text: "Think of it as a grid. Hard problems that leave you energized sit in Zone 1, your native problem domain. That is where you want to live. Hard problems that leave you drained sit in Zone 2, where you may be skilled but you are headed for burnout. Simple problems you can run on autopilot are Zone 3, maintenance that just needs to be systematized. Simple work that still drains you is Zone 4, delegate those immediately and reclaim the hours." },
+      { type: "paragraph", text: "When your natural problem-solving style does not match the actual work in front of you, sustained performance becomes nearly impossible. A high salary only delays the burnout. The question that matters is what fills Zone 1 for you specifically." },
+      { type: "heading", text: "How to find yours" },
+      { type: "paragraph", text: "You cannot read your problem domain off a resume. You have to audit yourself, and the honest data is already there if you know where to look." },
+      { type: "paragraph", text: "Start with the friction. Most people try to find what they love first, but prestige gets in the way. We convince ourselves we love whatever sounds impressive. Flip it instead. Look back at the last two or three years and list what drained you fastest. If resolving conflict between people wore you down, you probably do not belong in a people leadership track, regardless of how good you are at it. If structural ambiguity exhausted you, no amount of equity will make you enjoy the chaos of early-stage building. The things you resent are data." },
+      { type: "paragraph", text: "Then track the opposite. The work where time collapsed. Where the problem was hard enough to be genuinely uncomfortable and you came out the other side more alive than when you started. That is not inspiration. That is your signal." },
+      { type: "paragraph", text: "The last test is the simplest. When something breaks on a project you are leading, what do you reach for first at three in the morning? Do you go straight to unit economics and runway? You lean executive or investor. Do you open the codebase or the architecture diagram? You lean engineer. Do you get on the phone to fix team morale? You lean operations or people. Do you pull up user data and the feedback log? You lean product." },
+      { type: "paragraph", text: "Stop looking at the title, the perks, or the tools. Look at the ugliest problems that domain puts on your desk on an ordinary Tuesday morning. The people who go furthest are the ones who get genuinely fascinated by the exact problems everyone else is trying to get away from. If those are the puzzles you actually want to solve, you have found your field." }
+    ]
+  },
+  {
     slug: "the-tragedy-of-anything",
     title: "The Tragedy of Anything",
     excerpt: "My inbox tells the same story every week. Dozens of messages from brilliant, recently graduated young Africans reaching out for work. The ambition is real. The hunger is real. And far too many of these messages end the same way.",
