@@ -126,8 +126,44 @@ export default async function WritingPost({ params }: PageProps) {
     notFound();
   }
 
+  const baseUrl = "https://adetuyi.com";
+  const image = post.ogImage ? `${baseUrl}${post.ogImage}` : `${baseUrl}/tolu-new.png`;
+
+  const blogPostingSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.title,
+    "description": post.excerpt,
+    "author": {
+      "@type": "Person",
+      "name": "Tolu Adetuyi",
+      "url": baseUrl,
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Tolu Adetuyi",
+      "url": baseUrl,
+    },
+    "datePublished": post.date,
+    "dateModified": post.date,
+    "url": `${baseUrl}/writing/${post.slug}`,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `${baseUrl}/writing/${post.slug}`,
+    },
+    "image": image,
+    "keywords": post.category,
+    "articleSection": post.category,
+    "inLanguage": "en-US",
+  };
+
   return (
-    <main className="max-w-[680px] mx-auto px-6 py-16 md:py-24">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
+      <main className="max-w-[680px] mx-auto px-6 py-16 md:py-24">
       <Link
         href="/writing"
         className="inline-flex items-center text-[13px] font-medium uppercase tracking-widest text-muted hover:text-foreground transition-colors mb-12"
@@ -189,5 +225,6 @@ export default async function WritingPost({ params }: PageProps) {
         </div>
       </article>
     </main>
+    </>
   );
 }
