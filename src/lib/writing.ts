@@ -28,7 +28,7 @@ const posts: Post[] = [
     excerpt: "We are not paralyzed by a lack of vision. We are paralyzed by the scale of it. The problem is rarely that people cannot see where they want to go. Many can see it with uncomfortable clarity.",
     date: "2026-06-22",
     category: "Execution",
-    readingTime: "6 min read",
+    readingTime: "7 min read",
     content: [
       { type: "paragraph", text: "Most people are not stuck because they lack vision. They are stuck because their vision is too far ahead of their current level. They can see the company, the movement, the platform, the infrastructure, the impact with uncomfortable clarity. What they cannot see is the bridge between where they are and where they want to be. So they stand still, trying to solve level fourteen from level one." },
       { type: "heading", text: "The game does not work that way" },
@@ -39,6 +39,7 @@ const posts: Post[] = [
       { type: "heading", text: "The match starts anyway" },
       { type: "paragraph", text: "I know this from growing up. The pitch was whatever was available. Monkey posts made from schoolbags. Two stones for a goal. The ball half plastic, half prayers. Street against street, whoever showed up. The match started when enough players arrived. Nobody needed to organize it further than that." },
       { type: "paragraph", text: "Nobody gets discovered sitting on the veranda discussing football theory. You get discovered by playing. Win enough matches and new resources appear. A proper ball arrives. Someone brings bibs. The local tournament takes notice. A coach starts asking questions. Nothing changed except that you started playing." },
+      { type: "paragraph", text: "None of this is a case against resources. Resources matter. A proper kit compresses timelines and opens doors that a half-plastic ball cannot. The honest point is narrower: there will always be someone on that street with more than you, and someone with less. That is a permanent feature of any game ever played. What is rarely said out loud is that even the players who look most resourced rarely feel that way from the inside. The founder with the bigger raise still worries the runway is not enough. The builder with the stronger network still feels the crucial connection is missing. From the inside, the arithmetic feels identical regardless of what anyone else sees on the outside. It is the same cycle, just dressed in different numbers. Resources help. They accelerate. They do not cure the feeling that you are not yet ready. Only playing does that." },
       { type: "paragraph", text: "The away matches matter even more. The next street has stronger defenders. The pitch slopes awkwardly. The players have spent years developing instincts together. You lose. Then you spend the evening replaying every mistake. Who lost possession. Where the marking collapsed. Which pass should have been made. The next time you return, you are not more talented. You are more informed." },
       { type: "quote", text: "Progress is often intelligence disguised as experience." },
       { type: "heading", text: "The older brother by the touchline" },
