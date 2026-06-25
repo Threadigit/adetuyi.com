@@ -32,6 +32,10 @@ export default function StructuredData() {
     "subjectOf": [
       {
         "@type": "Article",
+        "url": "https://techeconomy.ng/fatf-grey-list-exit-payment-vision-2028-iso-20022-national-payment-stack-nigeria/"
+      },
+      {
+        "@type": "Article",
         "url": "https://businessday.ng/technology/article/cbn-aml-directive-triggers-tech-reset-as-banks-fintechs-battle-data-talent-gaps/"
       },
       {
