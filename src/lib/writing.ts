@@ -19,7 +19,7 @@ export interface Post {
 
 // ── Posts ──────────────────────────────────────────────
 // Add new posts to the top of this array.
-// They'll appear in reverse-chronological order automatically.
+// They'll appear in reverse-chronological order automatically
 
 const posts: Post[] = [
   {
