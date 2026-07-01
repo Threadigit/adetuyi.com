@@ -23,6 +23,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: 'https://adetuyi.com/work',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.7,
+    },
+    {
       url: 'https://adetuyi.com/writing',
       lastModified: new Date(),
       changeFrequency: 'weekly',
