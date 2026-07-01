@@ -61,7 +61,7 @@ export default function WorkPage() {
             Advisory
           </h1>
           <p className="text-[16px] leading-[1.75] text-muted">
-            Most of the time, the problem a founder brings me is not the actual problem.
+            Most of the time, the problem someone brings me is not the actual problem.
             I walk in, map the gap between what they believe and what is true, and
             compress it into a clear direction. That is the work.
           </p>
