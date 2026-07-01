@@ -3,11 +3,41 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Advisory | Tolu Adetuyi",
-  description: "Founder and operator advisory from Tolu Adetuyi. Business model clarity, fundraising narrative, and distribution strategy for early-stage founders building in Africa.",
+  description: "Business model clarity, fundraising narrative, and distribution strategy — for founders, operators, and investors building in Africa.",
   alternates: {
     canonical: "https://adetuyi.com/work",
   },
 };
+
+const audiences = [
+  {
+    label: "Founders",
+    desc: "Pre-seed to Series A. Working thesis, not enough conviction or speed. Clarity on the model, the narrative, or the market.",
+  },
+  {
+    label: "Operators",
+    desc: "Scaling into Nigeria or African markets. Navigating the gap between what the data says and how the ground actually works.",
+  },
+  {
+    label: "Investors",
+    desc: "Allocating into Africa. Looking for a practitioner's read on a deal, a market, or a sector before committing capital.",
+  },
+];
+
+const services = [
+  {
+    label: "Business model clarity",
+    desc: "I catch the gaps founders cannot see from inside the business. Unit economics that hold at the aggregate and break at the segment. Revenue that looks like profit. The wrong problem being solved very well.",
+  },
+  {
+    label: "Fundraising narrative",
+    desc: "Capital moves on conviction. I help founders find the true thesis buried under the pitch they rehearsed, then rebuild the documentation around it. Not to sound good. To say something true that investors can act on.",
+  },
+  {
+    label: "Distribution and market structure",
+    desc: "I built the distribution network that now processes billions in African transactions. I work with founders and operators navigating the gap between how these markets appear in reports and how they actually work on the ground.",
+  },
+];
 
 export default function WorkPage() {
   return (
@@ -20,98 +50,100 @@ export default function WorkPage() {
       </Link>
 
       <article className="animate-fade-up">
-        <header className="mb-12">
+        <header className="mb-14">
           <div className="flex items-center gap-3 mb-6">
             <div className="h-[1px] w-8 bg-accent"></div>
             <span className="text-[13px] font-medium uppercase tracking-widest text-accent">
-              Work
+              Work with Tolu
             </span>
           </div>
-          <h1 className="text-[36px] md:text-[44px] font-medium tracking-tight leading-tight mb-6 text-foreground">
+          <h1 className="text-[36px] md:text-[44px] font-medium tracking-tight leading-tight mb-5 text-foreground">
             Advisory
           </h1>
-          <p className="text-[18px] md:text-[20px] leading-relaxed text-muted italic">
-            For founders who need to see their business clearly and move faster because of it.
+          <p className="text-[16px] leading-[1.75] text-muted">
+            Most of the time, the problem a founder brings me is not the actual problem.
+            I walk in, map the gap between what they believe and what is true, and
+            compress it into a clear direction. That is the work.
           </p>
         </header>
 
-        <div className="text-[15px] leading-[1.8] text-muted">
-
-          <div className="space-y-4 mb-12">
-            <p>
-              Most of the time, the problem a founder brings me is not the actual problem. The model has a gap they cannot see from the inside. The narrative is accurate but untranslatable to the people whose capital it needs to move. The market is real but the entry is wrong.
-            </p>
-            <p>
-              I walk into those situations and compress the fog. Fast, with enough conviction that the person on the other side feels the direction before they have fully reasoned through it. That is the work.
-            </p>
+        {/* Who this is for */}
+        <section className="mb-14">
+          <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
+            Who this is for
+          </h2>
+          <div>
+            {audiences.map(({ label, desc }, i) => (
+              <div key={label}>
+                <div className="py-4 flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-6">
+                  <span className="text-[15px] font-medium text-foreground w-[90px] flex-shrink-0">
+                    {label}
+                  </span>
+                  <span className="text-[14px] text-muted leading-relaxed">{desc}</span>
+                </div>
+                {i < audiences.length - 1 && (
+                  <div className="border-t border-accent/20" />
+                )}
+              </div>
+            ))}
           </div>
+        </section>
 
-          <section className="mb-12">
-            <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-8">
-              What I help with
-            </h2>
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-[16px] font-medium text-foreground mb-2">Business model clarity</h3>
-                <p>
-                  I have sat with founders who were building revenue they genuinely believed was profit. I have caught broken unit economics that looked healthy at the aggregate and came apart at the segment. The analysis is sometimes technical. The real work is always reorientation — helping someone see what was already in front of them, from a different angle. Sometimes that takes an afternoon. Sometimes it changes the trajectory of the business.
-                </p>
+        {/* What I do */}
+        <section className="mb-14">
+          <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
+            What I do
+          </h2>
+          <div>
+            {services.map(({ label, desc }, i) => (
+              <div key={label}>
+                <div className="py-5">
+                  <p className="text-[11px] font-medium uppercase tracking-[0.15em] text-accent mb-2">
+                    {label}
+                  </p>
+                  <p className="text-[15px] leading-[1.75] text-muted">{desc}</p>
+                </div>
+                {i < services.length - 1 && (
+                  <div className="border-t border-accent/20" />
+                )}
               </div>
-              <div>
-                <h3 className="text-[16px] font-medium text-foreground mb-2">Fundraising narrative</h3>
-                <p>
-                  Capital moves on conviction, not data. Investors are not buying the deck. They are buying a version of the future they can believe in. I help founders find the true thesis buried under the pitch they rehearsed, then rebuild the documentation around it. The goal is material the founder deeply believes — not because I wrote it well, but because it accurately names what they are actually building.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-[16px] font-medium text-foreground mb-2">Distribution and market structure</h3>
-                <p>
-                  I spent years building the distribution network that now processes billions in transactions across Africa. That experience gave me a precise map of how these markets actually work on the ground in Nigeria — not how they appear in research reports. I work with founders navigating that gap, and with operators expanding into territory they do not yet fully understand.
-                </p>
-              </div>
-            </div>
-          </section>
+            ))}
+          </div>
+        </section>
 
-          <section className="mb-12">
-            <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
-              Who I work with
-            </h2>
-            <div className="space-y-4">
-              <p>
-                Founders at the early stages who have a working thesis but are not moving with enough conviction or speed. Operators expanding into unfamiliar markets. Occasionally, capital allocators who want a practitioner&apos;s read on a deal or a sector.
-              </p>
-              <p>
-                Most of the high-signal conversations I have had started with someone saying: you need to talk to Tolu. The referral filter matters. Founders who arrive through the Ventures Platform network or through the writing tend to already know what kind of work they need. Those reaching out cold should send a short note first.
-              </p>
-            </div>
-          </section>
-
-          <section>
-            <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
-              How to reach me
-            </h2>
-            <p className="mb-8">
-              If you have been referred, book a session directly. If you are reaching out cold, send a note with what you are building, what the specific problem is, and who you are. I respond to founders I can actually help.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="https://calendly.com/toluadetuyi/one-on-one"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-accent text-white px-8 py-3.5 rounded-full hover:bg-accent/90 transition-all font-medium text-[15px] group shadow-sm hover:shadow-md"
-              >
-                Book a session <span className="transition-transform duration-300 group-hover:translate-x-1">↗</span>
-              </a>
-              <a
-                href="mailto:tolu@adetuyi.com"
-                className="inline-flex items-center justify-center gap-2 border border-foreground/20 text-foreground px-8 py-3.5 rounded-full hover:border-accent hover:text-accent transition-all font-medium text-[15px] group"
-              >
-                Send a note <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-              </a>
-            </div>
-          </section>
-
-        </div>
+        {/* How to start */}
+        <section className="pt-2">
+          <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-5">
+            How to start
+          </h2>
+          <p className="text-[15px] leading-[1.75] text-muted mb-8">
+            Most engagements start by referral. If you have been pointed here, book directly.
+            If you are reaching out cold, send a short note first — what you are building,
+            what the specific problem is, and who you are.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a
+              href="https://calendly.com/toluadetuyi/one-on-one"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 bg-accent text-white px-8 py-3.5 rounded-full hover:bg-accent/90 transition-all font-medium text-[15px] group shadow-sm hover:shadow-md"
+            >
+              Book a session{" "}
+              <span className="transition-transform duration-300 group-hover:translate-x-1">
+                ↗
+              </span>
+            </a>
+            <a
+              href="mailto:tolu@adetuyi.com"
+              className="inline-flex items-center justify-center gap-2 border border-foreground/20 text-foreground px-8 py-3.5 rounded-full hover:border-accent hover:text-accent transition-all font-medium text-[15px] group"
+            >
+              Send a note{" "}
+              <span className="transition-transform duration-300 group-hover:translate-x-1">
+                →
+              </span>
+            </a>
+          </div>
+        </section>
       </article>
     </main>
   );

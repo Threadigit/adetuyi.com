@@ -435,21 +435,32 @@ export default function Home() {
           Work with me
         </p>
         <h2 className="text-[22px] font-medium text-foreground tracking-tight leading-snug mb-2">
-          If you are building in Africa or allocating into it, let&apos;s talk.
+          Founders. Operators. Investors in Africa.
         </h2>
-        <p className="text-[14px] text-muted mb-7">
-          Founders, investors, and operators, book a direct session or find me on the links below.
+        <p className="text-[14px] text-muted mb-2">
+          Business model clarity, fundraising narrative, distribution strategy, or a practitioner&apos;s read before you allocate.
         </p>
-
-        {/* Primary CTA */}
-        <a
-          href="https://calendly.com/toluadetuyi/one-on-one"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3.5 rounded-full hover:bg-accent/90 transition-all font-medium text-[15px] group shadow-sm hover:shadow-md mb-10"
-        >
-          Book a session <span className="transition-transform duration-300 group-hover:translate-x-1">↗</span>
+        <a href="/work" className="text-[13px] text-accent link-hover inline-block mb-7">
+          About the advisory →
         </a>
+
+        {/* CTAs */}
+        <div className="flex flex-col sm:flex-row gap-4 mb-10">
+          <a
+            href="https://calendly.com/toluadetuyi/one-on-one"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3.5 rounded-full hover:bg-accent/90 transition-all font-medium text-[15px] group shadow-sm hover:shadow-md"
+          >
+            Book a session <span className="transition-transform duration-300 group-hover:translate-x-1">↗</span>
+          </a>
+          <a
+            href="mailto:tolu@adetuyi.com"
+            className="inline-flex items-center gap-2 border border-foreground/20 text-foreground px-8 py-3.5 rounded-full hover:border-accent hover:text-accent transition-all font-medium text-[15px] group"
+          >
+            Send a note <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+          </a>
+        </div>
 
         {/* Footer Bottom */}
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-y-5 text-[13px] border-t border-border/50 pt-6">
