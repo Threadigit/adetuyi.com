@@ -136,20 +136,6 @@ export default function Home() {
             </div>
             <span className="text-muted/80 text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Actionable Global Intelligence Brief</span>
           </div>
-          <div className="border-t border-accent/20" />
-
-          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-0.5">
-            <div className="flex items-center gap-2">
-              <a
-                href="/work"
-                className="text-[15px] font-medium link-hover"
-              >
-                Advisory
-              </a>
-              <span className="text-[10px] uppercase tracking-widest text-accent/70 font-medium border border-accent/25 rounded-full px-2 py-0.5">By Referral</span>
-            </div>
-            <span className="text-muted/80 text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Business Clarity &amp; Venture Strategy</span>
-          </div>
         </div>
       </section>
       {/* ── Core Areas of Focus ── */}
