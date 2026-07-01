@@ -200,6 +200,32 @@ export default async function WritingPost({ params }: PageProps) {
           {post.content.map((block, index) => renderBlock(block, index))}
         </div>
 
+        {/* Work with me */}
+        <div className="pt-8 pb-8 border-t border-border">
+          <p className="text-[11px] font-medium uppercase tracking-[0.15em] text-accent mb-2">
+            Work with me
+          </p>
+          <p className="text-[14px] text-muted mb-5 leading-relaxed">
+            If something in this piece resonated, that is usually where the conversation starts.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <a
+              href="https://calendly.com/toluadetuyi/one-on-one"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-accent text-white px-6 py-2.5 rounded-full hover:bg-accent/90 transition-all font-medium text-[13px] group"
+            >
+              Book a session <span className="transition-transform duration-300 group-hover:translate-x-1">↗</span>
+            </a>
+            <a
+              href="mailto:tolu@adetuyi.com"
+              className="inline-flex items-center gap-2 border border-foreground/20 text-foreground px-6 py-2.5 rounded-full hover:border-accent hover:text-accent transition-all font-medium text-[13px] group"
+            >
+              Send a note <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+            </a>
+          </div>
+        </div>
+
         {/* Footer */}
         <div className="pt-8 border-t border-border">
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
