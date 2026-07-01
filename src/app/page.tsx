@@ -427,7 +427,7 @@ export default function Home() {
           Business model clarity, fundraising narrative, distribution strategy, or a practitioner&apos;s read before you allocate.
         </p>
         <a href="/work" className="text-[13px] text-accent link-hover inline-block mb-7">
-          About the advisory →
+          How I work →
         </a>
 
         {/* CTAs */}
