@@ -61,9 +61,10 @@ export default function WorkPage() {
             Advisory
           </h1>
           <p className="text-[16px] leading-[1.75] text-muted">
+            Whether the room has a founder, an operator, or an investor — the work is the same.
             Most of the time, the problem someone brings me is not the actual problem.
             I walk in, map the gap between what they believe and what is true, and
-            compress it into a clear direction. That is the work.
+            compress it into a clear direction.
           </p>
         </header>
 
