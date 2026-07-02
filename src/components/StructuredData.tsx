@@ -98,6 +98,25 @@ export default function StructuredData() {
         "location": "Nigeria"
       }
     ],
+    "award": [
+      "Forbes Technology Council Member, 2024",
+      "Beta Gamma Sigma International Business Honor Society, Lifetime Member",
+      "GSBM Scholar, Morgan State University"
+    ],
+    "memberOf": [
+      {
+        "@type": "Organization",
+        "name": "Forbes Technology Council",
+        "url": "https://councils.forbes.com/forbestechcouncil",
+        "description": "Invitation-only community for senior-level technology executives. Member since 2024."
+      },
+      {
+        "@type": "Organization",
+        "name": "Beta Gamma Sigma",
+        "url": "https://www.betagammasigma.org",
+        "description": "International business honor society recognising academic excellence in AACSB-accredited schools. Lifetime member."
+      }
+    ],
     "knowsAbout": [
       "Digital Identity",
       "Identity Verification",
