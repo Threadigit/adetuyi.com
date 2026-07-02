@@ -117,6 +117,27 @@ export default function StructuredData() {
         "description": "International business honor society recognising academic excellence in AACSB-accredited schools. Lifetime member."
       }
     ],
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "degree",
+        "name": "Master of Business Administration, concentration in Finance",
+        "recognizedBy": {
+          "@type": "CollegeOrUniversity",
+          "name": "Morgan State University",
+          "url": "https://www.morgan.edu"
+        }
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "degree",
+        "name": "Bachelor of Science in Computer Science",
+        "recognizedBy": {
+          "@type": "CollegeOrUniversity",
+          "name": "Adekunle Ajasin University"
+        }
+      }
+    ],
     "knowsAbout": [
       "Digital Identity",
       "Identity Verification",
@@ -164,43 +185,57 @@ export default function StructuredData() {
         "@type": "SiteNavigationElement",
         "position": 1,
         "name": "Writing & Essays",
-        "description": "Essays on trust infrastructure, venture building, and emerging markets.",
+        "description": "Essays on execution, trust infrastructure, venture building, and emerging markets.",
         "url": "https://adetuyi.com/writing"
       },
       {
         "@type": "SiteNavigationElement",
         "position": 2,
+        "name": "The $39 Dispute I Almost Didn't File",
+        "description": "On overthinking, inertia, and the cost of waiting for perfect conditions before you act.",
+        "url": "https://adetuyi.com/writing/the-39-dispute"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "position": 3,
+        "name": "The Architecture of Leverage",
+        "description": "How serious builders redesign how they work — from direct effort to systems that compound.",
+        "url": "https://adetuyi.com/writing/the-architecture-of-leverage"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "position": 4,
+        "name": "Play the Level You're On",
+        "description": "Why the gap between where you are and where you want to be is the actual work.",
+        "url": "https://adetuyi.com/writing/play-the-level-youre-on"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "position": 5,
         "name": "The 5 Mindsets of Real Progress",
         "description": "Moving from intellectual cynicism to raw execution.",
         "url": "https://adetuyi.com/writing/the-spectrum-of-agency"
       },
       {
         "@type": "SiteNavigationElement",
-        "position": 3,
+        "position": 6,
         "name": "The Framework of Agency",
         "description": "Tactical frameworks to bridge the gap between optimism and operations.",
         "url": "https://adetuyi.com/writing/the-framework-of-agency"
       },
       {
         "@type": "SiteNavigationElement",
-        "position": 4,
-        "name": "When a Payment Becomes Evidence",
-        "description": "How the National Payment Stack changes fraud and compliance.",
-        "url": "https://adetuyi.com/writing/when-a-payment-becomes-evidence"
-      },
-      {
-        "@type": "SiteNavigationElement",
-        "position": 5,
-        "name": "Every System Fails the Same Way",
-        "description": "Balancing actuators and mitigators to build resilient systems.",
-        "url": "https://adetuyi.com/writing/actuators-and-mitigators"
-      },
-      {
-        "@type": "SiteNavigationElement",
-        "position": 6,
+        "position": 7,
         "name": "The Infrastructure Thesis",
-        "description": "My core thesis on infrastructure and the future of African economic development.",
+        "description": "A case for private capital in Nigeria's energy infrastructure deficit.",
         "url": "https://adetuyi.com/thesis"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "position": 8,
+        "name": "Work with Tolu",
+        "description": "Business model clarity, fundraising narrative, and distribution strategy for founders, operators, and investors in Africa.",
+        "url": "https://adetuyi.com/work"
       }
     ]
   };
