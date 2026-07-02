@@ -32,31 +32,45 @@ export default function StructuredData() {
     "subjectOf": [
       {
         "@type": "Article",
-        "url": "https://techeconomy.ng/fatf-grey-list-exit-payment-vision-2028-iso-20022-national-payment-stack-nigeria/"
+        "headline": "FATF Grey List Exit, Payment Vision 2028 & Nigeria's National Payment Stack",
+        "url": "https://techeconomy.ng/fatf-grey-list-exit-payment-vision-2028-iso-20022-national-payment-stack-nigeria/",
+        "author": { "@type": "Organization", "name": "TechEconomy" }
       },
       {
         "@type": "Article",
-        "url": "https://businessday.ng/technology/article/cbn-aml-directive-triggers-tech-reset-as-banks-fintechs-battle-data-talent-gaps/"
+        "headline": "CBN AML Directive Triggers Tech Reset as Banks, Fintechs Battle Data & Talent Gaps",
+        "url": "https://businessday.ng/technology/article/cbn-aml-directive-triggers-tech-reset-as-banks-fintechs-battle-data-talent-gaps/",
+        "author": { "@type": "Organization", "name": "BusinessDay" }
       },
       {
         "@type": "Article",
-        "url": "https://guardian.ng/news/leadership-innovation-and-industry-impact-the-work-of-tolu-adetuyi-at-prembly/"
+        "headline": "Leadership, Innovation, and Industry Impact: The Work of Tolu Adetuyi at Prembly",
+        "url": "https://guardian.ng/news/leadership-innovation-and-industry-impact-the-work-of-tolu-adetuyi-at-prembly/",
+        "author": { "@type": "Organization", "name": "The Guardian Nigeria" }
       },
       {
         "@type": "Article",
-        "url": "https://techcabal.com/2026/03/10/nigerias-prembly-launches-shared-open-source-database/"
+        "headline": "Nigeria's Prembly Launches Shared Open-Source Database",
+        "url": "https://techcabal.com/2026/03/10/nigerias-prembly-launches-shared-open-source-database/",
+        "author": { "@type": "Organization", "name": "TechCabal" }
       },
       {
         "@type": "Article",
-        "url": "https://secureidentityalliance.org/reports/on-the-road-to-user-centricity-digital-identity-in-the-electronic-wallet-era/"
+        "headline": "On the Road to User-Centricity: Digital Identity in the Electronic Wallet Era",
+        "url": "https://secureidentityalliance.org/reports/on-the-road-to-user-centricity-digital-identity-in-the-electronic-wallet-era/",
+        "author": { "@type": "Organization", "name": "Secure Identity Alliance" }
       },
       {
         "@type": "Article",
-        "url": "https://vanguardngr.com/ai-is-strongest-ally-in-war-against-financial-fraud-tolu-adetuyi/"
+        "headline": "AI Is Strongest Ally in War Against Financial Fraud — Tolu Adetuyi",
+        "url": "https://vanguardngr.com/ai-is-strongest-ally-in-war-against-financial-fraud-tolu-adetuyi/",
+        "author": { "@type": "Organization", "name": "Vanguard" }
       },
       {
         "@type": "Article",
-        "url": "https://thecondia.com/zero-to-scale-tolu-adetuyi-head-of-growth-at-moniepoint/"
+        "headline": "Zero to Scale: Tolu Adetuyi, Head of Growth at Moniepoint",
+        "url": "https://thecondia.com/zero-to-scale-tolu-adetuyi-head-of-growth-at-moniepoint/",
+        "author": { "@type": "Organization", "name": "The Condia" }
       },
       {
         "@type": "VideoObject",
