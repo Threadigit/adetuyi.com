@@ -60,7 +60,15 @@ export default function StructuredData() {
       },
       {
         "@type": "VideoObject",
-        "url": "https://youtube.com/shorts/Z1PppJZj8JQ?si=57vjYNt4v5Zs7Nzf"
+        "name": "Welcome to ZeroToAct",
+        "description": "Introduction to ZeroToAct — actionable global intelligence by Tolu Adetuyi.",
+        "url": "https://youtube.com/shorts/Z1PppJZj8JQ?si=57vjYNt4v5Zs7Nzf",
+        "embedUrl": "https://www.youtube.com/embed/Z1PppJZj8JQ",
+        "thumbnailUrl": [
+          "https://img.youtube.com/vi/Z1PppJZj8JQ/maxresdefault.jpg",
+          "https://img.youtube.com/vi/Z1PppJZj8JQ/hqdefault.jpg"
+        ],
+        "uploadDate": "2026-06-01T08:00:00+01:00"
       }
     ],
     "alumniOf": [
