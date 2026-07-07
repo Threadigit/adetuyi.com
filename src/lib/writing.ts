@@ -23,8 +23,8 @@ export interface Post {
 
 const posts: Post[] = [
   {
-    slug: "screens-got-there-before-i-did",
-    title: "Screens Got There Before I Did",
+    slug: "the-paradox-of-a-father",
+    title: "The Paradox of a Father",
     excerpt: "I spend my days on the stuff people call building the future. Trust systems, capital, scale. Meanwhile another world has been quietly raising my daughter from the inside, and I only noticed recently.",
     date: "2026-07-06",
     category: "Family",
