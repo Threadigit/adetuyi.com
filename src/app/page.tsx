@@ -290,6 +290,18 @@ export default function Home() {
         </h2>
         <div className="space-y-4">
           <a
+            href="https://kenyanwallstreet.com/africa-risk-premium-op-ed"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex justify-between items-baseline gap-4 group"
+          >
+            <span className="text-[15px] link-hover">
+              Is Africa's Risk Premium Really a Legibility Problem?
+            </span>
+            <span className="text-muted text-[13px] whitespace-nowrap flex-shrink-0">The Kenyan Wallstreet</span>
+          </a>
+          <div className="border-t border-accent/20" />
+          <a
             href="https://techeconomy.ng/fatf-grey-list-exit-payment-vision-2028-iso-20022-national-payment-stack-nigeria/"
             target="_blank"
             rel="noopener noreferrer"

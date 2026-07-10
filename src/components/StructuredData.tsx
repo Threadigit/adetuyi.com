@@ -32,6 +32,12 @@ export default function StructuredData() {
     "subjectOf": [
       {
         "@type": "Article",
+        "headline": "Is Africa's Risk Premium Really a Legibility Problem?",
+        "url": "https://kenyanwallstreet.com/africa-risk-premium-op-ed",
+        "author": { "@type": "Organization", "name": "The Kenyan Wallstreet" }
+      },
+      {
+        "@type": "Article",
         "headline": "FATF Grey List Exit, Payment Vision 2028 & Nigeria's National Payment Stack",
         "url": "https://techeconomy.ng/fatf-grey-list-exit-payment-vision-2028-iso-20022-national-payment-stack-nigeria/",
         "author": { "@type": "Organization", "name": "TechEconomy" }
