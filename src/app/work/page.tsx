@@ -2,10 +2,30 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Advisory | Tolu Adetuyi",
+  title: "Advisory",
   description: "Business model clarity, fundraising narrative, and distribution strategy — for founders, operators, and investors building in Africa.",
   alternates: {
     canonical: "https://adetuyi.com/work",
+  },
+  openGraph: {
+    title: "Advisory | Tolu Adetuyi",
+    description: "Business model clarity, fundraising narrative, and distribution strategy for founders, operators, and investors building in Africa.",
+    url: "https://adetuyi.com/work",
+    type: "website",
+    images: [
+      {
+        url: "/tolu-new.png",
+        width: 1200,
+        height: 1200,
+        alt: "Tolu Adetuyi",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Advisory | Tolu Adetuyi",
+    description: "Business model clarity, fundraising narrative, and distribution strategy for founders, operators, and investors building in Africa.",
+    images: ["/tolu-new.png"],
   },
 };
 

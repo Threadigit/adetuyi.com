@@ -28,10 +28,12 @@ const posts: Post[] = [
     excerpt: "You review a piece of work that came back flat. You push once, twice, a third time. The same person, with the same brain, produces something excellent. Nothing changed except pressure. That should disturb you more than it does.",
     date: "2026-07-10",
     category: "Leadership",
+    ogImage: "/lazy-thinking.png",
     readingTime: "5 min read",
     content: [
       { type: "paragraph", text: "There is a specific kind of shock every founder eventually experiences. You review a piece of work that came back flat. The analysis stops at the first layer. The proposal answers the question asked but not the question that matters. So you step in. You push once, then again, then a third time. And suddenly the same person, with the same brain and the same information, produces something excellent." },
       { type: "paragraph", text: "Nothing changed except pressure. That should disturb you more than it does." },
+      { type: "image", url: "/lazy-thinking.png", alt: "Lazy Thinking is Killing Your Organization. Most organizations do not have a people problem. They have a thinking problem.", caption: "Most organizations do not have a people problem. They have a thinking problem." },
       { type: "paragraph", text: "The version of this I keep meeting is the bug fix. A customer hits a problem. The fix ships quickly, the ticket closes, and when I ask whether it has been fixed, the answer is yes. Then I push one layer further and the real picture appears. The symptom was treated for that one customer. The root cause was never touched. Left uncaught, the outcome is predictable. That customer is fine for now, and the same problem shows up later in the data of new customers, multiplied. We have seen exactly that play out. The engineer could always do the real fix. The patch was simply cheaper, and yes was expected to end the conversation." },
       { type: "paragraph", text: "We spend a lot of energy in this ecosystem talking about talent gaps. Hiring is hard, skills are scarce, training is weak. All true. But there is a quieter problem sitting inside companies that already won the talent battle. The people are qualified. The credentials are real. The capacity is proven, because you have seen it appear the moment you applied force. What is missing is the willingness to do the hard thinking before anyone demands it." },
       { type: "heading", text: "The lazy thinker" },

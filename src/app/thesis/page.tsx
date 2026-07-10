@@ -2,10 +2,30 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Powering Nigeria: Infrastructure Fund 1 | Tolu Adetuyi",
+  title: "Powering Nigeria: Infrastructure Fund 1",
   description: "A manifesto for solving Nigeria's power infrastructure deficit.",
   alternates: {
     canonical: "https://adetuyi.com/thesis",
+  },
+  openGraph: {
+    title: "Powering Nigeria: Infrastructure Fund 1 | Tolu Adetuyi",
+    description: "A manifesto for solving Nigeria's power infrastructure deficit through private capital and commercial energy infrastructure.",
+    url: "https://adetuyi.com/thesis",
+    type: "website",
+    images: [
+      {
+        url: "/tolu-new.png",
+        width: 1200,
+        height: 1200,
+        alt: "Tolu Adetuyi",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Powering Nigeria: Infrastructure Fund 1 | Tolu Adetuyi",
+    description: "A manifesto for solving Nigeria's power infrastructure deficit through private capital and commercial energy infrastructure.",
+    images: ["/tolu-new.png"],
   },
 };
 
