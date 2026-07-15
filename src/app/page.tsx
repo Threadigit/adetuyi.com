@@ -191,6 +191,20 @@ export default function Home() {
           Speaking & Panels
         </h2>
         <div className="space-y-4">
+          <a
+            href="/the-prosperity-engine-deck.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex justify-between items-baseline gap-4 group"
+          >
+            <span className="text-[15px] link-hover font-medium">
+              The Prosperity Engine: How Nigeria&apos;s Economy Really Works, and How to Grade Any Government Running It
+            </span>
+            <span className="text-muted text-[13px] whitespace-nowrap flex-shrink-0">
+              Slide deck · 2026 <span className="inline-block transition-transform duration-300 group-hover:translate-x-1 group-hover:text-accent">↗</span>
+            </span>
+          </a>
+          <div className="border-t border-accent/20" />
           <div className="flex justify-between items-baseline">
             <a
               href="https://www.youtube.com/watch?v=7JIjYZJO5jQ"
