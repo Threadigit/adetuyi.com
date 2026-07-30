@@ -258,7 +258,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className="flex justify-between items-baseline gap-4 group"
           >
-            <span className="text-[15px] link-hover font-medium">
+            <span className="text-[15px] link-hover">
               The Prosperity Engine: How Nigeria&apos;s Economy Really Works, and How to Grade Any Government Running It
             </span>
             <span className="text-muted text-[13px] whitespace-nowrap flex-shrink-0">
@@ -271,7 +271,7 @@ export default function Home() {
               href="https://www.youtube.com/watch?v=7JIjYZJO5jQ"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[15px] link-hover font-medium"
+              className="text-[15px] link-hover"
             >
               Lagos Tech Fest 2023
             </a>
