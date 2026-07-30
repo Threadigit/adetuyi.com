@@ -20,14 +20,12 @@ export const speakingEntries: ProfileEntry[] = [
   {
     title: "Closing the Compliance Gap for African Startups",
     meta: "Slide deck",
-    href: "https://docs.google.com/presentation/d/e/2PACX-1vRYTONvzPUFRxh2qtI0i9Kyp7jSzxSmRgW-fU0ABvt73cXZn5nNtv36UGavwScf6YqarMn0I4KgprJz/pub?start=true&loop=true&delayms=3000",
-    external: true,
+    href: "/resources/closing-the-compliance-gap",
   },
   {
     title: "Bootstrapping & Making Your Idea Attractive to Investors",
     meta: "Slide deck",
-    href: "https://docs.google.com/presentation/d/e/2PACX-1vRfUMs41WRijX2FtvJ59M-q-NumD5Y2oJlvGrrw_or0rqU9QAGtK6WbvvZjLKhPeBlDBaq17ZHYV5zO/pub?start=true&loop=true&delayms=3000",
-    external: true,
+    href: "/resources/bootstrapping-for-investors",
   },
   {
     title: "Creating a Positive Work Security Culture",

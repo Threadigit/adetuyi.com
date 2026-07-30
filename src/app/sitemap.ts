@@ -52,6 +52,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'yearly',
       priority: 0.7,
     },
+    {
+      url: 'https://adetuyi.com/resources/closing-the-compliance-gap',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://adetuyi.com/resources/bootstrapping-for-investors',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.7,
+    },
     ...writingEntries,
   ];
 }
