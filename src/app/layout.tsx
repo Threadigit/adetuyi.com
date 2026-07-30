@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Lora } from "next/font/google";
 import "./globals.css";
 import StructuredData from "@/components/StructuredData";
+import SiteAnalytics from "@/components/SiteAnalytics";
 
 const lora = Lora({
   variable: "--font-lora",
@@ -109,6 +110,7 @@ export default function RootLayout({
       </head>
       <body className={`${lora.variable} font-sans`} suppressHydrationWarning>
         {children}
+        <SiteAnalytics />
       </body>
     </html>
   );
