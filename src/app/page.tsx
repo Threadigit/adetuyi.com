@@ -65,9 +65,8 @@ export default function Home() {
           <span className="text-accent text-[13px] font-medium ml-1">(YC W22)</span>
         </p>
         <p className="text-[19px] md:text-[21px] leading-[1.55] tracking-[-0.01em] text-foreground max-w-[640px] mt-4">
-          I build trust infrastructure, financial infrastructure, distribution
-          networks, and physical systems that expand economic participation
-          across emerging markets.
+          I build the infrastructure that powers economic participation across
+          emerging markets.
         </p>
         <div className="flex flex-wrap items-center gap-x-5 gap-y-3 mt-7">
           <Link
