@@ -4,7 +4,13 @@ export type ContentBlock =
   | { type: "quote"; text: string }
   | { type: "callout"; text: string }
   | { type: "image"; url: string; alt: string; caption?: string }
-  | { type: "youtube"; videoId: string };
+  | {
+      type: "youtube";
+      videoId: string;
+      name: string;
+      description: string;
+      uploadDate: string;
+    };
 
 export interface Post {
   slug: string;
@@ -34,7 +40,13 @@ const posts: Post[] = [
       { type: "paragraph", text: "The businesses that became impossible to displace were never the ones with the cleverest product. They were the ones everyone else needed in order to function. Take them out of the chain, and the chain stopped moving." },
       { type: "paragraph", text: "That single observation has shaped how I have built ever since. Last week on <a href=\"https://zerotoact.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link-hover text-accent\">ZeroToAct</a> I released one of our weekly intelligence briefs, and in a recent video I asked a question that mainstream commentary keeps answering badly. Why is the United States the most dominant economy on earth?" },
       { type: "paragraph", text: "The lazy answer is size. The real answer is service." },
-      { type: "youtube", videoId: "N4GSZjIPma4" },
+      {
+        type: "youtube",
+        videoId: "N4GSZjIPma4",
+        name: "The US Economy Dominating the World Through Service",
+        description: "Tolu Adetuyi explains how the United States sustains economic dominance through systemic utility, financial infrastructure, and service to global commerce.",
+        uploadDate: "2026-07-19T18:37:09-07:00",
+      },
       { type: "heading", text: "Power is not control. It is systemic utility." },
       { type: "paragraph", text: "We are trained to think of power as control, as the ability to command outcomes and sit at the top of a ranking. I have come to believe the opposite. Real power, at the level of a nation, an institution, or a single founder, is systemic utility. It is a measure of how badly the system around you would break if you disappeared." },
       { type: "paragraph", text: "Size is a snapshot. Utility is a lock. When enough people cannot operate without what you provide, your position stops depending on your effort and starts depending on their need. That is the most durable form of leverage there is, and almost nobody sets out to build it on purpose." },
@@ -600,7 +612,13 @@ const posts: Post[] = [
       { type: "paragraph", text: "An electric grid is one of the most finely engineered systems humans have built. Generation and demand have to match in real time, or the whole thing destabilizes. When demand overwhelms capacity, frequency drops, voltage turns erratic, and if nothing intervenes, the grid collapses. Not slowly. Fast." },
       { type: "paragraph", text: "The engineers solved this not by building bigger power plants, but by introducing something called a synchronous compensator. It does not generate power. It does not consume it. It absorbs excess reactive power when the grid is overloaded and releases it when the system dips. It exists purely to hold the structure together while everything else swings." },
       { type: "paragraph", text: "That device is a mitigator. If you care enough to know what sparked this writing, you can watch the documentary below." },
-      { type: "youtube", videoId: "8KOYyfZbPzo" },
+      {
+        type: "youtube",
+        videoId: "8KOYyfZbPzo",
+        name: "How the Electrical Grid Is Being Rebuilt for AI",
+        description: "Bloomberg Primer examines how the electrical grid is being rebuilt to meet rising power demand from artificial intelligence and data centers.",
+        uploadDate: "2026-05-27T01:00:23-07:00",
+      },
       { type: "heading", text: "Actuators and Mitigators" },
       { type: "paragraph", text: "Whenever I design anything, whether it is a product, a process, or a deal, I map it across two fundamental forces." },
       { type: "paragraph", text: "<strong>Actuators</strong> are what make a system move. Transaction flows, growth incentives, demand signals. They create velocity. Builders love actuators because they are visible, measurable, and look fantastic in a pitch deck." },

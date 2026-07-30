@@ -3,9 +3,29 @@ import VideoPreview from "@/components/VideoPreview";
 import { getLatestPosts } from "@/lib/writing";
 import { pressEntries, speakingEntries } from "@/lib/profile-content";
 
+const featuredVideoSchema = {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Lagos Tech Fest 2023",
+  "description": "Tolu Adetuyi speaks at Lagos Tech Fest about identity verification, regulatory compliance, and reducing fraud for African startups.",
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/7JIjYZJO5jQ/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/7JIjYZJO5jQ/hqdefault.jpg",
+  ],
+  "uploadDate": "2025-05-25T14:36:57-07:00",
+  "embedUrl": "https://www.youtube.com/embed/7JIjYZJO5jQ",
+  "url": "https://adetuyi.com/#featured-video",
+};
+
 export default function Home() {
   return (
     <main id="main-content" className="max-w-[680px] mx-auto px-6 py-8 md:py-14">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(featuredVideoSchema).replace(/</g, "\\u003c"),
+        }}
+      />
       <nav
         aria-label="Primary navigation"
         className="flex items-center justify-between gap-4 mb-14 md:mb-20 animate-fade-up"
@@ -234,7 +254,7 @@ export default function Home() {
       </section>
 
       {/* ── Featured Video ── */}
-      <section className="mb-16 animate-fade-up delay-400">
+      <section id="featured-video" className="mb-16 animate-fade-up delay-400">
         <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
           Featured
         </h2>

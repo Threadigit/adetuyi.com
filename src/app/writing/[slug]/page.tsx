@@ -106,7 +106,7 @@ function renderBlock(block: ContentBlock, index: number) {
             width="100%"
             height="100%"
             src={`https://www.youtube.com/embed/${block.videoId}`}
-            title="YouTube video player"
+            title={block.name}
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -132,6 +132,7 @@ export default async function WritingPost({ params }: PageProps) {
   const blogPostingSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
+    "@id": `${baseUrl}/writing/${post.slug}`,
     "headline": post.title,
     "description": post.excerpt,
     "author": {
@@ -182,6 +183,26 @@ export default async function WritingPost({ params }: PageProps) {
     ],
   };
 
+  const videoSchemas = post.content
+    .filter((block): block is Extract<ContentBlock, { type: "youtube" }> => block.type === "youtube")
+    .map((video) => ({
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "name": video.name,
+      "description": video.description,
+      "thumbnailUrl": [
+        `https://i.ytimg.com/vi/${video.videoId}/maxresdefault.jpg`,
+        `https://i.ytimg.com/vi/${video.videoId}/hqdefault.jpg`,
+      ],
+      "uploadDate": video.uploadDate,
+      "embedUrl": `https://www.youtube.com/embed/${video.videoId}`,
+      "url": `${baseUrl}/writing/${post.slug}`,
+      "isPartOf": {
+        "@type": "BlogPosting",
+        "@id": `${baseUrl}/writing/${post.slug}`,
+      },
+    }));
+
   return (
     <>
       <script
@@ -192,6 +213,15 @@ export default async function WritingPost({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      {videoSchemas.map((videoSchema) => (
+        <script
+          key={videoSchema.embedUrl}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(videoSchema).replace(/</g, "\\u003c"),
+          }}
+        />
+      ))}
       <main className="max-w-[680px] mx-auto px-6 py-16 md:py-24">
       <Link
         href="/writing"

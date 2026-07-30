@@ -77,18 +77,6 @@ export default function StructuredData() {
         "headline": "Zero to Scale: Tolu Adetuyi, Head of Growth at Moniepoint",
         "url": "https://thecondia.com/zero-to-scale-tolu-adetuyi-head-of-growth-at-moniepoint/",
         "author": { "@type": "Organization", "name": "The Condia" }
-      },
-      {
-        "@type": "VideoObject",
-        "name": "Welcome to ZeroToAct",
-        "description": "Introduction to ZeroToAct — actionable global intelligence by Tolu Adetuyi.",
-        "url": "https://youtube.com/shorts/Z1PppJZj8JQ?si=57vjYNt4v5Zs7Nzf",
-        "embedUrl": "https://www.youtube.com/embed/Z1PppJZj8JQ",
-        "thumbnailUrl": [
-          "https://img.youtube.com/vi/Z1PppJZj8JQ/maxresdefault.jpg",
-          "https://img.youtube.com/vi/Z1PppJZj8JQ/hqdefault.jpg"
-        ],
-        "uploadDate": "2026-06-01T08:00:00+01:00"
       }
     ],
     "alumniOf": [
@@ -246,19 +234,6 @@ export default function StructuredData() {
     ]
   };
 
-  const videoSchema = {
-    "@context": "https://schema.org",
-    "@type": "VideoObject",
-    "name": "Lagos Tech Fest 2023: Closing the Compliance Gap for African Startups",
-    "description": "Tolu Adetuyi speaking at Lagos Tech Fest 2023 on identity verification, compliance, and reducing fraud for African startups.",
-    "thumbnailUrl": [
-      "https://img.youtube.com/vi/7JIjYZJO5jQ/maxresdefault.jpg",
-      "https://img.youtube.com/vi/7JIjYZJO5jQ/hqdefault.jpg"
-    ],
-    "uploadDate": "2023-02-15T08:00:00+08:00",
-    "embedUrl": "https://www.youtube.com/embed/7JIjYZJO5jQ"
-  };
-
   return (
     <>
       <script
@@ -272,10 +247,6 @@ export default function StructuredData() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(navigationSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }}
       />
     </>
   );
