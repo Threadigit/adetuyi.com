@@ -30,7 +30,7 @@ export default function Home() {
 
       {/* ── Header ── */}
       <header className="mb-8 animate-fade-up delay-100">
-        <div className="flex items-center gap-5 mb-5">
+        <div className="flex items-center gap-4 sm:gap-5 mb-5">
           {/* Avatar */}
           <div className="relative flex-shrink-0 w-[72px] h-[72px] rounded-full overflow-hidden ring-2 ring-accent/20">
             <img
@@ -40,18 +40,20 @@ export default function Home() {
               style={{ filter: "grayscale(20%)" }}
             />
           </div>
-          {/* Name + label */}
-          <div>
+          {/* Identity */}
+          <div className="min-w-0">
             <h1 className="text-[32px] md:text-[38px] font-medium tracking-tight leading-tight mb-1 text-foreground">
               Tolu Adetuyi
             </h1>
-            <p className="flex flex-wrap items-center gap-2 mt-1">
-              <span className="text-[12px] leading-relaxed text-muted">
-                Innovator &amp; Venture Architect
+            <p className="text-[13px] leading-relaxed text-muted">
+              Innovator &amp; Venture Architect
+            </p>
+            <p className="flex items-center gap-2 mt-1.5 text-[11px] leading-none">
+              <span aria-hidden="true" className="w-4 h-px bg-accent" />
+              <span className="text-accent font-medium tracking-[0.04em]">
+                Forbes Tech Council
               </span>
-              <span className="inline-flex items-center rounded-full border border-accent/20 bg-accent/5 px-2 py-0.5 text-[11px] leading-none text-accent font-medium tracking-[0.04em]">
-                Forbes Tech Council &apos;24
-              </span>
+              <span className="text-muted">&apos;24</span>
             </p>
           </div>
         </div>
