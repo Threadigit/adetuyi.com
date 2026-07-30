@@ -42,19 +42,21 @@ export default function Home() {
           </div>
           {/* Identity */}
           <div className="min-w-0">
-            <h1 className="text-[32px] md:text-[38px] font-medium tracking-tight leading-tight mb-1 text-foreground">
-              Tolu Adetuyi
-            </h1>
-            <p className="text-[13px] leading-relaxed text-muted">
-              Innovator &amp; Venture Architect
-            </p>
-            <p className="flex items-center gap-2 mt-1.5 text-[11px] leading-none">
-              <span aria-hidden="true" className="w-4 h-px bg-accent" />
-              <span className="text-accent font-medium tracking-[0.04em]">
-                Forbes Tech Council
-              </span>
-              <span className="text-muted">&apos;24</span>
-            </p>
+            <div className="inline-flex flex-col items-center text-center">
+              <h1 className="text-[32px] md:text-[38px] font-medium tracking-tight leading-tight mb-1 text-foreground">
+                Tolu Adetuyi
+              </h1>
+              <p className="text-[13px] leading-relaxed text-muted">
+                Innovator &amp; Venture Architect
+              </p>
+              <p className="flex items-center justify-center gap-2 mt-1.5 text-[11px] leading-none">
+                <span aria-hidden="true" className="w-4 h-px bg-accent" />
+                <span className="text-accent font-medium tracking-[0.04em]">
+                  Forbes Tech Council
+                </span>
+                <span className="text-muted">&apos;24</span>
+              </p>
+            </div>
           </div>
         </div>
         <p className="text-foreground font-medium text-[16px] mt-2.5 mb-1.5">
