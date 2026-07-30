@@ -1,5 +1,7 @@
 import Link from "next/link";
+import VideoPreview from "@/components/VideoPreview";
 import { getLatestPosts } from "@/lib/writing";
+import { pressEntries, speakingEntries } from "@/lib/profile-content";
 
 export default function Home() {
   return (
@@ -237,14 +239,7 @@ export default function Home() {
           Featured
         </h2>
         <div className="aspect-video w-full bg-accent/5 ring-1 ring-border overflow-hidden">
-          <iframe
-            src="https://www.youtube.com/embed/7JIjYZJO5jQ"
-            title="Lagos Tech Fest 2023"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="w-full h-full"
-          />
+          <VideoPreview />
         </div>
         <p className="text-muted text-[13px] mt-3">
           Lagos Tech Fest 2023: Identity verification, compliance, and reducing
@@ -255,75 +250,34 @@ export default function Home() {
 
       {/* ── Speaking ── */}
       <section className="mb-16 animate-fade-up delay-500">
-        <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
-          Speaking & Panels
-        </h2>
-        <div className="space-y-4">
-          <a
-            href="/the-prosperity-engine-deck.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex justify-between items-baseline gap-4 group"
-          >
-            <span className="text-[15px] link-hover">
-              The Prosperity Engine: How Nigeria&apos;s Economy Really Works, and How to Grade Any Government Running It
-            </span>
-            <span className="text-muted text-[13px] whitespace-nowrap flex-shrink-0">
-              Slide deck · 2026 <span className="inline-block transition-transform duration-300 group-hover:translate-x-1 group-hover:text-accent">↗</span>
-            </span>
-          </a>
-          <div className="border-t border-accent/20" />
-          <div className="flex justify-between items-baseline">
-            <a
-              href="https://www.youtube.com/watch?v=7JIjYZJO5jQ"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[15px] link-hover"
-            >
-              Lagos Tech Fest 2023
-            </a>
-            <span className="text-muted text-[13px]">Panel</span>
-          </div>
-          <div className="border-t border-accent/20" />
-          <a
-            href="https://docs.google.com/presentation/d/e/2PACX-1vRYTONvzPUFRxh2qtI0i9Kyp7jSzxSmRgW-fU0ABvt73cXZn5nNtv36UGavwScf6YqarMn0I4KgprJz/pub?start=true&loop=true&delayms=3000"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex justify-between items-baseline group"
-          >
-            <span className="text-[15px] link-hover">
-              Closing the Compliance Gap for African Startups
-            </span>
-            <span className="text-muted text-[13px]">
-              Slide deck <span className="inline-block transition-transform duration-300 group-hover:translate-x-1 group-hover:text-accent">↗</span>
-            </span>
-          </a>
-          <div className="border-t border-accent/20" />
-          <a
-            href="https://docs.google.com/presentation/d/e/2PACX-1vRfUMs41WRijX2FtvJ59M-q-NumD5Y2oJlvGrrw_or0rqU9QAGtK6WbvvZjLKhPeBlDBaq17ZHYV5zO/pub?start=true&loop=true&delayms=3000"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex justify-between items-baseline group"
-          >
-            <span className="text-[15px] link-hover">
-              Bootstrapping & Making Your Idea Attractive to Investors
-            </span>
-            <span className="text-muted text-[13px]">
-              Slide deck <span className="inline-block transition-transform duration-300 group-hover:translate-x-1 group-hover:text-accent">↗</span>
-            </span>
-          </a>
-          <div className="border-t border-accent/20" />
-          <a
-            href="https://programmes.podbean.com/e/tts-creating-a-positive-work-security-culture/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex justify-between items-baseline group"
-          >
-            <span className="text-[15px] link-hover">
-              Creating a Positive Work Security Culture
-            </span>
-            <span className="text-muted text-[13px]">ATR Panel · 2023</span>
-          </a>
+        <div className="flex justify-between items-baseline mb-6">
+          <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3">
+            Speaking &amp; Panels
+          </h2>
+          <Link href="/speaking" className="text-[13px] text-muted hover:text-accent transition-colors">
+            View all →
+          </Link>
+        </div>
+        <div>
+          {speakingEntries.slice(0, 3).map((entry, index, entries) => (
+            <div key={entry.href}>
+              <a
+                href={entry.href}
+                target={entry.external ? "_blank" : undefined}
+                rel={entry.external ? "noopener noreferrer" : undefined}
+                className="group flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-6 py-4"
+              >
+                <span className="text-[15px] leading-relaxed text-foreground group-hover:text-accent transition-colors">
+                  {entry.title}
+                </span>
+                <span className="text-[13px] text-muted whitespace-nowrap">
+                  {entry.meta}
+                  {entry.external && <span className="ml-1">↗</span>}
+                </span>
+              </a>
+              {index < entries.length - 1 && <div className="border-t border-accent/20" />}
+            </div>
+          ))}
         </div>
       </section>
 
@@ -367,117 +321,34 @@ export default function Home() {
 
       {/* ── Press & Writing ── */}
       <section className="mb-16 animate-fade-up delay-600">
-        <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
-          Featured Press & Publications
-        </h2>
-        <div className="space-y-4">
-          <a
-            href="https://kenyanwallstreet.com/africa-risk-premium-op-ed"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex justify-between items-baseline gap-4 group"
-          >
-            <span className="text-[15px] link-hover">
-              Is Africa's Risk Premium Really a Legibility Problem?
-            </span>
-            <span className="text-muted text-[13px] whitespace-nowrap flex-shrink-0">The Kenyan Wallstreet</span>
-          </a>
-          <div className="border-t border-accent/20" />
-          <a
-            href="https://techeconomy.ng/fatf-grey-list-exit-payment-vision-2028-iso-20022-national-payment-stack-nigeria/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex justify-between items-baseline gap-4 group"
-          >
-            <span className="text-[15px] link-hover">
-              FATF Grey List Exit, Payment Vision 2028 &amp; Nigeria's National Payment Stack
-            </span>
-            <span className="text-muted text-[13px] whitespace-nowrap flex-shrink-0">TechEconomy</span>
-          </a>
-          <div className="border-t border-accent/20" />
-          <a
-            href="https://businessday.ng/technology/article/cbn-aml-directive-triggers-tech-reset-as-banks-fintechs-battle-data-talent-gaps/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex justify-between items-baseline group"
-          >
-            <span className="text-[15px] link-hover">
-              CBN AML Directive Triggers Tech Reset as Banks, Fintechs Battle Data &amp; Talent Gaps
-            </span>
-            <span className="text-muted text-[13px]">BusinessDay</span>
-          </a>
-          <div className="border-t border-accent/20" />
-          <a
-            href="https://guardian.ng/news/leadership-innovation-and-industry-impact-the-work-of-tolu-adetuyi-at-prembly/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex justify-between items-baseline gap-4 group"
-          >
-            <span className="text-[15px] link-hover">
-              Leadership, Innovation, and Industry Impact: The Work of Tolu Adetuyi at Prembly
-            </span>
-            <span className="text-muted text-[13px] whitespace-nowrap flex-shrink-0">The Guardian</span>
-          </a>
-          <div className="border-t border-accent/20" />
-          <a
-            href="https://techcabal.com/2026/03/10/nigerias-prembly-launches-shared-open-source-database/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex justify-between items-baseline group"
-          >
-            <span className="text-[15px] link-hover">
-              Prembly Launches FraudLens
-            </span>
-            <span className="text-muted text-[13px]">TechCabal</span>
-          </a>
-          <div className="border-t border-accent/20" />
-          <a
-            href="https://secureidentityalliance.org/reports/on-the-road-to-user-centricity-digital-identity-in-the-electronic-wallet-era/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex justify-between items-baseline group"
-          >
-            <span className="text-[15px] link-hover">
-              Digital Identity in the Electronic Wallet Era
-            </span>
-            <span className="text-muted text-[13px]">Secure Identity Alliance</span>
-          </a>
-          <div className="border-t border-accent/20" />
-          <a
-            href="https://vanguardngr.com/ai-is-strongest-ally-in-war-against-financial-fraud-tolu-adetuyi/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex justify-between items-baseline group"
-          >
-            <span className="text-[15px] link-hover">
-              AI Is Strongest Ally in War Against Financial Fraud
-            </span>
-            <span className="text-muted text-[13px]">Vanguard</span>
-          </a>
-          <div className="border-t border-accent/20" />
-          <a
-            href="https://thecondia.com/zero-to-scale-tolu-adetuyi-head-of-growth-at-moniepoint/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex justify-between items-baseline group"
-          >
-            <span className="text-[15px] link-hover">
-              Zero to Scale Interview
-            </span>
-            <span className="text-muted text-[13px]">The Condia</span>
-          </a>
-          <div className="border-t border-accent/20" />
-          <a
-            href="https://www.researchgate.net/profile/Tolu-Adetuyi"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex justify-between items-baseline group"
-          >
-            <span className="text-[15px] link-hover">
-              Academic Research Publications
-            </span>
-            <span className="text-muted text-[13px]">ResearchGate</span>
-          </a>
+        <div className="flex justify-between items-baseline mb-6">
+          <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3">
+            Featured Press &amp; Publications
+          </h2>
+          <Link href="/press" className="text-[13px] text-muted hover:text-accent transition-colors">
+            View all →
+          </Link>
+        </div>
+        <div>
+          {pressEntries.slice(0, 4).map((entry, index, entries) => (
+            <div key={entry.href}>
+              <a
+                href={entry.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-6 py-4"
+              >
+                <span className="text-[15px] leading-relaxed text-foreground group-hover:text-accent transition-colors">
+                  {entry.title}
+                </span>
+                <span className="text-[13px] text-muted whitespace-nowrap">
+                  {entry.meta}
+                  <span className="ml-1">↗</span>
+                </span>
+              </a>
+              {index < entries.length - 1 && <div className="border-t border-accent/20" />}
+            </div>
+          ))}
         </div>
       </section>
 
