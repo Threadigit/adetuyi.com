@@ -70,10 +70,10 @@ export default function ProsperityEnginePage() {
         }}
       />
       <Link
-        href="/"
+        href="/speaking"
         className="inline-flex items-center text-[13px] font-medium uppercase tracking-widest text-muted hover:text-foreground transition-colors mb-12"
       >
-        <span className="mr-2">←</span> Back
+        <span className="mr-2">←</span> Back to speaking
       </Link>
 
       <article className="animate-fade-up">
