@@ -77,6 +77,17 @@ export default function StructuredData() {
         "headline": "Zero to Scale: Tolu Adetuyi, Head of Growth at Moniepoint",
         "url": "https://thecondia.com/zero-to-scale-tolu-adetuyi-head-of-growth-at-moniepoint/",
         "author": { "@type": "Organization", "name": "The Condia" }
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "The US Economy Dominating the World Through Service",
+        "description": "A ZeroToAct video by Tolu Adetuyi on how systemic utility, financial infrastructure, and global service sustain American economic influence.",
+        "url": "https://youtu.be/N4GSZjIPma4",
+        "author": {
+          "@type": "Person",
+          "name": "Tolu Adetuyi",
+          "url": "https://adetuyi.com"
+        }
       }
     ],
     "alumniOf": [
