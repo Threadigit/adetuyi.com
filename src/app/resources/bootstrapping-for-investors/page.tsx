@@ -49,6 +49,7 @@ export default function BootstrappingForInvestorsPage() {
     name: title,
     description,
     url: canonical,
+    datePublished: "2023",
     author: {
       "@type": "Person",
       name: "Tolu Adetuyi",
@@ -82,7 +83,9 @@ export default function BootstrappingForInvestorsPage() {
             <span className="text-[11px] uppercase tracking-widest text-accent font-medium">
               Venture building
             </span>
-            <span className="text-[13px] text-muted">Slide deck</span>
+            <span className="text-[13px] text-muted">
+              Slide deck · 2023
+            </span>
           </div>
           <h1 className="text-[34px] md:text-[44px] font-medium tracking-tight leading-[1.12] mb-5 text-foreground">
             {title}

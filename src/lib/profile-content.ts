@@ -18,20 +18,13 @@ export const speakingEntries: ProfileEntry[] = [
     external: true,
   },
   {
-    title:
-      "How Identity Verification Can Close the Compliance Gap and Prevent Fraud",
-    meta: "Identitypass Webinar · 2022",
-    href: "https://medium.com/my-identity-pay/identitypass-webinar-recap-how-identity-verification-can-close-the-compliance-gap-and-prevent-26cf75aa5126",
-    external: true,
-  },
-  {
     title: "Closing the Compliance Gap for African Startups",
     meta: "Slide deck",
     href: "/resources/closing-the-compliance-gap",
   },
   {
     title: "Bootstrapping & Making Your Idea Attractive to Investors",
-    meta: "Slide deck",
+    meta: "Slide deck · 2023",
     href: "/resources/bootstrapping-for-investors",
   },
   {
