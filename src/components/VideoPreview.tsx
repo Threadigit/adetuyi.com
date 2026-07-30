@@ -25,7 +25,7 @@ export default function VideoPreview() {
       className="group relative block w-full h-full overflow-hidden bg-foreground text-left"
     >
       <img
-        src="https://i.ytimg.com/vi/7JIjYZJO5jQ/maxresdefault.jpg"
+        src="/lagos-tech-fest-preview.jpg"
         alt=""
         className="w-full h-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-[1.02]"
       />
