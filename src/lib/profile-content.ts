@@ -64,7 +64,7 @@ export const pressEntries: ProfileEntry[] = [
   },
   {
     title: "Digital Identity in the Electronic Wallet Era",
-    meta: "Secure Identity Alliance · 2026",
+    meta: "Secure Identity Alliance · 2022",
     href: "https://secureidentityalliance.org/reports/on-the-road-to-user-centricity-digital-identity-in-the-electronic-wallet-era/",
     external: true,
   },
@@ -109,13 +109,6 @@ export const pressEntries: ProfileEntry[] = [
     external: true,
   },
   {
-    title:
-      "How Identity Verification Can Close the Compliance Gap for African Fintechs",
-    meta: "Identitypass · 2022",
-    href: "https://medium.com/my-identity-pay/identitypass-webinar-recap-how-identity-verification-can-close-the-compliance-gap-and-prevent-26cf75aa5126",
-    external: true,
-  },
-  {
     title: "Zero to Scale Interview",
     meta: "The Condia · 2021",
     href: "https://thecondia.com/zero-to-scale-tolu-adetuyi-head-of-growth-at-moniepoint/",
@@ -138,12 +131,6 @@ export const pressEntries: ProfileEntry[] = [
     title: "Design and Implementation of Mobile Pigeon-Hole Alert System",
     meta: "Communications on Applied Electronics · 2018",
     href: "https://www.caeaccess.org/archives/volume7/number16/810-2018652704/",
-    external: true,
-  },
-  {
-    title: "Human Development and Tech Inclusion",
-    meta: "Medium · 2018",
-    href: "https://medium.com/techwheel/human-development-tech-inclusion-an-exit-strategy-from-poverty-in-the-21st-century-892c1d83e24",
     external: true,
   },
   {
