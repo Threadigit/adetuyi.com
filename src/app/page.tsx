@@ -1,10 +1,35 @@
+import Link from "next/link";
 import { getLatestPosts } from "@/lib/writing";
 
 export default function Home() {
   return (
-    <main className="max-w-[680px] mx-auto px-6 py-16 md:py-24">
+    <main id="main-content" className="max-w-[680px] mx-auto px-6 py-8 md:py-14">
+      <nav
+        aria-label="Primary navigation"
+        className="flex items-center justify-between gap-4 mb-14 md:mb-20 animate-fade-up"
+      >
+        <Link
+          href="/"
+          aria-label="Tolu Adetuyi, home"
+          className="text-[13px] font-medium tracking-[0.12em] uppercase text-foreground"
+        >
+          TA<span className="text-accent">.</span>
+        </Link>
+        <div className="flex items-center gap-4 sm:gap-6 text-[13px] text-muted">
+          <Link href="/writing" className="hover:text-foreground transition-colors">
+            Writing
+          </Link>
+          <Link href="/thesis" className="hover:text-foreground transition-colors">
+            Thesis
+          </Link>
+          <Link href="/work" className="hover:text-foreground transition-colors">
+            Advisory
+          </Link>
+        </div>
+      </nav>
+
       {/* ── Header ── */}
-      <header className="mb-3 animate-fade-up delay-100">
+      <header className="mb-8 animate-fade-up delay-100">
         <div className="flex items-center gap-5 mb-5">
           {/* Avatar */}
           <div className="relative flex-shrink-0 w-[72px] h-[72px] rounded-full overflow-hidden ring-2 ring-accent/20">
@@ -39,26 +64,87 @@ export default function Home() {
           </a>
           <span className="text-[#f26522] text-[13px] font-medium ml-1">(YC W22)</span>
         </p>
-        <p className="text-muted text-[15px] leading-relaxed max-w-[640px]">
-          I build interconnected systems that expand economic participation and infrastructure across emerging markets.
+        <p className="text-[19px] md:text-[21px] leading-[1.55] tracking-[-0.01em] text-foreground max-w-[640px] mt-4">
+          I build the trust, distribution, and physical infrastructure that
+          expands economic participation across emerging markets.
         </p>
+        <div className="flex flex-wrap items-center gap-x-5 gap-y-3 mt-7">
+          <Link
+            href="/writing"
+            className="inline-flex items-center gap-2 bg-accent text-white px-5 py-2.5 rounded-full hover:bg-accent/90 transition-all font-medium text-[14px] group"
+          >
+            Read my thinking
+            <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+          </Link>
+          <Link
+            href="/work"
+            className="inline-flex items-center gap-2 text-[14px] font-medium text-foreground hover:text-accent transition-colors group"
+          >
+            Work with me
+            <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+          </Link>
+        </div>
       </header>
 
       {/* ── About ── */}
-      <section className="mb-10 animate-fade-up delay-200">
+      <section className="mb-12 pt-8 border-t border-border/70 animate-fade-up delay-200">
         <p className="text-[15px] leading-[1.8] text-muted">
-          My work entails gathering and synthesizing global and local intelligence, building strategic relationships, and converting both into tangible products, scalable ventures, high-value deals, and institutional leverage. I do this through designing systems, building ventures, structuring deals, investing directly, and developing founders.
+          Over the past decade, I have built at the intersection of identity,
+          compliance, financial infrastructure, and capital formation across
+          Africa. At{" "}
+          <a href="https://prembly.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">
+            Prembly
+          </a>
+          , I am building the trust infrastructure that enables businesses to
+          verify, transact, and grow with confidence.
         </p>
         <p className="text-[15px] leading-[1.8] text-muted mt-3">
-          Over the past decade I have built at the intersection of identity, compliance, financial infrastructure, and capital formation across Africa. At <a href="https://prembly.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">Prembly</a> I am <span className="text-accent font-medium relative inline-block after:absolute after:bottom-[-2px] after:left-0 after:w-full after:h-[1px] after:bg-accent">building the trust infrastructure</span> layer that enables businesses to verify, transact, and grow with confidence. Before <a href="https://prembly.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">Prembly</a>, I led growth at{" "}
-          <a href="https://moniepoint.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">Moniepoint</a>,
-          where I helped build the distribution network that now powers billions of dollars in transactions across Africa. Through that experience, I witnessed firsthand that the greatest barrier to scale was not technology itself, but the absence of trusted infrastructure and effective distribution.
+          Before Prembly, I led growth at{" "}
+          <a href="https://moniepoint.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">
+            Moniepoint
+          </a>
+          , helping build the distribution network that now powers billions of
+          dollars in transactions across Africa. That experience shaped how I
+          work today: synthesizing intelligence and relationships into products,
+          ventures, deals, and institutional leverage.
         </p>
-        <p className="text-[15px] leading-[1.8] text-muted mt-3">
-          I hold a first-class degree in Computer Science and an MBA with a concentration in Finance
-          from Morgan State University, where I graduated as a GSBM Scholar. I am also a lifetime member of Beta Gamma Sigma, the international business honor society. My work sits at the intersection of technology,
-          capital, and African economic development.
-        </p>
+      </section>
+
+      <section aria-labelledby="explore-heading" className="mb-16 animate-fade-up delay-300">
+        <h2 id="explore-heading" className="sr-only">Explore</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-3 border-y border-border/80 divide-y sm:divide-y-0 sm:divide-x divide-border/80">
+          {[
+            {
+              href: "/writing",
+              label: "Ideas",
+              description: "Essays on trust, capital, leadership, and emerging markets.",
+            },
+            {
+              href: "/thesis",
+              label: "Investment thesis",
+              description: "The case for distributed energy infrastructure in Nigeria.",
+            },
+            {
+              href: "/work",
+              label: "Advisory",
+              description: "For founders, operators, and investors building in Africa.",
+            },
+          ].map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="group py-5 sm:px-5 first:sm:pl-0 last:sm:pr-0"
+            >
+              <span className="flex items-center justify-between text-[13px] font-medium text-foreground mb-2 group-hover:text-accent transition-colors">
+                {item.label}
+                <span className="text-accent transition-transform duration-300 group-hover:translate-x-1">→</span>
+              </span>
+              <span className="block text-[12px] leading-relaxed text-muted">
+                {item.description}
+              </span>
+            </Link>
+          ))}
+        </div>
       </section>
 
 
