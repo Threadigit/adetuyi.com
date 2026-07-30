@@ -1,18 +1,74 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const title = "The Prosperity Engine";
+const description =
+  "A practical framework for understanding Nigeria's economy and evaluating government through productivity, infrastructure, capital, and household welfare.";
+const canonical = "https://adetuyi.com/resources/prosperity-engine";
+
 export const metadata: Metadata = {
-  title: "The Prosperity Engine",
-  description:
-    "A practical framework for understanding how Nigeria's economy works and evaluating the governments responsible for running it.",
+  title,
+  description,
+  keywords: [
+    "Nigeria economy",
+    "Nigeria economic framework",
+    "government performance scorecard",
+    "economic prosperity Nigeria",
+    "Tolu Adetuyi",
+  ],
   alternates: {
-    canonical: "https://adetuyi.com/resources/prosperity-engine",
+    canonical,
+  },
+  openGraph: {
+    title: `${title} | Tolu Adetuyi`,
+    description,
+    url: canonical,
+    type: "article",
+    images: [
+      {
+        url: "/tolu-new.png",
+        width: 1200,
+        height: 1200,
+        alt: "Tolu Adetuyi",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${title} | Tolu Adetuyi`,
+    description,
+    images: ["/tolu-new.png"],
   },
 };
 
 export default function ProsperityEnginePage() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    name: title,
+    description,
+    url: canonical,
+    datePublished: "2026",
+    author: {
+      "@type": "Person",
+      name: "Tolu Adetuyi",
+      url: "https://adetuyi.com",
+    },
+    associatedMedia: {
+      "@type": "MediaObject",
+      contentUrl: "https://adetuyi.com/the-prosperity-engine-deck.pdf",
+      encodingFormat: "application/pdf",
+    },
+  };
+
   return (
     <main className="max-w-[680px] mx-auto px-6 py-16 md:py-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
+        }}
+      />
       <Link
         href="/"
         className="inline-flex items-center text-[13px] font-medium uppercase tracking-widest text-muted hover:text-foreground transition-colors mb-12"
@@ -32,22 +88,23 @@ export default function ProsperityEnginePage() {
             The Prosperity Engine
           </h1>
           <p className="text-[19px] md:text-[21px] leading-[1.6] text-foreground">
-            How Nigeria&apos;s economy really works—and how to grade any
+            How Nigeria&apos;s economy really works and how to grade any
             government responsible for running it.
           </p>
         </header>
 
         <div className="border-y border-border py-8 mb-10 space-y-5 text-[15px] leading-[1.8] text-muted">
           <p>
-            Economic performance is often discussed through isolated numbers:
-            GDP growth, inflation, exchange rates, revenue, or debt. This
-            presentation connects those indicators into one operating system.
+            Economic performance is often discussed through isolated measures
+            such as GDP growth, inflation, exchange rates, revenue, and debt.
+            This presentation connects those indicators into one operating
+            system.
           </p>
           <p>
             The framework follows the movement of productivity, income,
             taxation, public spending, capital, infrastructure, and household
             welfare. It provides a practical way to distinguish temporary
-            activity from durable prosperity—and to evaluate policy through
+            activity from durable prosperity while evaluating policy through
             outcomes rather than announcements.
           </p>
         </div>
@@ -64,7 +121,9 @@ export default function ProsperityEnginePage() {
               "The difference between economic activity and broad-based prosperity",
             ].map((item) => (
               <li key={item} className="flex gap-3">
-                <span className="text-accent">—</span>
+                <span className="text-accent" aria-hidden="true">
+                  •
+                </span>
                 <span>{item}</span>
               </li>
             ))}

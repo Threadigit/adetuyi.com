@@ -7,8 +7,7 @@ export type ProfileEntry = {
 
 export const speakingEntries: ProfileEntry[] = [
   {
-    title:
-      "The Prosperity Engine: How Nigeria's Economy Really Works, and How to Grade Any Government Running It",
+    title: "The Prosperity Engine",
     meta: "Slide deck · 2026",
     href: "/resources/prosperity-engine",
   },
