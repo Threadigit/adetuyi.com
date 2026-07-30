@@ -3,7 +3,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Advisory",
-  description: "Business model clarity, fundraising narrative, and distribution strategy — for founders, operators, and investors building in Africa.",
+  description: "Business model clarity, fundraising narrative, and distribution strategy for founders, operators, and investors building in Africa.",
   alternates: {
     canonical: "https://adetuyi.com/work",
   },
@@ -81,7 +81,7 @@ export default function WorkPage() {
             Advisory
           </h1>
           <p className="text-[16px] leading-[1.75] text-muted">
-            Whether the room has a founder, an operator, or an investor — the work is the same.
+            Whether the room has a founder, an operator, or an investor, the work is the same.
             Most of the time, the problem someone brings me is not the actual problem.
             I walk in, map the gap between what they believe and what is true, and
             compress it into a clear direction.
@@ -139,8 +139,8 @@ export default function WorkPage() {
           </h2>
           <p className="text-[15px] leading-[1.75] text-muted mb-8">
             Most engagements start by referral. If you have been pointed here, book directly.
-            If you are reaching out cold, send a short note first — what you are building,
-            what the specific problem is, and who you are.
+            If you are reaching out cold, send a short note first. Tell me what you are
+            building, the specific problem, and who you are.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
