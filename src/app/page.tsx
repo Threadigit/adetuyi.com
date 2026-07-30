@@ -62,7 +62,7 @@ export default function Home() {
           >
             Prembly
           </a>
-          <span className="text-[#f26522] text-[13px] font-medium ml-1">(YC W22)</span>
+          <span className="text-accent text-[13px] font-medium ml-1">(YC W22)</span>
         </p>
         <p className="text-[19px] md:text-[21px] leading-[1.55] tracking-[-0.01em] text-foreground max-w-[640px] mt-4">
           I build trust infrastructure, financial infrastructure, distribution
@@ -211,13 +211,13 @@ export default function Home() {
                 >
                   Prembly
                 </a>
-                <span className="text-[#f26522] text-[13px] font-medium ml-1">(YC W22)</span>
+                <span className="text-accent text-[13px] font-medium ml-1">(YC W22)</span>
               </span>
               <span className="text-muted text-[13px]">
                 Co-Founder & CIO
               </span>
             </div>
-            <span className="text-muted/80 text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Identity, Fraud Prevention & Compliance</span>
+            <span className="text-muted text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Identity, Fraud Prevention & Compliance</span>
           </div>
           <div className="border-t border-accent/20" />
 
@@ -229,9 +229,9 @@ export default function Home() {
               >
                 Infrastructure Fund I
               </a>
-              <span className="text-[10px] uppercase tracking-widest text-accent/70 font-medium border border-accent/25 rounded-full px-2 py-0.5">In Formation</span>
+              <span className="text-[10px] uppercase tracking-widest text-accent font-medium border border-accent/25 rounded-full px-2 py-0.5">In Formation</span>
             </div>
-            <span className="text-muted/80 text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Energy &amp; Physical Infrastructure</span>
+            <span className="text-muted text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Energy &amp; Physical Infrastructure</span>
           </div>
           <div className="border-t border-accent/20" />
 
@@ -249,7 +249,7 @@ export default function Home() {
                 Executive Curator
               </span>
             </div>
-            <span className="text-muted/80 text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Innovation Documentary Series</span>
+            <span className="text-muted text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Innovation Documentary Series</span>
           </div>
           <div className="border-t border-accent/20" />
 
@@ -265,7 +265,7 @@ export default function Home() {
               </a>
               <span className="text-muted text-[13px]">Author</span>
             </div>
-            <span className="text-muted/80 text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Actionable Global Intelligence Brief</span>
+            <span className="text-muted text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Actionable Global Intelligence Brief</span>
           </div>
         </div>
       </section>
