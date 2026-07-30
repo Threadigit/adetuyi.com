@@ -158,7 +158,7 @@ export default function Home() {
               >
                 Infrastructure Fund I
               </a>
-              <span className="text-[10px] uppercase tracking-widest text-accent font-medium border border-accent/25 rounded-full px-2 py-0.5">In Formation</span>
+              <span className="text-[11px] uppercase tracking-widest text-accent font-medium border border-accent/25 rounded-full px-2 py-0.5">In Formation</span>
             </div>
             <span className="text-muted text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Energy &amp; Physical Infrastructure</span>
           </div>
