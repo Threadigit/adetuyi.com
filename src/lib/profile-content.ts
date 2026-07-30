@@ -12,9 +12,16 @@ export const speakingEntries: ProfileEntry[] = [
     href: "/resources/prosperity-engine",
   },
   {
-    title: "Lagos Tech Fest 2023",
-    meta: "Panel",
+    title: "Building a Collaborative Firewall Against Fraud",
+    meta: "Lagos Tech Fest · 2023",
     href: "https://www.youtube.com/watch?v=7JIjYZJO5jQ",
+    external: true,
+  },
+  {
+    title:
+      "How Identity Verification Can Close the Compliance Gap and Prevent Fraud",
+    meta: "Identitypass Webinar · 2022",
+    href: "https://medium.com/my-identity-pay/identitypass-webinar-recap-how-identity-verification-can-close-the-compliance-gap-and-prevent-26cf75aa5126",
     external: true,
   },
   {
