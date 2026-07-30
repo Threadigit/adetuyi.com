@@ -1,17 +1,68 @@
 import Link from "next/link";
-import { Metadata } from "next";
+import type { Metadata } from "next";
+
+const title = "Powering Nigeria Infrastructure Fund 1";
+const description =
+  "Tolu Adetuyi's investment thesis for financing distributed commercial and industrial energy infrastructure in Nigeria.";
+const canonical = "https://adetuyi.com/thesis";
+const lastUpdated = "2026-07-30";
+
+const sources = [
+  {
+    label: "NERC Operational Performance Factsheets",
+    detail: "Installed capacity, available capacity, and average grid output",
+    href: "https://nerc.gov.ng/resource-category/operational-performance-factsheet/",
+  },
+  {
+    label: "NERC Annual Report 2024",
+    detail: "Generation licensing and embedded power frameworks",
+    href: "https://nerc.gov.ng/wp-content/uploads/2025/07/2024-Annual-Report.pdf",
+  },
+  {
+    label: "NERC Mini-Grid Regulations 2026",
+    detail: "Current capacity thresholds and investment protections",
+    href: "https://nerc.gov.ng/need-help/services/apply-for-mini-grid-permit-2/",
+  },
+  {
+    label: "World Bank Nigeria data",
+    detail: "National electricity access rate",
+    href: "https://data.worldbank.org/country/nigeria?locations=NG&subcat=161",
+  },
+  {
+    label: "World Bank mini-grid market review",
+    detail: "Electricity access gap and private mini-grid deployment",
+    href: "https://www.worldbank.org/en/news/feature/2025/03/07/expanding-nigeria-s-mini-grid-market",
+  },
+  {
+    label: "Nigeria DARES programme",
+    detail: "Public support for private distributed renewable energy",
+    href: "https://www.dares.rea.gov.ng/dares.html",
+  },
+  {
+    label: "IEA financing electricity access in Africa",
+    detail: "Anchor loads, productive users, and private capital",
+    href: "https://www.iea.org/reports/financing-electricity-access-in-africa/executive-summary",
+  },
+];
 
 export const metadata: Metadata = {
-  title: "Powering Nigeria: Infrastructure Fund 1",
-  description: "A manifesto for solving Nigeria's power infrastructure deficit.",
-  alternates: {
-    canonical: "https://adetuyi.com/thesis",
-  },
+  title,
+  description,
+  keywords: [
+    "Nigeria energy infrastructure fund",
+    "commercial and industrial solar Nigeria",
+    "distributed energy Nigeria",
+    "embedded generation Nigeria",
+    "Nigeria infrastructure investment",
+    "Tolu Adetuyi",
+  ],
+  alternates: { canonical },
   openGraph: {
-    title: "Powering Nigeria: Infrastructure Fund 1 | Tolu Adetuyi",
-    description: "A manifesto for solving Nigeria's power infrastructure deficit through private capital and commercial energy infrastructure.",
-    url: "https://adetuyi.com/thesis",
-    type: "website",
+    title: `${title} | Tolu Adetuyi`,
+    description,
+    url: canonical,
+    type: "article",
+    modifiedTime: `${lastUpdated}T00:00:00-04:00`,
     images: [
       {
         url: "/tolu-new.png",
@@ -23,15 +74,42 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Powering Nigeria: Infrastructure Fund 1 | Tolu Adetuyi",
-    description: "A manifesto for solving Nigeria's power infrastructure deficit through private capital and commercial energy infrastructure.",
+    title: `${title} | Tolu Adetuyi`,
+    description,
     images: ["/tolu-new.png"],
   },
 };
 
 export default function ThesisPage() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description,
+    url: canonical,
+    dateModified: lastUpdated,
+    author: {
+      "@type": "Person",
+      name: "Tolu Adetuyi",
+      url: "https://adetuyi.com",
+    },
+    about: [
+      "Distributed energy infrastructure",
+      "Commercial and industrial power",
+      "Nigeria",
+      "Infrastructure investment",
+    ],
+  };
+
   return (
     <main className="max-w-[680px] mx-auto px-6 py-16 md:py-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
+        }}
+      />
+
       <Link
         href="/"
         className="inline-flex items-center text-[13px] font-medium uppercase tracking-widest text-muted hover:text-foreground transition-colors mb-12"
@@ -42,64 +120,348 @@ export default function ThesisPage() {
       <article className="animate-fade-up">
         <header className="mb-12">
           <div className="flex items-center gap-3 mb-6">
-            <div className="h-[1px] w-8 bg-accent"></div>
+            <div className="h-px w-8 bg-accent" />
             <span className="text-[13px] font-medium uppercase tracking-widest text-accent">
-              Active Thesis
+              Active investment thesis
             </span>
           </div>
           <h1 className="text-[36px] md:text-[44px] font-medium tracking-tight leading-tight mb-6 text-foreground">
-            Powering Nigeria: <br />
-            Infrastructure Fund 1
+            Powering Nigeria
+            <span className="block">Infrastructure Fund 1</span>
           </h1>
-          <p className="text-[18px] md:text-[20px] leading-relaxed text-muted italic">
-            "Financing the Root Crisis: A Case for Private Capital in Nigeria's Energy Infrastructure."
+          <p className="text-[18px] md:text-[20px] leading-relaxed text-muted">
+            A case for private capital in Nigeria&apos;s distributed commercial
+            and industrial energy infrastructure.
+          </p>
+          <p className="mt-5 text-[12px] uppercase tracking-widest text-muted">
+            Last updated{" "}
+            <time dateTime={lastUpdated}>July 30, 2026</time>
           </p>
         </header>
 
-        <div className="prose prose-slate prose-p:leading-relaxed prose-p:text-[15px] prose-p:text-muted prose-strong:text-foreground prose-strong:font-medium prose-a:text-accent prose-a:no-underline hover:prose-a:underline max-w-none">
+        <div className="prose prose-slate prose-p:leading-[1.85] prose-p:text-[15px] prose-p:text-muted prose-strong:text-foreground prose-strong:font-medium prose-a:text-accent prose-a:no-underline hover:prose-a:underline max-w-none">
           <p className="first-letter:text-[48px] first-letter:font-bold first-letter:text-foreground first-letter:mr-3 first-letter:float-left first-letter:leading-[0.8]">
-            Over the past decade, I have dedicated my career to building Africa's digital infrastructure. From scaling financial agency networks at Moniepoint to establishing identity trust layers at <a href="https://prembly.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">Prembly</a>, we have proven that complex, continental scale problems can be solved with the right combination of technology, capital, and relentless execution.
+            Over the past decade, I have built systems that help African
+            businesses move money, verify identity, prevent fraud, and reach
+            customers at scale. At Moniepoint, I helped build a distribution
+            network that carried financial services into communities the
+            traditional system did not serve well. At{" "}
+            <a
+              href="https://prembly.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground link-hover font-medium"
+            >
+              Prembly
+            </a>
+            , I have worked on the trust layer that allows businesses to know
+            who they are dealing with and transact with greater confidence.
           </p>
           <p>
-            However, we have reached an inflection point. The digital economy we have painstakingly built rests atop a fragile physical foundation. The energy deficit in Nigeria is not merely an inconvenience; it is the single largest bottleneck to continental GDP growth, technological advancement, and human flourishing. It represents a 100 billion dollar unmet infrastructure need.
-          </p>
-          <h3 className="text-[18px] font-medium text-foreground mt-10 mb-4 tracking-tight">
-            The Inflection Point
-          </h3>
-          <p>
-            The fundamental software problems have been solved. We know how to move money, we know how to verify identities, and we know how to distribute information. The next frontier of value creation in Africa is not exclusively in bits, but in atoms. We must now invest heavily in the underlying physical infrastructure that will power it, with electricity being the most critical asset.
-          </p>
-          <p>
-            Today, the national grid delivers fewer than 4 gigawatts against a documented demand of at least 30 gigawatts. Over 80 million Nigerians remain unconnected, forcing the private sector to burn over 12 billion dollars annually on diesel generators. That expenditure produces no productive asset and generates no return.
-          </p>
-          
-          <h3 className="text-[20px] md:text-[24px] font-medium text-foreground tracking-tight mt-12 mb-6">
-            This bottleneck forged my next thesis: Powering Nigeria.
-          </h3>
-          
-          <p>
-            We are structuring <strong>Infrastructure Fund 1</strong> to execute on a simple truth: the most lucrative opportunity in Africa is replacing a 35 cent diesel kilowatt with a 15 cent solar kilowatt.
+            Those experiences shaped a conviction. Digital infrastructure can
+            remove enormous friction, but it cannot manufacture electricity.
+            A payment rail, identity platform, factory, cold room, hospital, or
+            data centre is only as reliable as the power beneath it. Nigeria has
+            built remarkable businesses on top of an energy system that still
+            asks each enterprise to become its own utility.
           </p>
           <p>
-            By treating power not as a government utility problem but as a solvable private infrastructure challenge driven by the same ruthless efficiency we apply to fintech, we completely bypass the legacy grid. We are deploying private capital into highly efficient commercial assets with proven demand to generate resilient, asset backed yield.
+            I do not see that only as a development problem. I see a large,
+            recurring, and financeable demand for better infrastructure.
           </p>
 
+          <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
+            The system is constrained, not the demand
+          </h2>
           <p>
-            The technology exists. The policy frameworks are improving. The demand is unambiguous and backed by a demonstrated willingness to pay. What is absent is the structured deployment of private capital at scale.
+            Nigeria&apos;s grid has substantial nameplate capacity, but too
+            little of it becomes dependable power for the customer. NERC
+            reported 13,625 MW of installed grid-connected capacity in April
+            2026. Only 4,286 MW was available for dispatch, and average output
+            was approximately 4,048 MW. The issue is not simply how many
+            generating plants exist. Fuel availability, plant condition,
+            transmission limits, distribution losses, liquidity, and
+            commercial discipline all determine what finally reaches a meter.
           </p>
-          
-          <div className="my-12 p-8 bg-accent/5 ring-1 ring-border rounded-xl">
-            <h4 className="text-[15px] font-semibold text-foreground mb-3">Join the Mission</h4>
-            <p className="text-[14px] mb-6">
-              This is a generational challenge requiring operators, policymakers, and capital to align perfectly. If this thesis resonates with the future you want to build, the fund is currently in its capital formation phase.
+          <p>
+            Access is also incomplete. The World Bank&apos;s latest published
+            indicator places electricity access at 61.2 percent of the
+            population in 2023. Its review of Nigeria&apos;s mini-grid market
+            estimates that more than 80 million people still lack access.
+            Businesses that are connected often face a different problem.
+            Their connection does not guarantee the quality or duration of
+            supply required to operate.
+          </p>
+          <p>
+            The practical result is a parallel energy economy. Companies buy
+            generators, fuel, maintenance, inverters, batteries, and
+            replacement equipment. They absorb downtime and voltage damage.
+            These costs are dispersed across operating budgets, which can make
+            them look temporary. In reality, they are a recurring payment for
+            unreliable infrastructure.
+          </p>
+
+          <div className="my-10 grid sm:grid-cols-3 border-y border-border">
+            {[
+              ["13,625 MW", "Installed grid capacity in April 2026"],
+              ["4,048 MW", "Average grid output in April 2026"],
+              ["80M+", "People estimated to remain without access"],
+            ].map(([value, label], index) => (
+              <div
+                key={value}
+                className={`py-6 ${
+                  index > 0
+                    ? "sm:border-l sm:border-border sm:pl-5"
+                    : "sm:pr-5"
+                }`}
+              >
+                <p className="m-0 text-[24px] font-medium tracking-tight text-foreground">
+                  {value}
+                </p>
+                <p className="m-0 mt-2 text-[12px] leading-relaxed text-muted">
+                  {label}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
+            The investable wedge
+          </h2>
+          <p>
+            Infrastructure Fund 1 is being formed around distributed power for
+            commercial and industrial users. The initial focus is not utility
+            scale generation built on speculative demand. It is energy
+            infrastructure located close to businesses that already consume
+            power, already pay for alternatives, and can demonstrate the
+            operating need to sign a credible long-term contract.
+          </p>
+          <p>
+            The systems may combine solar generation, storage, efficient
+            thermal backup, and energy management technology. The final design
+            should follow the customer&apos;s load profile, operating hours,
+            service requirement, site conditions, and fuel economics. I am not
+            attached to a technology slogan. I am attached to dependable
+            electrons, disciplined underwriting, and assets that solve a
+            measured problem.
+          </p>
+          <p>
+            The commercial model is straightforward. A project company finances
+            and operates the asset. The customer buys power or pays for
+            availability under a contracted arrangement. The investment case
+            comes from the spread between the customer&apos;s all-in cost of
+            unreliable energy and the cost of delivering a more efficient
+            service. That spread must be demonstrated at each site. It should
+            never be assumed from a national average.
+          </p>
+
+          <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
+            Why the timing has improved
+          </h2>
+          <p>
+            Three conditions are converging. First, the cost and performance of
+            distributed solar, storage, controls, and metering have improved.
+            Second, customers understand the cost of unreliable power because
+            they already carry it every month. Third, regulation is creating
+            clearer routes for private generation.
+          </p>
+          <p>
+            Nigeria&apos;s 2026 mini-grid rules allow isolated projects up to 5
+            MW and interconnected projects up to 10 MW per site. The framework
+            adds clearer site protection, grid-arrival provisions, portfolio
+            applications, cost-reflective tariff methods, and defined approval
+            timelines. Embedded generation remains another route for projects
+            that supply through distribution infrastructure.
+          </p>
+          <p>
+            Public programmes are also validating the market rather than
+            replacing it. The $750 million DARES programme targets electricity
+            access for 17.5 million Nigerians through private sector-led
+            distributed renewable energy. That is useful evidence of policy
+            direction and market infrastructure. It is not a substitute for
+            project-level commercial judgment.
+          </p>
+
+          <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
+            How we intend to underwrite
+          </h2>
+          <p>
+            The quality of the customer matters as much as the quality of the
+            equipment. A technically sound asset can still be a poor investment
+            if the buyer cannot pay, the contract is weak, the site lacks
+            permits, or imported equipment creates an unmanaged currency
+            mismatch.
+          </p>
+          <p>
+            We will begin with assets where demand is visible before capital is
+            deployed. Priority users include operating businesses and economic
+            clusters with steady loads, material power expenditure, and clear
+            consequences when supply fails. Cold-chain facilities, light
+            manufacturing, logistics, healthcare, hospitality, commercial
+            property, and digital infrastructure can fit this profile, but
+            sector labels alone do not qualify a project.
+          </p>
+
+          <div className="my-10 p-7 md:p-8 bg-accent/5 ring-1 ring-border rounded-xl">
+            <h3 className="text-[15px] font-semibold text-foreground mt-0 mb-5">
+              The underwriting questions
+            </h3>
+            <ul className="m-0 space-y-3 pl-0 list-none text-[14px] text-muted">
+              {[
+                "Is the load measured, recurring, and large enough to support the asset?",
+                "What does the customer pay today across grid supply, fuel, maintenance, and downtime?",
+                "Can the customer honour a long-term contract through a full business cycle?",
+                "Are tariff adjustment, inflation, and currency risks allocated clearly?",
+                "Does the site have defensible rights, permits, interconnection terms, and insurance?",
+                "Can equipment be maintained locally and replaced without extended downtime?",
+                "Is there a credible path to refinance, sell, or hold the asset for contracted cash yield?",
+              ].map((item) => (
+                <li key={item} className="flex gap-3">
+                  <span className="text-accent" aria-hidden="true">
+                    •
+                  </span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
+            Where the return should come from
+          </h2>
+          <p>
+            The return should come from contracted cash flow and operational
+            improvement, not from hoping that scarce infrastructure becomes
+            fashionable. A well-structured asset can reduce a customer&apos;s
+            energy cost, improve uptime, and make expenditure more predictable.
+            The project captures part of that value through a power purchase,
+            energy service, lease, or availability agreement.
+          </p>
+          <p>
+            Portfolio value can also be created after installation. Better
+            procurement, remote monitoring, preventive maintenance, load
+            optimisation, common spare parts, insurance, and disciplined
+            collections can improve performance across several sites. Once a
+            portfolio has operating history and contracted revenue, it may also
+            become suitable for lower-cost refinancing.
+          </p>
+          <p>
+            This is why the strategy begins with commercial and industrial
+            anchor loads. The IEA notes that businesses consume nearly three
+            times more energy per mini-grid connection than households. Productive
+            users provide the demand density that can make distributed systems
+            more financeable while still supporting wider economic activity
+            around them.
+          </p>
+
+          <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
+            The risks are real
+          </h2>
+          <p>
+            Nigeria&apos;s need for power does not make every power project
+            investable. Currency depreciation can raise equipment and debt
+            costs. Customers can weaken. Regulation can move across federal and
+            state jurisdictions. Tariff assumptions can fail. Equipment can
+            underperform. Gas or diesel supply can be interrupted. Community,
+            land, security, and interconnection issues can delay an otherwise
+            sound project.
+          </p>
+          <p>
+            The response is not optimism. It is structure. Match currency where
+            possible. Use conservative generation and collection assumptions.
+            Require appropriate customer security. Stage capital against
+            milestones. Diversify by customer and location. Insure what can be
+            insured. Monitor every asset. Preserve step-in rights. Build
+            contracts that explain what happens when the world does not follow
+            the base case.
+          </p>
+
+          <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
+            What this fund is not
+          </h2>
+          <p>
+            It is not a bet that one technology will solve Nigeria&apos;s power
+            sector. It is not a collection of speculative sites waiting for
+            customers. It is not dependent on a single subsidy programme. It is
+            not an attempt to rebuild the national grid privately.
+          </p>
+          <p>
+            It is a focused effort to finance useful assets close to proven
+            demand, one bankable project at a time, and to compound the
+            operating knowledge required to build a durable portfolio.
+          </p>
+
+          <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
+            Why I am building it
+          </h2>
+          <p>
+            My career has moved from code to products, from products to
+            distribution, and from distribution to infrastructure. The pattern
+            is consistent. The most valuable systems are the ones other people
+            can build on.
+          </p>
+          <p>
+            At Moniepoint, distribution turned software into financial access.
+            At Prembly, trust infrastructure allows digital businesses to
+            transact safely. Power is more fundamental. When electricity is
+            reliable, a factory can add a shift, a clinic can protect its cold
+            chain, a logistics operator can plan, and a technology company can
+            keep its systems online. The asset earns a return because the
+            customer becomes more productive.
+          </p>
+          <p>
+            That alignment is the conviction behind Infrastructure Fund 1. I
+            want to build infrastructure whose economic usefulness is visible
+            in the cash flow of the businesses it powers.
+          </p>
+
+          <div className="my-12 p-8 bg-foreground text-background rounded-xl">
+            <h2 className="text-[19px] font-medium text-background mt-0 mb-4">
+              For aligned investors and operators
+            </h2>
+            <p className="text-[14px] leading-relaxed text-background/75 mb-6">
+              The fund remains in formation. I am speaking with investors,
+              project developers, equipment partners, operators, and commercial
+              energy users who share this view of the market and bring
+              complementary discipline to it.
             </p>
             <a
               href="mailto:tolu@adetuyi.com?subject=Powering Nigeria IF1"
-              className="inline-flex items-center gap-2 bg-foreground text-white px-6 py-3 rounded-full hover:bg-foreground/90 transition-colors font-medium text-[14px]"
+              className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 rounded-full hover:bg-accent/90 transition-colors font-medium text-[14px]"
             >
-              Reach out to discuss <span className="text-accent">↗</span>
+              Start a conversation <span>↗</span>
             </a>
           </div>
+
+          <section className="mt-14 pt-8 border-t border-border">
+            <h2 className="text-[17px] font-medium text-foreground mt-0 mb-3">
+              Sources and scope
+            </h2>
+            <p className="text-[13px] leading-relaxed text-muted">
+              Figures are drawn from the latest primary or institutional
+              sources available on the update date. Project economics vary by
+              customer, location, technology, financing, and contract.
+            </p>
+            <ol className="mt-6 space-y-4 pl-0 list-none">
+              {sources.map((source, index) => (
+                <li key={source.href} className="text-[13px] leading-relaxed">
+                  <a
+                    href={source.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium text-foreground"
+                  >
+                    {index + 1}. {source.label}
+                  </a>
+                  <span className="block text-muted">{source.detail}</span>
+                </li>
+              ))}
+            </ol>
+            <p className="mt-8 text-[12px] leading-relaxed text-muted">
+              This thesis is provided for discussion and information. It is not
+              an offer to sell or a solicitation to purchase any security.
+            </p>
+          </section>
         </div>
       </article>
     </main>
