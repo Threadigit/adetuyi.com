@@ -124,45 +124,6 @@ export default function Home() {
         </p>
       </section>
 
-      <section aria-labelledby="explore-heading" className="mb-16 animate-fade-up delay-300">
-        <h2 id="explore-heading" className="sr-only">Explore</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 border-y border-border/80 divide-y sm:divide-y-0 sm:divide-x divide-border/80">
-          {[
-            {
-              href: "/writing",
-              label: "Ideas",
-              description: "Essays on trust, capital, leadership, and emerging markets.",
-            },
-            {
-              href: "/thesis",
-              label: "Investment thesis",
-              description: "The case for distributed energy infrastructure in Nigeria.",
-            },
-            {
-              href: "/work",
-              label: "Advisory",
-              description: "For founders, operators, and investors building in Africa.",
-            },
-          ].map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="group py-5 sm:px-5 first:sm:pl-0 last:sm:pr-0"
-            >
-              <span className="flex items-center justify-between text-[13px] font-medium text-foreground mb-2 group-hover:text-accent transition-colors">
-                {item.label}
-                <span className="text-accent transition-transform duration-300 group-hover:translate-x-1">→</span>
-              </span>
-              <span className="block text-[12px] leading-relaxed text-muted">
-                {item.description}
-              </span>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-
-
       {/* ── Current Work ── */}
       <section className="mb-16 animate-fade-up delay-300">
         <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
