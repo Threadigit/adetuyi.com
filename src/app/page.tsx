@@ -45,10 +45,13 @@ export default function Home() {
             <h1 className="text-[32px] md:text-[38px] font-medium tracking-tight leading-tight mb-1 text-foreground">
               Tolu Adetuyi
             </h1>
-            <p className="text-[12px] leading-relaxed text-muted mt-1">
-              Innovator &amp; Venture Architect{" "}
-              <span aria-hidden="true" className="mx-1">—</span>
-              Forbes Tech Council &apos;24
+            <p className="flex flex-wrap items-center gap-2 mt-1">
+              <span className="text-[12px] leading-relaxed text-muted">
+                Innovator &amp; Venture Architect
+              </span>
+              <span className="inline-flex items-center rounded-full border border-accent/20 bg-accent/5 px-2 py-0.5 text-[11px] leading-none text-accent font-medium tracking-[0.04em]">
+                Forbes Tech Council &apos;24
+              </span>
             </p>
           </div>
         </div>
