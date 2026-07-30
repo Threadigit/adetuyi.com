@@ -88,7 +88,7 @@ export default function Home() {
       </header>
 
       {/* ── About ── */}
-      <section className="mb-8 pt-8 border-t border-border/70 animate-fade-up delay-200">
+      <section className="mb-12 pt-8 border-t border-border/70 animate-fade-up delay-200">
         <p className="text-[15px] leading-[1.8] text-muted">
           Over the past decade, I have built at the intersection of identity,
           compliance, financial infrastructure, and capital formation across
@@ -109,50 +109,19 @@ export default function Home() {
           work today: synthesizing intelligence and relationships into products,
           ventures, deals, and institutional leverage.
         </p>
-      </section>
-
-      <section
-        aria-labelledby="credentials-heading"
-        className="mb-12 animate-fade-up delay-300"
-      >
-        <h2
-          id="credentials-heading"
-          className="text-[11px] font-medium uppercase tracking-[0.17em] text-accent mb-4"
-        >
-          Education &amp; Distinction
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 border-y border-accent/20">
-          {[
-            {
-              credential: "First-class degree",
-              detail: "Computer Science",
-            },
-            {
-              credential: "MBA",
-              detail: "Finance concentration",
-            },
-            {
-              credential: "GSBM Scholar",
-              detail: "Morgan State University",
-            },
-            {
-              credential: "Lifetime member",
-              detail: "Beta Gamma Sigma · International business honor society",
-            },
-          ].map((item) => (
-            <div
-              key={item.credential}
-              className="py-3.5 border-b border-accent/15 last:border-b-0 sm:[&:nth-last-child(-n+2)]:border-b-0"
-            >
-              <p className="text-[14px] font-medium text-foreground">
-                {item.credential}
-              </p>
-              <p className="text-[12px] leading-relaxed text-muted mt-0.5">
-                {item.detail}
-              </p>
-            </div>
-          ))}
-        </div>
+        <p className="text-[15px] leading-[1.8] text-muted mt-3">
+          I hold a{" "}
+          <span className="text-foreground font-medium">
+            first-class degree in Computer Science
+          </span>{" "}
+          and an{" "}
+          <span className="text-foreground font-medium">
+            MBA with a concentration in Finance
+          </span>{" "}
+          from Morgan State University, where I graduated as a GSBM Scholar. I
+          am also a lifetime member of Beta Gamma Sigma, the international
+          business honor society.
+        </p>
       </section>
 
       <section aria-labelledby="explore-heading" className="mb-16 animate-fade-up delay-300">
