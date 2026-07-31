@@ -4,19 +4,36 @@ export default function StructuredData() {
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": "https://adetuyi.com/#person",
     "name": "Tolu Adetuyi",
     "givenName": "Tolu",
     "familyName": "Adetuyi",
     "jobTitle": "Co-Founder & Chief Innovation Officer",
-    "description": "Co-Founder & Chief Innovation Officer at Prembly. Building interconnected systems that expand economic participation and infrastructure across emerging markets. Active at the intersection of technology, capital, and emerging market development.",
+    "description": "Co-Founder and Chief Innovation Officer at Prembly, a trust infrastructure company. Former growth leader at Moniepoint. Tolu builds financial, digital identity, compliance, distribution, and energy infrastructure across emerging markets.",
     "image": "https://adetuyi.com/tolu-new.png",
-    "url": "https://adetuyi.com",
+    "url": "https://adetuyi.com/",
+    "mainEntityOfPage": {
+      "@id": "https://adetuyi.com/#profile-page"
+    },
     "worksFor": {
       "@type": "Organization",
+      "@id": "https://prembly.com/#organization",
       "name": "Prembly",
       "url": "https://prembly.com",
       "description": "Trust infrastructure company helping businesses combat fraud and stay compliant across emerging markets."
     },
+    "hasOccupation": [
+      {
+        "@type": "Occupation",
+        "name": "Co-Founder and Chief Innovation Officer at Prembly",
+        "description": "Builds digital identity, compliance, and fraud prevention infrastructure for businesses in emerging markets."
+      },
+      {
+        "@type": "Occupation",
+        "name": "Venture Architect",
+        "description": "Builds and advises financial, distribution, and physical infrastructure ventures across emerging markets."
+      }
+    ],
     "sameAs": [
       "https://www.linkedin.com/in/adetuyitolu/",
       "https://twitter.com/adetuyitolu",
@@ -34,49 +51,49 @@ export default function StructuredData() {
         "@type": "Article",
         "headline": "Is Africa's Risk Premium Really a Legibility Problem?",
         "url": "https://kenyanwallstreet.com/africa-risk-premium-op-ed",
-        "author": { "@type": "Organization", "name": "The Kenyan Wallstreet" }
+        "publisher": { "@type": "Organization", "name": "The Kenyan Wallstreet" }
       },
       {
         "@type": "Article",
         "headline": "FATF Grey List Exit, Payment Vision 2028 & Nigeria's National Payment Stack",
         "url": "https://techeconomy.ng/fatf-grey-list-exit-payment-vision-2028-iso-20022-national-payment-stack-nigeria/",
-        "author": { "@type": "Organization", "name": "TechEconomy" }
+        "publisher": { "@type": "Organization", "name": "TechEconomy" }
       },
       {
         "@type": "Article",
         "headline": "CBN AML Directive Triggers Tech Reset as Banks, Fintechs Battle Data & Talent Gaps",
         "url": "https://businessday.ng/technology/article/cbn-aml-directive-triggers-tech-reset-as-banks-fintechs-battle-data-talent-gaps/",
-        "author": { "@type": "Organization", "name": "BusinessDay" }
+        "publisher": { "@type": "Organization", "name": "BusinessDay" }
       },
       {
         "@type": "Article",
         "headline": "Leadership, Innovation, and Industry Impact: The Work of Tolu Adetuyi at Prembly",
         "url": "https://guardian.ng/news/leadership-innovation-and-industry-impact-the-work-of-tolu-adetuyi-at-prembly/",
-        "author": { "@type": "Organization", "name": "The Guardian Nigeria" }
+        "publisher": { "@type": "Organization", "name": "The Guardian Nigeria" }
       },
       {
         "@type": "Article",
         "headline": "Nigeria's Prembly Launches Shared Open-Source Database",
         "url": "https://techcabal.com/2026/03/10/nigerias-prembly-launches-shared-open-source-database/",
-        "author": { "@type": "Organization", "name": "TechCabal" }
+        "publisher": { "@type": "Organization", "name": "TechCabal" }
       },
       {
         "@type": "Article",
         "headline": "On the Road to User-Centricity: Digital Identity in the Electronic Wallet Era",
         "url": "https://secureidentityalliance.org/reports/on-the-road-to-user-centricity-digital-identity-in-the-electronic-wallet-era/",
-        "author": { "@type": "Organization", "name": "Secure Identity Alliance" }
+        "publisher": { "@type": "Organization", "name": "Secure Identity Alliance" }
       },
       {
         "@type": "Article",
         "headline": "AI Is Strongest Ally in War Against Financial Fraud — Tolu Adetuyi",
         "url": "https://vanguardngr.com/ai-is-strongest-ally-in-war-against-financial-fraud-tolu-adetuyi/",
-        "author": { "@type": "Organization", "name": "Vanguard" }
+        "publisher": { "@type": "Organization", "name": "Vanguard" }
       },
       {
         "@type": "Article",
         "headline": "Zero to Scale: Tolu Adetuyi, Head of Growth at Moniepoint",
         "url": "https://thecondia.com/zero-to-scale-tolu-adetuyi-head-of-growth-at-moniepoint/",
-        "author": { "@type": "Organization", "name": "The Condia" }
+        "publisher": { "@type": "Organization", "name": "The Condia" }
       },
       {
         "@type": "CreativeWork",
@@ -84,9 +101,7 @@ export default function StructuredData() {
         "description": "A ZeroToAct video by Tolu Adetuyi on how systemic utility, financial infrastructure, and global service sustain American economic influence.",
         "url": "https://youtu.be/N4GSZjIPma4",
         "author": {
-          "@type": "Person",
-          "name": "Tolu Adetuyi",
-          "url": "https://adetuyi.com"
+          "@id": "https://adetuyi.com/#person"
         }
       }
     ],
@@ -177,9 +192,29 @@ export default function StructuredData() {
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": "https://adetuyi.com/#website",
     "name": "Tolu Adetuyi",
-    "url": "https://adetuyi.com",
-    "description": "Personal site of Tolu Adetuyi, Co-Founder & Chief Innovation Officer at Prembly. Building interconnected systems that expand economic participation and infrastructure across emerging markets."
+    "url": "https://adetuyi.com/",
+    "description": "The official website of Tolu Adetuyi, Co-Founder and Chief Innovation Officer at Prembly, former growth leader at Moniepoint, and venture architect building infrastructure across emerging markets.",
+    "publisher": {
+      "@id": "https://adetuyi.com/#person"
+    }
+  };
+
+  const profilePageSchema = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": "https://adetuyi.com/#profile-page",
+    "url": "https://adetuyi.com/",
+    "name": "Tolu Adetuyi | Co-Founder of Prembly and Venture Architect",
+    "description": "The official profile of Tolu Adetuyi, documenting his work at Prembly and Moniepoint, infrastructure ventures, writing, speaking, education, and professional recognition.",
+    "dateModified": "2026-07-31",
+    "isPartOf": {
+      "@id": "https://adetuyi.com/#website"
+    },
+    "mainEntity": {
+      "@id": "https://adetuyi.com/#person"
+    }
   };
 
   const navigationSchema = {
@@ -249,15 +284,27 @@ export default function StructuredData() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(personSchema).replace(/</g, "\\u003c"),
+        }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(websiteSchema).replace(/</g, "\\u003c"),
+        }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(navigationSchema) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(profilePageSchema).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(navigationSchema).replace(/</g, "\\u003c"),
+        }}
       />
     </>
   );

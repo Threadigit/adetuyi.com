@@ -1,5 +1,6 @@
 import Link from "next/link";
 import VideoPreview from "@/components/VideoPreview";
+import StructuredData from "@/components/StructuredData";
 import { getLatestPosts } from "@/lib/writing";
 import { pressEntries, speakingEntries } from "@/lib/profile-content";
 
@@ -20,6 +21,7 @@ const featuredVideoSchema = {
 export default function Home() {
   return (
     <main id="main-content" className="max-w-[680px] mx-auto px-6 py-8 md:py-14">
+      <StructuredData />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

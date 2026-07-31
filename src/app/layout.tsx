@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Lora } from "next/font/google";
 import "./globals.css";
-import StructuredData from "@/components/StructuredData";
 import SiteAnalytics from "@/components/SiteAnalytics";
 
 const lora = Lora({
@@ -17,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | Tolu Adetuyi",
   },
   description:
-    "Tolu Adetuyi is the Co-Founder & Chief Innovation Officer at Prembly. I build interconnected systems that expand economic participation and infrastructure across emerging markets. Over the past decade, I have built at the intersection of identity, compliance, financial infrastructure, and capital formation across Africa.",
+    "Tolu Adetuyi is Co-Founder and Chief Innovation Officer at Prembly, a trust infrastructure company. He previously led growth at Moniepoint and builds financial, identity, compliance, distribution, and energy infrastructure across emerging markets.",
   keywords: [
     "Tolu Adetuyi",
     "Adetuyi",
@@ -64,7 +63,7 @@ export const metadata: Metadata = {
     siteName: "Tolu Adetuyi",
     title: "Tolu Adetuyi | Co-Founder, Prembly · Innovator & Venture Architect",
     description:
-      "Co-Founder & Chief Innovation Officer at Prembly. Building interconnected systems that expand economic participation and infrastructure across emerging markets.",
+      "Tolu Adetuyi is Co-Founder and Chief Innovation Officer at Prembly. He previously led growth at Moniepoint and builds infrastructure across emerging markets.",
     images: [
       {
         url: "/tolu-new.png",
@@ -78,7 +77,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Tolu Adetuyi | Co-Founder, Prembly · Innovator & Venture Architect",
     description:
-      "Co-Founder & CIO at Prembly. Building interconnected systems that expand economic participation and infrastructure across emerging markets.",
+      "Co-Founder and Chief Innovation Officer at Prembly. Former growth leader at Moniepoint, building infrastructure across emerging markets.",
     creator: "@adetuyitolu",
     images: ["/tolu-new.png"],
   },
@@ -105,9 +104,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <StructuredData />
-      </head>
       <body className={`${lora.variable} font-sans`} suppressHydrationWarning>
         {children}
         <SiteAnalytics />
