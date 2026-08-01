@@ -59,7 +59,7 @@ const services = [
   },
   {
     label: "Distribution and market structure",
-    desc: "I built the distribution network that now processes billions in African transactions. I work with founders and operators navigating the gap between how these markets appear in reports and how they actually work on the ground.",
+    desc: "At Moniepoint, I helped build the distribution network behind billions of dollars in transactions across Africa. I work with founders and operators navigating the gap between how these markets appear in reports and how they actually work on the ground.",
   },
 ];
 

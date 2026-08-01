@@ -134,8 +134,8 @@ export default function Home() {
           <a href="https://moniepoint.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">
             Moniepoint
           </a>
-          , helping build the distribution network that now powers billions of
-          dollars in transactions across Africa. That experience shaped how I
+          , helping build the distribution network behind billions of dollars
+          in transactions across Africa. That experience shaped how I
           work today: synthesizing intelligence and relationships into products,
           ventures, deals, and institutional leverage.
         </p>
