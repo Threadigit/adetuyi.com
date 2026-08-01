@@ -384,23 +384,24 @@ export default function Home() {
             Active Investment Thesis
           </h2>
           <h3 className="text-[20px] md:text-[24px] font-medium text-foreground leading-snug mb-3 tracking-tight">
-            Powering Nigeria Infrastructure Fund 1
+            Powering demand that already exists
           </h3>
-          <p className="text-[15px] text-muted leading-relaxed mb-4">
-            Over the past decade, I have built digital trust and distribution
-            systems across Africa. I am now applying the same operating
-            discipline to distributed energy infrastructure, financing useful
-            assets close to businesses and productive users with measurable,
-            recurring demand.
+          <p className="text-[15px] text-muted leading-relaxed mb-5">
+            Powering Nigeria Infrastructure Fund 1 is my thesis for financing
+            distributed energy assets close to productive users already paying
+            the cost of unreliable power.
           </p>
-          <p className="text-[15px] text-muted leading-relaxed mb-6">
-            I am already testing one expression of this model through productive
-            electric mobility anchored by distributed charging and battery
-            infrastructure. The test is small by design. It is generating real
-            operating evidence on energy demand, asset utilisation, maintenance,
-            and repayment behaviour before the model is considered for wider
-            infrastructure financing.
-          </p>
+          <div className="mb-6 pt-4 border-t border-accent/20">
+            <p className="text-[11px] font-medium uppercase tracking-[0.14em] text-accent mb-2">
+              Live test
+            </p>
+            <p className="text-[14px] text-foreground/80 leading-relaxed m-0">
+              Productive electric mobility is the first test, anchored by a
+              distributed energy station. It is generating early evidence on
+              energy demand, asset utilisation, maintenance, and repayment
+              behaviour.
+            </p>
+          </div>
           <a
             href="/thesis"
             className="inline-flex items-center gap-2 border border-accent text-accent px-5 py-2.5 rounded-full hover:bg-accent hover:text-white transition-all font-medium text-[14px] group"
