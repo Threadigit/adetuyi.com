@@ -115,22 +115,25 @@ export default function EconomicParticipationThesisPage() {
 
         <div className="thesis-body max-w-none">
           <p className="first-letter:text-[48px] first-letter:font-bold first-letter:text-foreground first-letter:mr-3 first-letter:float-left first-letter:leading-[0.8]">
-            My work begins with one conviction. More people can participate
-            productively when the systems around trust, money, knowledge,
-            markets, capital, and production work for them.
+            Across my work, I keep returning to one question. What must exist
+            for more people and businesses to contribute meaningfully to the
+            economy and benefit from its growth? The answer is not simply
+            access to one product. It is a dependable path from identity and
+            trust to knowledge, money, markets, capital, production, and the
+            global economy.
           </p>
           <p>
-            Access on its own is not enough. A bank account is limited if money
-            cannot move easily. A verified business still needs customers. A
-            capable founder still needs practical knowledge and capital. A
-            factory still needs dependable power. Participation grows when
-            these pieces work together.
+            Opportunity becomes real only when that path works. A bank account
+            matters when money can move. Verification matters when it opens the
+            door to customers and commerce. Knowledge matters when a founder can
+            turn it into a sound company. Capital matters when a business has
+            the power, tools, and market to put it to productive use.
           </p>
           <p>
-            My role is consistent. I build where I have the experience and
-            conviction to operate, support founders who are solving related
-            problems, and help bring capital to opportunities that can widen
-            participation at scale.
+            My role is deliberate. I build where my operating experience is
+            strongest, support a small number of founders advancing the same
+            vision, and help capital reach opportunities that can expand
+            economic participation at meaningful scale.
           </p>
 
           <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
