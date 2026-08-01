@@ -108,7 +108,8 @@ export default function EconomicParticipationThesisPage() {
           <p className="text-[18px] md:text-[20px] leading-relaxed text-muted">
             My work is focused on widening economic participation by building
             and supporting the systems that help more people and businesses
-            create value, earn, own, grow, and take part in the global economy.
+            create value, earn, own, grow, and participate productively in the
+            global economy.
           </p>
         </header>
 
