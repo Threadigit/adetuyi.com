@@ -384,12 +384,14 @@ export default function Home() {
             Active Investment Thesis
           </h2>
           <h3 className="text-[20px] md:text-[24px] font-medium text-foreground leading-snug mb-3 tracking-tight">
-            Powering demand that already exists
+            Powering economic participation
           </h3>
           <p className="text-[15px] text-muted leading-relaxed mb-5">
             Powering Nigeria Infrastructure Fund 1 is my thesis for financing
             distributed energy assets close to productive users already paying
-            the cost of unreliable power.
+            the cost of unreliable power. More reliable energy allows
+            businesses to operate, workers to earn, and communities to
+            participate more fully in the economy.
           </p>
           <div className="mb-6 pt-4 border-t border-accent/20">
             <p className="text-[11px] font-medium uppercase tracking-[0.14em] text-accent mb-2">
@@ -399,7 +401,8 @@ export default function Home() {
               Productive electric mobility is the first test, anchored by a
               distributed energy station. It is generating early evidence on
               energy demand, asset utilisation, maintenance, and repayment
-              behaviour.
+              behaviour. The aim is to reduce the cost of productive mobility
+              and widen access to income-generating assets.
             </p>
           </div>
           <a
