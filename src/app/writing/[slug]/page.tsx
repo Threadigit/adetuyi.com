@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getPostBySlug, getAllSlugs, type ContentBlock } from "@/lib/writing";
+import { absoluteUrl, siteUrl, toSeoDescription } from "@/lib/seo";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -16,35 +17,35 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const post = getPostBySlug(slug);
   if (!post) return {};
 
-  const baseUrl = "https://adetuyi.com";
-  const image = post.ogImage ? `${baseUrl}${post.ogImage}` : `${baseUrl}/tolu-new.png`;
+  const title = post.seoTitle ?? post.title;
+  const description = toSeoDescription(post.excerpt);
+  const image = absoluteUrl(post.ogImage ?? "/tolu-og.jpg");
+  const canonical = `${siteUrl}/writing/${post.slug}`;
 
   return {
-    title: post.title,
-    description: post.excerpt,
+    title,
+    description,
     alternates: {
-      canonical: `https://adetuyi.com/writing/${post.slug}`,
+      canonical,
     },
     openGraph: {
-      title: `${post.title} | Tolu Adetuyi`,
-      description: post.excerpt,
-      url: `https://adetuyi.com/writing/${post.slug}`,
+      title: `${title} | Tolu Adetuyi`,
+      description,
+      url: canonical,
       type: "article",
       publishedTime: post.date,
       authors: ["Tolu Adetuyi"],
       images: [
         {
           url: image,
-          width: 1200,
-          height: 630, // Updated height for standard OG image ratio, though 1200x1200 works for square too
           alt: post.title,
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: post.title,
-      description: post.excerpt,
+      title,
+      description,
       images: [image],
     },
   };
@@ -91,7 +92,13 @@ function renderBlock(block: ContentBlock, index: number) {
     case "image":
       return (
         <figure key={index} className="my-8">
-          <img src={block.url} alt={block.alt} className="w-full rounded-xl border border-border" />
+          <img
+            src={block.url}
+            alt={block.alt}
+            loading="lazy"
+            decoding="async"
+            className="w-full rounded-xl border border-border"
+          />
           {block.caption && (
             <figcaption className="text-center text-[13px] text-muted mt-3">
               {block.caption}
@@ -126,8 +133,8 @@ export default async function WritingPost({ params }: PageProps) {
     notFound();
   }
 
-  const baseUrl = "https://adetuyi.com";
-  const image = post.ogImage ? `${baseUrl}${post.ogImage}` : `${baseUrl}/tolu-new.png`;
+  const baseUrl = siteUrl;
+  const image = absoluteUrl(post.ogImage ?? "/tolu-og.jpg");
 
   const blogPostingSchema = {
     "@context": "https://schema.org",
@@ -207,11 +214,15 @@ export default async function WritingPost({ params }: PageProps) {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(blogPostingSchema).replace(/</g, "\\u003c"),
+        }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema).replace(/</g, "\\u003c"),
+        }}
       />
       {videoSchemas.map((videoSchema) => (
         <script

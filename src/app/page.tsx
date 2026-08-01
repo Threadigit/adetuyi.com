@@ -58,8 +58,11 @@ export default function Home() {
           {/* Avatar */}
           <div className="relative flex-shrink-0 w-[72px] h-[72px] rounded-full overflow-hidden ring-2 ring-accent/20">
             <img
-              src="/tolu-new.png"
+              src="/tolu-avatar.jpg"
               alt="Tolu Adetuyi"
+              width={72}
+              height={72}
+              fetchPriority="high"
               className="w-full h-full object-cover object-top transition-all duration-700"
               style={{ filter: "grayscale(20%)" }}
             />

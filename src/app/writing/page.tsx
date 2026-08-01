@@ -2,27 +2,74 @@ import Link from "next/link";
 import { Metadata } from "next";
 import { getAllPosts } from "@/lib/writing";
 import WritingList from "./WritingList";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+
+const canonical = "https://adetuyi.com/writing";
+const postCount = getAllPosts().length;
+const description = `Read ${postCount} essays by Tolu Adetuyi on trust infrastructure, venture building, distribution, capital formation, technology, and economic participation in Africa.`;
 
 export const metadata: Metadata = {
   title: "Writing",
-  description:
-    "Essays and perspectives on trust infrastructure, leadership, venture building, distribution, capital formation, and building across emerging markets. By Tolu Adetuyi.",
+  description,
   openGraph: {
     title: "Writing | Tolu Adetuyi",
-    description:
-      "Essays on trust infrastructure, leadership, venture building, distribution, capital formation, and building across emerging markets.",
-    url: "https://adetuyi.com/writing",
+    description,
+    url: canonical,
+    type: "website",
+    images: [
+      {
+        url: "/tolu-og.jpg",
+        width: 1374,
+        height: 1145,
+        alt: "Writing by Tolu Adetuyi",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Writing | Tolu Adetuyi",
+    description,
+    images: ["/tolu-og.jpg"],
   },
   alternates: {
-    canonical: "https://adetuyi.com/writing",
+    canonical,
   },
 };
 
 export default function WritingPage() {
   const posts = getAllPosts();
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Writing by Tolu Adetuyi",
+    description,
+    url: canonical,
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: posts.length,
+      itemListElement: posts.map((post, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: post.title,
+        url: `${canonical}/${post.slug}`,
+      })),
+    },
+  };
 
   return (
     <main className="max-w-[680px] mx-auto px-6 py-16 md:py-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
+        }}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Writing", path: "/writing" },
+        ]}
+      />
       <Link
         href="/"
         className="inline-flex items-center text-[13px] font-medium uppercase tracking-widest text-muted hover:text-foreground transition-colors mb-12"

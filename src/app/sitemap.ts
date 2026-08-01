@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next';
 import { getAllPosts } from '@/lib/writing';
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const siteUpdated = new Date('2026-08-01');
   const writingEntries = getAllPosts().map((post) => ({
     url: `https://adetuyi.com/writing/${post.slug}`,
     lastModified: new Date(post.date),
@@ -12,61 +13,61 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: 'https://adetuyi.com',
-      lastModified: new Date(),
+      lastModified: siteUpdated,
       changeFrequency: 'monthly',
       priority: 1,
     },
     {
       url: 'https://adetuyi.com/thesis',
-      lastModified: new Date(),
+      lastModified: siteUpdated,
       changeFrequency: 'yearly',
       priority: 0.8,
     },
     {
       url: 'https://adetuyi.com/thesis/powering-nigeria-infrastructure-fund-1',
-      lastModified: new Date(),
+      lastModified: siteUpdated,
       changeFrequency: 'yearly',
       priority: 0.7,
     },
     {
       url: 'https://adetuyi.com/work',
-      lastModified: new Date(),
+      lastModified: siteUpdated,
       changeFrequency: 'yearly',
       priority: 0.7,
     },
     {
       url: 'https://adetuyi.com/writing',
-      lastModified: new Date(),
+      lastModified: siteUpdated,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: 'https://adetuyi.com/speaking',
-      lastModified: new Date(),
+      lastModified: siteUpdated,
       changeFrequency: 'yearly',
       priority: 0.6,
     },
     {
       url: 'https://adetuyi.com/press',
-      lastModified: new Date(),
+      lastModified: siteUpdated,
       changeFrequency: 'yearly',
       priority: 0.6,
     },
     {
       url: 'https://adetuyi.com/resources/prosperity-engine',
-      lastModified: new Date(),
+      lastModified: siteUpdated,
       changeFrequency: 'yearly',
       priority: 0.7,
     },
     {
       url: 'https://adetuyi.com/resources/closing-the-compliance-gap',
-      lastModified: new Date(),
+      lastModified: siteUpdated,
       changeFrequency: 'yearly',
       priority: 0.7,
     },
     {
       url: 'https://adetuyi.com/resources/bootstrapping-for-investors',
-      lastModified: new Date(),
+      lastModified: siteUpdated,
       changeFrequency: 'yearly',
       priority: 0.7,
     },

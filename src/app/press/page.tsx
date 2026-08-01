@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ProfileArchive from "@/components/ProfileArchive";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import { pressEntries } from "@/lib/profile-content";
 
 const title = "Press & Publications";
@@ -10,14 +11,6 @@ const canonical = "https://adetuyi.com/press";
 export const metadata: Metadata = {
   title,
   description,
-  keywords: [
-    "Tolu Adetuyi press",
-    "Tolu Adetuyi interviews",
-    "Prembly",
-    "financial infrastructure Africa",
-    "digital identity",
-    "financial crime",
-  ],
   alternates: { canonical },
   openGraph: {
     title: `${title} | Tolu Adetuyi`,
@@ -26,9 +19,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/tolu-new.png",
-        width: 1200,
-        height: 1200,
+        url: "/tolu-og.jpg",
+        width: 1374,
+        height: 1145,
         alt: "Tolu Adetuyi",
       },
     ],
@@ -37,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${title} | Tolu Adetuyi`,
     description,
-    images: ["/tolu-new.png"],
+    images: ["/tolu-og.jpg"],
   },
 };
 
@@ -66,6 +59,12 @@ export default function PressPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
         }}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Press and Publications", path: "/press" },
+        ]}
       />
       <ProfileArchive
         eyebrow="Press"

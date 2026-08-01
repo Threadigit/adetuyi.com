@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 const title = "Powering Nigeria Infrastructure Fund 1";
 const description =
@@ -103,6 +104,16 @@ export default function ThesisPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
         }}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Thesis", path: "/thesis" },
+          {
+            name: "Powering Nigeria Infrastructure Fund 1",
+            path: "/thesis/powering-nigeria-infrastructure-fund-1",
+          },
+        ]}
       />
 
       <Link

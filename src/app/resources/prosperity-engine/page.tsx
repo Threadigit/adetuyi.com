@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 const title = "The Prosperity Engine";
 const description =
@@ -9,13 +10,6 @@ const canonical = "https://adetuyi.com/resources/prosperity-engine";
 export const metadata: Metadata = {
   title,
   description,
-  keywords: [
-    "Nigeria economy",
-    "Nigeria economic framework",
-    "government performance scorecard",
-    "economic prosperity Nigeria",
-    "Tolu Adetuyi",
-  ],
   alternates: {
     canonical,
   },
@@ -26,9 +20,9 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/tolu-new.png",
-        width: 1200,
-        height: 1200,
+        url: "/tolu-og.jpg",
+        width: 1374,
+        height: 1145,
         alt: "Tolu Adetuyi",
       },
     ],
@@ -37,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${title} | Tolu Adetuyi`,
     description,
-    images: ["/tolu-new.png"],
+    images: ["/tolu-og.jpg"],
   },
 };
 
@@ -68,6 +62,13 @@ export default function ProsperityEnginePage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
         }}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Speaking", path: "/speaking" },
+          { name: title, path: "/resources/prosperity-engine" },
+        ]}
       />
       <Link
         href="/speaking"

@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 const title = "Bootstrapping & Making Your Idea Attractive to Investors";
+const metadataTitle = "Bootstrapping and Attracting Investors";
 const description =
   "A practical guide to startup financing, bootstrapping, investor readiness, traction, business models, and scalable growth.";
 const canonical = "https://adetuyi.com/resources/bootstrapping-for-investors";
@@ -9,16 +11,8 @@ const deckUrl =
   "https://docs.google.com/presentation/d/e/2PACX-1vRfUMs41WRijX2FtvJ59M-q-NumD5Y2oJlvGrrw_or0rqU9QAGtK6WbvvZjLKhPeBlDBaq17ZHYV5zO/pub?start=true&loop=true&delayms=3000";
 
 export const metadata: Metadata = {
-  title,
+  title: metadataTitle,
   description,
-  keywords: [
-    "startup bootstrapping",
-    "investor readiness",
-    "startup financing Africa",
-    "how to attract investors",
-    "venture building",
-    "Tolu Adetuyi",
-  ],
   alternates: { canonical },
   openGraph: {
     title: `${title} | Tolu Adetuyi`,
@@ -27,9 +21,9 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/tolu-new.png",
-        width: 1200,
-        height: 1200,
+        url: "/tolu-og.jpg",
+        width: 1374,
+        height: 1145,
         alt: "Tolu Adetuyi",
       },
     ],
@@ -38,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${title} | Tolu Adetuyi`,
     description,
-    images: ["/tolu-new.png"],
+    images: ["/tolu-og.jpg"],
   },
 };
 
@@ -69,6 +63,13 @@ export default function BootstrappingForInvestorsPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
         }}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Speaking", path: "/speaking" },
+          { name: title, path: "/resources/bootstrapping-for-investors" },
+        ]}
       />
       <Link
         href="/speaking"

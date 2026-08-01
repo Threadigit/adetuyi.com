@@ -10,7 +10,7 @@ export default function StructuredData() {
     "familyName": "Adetuyi",
     "jobTitle": "Co-Founder & Chief Innovation Officer",
     "description": "Co-Founder and Chief Innovation Officer at Prembly, a trust infrastructure company. Former growth leader at Moniepoint. Tolu builds financial, digital identity, compliance, distribution, and energy infrastructure across emerging markets.",
-    "image": "https://adetuyi.com/tolu-new.png",
+    "image": "https://adetuyi.com/tolu-og.jpg",
     "url": "https://adetuyi.com/",
     "mainEntityOfPage": {
       "@id": "https://adetuyi.com/#profile-page"
@@ -208,76 +208,13 @@ export default function StructuredData() {
     "url": "https://adetuyi.com/",
     "name": "Tolu Adetuyi | Co-Founder of Prembly and Venture Architect",
     "description": "The official profile of Tolu Adetuyi, documenting his work at Prembly and Moniepoint, infrastructure ventures, writing, speaking, education, and professional recognition.",
-    "dateModified": "2026-07-31",
+    "dateModified": "2026-08-01",
     "isPartOf": {
       "@id": "https://adetuyi.com/#website"
     },
     "mainEntity": {
       "@id": "https://adetuyi.com/#person"
     }
-  };
-
-  const navigationSchema = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "itemListElement": [
-      {
-        "@type": "SiteNavigationElement",
-        "position": 1,
-        "name": "Writing & Essays",
-        "description": "Essays on execution, trust infrastructure, venture building, and emerging markets.",
-        "url": "https://adetuyi.com/writing"
-      },
-      {
-        "@type": "SiteNavigationElement",
-        "position": 2,
-        "name": "The $39 Dispute I Almost Didn't File",
-        "description": "On overthinking, inertia, and the cost of waiting for perfect conditions before you act.",
-        "url": "https://adetuyi.com/writing/the-39-dispute"
-      },
-      {
-        "@type": "SiteNavigationElement",
-        "position": 3,
-        "name": "The Architecture of Leverage",
-        "description": "How serious builders redesign how they work — from direct effort to systems that compound.",
-        "url": "https://adetuyi.com/writing/the-architecture-of-leverage"
-      },
-      {
-        "@type": "SiteNavigationElement",
-        "position": 4,
-        "name": "Play the Level You're On",
-        "description": "Why the gap between where you are and where you want to be is the actual work.",
-        "url": "https://adetuyi.com/writing/play-the-level-youre-on"
-      },
-      {
-        "@type": "SiteNavigationElement",
-        "position": 5,
-        "name": "The 5 Mindsets of Real Progress",
-        "description": "Moving from intellectual cynicism to raw execution.",
-        "url": "https://adetuyi.com/writing/the-spectrum-of-agency"
-      },
-      {
-        "@type": "SiteNavigationElement",
-        "position": 6,
-        "name": "The Framework of Agency",
-        "description": "Tactical frameworks to bridge the gap between optimism and operations.",
-        "url": "https://adetuyi.com/writing/the-framework-of-agency"
-      },
-      {
-        "@type": "SiteNavigationElement",
-        "position": 7,
-        "name": "Infrastructure for Economic Participation",
-        "description": "Tolu Adetuyi's thesis on the trust, financial, distribution, productive, and energy infrastructure that expands economic participation.",
-        "url": "https://adetuyi.com/thesis"
-      },
-      {
-        "@type": "SiteNavigationElement",
-        "position": 8,
-        "name": "Work with Tolu",
-        "description": "Business model clarity, fundraising narrative, and distribution strategy for founders, operators, and investors in Africa.",
-        "url": "https://adetuyi.com/work"
-      }
-    ]
   };
 
   return (
@@ -298,12 +235,6 @@ export default function StructuredData() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(profilePageSchema).replace(/</g, "\\u003c"),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(navigationSchema).replace(/</g, "\\u003c"),
         }}
       />
     </>

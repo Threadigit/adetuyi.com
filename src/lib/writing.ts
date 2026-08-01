@@ -15,6 +15,7 @@ export type ContentBlock =
 export interface Post {
   slug: string;
   title: string;
+  seoTitle?: string;
   excerpt: string;
   date: string; // YYYY-MM-DD
   category: string;
@@ -412,6 +413,7 @@ const posts: Post[] = [
   {
     slug: "the-accept-always-trap",
     title: "The \"Accept Always\" Trap: The Catastrophic Security Risk of Autonomous AI",
+    seoTitle: "The Accept Always Trap in Autonomous AI",
     excerpt: "I woke up at 400 AM with my mind absolutely racing. I’d just had a vivid highly specific dream. In it, I wasn’t just designing systems, nor was I orchestrating deals or looking at lines of code; I was experiencing a full scale jailbreak event.",
     date: "2026-06-13",
     category: "Technology",
@@ -719,6 +721,7 @@ const posts: Post[] = [
   {
     slug: "the-5am-internal-sandbox",
     title: "The 5 AM Internal Sandbox, Architecture, Debate, and the Paradox of Action",
+    seoTitle: "The 5 AM Internal Sandbox",
     excerpt:
       "An internal boardroom of competing personas helps stress test decisions, but letting the simulation run too long leads to paralysis. Real progress requires knowing when to terminate the debate and build.",
     date: "2026-05-23",

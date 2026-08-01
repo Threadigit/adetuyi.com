@@ -1,22 +1,23 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Advisory",
-  description: "Business model clarity, technology and product strategy, fundraising narrative, and distribution strategy for founders, operators, and investors building in Africa.",
+  description: "Selective advisory by Tolu Adetuyi for founders, operators, and investors making product, technology, distribution, fundraising, and market decisions in Africa.",
   alternates: {
     canonical: "https://adetuyi.com/work",
   },
   openGraph: {
     title: "Advisory | Tolu Adetuyi",
-    description: "Business model clarity, technology and product strategy, fundraising narrative, and distribution strategy for founders, operators, and investors building in Africa.",
+    description: "Selective advisory by Tolu Adetuyi for founders, operators, and investors making product, technology, distribution, fundraising, and market decisions in Africa.",
     url: "https://adetuyi.com/work",
     type: "website",
     images: [
       {
-        url: "/tolu-new.png",
-        width: 1200,
-        height: 1200,
+        url: "/tolu-og.jpg",
+        width: 1374,
+        height: 1145,
         alt: "Tolu Adetuyi",
       },
     ],
@@ -24,8 +25,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Advisory | Tolu Adetuyi",
-    description: "Business model clarity, technology and product strategy, fundraising narrative, and distribution strategy for founders, operators, and investors building in Africa.",
-    images: ["/tolu-new.png"],
+    description: "Selective advisory by Tolu Adetuyi for founders, operators, and investors making product, technology, distribution, fundraising, and market decisions in Africa.",
+    images: ["/tolu-og.jpg"],
   },
 };
 
@@ -79,8 +80,39 @@ const engagementShapes = [
 ];
 
 export default function WorkPage() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Advisory with Tolu Adetuyi",
+    description: "Selective advisory for founders, operators, and investors making consequential product, technology, distribution, fundraising, and market decisions in Africa.",
+    url: "https://adetuyi.com/work",
+    provider: {
+      "@type": "Person",
+      "@id": "https://adetuyi.com/#person",
+      name: "Tolu Adetuyi",
+      url: "https://adetuyi.com",
+    },
+    areaServed: {
+      "@type": "Place",
+      name: "Africa",
+    },
+    serviceType: services.map((service) => service.label),
+  };
+
   return (
     <main className="max-w-[680px] mx-auto px-6 py-16 md:py-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
+        }}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Advisory", path: "/work" },
+        ]}
+      />
       <Link
         href="/"
         className="inline-flex items-center text-[13px] font-medium uppercase tracking-widest text-muted hover:text-foreground transition-colors mb-12"

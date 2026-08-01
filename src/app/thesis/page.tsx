@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 const title = "Infrastructure for Economic Participation";
 const description =
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/tolu-new.png",
+        url: "/tolu-og.jpg",
         width: 1374,
         height: 1145,
         alt: "Tolu Adetuyi",
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title,
     description,
-    images: ["/tolu-new.png"],
+    images: ["/tolu-og.jpg"],
   },
 };
 
@@ -84,6 +85,12 @@ export default function EconomicParticipationThesisPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
         }}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Thesis", path: "/thesis" },
+        ]}
       />
 
       <Link

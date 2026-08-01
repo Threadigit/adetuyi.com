@@ -27,6 +27,8 @@ export default function VideoPreview() {
       <img
         src="/lagos-tech-fest-preview.jpg"
         alt=""
+        loading="lazy"
+        decoding="async"
         className="w-full h-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-[1.02]"
       />
       <span className="absolute inset-0 bg-foreground/15" />
