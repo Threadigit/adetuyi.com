@@ -478,19 +478,25 @@ export default function ThesisPage() {
 
           <div className="my-12 p-8 bg-foreground text-background rounded-xl">
             <h2 className="text-[19px] font-medium text-background mt-0 mb-4">
-              For aligned investors and operators
+              For investors, operators, and project partners
             </h2>
+            <p className="text-[14px] leading-relaxed text-background/75 mb-4">
+              Powering Nigeria Infrastructure Fund 1 is in formation. I want to
+              speak with investors seeking disciplined exposure to distributed
+              energy, operators with measurable power demand, and partners who
+              can strengthen project development, equipment, financing, or
+              execution.
+            </p>
             <p className="text-[14px] leading-relaxed text-background/75 mb-6">
-              The fund remains in formation. I am speaking with investors,
-              project developers, equipment partners, operators, and commercial
-              energy users who share this view of the market and bring
-              complementary discipline to it.
+              If you operate a viable site, manage a productive mobility fleet,
+              control an anchor load, or want to help finance the first assets,
+              I would like to hear from you.
             </p>
             <a
-              href="mailto:tolu@adetuyi.com?subject=Powering Nigeria IF1"
+              href="mailto:tolu@adetuyi.com?subject=Powering Nigeria IF1 project or investment"
               className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 rounded-full hover:bg-accent/90 transition-colors font-medium text-[14px]"
             >
-              Start a conversation <span>↗</span>
+              Discuss a project or investment <span>↗</span>
             </a>
           </div>
 
