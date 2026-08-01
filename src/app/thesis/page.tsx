@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 const title = "Powering Nigeria Infrastructure Fund 1";
 const description =
-  "Tolu Adetuyi's investment thesis for financing distributed commercial and industrial energy infrastructure in Nigeria.";
+  "Tolu Adetuyi's thesis for financing distributed energy assets around commercial, industrial, and productive mobility demand in Nigeria.";
 const canonical = "https://adetuyi.com/thesis";
 const lastUpdated = "2026-07-31";
 
@@ -52,6 +52,8 @@ export const metadata: Metadata = {
     "Nigeria energy infrastructure fund",
     "commercial and industrial solar Nigeria",
     "distributed energy Nigeria",
+    "productive mobility infrastructure Nigeria",
+    "energy access investment Nigeria",
     "embedded generation Nigeria",
     "Nigeria infrastructure investment",
     "Tolu Adetuyi",
@@ -90,9 +92,11 @@ export default function ThesisPage() {
     dateModified: lastUpdated,
     author: {
       "@type": "Person",
+      "@id": "https://adetuyi.com/#person",
       name: "Tolu Adetuyi",
       url: "https://adetuyi.com",
     },
+    mainEntityOfPage: canonical,
     about: [
       "Distributed energy infrastructure",
       "Commercial and industrial power",
@@ -187,22 +191,46 @@ export default function ThesisPage() {
           </h2>
           <p>
             Nigeria&apos;s grid has substantial nameplate capacity, but too
-            little of it becomes dependable power for the customer. NERC
-            reported 13,625 MW of installed grid-connected capacity in April
-            2026. Only 4,286 MW was available for dispatch, and average output
-            was approximately 4,048 MW. The issue is not simply how many
-            generating plants exist. Fuel availability, plant condition,
-            transmission limits, distribution losses, liquidity, and
-            commercial discipline all determine what finally reaches a meter.
+            little of it becomes dependable power for the customer. NERC&apos;s{" "}
+            <a
+              href="https://nerc.gov.ng/resource-category/operational-performance-factsheet/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground link-hover font-medium"
+            >
+              April 2026 operational factsheet
+            </a>{" "}
+            reported 13,625 MW of installed grid-connected capacity. Only 4,286
+            MW was available for dispatch, and average output was approximately
+            4,048 MW. The issue is not simply how many generating plants exist.
+            Fuel availability, plant condition, transmission limits,
+            distribution losses, liquidity, and commercial discipline all
+            determine what finally reaches a meter.
           </p>
           <p>
-            Access is also incomplete. The World Bank&apos;s latest published
-            indicator places electricity access at 61.2 percent of the
-            population in 2023. Its review of Nigeria&apos;s mini-grid market
+            Access is also incomplete. The World Bank&apos;s{" "}
+            <a
+              href="https://data.worldbank.org/country/nigeria?locations=NG&subcat=161"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground link-hover font-medium"
+            >
+              latest published indicator
+            </a>{" "}
+            places electricity access at 62.5 percent of the population in
+            2024. Its{" "}
+            <a
+              href="https://www.worldbank.org/en/news/feature/2025/03/07/expanding-nigeria-s-mini-grid-market"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground link-hover font-medium"
+            >
+              review of Nigeria&apos;s mini-grid market
+            </a>{" "}
             estimates that more than 80 million people still lack access.
-            Businesses that are connected often face a different problem.
-            Their connection does not guarantee the quality or duration of
-            supply required to operate.
+            Businesses that are connected often face a different problem. Their
+            connection does not guarantee the quality or duration of supply
+            required to operate.
           </p>
           <p>
             The practical result is a parallel energy economy. Companies buy
@@ -317,24 +345,41 @@ export default function ThesisPage() {
             clearer routes for private generation.
           </p>
           <p>
-            Nigeria&apos;s 2026 mini-grid rules allow isolated projects up to 5
-            MW and interconnected projects up to 10 MW per site. The framework
-            adds clearer site protection, grid-arrival provisions, portfolio
-            applications, cost-reflective tariff methods, and defined approval
-            timelines. Embedded generation remains another route for projects
-            that supply through distribution infrastructure.
+            Nigeria&apos;s{" "}
+            <a
+              href="https://nerc.gov.ng/need-help/services/apply-for-mini-grid-permit-2/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground link-hover font-medium"
+            >
+              2026 mini-grid rules
+            </a>{" "}
+            allow isolated projects up to 5 MW and interconnected projects up
+            to 10 MW per site. The framework adds clearer site protection,
+            grid-arrival provisions, portfolio applications, cost-reflective
+            tariff methods, and defined approval timelines. Embedded generation
+            remains another route for projects that supply through distribution
+            infrastructure.
           </p>
           <p>
             Public programmes are also validating the market rather than
-            replacing it. The $750 million DARES programme targets electricity
-            access for 17.5 million Nigerians through private sector-led
-            distributed renewable energy. That is useful evidence of policy
-            direction and market infrastructure. It is not a substitute for
-            project-level commercial judgment.
+            replacing it. The{" "}
+            <a
+              href="https://www.dares.rea.gov.ng/dares.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground link-hover font-medium"
+            >
+              $750 million DARES programme
+            </a>{" "}
+            targets electricity access for 17.5 million Nigerians through
+            private sector-led distributed renewable energy. That is useful
+            evidence of policy direction and market infrastructure. It is not a
+            substitute for project-level commercial judgment.
           </p>
 
           <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
-            How the fund will underwrite
+            How projects will be underwritten
           </h2>
           <p>
             The quality of the customer matters as much as the quality of the
@@ -409,10 +454,19 @@ export default function ThesisPage() {
           </p>
           <p>
             This is why the strategy begins with commercial and industrial
-            anchor loads. The IEA notes that businesses consume nearly three
-            times more energy per mini-grid connection than households.
-            Productive users provide the demand density that makes distributed
-            systems more financeable while supporting wider economic activity.
+            anchor loads. The{" "}
+            <a
+              href="https://www.iea.org/reports/financing-electricity-access-in-africa/executive-summary"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground link-hover font-medium"
+            >
+              IEA notes
+            </a>{" "}
+            that businesses consume nearly three times more energy per
+            mini-grid connection than households. Productive users provide the
+            demand density that makes distributed systems more financeable while
+            supporting wider economic activity.
           </p>
 
           <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
@@ -467,7 +521,7 @@ export default function ThesisPage() {
             transact safely. Power is more fundamental. When electricity is
             reliable, a factory can add a shift, a clinic can protect its cold
             chain, a logistics operator can plan, and a technology company can
-            keep its systems online. The asset earns a return because the
+            keep its systems online. An asset can earn a return when the
             customer becomes more productive.
           </p>
           <p>
@@ -505,7 +559,7 @@ export default function ThesisPage() {
             </p>
             <div className="flex flex-col sm:flex-row sm:items-center gap-3">
               <a
-                href="mailto:tolu@adetuyi.com?subject=Powering Nigeria IF1 project or investment"
+                href="mailto:tolu@adetuyi.com?subject=Powering%20Nigeria%20IF1%20project%20or%20investment"
                 className="inline-flex items-center justify-center gap-2 bg-accent text-white px-6 py-3 rounded-full hover:bg-accent/90 transition-colors font-medium text-[14px]"
               >
                 Discuss a project or investment <span>↗</span>
