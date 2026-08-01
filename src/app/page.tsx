@@ -272,7 +272,7 @@ export default function Home() {
             My work is guided by a simple conviction. Economic participation
             expands when people and businesses can prove who they are, move
             money, reach markets, learn what works, access capital and
-            productive assets, and rely on dependable energy.
+            productive assets, and rely on dependable infrastructure.
           </p>
           <p className="text-[15px] text-muted leading-relaxed mb-6">
             Powering Nigeria Infrastructure Fund 1 is one active expression of
