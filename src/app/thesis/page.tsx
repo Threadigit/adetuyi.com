@@ -176,8 +176,10 @@ export default function ThesisPage() {
             asks each enterprise to become its own utility.
           </p>
           <p>
-            I do not see that only as a development problem. I see a large,
-            recurring, and financeable demand for better infrastructure.
+            I do not see that only as a development problem. I see recurring,
+            financeable demand for infrastructure that lowers operating costs,
+            strengthens earnings, and expands what businesses and workers can
+            produce.
           </p>
 
           <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">

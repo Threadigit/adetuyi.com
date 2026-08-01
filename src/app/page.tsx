@@ -387,11 +387,11 @@ export default function Home() {
             Powering Nigeria Infrastructure Fund 1
           </h3>
           <p className="text-[15px] text-muted leading-relaxed mb-4">
-            Powering Nigeria Infrastructure Fund 1 is my thesis for financing
-            distributed energy assets close to productive users already paying
-            the cost of unreliable power. More reliable energy allows
-            businesses to operate, workers to earn, and communities to
-            participate more fully in the economy.
+            Powering Nigeria Infrastructure Fund 1 is being formed to finance
+            distributed energy assets close to productive users who already
+            bear the cost of unreliable power. The aim is straightforward.
+            Help businesses operate, help workers earn, and enable more
+            communities to participate in the economy.
           </p>
           <p className="text-[15px] text-muted leading-relaxed mb-6">
             While the fund is in formation, I am already testing the model
