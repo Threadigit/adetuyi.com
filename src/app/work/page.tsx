@@ -32,15 +32,15 @@ export const metadata: Metadata = {
 const audiences = [
   {
     label: "Founders",
-    desc: "Pre-seed to Series A. Working thesis, not enough conviction or speed. Clarity on the model, the narrative, or the market.",
+    desc: "Pre-seed to Series A founders facing a consequential decision about the product, business model, market, distribution, or fundraising narrative.",
   },
   {
     label: "Operators",
-    desc: "Scaling into Nigeria or African markets. Navigating the gap between what the data says and how the ground actually works.",
+    desc: "Operators entering or scaling across African markets who need to reconcile the strategy with how customers, distribution, regulation, and execution work on the ground.",
   },
   {
     label: "Investors",
-    desc: "Allocating into Africa. Looking for a practitioner's read on a deal, a market, or a sector before committing capital.",
+    desc: "Investors seeking a practitioner's assessment of an African company, market, or sector before committing capital.",
   },
 ];
 
@@ -59,7 +59,7 @@ const services = [
   },
   {
     label: "Distribution and market structure",
-    desc: "At Moniepoint, I helped build the distribution network behind billions of dollars in transactions across Africa. I work with founders and operators navigating the gap between how these markets appear in reports and how they actually work on the ground.",
+    desc: "I help founders and operators design routes to market around real customer behaviour, channel economics, local incentives, and the gap between how a market appears in reports and how it works on the ground.",
   },
 ];
 
@@ -85,7 +85,7 @@ export default function WorkPage() {
         href="/"
         className="inline-flex items-center text-[13px] font-medium uppercase tracking-widest text-muted hover:text-foreground transition-colors mb-12"
       >
-        <span className="mr-2">←</span> Back
+        <span className="mr-2">←</span> Back to homepage
       </Link>
 
       <article className="animate-fade-up">
@@ -101,12 +101,29 @@ export default function WorkPage() {
           </h1>
           <p className="text-[16px] leading-[1.75] text-muted">
             I advise selectively alongside my operating work and accept only a
-            small number of engagements where I can be genuinely useful.{" "}
-            Whether the room has a founder, an operator, or an investor, the work is the same.
-            Most of the time, the problem someone brings me is not the actual problem.
-            I walk in, map the gap between what they believe and what is true, and
-            compress it into a clear direction.
+            small number of engagements where I can be genuinely useful.
+            Founders, operators, and investors usually come with a product,
+            market, business-model, or capital decision. I identify the real
+            constraint, test the assumptions, and turn the ambiguity into a
+            clear course of action.
           </p>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-3 mt-7">
+            <a
+              href="https://calendly.com/toluadetuyi/one-on-one"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-accent text-white px-5 py-2.5 rounded-full hover:bg-accent/90 transition-all font-medium text-[14px] group"
+            >
+              Book a free 15-minute call
+              <span className="transition-transform duration-300 group-hover:translate-x-1">↗</span>
+            </a>
+            <a
+              href="mailto:tolu@adetuyi.com"
+              className="text-[14px] font-medium text-foreground hover:text-accent transition-colors"
+            >
+              Send a note →
+            </a>
+          </div>
         </header>
 
         {/* Who this is for */}

@@ -317,7 +317,10 @@ export default function Home() {
           </Link>
         </div>
         <div>
-          {speakingEntries.slice(0, 3).map((entry, index, entries) => (
+          {speakingEntries
+            .filter((entry) => entry.href !== "https://www.youtube.com/watch?v=7JIjYZJO5jQ")
+            .slice(0, 3)
+            .map((entry, index, entries) => (
             <div key={entry.href}>
               <a
                 href={entry.href}
@@ -335,7 +338,7 @@ export default function Home() {
               </a>
               {index < entries.length - 1 && <div className="border-t border-accent/20" />}
             </div>
-          ))}
+            ))}
         </div>
       </section>
 

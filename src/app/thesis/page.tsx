@@ -109,7 +109,7 @@ export default function ThesisPage() {
         href="/"
         className="inline-flex items-center text-[13px] font-medium uppercase tracking-widest text-muted hover:text-foreground transition-colors mb-12"
       >
-        <span className="mr-2">←</span> Back
+        <span className="mr-2">←</span> Back to homepage
       </Link>
 
       <article className="animate-fade-up">
@@ -527,19 +527,18 @@ export default function ThesisPage() {
           <p>
             The fund is currently sponsor-led by me. I bring a decade of work
             across software, financial-services distribution, identity,
-            compliance, and company building in African markets. That is useful
-            operating context, but it is not a substitute for power-sector
-            engineering or project-finance depth.
+            compliance, and company building in African markets. That operating
+            background shapes how I assess demand, distribution, customer
+            quality, and whether infrastructure creates measurable economic
+            value.
           </p>
           <p>
-            The formation work therefore includes building the investment and
-            operating capability required for the mandate. Each project will
-            need accountable expertise across development, engineering,
+            Formation includes assembling the investment and operating
+            capability required for the mandate. No project should advance
+            without accountable expertise across development, engineering,
             contracts, regulation, construction, asset management, and finance.
-            I will publish the named team and governance structure when those
-            roles are formalised. Until then, this is a thesis and an invitation
-            to help build the institution, not a claim that the institution is
-            already complete.
+            The named team and governance structure will be published as those
+            roles are formalised.
           </p>
 
           <div className="my-12 p-8 bg-foreground text-background rounded-xl">
@@ -582,7 +581,7 @@ export default function ThesisPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 border border-background/25 text-background px-6 py-3 rounded-full hover:border-accent hover:text-accent transition-colors font-medium text-[14px]"
               >
-                Book a conversation <span>↗</span>
+                Book a free 15-minute call <span>↗</span>
               </a>
             </div>
           </div>
