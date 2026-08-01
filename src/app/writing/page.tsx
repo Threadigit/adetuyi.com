@@ -41,7 +41,9 @@ export default function WritingPage() {
           Essays &amp; Perspectives
         </h1>
         <p className="text-[15px] leading-relaxed text-muted max-w-[520px]">
-          On trust infrastructure, leadership, venture building, distribution, capital formation, and the systems that power economic participation across emerging markets.
+          A collection of {posts.length} essays on trust infrastructure,
+          leadership, venture building, distribution, capital formation, and
+          the systems that power economic participation across emerging markets.
         </p>
       </header>
 

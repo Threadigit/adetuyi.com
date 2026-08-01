@@ -1,7 +1,7 @@
 import Link from "next/link";
 import VideoPreview from "@/components/VideoPreview";
 import StructuredData from "@/components/StructuredData";
-import { getLatestPosts } from "@/lib/writing";
+import { getAllPosts, getLatestPosts } from "@/lib/writing";
 import { pressEntries, speakingEntries } from "@/lib/profile-content";
 
 const featuredVideoSchema = {
@@ -40,14 +40,14 @@ export default function Home() {
           TA<span className="text-accent">.</span>
         </Link>
         <div className="flex items-center gap-4 sm:gap-6 text-[13px] text-muted">
-          <Link href="/work" className="hover:text-foreground transition-colors">
-            Advisory
-          </Link>
           <Link href="/writing" className="hover:text-foreground transition-colors">
             Writing
           </Link>
           <Link href="/thesis" className="hover:text-foreground transition-colors">
             Thesis
+          </Link>
+          <Link href="/work" className="hover:text-foreground transition-colors">
+            Advisory
           </Link>
         </div>
       </nav>
@@ -101,17 +101,17 @@ export default function Home() {
         </p>
         <div className="flex flex-wrap items-center gap-x-5 gap-y-3 mt-7">
           <Link
-            href="/work"
+            href="/writing"
             className="inline-flex items-center gap-2 bg-accent text-white px-5 py-2.5 rounded-full hover:bg-accent/90 transition-all font-medium text-[14px] group"
           >
-            Work with me
+            Read my writing
             <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
           </Link>
           <Link
-            href="/writing"
+            href="/thesis"
             className="inline-flex items-center gap-2 text-[14px] font-medium text-foreground hover:text-accent transition-colors group"
           >
-            Read my thinking
+            Explore the thesis
             <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
           </Link>
         </div>
@@ -151,24 +151,6 @@ export default function Home() {
           from Morgan State University, where I graduated as a GSBM Scholar. I
           am also a lifetime member of Beta Gamma Sigma, the international
           business honor society.
-        </p>
-      </section>
-
-      {/* ── Advisory ── */}
-      <section className="mb-16 animate-fade-up delay-300">
-        <div className="flex items-center justify-between gap-6 mb-4">
-          <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3">
-            Advisory
-          </h2>
-          <Link href="/work" className="text-[13px] text-muted hover:text-accent transition-colors">
-            How I work →
-          </Link>
-        </div>
-        <p className="text-[15px] leading-[1.8] text-muted">
-          I work with founders, operators, and investors on business-model
-          clarity, fundraising narratives, distribution strategy, and African
-          market decisions. The advice comes from a decade spent building the
-          systems, companies, and distribution networks behind those decisions.
         </p>
       </section>
 
@@ -228,13 +210,84 @@ export default function Home() {
           {[
             "Trust & Financial Infrastructure",
             "Distribution & Market Access",
-            "Energy & Productive Infrastructure",
+            "Energy, Manufacturing & Productive Infrastructure",
             "Venture & Capital Formation"
           ].map((area) => (
             <span key={area} className="inline-flex items-center px-3 py-1.5 rounded bg-accent/5 border border-accent/10 text-muted text-[13px] leading-none">
               {area}
             </span>
           ))}
+        </div>
+      </section>
+
+      {/* ── Latest Writing ── */}
+      <section className="mb-16 animate-fade-up delay-400">
+        <div className="flex justify-between items-baseline gap-6 mb-3">
+          <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3">
+            Writing
+          </h2>
+          <Link
+            href="/writing"
+            className="text-[13px] text-muted hover:text-accent transition-colors group flex items-center gap-1.5 whitespace-nowrap"
+          >
+            All {getAllPosts().length} essays <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
+          </Link>
+        </div>
+        <p className="text-[14px] leading-relaxed text-muted mb-4">
+          Essays and frameworks on trust, capital, infrastructure, leadership,
+          and how emerging markets work.
+        </p>
+        <div className="space-y-0">
+          {getLatestPosts(3).map((post, index, arr) => (
+            <div key={post.slug}>
+              <Link href={`/writing/${post.slug}`} className="group block py-4">
+                <div className="flex items-center gap-2.5 mb-2">
+                  <span className="text-[11px] uppercase tracking-widest text-accent font-medium">{post.category}</span>
+                </div>
+                <h3 className="text-[15px] font-medium text-foreground tracking-tight leading-snug mb-1.5 group-hover:text-accent transition-colors duration-300">
+                  {post.title}
+                </h3>
+                <p className="text-[13px] leading-relaxed text-muted line-clamp-1">
+                  {post.excerpt}
+                </p>
+              </Link>
+              {index < arr.length - 1 && <div className="border-t border-accent/15" />}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── Active Investment Thesis ── */}
+      <section className="mb-16 animate-fade-up delay-500">
+        <div className="p-8 bg-accent/5 ring-1 ring-border rounded-xl relative overflow-hidden">
+          <div className="absolute top-0 left-0 w-1 h-full bg-accent"></div>
+          <h2 className="text-[13px] font-medium uppercase tracking-widest text-accent mb-3">
+            Active Investment Thesis
+          </h2>
+          <h3 className="text-[20px] md:text-[24px] font-medium text-foreground leading-snug mb-3 tracking-tight">
+            Powering Nigeria Infrastructure Fund 1
+          </h3>
+          <p className="text-[15px] text-muted leading-relaxed mb-4">
+            Powering Nigeria Infrastructure Fund 1 is being formed to finance
+            distributed energy assets close to productive users who already
+            bear the cost of unreliable power. The aim is straightforward.
+            Help businesses operate, help workers earn, and enable more
+            communities to participate in the economy.
+          </p>
+          <p className="text-[15px] text-muted leading-relaxed mb-6">
+            The first test begins with productive electric mobility. Deployed
+            assets are actively tracked for utilisation, repayments, battery
+            behaviour, and maintenance. That operating data is being used to
+            test whether a distributed energy station can be supported by
+            demand already in motion, lower mobility costs, and widen access to
+            income-generating assets.
+          </p>
+          <Link
+            href="/thesis"
+            className="inline-flex items-center gap-2 border border-accent text-accent px-5 py-2.5 rounded-full hover:bg-accent hover:text-white transition-all font-medium text-[14px] group"
+          >
+            Read the thesis <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+          </Link>
         </div>
       </section>
 
@@ -286,44 +339,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Latest Writing ── */}
-      <section className="mb-16 animate-fade-up delay-600">
-        <div className="flex justify-between items-baseline mb-6">
-          <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3">
-            Latest Writing
-          </h2>
-          <Link
-            href="/writing"
-            className="text-[13px] text-muted hover:text-accent transition-colors group flex items-center gap-1.5"
-          >
-            View all <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
-          </Link>
-        </div>
-        <div className="space-y-0">
-          {getLatestPosts(3).map((post, index, arr) => (
-            <div key={post.slug}>
-              <a
-                href={`/writing/${post.slug}`}
-                className="group block py-4"
-              >
-                <div className="flex items-center gap-2.5 mb-2">
-                  <span className="text-[11px] uppercase tracking-widest text-accent font-medium">{post.category}</span>
-                </div>
-                <h3 className="text-[15px] font-medium text-foreground tracking-tight leading-snug mb-1.5 group-hover:text-accent transition-colors duration-300">
-                  {post.title}
-                </h3>
-                <p className="text-[13px] leading-relaxed text-muted line-clamp-1">
-                  {post.excerpt}
-                </p>
-              </a>
-              {index < arr.length - 1 && (
-                <div className="border-t border-accent/15" />
-              )}
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* ── Press & Writing ── */}
       <section className="mb-16 animate-fade-up delay-600">
         <div className="flex justify-between items-baseline mb-6">
@@ -357,73 +372,37 @@ export default function Home() {
         </div>
       </section>
 
-
-      {/* ── Active Investment Thesis ── */}
-
-      <section className="mb-16 animate-fade-up delay-700">
-        <div className="p-8 bg-accent/5 ring-1 ring-border rounded-xl relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-1 h-full bg-accent"></div>
-          <h2 className="text-[13px] font-medium uppercase tracking-widest text-accent mb-3">
-            Active Investment Thesis
-          </h2>
-          <h3 className="text-[20px] md:text-[24px] font-medium text-foreground leading-snug mb-3 tracking-tight">
-            Powering Nigeria Infrastructure Fund 1
-          </h3>
-          <p className="text-[15px] text-muted leading-relaxed mb-4">
-            Powering Nigeria Infrastructure Fund 1 is being formed to finance
-            distributed energy assets close to productive users who already
-            bear the cost of unreliable power. The aim is straightforward.
-            Help businesses operate, help workers earn, and enable more
-            communities to participate in the economy.
-          </p>
-          <p className="text-[15px] text-muted leading-relaxed mb-6">
-            The first test begins with productive electric mobility. Deployed
-            assets are actively tracked for utilisation, repayments, battery
-            behaviour, and maintenance. That operating data is being used to
-            test whether a distributed energy station can be supported by
-            demand already in motion, lower mobility costs, and widen access to
-            income-generating assets.
-          </p>
-          <a
-            href="/thesis"
-            className="inline-flex items-center gap-2 border border-accent text-accent px-5 py-2.5 rounded-full hover:bg-accent hover:text-white transition-all font-medium text-[14px] group"
-          >
-            Read the thesis <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-          </a>
-        </div>
-      </section>
-
       {/* ── Contact ── */}
       <footer className="pt-10 border-t border-border animate-fade-up delay-700">
         {/* Headline */}
         <p className="text-[13px] uppercase tracking-[0.15em] text-accent font-medium mb-3">
-          Work with me
+          Selective advisory
         </p>
         <h2 className="text-[22px] font-medium text-foreground tracking-tight leading-snug mb-2">
-          Founders. Operators. Investors in Africa.
+          For a small number of founders, operators, and investors.
         </h2>
         <p className="text-[14px] text-muted mb-2">
-          Business model clarity, fundraising narrative, distribution strategy, or a practitioner&apos;s read before you allocate.
+          I advise selectively alongside my operating work, taking on only a limited number of engagements where my experience can materially improve an important decision.
         </p>
         <a href="/work" className="text-[13px] text-accent link-hover inline-block mb-7">
-          See if this is for you →
+          View advisory and fit →
         </a>
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 mb-10">
           <a
+            href="mailto:tolu@adetuyi.com?subject=Selective%20advisory%20enquiry"
+            className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3.5 rounded-full hover:bg-accent/90 transition-all font-medium text-[15px] group shadow-sm hover:shadow-md"
+          >
+            Send an introduction <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+          </a>
+          <a
             href="https://calendly.com/toluadetuyi/one-on-one"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3.5 rounded-full hover:bg-accent/90 transition-all font-medium text-[15px] group shadow-sm hover:shadow-md"
-          >
-            Book a session <span className="transition-transform duration-300 group-hover:translate-x-1">↗</span>
-          </a>
-          <a
-            href="mailto:tolu@adetuyi.com"
             className="inline-flex items-center gap-2 border border-foreground/20 text-foreground px-8 py-3.5 rounded-full hover:border-accent hover:text-accent transition-all font-medium text-[15px] group"
           >
-            Send a note <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+            Referred? Book directly <span className="transition-transform duration-300 group-hover:translate-x-1">↗</span>
           </a>
         </div>
 

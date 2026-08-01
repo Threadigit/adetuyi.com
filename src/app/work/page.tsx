@@ -96,6 +96,8 @@ export default function WorkPage() {
             Advisory
           </h1>
           <p className="text-[16px] leading-[1.75] text-muted">
+            I advise selectively alongside my operating work and accept only a
+            small number of engagements where I can be genuinely useful.{" "}
             Whether the room has a founder, an operator, or an investor, the work is the same.
             Most of the time, the problem someone brings me is not the actual problem.
             I walk in, map the gap between what they believe and what is true, and
