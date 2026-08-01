@@ -384,19 +384,28 @@ export default function Home() {
             Active Investment Thesis
           </h2>
           <h3 className="text-[20px] md:text-[24px] font-medium text-foreground leading-snug mb-3 tracking-tight">
-            Powering Nigeria: Infrastructure Fund 1
+            Powering Nigeria Infrastructure Fund 1
           </h3>
           <p className="text-[15px] text-muted leading-relaxed mb-4">
-            Over the past decade, I built and scaled Africa's digital trust infrastructure. Now, I am targeting the physical foundation, building this fund for those who believe that Africa's digital economy cannot outrun its physical infrastructure deficit. The energy bottleneck is a 100 billion dollar capital allocation opportunity.
+            Over the past decade, I have built digital trust and distribution
+            systems across Africa. I am now applying the same operating
+            discipline to distributed energy infrastructure, financing useful
+            assets close to businesses and productive users with measurable,
+            recurring demand.
           </p>
           <p className="text-[15px] text-muted leading-relaxed mb-6">
-            Infrastructure Fund 1 is structured to completely bypass the legacy grid. By deploying private capital into highly efficient commercial power assets with proven demand, we generate resilient, asset backed yield while solving a generational bottleneck. Our initial focus is embedded commercial and industrial energy infrastructure with predictable demand, strong cash flow characteristics, and clear expansion pathways across underserved economic clusters. For fellow founders and capital allocators ready to build, I invite you to review the core thesis.
+            I am already testing one expression of this model through productive
+            electric mobility anchored by distributed charging and battery
+            infrastructure. The test is small by design. It is generating real
+            operating evidence on energy demand, asset utilisation, maintenance,
+            and repayment behaviour before the model is considered for wider
+            infrastructure financing.
           </p>
           <a
             href="/thesis"
             className="inline-flex items-center gap-2 border border-accent text-accent px-5 py-2.5 rounded-full hover:bg-accent hover:text-white transition-all font-medium text-[14px] group"
           >
-            Read the Manifesto <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+            Read the thesis <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
           </a>
         </div>
       </section>
