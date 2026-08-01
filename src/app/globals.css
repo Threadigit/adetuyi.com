@@ -55,6 +55,22 @@ button:focus-visible {
   width: 100%;
 }
 
+/* Keep long-form thesis typography aligned with individual writing pages. */
+.thesis-body > p {
+  color: var(--color-muted);
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.thesis-body > p + p {
+  margin-top: 1rem;
+}
+
+.thesis-body > p a {
+  color: var(--color-foreground);
+  font-weight: 500;
+}
+
 /* Page load animations */
 @keyframes custom-fade-up {
   0% {

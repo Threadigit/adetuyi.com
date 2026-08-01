@@ -140,13 +140,22 @@ export default function ThesisPage() {
           </p>
         </header>
 
-        <div className="prose prose-slate prose-p:leading-[1.85] prose-p:text-[15px] prose-p:text-muted prose-strong:text-foreground prose-strong:font-medium prose-a:text-accent prose-a:no-underline hover:prose-a:underline max-w-none">
+        <div className="thesis-body max-w-none">
           <p className="first-letter:text-[48px] first-letter:font-bold first-letter:text-foreground first-letter:mr-3 first-letter:float-left first-letter:leading-[0.8]">
             Over the past decade, I have built systems that help African
             businesses move money, verify identity, prevent fraud, and reach
-            customers at scale. At Moniepoint, I helped build a distribution
-            network that carried financial services into communities the
-            traditional system did not serve well. At{" "}
+            customers at scale. At{" "}
+            <a
+              href="https://moniepoint.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground link-hover font-medium"
+            >
+              Moniepoint
+            </a>
+            , I helped build a distribution network that carried financial
+            services into communities the traditional system did not serve
+            well. At{" "}
             <a
               href="https://prembly.com/"
               target="_blank"
