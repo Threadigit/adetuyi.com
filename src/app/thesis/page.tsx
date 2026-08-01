@@ -314,10 +314,10 @@ export default function ThesisPage() {
             should not be required to make the first installation viable.
           </p>
           <p>
-            The current operating test is deliberately small. Three deployed
-            electric bikes are actively tracked for utilisation, structured
-            repayments, battery behaviour, and maintenance. There have been no
-            payment defaults to date, although this is far too early to infer
+            The current operating test is deliberately small. Deployed electric
+            bikes are actively tracked for utilisation, structured repayments,
+            battery behaviour, and maintenance. There have been no payment
+            defaults to date, although this is far too early to infer
             portfolio-level performance. The distributed station is the next
             underwriting question, not a proven result. The test is intended to
             establish its likely anchor load, collection behaviour, battery

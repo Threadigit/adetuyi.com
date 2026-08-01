@@ -377,12 +377,12 @@ export default function Home() {
             communities to participate in the economy.
           </p>
           <p className="text-[15px] text-muted leading-relaxed mb-6">
-            The first test begins with productive electric mobility. Three
-            deployed bikes are actively tracked for utilisation, repayments,
-            battery behaviour, and maintenance. That operating data is being
-            used to test whether a distributed energy station can be supported
-            by demand already in motion, lower mobility costs, and widen access
-            to income-generating assets.
+            The first test begins with productive electric mobility. Deployed
+            assets are actively tracked for utilisation, repayments, battery
+            behaviour, and maintenance. That operating data is being used to
+            test whether a distributed energy station can be supported by
+            demand already in motion, lower mobility costs, and widen access to
+            income-generating assets.
           </p>
           <a
             href="/thesis"
