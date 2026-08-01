@@ -20,6 +20,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: 'https://adetuyi.com/thesis',
       lastModified: new Date(),
       changeFrequency: 'yearly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://adetuyi.com/thesis/powering-nigeria-infrastructure-fund-1',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
       priority: 0.7,
     },
     {

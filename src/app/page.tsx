@@ -184,7 +184,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-0.5">
             <div className="flex items-center gap-2">
               <a
-                href="/thesis"
+                href="/thesis/powering-nigeria-infrastructure-fund-1"
                 className="text-[15px] font-medium link-hover"
               >
                 Powering Nigeria Infrastructure Fund 1
@@ -257,36 +257,33 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Active Investment Thesis ── */}
+      {/* ── Enduring Thesis ── */}
       <section className="mb-16 animate-fade-up delay-500">
         <div className="p-8 bg-accent/5 ring-1 ring-border rounded-xl relative overflow-hidden">
           <div className="absolute top-0 left-0 w-1 h-full bg-accent"></div>
           <h2 className="text-[13px] font-medium uppercase tracking-widest text-accent mb-3">
-            Active Investment Thesis
+            My Thesis
           </h2>
           <h3 className="text-[20px] md:text-[24px] font-medium text-foreground leading-snug mb-3 tracking-tight">
-            Powering Nigeria Infrastructure Fund 1
+            Infrastructure for economic participation
           </h3>
           <p className="text-[15px] text-muted leading-relaxed mb-4">
-            Powering Nigeria Infrastructure Fund 1 is being formed to finance
-            distributed energy assets close to productive users who already
-            bear the cost of unreliable power. The aim is straightforward.
-            Help businesses operate, help workers earn, and enable more
-            communities to participate in the economy.
+            My work is guided by a simple conviction. Economic participation
+            expands when people and businesses can access the trust, financial,
+            cross-border, distribution, technology, productive, and energy
+            infrastructure required to transact, earn, and grow.
           </p>
           <p className="text-[15px] text-muted leading-relaxed mb-6">
-            The first test begins with productive electric mobility. Deployed
-            assets are actively tracked for utilisation, repayments, battery
-            behaviour, and maintenance. That operating data is being used to
-            test whether a distributed energy station can be supported by
-            demand already in motion, lower mobility costs, and widen access to
-            income-generating assets.
+            Powering Nigeria Infrastructure Fund 1 is one active expression of
+            that thesis. It is being formed to finance distributed energy
+            assets around productive demand and test how reliable power can
+            strengthen earnings, operating capacity, and economic inclusion.
           </p>
           <Link
             href="/thesis"
             className="inline-flex items-center gap-2 border border-accent text-accent px-5 py-2.5 rounded-full hover:bg-accent hover:text-white transition-all font-medium text-[14px] group"
           >
-            Read the thesis <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+            Read my thesis <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
           </Link>
         </div>
       </section>

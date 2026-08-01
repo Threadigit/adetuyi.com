@@ -266,8 +266,8 @@ export default function StructuredData() {
       {
         "@type": "SiteNavigationElement",
         "position": 7,
-        "name": "The Infrastructure Thesis",
-        "description": "A case for private capital in Nigeria's energy infrastructure deficit.",
+        "name": "Infrastructure for Economic Participation",
+        "description": "Tolu Adetuyi's thesis on the trust, financial, distribution, productive, and energy infrastructure that expands economic participation.",
         "url": "https://adetuyi.com/thesis"
       },
       {
