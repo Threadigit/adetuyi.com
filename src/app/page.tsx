@@ -208,7 +208,7 @@ export default function Home() {
         </h2>
         <div className="flex flex-wrap gap-2.5">
           {[
-            "Trust, Payments & Cross-Border Infrastructure",
+            "Trust & Financial Infrastructure",
             "Distribution & Market Access",
             "Energy, Manufacturing & Productive Infrastructure",
             "Venture & Capital Formation"
@@ -218,6 +218,10 @@ export default function Home() {
             </span>
           ))}
         </div>
+        <p className="mt-4 text-[13px] leading-relaxed text-muted">
+          Across identity, compliance, payment rails, settlement, and
+          cross-border financial systems.
+        </p>
       </section>
 
       {/* ── Latest Writing ── */}
