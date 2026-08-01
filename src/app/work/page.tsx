@@ -59,6 +59,21 @@ const services = [
   },
 ];
 
+const engagementShapes = [
+  {
+    label: "Working session",
+    desc: "A focused 60-minute review of one decision, document, market question, or operating problem. You leave with the gaps, the decision, and the next actions.",
+  },
+  {
+    label: "Advisory sprint",
+    desc: "A defined engagement for a business model, fundraising narrative, distribution strategy, or investment question. Scope, outputs, timing, and fee are agreed before work begins.",
+  },
+  {
+    label: "Ongoing counsel",
+    desc: "Selective support for founders, operators, and investors who need a consistent practitioner in the room as decisions compound.",
+  },
+];
+
 export default function WorkPage() {
   return (
     <main className="max-w-[680px] mx-auto px-6 py-16 md:py-24">
@@ -130,6 +145,35 @@ export default function WorkPage() {
               </div>
             ))}
           </div>
+        </section>
+
+        <section className="mb-14">
+          <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
+            Ways to work together
+          </h2>
+          <div>
+            {engagementShapes.map(({ label, desc }, i) => (
+              <div key={label}>
+                <div className="py-5">
+                  <p className="text-[15px] font-medium text-foreground mb-2">{label}</p>
+                  <p className="text-[14px] leading-[1.75] text-muted">{desc}</p>
+                </div>
+                {i < engagementShapes.length - 1 && <div className="border-t border-accent/20" />}
+              </div>
+            ))}
+          </div>
+          <p className="mt-5 text-[13px] leading-relaxed text-muted">
+            Fees are quoted against the scope before you commit. No open-ended engagement begins without a written outcome, timeline, and price.
+          </p>
+        </section>
+
+        <section className="mb-14">
+          <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
+            Practitioner experience
+          </h2>
+          <p className="text-[15px] leading-[1.75] text-muted">
+            My advice comes from building, not commentary. I helped build the distribution network at Moniepoint that carries billions of dollars in transactions across Africa. At Prembly, I co-founded and continue to build trust infrastructure used by businesses to verify customers, manage compliance, and reduce fraud. The advisory work applies those operating lessons to a specific decision in your business or investment process.
+          </p>
         </section>
 
         {/* How to start */}

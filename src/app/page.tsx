@@ -40,14 +40,14 @@ export default function Home() {
           TA<span className="text-accent">.</span>
         </Link>
         <div className="flex items-center gap-4 sm:gap-6 text-[13px] text-muted">
+          <Link href="/work" className="hover:text-foreground transition-colors">
+            Advisory
+          </Link>
           <Link href="/writing" className="hover:text-foreground transition-colors">
             Writing
           </Link>
           <Link href="/thesis" className="hover:text-foreground transition-colors">
             Thesis
-          </Link>
-          <Link href="/work" className="hover:text-foreground transition-colors">
-            Advisory
           </Link>
         </div>
       </nav>
@@ -101,17 +101,17 @@ export default function Home() {
         </p>
         <div className="flex flex-wrap items-center gap-x-5 gap-y-3 mt-7">
           <Link
-            href="/writing"
+            href="/work"
             className="inline-flex items-center gap-2 bg-accent text-white px-5 py-2.5 rounded-full hover:bg-accent/90 transition-all font-medium text-[14px] group"
           >
-            Read my thinking
+            Work with me
             <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
           </Link>
           <Link
-            href="/work"
+            href="/writing"
             className="inline-flex items-center gap-2 text-[14px] font-medium text-foreground hover:text-accent transition-colors group"
           >
-            Work with me
+            Read my thinking
             <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
           </Link>
         </div>
@@ -154,6 +154,24 @@ export default function Home() {
         </p>
       </section>
 
+      {/* ── Advisory ── */}
+      <section className="mb-16 animate-fade-up delay-300">
+        <div className="flex items-center justify-between gap-6 mb-4">
+          <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3">
+            Advisory
+          </h2>
+          <Link href="/work" className="text-[13px] text-muted hover:text-accent transition-colors">
+            How I work →
+          </Link>
+        </div>
+        <p className="text-[15px] leading-[1.8] text-muted">
+          I work with founders, operators, and investors on business-model
+          clarity, fundraising narratives, distribution strategy, and African
+          market decisions. The advice comes from a decade spent building the
+          systems, companies, and distribution networks behind those decisions.
+        </p>
+      </section>
+
       {/* ── Current Work ── */}
       <section className="mb-16 animate-fade-up delay-300">
         <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
@@ -187,46 +205,18 @@ export default function Home() {
                 href="/thesis"
                 className="text-[15px] font-medium link-hover"
               >
-                Infrastructure Fund I
+                Powering Nigeria Infrastructure Fund 1
               </a>
               <span className="text-[11px] uppercase tracking-widest text-accent font-medium border border-accent/25 rounded-full px-2 py-0.5">In Formation</span>
             </div>
             <span className="text-muted text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Energy &amp; Physical Infrastructure</span>
           </div>
-          <div className="border-t border-accent/20" />
-
-          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-0.5">
-            <div className="flex flex-wrap items-baseline gap-x-3">
-              <a
-                href="https://www.chroniclesofinnovation.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[15px] font-medium link-hover"
-              >
-                Chronicles of Innovation
-              </a>
-              <span className="text-muted text-[13px]">
-                Executive Curator
-              </span>
-            </div>
-            <span className="text-muted text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Innovation Documentary Series</span>
-          </div>
-          <div className="border-t border-accent/20" />
-
-          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-0.5">
-            <div className="flex flex-wrap items-baseline gap-x-3">
-              <a
-                href="https://zerotoact.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[15px] font-medium link-hover"
-              >
-                ZeroToAct
-              </a>
-              <span className="text-muted text-[13px]">Author</span>
-            </div>
-            <span className="text-muted text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Actionable Global Intelligence Brief</span>
-          </div>
+          <p className="border-t border-accent/20 pt-4 text-[13px] leading-relaxed text-muted">
+            Also, I curate{" "}
+            <a href="https://www.chroniclesofinnovation.com" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">Chronicles of Innovation</a>
+            {" "}and write{" "}
+            <a href="https://zerotoact.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">ZeroToAct</a>.
+          </p>
         </div>
       </section>
       {/* ── Core Areas of Focus ── */}
@@ -236,17 +226,10 @@ export default function Home() {
         </h2>
         <div className="flex flex-wrap gap-2.5">
           {[
-            "Trust Infrastructure",
-            "Financial Infrastructure",
-            "Applied AI",
-            "Digital Identity & Compliance",
-            "Cross-Border Financial Systems",
-            "Capital Formation",
-            "Distribution Infrastructure",
-            "African Industrial & Energy Infrastructure",
-            "E-Mobility & Energy Transition",
-            "Human Capital Development",
-            "Emerging Market Economic Systems"
+            "Trust & Financial Infrastructure",
+            "Distribution & Market Access",
+            "Energy & Productive Infrastructure",
+            "Venture & Capital Formation"
           ].map((area) => (
             <span key={area} className="inline-flex items-center px-3 py-1.5 rounded bg-accent/5 border border-accent/10 text-muted text-[13px] leading-none">
               {area}
@@ -309,12 +292,12 @@ export default function Home() {
           <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3">
             Latest Writing
           </h2>
-          <a
+          <Link
             href="/writing"
             className="text-[13px] text-muted hover:text-accent transition-colors group flex items-center gap-1.5"
           >
             View all <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
-          </a>
+          </Link>
         </div>
         <div className="space-y-0">
           {getLatestPosts(3).map((post, index, arr) => (
@@ -394,12 +377,12 @@ export default function Home() {
             communities to participate in the economy.
           </p>
           <p className="text-[15px] text-muted leading-relaxed mb-6">
-            While the fund is in formation, I am already testing the model
-            through productive electric mobility anchored by a distributed
-            energy station. The work is producing early operating evidence and
-            has identified a wider opportunity to lower mobility costs, widen
-            access to income-generating assets, and build local energy capacity
-            around demand already in motion.
+            The first test begins with productive electric mobility. Three
+            deployed bikes are actively tracked for utilisation, repayments,
+            battery behaviour, and maintenance. That operating data is being
+            used to test whether a distributed energy station can be supported
+            by demand already in motion, lower mobility costs, and widen access
+            to income-generating assets.
           </p>
           <a
             href="/thesis"
