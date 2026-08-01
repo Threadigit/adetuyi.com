@@ -386,25 +386,21 @@ export default function Home() {
           <h3 className="text-[20px] md:text-[24px] font-medium text-foreground leading-snug mb-3 tracking-tight">
             Powering economic participation
           </h3>
-          <p className="text-[15px] text-muted leading-relaxed mb-5">
+          <p className="text-[15px] text-muted leading-relaxed mb-4">
             Powering Nigeria Infrastructure Fund 1 is my thesis for financing
             distributed energy assets close to productive users already paying
             the cost of unreliable power. More reliable energy allows
             businesses to operate, workers to earn, and communities to
             participate more fully in the economy.
           </p>
-          <div className="mb-6 pt-4 border-t border-accent/20">
-            <p className="text-[11px] font-medium uppercase tracking-[0.14em] text-accent mb-2">
-              Live test
-            </p>
-            <p className="text-[14px] text-foreground/80 leading-relaxed m-0">
-              Productive electric mobility is the first test, anchored by a
-              distributed energy station. It is generating early evidence on
-              energy demand, asset utilisation, maintenance, and repayment
-              behaviour. The aim is to reduce the cost of productive mobility
-              and widen access to income-generating assets.
-            </p>
-          </div>
+          <p className="text-[15px] text-muted leading-relaxed mb-6">
+            While the fund is in formation, I am already testing the model
+            through productive electric mobility anchored by a distributed
+            energy station. The work is producing early operating evidence and
+            has identified a wider opportunity to lower mobility costs, widen
+            access to income-generating assets, and build local energy capacity
+            around demand already in motion.
+          </p>
           <a
             href="/thesis"
             className="inline-flex items-center gap-2 border border-accent text-accent px-5 py-2.5 rounded-full hover:bg-accent hover:text-white transition-all font-medium text-[14px] group"
