@@ -384,7 +384,7 @@ export default function Home() {
             Active Investment Thesis
           </h2>
           <h3 className="text-[20px] md:text-[24px] font-medium text-foreground leading-snug mb-3 tracking-tight">
-            Powering economic participation
+            Powering Nigeria Infrastructure Fund 1
           </h3>
           <p className="text-[15px] text-muted leading-relaxed mb-4">
             Powering Nigeria Infrastructure Fund 1 is my thesis for financing
