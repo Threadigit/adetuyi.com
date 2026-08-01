@@ -194,10 +194,10 @@ export default function Home() {
             <span className="text-muted text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Energy &amp; Physical Infrastructure</span>
           </div>
           <p className="border-t border-accent/20 pt-4 text-[13px] leading-relaxed text-muted">
-            I also created{" "}
-            <a href="https://zerotoact.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">ZeroToAct</a>
-            {" "}and curate{" "}
+            I also curate{" "}
             <a href="https://www.chroniclesofinnovation.com" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">Chronicles of Innovation</a>
+            {" "}and created{" "}
+            <a href="https://zerotoact.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">ZeroToAct</a>
             {" "}to make practical knowledge easier to use.
           </p>
         </div>
