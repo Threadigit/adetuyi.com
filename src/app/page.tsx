@@ -100,7 +100,8 @@ export default function Home() {
         </p>
         <p className="text-[19px] md:text-[21px] leading-[1.55] tracking-[-0.01em] text-foreground max-w-[640px] mt-4">
           I build systems that help people and businesses in emerging markets
-          earn, grow, and take part in the global economy.
+          create value and transact, so they can earn, grow, and participate
+          productively in the global economy.
         </p>
         <div className="flex flex-wrap items-center gap-x-5 gap-y-3 mt-7">
           <Link
