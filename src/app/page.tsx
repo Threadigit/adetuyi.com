@@ -208,7 +208,7 @@ export default function Home() {
         </h2>
         <div className="flex flex-wrap gap-2.5">
           {[
-            "Trust & Financial Infrastructure, Local to Global",
+            "Trust, Financial & Cross-Border Systems",
             "Distribution & Market Access",
             "Energy, Manufacturing & Productive Infrastructure",
             "Venture & Capital Formation"
@@ -402,7 +402,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 border border-foreground/20 text-foreground px-8 py-3.5 rounded-full hover:border-accent hover:text-accent transition-all font-medium text-[15px] group"
           >
-            Referred? Book directly <span className="transition-transform duration-300 group-hover:translate-x-1">↗</span>
+            Free 15-minute call <span className="transition-transform duration-300 group-hover:translate-x-1">↗</span>
           </a>
         </div>
 

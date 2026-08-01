@@ -184,8 +184,9 @@ export default function WorkPage() {
             How to start
           </h2>
           <p className="text-[15px] leading-[1.75] text-muted mb-8">
-            Most engagements start by referral. If you have been pointed here, book directly.
-            If you are reaching out cold, send a short note first. Tell me what you are
+            The introductory call is free and lasts 15 minutes. It is a short
+            conversation to establish fit, not an advisory working session. If
+            you are reaching out cold, send a brief note first with what you are
             building, the specific problem, and who you are.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
@@ -195,7 +196,7 @@ export default function WorkPage() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-accent text-white px-8 py-3.5 rounded-full hover:bg-accent/90 transition-all font-medium text-[15px] group shadow-sm hover:shadow-md"
             >
-              Book a session{" "}
+              Book a free 15-minute call{" "}
               <span className="transition-transform duration-300 group-hover:translate-x-1">
                 ↗
               </span>
