@@ -99,9 +99,9 @@ export default function Home() {
           <span className="text-accent text-[13px] font-medium ml-1">(YC W22)</span>
         </p>
         <p className="text-[19px] md:text-[21px] leading-[1.55] tracking-[-0.01em] text-foreground max-w-[640px] mt-4">
-          I build systems and infrastructure that help people and businesses
-          create value and transact, so they can earn, grow, and participate
-          productively in the global economy.
+          I build the infrastructure people and businesses need to create value
+          and transact, so they can earn, grow, and participate productively in
+          the global economy.
         </p>
         <div className="flex flex-wrap items-center gap-x-5 gap-y-3 mt-7">
           <Link
