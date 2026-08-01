@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 const title = "Infrastructure for Economic Participation";
 const description =
-  "Tolu Adetuyi's thesis on how trust, finance, practical knowledge, distribution, technology, manufacturing, mobility, energy, and capital expand economic participation.";
+  "Tolu Adetuyi's thesis on building and supporting the systems that help more people and businesses participate productively in the economy.";
 const canonical = "https://adetuyi.com/thesis";
 
 export const metadata: Metadata = {
@@ -34,32 +34,16 @@ export const metadata: Metadata = {
 
 const infrastructureLayers = [
   {
-    title: "Trust infrastructure",
-    text: "People and businesses need a dependable way to prove who they are and transact safely. Identity, verification, compliance, and fraud prevention make that possible. This is the trust infrastructure we are building at Prembly.",
+    title: "Be recognised and informed",
+    text: "People need a dependable way to prove who they are, transact safely, understand opportunity, and make informed decisions. Trust and practical knowledge make participation possible.",
   },
   {
-    title: "Financial and cross-border infrastructure",
-    text: "Accounts, payments, credit, settlement, and cross-border systems help people and businesses move money, receive capital, trade, and take part in opportunities beyond their immediate location.",
+    title: "Transact and reach markets",
+    text: "People and businesses need to move money, receive capital, trade across borders, reach customers, and take part in opportunities beyond their immediate location.",
   },
   {
-    title: "Distribution and market access",
-    text: "A useful product changes little if it cannot reach the people who need it. Distribution turns technology into access and connects businesses to customers, capital, and opportunity.",
-  },
-  {
-    title: "Technology, manufacturing, and mobility",
-    text: "Technology should help people do useful work. Software, manufacturing capacity, mobility, and productive assets allow people to earn more, businesses to produce more, and local companies to take part in larger markets.",
-  },
-  {
-    title: "Energy infrastructure",
-    text: "Trust, finance, software, factories, and mobility all depend on reliable power. Better energy allows businesses to operate longer, workers to earn more, and communities to support more productive activity.",
-  },
-  {
-    title: "Practical knowledge",
-    text: "People also need useful knowledge to recognise opportunity and act on it. Practical education can shorten the distance between an idea and informed action. This is why I started ZeroToAct and Chronicles of Innovation.",
-  },
-  {
-    title: "Capital and company building",
-    text: "Good ideas need capital, sound businesses, and capable people to become useful at scale. Capital formation and founder support help turn opportunity into companies and systems that can serve many more people.",
+    title: "Produce, earn, and grow",
+    text: "Businesses need useful technology, capable founders, productive assets, reliable energy, and sound capital. Together, these help people earn more and companies build at a meaningful scale.",
   },
 ];
 
@@ -122,22 +106,17 @@ export default function EconomicParticipationThesisPage() {
             <span className="block">economic participation</span>
           </h1>
           <p className="text-[18px] md:text-[20px] leading-relaxed text-muted">
-            People participate more fully in an economy when they can prove who
-            they are, move money, learn what works, reach markets, build useful
-            companies, access productive assets, and rely on the systems beneath
-            their work.
+            My work has one focus: widening economic participation. I build and
+            support systems that help more people and businesses create value,
+            earn, own, and grow.
           </p>
         </header>
 
         <div className="thesis-body max-w-none">
           <p className="first-letter:text-[48px] first-letter:font-bold first-letter:text-foreground first-letter:mr-3 first-letter:float-left first-letter:leading-[0.8]">
-            Everything I am building is connected by one vision. I want more
-            people and businesses to have a fair chance to take part in the
-            economy, create value, earn, own, and grow. Trust infrastructure,
-            financial systems, cross-border transactions, distribution,
-            technology, practical education, capital formation, manufacturing,
-            mobility, and energy are different ways of moving that vision
-            forward.
+            My work begins with one conviction. More people can participate
+            productively when the systems around trust, money, knowledge,
+            markets, capital, and production work for them.
           </p>
           <p>
             Access on its own is not enough. A bank account is limited if money
@@ -147,10 +126,10 @@ export default function EconomicParticipationThesisPage() {
             these pieces work together.
           </p>
           <p>
-            This is the single idea behind my work at Prembly, my experience in
-            financial infrastructure and distribution, the founders I support,
-            the knowledge platforms I have created, and the capital I want to
-            bring together.
+            My role is consistent. I build where I have the experience and
+            conviction to operate, support founders who are solving related
+            problems, and help bring capital to opportunities that can widen
+            participation at scale.
           </p>
 
           <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
@@ -179,7 +158,7 @@ export default function EconomicParticipationThesisPage() {
           </div>
 
           <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
-            One vision expressed through different work
+            How this focus appears in my work
           </h2>
           <p>
             At{" "}
@@ -193,9 +172,9 @@ export default function EconomicParticipationThesisPage() {
             </a>
             , I co-founded and continue to build the trust infrastructure that
             helps businesses verify customers, meet compliance requirements,
-            prevent fraud, and transact with confidence. Prembly is not separate
-            from this thesis. It is one of its clearest expressions because
-            people and businesses cannot participate fully when systems cannot
+            prevent fraud, and transact with confidence. Prembly is my primary
+            operating work and one of the clearest expressions of this thesis.
+            People and businesses cannot participate fully when systems cannot
             trust them.
           </p>
           <p>
@@ -233,37 +212,35 @@ export default function EconomicParticipationThesisPage() {
             >
               Chronicles of Innovation
             </a>
-            , I make practical knowledge easier to find and use. I started them
-            because opportunity is also shaped by what people know, what they
-            can learn from others, and whether useful ideas are explained in a
-            way that leads to action.
+            , I make practical knowledge easier to find and use. They are not
+            separate operating ambitions. They are ways to share useful ideas,
+            lessons, and examples with people who are building and making
+            consequential decisions.
           </p>
           <p>
-            I have also worked with founders across cross-border finance,
-            mobility, insurance, and other sectors. Supporting founders and
-            helping capital reach sound opportunities are also part of this
-            vision. Strong companies can remove barriers at scale and give more
-            people access to useful products, work, and ownership.
+            I also support a selected number of founders whose companies can
+            remove meaningful barriers to participation. The industry may
+            differ, but the reason for engaging does not. The company must solve
+            a real problem and give more people or businesses a practical way
+            to move forward.
           </p>
 
           <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
-            From digital systems to physical infrastructure
+            The next expression
           </h2>
           <p>
-            Digital systems can make markets easier to use and connect. They
-            cannot manufacture a product, move a physical asset, or produce
-            electricity by themselves. That is why my work also extends into
-            the physical systems that people and businesses need to be
-            productive.
+            My experience began with digital and financial systems, but the
+            same conviction leads naturally to physical infrastructure. A
+            trusted business that can move money still cannot produce without
+            reliable power, productive assets, and the ability to reach its
+            market.
           </p>
           <p>
-            I am interested in infrastructure whose usefulness is visible in
-            what people and businesses can do after it exists. Can a rider own
-            a productive asset and retain more income? Can a manufacturer add a
-            shift? Can a small business serve more customers? Can a founder get
-            the knowledge and capital needed to build something useful? These
-            are not separate ambitions. They are different signs that more
-            people can participate.
+            I am interested in work whose value can be seen in what changes for
+            the user. A rider retains more income. A manufacturer adds a shift.
+            A small business serves more customers. A capable founder gets the
+            support and capital needed to build something useful. These are
+            different outcomes of the same focus.
           </p>
 
           <div className="my-12 p-8 bg-accent/5 ring-1 ring-border rounded-xl">
