@@ -5,7 +5,7 @@ const title = "Powering Nigeria Infrastructure Fund 1";
 const description =
   "Tolu Adetuyi's investment thesis for financing distributed commercial and industrial energy infrastructure in Nigeria.";
 const canonical = "https://adetuyi.com/thesis";
-const lastUpdated = "2026-07-30";
+const lastUpdated = "2026-07-31";
 
 const sources = [
   {
@@ -96,6 +96,7 @@ export default function ThesisPage() {
     about: [
       "Distributed energy infrastructure",
       "Commercial and industrial power",
+      "Productive mobility charging infrastructure",
       "Nigeria",
       "Infrastructure investment",
     ],
@@ -135,7 +136,7 @@ export default function ThesisPage() {
           </p>
           <p className="mt-5 text-[12px] uppercase tracking-widest text-muted">
             Last updated{" "}
-            <time dateTime={lastUpdated}>July 30, 2026</time>
+            <time dateTime={lastUpdated}>July 31, 2026</time>
           </p>
         </header>
 
@@ -246,6 +247,16 @@ export default function ThesisPage() {
             measured problem.
           </p>
           <p>
+            I use commercial and industrial demand as an underwriting
+            discipline, not as a narrow description of buildings. An anchor
+            load may be a factory, cold room, clinic, logistics facility, or a
+            fleet of productive electric assets whose charging requirements are
+            recurring, measurable, and concentrated enough to support local
+            energy infrastructure. The test is the same in every case. Demand
+            must be visible before capital is deployed, and the user must become
+            more productive because the asset exists.
+          </p>
+          <p>
             The commercial model is straightforward. A project company finances
             and operates the asset. The customer buys power or pays for
             availability under a contracted arrangement. The investment case
@@ -253,6 +264,39 @@ export default function ThesisPage() {
             unreliable energy and the cost of delivering a more efficient
             service. That spread must be demonstrated at each site. It should
             never be assumed from a national average.
+          </p>
+
+          <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
+            Productive mobility can become an anchor load
+          </h2>
+          <p>
+            Across African cities, mobility is both an essential service and a
+            source of income. Riders and small fleet operators already pay for
+            fuel, maintenance, downtime, and access to vehicles.
+            Electrification can improve those economics, but the vehicle alone
+            is not the infrastructure thesis. The investable system sits behind
+            it. It includes batteries, solar-enabled charging or swapping
+            stations, controls, metering, maintenance, and software that makes
+            energy use and payment performance visible.
+          </p>
+          <p>
+            A sufficiently active fleet can give a charging station the initial
+            demand density needed to justify investment. Over time, the same
+            site may support adjacent commercial or community loads where the
+            economics and regulation permit. The expansion must follow measured
+            demand. Revenue from future community use should not be required to
+            make the first installation viable.
+          </p>
+          <p>
+            We are already testing this operating logic at small scale through
+            productive electric assets, battery operations, structured
+            repayments, and software monitoring. The work is early and does not
+            yet establish portfolio-level economics. Its value today is that it
+            exposes the questions a serious investor must answer, including
+            station utilisation, battery life, maintenance cost, collection
+            behaviour, load patterns, and revenue earned for each unit of
+            installed capital. Evidence from the test will determine whether
+            the model merits infrastructure financing at scale.
           </p>
 
           <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
@@ -298,8 +342,9 @@ export default function ThesisPage() {
             clusters with steady loads, material power expenditure, and clear
             consequences when supply fails. Cold-chain facilities, light
             manufacturing, logistics, healthcare, hospitality, commercial
-            property, and digital infrastructure can fit this profile, but
-            sector labels alone do not qualify a project.
+            property, digital infrastructure, and productive mobility fleets
+            can fit this profile, but sector labels alone do not qualify a
+            project.
           </p>
 
           <div className="my-10 p-7 md:p-8 bg-accent/5 ring-1 ring-border rounded-xl">
@@ -314,6 +359,8 @@ export default function ThesisPage() {
                 "Are tariff adjustment, inflation, and currency risks allocated clearly?",
                 "Does the site have defensible rights, permits, interconnection terms, and insurance?",
                 "Can equipment be maintained locally and replaced without extended downtime?",
+                "Can the initial anchor load support the asset before any future demand is counted?",
+                "For battery-based systems, do utilisation, cycle life, replacement reserves, and maintenance support the return?",
                 "Is there a credible path to refinance, sell, or hold the asset for contracted cash yield?",
               ].map((item) => (
                 <li key={item} className="flex gap-3">
@@ -336,6 +383,15 @@ export default function ThesisPage() {
             energy cost, improve uptime, and make expenditure more predictable.
             The project captures part of that value through a power purchase,
             energy service, lease, or availability agreement.
+          </p>
+          <p>
+            Where demand originates inside a mobility or operating platform,
+            the energy assets should still be identifiable and governed by a
+            clear commercial agreement. Infrastructure capital should be repaid
+            by the use or availability of those assets, not by an assumption
+            that the operating company will achieve a higher future valuation.
+            This separation preserves the fund&apos;s discipline while allowing
+            new categories of productive demand to qualify.
           </p>
           <p>
             Portfolio value can also be created after installation. Better
