@@ -481,25 +481,44 @@ export default function ThesisPage() {
               For investors, founders, operators, and project partners
             </h2>
             <p className="text-[14px] leading-relaxed text-background/75 mb-4">
-              Powering Nigeria Infrastructure Fund 1 is in formation. I want to
-              speak with institutional investors and high-net-worth individuals
-              seeking disciplined exposure to distributed energy, as well as
-              founders, operators, and partners who can contribute demand,
-              distribution, technology, equipment, financing, or execution.
+              Powering Nigeria Infrastructure Fund 1 is in formation. You do
+              not need to run an energy company to participate. I want to hear
+              from you if you are one of the following.
             </p>
+            <ul className="m-0 mb-5 space-y-3 pl-0 list-none text-[14px] leading-relaxed text-background/75">
+              <li className="flex gap-3">
+                <span className="text-accent" aria-hidden="true">•</span>
+                <span><strong className="text-background font-medium">An investor or high-net-worth individual</strong> seeking disciplined exposure to distributed energy and productive infrastructure.</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-accent" aria-hidden="true">•</span>
+                <span><strong className="text-background font-medium">A founder or operator</strong> with a viable site, productive fleet, anchor load, or technology platform with measurable energy demand.</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-accent" aria-hidden="true">•</span>
+                <span><strong className="text-background font-medium">A project or delivery partner</strong> who can contribute distribution, technology, equipment, financing, development, or execution.</span>
+              </li>
+            </ul>
             <p className="text-[14px] leading-relaxed text-background/75 mb-6">
-              You do not need to run an energy company to participate. If you
-              operate a viable site, manage a productive mobility fleet, control
-              an anchor load, run a technology or operating platform with
-              measurable energy demand, or want to help finance the first
-              assets, I would like to hear from you.
+              If one of these describes you, let us discuss where you fit in the
+              first portfolio.
             </p>
-            <a
-              href="mailto:tolu@adetuyi.com?subject=Powering Nigeria IF1 project or investment"
-              className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 rounded-full hover:bg-accent/90 transition-colors font-medium text-[14px]"
-            >
-              Discuss a project or investment <span>↗</span>
-            </a>
+            <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+              <a
+                href="mailto:tolu@adetuyi.com?subject=Powering Nigeria IF1 project or investment"
+                className="inline-flex items-center justify-center gap-2 bg-accent text-white px-6 py-3 rounded-full hover:bg-accent/90 transition-colors font-medium text-[14px]"
+              >
+                Discuss a project or investment <span>↗</span>
+              </a>
+              <a
+                href="https://calendly.com/toluadetuyi/one-on-one"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 border border-background/25 text-background px-6 py-3 rounded-full hover:border-accent hover:text-accent transition-colors font-medium text-[14px]"
+              >
+                Book a conversation <span>↗</span>
+              </a>
+            </div>
           </div>
 
           <section className="mt-14 pt-8 border-t border-border">
