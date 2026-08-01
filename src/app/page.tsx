@@ -208,7 +208,7 @@ export default function Home() {
         </h2>
         <div className="flex flex-wrap gap-2.5">
           {[
-            "Trust, Financial & Cross-Border Systems",
+            "Trust, Financial & Cross-Border Infrastructure",
             "Distribution & Market Access",
             "Energy, Manufacturing & Productive Infrastructure",
             "Venture & Capital Formation"

@@ -3,13 +3,13 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Advisory",
-  description: "Business model clarity, fundraising narrative, and distribution strategy for founders, operators, and investors building in Africa.",
+  description: "Business model clarity, technology and product strategy, fundraising narrative, and distribution strategy for founders, operators, and investors building in Africa.",
   alternates: {
     canonical: "https://adetuyi.com/work",
   },
   openGraph: {
     title: "Advisory | Tolu Adetuyi",
-    description: "Business model clarity, fundraising narrative, and distribution strategy for founders, operators, and investors building in Africa.",
+    description: "Business model clarity, technology and product strategy, fundraising narrative, and distribution strategy for founders, operators, and investors building in Africa.",
     url: "https://adetuyi.com/work",
     type: "website",
     images: [
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Advisory | Tolu Adetuyi",
-    description: "Business model clarity, fundraising narrative, and distribution strategy for founders, operators, and investors building in Africa.",
+    description: "Business model clarity, technology and product strategy, fundraising narrative, and distribution strategy for founders, operators, and investors building in Africa.",
     images: ["/tolu-new.png"],
   },
 };
@@ -45,6 +45,10 @@ const audiences = [
 ];
 
 const services = [
+  {
+    label: "Technology and product strategy",
+    desc: "I help teams decide what technology should enable, what should be built now, and what complexity can wait. The work connects product choices to customer behaviour, operating reality, distribution, and the economics of the business.",
+  },
   {
     label: "Business model clarity",
     desc: "I catch the gaps founders cannot see from inside the business. Unit economics that hold at the aggregate and break at the segment. Revenue that looks like profit. The wrong problem being solved very well.",
