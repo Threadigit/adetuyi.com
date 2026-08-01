@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   title: "Advisory",
   description: "Selective advisory by Tolu Adetuyi for founders, operators, and investors making product, technology, distribution, fundraising, and market decisions in Africa.",
   alternates: {
-    canonical: "https://adetuyi.com/work",
+    canonical: "https://www.adetuyi.com/work",
   },
   openGraph: {
     title: "Advisory | Tolu Adetuyi",
     description: "Selective advisory by Tolu Adetuyi for founders, operators, and investors making product, technology, distribution, fundraising, and market decisions in Africa.",
-    url: "https://adetuyi.com/work",
+    url: "https://www.adetuyi.com/work",
     type: "website",
     images: [
       {
@@ -85,12 +85,12 @@ export default function WorkPage() {
     "@type": "Service",
     name: "Advisory with Tolu Adetuyi",
     description: "Selective advisory for founders, operators, and investors making consequential product, technology, distribution, fundraising, and market decisions in Africa.",
-    url: "https://adetuyi.com/work",
+    url: "https://www.adetuyi.com/work",
     provider: {
       "@type": "Person",
-      "@id": "https://adetuyi.com/#person",
+      "@id": "https://www.adetuyi.com/#person",
       name: "Tolu Adetuyi",
-      url: "https://adetuyi.com",
+      url: "https://www.adetuyi.com",
     },
     areaServed: {
       "@type": "Place",

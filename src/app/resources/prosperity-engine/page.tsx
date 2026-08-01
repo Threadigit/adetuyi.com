@@ -5,7 +5,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 const title = "The Prosperity Engine";
 const description =
   "A practical framework for understanding Nigeria's economy and evaluating government through productivity, infrastructure, capital, and household welfare.";
-const canonical = "https://adetuyi.com/resources/prosperity-engine";
+const canonical = "https://www.adetuyi.com/resources/prosperity-engine";
 
 export const metadata: Metadata = {
   title,
@@ -46,11 +46,11 @@ export default function ProsperityEnginePage() {
     author: {
       "@type": "Person",
       name: "Tolu Adetuyi",
-      url: "https://adetuyi.com",
+      url: "https://www.adetuyi.com",
     },
     associatedMedia: {
       "@type": "MediaObject",
-      contentUrl: "https://adetuyi.com/the-prosperity-engine-deck.pdf",
+      contentUrl: "https://www.adetuyi.com/the-prosperity-engine-deck.pdf",
       encodingFormat: "application/pdf",
     },
   };

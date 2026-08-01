@@ -5,7 +5,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 const title = "Closing the Compliance Gap for African Startups";
 const description =
   "A practical guide to continuous identity verification, fraud prevention, and scalable KYC for African startups.";
-const canonical = "https://adetuyi.com/resources/closing-the-compliance-gap";
+const canonical = "https://www.adetuyi.com/resources/closing-the-compliance-gap";
 const deckUrl =
   "https://docs.google.com/presentation/d/e/2PACX-1vRYTONvzPUFRxh2qtI0i9Kyp7jSzxSmRgW-fU0ABvt73cXZn5nNtv36UGavwScf6YqarMn0I4KgprJz/pub?start=true&loop=true&delayms=3000";
 
@@ -45,7 +45,7 @@ export default function ClosingTheComplianceGapPage() {
     author: {
       "@type": "Person",
       name: "Tolu Adetuyi",
-      url: "https://adetuyi.com",
+      url: "https://www.adetuyi.com",
     },
     associatedMedia: {
       "@type": "MediaObject",

@@ -6,7 +6,7 @@ import { pressEntries } from "@/lib/profile-content";
 const title = "Press & Publications";
 const description =
   "Press coverage, interviews, commentary, and research featuring Tolu Adetuyi across financial infrastructure, digital identity, compliance, and company building.";
-const canonical = "https://adetuyi.com/press";
+const canonical = "https://www.adetuyi.com/press";
 
 export const metadata: Metadata = {
   title,

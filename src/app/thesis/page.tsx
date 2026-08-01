@@ -5,7 +5,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 const title = "Infrastructure for Economic Participation";
 const description =
   "Tolu Adetuyi's thesis on building and supporting the systems that help more people and businesses participate productively in the economy.";
-const canonical = "https://adetuyi.com/thesis";
+const canonical = "https://www.adetuyi.com/thesis";
 
 export const metadata: Metadata = {
   title,
@@ -57,9 +57,9 @@ export default function EconomicParticipationThesisPage() {
     url: canonical,
     author: {
       "@type": "Person",
-      "@id": "https://adetuyi.com/#person",
+      "@id": "https://www.adetuyi.com/#person",
       name: "Tolu Adetuyi",
-      url: "https://adetuyi.com",
+      url: "https://www.adetuyi.com",
     },
     mainEntityOfPage: canonical,
     about: [

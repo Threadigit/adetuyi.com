@@ -5,7 +5,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 const title = "Powering Nigeria Infrastructure Fund 1";
 const description =
   "Tolu Adetuyi's thesis for financing distributed energy assets around commercial, industrial, and productive mobility demand in Nigeria.";
-const canonical = "https://adetuyi.com/thesis/powering-nigeria-infrastructure-fund-1";
+const canonical = "https://www.adetuyi.com/thesis/powering-nigeria-infrastructure-fund-1";
 const lastUpdated = "2026-08-01";
 
 const sources = [
@@ -83,9 +83,9 @@ export default function ThesisPage() {
     dateModified: lastUpdated,
     author: {
       "@type": "Person",
-      "@id": "https://adetuyi.com/#person",
+      "@id": "https://www.adetuyi.com/#person",
       name: "Tolu Adetuyi",
-      url: "https://adetuyi.com",
+      url: "https://www.adetuyi.com",
     },
     mainEntityOfPage: canonical,
     about: [

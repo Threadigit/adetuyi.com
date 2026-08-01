@@ -4,7 +4,7 @@ import { getAllPosts } from "@/lib/writing";
 import WritingList from "./WritingList";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
-const canonical = "https://adetuyi.com/writing";
+const canonical = "https://www.adetuyi.com/writing";
 const postCount = getAllPosts().length;
 const description = `Read ${postCount} essays by Tolu Adetuyi on trust infrastructure, venture building, distribution, capital formation, technology, and economic participation in Africa.`;
 

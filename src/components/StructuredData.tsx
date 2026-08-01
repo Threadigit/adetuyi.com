@@ -4,16 +4,16 @@ export default function StructuredData() {
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "@id": "https://adetuyi.com/#person",
+    "@id": "https://www.adetuyi.com/#person",
     "name": "Tolu Adetuyi",
     "givenName": "Tolu",
     "familyName": "Adetuyi",
     "jobTitle": "Co-Founder & Chief Innovation Officer",
     "description": "Co-Founder and Chief Innovation Officer at Prembly, a trust infrastructure company. Former growth leader at Moniepoint. Tolu builds financial, digital identity, compliance, distribution, and energy infrastructure across emerging markets.",
-    "image": "https://adetuyi.com/tolu-og.jpg",
-    "url": "https://adetuyi.com/",
+    "image": "https://www.adetuyi.com/tolu-og.jpg",
+    "url": "https://www.adetuyi.com/",
     "mainEntityOfPage": {
-      "@id": "https://adetuyi.com/#profile-page"
+      "@id": "https://www.adetuyi.com/#profile-page"
     },
     "worksFor": {
       "@type": "Organization",
@@ -101,7 +101,7 @@ export default function StructuredData() {
         "description": "A ZeroToAct video by Tolu Adetuyi on how systemic utility, financial infrastructure, and global service sustain American economic influence.",
         "url": "https://youtu.be/N4GSZjIPma4",
         "author": {
-          "@id": "https://adetuyi.com/#person"
+          "@id": "https://www.adetuyi.com/#person"
         }
       }
     ],
@@ -192,28 +192,28 @@ export default function StructuredData() {
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "@id": "https://adetuyi.com/#website",
+    "@id": "https://www.adetuyi.com/#website",
     "name": "Tolu Adetuyi",
-    "url": "https://adetuyi.com/",
+    "url": "https://www.adetuyi.com/",
     "description": "The official website of Tolu Adetuyi, Co-Founder and Chief Innovation Officer at Prembly, former growth leader at Moniepoint, and venture architect building infrastructure across emerging markets.",
     "publisher": {
-      "@id": "https://adetuyi.com/#person"
+      "@id": "https://www.adetuyi.com/#person"
     }
   };
 
   const profilePageSchema = {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
-    "@id": "https://adetuyi.com/#profile-page",
-    "url": "https://adetuyi.com/",
+    "@id": "https://www.adetuyi.com/#profile-page",
+    "url": "https://www.adetuyi.com/",
     "name": "Tolu Adetuyi | Co-Founder of Prembly and Venture Architect",
     "description": "The official profile of Tolu Adetuyi, documenting his work at Prembly and Moniepoint, infrastructure ventures, writing, speaking, education, and professional recognition.",
     "dateModified": "2026-08-01",
     "isPartOf": {
-      "@id": "https://adetuyi.com/#website"
+      "@id": "https://www.adetuyi.com/#website"
     },
     "mainEntity": {
-      "@id": "https://adetuyi.com/#person"
+      "@id": "https://www.adetuyi.com/#person"
     }
   };
 

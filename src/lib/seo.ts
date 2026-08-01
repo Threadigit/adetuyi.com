@@ -1,4 +1,4 @@
-export const siteUrl = "https://adetuyi.com";
+export const siteUrl = "https://www.adetuyi.com";
 
 export function absoluteUrl(path: string) {
   return path.startsWith("http") ? path : `${siteUrl}${path}`;

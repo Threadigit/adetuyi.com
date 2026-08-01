@@ -10,19 +10,19 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://adetuyi.com"),
+  metadataBase: new URL("https://www.adetuyi.com"),
   title: {
     default: "Tolu Adetuyi | Prembly Co-Founder & Venture Architect",
     template: "%s | Tolu Adetuyi",
   },
   description:
     "Tolu Adetuyi is Co-Founder and Chief Innovation Officer at Prembly and an infrastructure builder widening economic participation across Africa.",
-  authors: [{ name: "Tolu Adetuyi", url: "https://adetuyi.com" }],
+  authors: [{ name: "Tolu Adetuyi", url: "https://www.adetuyi.com" }],
   creator: "Tolu Adetuyi",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://adetuyi.com",
+    url: "https://www.adetuyi.com",
     siteName: "Tolu Adetuyi",
     title: "Tolu Adetuyi | Prembly Co-Founder & Venture Architect",
     description:
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://adetuyi.com",
+    canonical: "https://www.adetuyi.com",
   },
 };
 

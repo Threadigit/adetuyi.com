@@ -6,7 +6,7 @@ const title = "Bootstrapping & Making Your Idea Attractive to Investors";
 const metadataTitle = "Bootstrapping and Attracting Investors";
 const description =
   "A practical guide to startup financing, bootstrapping, investor readiness, traction, business models, and scalable growth.";
-const canonical = "https://adetuyi.com/resources/bootstrapping-for-investors";
+const canonical = "https://www.adetuyi.com/resources/bootstrapping-for-investors";
 const deckUrl =
   "https://docs.google.com/presentation/d/e/2PACX-1vRfUMs41WRijX2FtvJ59M-q-NumD5Y2oJlvGrrw_or0rqU9QAGtK6WbvvZjLKhPeBlDBaq17ZHYV5zO/pub?start=true&loop=true&delayms=3000";
 
@@ -47,7 +47,7 @@ export default function BootstrappingForInvestorsPage() {
     author: {
       "@type": "Person",
       name: "Tolu Adetuyi",
-      url: "https://adetuyi.com",
+      url: "https://www.adetuyi.com",
     },
     associatedMedia: {
       "@type": "MediaObject",

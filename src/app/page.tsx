@@ -15,7 +15,7 @@ const featuredVideoSchema = {
   ],
   "uploadDate": "2025-05-25T14:36:57-07:00",
   "embedUrl": "https://www.youtube.com/embed/7JIjYZJO5jQ",
-  "url": "https://adetuyi.com/#featured-video",
+  "url": "https://www.adetuyi.com/#featured-video",
 };
 
 export default function Home() {

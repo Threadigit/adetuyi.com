@@ -4,7 +4,7 @@ import { getAllPosts } from '@/lib/writing';
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUpdated = new Date('2026-08-01');
   const writingEntries = getAllPosts().map((post) => ({
-    url: `https://adetuyi.com/writing/${post.slug}`,
+    url: `https://www.adetuyi.com/writing/${post.slug}`,
     lastModified: new Date(post.date),
     changeFrequency: 'yearly' as const,
     priority: 0.6,
@@ -12,61 +12,61 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
-      url: 'https://adetuyi.com',
+      url: 'https://www.adetuyi.com',
       lastModified: siteUpdated,
       changeFrequency: 'monthly',
       priority: 1,
     },
     {
-      url: 'https://adetuyi.com/thesis',
+      url: 'https://www.adetuyi.com/thesis',
       lastModified: siteUpdated,
       changeFrequency: 'yearly',
       priority: 0.8,
     },
     {
-      url: 'https://adetuyi.com/thesis/powering-nigeria-infrastructure-fund-1',
+      url: 'https://www.adetuyi.com/thesis/powering-nigeria-infrastructure-fund-1',
       lastModified: siteUpdated,
       changeFrequency: 'yearly',
       priority: 0.7,
     },
     {
-      url: 'https://adetuyi.com/work',
+      url: 'https://www.adetuyi.com/work',
       lastModified: siteUpdated,
       changeFrequency: 'yearly',
       priority: 0.7,
     },
     {
-      url: 'https://adetuyi.com/writing',
+      url: 'https://www.adetuyi.com/writing',
       lastModified: siteUpdated,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
-      url: 'https://adetuyi.com/speaking',
+      url: 'https://www.adetuyi.com/speaking',
       lastModified: siteUpdated,
       changeFrequency: 'yearly',
       priority: 0.6,
     },
     {
-      url: 'https://adetuyi.com/press',
+      url: 'https://www.adetuyi.com/press',
       lastModified: siteUpdated,
       changeFrequency: 'yearly',
       priority: 0.6,
     },
     {
-      url: 'https://adetuyi.com/resources/prosperity-engine',
+      url: 'https://www.adetuyi.com/resources/prosperity-engine',
       lastModified: siteUpdated,
       changeFrequency: 'yearly',
       priority: 0.7,
     },
     {
-      url: 'https://adetuyi.com/resources/closing-the-compliance-gap',
+      url: 'https://www.adetuyi.com/resources/closing-the-compliance-gap',
       lastModified: siteUpdated,
       changeFrequency: 'yearly',
       priority: 0.7,
     },
     {
-      url: 'https://adetuyi.com/resources/bootstrapping-for-investors',
+      url: 'https://www.adetuyi.com/resources/bootstrapping-for-investors',
       lastModified: siteUpdated,
       changeFrequency: 'yearly',
       priority: 0.7,

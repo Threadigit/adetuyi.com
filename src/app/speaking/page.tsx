@@ -6,7 +6,7 @@ import { speakingEntries } from "@/lib/profile-content";
 const title = "Speaking & Panels";
 const description =
   "Talks, panels, and presentations by Tolu Adetuyi on financial infrastructure, digital identity, compliance, venture building, and African markets.";
-const canonical = "https://adetuyi.com/speaking";
+const canonical = "https://www.adetuyi.com/speaking";
 
 export const metadata: Metadata = {
   title,
@@ -48,7 +48,7 @@ export default function SpeakingPage() {
         position: index + 1,
         name: entry.title,
         url: entry.href.startsWith("/")
-          ? `https://adetuyi.com${entry.href}`
+          ? `https://www.adetuyi.com${entry.href}`
           : entry.href,
       })),
     },
