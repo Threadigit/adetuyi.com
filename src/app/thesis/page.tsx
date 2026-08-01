@@ -106,9 +106,9 @@ export default function EconomicParticipationThesisPage() {
             <span className="block">economic participation</span>
           </h1>
           <p className="text-[18px] md:text-[20px] leading-relaxed text-muted">
-            My work has one focus: widening economic participation. I build and
-            support systems that help more people and businesses create value,
-            earn, own, and grow.
+            My work is focused on widening economic participation by building
+            and supporting the systems that help more people and businesses
+            create value, earn, own, and grow.
           </p>
         </header>
 
