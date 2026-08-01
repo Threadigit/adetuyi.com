@@ -245,7 +245,7 @@ export default function EconomicParticipationThesisPage() {
 
           <div className="my-12 p-8 bg-accent/5 ring-1 ring-border rounded-xl">
             <p className="m-0 text-[12px] font-medium uppercase tracking-widest text-accent">
-              An active expression
+              An active expression in formation.
             </p>
             <h2 className="text-[20px] md:text-[24px] font-medium text-foreground tracking-tight mt-3 mb-4">
               Powering Nigeria Infrastructure Fund 1
@@ -257,6 +257,13 @@ export default function EconomicParticipationThesisPage() {
               begins with proven demand and asks whether better infrastructure
               can lower operating costs, strengthen earnings, and widen
               economic participation while producing disciplined returns.
+            </p>
+            <p className="m-0 mt-4 text-[14px] leading-[1.8] text-muted">
+              The first test begins with productive electric mobility. Deployed
+              assets are being tracked for utilisation, repayments, battery
+              behaviour, and maintenance as we test whether mobility can provide
+              the starting demand for distributed energy stations and widen
+              access to income-generating assets.
             </p>
             <Link
               href="/thesis/powering-nigeria-infrastructure-fund-1"
