@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | Tolu Adetuyi",
   },
   description:
-    "Tolu Adetuyi is Co-Founder and Chief Innovation Officer at Prembly, a trust infrastructure company. He previously led growth at Moniepoint and builds financial, identity, compliance, distribution, and energy infrastructure across emerging markets.",
+    "Tolu Adetuyi is Co-Founder and Chief Innovation Officer at Prembly. His work connects trust, financial systems, distribution, practical education, capital formation, and physical infrastructure to expand economic participation across emerging markets.",
   authors: [{ name: "Tolu Adetuyi", url: "https://adetuyi.com" }],
   creator: "Tolu Adetuyi",
   openGraph: {

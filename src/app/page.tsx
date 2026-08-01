@@ -194,10 +194,11 @@ export default function Home() {
             <span className="text-muted text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Energy &amp; Physical Infrastructure</span>
           </div>
           <p className="border-t border-accent/20 pt-4 text-[13px] leading-relaxed text-muted">
-            Also, I curate{" "}
+            I also created{" "}
+            <a href="https://zerotoact.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">ZeroToAct</a>
+            {" "}and curate{" "}
             <a href="https://www.chroniclesofinnovation.com" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">Chronicles of Innovation</a>
-            {" "}and write{" "}
-            <a href="https://zerotoact.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">ZeroToAct</a>.
+            {" "}to make practical knowledge easier to use.
           </p>
         </div>
       </section>
@@ -211,7 +212,7 @@ export default function Home() {
             "Trust, Financial & Cross-Border Infrastructure",
             "Distribution & Market Access",
             "Energy, Manufacturing & Productive Infrastructure",
-            "Venture & Capital Formation"
+            "Knowledge, Venture & Capital Formation"
           ].map((area) => (
             <span key={area} className="inline-flex items-center px-3 py-1.5 rounded bg-accent/5 border border-accent/10 text-muted text-[13px] leading-none">
               {area}
@@ -269,9 +270,9 @@ export default function Home() {
           </h3>
           <p className="text-[15px] text-muted leading-relaxed mb-4">
             My work is guided by a simple conviction. Economic participation
-            expands when people and businesses can access the trust, financial,
-            cross-border, distribution, technology, productive, and energy
-            infrastructure required to transact, earn, and grow.
+            expands when people and businesses can prove who they are, move
+            money, reach markets, learn what works, access capital and
+            productive assets, and rely on dependable energy.
           </p>
           <p className="text-[15px] text-muted leading-relaxed mb-6">
             Powering Nigeria Infrastructure Fund 1 is one active expression of
