@@ -195,15 +195,15 @@ export default function WorkPage() {
             Practitioner experience
           </h2>
           <p className="text-[15px] leading-[1.75] text-muted">
-            My advice comes from building, not commentary. At Moniepoint, I
-            helped build the distribution network behind billions of dollars in
-            transactions across Africa. At Prembly, I co-founded and continue
-            to build trust infrastructure used by businesses to verify
-            customers, manage compliance, and reduce fraud.
+            My advice comes from building, not commentary. At Prembly, I
+            co-founded and continue to build trust infrastructure used by
+            businesses to verify customers, manage compliance, and reduce fraud.
+            Before Prembly, I helped build the distribution network at Moniepoint
+            behind billions of dollars in transactions across Africa.
           </p>
           <p className="text-[15px] leading-[1.75] text-muted mt-4">
             I have also worked with founders across sectors including
-            cross-border payments, mobility, and insurance, helping them sharpen
+            cross-border finance, mobility, and insurance, helping them sharpen
             technology and product choices, distribution, positioning, and
             capital decisions. The advisory work applies that operating range
             to a specific decision in your business or investment process.

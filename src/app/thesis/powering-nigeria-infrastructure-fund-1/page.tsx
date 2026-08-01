@@ -5,7 +5,7 @@ const title = "Powering Nigeria Infrastructure Fund 1";
 const description =
   "Tolu Adetuyi's thesis for financing distributed energy assets around commercial, industrial, and productive mobility demand in Nigeria.";
 const canonical = "https://adetuyi.com/thesis/powering-nigeria-infrastructure-fund-1";
-const lastUpdated = "2026-07-31";
+const lastUpdated = "2026-08-01";
 
 const sources = [
   {
@@ -117,20 +117,21 @@ export default function ThesisPage() {
           <div className="flex items-center gap-3 mb-6">
             <div className="h-px w-8 bg-accent" />
             <span className="text-[13px] font-medium uppercase tracking-widest text-accent">
-              Active investment thesis
+              An active expression in formation.
             </span>
           </div>
           <h1 className="text-[36px] md:text-[44px] font-medium tracking-tight leading-tight mb-6 text-foreground">
-            Powering Nigeria
+            Powering Nigeria{" "}
             <span className="block">Infrastructure Fund 1</span>
           </h1>
           <p className="text-[18px] md:text-[20px] leading-relaxed text-muted">
-            A case for private capital in Nigeria&apos;s distributed commercial
+            One investment expression of my economic participation thesis,
+            focused on private capital for Nigeria&apos;s distributed commercial
             and industrial energy infrastructure.
           </p>
           <p className="mt-5 text-[12px] uppercase tracking-widest text-muted">
             Last updated{" "}
-            <time dateTime={lastUpdated}>July 31, 2026</time>
+            <time dateTime={lastUpdated}>August 1, 2026</time>
           </p>
         </header>
 

@@ -102,7 +102,7 @@ export default function EconomicParticipationThesisPage() {
             </span>
           </div>
           <h1 className="text-[36px] md:text-[44px] font-medium tracking-tight leading-tight mb-6 text-foreground">
-            Infrastructure for
+            Infrastructure for{" "}
             <span className="block">economic participation</span>
           </h1>
           <p className="text-[18px] md:text-[20px] leading-relaxed text-muted">
