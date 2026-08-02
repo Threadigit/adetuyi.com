@@ -93,7 +93,6 @@ const posts: Post[] = [
       { type: "paragraph", text: "I still open an editor and use AI agents to prototype and prove ideas before delegating them. I also handle the smallest task when it needs doing instead of searching for someone else to take it." },
       { type: "paragraph", text: "But I no longer measure my contribution by what I personally shipped. I measure it by how many people can make a decision I would have made, and by what would still stand if I walked away tomorrow." },
       { type: "quote", text: "Products start companies. People sustain them. Institutions are what outlive us, and nobody has ever built one alone." },
-      { type: "callout", text: "Sources and further reading include Exodus 18, Acts 6, Bloom, Eifert, Mahajan, McKenzie, and Roberts in <em>Does Management Matter? Evidence from India</em>, published in the Quarterly Journal of Economics in 2013, and Google's Project Oxygen as documented by Harvard Business Review in 2013." },
     ],
   },
   {
