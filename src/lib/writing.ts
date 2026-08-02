@@ -35,6 +35,7 @@ const posts: Post[] = [
     excerpt: "The habits that make you exceptional as an individual contributor can become the ceiling on a growing company. Leadership begins when your output becomes what other people can do without you.",
     date: "2026-08-02",
     category: "Leadership",
+    ogImage: "/building-teams.jpg",
     readingTime: "8 min read",
     content: [
       { type: "paragraph", text: "For most of my early career, work paid me back in a straight line." },
@@ -72,6 +73,7 @@ const posts: Post[] = [
       { type: "paragraph", text: "Hiring someone does not remove the work. It converts it. You stop producing the output yourself and become responsible for the person and system that produce it. You have not dropped your first job. You have picked up a second one." },
       { type: "paragraph", text: "That second job has real deliverables. <strong>Define what good looks like and write it down. Hire against that standard instead of instinct and referrals. Give feedback specific enough to act on within a week. Hold the performance conversations you would rather avoid. Clarify who decides what without asking you. Build a path from junior to lead. Know who takes over if someone leaves in ninety days.</strong>" },
       { type: "paragraph", text: "Your product is no longer only the thing customers pay for. Your second product is the organisation's ability to make good decisions without you in the room. Nobody buys that product directly, but it determines whether the first one survives." },
+      { type: "image", url: "/building-teams.jpg", alt: "Tolu Adetuyi beside a progression from building products to building teams and building legacy", caption: "Products create momentum. Teams turn that momentum into an institution." },
 
       { type: "heading", text: "The evidence is not soft" },
       { type: "paragraph", text: "This is where people assume we have left engineering behind for feelings. We have not." },
