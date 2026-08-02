@@ -80,7 +80,7 @@ export default function ThesisPage() {
     headline: title,
     description,
     url: canonical,
-    dateModified: lastUpdated,
+    dateModified: `${lastUpdated}T12:00:00+00:00`,
     author: {
       "@type": "Person",
       "@id": "https://www.adetuyi.com/#person",

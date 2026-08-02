@@ -208,7 +208,7 @@ export default function StructuredData() {
     "url": "https://www.adetuyi.com/",
     "name": "Tolu Adetuyi | Co-Founder of Prembly and Venture Architect",
     "description": "The official profile of Tolu Adetuyi, documenting his work at Prembly and Moniepoint, infrastructure ventures, writing, speaking, education, and professional recognition.",
-    "dateModified": "2026-08-01",
+    "dateModified": "2026-08-01T12:00:00+00:00",
     "isPartOf": {
       "@id": "https://www.adetuyi.com/#website"
     },

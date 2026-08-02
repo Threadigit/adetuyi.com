@@ -43,7 +43,6 @@ export default function BootstrappingForInvestorsPage() {
     name: title,
     description,
     url: canonical,
-    datePublished: "2023",
     author: {
       "@type": "Person",
       name: "Tolu Adetuyi",

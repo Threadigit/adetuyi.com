@@ -42,7 +42,6 @@ export default function ProsperityEnginePage() {
     name: title,
     description,
     url: canonical,
-    datePublished: "2026",
     author: {
       "@type": "Person",
       name: "Tolu Adetuyi",

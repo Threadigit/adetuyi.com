@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getPostBySlug, getAllSlugs, type ContentBlock } from "@/lib/writing";
-import { absoluteUrl, siteUrl, toSeoDescription } from "@/lib/seo";
+import { absoluteUrl, siteUrl, toIsoDateTime, toSeoDescription } from "@/lib/seo";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const description = toSeoDescription(post.excerpt);
   const image = absoluteUrl(post.ogImage ?? "/tolu-og.jpg");
   const canonical = `${siteUrl}/writing/${post.slug}`;
+  const publishedTime = toIsoDateTime(post.date);
 
   return {
     title,
@@ -33,7 +34,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description,
       url: canonical,
       type: "article",
-      publishedTime: post.date,
+      publishedTime,
       authors: ["Tolu Adetuyi"],
       images: [
         {
@@ -135,6 +136,7 @@ export default async function WritingPost({ params }: PageProps) {
 
   const baseUrl = siteUrl;
   const image = absoluteUrl(post.ogImage ?? "/tolu-og.jpg");
+  const publishedTime = toIsoDateTime(post.date);
 
   const blogPostingSchema = {
     "@context": "https://schema.org",
@@ -152,8 +154,8 @@ export default async function WritingPost({ params }: PageProps) {
       "name": "Tolu Adetuyi",
       "url": baseUrl,
     },
-    "datePublished": post.date,
-    "dateModified": post.date,
+    "datePublished": publishedTime,
+    "dateModified": publishedTime,
     "url": `${baseUrl}/writing/${post.slug}`,
     "mainEntityOfPage": {
       "@type": "WebPage",

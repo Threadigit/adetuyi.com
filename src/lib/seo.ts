@@ -4,6 +4,10 @@ export function absoluteUrl(path: string) {
   return path.startsWith("http") ? path : `${siteUrl}${path}`;
 }
 
+export function toIsoDateTime(date: string) {
+  return `${date}T12:00:00+00:00`;
+}
+
 export function toSeoDescription(text: string, maxLength = 160) {
   const normalized = text.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
 
