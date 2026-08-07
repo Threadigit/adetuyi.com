@@ -38,6 +38,7 @@ export default function StructuredData() {
       "https://www.linkedin.com/in/adetuyitolu/",
       "https://twitter.com/adetuyitolu",
       "https://instagram.com/adetuyitolu",
+      "https://www.youtube.com/channel/UClEyfBprR1O1VANeLf6SnyA",
       "https://www.researchgate.net/profile/Tolu-Adetuyi",
       "https://zerotoact.com",
       "https://www.crunchbase.com/person/tolulope-adetuyi",

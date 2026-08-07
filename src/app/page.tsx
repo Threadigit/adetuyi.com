@@ -417,9 +417,10 @@ export default function Home() {
             Building interconnected systems that expand economic participation and infrastructure across emerging markets.
           </p>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-3 text-muted">
-            <a href="https://www.linkedin.com/in/adetuyitolu/" target="_blank" rel="noopener noreferrer" className="link-hover hover:text-foreground transition-colors">LinkedIn</a>
-            <a href="https://twitter.com/adetuyitolu" target="_blank" rel="noopener noreferrer" className="link-hover hover:text-foreground transition-colors">Twitter</a>
-            <a href="https://instagram.com/adetuyitolu" target="_blank" rel="noopener noreferrer" className="link-hover hover:text-foreground transition-colors">Instagram</a>
+            <a href="https://www.linkedin.com/in/adetuyitolu/" target="_blank" rel="me noopener noreferrer" className="link-hover hover:text-foreground transition-colors">LinkedIn</a>
+            <a href="https://twitter.com/adetuyitolu" target="_blank" rel="me noopener noreferrer" className="link-hover hover:text-foreground transition-colors">Twitter</a>
+            <a href="https://instagram.com/adetuyitolu" target="_blank" rel="me noopener noreferrer" className="link-hover hover:text-foreground transition-colors">Instagram</a>
+            <a href="https://www.youtube.com/channel/UClEyfBprR1O1VANeLf6SnyA" target="_blank" rel="me noopener noreferrer" className="link-hover hover:text-foreground transition-colors">YouTube</a>
             <a href="https://scholar.google.com/citations?hl=en&user=IjIW4v0AAAAJ" rel="me" className="sr-only">Google Scholar</a>
             <a href="https://www.wikidata.org/wiki/Q140088103" rel="me" className="sr-only">Wikidata</a>
           </div>
