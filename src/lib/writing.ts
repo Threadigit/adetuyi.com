@@ -35,6 +35,7 @@ const posts: Post[] = [
     excerpt: "The startup formula says master computer science, sharpen your business acumen, build operational excellence. I am grateful for all of it. But those are engine parts. They are not what keeps the machine moving when the road disappears.",
     date: "2026-08-12",
     category: "Leadership",
+    ogImage: "/curiosity-and-resilience.png",
     readingTime: "8 min read",
     content: [
       { type: "paragraph", text: "Spend enough time around the startup ecosystem and you will hear a fairly consistent formula for success. Master computer science. Sharpen your business acumen. Build operational excellence. Accumulate enough market wisdom to stay a few steps ahead of everyone else." },
@@ -44,6 +45,7 @@ const posts: Post[] = [
       { type: "paragraph", text: "Curiosity and resilience." },
       { type: "paragraph", text: "I consider both of them gifts from God, in the plain sense that I did not manufacture either one. I can sharpen a skill or study a market on purpose. I cannot decide to become curious, and I cannot summon the will to keep going after the fifth failure by an act of scheduling. Those two showed up before I asked for them. They are not the only ingredients required for success, but they are the ones I keep returning to when the path is unclear." },
       { type: "quote", text: "Curiosity asks what else this could become. Resilience says we keep going until we find out." },
+      { type: "image", url: "/curiosity-and-resilience.png", alt: "Two gifts, infinite impact. Curiosity asks better questions and sees what others miss. Resilience keeps going through the hard moments until breakthrough comes. God gives innovators curiosity and resilience to solve meaningful problems despite every hurdle. Two traits, one purpose, meaningful impact.", caption: "Two traits. One purpose. Meaningful impact." },
       { type: "heading", text: "Curiosity came before competence" },
       { type: "paragraph", text: "Long before I had a title, a track record, or access to anything resembling resources, I was curious." },
       { type: "paragraph", text: "As a student, I was not satisfied with learning computer science in a classroom. I wanted to know what technology could actually do out there, in the ordinary friction of daily life. So I kept noticing problems and wondering whether software could remove them." },
