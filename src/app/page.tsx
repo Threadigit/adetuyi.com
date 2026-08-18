@@ -279,8 +279,10 @@ export default function Home() {
             productive assets, and rely on dependable infrastructure.
           </p>
           <p className="text-[15px] text-muted leading-relaxed mb-6">
-            Powering Nigeria Infrastructure Fund 1 is one active expression of
-            that thesis. It is being formed to finance distributed energy
+            Most of the work I have done and continue to do is an active
+            expression of that thesis, from trust infrastructure to
+            distribution to capital. The newest is Powering Nigeria
+            Infrastructure Fund 1, being formed to finance distributed energy
             assets around productive demand and test how reliable power can
             strengthen earnings, operating capacity, and economic inclusion.
           </p>
