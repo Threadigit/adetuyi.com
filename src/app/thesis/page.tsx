@@ -39,12 +39,12 @@ const infrastructureLayers = [
     text: "People need a dependable way to prove who they are, transact safely, understand opportunity, and make informed decisions. Trust and practical knowledge make participation possible.",
   },
   {
-    title: "Transact and reach markets",
-    text: "People and businesses need to move money, receive capital, trade across borders, reach customers, and take part in opportunities beyond their immediate location.",
-  },
-  {
     title: "Produce, earn, and grow",
     text: "Businesses need useful technology, capable founders, productive assets, reliable energy, and sound capital. Together, these help people earn more and companies build at a meaningful scale.",
+  },
+  {
+    title: "Transact and reach markets",
+    text: "People and businesses need to move money, receive capital, trade across borders, reach customers, and take part in opportunities beyond their immediate location.",
   },
 ];
 
@@ -126,7 +126,7 @@ export default function EconomicParticipationThesisPage() {
             for more people and businesses to contribute meaningfully to the
             economy and benefit from its growth? The answer is not simply
             access to one product. It is a dependable path from identity and
-            trust to knowledge, money, markets, capital, production, and the
+            trust to knowledge, money, capital, production, markets, and the
             global economy.
           </p>
           <p>
