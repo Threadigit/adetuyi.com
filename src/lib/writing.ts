@@ -37,7 +37,7 @@ const posts: Post[] = [
     category: "Capital Formation",
     readingTime: "6 min read",
     content: [
-      { type: "paragraph", text: "I rarely write about personal finance. But I keep getting asked to explain, in plain language, why life has become so expensive in Nigeria, and what an ordinary person can do about it. This is not blame, and it is not financial advice. It is how I understand it, and what I would tell a friend." },
+      { type: "paragraph", text: "I rarely write about personal finance. But I keep getting asked to explain, in plain language, why life has become so expensive in Nigeria, and what an ordinary person can do about it. This is not to blame anyone, and it is not financial advice. It is how I understand it, and what I would tell a friend." },
       { type: "heading", text: "Why almost everything costs more" },
       { type: "paragraph", text: "The usual reasons are real. Inflation, the exchange rate, insecurity, fuel, taxes, how much we import. But underneath them sit two things we rarely name. Money is expensive here, and running a business is expensive here." },
       { type: "paragraph", text: "A small business that manages to borrow from a bank pays between 20 and 46 per cent a year, while prices rise about 15 per cent. It pays far more for money than prices are rising. And that is the lucky business. Only about 4 in every 100 small businesses can get a bank loan at all. The rest borrow from family, cooperatives or informal lenders, usually for even more." },
