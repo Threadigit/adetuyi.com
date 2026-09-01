@@ -200,8 +200,8 @@ export default function EconomicParticipationThesisPage() {
             </a>
             , I helped build the distribution network behind billions of
             dollars in transactions across Africa. That work showed me where
-            participation actually begins. Financial technology becomes useful
-            only when someone carries it the last mile, into the markets and
+            participation actually begins. Financial technology only becomes
+            useful when someone takes it the last mile, into the markets and
             neighbourhoods where people already earn and trade, in a form that
             fits how they work. The product did not widen access on its own.
             The network did.
