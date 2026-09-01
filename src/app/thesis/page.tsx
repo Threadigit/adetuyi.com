@@ -199,10 +199,12 @@ export default function EconomicParticipationThesisPage() {
               Moniepoint
             </a>
             , I helped build the distribution network behind billions of
-            dollars in transactions across Africa. That experience showed me
-            that financial technology becomes useful when it reaches real
-            people, reflects how they work, and gives them a practical way to
-            take part in the formal economy.
+            dollars in transactions across Africa. That work showed me where
+            participation actually begins. Financial technology becomes useful
+            only when someone carries it the last mile, into the markets and
+            neighbourhoods where people already earn and trade, in a form that
+            fits how they work. The product did not widen access on its own.
+            The network did.
           </p>
           <p>
             Through{" "}
