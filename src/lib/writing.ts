@@ -21,6 +21,8 @@ export interface Post {
   category: string;
   ogImage?: string;
   readingTime: string;
+  /** Slugs to surface first under "Read next". Same-category posts fill any remaining slots. */
+  related?: string[];
   content: ContentBlock[];
 }
 
@@ -29,6 +31,75 @@ export interface Post {
 // They'll appear in reverse-chronological order automatically
 
 const posts: Post[] = [
+  {
+    slug: "three-ingredients-for-sound-judgement",
+    title: "Three Ingredients for Sound Judgement",
+    excerpt: "You have learnt the rules and applied the method, and the results are still not coming. That is usually not a method problem. Three things carry judgement when the reading is not enough.",
+    date: "2026-09-06",
+    category: "Leadership",
+    readingTime: "2 min read",
+    related: ["sound-judgement-when-the-rules-keep-changing"],
+    content: [
+      { type: "paragraph", text: "You have learnt the rules. You keep your numbers honestly, you have studied how the last cycle ended, and you follow what moves each week. You have done the work I set out in <a href=\"/writing/sound-judgement-when-the-rules-keep-changing\" class=\"link-hover text-accent\">Making Sound Judgement When the Rules Keep Changing</a>. And the results are still not coming." },
+      { type: "paragraph", text: "That is not always a sign that you executed badly. Method sharpens how you read a situation. It cannot tell you what to stand on when the reading is not enough. Here is what to do." },
+      { type: "heading", text: "One. Go back to your principles" },
+      { type: "paragraph", text: "<strong>A steady foundation.</strong> Principles give you a stable reference point when the details change. They keep you anchored while the environment is uncertain. Write down the three or four you will not trade, and hold the decision in front of you against them. A lot of stalled situations are not a strategy problem. They are a place where you quietly moved off something you said you believed." },
+      { type: "quote", text: "The fear of the Lord is the beginning of wisdom.\nProverbs 9:10" },
+      { type: "heading", text: "Two. Ask what the moment is actually asking for" },
+      { type: "paragraph", text: "<strong>Sensitivity to context.</strong> Discernment helps you understand what the moment actually requires. It is the ability to read people, patterns and timing beyond surface information. The same move can be right this year and wrong the next. Before you push harder, ask whether this is a season to push, to wait, or to leave. Discernment is trained by practice, so the more decisions you make deliberately, the sharper it gets." },
+      { type: "quote", text: "But solid food is for the mature, for those who have their powers of discernment trained by constant practice to distinguish good from evil.\nHebrews 5:14" },
+      { type: "heading", text: "Three. Ask the Holy Spirit" },
+      { type: "paragraph", text: "<strong>Divine guidance.</strong> The Holy Spirit gives clarity, wisdom and direction that goes beyond human logic. He helps you see what others miss and confirms what to do next. Bring the decision to Him plainly, before the meeting rather than after the loss, and wait for the settled answer instead of the anxious one. This is the one input no amount of analysis will produce for you." },
+      { type: "quote", text: "But when He, the Spirit of truth, comes, He will guide you into all the truth.\nJohn 16:13" },
+      { type: "paragraph", text: "Method still matters. The three inputs in <a href=\"/writing/sound-judgement-when-the-rules-keep-changing\" class=\"link-hover text-accent\">Making Sound Judgement When the Rules Keep Changing</a> are how you read a situation well. These three are what hold you when the reading is not enough, and they are usually what is missing when everything looks right on paper and nothing is moving." },
+    ]
+  },
+  {
+    slug: "sound-judgement-when-the-rules-keep-changing",
+    title: "Making Sound Judgement When the Rules Keep Changing",
+    excerpt: "A circular drops on a Friday evening and the rule your whole plan was sitting on stops applying. One leader is already moving. Another panics and does something expensive. We call that gap instinct. It is not instinct, and there are three inputs that build it.",
+    date: "2026-09-06",
+    category: "Leadership",
+    readingTime: "6 min read",
+    related: ["three-ingredients-for-sound-judgement", "effort-at-the-wrong-level"],
+    content: [
+      { type: "paragraph", text: "A circular drops on a Friday evening. A rule your whole plan was sitting on stops applying." },
+      { type: "paragraph", text: "Watch the room. One leader is moving before anyone has finished page two. Another goes quiet, then panics, then does something expensive that cannot be undone. Same information, same intelligence." },
+      { type: "paragraph", text: "We call that gap instinct. It is not instinct." },
+      { type: "paragraph", text: "Gut feel is real and it can be trained, but it trains under one condition. You have to find out quickly whether you were right. A trader knows by the close. A fire commander knows in four minutes. A surgeon knows by morning. Fast, honest scoring is what turns experience into instinct. Without it, experience is just time served." },
+      { type: "paragraph", text: "Now hold your own work against that. Your market changes its rules mid game, and your biggest calls get judged two or three years later, if ever, by which time you have changed nine other things and can credit whichever one flatters you. Nobody tells you what the other road paid." },
+      { type: "quote", text: "Your judgement has never been graded. You have twenty years of decisions and no report card, and you have been calling that confidence." },
+      { type: "paragraph", text: "Judgement is an input problem. There are three inputs." },
+      { type: "heading", text: "Your metrics, kept honestly" },
+      { type: "paragraph", text: "The one place you can manufacture fast, honest scoring is inside your own house, and most of us waste it. Fraud gets reviewed as isolated incidents. Churn gets explained after the fact. A failed launch gets a story. Nothing said in those meetings changes what anybody believes on Monday morning." },
+      { type: "paragraph", text: "Pick the three numbers that would tell you that you are wrong. Put them in front of the same few people every week. Before the quarter starts, write down what you expect to happen and put a date on it, then read it out loud in the room at the end and name the one thing you will do differently before anybody leaves. Keep the number that embarrasses you beside the number you show the board." },
+      { type: "paragraph", text: "You will hate the first two rounds. After a year you will know something almost nobody around you knows, which is how often you are right, and about what." },
+      { type: "heading", text: "The historical blueprint" },
+      { type: "paragraph", text: "Show a grandmaster a real board for five seconds and he can rebuild it from memory. Scramble the same pieces at random and he is barely better than you. He was never seeing pieces. He was seeing positions he had already lived through. You cannot live through fifty thousand market cycles. You can read them." },
+      { type: "paragraph", text: "In October 2022 the Central Bank announced a naira redesign with a hard deadline to hand in old notes, and what followed was a cash famine, a fight over extensions and a Supreme Court order. Nigeria shot the same film in April 1984, under the same head of state in his first life, notes reissued with the colours swapped, a punishing window, borders shut. The old episode told you what the new one would do before it finished happening, that the deadline would move once the pain got loud, and that three months without cash changes how a country pays for the rest of its life." },
+      { type: "paragraph", text: "Then the discipline that keeps this from turning into superstition. In March 2024 the Central Bank told banks to recapitalise, five hundred billion naira for an international licence, two years, no extension. Everybody reached for 2004, when eighty nine banks became twenty five. By the deadline this March most licensed banks had cleared the bar, about four point six trillion raised between them, while a handful fell short and went into special supervision or a merger rather than closure. The deadline held on paper. In practice the regulator built a side door, the way regulators here always do." },
+      { type: "paragraph", text: "The market broke from the script. The regulator did not. History tells you what kind of situation you are in. It does not tell you which half of it will repeat. The leader who reads the pattern as prophecy gets hurt as badly as the one who never opened the book." },
+      { type: "heading", text: "What is moving right now" },
+      { type: "paragraph", text: "When American intelligence ran a tournament to find out who forecasts best, civilians working from public news beat analysts holding classified files by about thirty percent. The winners were not the ones with the strongest theory. They were scored every week and they changed their minds in small steps as things moved. The more the ground shifts, the less your strong opinions are worth and the more your corrections are." },
+      { type: "paragraph", text: "Give it an hour a week. Take one thing that moved above your head, a policy, a rate, a licence, a funding window, and follow it down until it lands on somebody's job or somebody's money. During the cash squeeze the useful question was never what the circular said. It was what a trader in Onitsha does on day forty when he still cannot get notes. The answer, that he finally accepts a transfer he had refused for years, was worth more than any forecast of the policy itself." },
+      { type: "heading", text: "What it buys you" },
+      { type: "paragraph", text: "Something quieter than better decisions. You stop being jumpy. Without this the loudest thing in the room wins every week and the work that compounds never gets built. Once you can tell which clock is running on what, long initiatives stop looking like distractions, and you can hold a five year build and a Tuesday emergency in the same head without one eating the other." },
+      { type: "paragraph", text: "It also settles what a plan is for. A three year roadmap defended as a commitment is a bet that the rules will hold for three years. In this market that is not conviction. It is inattention. Your roadmap is a position, and positions get repriced." },
+      { type: "paragraph", text: "Edison won the invention and lost the company. He backed the wrong current, and the financiers who had funded him sided against him in the merger and took his name off the door. His position was repriced by people who understood the board better than he did, and there are people building across this continent standing exactly there today." },
+      { type: "paragraph", text: "I worked this way for years before I built a structure around it, and that structure is now <a href=\"https://www.chroniclesofinnovation.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link-hover text-accent\">Chronicles of Innovation</a>, where we go and get the historical blueprints, and the <a href=\"https://zerotoact.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link-hover text-accent\">ZeroToAct</a> Weekly Intelligence Brief, the read on what moved and where it landed, with small peer groups marking each other’s thinking every two weeks. I apply it daily. It decides what we build next, what I put money behind, and what I let wait. Judgement that is never priced stays an opinion." },
+      { type: "heading", text: "What to keep" },
+      { type: "paragraph", text: "<strong>Your metrics.</strong> Pick the numbers that can prove you wrong and look at them often enough to be corrected while it is still cheap." },
+      { type: "paragraph", text: "<strong>The historical blueprint.</strong> Whatever is happening to you has happened to somebody before, and one afternoon spent finding out how it ended for them costs less than the lesson does." },
+      { type: "paragraph", text: "<strong>What is moving right now.</strong> Follow one thing that moved above your head each week all the way down, until it reaches you, your work, your company or the money you have put to work." },
+      { type: "paragraph", text: "None of this depends on how long you have been leading. It works the same at twenty years and at three weeks. It is about whether anybody is keeping score." },
+      { type: "paragraph", text: "Sound judgement is the one thing a leader cannot delegate, cannot buy and cannot fake for long. When the ground shakes you will not be guessing where things land." },
+      { type: "paragraph", text: "You will have seen the position before." },
+      { type: "heading", text: "When you have done all this and it still fails" },
+      { type: "paragraph", text: "Some of it will still fail. You will keep the numbers honestly, read the blueprint correctly, follow the thing that moved, and the call will still go against you. Scoring makes you better across a hundred decisions. It does not promise you the next one." },
+      { type: "paragraph", text: "When that happens the question changes. It stops being about inputs and starts being about what you are standing on. I have written that part on its own, because it answers a different problem. Read <a href=\"/writing/three-ingredients-for-sound-judgement\" class=\"link-hover text-accent\">Three Ingredients for Sound Judgement</a>." },
+      { type: "callout", text: "This piece draws on Central Bank of Nigeria announcements on the 2022 naira redesign and the Supreme Court ruling that followed, the 1984 currency exchange, the 2004 to 2005 consolidation that took 89 banks to 25, and the recapitalisation that closed on 31 March 2026 with about 4.65 trillion naira raised and 33 of 37 banks meeting the new thresholds. The forecasting result is from the IARPA tournament won by the Good Judgment Project, whose forecasters beat intelligence analysts holding classified reporting by more than 30 per cent. The longer argument about which constraint is actually binding is in <a href=\"/writing/effort-at-the-wrong-level\" class=\"link-hover text-accent\">Effort at the Wrong Level</a>." },
+    ]
+  },
   {
     slug: "the-high-cost-of-being-only-a-consumer",
     title: "The High Cost of Being Only a Consumer",
@@ -1366,4 +1437,28 @@ export function getLatestPosts(count: number = 3): Post[] {
 
 export function getAllSlugs(): string[] {
   return posts.map((p) => p.slug);
+}
+
+/**
+ * Posts to offer at the end of an article: any explicitly listed in `related`
+ * first, then others in the same category, then the most recent overall.
+ */
+export function getRelatedPosts(slug: string, count: number = 2): Post[] {
+  const post = getPostBySlug(slug);
+  if (!post) return [];
+
+  const picked: Post[] = [];
+  const add = (candidate: Post | undefined) => {
+    if (!candidate || candidate.slug === slug) return;
+    if (picked.length >= count) return;
+    if (picked.some((p) => p.slug === candidate.slug)) return;
+    picked.push(candidate);
+  };
+
+  post.related?.forEach((s) => add(getPostBySlug(s)));
+  const byRecency = getAllPosts();
+  byRecency.filter((p) => p.category === post.category).forEach(add);
+  byRecency.forEach(add);
+
+  return picked;
 }

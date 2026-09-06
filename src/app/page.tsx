@@ -199,7 +199,7 @@ export default function Home() {
           </div>
           <p className="border-t border-accent/20 pt-4 text-[13px] leading-relaxed text-muted">
             I also curate{" "}
-            <a href="https://www.chroniclesofinnovation.com" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">Chronicles of Innovation</a>
+            <a href="https://www.chroniclesofinnovation.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">Chronicles of Innovation</a>
             {" "}and created{" "}
             <a href="https://zerotoact.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">ZeroToAct</a>
             {" "}to make practical knowledge easier to use.
