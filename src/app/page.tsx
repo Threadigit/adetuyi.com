@@ -186,14 +186,14 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-0.5">
             <div className="flex items-center gap-2">
               <a
-                href="/thesis/powering-nigeria-infrastructure-fund-1"
+                href="/thesis/buildx-fund-1"
                 className="text-[15px] font-medium link-hover"
               >
-                Powering Nigeria Infrastructure Fund 1
+                BuildX Capital Fund 1
               </a>
               <span className="text-[11px] uppercase tracking-widest text-accent font-medium border border-accent/25 rounded-full px-2 py-0.5">In Formation</span>
             </div>
-            <span className="text-muted text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Energy &amp; Physical Infrastructure</span>
+            <span className="text-muted text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Energy, Manufacturing &amp; Physical Infrastructure</span>
           </div>
           <p className="border-t border-accent/20 pt-4 text-[13px] leading-relaxed text-muted">
             I also curate{" "}
@@ -278,8 +278,8 @@ export default function Home() {
           </p>
           <p className="text-[15px] text-muted leading-relaxed mb-6">
             Most of my work has been an expression of that thesis, from trust
-            infrastructure to distribution to capital. The newest is Powering Nigeria
-            Infrastructure Fund 1, being formed to finance distributed energy
+            infrastructure to distribution to capital. The newest is BuildX
+            Capital Fund 1, being formed to finance distributed energy
             assets around productive demand and test how reliable power can
             strengthen earnings, operating capacity, and economic inclusion.
           </p>

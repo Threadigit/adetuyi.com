@@ -2,10 +2,10 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
-const title = "Powering Nigeria Infrastructure Fund 1";
+const title = "BuildX Fund 1";
 const description =
   "Tolu Adetuyi's thesis for financing distributed energy assets around commercial, industrial, and productive mobility demand in Nigeria.";
-const canonical = "https://www.adetuyi.com/thesis/powering-nigeria-infrastructure-fund-1";
+const canonical = "https://www.adetuyi.com/thesis/buildx-fund-1";
 const lastUpdated = "2026-08-01";
 
 const sources = [
@@ -110,8 +110,8 @@ export default function ThesisPage() {
           { name: "Home", path: "/" },
           { name: "Thesis", path: "/thesis" },
           {
-            name: "Powering Nigeria Infrastructure Fund 1",
-            path: "/thesis/powering-nigeria-infrastructure-fund-1",
+            name: "BuildX Fund 1",
+            path: "/thesis/buildx-fund-1",
           },
         ]}
       />
@@ -128,12 +128,12 @@ export default function ThesisPage() {
           <div className="flex items-center gap-3 mb-6">
             <div className="h-px w-8 bg-accent" />
             <span className="text-[13px] font-medium uppercase tracking-widest text-accent">
-              An active expression in formation.
+              In formation
             </span>
           </div>
           <h1 className="text-[36px] md:text-[44px] font-medium tracking-tight leading-tight mb-6 text-foreground">
-            Powering Nigeria{" "}
-            <span className="block">Infrastructure Fund 1</span>
+            BuildX{" "}
+            <span className="block">Fund 1</span>
           </h1>
           <p className="text-[18px] md:text-[20px] leading-relaxed text-muted">
             One investment expression of my economic participation thesis,
@@ -271,7 +271,7 @@ export default function ThesisPage() {
             The investable wedge
           </h2>
           <p>
-            Powering Nigeria Infrastructure Fund 1 is being formed around distributed power for
+            BuildX Fund 1 is being formed around distributed power for
             commercial and industrial users. The initial focus is not utility
             scale generation built on speculative demand. It is energy
             infrastructure located close to businesses that already consume
@@ -528,7 +528,7 @@ export default function ThesisPage() {
             customer becomes more productive.
           </p>
           <p>
-            That alignment is the conviction behind Powering Nigeria Infrastructure Fund 1. I
+            That alignment is the conviction behind BuildX Fund 1. I
             want to build infrastructure whose economic usefulness is visible
             in the cash flow of the businesses it powers.
           </p>
@@ -558,7 +558,7 @@ export default function ThesisPage() {
               For investors, founders, operators, and project partners
             </h2>
             <p className="text-[14px] leading-relaxed text-background/75 mb-4">
-              Powering Nigeria Infrastructure Fund 1 is in formation. You do
+              BuildX Fund 1 is in formation. You do
               not need to run an energy company to participate. I want to hear
               from you if you are one of the following.
             </p>

@@ -291,15 +291,22 @@ export default function EconomicParticipationThesisPage() {
               In formation
             </p>
             <h2 className="text-[20px] md:text-[24px] font-medium text-foreground tracking-tight mt-3 mb-4">
-              Powering Nigeria Infrastructure Fund 1
+              BuildX Fund 1
             </h2>
             <p className="m-0 text-[14px] leading-[1.8] text-muted">
-              The fund is this thesis applied to physical infrastructure. It
-              is being formed to finance distributed energy assets close to productive
-              users who already bear the cost of unreliable power. The work
-              begins with proven demand and asks whether better infrastructure
-              can lower operating costs, strengthen earnings, and widen
-              economic participation while producing disciplined returns.
+              The fund is this thesis applied to physical infrastructure. For
+              years I have backed this deficit as an angel investor, one company
+              at a time. Angel cheques can prove a model. They cannot finance
+              the assets themselves. BuildX Fund 1 carries that learning, and
+              the operating experience behind the distribution and trust
+              infrastructure work, into a structured vehicle.
+            </p>
+            <p className="m-0 mt-4 text-[14px] leading-[1.8] text-muted">
+              It is being formed to finance distributed energy assets close to
+              productive users who already bear the cost of unreliable power.
+              The work begins with proven demand and asks whether better
+              infrastructure can lower operating costs, strengthen earnings, and
+              widen economic participation while producing disciplined returns.
             </p>
             <p className="m-0 mt-4 text-[14px] leading-[1.8] text-muted">
               The first test begins with productive electric mobility. Deployed
@@ -309,7 +316,7 @@ export default function EconomicParticipationThesisPage() {
               access to income-generating assets.
             </p>
             <Link
-              href="/thesis/powering-nigeria-infrastructure-fund-1"
+              href="/thesis/buildx-fund-1"
               className="inline-flex items-center gap-2 mt-6 border border-accent text-accent px-5 py-2.5 rounded-full hover:bg-accent hover:text-white transition-all font-medium text-[14px] group"
             >
               Read the fund thesis
