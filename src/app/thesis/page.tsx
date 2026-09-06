@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const infrastructureLayers = [
   {
     title: "Be recognised and trusted",
-    text: "People and businesses need a dependable way to prove who they are, check who they are dealing with, and transact without exposure to fraud. Verification is what opens the door to customers, credit, and commerce.",
+    text: "People and businesses need a dependable way to prove who they are, check who they are dealing with, and transact without exposure to fraud. Trust is what opens the door to customers, credit, and commerce.",
   },
   {
     title: "Understand opportunity and decide well",
@@ -135,7 +135,7 @@ export default function EconomicParticipationThesisPage() {
           </p>
           <p>
             Opportunity becomes real only when that path works. A bank account
-            matters when money can move. Verification matters when it opens the
+            matters when money can move. Trust matters when it opens the
             door to customers and commerce. Knowledge matters when a founder can
             turn it into a sound company. Capital matters when a business has
             the power, tools, and market to put it to productive use.
