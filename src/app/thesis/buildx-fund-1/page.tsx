@@ -138,8 +138,7 @@ export default function ThesisPage() {
             The first BuildX Capital vehicle, focused on private capital for
             Nigeria&apos;s distributed commercial and industrial energy
             infrastructure. Energy comes first because power is the constraint
-            sitting under everything else. Manufacturing and other productive
-            physical infrastructure can follow in later funds.
+            sitting under everything else, manufacturing included.
           </p>
           <p className="mt-5 text-[12px] uppercase tracking-widest text-muted">
             Last updated{" "}

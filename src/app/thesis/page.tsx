@@ -302,8 +302,7 @@ export default function EconomicParticipationThesisPage() {
               infrastructure work, into a structured vehicle. Fund 1 begins
               with energy, in Nigeria&apos;s distributed commercial and
               industrial market, because power is the constraint sitting under
-              the rest. Manufacturing and other productive infrastructure can
-              follow in later funds.
+              the rest.
             </p>
             <p className="m-0 mt-4 text-[14px] leading-[1.8] text-muted">
               It is being formed to finance distributed energy assets close to
