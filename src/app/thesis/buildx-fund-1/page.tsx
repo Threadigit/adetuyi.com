@@ -187,6 +187,17 @@ export default function ThesisPage() {
             strengthens earnings, and expands what businesses and workers can
             produce.
           </p>
+          <p>
+            I have been backing that view as an angel investor for years, one
+            company at a time. It taught me where the constraint actually sits.
+            An angel cheque can help a team prove a model, but it cannot
+            finance the asset the model depends on, and the businesses that
+            need power do not need another equity round. They need the
+            equipment on site and a way to pay for it out of what it saves
+            them. BuildX Fund 1 carries that learning, and the operating
+            experience above, into a structured vehicle built for the assets
+            themselves.
+          </p>
 
           <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
             The system is constrained, not the demand
