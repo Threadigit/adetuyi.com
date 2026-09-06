@@ -184,10 +184,10 @@ export default function Home() {
           <div className="border-t border-accent/20" />
 
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-0.5">
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2">
               <a
                 href="/thesis/buildx-fund-1"
-                className="text-[15px] font-medium link-hover"
+                className="text-[15px] font-medium link-hover whitespace-nowrap"
               >
                 BuildX Capital
               </a>

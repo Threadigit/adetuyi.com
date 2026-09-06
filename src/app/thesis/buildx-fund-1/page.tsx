@@ -172,6 +172,9 @@ export default function ThesisPage() {
             </a>
             , I have worked on the trust layer that allows businesses to know
             who they are dealing with and transact with greater confidence.
+            Alongside the operating work, I have spent years investing
+            privately as an angel in companies building on top of Nigeria&apos;s
+            physical constraints.
           </p>
           <p>
             Those experiences shaped a conviction. Digital infrastructure can
@@ -188,9 +191,8 @@ export default function ThesisPage() {
             produce.
           </p>
           <p>
-            I have been backing that view as an angel investor for years, one
-            company at a time. It taught me where the constraint actually sits.
-            An angel cheque can help a team prove a model, but it cannot
+            Backing that view one company at a time taught me where the
+            constraint actually sits. An angel cheque can help a team prove a model, but it cannot
             finance the asset the model depends on, and the businesses that
             need power do not need another equity round. They need the
             equipment on site and a way to pay for it out of what it saves
