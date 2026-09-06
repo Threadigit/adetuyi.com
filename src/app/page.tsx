@@ -189,9 +189,9 @@ export default function Home() {
                 href="/thesis/buildx-fund-1"
                 className="text-[15px] font-medium link-hover"
               >
-                BuildX Capital Fund 1
+                BuildX Capital
               </a>
-              <span className="text-[11px] uppercase tracking-widest text-accent font-medium border border-accent/25 rounded-full px-2 py-0.5">In Formation</span>
+              <span className="text-[11px] uppercase tracking-widest text-accent font-medium border border-accent/25 rounded-full px-2 py-0.5 whitespace-nowrap">Fund 1 In Formation</span>
             </div>
             <span className="text-muted text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Energy, Manufacturing &amp; Physical Infrastructure</span>
           </div>
