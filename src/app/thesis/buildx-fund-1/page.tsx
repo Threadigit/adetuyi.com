@@ -135,11 +135,10 @@ export default function ThesisPage() {
             BuildX Capital Fund 1
           </h1>
           <p className="text-[18px] md:text-[20px] leading-relaxed text-muted">
-            The first BuildX Capital vehicle, focused on private capital for
-            Nigeria&apos;s distributed commercial and industrial energy
-            infrastructure. Energy comes first because power is the constraint
-            sitting under everything else. Manufacturing and other productive
-            physical infrastructure can follow in later funds.
+            BuildX Capital Fund 1 is the energy mandate, focused on private
+            capital for Nigeria&apos;s distributed commercial and industrial
+            energy infrastructure. Power is the constraint sitting under
+            everything else built here.
           </p>
           <p className="mt-5 text-[12px] uppercase tracking-widest text-muted">
             Last updated{" "}
