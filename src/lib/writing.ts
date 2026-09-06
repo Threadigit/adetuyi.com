@@ -32,6 +32,29 @@ export interface Post {
 
 const posts: Post[] = [
   {
+    slug: "three-ingredients-for-sound-judgement",
+    title: "Three Ingredients for Sound Judgement",
+    excerpt: "You have learnt the rules and applied the method, and the results are still not coming. That is usually not a method problem. Three things carry judgement when the reading is not enough.",
+    date: "2026-09-06",
+    category: "Leadership",
+    readingTime: "2 min read",
+    related: ["sound-judgement-when-the-rules-keep-changing"],
+    content: [
+      { type: "paragraph", text: "You have learnt the rules. You keep your numbers honestly, you have studied how the last cycle ended, and you follow what moves each week. You have done the work I set out in <a href=\"/writing/sound-judgement-when-the-rules-keep-changing\" class=\"link-hover text-accent\">Making Sound Judgement When the Rules Keep Changing</a>. And the results are still not coming." },
+      { type: "paragraph", text: "That is not always a sign that you executed badly. Method sharpens how you read a situation. It cannot tell you what to stand on when the reading is not enough. Here is what to do." },
+      { type: "heading", text: "One. Go back to your principles" },
+      { type: "paragraph", text: "<strong>A steady foundation.</strong> Principles give you a stable reference point when the details change. They keep you anchored while the environment is uncertain. Write down the three or four you will not trade, and hold the decision in front of you against them. A lot of stalled situations are not a strategy problem. They are a place where you quietly moved off something you said you believed." },
+      { type: "quote", text: "The fear of the Lord is the beginning of wisdom.\nProverbs 9:10" },
+      { type: "heading", text: "Two. Ask what the moment is actually asking for" },
+      { type: "paragraph", text: "<strong>Sensitivity to context.</strong> Discernment helps you understand what the moment actually requires. It is the ability to read people, patterns and timing beyond surface information. The same move can be right this year and wrong the next. Before you push harder, ask whether this is a season to push, to wait, or to leave. Discernment is trained by practice, so the more decisions you make deliberately, the sharper it gets." },
+      { type: "quote", text: "But solid food is for the mature, for those who have their powers of discernment trained by constant practice to distinguish good from evil.\nHebrews 5:14" },
+      { type: "heading", text: "Three. Ask the Holy Spirit" },
+      { type: "paragraph", text: "<strong>Divine guidance.</strong> The Holy Spirit gives clarity, wisdom and direction that goes beyond human logic. He helps you see what others miss and confirms what to do next. Bring the decision to Him plainly, before the meeting rather than after the loss, and wait for the settled answer instead of the anxious one. This is the one input no amount of analysis will produce for you." },
+      { type: "quote", text: "But when He, the Spirit of truth, comes, He will guide you into all the truth.\nJohn 16:13" },
+      { type: "paragraph", text: "Method still matters. The three inputs in <a href=\"/writing/sound-judgement-when-the-rules-keep-changing\" class=\"link-hover text-accent\">Making Sound Judgement When the Rules Keep Changing</a> are how you read a situation well. These three are what hold you when the reading is not enough, and they are usually what is missing when everything looks right on paper and nothing is moving." },
+    ]
+  },
+  {
     slug: "sound-judgement-when-the-rules-keep-changing",
     title: "Making Sound Judgement When the Rules Keep Changing",
     excerpt: "A circular drops on a Friday evening and the rule your whole plan was sitting on stops applying. One leader is already moving. Another panics and does something expensive. We call that gap instinct. It is not instinct, and there are three inputs that build it.",
@@ -75,28 +98,6 @@ const posts: Post[] = [
       { type: "paragraph", text: "Some of it will still fail. You will keep the numbers honestly, read the blueprint correctly, follow the thing that moved, and the call will still go against you. Scoring makes you better across a hundred decisions. It does not promise you the next one." },
       { type: "paragraph", text: "When that happens the question changes. It stops being about inputs and starts being about what you are standing on. I have written that part on its own, because it answers a different problem. Read <a href=\"/writing/three-ingredients-for-sound-judgement\" class=\"link-hover text-accent\">Three Ingredients for Sound Judgement</a>." },
       { type: "callout", text: "This piece draws on Central Bank of Nigeria announcements on the 2022 naira redesign and the Supreme Court ruling that followed, the 1984 currency exchange, the 2004 to 2005 consolidation that took 89 banks to 25, and the recapitalisation that closed on 31 March 2026 with about 4.65 trillion naira raised and 33 of 37 banks meeting the new thresholds. The forecasting result is from the IARPA tournament won by the Good Judgment Project, whose forecasters beat intelligence analysts holding classified reporting by more than 30 per cent. The longer argument about which constraint is actually binding is in <a href=\"/writing/effort-at-the-wrong-level\" class=\"link-hover text-accent\">Effort at the Wrong Level</a>." },
-    ]
-  },
-  {
-    slug: "three-ingredients-for-sound-judgement",
-    title: "Three Ingredients for Sound Judgement",
-    excerpt: "When the rules keep changing, sound judgement does not come from knowing more rules. It comes from three things: principles, discernment, and the Holy Spirit.",
-    date: "2026-09-06",
-    category: "Leadership",
-    readingTime: "1 min read",
-    related: ["sound-judgement-when-the-rules-keep-changing"],
-    content: [
-      { type: "paragraph", text: "When the rules keep changing, sound judgement does not come from knowing more rules. It comes from a combination of three things." },
-      { type: "heading", text: "One. Principles" },
-      { type: "paragraph", text: "<strong>A steady foundation.</strong> Principles give you a stable reference point when the details change. They help you stay anchored, even when the environment is uncertain." },
-      { type: "quote", text: "The fear of the Lord is the beginning of wisdom.\nProverbs 9:10" },
-      { type: "heading", text: "Two. Discernment" },
-      { type: "paragraph", text: "<strong>Sensitivity to context.</strong> Discernment helps you understand what the moment actually requires. It is the ability to read people, patterns and timing beyond surface information." },
-      { type: "quote", text: "But solid food is for the mature, for those who have their powers of discernment trained by constant practice to distinguish good from evil.\nHebrews 5:14" },
-      { type: "heading", text: "Three. The Holy Spirit" },
-      { type: "paragraph", text: "<strong>Divine guidance.</strong> The Holy Spirit gives clarity, wisdom and direction that goes beyond human logic. He helps you see what others miss and confirms what to do next." },
-      { type: "quote", text: "But when He, the Spirit of truth, comes, He will guide you into all the truth.\nJohn 16:13" },
-      { type: "paragraph", text: "The three inputs in <a href=\"/writing/sound-judgement-when-the-rules-keep-changing\" class=\"link-hover text-accent\">Making Sound Judgement When the Rules Keep Changing</a> sharpen how you read a situation. These three decide what you are standing on when the reading is not enough." },
     ]
   },
   {
