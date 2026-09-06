@@ -184,14 +184,14 @@ export default function Home() {
           <div className="border-t border-accent/20" />
 
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-0.5">
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2">
               <a
                 href="/thesis/buildx-fund-1"
-                className="text-[15px] font-medium link-hover"
+                className="text-[15px] font-medium link-hover whitespace-nowrap"
               >
-                BuildX Capital Fund 1
+                BuildX Capital
               </a>
-              <span className="text-[11px] uppercase tracking-widest text-accent font-medium border border-accent/25 rounded-full px-2 py-0.5">In Formation</span>
+              <span className="text-[11px] uppercase tracking-widest text-accent font-medium border border-accent/25 rounded-full px-2 py-0.5 whitespace-nowrap">Fund 1 In Formation</span>
             </div>
             <span className="text-muted text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Energy, Manufacturing &amp; Physical Infrastructure</span>
           </div>
