@@ -35,8 +35,12 @@ export const metadata: Metadata = {
 
 const infrastructureLayers = [
   {
-    title: "Be recognised and informed",
-    text: "People need a dependable way to prove who they are, transact safely, understand opportunity, and make informed decisions. Trust and practical knowledge make participation possible.",
+    title: "Be recognised and trusted",
+    text: "People and businesses need a dependable way to prove who they are, check who they are dealing with, and transact without exposure to fraud. Verification is what opens the door to customers, credit, and commerce.",
+  },
+  {
+    title: "Understand opportunity and decide well",
+    text: "Knowing that an opportunity exists is not the same as knowing what to do about it. People need practical knowledge, working examples, and a clear read on what is changing, so they can act while it still matters.",
   },
   {
     title: "Produce, earn, and grow",
