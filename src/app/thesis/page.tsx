@@ -207,7 +207,12 @@ export default function EconomicParticipationThesisPage() {
             </a>
             , I co-founded and continue to build the trust infrastructure that
             helps businesses verify customers, meet compliance requirements,
-            prevent fraud, and transact with confidence. Prembly is my primary
+            prevent fraud, and transact with confidence. We work across
+            emerging markets, with presence in Nigeria, Kenya, and the United
+            States, and more than a thousand local and global businesses use it
+            against fraud, across millions of verifications. That count is an
+            input, not a result. What it buys is a business able to deal with a
+            customer it could not otherwise trust. Prembly is my primary
             operating work and the clearest case of this thesis in practice.
             People and businesses cannot participate fully when systems cannot
             trust them.
