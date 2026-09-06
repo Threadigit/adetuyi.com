@@ -139,26 +139,17 @@ export default function Home() {
           </a>
           , helping build the distribution network that moves billions of
           dollars in transactions and now serves millions of businesses across
-          the continent. That experience shaped how I work today. I turn
-          intelligence and relationships into products, ventures, deals, and
-          institutional leverage.
+          the continent.
         </p>
         <p className="text-[15px] leading-[1.8] text-muted mt-3">
-          I hold a{" "}
-          <span className="text-foreground font-medium">
-            first-class degree in Computer Science
-          </span>{" "}
-          and an{" "}
-          <span className="text-foreground font-medium">
-            MBA with a concentration in Finance
-          </span>{" "}
-          from Morgan State University, where I graduated as a GSBM Scholar
+          I hold a first-class degree in Computer Science and an MBA with a
+          concentration in Finance from Morgan State University, where I graduated as a GSBM Scholar
           and was inducted as a lifetime member of Beta Gamma Sigma, the
           international honour society for business. I am also a fellow of{" "}
           <a href="https://joinodf.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">
             On Deck
           </a>
-          {" "}(ODF), a selective global community of technology founders and
+          {" "}(ODF), a global community of technology founders and
           early-stage builders.
         </p>
       </section>
@@ -214,7 +205,7 @@ export default function Home() {
       {/* ── Core Areas of Focus ── */}
       <section className="mb-16 animate-fade-up delay-300">
         <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
-          Core Areas of Focus
+          Focus
         </h2>
         <div className="flex flex-wrap gap-2.5">
           {[
@@ -284,9 +275,8 @@ export default function Home() {
             productive assets, and rely on dependable infrastructure.
           </p>
           <p className="text-[15px] text-muted leading-relaxed mb-6">
-            Most of the work I have done and continue to do is an active
-            expression of that thesis, from trust infrastructure to
-            distribution to capital. The newest is Powering Nigeria
+            Most of my work has been an expression of that thesis, from trust
+            infrastructure to distribution to capital. The newest is Powering Nigeria
             Infrastructure Fund 1, being formed to finance distributed energy
             assets around productive demand and test how reliable power can
             strengthen earnings, operating capacity, and economic inclusion.
@@ -388,13 +378,14 @@ export default function Home() {
       <footer className="pt-10 border-t border-border animate-fade-up delay-700">
         {/* Headline */}
         <p className="text-[13px] uppercase tracking-[0.15em] text-accent font-medium mb-3">
-          Selective advisory
+          Advisory
         </p>
         <h2 className="text-[22px] font-medium text-foreground tracking-tight leading-snug mb-2">
-          For a small number of founders, operators, and investors.
+          For founders, operators, and investors.
         </h2>
         <p className="text-[14px] text-muted mb-2">
-          I advise selectively alongside my operating work, taking on only a limited number of engagements where my experience can materially improve an important decision.
+          I advise alongside my operating work, on a small number of engagements
+          where my experience can improve an important decision.
         </p>
         <a href="/work" className="text-[13px] text-accent link-hover inline-block mb-7">
           View advisory and fit →
@@ -403,7 +394,7 @@ export default function Home() {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 mb-10">
           <a
-            href="mailto:tolu@adetuyi.com?subject=Selective%20advisory%20enquiry"
+            href="mailto:tolu@adetuyi.com?subject=Advisory%20enquiry"
             className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3.5 rounded-full hover:bg-accent/90 transition-all font-medium text-[15px] group shadow-sm hover:shadow-md"
           >
             Send an introduction <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
@@ -414,7 +405,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 border border-foreground/20 text-foreground px-8 py-3.5 rounded-full hover:border-accent hover:text-accent transition-all font-medium text-[15px] group"
           >
-            Free 15-minute call <span className="transition-transform duration-300 group-hover:translate-x-1">↗</span>
+            Book a 15-minute call <span className="transition-transform duration-300 group-hover:translate-x-1">↗</span>
           </a>
         </div>
 

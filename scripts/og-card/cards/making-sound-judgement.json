@@ -1,0 +1,29 @@
+{
+  "output": "public/making-sound-judgement.png",
+  "title": "Three inputs that train judgement",
+  "lede": "Gut feel is real, but it only trains when you find out quickly whether you were right. Most leaders are never scored. These three inputs are how you build the scoring yourself.",
+  "columns": [
+    {
+      "title": "Your Metrics",
+      "subtitle": "Kept honestly",
+      "figure": "bars",
+      "body": "Pick the three numbers that would tell you that you are wrong, and put them in front of the same few people every week.",
+      "quote": "Fast, honest scoring is what turns experience into instinct. Without it, experience is just time served."
+    },
+    {
+      "title": "The Blueprint",
+      "subtitle": "What has happened before",
+      "figure": "cycles",
+      "figureOptions": { "left": "1984", "right": "2022" },
+      "body": "Whatever is happening to you has happened to somebody before. Finding out how it ended for them costs less than the lesson does.",
+      "quote": "History tells you what kind of situation you are in. It does not tell you which half of it will repeat."
+    },
+    {
+      "title": "Live Signals",
+      "subtitle": "What is moving now",
+      "figure": "cascade",
+      "body": "Follow one thing that moved above your head each week, all the way down, until it lands on somebody's job or somebody's money.",
+      "quote": "The more the ground shifts, the less your strong opinions are worth and the more your corrections are."
+    }
+  ]
+}
