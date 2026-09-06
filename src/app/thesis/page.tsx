@@ -218,7 +218,7 @@ export default function EconomicParticipationThesisPage() {
             </a>
             {" "}and{" "}
             <a
-              href="https://www.chroniclesofinnovation.com"
+              href="https://www.chroniclesofinnovation.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground link-hover font-medium"
