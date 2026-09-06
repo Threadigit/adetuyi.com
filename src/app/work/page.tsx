@@ -228,8 +228,10 @@ export default function WorkPage() {
           </h2>
           <p className="text-[15px] leading-[1.75] text-muted">
             My advice comes from building, not commentary. At Prembly, I
-            co-founded and continue to build trust infrastructure used by
-            businesses to verify customers, manage compliance, and reduce fraud.
+            co-founded and continue to build trust infrastructure used by more
+            than a thousand local and global businesses to verify customers,
+            manage compliance, and reduce fraud, across Nigeria, Kenya, and the
+            United States.
             Before Prembly, I helped build the distribution network at Moniepoint
             that moves billions of dollars in transactions and now reaches
             millions of businesses across the continent.

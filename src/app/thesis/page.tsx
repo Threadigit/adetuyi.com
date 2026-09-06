@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const infrastructureLayers = [
   {
     title: "Be recognised and trusted",
-    text: "People and businesses need a dependable way to prove who they are, check who they are dealing with, and transact without exposure to fraud. Trust is what opens the door to customers, credit, and commerce.",
+    text: "A person or business has to be able to prove who they are, check who they are dealing with, and transact without exposure to fraud. Trust is what opens the door to customers, credit, and commerce.",
   },
   {
     title: "Understand opportunity and decide well",
@@ -44,11 +44,11 @@ const infrastructureLayers = [
   },
   {
     title: "Produce, earn, and grow",
-    text: "Businesses need useful technology, capable founders, productive assets, reliable energy, and sound capital. Together, these help people earn more and companies build at a meaningful scale.",
+    text: "Earning depends on useful technology, capable founders, productive assets, reliable energy, and sound capital. Together, these help people earn more and companies build at a meaningful scale.",
   },
   {
     title: "Transact and reach markets",
-    text: "People and businesses need to move money, receive capital, trade across borders, reach customers, and take part in opportunities beyond their immediate location.",
+    text: "Value that cannot reach a buyer is not yet value. People and businesses have to move money, receive capital, trade across borders, reach customers, and take part in opportunities beyond their immediate location.",
   },
 ];
 
@@ -150,6 +150,15 @@ export default function EconomicParticipationThesisPage() {
             rise for years while livelihoods stay where they were.
           </p>
           <p>
+            The same error repeats at every layer. Identities verified. Loans
+            disbursed. Terminals deployed. Each one gets counted because each
+            one is easy to count, and none of them says whether a person ended
+            up better able to earn. Institutions report what they did. Whether
+            it changed anybody&apos;s position is harder to see, so it is
+            watched less, and the two can drift apart for years before anyone
+            says so.
+          </p>
+          <p>
             My role is deliberate. I build where my operating experience is
             strongest, support a small number of founders advancing the same
             vision, and help capital reach opportunities that can expand
@@ -161,8 +170,10 @@ export default function EconomicParticipationThesisPage() {
           </h2>
           <p>
             Economic participation is not one product or programme. It grows
-            when several practical systems work together. Each one solves a
-            different part of the same problem.
+            when several practical systems work together. They are not a
+            sequence to be completed in order. At any moment one of them is
+            what binds, and effort spent on the others changes little until
+            that one moves.
           </p>
 
           <div className="my-9 border-y border-border">
@@ -196,8 +207,13 @@ export default function EconomicParticipationThesisPage() {
             </a>
             , I co-founded and continue to build the trust infrastructure that
             helps businesses verify customers, meet compliance requirements,
-            prevent fraud, and transact with confidence. Prembly is my primary
-            operating work and one of the clearest expressions of this thesis.
+            prevent fraud, and transact with confidence. We work across
+            emerging markets, with presence in Nigeria, Kenya, and the United
+            States, and more than a thousand local and global businesses use it
+            against fraud, across millions of verifications. That count is an
+            input, not a result. What it buys is a business able to deal with a
+            customer it could not otherwise trust. Prembly is my primary
+            operating work and the clearest case of this thesis in practice.
             People and businesses cannot participate fully when systems cannot
             trust them.
           </p>
@@ -245,15 +261,15 @@ export default function EconomicParticipationThesisPage() {
             consequential decisions.
           </p>
           <p>
-            I also support a selected number of founders whose companies can
-            remove meaningful barriers to participation. The industry may
+            I also support a small number of founders whose companies can
+            remove real barriers to taking part. The industry may
             differ, but the reason for engaging does not. The company must solve
             a real problem and give more people or businesses a practical way
             to move forward.
           </p>
 
           <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
-            The next expression
+            Where this goes next
           </h2>
           <p>
             My experience began with digital and financial systems, but the
@@ -272,14 +288,14 @@ export default function EconomicParticipationThesisPage() {
 
           <div className="my-12 p-8 bg-accent/5 ring-1 ring-border rounded-xl">
             <p className="m-0 text-[12px] font-medium uppercase tracking-widest text-accent">
-              An active expression in formation.
+              In formation
             </p>
             <h2 className="text-[20px] md:text-[24px] font-medium text-foreground tracking-tight mt-3 mb-4">
               Powering Nigeria Infrastructure Fund 1
             </h2>
             <p className="m-0 text-[14px] leading-[1.8] text-muted">
-              The fund is one expression of this wider thesis. It is being
-              formed to finance distributed energy assets close to productive
+              The fund is this thesis applied to physical infrastructure. It
+              is being formed to finance distributed energy assets close to productive
               users who already bear the cost of unreliable power. The work
               begins with proven demand and asks whether better infrastructure
               can lower operating costs, strengthen earnings, and widen
@@ -305,9 +321,9 @@ export default function EconomicParticipationThesisPage() {
             Who I want to build with
           </h2>
           <p>
-            I want to work with founders, operators, investors, institutions,
-            and high-net-worth individuals who want to widen economic
-            participation in practical ways. That may mean creating a company,
+            I want to work with founders, operators, investors, and
+            institutions who want to widen who gets to take part, in practical
+            ways. That may mean creating a company,
             financing infrastructure, opening a distribution channel,
             strengthening a technology platform, teaching what works, or
             bringing useful experience into a difficult market.
