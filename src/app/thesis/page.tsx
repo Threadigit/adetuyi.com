@@ -291,15 +291,19 @@ export default function EconomicParticipationThesisPage() {
               In formation
             </p>
             <h2 className="text-[20px] md:text-[24px] font-medium text-foreground tracking-tight mt-3 mb-4">
-              BuildX Fund 1
+              BuildX Capital Fund 1
             </h2>
             <p className="m-0 text-[14px] leading-[1.8] text-muted">
               The fund is this thesis applied to physical infrastructure. For
               years I have backed this deficit as an angel investor, one company
               at a time. Angel cheques can prove a model. They cannot finance
-              the assets themselves. BuildX Fund 1 carries that learning, and
+              the assets themselves. BuildX Capital Fund 1 carries that learning, and
               the operating experience behind the distribution and trust
-              infrastructure work, into a structured vehicle.
+              infrastructure work, into a structured vehicle. Fund 1 begins
+              with energy, in Nigeria&apos;s distributed commercial and
+              industrial market, because power is the constraint sitting under
+              the rest. Manufacturing and other productive infrastructure can
+              follow in later funds.
             </p>
             <p className="m-0 mt-4 text-[14px] leading-[1.8] text-muted">
               It is being formed to finance distributed energy assets close to

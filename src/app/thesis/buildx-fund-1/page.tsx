@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
-const title = "BuildX Fund 1";
+const title = "BuildX Capital Fund 1";
 const description =
   "Tolu Adetuyi's thesis for financing distributed energy assets around commercial, industrial, and productive mobility demand in Nigeria.";
 const canonical = "https://www.adetuyi.com/thesis/buildx-fund-1";
@@ -110,7 +110,7 @@ export default function ThesisPage() {
           { name: "Home", path: "/" },
           { name: "Thesis", path: "/thesis" },
           {
-            name: "BuildX Fund 1",
+            name: "BuildX Capital Fund 1",
             path: "/thesis/buildx-fund-1",
           },
         ]}
@@ -132,13 +132,14 @@ export default function ThesisPage() {
             </span>
           </div>
           <h1 className="text-[36px] md:text-[44px] font-medium tracking-tight leading-tight mb-6 text-foreground">
-            BuildX{" "}
-            <span className="block">Fund 1</span>
+            BuildX Capital Fund 1
           </h1>
           <p className="text-[18px] md:text-[20px] leading-relaxed text-muted">
-            One investment expression of my economic participation thesis,
-            focused on private capital for Nigeria&apos;s distributed commercial
-            and industrial energy infrastructure.
+            The first BuildX Capital vehicle, focused on private capital for
+            Nigeria&apos;s distributed commercial and industrial energy
+            infrastructure. Energy comes first because power is the constraint
+            sitting under everything else. Manufacturing and other productive
+            physical infrastructure can follow in later funds.
           </p>
           <p className="mt-5 text-[12px] uppercase tracking-widest text-muted">
             Last updated{" "}
@@ -194,7 +195,7 @@ export default function ThesisPage() {
             finance the asset the model depends on, and the businesses that
             need power do not need another equity round. They need the
             equipment on site and a way to pay for it out of what it saves
-            them. BuildX Fund 1 carries that learning, and the operating
+            them. BuildX Capital Fund 1 carries that learning, and the operating
             experience above, into a structured vehicle built for the assets
             themselves.
           </p>
@@ -282,7 +283,7 @@ export default function ThesisPage() {
             The investable wedge
           </h2>
           <p>
-            BuildX Fund 1 is being formed around distributed power for
+            BuildX Capital Fund 1 is being formed around distributed power for
             commercial and industrial users. The initial focus is not utility
             scale generation built on speculative demand. It is energy
             infrastructure located close to businesses that already consume
@@ -539,7 +540,7 @@ export default function ThesisPage() {
             customer becomes more productive.
           </p>
           <p>
-            That alignment is the conviction behind BuildX Fund 1. I
+            That alignment is the conviction behind BuildX Capital Fund 1. I
             want to build infrastructure whose economic usefulness is visible
             in the cash flow of the businesses it powers.
           </p>
@@ -569,7 +570,7 @@ export default function ThesisPage() {
               For investors, founders, operators, and project partners
             </h2>
             <p className="text-[14px] leading-relaxed text-background/75 mb-4">
-              BuildX Fund 1 is in formation. You do
+              BuildX Capital Fund 1 is in formation. You do
               not need to run an energy company to participate. I want to hear
               from you if you are one of the following.
             </p>
