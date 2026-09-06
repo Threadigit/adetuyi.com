@@ -152,9 +152,14 @@ export default function Home() {
           <span className="text-foreground font-medium">
             MBA with a concentration in Finance
           </span>{" "}
-          from Morgan State University, where I graduated as a GSBM Scholar. I
-          am also a lifetime member of Beta Gamma Sigma, the international
-          business honor society.
+          from Morgan State University, where I graduated as a GSBM Scholar
+          and was inducted as a lifetime member of Beta Gamma Sigma, the
+          international honour society for business. I am also a fellow of{" "}
+          <a href="https://joinodf.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">
+            On Deck
+          </a>
+          {" "}(ODF), a selective global community of technology founders and
+          early-stage builders.
         </p>
       </section>
 

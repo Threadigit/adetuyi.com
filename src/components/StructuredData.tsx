@@ -133,6 +133,12 @@ export default function StructuredData() {
       },
       {
         "@type": "Organization",
+        "name": "On Deck",
+        "url": "https://joinodf.com",
+        "description": "On Deck Founder Fellowship (ODF), a selective global community of technology founders and early-stage builders. Fellow."
+      },
+      {
+        "@type": "Organization",
         "name": "Beta Gamma Sigma",
         "url": "https://www.betagammasigma.org",
         "description": "International business honor society recognising academic excellence in AACSB-accredited schools. Lifetime member."
