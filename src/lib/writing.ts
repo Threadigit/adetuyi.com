@@ -21,6 +21,8 @@ export interface Post {
   category: string;
   ogImage?: string;
   readingTime: string;
+  /** Slugs to surface first under "Read next". Same-category posts fill any remaining slots. */
+  related?: string[];
   content: ContentBlock[];
 }
 
@@ -36,6 +38,7 @@ const posts: Post[] = [
     date: "2026-09-06",
     category: "Leadership",
     readingTime: "6 min read",
+    related: ["three-ingredients-for-sound-judgement", "effort-at-the-wrong-level"],
     content: [
       { type: "paragraph", text: "A circular drops on a Friday evening. A rule your whole plan was sitting on stops applying." },
       { type: "paragraph", text: "Watch the room. One leader is moving before anyone has finished page two. Another goes quiet, then panics, then does something expensive that cannot be undone. Same information, same intelligence." },
@@ -68,7 +71,32 @@ const posts: Post[] = [
       { type: "paragraph", text: "None of this depends on how long you have been leading. It works the same at twenty years and at three weeks. It is about whether anybody is keeping score." },
       { type: "paragraph", text: "Sound judgement is the one thing a leader cannot delegate, cannot buy and cannot fake for long. When the ground shakes you will not be guessing where things land." },
       { type: "paragraph", text: "You will have seen the position before." },
+      { type: "heading", text: "When you have done all this and it still fails" },
+      { type: "paragraph", text: "Some of it will still fail. You will keep the numbers honestly, read the blueprint correctly, follow the thing that moved, and the call will still go against you. Scoring makes you better across a hundred decisions. It does not promise you the next one." },
+      { type: "paragraph", text: "When that happens the question changes. It stops being about inputs and starts being about what you are standing on. I have written that part on its own, because it answers a different problem. Read <a href=\"/writing/three-ingredients-for-sound-judgement\" class=\"link-hover text-accent\">Three Ingredients for Sound Judgement</a>." },
       { type: "callout", text: "This piece draws on Central Bank of Nigeria announcements on the 2022 naira redesign and the Supreme Court ruling that followed, the 1984 currency exchange, the 2004 to 2005 consolidation that took 89 banks to 25, and the recapitalisation that closed on 31 March 2026 with about 4.65 trillion naira raised and 33 of 37 banks meeting the new thresholds. The forecasting result is from the IARPA tournament won by the Good Judgment Project, whose forecasters beat intelligence analysts holding classified reporting by more than 30 per cent. The longer argument about which constraint is actually binding is in <a href=\"/writing/effort-at-the-wrong-level\" class=\"link-hover text-accent\">Effort at the Wrong Level</a>." },
+    ]
+  },
+  {
+    slug: "three-ingredients-for-sound-judgement",
+    title: "Three Ingredients for Sound Judgement",
+    excerpt: "When the rules keep changing, sound judgement does not come from knowing more rules. It comes from three things: principles, discernment, and the Holy Spirit.",
+    date: "2026-09-06",
+    category: "Leadership",
+    readingTime: "1 min read",
+    related: ["sound-judgement-when-the-rules-keep-changing"],
+    content: [
+      { type: "paragraph", text: "When the rules keep changing, sound judgement does not come from knowing more rules. It comes from a combination of three things." },
+      { type: "heading", text: "One. Principles" },
+      { type: "paragraph", text: "<strong>A steady foundation.</strong> Principles give you a stable reference point when the details change. They help you stay anchored, even when the environment is uncertain." },
+      { type: "quote", text: "The fear of the Lord is the beginning of wisdom.\nProverbs 9:10" },
+      { type: "heading", text: "Two. Discernment" },
+      { type: "paragraph", text: "<strong>Sensitivity to context.</strong> Discernment helps you understand what the moment actually requires. It is the ability to read people, patterns and timing beyond surface information." },
+      { type: "quote", text: "But solid food is for the mature, for those who have their powers of discernment trained by constant practice to distinguish good from evil.\nHebrews 5:14" },
+      { type: "heading", text: "Three. The Holy Spirit" },
+      { type: "paragraph", text: "<strong>Divine guidance.</strong> The Holy Spirit gives clarity, wisdom and direction that goes beyond human logic. He helps you see what others miss and confirms what to do next." },
+      { type: "quote", text: "But when He, the Spirit of truth, comes, He will guide you into all the truth.\nJohn 16:13" },
+      { type: "paragraph", text: "The three inputs in <a href=\"/writing/sound-judgement-when-the-rules-keep-changing\" class=\"link-hover text-accent\">Making Sound Judgement When the Rules Keep Changing</a> sharpen how you read a situation. These three decide what you are standing on when the reading is not enough." },
     ]
   },
   {
@@ -1408,4 +1436,28 @@ export function getLatestPosts(count: number = 3): Post[] {
 
 export function getAllSlugs(): string[] {
   return posts.map((p) => p.slug);
+}
+
+/**
+ * Posts to offer at the end of an article: any explicitly listed in `related`
+ * first, then others in the same category, then the most recent overall.
+ */
+export function getRelatedPosts(slug: string, count: number = 2): Post[] {
+  const post = getPostBySlug(slug);
+  if (!post) return [];
+
+  const picked: Post[] = [];
+  const add = (candidate: Post | undefined) => {
+    if (!candidate || candidate.slug === slug) return;
+    if (picked.length >= count) return;
+    if (picked.some((p) => p.slug === candidate.slug)) return;
+    picked.push(candidate);
+  };
+
+  post.related?.forEach((s) => add(getPostBySlug(s)));
+  const byRecency = getAllPosts();
+  byRecency.filter((p) => p.category === post.category).forEach(add);
+  byRecency.forEach(add);
+
+  return picked;
 }
