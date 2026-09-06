@@ -124,9 +124,8 @@ export default function Home() {
       {/* ── About ── */}
       <section className="mb-12 pt-8 border-t border-border/70 animate-fade-up delay-200">
         <p className="text-[15px] leading-[1.8] text-muted">
-          Over the past decade, I have built at the intersection of identity,
-          compliance, financial infrastructure, and capital formation across
-          Africa. At{" "}
+          Over the past decade, I have built across identity, compliance,
+          financial infrastructure, and capital formation in Africa. At{" "}
           <a href="https://prembly.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">
             Prembly
           </a>
