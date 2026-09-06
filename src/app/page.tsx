@@ -124,9 +124,8 @@ export default function Home() {
       {/* ── About ── */}
       <section className="mb-12 pt-8 border-t border-border/70 animate-fade-up delay-200">
         <p className="text-[15px] leading-[1.8] text-muted">
-          Over the past decade, I have built at the intersection of identity,
-          compliance, financial infrastructure, and capital formation across
-          Africa. At{" "}
+          Over the past decade, I have built across identity, compliance,
+          financial infrastructure, and capital formation in Africa. At{" "}
           <a href="https://prembly.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">
             Prembly
           </a>
@@ -138,10 +137,11 @@ export default function Home() {
           <a href="https://moniepoint.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">
             Moniepoint
           </a>
-          , helping build the distribution network behind billions of dollars
-          in transactions across Africa. That experience shaped how I
-          work today: synthesizing intelligence and relationships into products,
-          ventures, deals, and institutional leverage.
+          , helping build the distribution network that moves billions of
+          dollars in transactions and now serves millions of businesses across
+          the continent. That experience shaped how I work today. I turn
+          intelligence and relationships into products, ventures, deals, and
+          institutional leverage.
         </p>
         <p className="text-[15px] leading-[1.8] text-muted mt-3">
           I hold a{" "}
