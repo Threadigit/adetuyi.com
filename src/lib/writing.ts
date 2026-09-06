@@ -37,6 +37,7 @@ const posts: Post[] = [
     excerpt: "You have learnt the rules and applied the method, and the results are still not coming. That is usually not a method problem. Three things carry judgement when the reading is not enough.",
     date: "2026-09-06",
     category: "Leadership",
+    ogImage: "/three-ingridients.png",
     readingTime: "2 min read",
     related: ["sound-judgement-when-the-rules-keep-changing"],
     content: [
