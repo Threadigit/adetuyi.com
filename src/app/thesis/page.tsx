@@ -299,8 +299,8 @@ export default function EconomicParticipationThesisPage() {
               at a time. Angel cheques can prove a model. They cannot finance
               the assets themselves. BuildX Capital Fund 1 carries that learning, and
               the operating experience behind the distribution and trust
-              infrastructure work, into a structured vehicle. Fund 1 begins
-              with energy, in Nigeria&apos;s distributed commercial and
+              infrastructure work, into a structured vehicle. Energy is Fund
+              1&apos;s mandate, in Nigeria&apos;s distributed commercial and
               industrial market, because power is the constraint sitting under
               the rest.
             </p>
