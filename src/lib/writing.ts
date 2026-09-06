@@ -21,6 +21,8 @@ export interface Post {
   category: string;
   ogImage?: string;
   readingTime: string;
+  /** Slugs to surface first under "Read next". Same-category posts fill any remaining slots. */
+  related?: string[];
   content: ContentBlock[];
 }
 
@@ -36,6 +38,7 @@ const posts: Post[] = [
     date: "2026-09-06",
     category: "Leadership",
     readingTime: "6 min read",
+    related: ["three-ingredients-for-sound-judgement", "effort-at-the-wrong-level"],
     content: [
       { type: "paragraph", text: "A circular drops on a Friday evening. A rule your whole plan was sitting on stops applying." },
       { type: "paragraph", text: "Watch the room. One leader is moving before anyone has finished page two. Another goes quiet, then panics, then does something expensive that cannot be undone. Same information, same intelligence." },
@@ -81,6 +84,7 @@ const posts: Post[] = [
     date: "2026-09-06",
     category: "Leadership",
     readingTime: "1 min read",
+    related: ["sound-judgement-when-the-rules-keep-changing"],
     content: [
       { type: "paragraph", text: "When the rules keep changing, sound judgement does not come from knowing more rules. It comes from a combination of three things." },
       { type: "heading", text: "One. Principles" },
@@ -1432,4 +1436,28 @@ export function getLatestPosts(count: number = 3): Post[] {
 
 export function getAllSlugs(): string[] {
   return posts.map((p) => p.slug);
+}
+
+/**
+ * Posts to offer at the end of an article: any explicitly listed in `related`
+ * first, then others in the same category, then the most recent overall.
+ */
+export function getRelatedPosts(slug: string, count: number = 2): Post[] {
+  const post = getPostBySlug(slug);
+  if (!post) return [];
+
+  const picked: Post[] = [];
+  const add = (candidate: Post | undefined) => {
+    if (!candidate || candidate.slug === slug) return;
+    if (picked.length >= count) return;
+    if (picked.some((p) => p.slug === candidate.slug)) return;
+    picked.push(candidate);
+  };
+
+  post.related?.forEach((s) => add(getPostBySlug(s)));
+  const byRecency = getAllPosts();
+  byRecency.filter((p) => p.category === post.category).forEach(add);
+  byRecency.forEach(add);
+
+  return picked;
 }

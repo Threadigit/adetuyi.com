@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getPostBySlug, getAllSlugs, type ContentBlock } from "@/lib/writing";
+import { getPostBySlug, getAllSlugs, getRelatedPosts, type ContentBlock } from "@/lib/writing";
 import { absoluteUrl, siteUrl, toIsoDateTime, toSeoDescription } from "@/lib/seo";
 
 interface PageProps {
@@ -137,6 +137,7 @@ export default async function WritingPost({ params }: PageProps) {
   const baseUrl = siteUrl;
   const image = absoluteUrl(post.ogImage ?? "/tolu-og.jpg");
   const publishedTime = toIsoDateTime(post.date);
+  const related = getRelatedPosts(post.slug);
 
   const blogPostingSchema = {
     "@context": "https://schema.org",
@@ -271,6 +272,37 @@ export default async function WritingPost({ params }: PageProps) {
         <div className="mb-16 space-y-4">
           {post.content.map((block, index) => renderBlock(block, index))}
         </div>
+
+        {/* Read next */}
+        {related.length > 0 && (
+          <div className="pt-8 pb-8 border-t border-border">
+            <p className="text-[11px] font-medium uppercase tracking-[0.15em] text-accent mb-4">
+              Read next
+            </p>
+            <div className="space-y-5">
+              {related.map((next) => (
+                <Link
+                  key={next.slug}
+                  href={`/writing/${next.slug}`}
+                  className="group block"
+                >
+                  <h2 className="text-[16px] font-medium text-foreground tracking-tight leading-snug group-hover:text-accent transition-colors duration-300">
+                    {next.title}
+                  </h2>
+                  <p className="text-[13px] leading-relaxed text-muted mt-1.5 line-clamp-2">
+                    {next.excerpt}
+                  </p>
+                  <span className="inline-flex items-center gap-1.5 text-[12px] text-muted/60 mt-2 group-hover:text-accent transition-colors duration-300">
+                    {next.readingTime}
+                    <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">
+                      →
+                    </span>
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Work with me */}
         <div className="pt-8 pb-8 border-t border-border">
