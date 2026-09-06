@@ -130,7 +130,9 @@ export default function Home() {
             Prembly
           </a>
           , I am building the trust infrastructure that enables businesses to
-          verify, transact, and grow with confidence.
+          verify, transact, and grow with confidence. We work from Nigeria,
+          Kenya, and the United States, and more than a thousand local and
+          global businesses use it against fraud.
         </p>
         <p className="text-[15px] leading-[1.8] text-muted mt-3">
           Before Prembly, I led growth at{" "}
