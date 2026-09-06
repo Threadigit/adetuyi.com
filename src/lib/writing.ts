@@ -61,6 +61,7 @@ const posts: Post[] = [
     excerpt: "A circular drops on a Friday evening and the rule your whole plan was sitting on stops applying. One leader is already moving. Another panics and does something expensive. We call that gap instinct. It is not instinct, and there are three inputs that build it.",
     date: "2026-09-06",
     category: "Leadership",
+    ogImage: "/making-sound-judgement.png",
     readingTime: "6 min read",
     related: ["three-ingredients-for-sound-judgement", "effort-at-the-wrong-level"],
     content: [
