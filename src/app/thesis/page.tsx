@@ -135,10 +135,19 @@ export default function EconomicParticipationThesisPage() {
           </p>
           <p>
             Opportunity becomes real only when that path works. A bank account
-            matters when money can move. Trust matters when it opens the
-            door to customers and commerce. Knowledge matters when a founder can
-            turn it into a sound company. Capital matters when a business has
-            the power, tools, and market to put it to productive use.
+            matters when there is something to put in it and money can move.
+            Trust matters when it opens the door to customers and commerce.
+            Knowledge matters when a founder can turn it into a sound company.
+            Capital matters when a business has the power, tools, and market to
+            put it to productive use.
+          </p>
+          <p>
+            The account is where the measurement usually goes wrong. Inclusion
+            is counted in accounts opened, but an account is only a container.
+            Open one for somebody with no way to earn and the statistics improve
+            while the person does not. They are recorded as included and remain
+            unable to make the account work for them. That is how access can
+            rise for years while livelihoods stay where they were.
           </p>
           <p>
             My role is deliberate. I build where my operating experience is
