@@ -394,7 +394,7 @@ export default function Home() {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 mb-10">
           <a
-            href="mailto:tolu@adetuyi.com?subject=Selective%20advisory%20enquiry"
+            href="mailto:tolu@adetuyi.com?subject=Advisory%20enquiry"
             className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3.5 rounded-full hover:bg-accent/90 transition-all font-medium text-[15px] group shadow-sm hover:shadow-md"
           >
             Send an introduction <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
