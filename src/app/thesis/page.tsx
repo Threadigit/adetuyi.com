@@ -202,7 +202,7 @@ export default function EconomicParticipationThesisPage() {
             >
               Moniepoint
             </a>
-            , I helped build the distribution network that carries billions of
+            , I helped build the distribution network that moves billions of
             dollars in transactions and now reaches millions of businesses
             across the continent. That work showed me where participation
             actually begins. Financial technology only becomes
