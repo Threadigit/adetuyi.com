@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import VideoPreview from "@/components/VideoPreview";
 import StructuredData from "@/components/StructuredData";
@@ -57,12 +58,12 @@ export default function Home() {
         <div className="flex items-center gap-4 sm:gap-5 mb-5">
           {/* Avatar */}
           <div className="relative flex-shrink-0 w-[72px] h-[72px] rounded-full overflow-hidden ring-2 ring-accent/20">
-            <img
+            <Image
               src="/tolu-avatar.jpg"
               alt="Tolu Adetuyi"
               width={72}
               height={72}
-              fetchPriority="high"
+              preload
               className="w-full h-full object-cover object-top transition-all duration-700"
               style={{ filter: "grayscale(20%)" }}
             />
