@@ -135,7 +135,7 @@ export default function StructuredData() {
         "@type": "Organization",
         "name": "On Deck",
         "url": "https://joinodf.com",
-        "description": "On Deck Founder Fellowship (ODF), a selective global community of technology founders and early-stage builders. Fellow."
+        "description": "On Deck Founder Fellowship (ODF), a global community of technology founders and ambitious people. Fellow."
       },
       {
         "@type": "Organization",

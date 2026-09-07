@@ -151,8 +151,8 @@ export default function Home() {
           <a href="https://joinodf.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">
             On Deck
           </a>
-          {" "}(ODF), a global community of technology founders and
-          early-stage builders.
+          {" "}(ODF), a global community of technology founders and ambitious
+          people.
         </p>
       </section>
 
@@ -214,7 +214,7 @@ export default function Home() {
             "Trust, Financial & Cross-Border Infrastructure",
             "Distribution & Market Access",
             "Energy, Manufacturing & Productive Infrastructure",
-            "Knowledge, Venture & Capital Formation"
+            "Knowledge, Media, Venture & Capital Formation"
           ].map((area) => (
             <span key={area} className="inline-flex items-center px-3 py-1.5 rounded bg-accent/5 border border-accent/10 text-muted text-[13px] leading-none">
               {area}
