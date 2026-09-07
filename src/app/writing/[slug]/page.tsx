@@ -68,7 +68,7 @@ function renderBlock(block: ContentBlock, index: number) {
       );
     case "heading":
       return (
-        <h3
+        <h2
           key={index}
           className="text-[18px] font-medium text-foreground mt-8 mb-3 tracking-tight"
           dangerouslySetInnerHTML={{ __html: block.text }}
