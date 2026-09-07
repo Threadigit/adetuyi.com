@@ -151,8 +151,8 @@ export default function Home() {
           <a href="https://joinodf.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">
             On Deck
           </a>
-          {" "}(ODF), a global community of technology founders and
-          early-stage builders.
+          {" "}(ODF), a global community of technology founders and ambitious
+          people.
         </p>
       </section>
 
