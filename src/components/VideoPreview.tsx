@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
 export default function VideoPreview() {
@@ -24,12 +25,12 @@ export default function VideoPreview() {
       aria-label="Play Lagos Tech Fest 2023 video"
       className="group relative block w-full h-full overflow-hidden bg-foreground text-left"
     >
-      <img
+      <Image
         src="/lagos-tech-fest-preview.jpg"
         alt=""
-        loading="lazy"
-        decoding="async"
-        className="w-full h-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-[1.02]"
+        fill
+        sizes="(max-width: 680px) 100vw, 680px"
+        className="object-cover opacity-80 transition-transform duration-700 group-hover:scale-[1.02]"
       />
       <span className="absolute inset-0 bg-foreground/15" />
       <span className="absolute inset-0 flex items-center justify-center">

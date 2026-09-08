@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -93,12 +94,13 @@ function renderBlock(block: ContentBlock, index: number) {
     case "image":
       return (
         <figure key={index} className="my-8">
-          <img
+          <Image
             src={block.url}
             alt={block.alt}
-            loading="lazy"
-            decoding="async"
-            className="w-full rounded-xl border border-border"
+            width={block.width}
+            height={block.height}
+            sizes="(max-width: 680px) 100vw, 680px"
+            className="w-full h-auto rounded-xl border border-border"
           />
           {block.caption && (
             <figcaption className="text-center text-[13px] text-muted mt-3">
