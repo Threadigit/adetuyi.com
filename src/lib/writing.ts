@@ -190,12 +190,13 @@ const posts: Post[] = [
   },
   {
     slug: "effort-at-the-wrong-level",
-    title: "Effort at the Wrong Level",
-    excerpt: "Your income is shaped at seven levels at once, but at any given moment one of them is binding, and for most people it is not the one they are working on. A problem at the fifth cannot be solved by working harder at the first.",
+    title: "Effort at the Wrong Level, Part One",
+    excerpt: "Your income is shaped at seven levels at once, but at any given moment one of them is binding, and for most people it is not the one they are working on. Part one draws the map.",
     date: "2026-08-23",
     category: "Execution",
     ogImage: "/seven-levels-at-a-glance.png",
-    readingTime: "14 min read",
+    readingTime: "2 min read",
+    related: ["effort-at-the-wrong-level-part-two", "effort-at-the-wrong-level-part-three"],
     content: [
       { type: "paragraph", text: "In March, a central bank on another continent raises its interest rate. A trader in Kumasi does not read the announcement. An engineer in Nairobi does not either. Neither does a shop owner in Aba." },
       { type: "paragraph", text: "By June, all three have paid for it." },
@@ -210,6 +211,20 @@ const posts: Post[] = [
       { type: "paragraph", text: "To keep it concrete I will use one example. Between 2019 and 2022 I built an agent banking network, which meant a great deal of time beside plastic tables on Nigerian streets. An umbrella, a POS terminal, a cash box, a notebook with a biro tied to it. A woman sits behind it from six in the morning and serves two hundred customers on a good day." },
       { type: "paragraph", text: "I will call her Grace. The same table stands in Nairobi and Kumasi, and she has the same name in all three places." },
       { type: "image", url: "/seven-levels-at-a-glance.png", width: 1024, height: 1536, alt: "The seven levels at a glance. 1 Craft governs whether you can create value at all, and your problem is here if the work itself is not yet reliably good. 2 Offering and distribution governs whether others can reach that value, if the work is good and too few can find or afford it. 3 Enterprise governs whether it survives without you, if demand exceeds what you can personally serve. 4 Capital governs what your money costs and where it goes, if you know what to do next and cannot fund it. 5 Economy governs the conditions you trade in, if nothing internal changed and your numbers moved. 6 Institutions and rules govern what you are permitted to do, if what you want to do is restricted or too costly to permit. 7 Power governs how you and your country are priced, if you are judged by where you are rather than what you have done.", caption: "The seven levels at a glance." },
+      { type: "callout", text: "<strong>Part one of three.</strong> This part draws the map. <a href=\"/writing/effort-at-the-wrong-level-part-two\" class=\"link-hover text-accent\">Part two</a> works through the six levels that sit inside your own economy, craft up to rules. <a href=\"/writing/effort-at-the-wrong-level-part-three\" class=\"link-hover text-accent\">Part three</a> takes the level above them, where a country is priced before anyone looks at it, and closes with the test for finding which level is holding you." },
+    ]
+  },
+  {
+    slug: "effort-at-the-wrong-level-part-two",
+    title: "Effort at the Wrong Level, Part Two",
+    excerpt: "Craft, offering, enterprise, capital, economy and rules. The six levels inside your own economy, what actually moves at each one, and why working harder at the first cannot fix a problem sitting at the fourth.",
+    date: "2026-08-23",
+    category: "Execution",
+    ogImage: "/seven-levels-at-a-glance.png",
+    readingTime: "6 min read",
+    related: ["effort-at-the-wrong-level-part-three", "effort-at-the-wrong-level"],
+    content: [
+      { type: "paragraph", text: "One level binds at a time. <a href=\"/writing/effort-at-the-wrong-level\" class=\"link-hover text-accent\">Part one</a> drew the map and sat Grace behind her table. These are the first six, craft up to the rules of her trade, all of them inside one economy. Each closes on the same question, which is what the work actually is at that level." },
       { type: "heading", text: "1. Craft" },
       { type: "paragraph", text: "Grace counts cash faster than most people can follow. She identifies a false note by touch. She knows which customers return and which will argue over a hundred naira. Each evening she reconciles terminal against cash box against notebook, and where it does not balance the difference comes from her own money." },
       { type: "paragraph", text: "None of it is written down. If she travelled tomorrow nobody could run her table properly, because the knowledge sits in her hands rather than in a document. Economists call this human capital, value stored inside a person rather than in a machine. The same holds for a surgeon's judgement, a mechanic's ear and a farmer's sense of when the rain will come." },
@@ -246,6 +261,21 @@ const posts: Post[] = [
       { type: "paragraph", text: "Ghana ran the clearest version of the same thing. A levy on electronic transactions, introduced in 2022 to raise revenue, ended up charging the very mechanism that had brought millions of Ghanaians into the financial system. Its revenue projection proved so optimistic that the government cut the target by more than ninety per cent within the year, and the levy was repealed in 2025." },
       { type: "paragraph", text: "Regulation first appears as compliance. Examined properly it is market architecture. Licensing decides who may compete at all, and identity requirements decide who can be served in the first place. Policy is only what is written; institutions determine whether what is written is administered predictably. Two countries can adopt identical laws and produce entirely different economies." },
       { type: "paragraph", text: "<strong>The work here is</strong> obtaining a licence, partnering with someone who holds one, or engaging seriously with the people who write the rule. Persistence against a regulation is not resilience. It is expense." },
+      { type: "callout", text: "Kenya agent and commission figures from Business Daily Africa; mobile money account totals from the Communications Authority of Kenya; digital credit regulation from the Central Bank of Kenya. Nigerian macro figures from the National Bureau of Statistics and the Central Bank of Nigeria; agent and terminal counts and the single principal rule from CBN guidelines as reported by TechCabal. Ghana e-levy figures from ICTD analysis and the government\u2019s own revised revenue targets. Current as at August 2026." },
+      { type: "callout", text: "<strong>Part two of three.</strong> <a href=\"/writing/effort-at-the-wrong-level\" class=\"link-hover text-accent\">Part one</a> draws the map. <a href=\"/writing/effort-at-the-wrong-level-part-three\" class=\"link-hover text-accent\">Part three</a> takes power, the level above the rules, and the test for finding which level you are actually facing." },
+    ]
+  },
+  {
+    slug: "effort-at-the-wrong-level-part-three",
+    title: "Effort at the Wrong Level, Part Three",
+    excerpt: "Above the rules sits the question of who gets to write them, and what a country is charged before anyone looks at its businesses. The seventh level, how pressure still travels upward against it, and the test for finding your own.",
+    date: "2026-08-23",
+    category: "Execution",
+    ogImage: "/seven-levels-at-a-glance.png",
+    readingTime: "6 min read",
+    related: ["effort-at-the-wrong-level", "effort-at-the-wrong-level-part-two"],
+    content: [
+      { type: "paragraph", text: "<a href=\"/writing/effort-at-the-wrong-level-part-two\" class=\"link-hover text-accent\">Part two</a> worked through the six levels inside one economy. This is the level above all of them, the one that sets what a country is charged before anyone has looked at a single business inside it. It is also the level people either ignore or blame for everything." },
       { type: "heading", text: "7. Power" },
       { type: "paragraph", text: "Rules are written by people who can be named. Above them sits the question of what those people are constrained by." },
       { type: "paragraph", text: "Grace's terminal was manufactured abroad and priced in dollars. The capital that funded her float was raised in London or Nairobi or Washington, by people who discounted the entire opportunity before reading a single page concerning her." },
@@ -274,7 +304,8 @@ const posts: Post[] = [
       { type: "paragraph", text: "Give Grace a policy rate of zero and she is still capped by a hundred naira fee on a street with three other agents on it. The rate was real. It was not what was holding her. Run the same question on whatever you have been blaming, honestly, and if removing it would not free you, then it was not your binding constraint and something beneath it is." },
       { type: "paragraph", text: "That question is Goldratt's, from the theory of constraints, and it is the whole method. Everything above it is a map of the places to point it." },
       { type: "paragraph", text: "Effort applied at the wrong level closely resembles progress. It produces very little." },
-      { type: "callout", text: "Kenya agent and commission figures from Business Daily Africa; mobile money account totals from the Communications Authority of Kenya; digital credit regulation from the Central Bank of Kenya. Nigerian macro figures from the National Bureau of Statistics and the Central Bank of Nigeria; agent and terminal counts and the single principal rule from CBN guidelines as reported by TechCabal. Ghana e-levy figures from ICTD analysis and the government's own revised revenue targets. Sovereign borrowing comparisons from the OECD Africa Capital Markets Report 2025, the UNDP, the IMF and Africa Finance Corporation. Current as at August 2026." },
+      { type: "callout", text: "Sovereign borrowing comparisons from the OECD Africa Capital Markets Report 2025, the UNDP, the IMF and Africa Finance Corporation. Nigerian remittance and circular figures from the Central Bank of Nigeria. Current as at August 2026." },
+      { type: "callout", text: "<strong>Part three of three.</strong> <a href=\"/writing/effort-at-the-wrong-level\" class=\"link-hover text-accent\">Part one</a> draws the map. <a href=\"/writing/effort-at-the-wrong-level-part-two\" class=\"link-hover text-accent\">Part two</a> covers craft, offering, enterprise, capital, economy and rules, the six levels inside one economy." },
     ]
   },
   {
@@ -418,7 +449,7 @@ const posts: Post[] = [
     excerpt: "The businesses that became impossible to displace were never the ones with the cleverest product. They were the ones everyone else needed in order to function. Real power, at the level of a nation or a single founder, is systemic utility.",
     date: "2026-07-20",
     category: "Venture Building",
-    readingTime: "7 min read",
+    readingTime: "6 min read",
     content: [
       { type: "paragraph", text: "Before Prembly, I spent a defining stretch of my career building distribution at Moniepoint. We were putting banking and payment terminals into the hands of merchants across Nigeria that the formal system had ignored for decades. Somewhere in that work, a lesson landed that I have not been able to unsee." },
       { type: "paragraph", text: "The businesses that became impossible to displace were never the ones with the cleverest product. They were the ones everyone else needed in order to function. Take them out of the chain, and the chain stopped moving." },
