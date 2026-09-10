@@ -109,6 +109,27 @@ function renderBlock(block: ContentBlock, index: number) {
           )}
         </figure>
       );
+    case "video":
+      return (
+        <figure key={index} className="my-8">
+          <video
+            controls
+            playsInline
+            preload="none"
+            poster={block.poster}
+            aria-label={block.name}
+            className="w-full aspect-video rounded-xl border border-border bg-foreground"
+          >
+            <source src={block.url} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          {block.caption && (
+            <figcaption className="text-center text-[13px] text-muted mt-3">
+              {block.caption}
+            </figcaption>
+          )}
+        </figure>
+      );
     case "youtube":
       return (
         <div key={index} className="my-8 aspect-video rounded-xl overflow-hidden border border-border">
@@ -215,6 +236,23 @@ export default async function WritingPost({ params }: PageProps) {
       },
     }));
 
+  const hostedVideoSchemas = post.content
+    .filter((block): block is Extract<ContentBlock, { type: "video" }> => block.type === "video")
+    .map((video) => ({
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "name": video.name,
+      "description": video.description,
+      "thumbnailUrl": [absoluteUrl(video.poster)],
+      "uploadDate": video.uploadDate,
+      "contentUrl": absoluteUrl(video.url),
+      "url": `${baseUrl}/writing/${post.slug}`,
+      "isPartOf": {
+        "@type": "BlogPosting",
+        "@id": `${baseUrl}/writing/${post.slug}`,
+      },
+    }));
+
   return (
     <>
       <script
@@ -232,6 +270,15 @@ export default async function WritingPost({ params }: PageProps) {
       {videoSchemas.map((videoSchema) => (
         <script
           key={videoSchema.embedUrl}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(videoSchema).replace(/</g, "\\u003c"),
+          }}
+        />
+      ))}
+      {hostedVideoSchemas.map((videoSchema) => (
+        <script
+          key={videoSchema.contentUrl}
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(videoSchema).replace(/</g, "\\u003c"),

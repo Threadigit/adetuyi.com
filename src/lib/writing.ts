@@ -5,6 +5,16 @@ export type ContentBlock =
   | { type: "callout"; text: string }
   | { type: "image"; url: string; alt: string; width: number; height: number; caption?: string }
   | {
+      /** Self-hosted video in /public. Renders with controls, no autoplay. */
+      type: "video";
+      url: string;
+      poster: string;
+      name: string;
+      description: string;
+      uploadDate: string;
+      caption?: string;
+    }
+  | {
       type: "youtube";
       videoId: string;
       name: string;
@@ -31,6 +41,38 @@ export interface Post {
 // They'll appear in reverse-chronological order automatically
 
 const posts: Post[] = [
+  {
+    slug: "everything-made-in-one-shot-has-a-look",
+    title: "Everything Made in One Shot Has a Look",
+    excerpt: "The poster with the gradient nobody chose. The deck where every slide has the same rhythm and none of them has a point. It looks finished. Nobody finished it. Two rules fix that, and AI did not invent the problem, it made it free.",
+    date: "2026-09-10",
+    category: "Execution",
+    ogImage: "/one-shot-og.jpg",
+    readingTime: "3 min read",
+    related: ["lazy-thinking-is-killing-your-company", "effort-at-the-wrong-level"],
+    content: [
+      { type: "paragraph", text: "You can spot it now. The poster with the gradient nobody chose. The deck where every slide has the same rhythm and none of them has a point. The proposal somebody forwarded you without reading it, because the answer does not quite match the question you asked. It looks finished. Nobody finished it." },
+      { type: "paragraph", text: "That is raw export, and no tool is going to fix it. Two rules do." },
+      {
+        type: "video",
+        url: "/one-shot.mp4",
+        poster: "/one-shot-poster.jpg",
+        name: "One poster. Twelve weeks.",
+        description: "The same weekly poster made twelve times. Rule one, nothing ships on the first pass, and the three passes are structure, argument and surface. Rule two, the next one is never the same one, one improvement a week until it gets written down as the standard. Twelve weeks later, same person and same hours, with quality compounding on one path and flat on the other.",
+        uploadDate: "2026-09-10",
+        caption: "How the same work compounds, or fails to.",
+      },
+      { type: "paragraph", text: "The first is that your first version does not get published. It gets three passes before anybody sees it. This is not perfectionism. Perfectionism has no exit, it keeps you circling because you are afraid of being judged. A rule with a number tells you when you are allowed to stop. Three passes and out, unless a pass uncovers something structurally broken, in which case that pass does not count and you go again." },
+      { type: "paragraph", text: "They have to be three different passes. Three rounds of moving commas is one pass repeated. Structure, is this the right shape. Argument, does it hold. Surface, the font, the spacing, the line one word too long. It runs the same on a term sheet, a sermon, a product demo, a pull request. Most people never see the distance between version one and version three because they never make version three. Then they compare their first attempt with somebody else's third and conclude the other person is more talented." },
+      { type: "paragraph", text: "The second rule is for anything you do repeatedly. Treat every repetition as an improvement on the one before it. The same weekly report, minus the section nobody reads. The same pitch, minus the slide that made three prospects go quiet. The same invoice, the same standup, the same onboarding call. This is where teams leak, not in the big rebuild everybody can see, but in the fifty repetitions nobody thought to look at. One caution. Not every recurring task deserves improvement. Some deserve deletion. Perfecting a report nobody reads is the most expensive form of diligence there is." },
+      { type: "paragraph", text: "Then the part people get wrong. Standardisation gets treated as an end state, you work out the right way, write it down, freeze it. A standard is not a finish line. It is a checkpoint, where you deposit what you learned so the next person does not learn it again. Optimisation carries on underneath, and when it produces something better, the standard moves. Anybody who says those two are opposites has confused a bank with a tomb." },
+      { type: "paragraph", text: "That is also the line between an excellent person and an excellent culture. An individual running both rules gets better alone. A culture only gets it when the improvement survives handoff. Whoever solved the thing has to write it into the template, or they leave, the next person restarts at week one, and you have capable people repeating discovery instead of compounding it." },
+      { type: "paragraph", text: "This matters more now, because AI did not invent one shot work. It made it free. The cost of producing something that looks finished fell to nothing, the volume exploded, and hardly any of it has had a second pass. The tools did raise the floor, a real gain for anyone who could never afford a designer, but a raised floor is not a standard. It is a starting line everybody shares, which is why standing on it is worth nothing." },
+      { type: "paragraph", text: "Point a multiplier at a careless process and you get carelessness at scale and at speed. Point it at a disciplined one and you get three passes in the time you used to spend on one. It does not hand you taste you never had. It exports the taste you already have, for everyone to see. Take away the excuse of time and what is left standing is a person's actual standard." },
+      { type: "paragraph", text: "Three passes before it ships. Every repetition better than the last one. Bank what you learn so the next person starts where you stopped." },
+      { type: "paragraph", text: "That is not a productivity system. It is what it now costs to be worth reading." },
+    ]
+  },
   {
     slug: "three-ingredients-for-sound-judgement",
     title: "Three Ingredients for Sound Judgement",
