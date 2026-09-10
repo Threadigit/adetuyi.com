@@ -241,7 +241,7 @@ const posts: Post[] = [
     readingTime: "6 min read",
     related: ["effort-at-the-wrong-level-part-three", "effort-at-the-wrong-level"],
     content: [
-      { type: "paragraph", text: "Only one level binds at a time. In <a href=\"/writing/effort-at-the-wrong-level\" class=\"link-hover text-accent\">part one</a> I set out all seven and left Grace behind her table. Now the walking. These are the first six, all of them inside a single economy, and each one ends the same way, with what the work actually is at that level." },
+      { type: "paragraph", text: "Back to Grace and her table, where <a href=\"/writing/effort-at-the-wrong-level\" class=\"link-hover text-accent\">part one</a> left her. Seven levels shape what she earns and only one of them binds at a time. The first six sit inside her own economy, so start at the bottom, with the part she controls completely." },
       { type: "heading", text: "1. Craft" },
       { type: "paragraph", text: "Grace counts cash faster than most people can follow. She identifies a false note by touch. She knows which customers return and which will argue over a hundred naira. Each evening she reconciles terminal against cash box against notebook, and where it does not balance the difference comes from her own money." },
       { type: "paragraph", text: "None of it is written down. If she travelled tomorrow nobody could run her table properly, because the knowledge sits in her hands rather than in a document. Economists call this human capital, value stored inside a person rather than in a machine. The same holds for a surgeon's judgement, a mechanic's ear and a farmer's sense of when the rain will come." },
