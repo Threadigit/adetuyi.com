@@ -44,7 +44,7 @@ const posts: Post[] = [
   {
     slug: "everything-made-in-one-shot-has-a-look",
     title: "Everything Made in One Shot Has a Look",
-    excerpt: "The poster with the gradient nobody chose. The deck where every slide has the same rhythm and none of them has a point. It looks finished. Nobody finished it. Two rules fix that, and AI did not invent the problem, it made it free.",
+    excerpt: "The poster with the gradient nobody chose. The deck where every slide has the same rhythm and none of them has a point. It looks finished. Nobody finished it. Two rules fix that, and neither one can give you a position of your own. AI did not invent the problem, it made it free.",
     date: "2026-09-10",
     category: "Execution",
     ogImage: "/one-shot-og.jpg",
