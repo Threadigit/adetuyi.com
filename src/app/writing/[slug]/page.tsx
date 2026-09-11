@@ -23,6 +23,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const image = absoluteUrl(post.ogImage ?? "/tolu-og.jpg");
   const canonical = `${siteUrl}/writing/${post.slug}`;
   const publishedTime = toIsoDateTime(post.date);
+  const modifiedTime = toIsoDateTime(post.modifiedDate ?? post.date);
 
   return {
     title,
@@ -36,6 +37,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url: canonical,
       type: "article",
       publishedTime,
+      modifiedTime,
       authors: ["Tolu Adetuyi"],
       images: [
         {
@@ -160,6 +162,7 @@ export default async function WritingPost({ params }: PageProps) {
   const baseUrl = siteUrl;
   const image = absoluteUrl(post.ogImage ?? "/tolu-og.jpg");
   const publishedTime = toIsoDateTime(post.date);
+  const modifiedTime = toIsoDateTime(post.modifiedDate ?? post.date);
   const related = getRelatedPosts(post.slug);
 
   const blogPostingSchema = {
@@ -179,7 +182,7 @@ export default async function WritingPost({ params }: PageProps) {
       "url": baseUrl,
     },
     "datePublished": publishedTime,
-    "dateModified": publishedTime,
+    "dateModified": modifiedTime,
     "url": `${baseUrl}/writing/${post.slug}`,
     "mainEntityOfPage": {
       "@type": "WebPage",
