@@ -197,12 +197,12 @@ export default function Home() {
             <span className="text-muted text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Energy, Manufacturing &amp; Physical Infrastructure</span>
           </div>
           <p className="border-t border-accent/20 pt-4 text-[13px] leading-relaxed text-muted">
-            I also curate{" "}
+            I curate{" "}
             <a href="https://www.chroniclesofinnovation.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">Chronicles of Innovation</a>
             {" "}to show how the world was built, and{" "}
             <a href="https://zerotoact.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">ZeroToAct</a>
-            &apos;s weekly Signals to show what is changing now and help people
-            act on it.
+            &apos;s weekly Signals to show what is changing now, so people can
+            learn from the past and act in the present.
           </p>
         </div>
       </section>
