@@ -52,7 +52,8 @@ const posts: Post[] = [
     readingTime: "6 min read",
     related: ["the-wire-transfer-that-never-arrived", "why-trust-infrastructure-matters"],
     content: [
-      { type: "paragraph", text: "I am Nigerian, and I run Prembly, a technology company built across the United States, Nigeria and Kenya, with teams and operating partnerships in other markets." },
+      { type: "paragraph", text: "I am Nigerian. I live in the United States and run Prembly, a technology company built across the United States, Nigeria and Kenya, with teams and operating partnerships in other markets." },
+      { type: "paragraph", text: "I do not see one as my market and the others as foreign. I come from one, live in another and do business across all of them." },
       { type: "paragraph", text: "Most weeks, I sit on both sides of the same failed transaction." },
       { type: "paragraph", text: "On one side is a compliance officer in the United States who will decline a legitimate customer this morning without ever knowing she did it. The file shows a foreign passport, an address her system cannot resolve and a phone number that returns nothing from any database she can reach. Her tooling scores the applicant as unverifiable. Unverifiable becomes risky, and risky becomes declined. She was not careless. She used every tool she had." },
       { type: "paragraph", text: "On the other side is the applicant, who is exactly who she says she is and now knows that something is wrong, but not what." },
@@ -73,11 +74,11 @@ const posts: Post[] = [
       { type: "paragraph", text: "A counterparty in Lagos or Nairobi does not enter the system as a low score or a flagged profile. She enters as a blank. When a risk engine meets a blank, it does the responsible thing available to it. It says no." },
       { type: "paragraph", text: "The reverse is just as real. A Nigerian company assessing an unfamiliar overseas supplier may have little more than a website, a company name and a bank account. The institution is sophisticated. Its visibility is not." },
       { type: "quote", text: "Neither side is facing only a fraud problem. Both are facing a visibility problem wearing a fraud problem's clothes." },
-      { type: "paragraph", text: "There is a lazy version of this argument in which one country is careless and another is criminal. That version is wrong. American caution is earned. So is the frustration on my side of the water. Put a wall between two markets and the honest majority on both sides pays for it, while the dishonest few keep working because they were never relying on being verified." },
+      { type: "paragraph", text: "There is a lazy version of this argument in which one country is careless and another is criminal. That version is wrong. American caution is earned. So is the frustration of a legitimate participant whom the system cannot read. Put a wall between two markets and the honest majority on both sides pays for it, while the dishonest few keep working because they were never relying on being verified." },
       { type: "paragraph", text: "The failure is informational, not moral. That kind of failure can be fixed." },
 
       { type: "heading", text: "Trust should travel without exporting the record" },
-      { type: "paragraph", text: "The shape of the fix matters. Prembly operates in its markets with local teams, under local law and in contact with local institutions. That is a design decision, not a holding-structure detail." },
+      { type: "paragraph", text: "The shape of the fix matters. Prembly operates across these markets with local teams, under local law and in contact with local institutions. That is a design decision, not a holding-structure detail." },
       { type: "paragraph", text: "A country should not need to export a citizen registry before its citizens or businesses can be trusted abroad. A verification question can be checked locally against a source authorised to hold the record. The relying institution should receive the verified result and only the evidence it is lawfully entitled to use. The underlying national record remains where it belongs." },
       { type: "paragraph", text: "This is how sovereignty and access can work together. A country can keep control of its data while allowing its people and businesses to carry trust across a border. The process needs consent or another lawful basis, proportional disclosure and an audit trail. Access without those protections is not trust infrastructure." },
       { type: "paragraph", text: "What we are building is a trust layer in the literal sense. A shared way for two parties, whether in the same jurisdiction or different ones, to establish that the other is real, accountable and has a history." },
@@ -88,8 +89,8 @@ const posts: Post[] = [
       { type: "paragraph", text: "That order concerns criminal networks, not customer onboarding. But the underlying admission matters. Public systems cannot identify every cross-border actor from domestic records alone. They need lawful connections to capabilities and evidence outside their immediate reach. Regulators in our markets have been moving in the same direction through stronger identity, ownership and transaction-monitoring frameworks." },
 
       { type: "heading", text: "Who pays the opacity tax" },
-      { type: "paragraph", text: "One objection deserves an answer. Making a market readable to foreign institutions can sound like processing that market for somebody else's convenience, and history earns the suspicion." },
-      { type: "paragraph", text: "But look at who pays the opacity tax. It is not the foreign firm, which can take its business elsewhere. It is the Lagos software company that cannot open an overseas merchant account. It is the Nairobi exporter asked for full prepayment because nobody will underwrite him. It is the honest customer who is declined without being told what evidence was missing." },
+      { type: "paragraph", text: "One objection deserves an answer. Making one market readable to institutions in another can sound like processing that market for somebody else's convenience, and history earns the suspicion." },
+      { type: "paragraph", text: "But look at who pays the opacity tax. It is not the distant institution, which can take its business elsewhere. It is the Lagos software company that cannot open an overseas merchant account. It is the Nairobi exporter asked for full prepayment because nobody will underwrite him. It is the honest customer who is declined without being told what evidence was missing." },
       { type: "quote", text: "Opacity is not protection when honest participants are the people trapped behind it." },
       { type: "paragraph", text: "A business that can be seen accurately can be assessed fairly. That is not exposure. It is admission on evidence rather than geography." },
 
