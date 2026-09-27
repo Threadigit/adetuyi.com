@@ -43,6 +43,63 @@ export interface Post {
 
 const posts: Post[] = [
   {
+    slug: "the-other-side-of-the-transaction",
+    title: "The Other Side of the Transaction",
+    excerpt: "Why legitimate customers can become invisible across borders, and how local trust infrastructure can connect markets without exporting their records.",
+    date: "2026-09-27",
+    category: "Trust Infrastructure",
+    ogImage: "/other-side-transaction-og.jpg",
+    readingTime: "6 min read",
+    related: ["the-wire-transfer-that-never-arrived", "why-trust-infrastructure-matters"],
+    content: [
+      { type: "paragraph", text: "I am Nigerian, and I run Prembly, a technology company built across the United States, Nigeria and Kenya, with teams and operating partnerships in other markets." },
+      { type: "paragraph", text: "Most weeks, I sit on both sides of the same failed transaction." },
+      { type: "paragraph", text: "On one side is a compliance officer in the United States who will decline a legitimate customer this morning without ever knowing she did it. The file shows a foreign passport, an address her system cannot resolve and a phone number that returns nothing from any database she can reach. Her tooling scores the applicant as unverifiable. Unverifiable becomes risky, and risky becomes declined. She was not careless. She used every tool she had." },
+      { type: "paragraph", text: "On the other side is the applicant, who is exactly who she says she is and now knows that something is wrong, but not what." },
+      { type: "image", url: "/other-side-transaction-og.jpg", width: 1200, height: 630, alt: "Two business participants in different countries connected by a verified trust signal while their local records remain on each side", caption: "Trust should cross a border without exporting the underlying record." },
+
+      { type: "heading", text: "Fraud runs in both directions" },
+      { type: "paragraph", text: "The fraud that provoked this caution is real, and it runs both ways. Americans lose money to counterparties abroad who do not exist. Businesses in Lagos and Nairobi lose deposits to overseas suppliers who do not exist either. Anyone who tells you this only moves in one direction is selling you something." },
+      { type: "paragraph", text: "The FBI's <a href=\"https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link-hover text-accent\">Internet Crime Complaint Center recorded 1,008,597 complaints and $20.877 billion in reported losses in 2025</a>. Losses rose 26 per cent in one year. Those are only the incidents somebody reported to a federal website." },
+      { type: "paragraph", text: "None of those figures captures the quieter loss. The legitimate transaction that never happened because one party could not tell a good counterparty from a bad one." },
+
+      { type: "heading", text: "The cost nobody records" },
+      { type: "paragraph", text: "It is the payroll platform that will not onboard a contractor in Lagos. The exchange that will not support a local-currency off-ramp. The marketplace that blocks a whole country because a handful of sellers burned it. Each can be a rational decision made with the information available." },
+      { type: "paragraph", text: "Together, they create a strategic cost that rarely appears in a fraud report. When a company cannot reliably verify a counterparty in another market, it does not only avoid a possible loss. It gives up revenue, suppliers, talent and market knowledge. A competitor willing to invest in local understanding becomes the default, and returning later costs more." },
+
+      { type: "heading", text: "The border is where resolution disappears" },
+      { type: "paragraph", text: "Most fraud controls lose resolution at the border." },
+      { type: "paragraph", text: "An American institution can often verify an American with extraordinary precision. Credit history, income data, device history, company records and court filings can all contribute to the picture. Much of that evidence is unavailable abroad or cannot be lawfully queried from another jurisdiction." },
+      { type: "paragraph", text: "A counterparty in Lagos or Nairobi does not enter the system as a low score or a flagged profile. She enters as a blank. When a risk engine meets a blank, it does the responsible thing available to it. It says no." },
+      { type: "paragraph", text: "The reverse is just as real. A Nigerian company assessing an unfamiliar overseas supplier may have little more than a website, a company name and a bank account. The institution is sophisticated. Its visibility is not." },
+      { type: "quote", text: "Neither side is facing only a fraud problem. Both are facing a visibility problem wearing a fraud problem's clothes." },
+      { type: "paragraph", text: "There is a lazy version of this argument in which one country is careless and another is criminal. That version is wrong. American caution is earned. So is the frustration on my side of the water. Put a wall between two markets and the honest majority on both sides pays for it, while the dishonest few keep working because they were never relying on being verified." },
+      { type: "paragraph", text: "The failure is informational, not moral. That kind of failure can be fixed." },
+
+      { type: "heading", text: "Trust should travel without exporting the record" },
+      { type: "paragraph", text: "The shape of the fix matters. Prembly operates in its markets with local teams, under local law and in contact with local institutions. That is a design decision, not a holding-structure detail." },
+      { type: "paragraph", text: "A country should not need to export a citizen registry before its citizens or businesses can be trusted abroad. A verification question can be checked locally against a source authorised to hold the record. The relying institution should receive the verified result and only the evidence it is lawfully entitled to use. The underlying national record remains where it belongs." },
+      { type: "paragraph", text: "This is how sovereignty and access can work together. A country can keep control of its data while allowing its people and businesses to carry trust across a border. The process needs consent or another lawful basis, proportional disclosure and an audit trail. Access without those protections is not trust infrastructure." },
+      { type: "paragraph", text: "What we are building is a trust layer in the literal sense. A shared way for two parties, whether in the same jurisdiction or different ones, to establish that the other is real, accountable and has a history." },
+      { type: "paragraph", text: "Interoperable trade needs it, and so does every domestic market where the same opacity exists. Payments infrastructure cannot create it by itself. Moving money and knowing who is on the other end are different problems." },
+
+      { type: "heading", text: "Policy is beginning to recognise the same limit" },
+      { type: "paragraph", text: "A <a href=\"https://www.whitehouse.gov/presidential-actions/2026/03/combating-cybercrime-fraud-and-predatory-schemes-against-american-citizens/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link-hover text-accent\">March 2026 United States executive order on cybercrime and fraud</a> directs federal agencies to use technical capabilities, threat intelligence and operational insight from commercial cybersecurity firms and other non-federal entities to improve attribution, tracking and disruption." },
+      { type: "paragraph", text: "That order concerns criminal networks, not customer onboarding. But the underlying admission matters. Public systems cannot identify every cross-border actor from domestic records alone. They need lawful connections to capabilities and evidence outside their immediate reach. Regulators in our markets have been moving in the same direction through stronger identity, ownership and transaction-monitoring frameworks." },
+
+      { type: "heading", text: "Who pays the opacity tax" },
+      { type: "paragraph", text: "One objection deserves an answer. Making a market readable to foreign institutions can sound like processing that market for somebody else's convenience, and history earns the suspicion." },
+      { type: "paragraph", text: "But look at who pays the opacity tax. It is not the foreign firm, which can take its business elsewhere. It is the Lagos software company that cannot open an overseas merchant account. It is the Nairobi exporter asked for full prepayment because nobody will underwrite him. It is the honest customer who is declined without being told what evidence was missing." },
+      { type: "quote", text: "Opacity is not protection when honest participants are the people trapped behind it." },
+      { type: "paragraph", text: "A business that can be seen accurately can be assessed fairly. That is not exposure. It is admission on evidence rather than geography." },
+
+      { type: "heading", text: "The other side should not be a blank" },
+      { type: "paragraph", text: "I want an economy where honest participants can transact safely regardless of where they were born, and where charlatans on either side run out of room. That is not a sentiment. It is an infrastructure problem, and infrastructure problems can be solved." },
+      { type: "paragraph", text: "We are building from inside the markets themselves because there is nowhere else this can be built properly. Local evidence must remain grounded in local law, but the trust it creates should be able to travel." },
+      { type: "paragraph", text: "The other side of a transaction should not be a blank. It should be another accountable participant, visible enough to trust and protected enough to remain sovereign." },
+    ],
+  },
+  {
     slug: "everything-made-in-one-shot-has-a-look",
     title: "Everything Made in One Shot Has a Look",
     excerpt: "The poster with the gradient nobody chose. The deck where every slide has the same rhythm and none of them has a point. It looks finished. Nobody finished it. Two rules fix that, and neither one can put you in the work. AI did not invent the problem, it made it free.",
