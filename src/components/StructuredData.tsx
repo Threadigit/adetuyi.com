@@ -68,12 +68,6 @@ export default function StructuredData() {
       },
       {
         "@type": "Article",
-        "headline": "Leadership, Innovation, and Industry Impact: The Work of Tolu Adetuyi at Prembly",
-        "url": "https://guardian.ng/news/leadership-innovation-and-industry-impact-the-work-of-tolu-adetuyi-at-prembly/",
-        "publisher": { "@type": "Organization", "name": "The Guardian Nigeria" }
-      },
-      {
-        "@type": "Article",
         "headline": "Nigeria's Prembly Launches Shared Open-Source Database",
         "url": "https://techcabal.com/2026/03/10/nigerias-prembly-launches-shared-open-source-database/",
         "publisher": { "@type": "Organization", "name": "TechCabal" }

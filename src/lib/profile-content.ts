@@ -70,30 +70,9 @@ export const pressEntries: ProfileEntry[] = [
   },
   {
     title:
-      "Tolu Adetuyi, the Innovator Behind Africa's Fintech and Digital Compliance Infrastructure",
-    meta: "Nigerian Tribune · 2025",
-    href: "https://tribuneonlineng.com/tolu-adetuyi-the-innovator-behind-africas-fintech-digital-compliance-infrastructure/",
-    external: true,
-  },
-  {
-    title:
       "Strategies for Combating Synthetic Identity Fraud and Enhancing Financial Ecosystem Security",
     meta: "IJRES · 2024",
     href: "https://www.ijres.org/papers/Volume-12/Issue-4/1204280292.pdf",
-    external: true,
-  },
-  {
-    title:
-      "Leadership, Innovation, and Industry Impact: The Work of Tolu Adetuyi at Prembly",
-    meta: "The Guardian · 2023",
-    href: "https://guardian.ng/news/leadership-innovation-and-industry-impact-the-work-of-tolu-adetuyi-at-prembly/",
-    external: true,
-  },
-  {
-    title:
-      "Inside Moniepoint's Rise and Tolu Adetuyi's Impact on Nigeria's Financial Landscape",
-    meta: "Vanguard · 2023",
-    href: "https://www.vanguardngr.com/2023/05/inside-moniepoints-rise-how-tolu-adetuyis-leadership-transformed-nigerias-financial-landscape/",
     external: true,
   },
   {
