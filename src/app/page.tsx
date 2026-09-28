@@ -182,20 +182,6 @@ export default function Home() {
             </div>
             <span className="text-muted text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Identity, Fraud Prevention & Compliance</span>
           </div>
-          <div className="border-t border-accent/20" />
-
-          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-0.5">
-            <div className="flex flex-wrap items-center gap-2">
-              <a
-                href="/thesis/buildx-fund-1"
-                className="text-[15px] font-medium link-hover whitespace-nowrap"
-              >
-                BuildX Capital
-              </a>
-              <span className="text-[11px] uppercase tracking-widest text-accent font-medium border border-accent/25 rounded-full px-2 py-0.5 whitespace-nowrap">Fund 1 In Formation</span>
-            </div>
-            <span className="text-muted text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Energy, Manufacturing &amp; Physical Infrastructure</span>
-          </div>
           <p className="border-t border-accent/20 pt-4 text-[13px] leading-relaxed text-muted">
             I curate{" "}
             <a href="https://www.chroniclesofinnovation.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">Chronicles of Innovation</a>
@@ -206,6 +192,26 @@ export default function Home() {
           </p>
         </div>
       </section>
+
+      {/* ── In View ── */}
+      <section className="mb-16 animate-fade-up delay-300">
+        <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
+          In View
+        </h2>
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-0.5">
+          <div className="flex flex-wrap items-center gap-2">
+            <Link
+              href="/thesis/buildx-fund-1"
+              className="text-[15px] font-medium link-hover whitespace-nowrap"
+            >
+              BuildX Capital
+            </Link>
+            <span className="text-[11px] uppercase tracking-widest text-accent font-medium border border-accent/25 rounded-full px-2 py-0.5 whitespace-nowrap">Fund 1 In Formation</span>
+          </div>
+          <span className="text-muted text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Energy, Manufacturing &amp; Physical Infrastructure</span>
+        </div>
+      </section>
+
       {/* ── Core Areas of Focus ── */}
       <section className="mb-16 animate-fade-up delay-300">
         <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
