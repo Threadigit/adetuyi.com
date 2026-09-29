@@ -158,7 +158,7 @@ export default function Home() {
       </section>
 
       {/* ── Current Work ── */}
-      <section className="mb-16 animate-fade-up delay-300">
+      <section className="mb-10 animate-fade-up delay-300">
         <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
           Current Work
         </h2>
