@@ -48,6 +48,7 @@ const posts: Post[] = [
     excerpt: "Reform has begun to correct distortions, but investor interest is not yet prosperity. A letter on what would make building easier, from reliable power and credible lending records to letting competent people serve.",
     date: "2026-10-01",
     category: "Nation Building",
+    ogImage: "/nigeria-at-66-og.jpg",
     readingTime: "4 min read",
     content: [
       { type: "paragraph", text: "Dear Nigeria," },
