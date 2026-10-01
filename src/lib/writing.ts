@@ -47,7 +47,7 @@ const posts: Post[] = [
     title: "A Letter to Nigeria at 66",
     excerpt: "Reform has begun to correct distortions, but investor interest is not yet prosperity. A letter on what would make building easier, from reliable power and credible lending records to letting competent people serve.",
     date: "2026-10-01",
-    category: "Capital Formation",
+    category: "Nation Building",
     readingTime: "4 min read",
     content: [
       { type: "paragraph", text: "Dear Nigeria," },
