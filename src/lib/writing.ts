@@ -43,6 +43,29 @@ export interface Post {
 
 const posts: Post[] = [
   {
+    slug: "a-letter-to-nigeria-at-66",
+    title: "A Letter to Nigeria at 66",
+    excerpt: "Reform has begun to correct distortions, but investor interest is not yet prosperity. A letter on what would make building easier, from reliable power and credible lending records to letting competent people serve.",
+    date: "2026-10-01",
+    category: "Capital Formation",
+    readingTime: "4 min read",
+    content: [
+      { type: "paragraph", text: "Dear Nigeria," },
+      { type: "paragraph", text: "I write as your son and as someone who has spent much of his working life building businesses and systems. That work has taught me that talent and effort need something solid beneath them. People need reliable power, clear rules, access to markets, and a fair chance to finance good ideas." },
+      { type: "paragraph", text: "We should speak honestly about the reforms underway. Removing the fuel subsidy and changing the exchange-rate system have been painful, but they have also begun to correct distortions and restore investor interest. Capital is returning to parts of the Nigerian market, including government debt and infrastructure." },
+      { type: "paragraph", text: "That progress matters. But investor interest is not yet prosperity for ordinary Nigerians. When families still struggle with the cost of food, transport, and power, reform has not finished its work. We must turn a more credible investment environment into businesses, jobs, and lower costs people can actually feel." },
+      { type: "paragraph", text: "I do not believe another round of palliatives is the answer. They have too often been temporary, poorly targeted, or disconnected from the reasons life is so expensive. The lasting answer is to make it easier and cheaper to produce, move, and sell what Nigerians need. That means dependable power, better links between farms and markets, storage that prevents food from going to waste, and rules that do not change without warning." },
+      { type: "paragraph", text: "We must also fast-track the systems that make credible lending possible. Many Nigerian businesses have customers and a real ability to repay, but lenders cannot easily verify their identity, income, transactions, assets, or contracts. Build reliable business and credit records. Make land and other collateral easier to verify. Improve credit information and make commercial disputes faster to resolve. When lenders can see and trust the evidence, more businesses can qualify for financing to grow, hire, and produce." },
+      { type: "paragraph", text: "Prosperity also depends on the values that make trust possible. We must restore the habits of keeping our word, respecting honest work, taking responsibility for one another, and treating public resources as a shared trust. We will not recover these values through speeches about a better past. We recover them when our homes, businesses, and public institutions practice them, and when our systems reward integrity." },
+      { type: "paragraph", text: "Nigeria is not one economy repeated across every state. Each state has its own strengths and obstacles. We must look beyond the limitations we have learned to accept and examine the structure that keeps producing them. What can people build in each place? What prevents it from reaching customers? What expertise and investment would remove that barrier?" },
+      { type: "paragraph", text: "That work requires qualified people from across many fields, including energy, agriculture, finance, logistics, law, public health, education, and technology. Government should invite capable Nigerians to serve even when they have no interest in party politics. Let them be chosen for their competence, given clear mandates, and allowed to do the work without being turned into political props or punished for partisan reasons. Elected leaders must set direction, but expertise must have room to serve." },
+      { type: "paragraph", text: "At sixty-six, we should measure reform by what changes in daily life. Can a business keep its doors open and pay its workers? Can food get from farm to market at a reasonable cost? Can a promising company borrow on the strength of its records and its customers? Can people trust that the rules will still be there tomorrow?" },
+      { type: "paragraph", text: "Our people have shown that they can build. The country’s task is to make building less difficult and more rewarding. That is how resilience becomes productivity, productivity becomes competitive businesses, and competitive businesses create the jobs and income that allow prosperity to spread." },
+      { type: "paragraph", text: "Happy Independence Day, Nigeria." },
+      { type: "paragraph", text: "Your son,<br>Tolu Adetuyi" },
+    ]
+  },
+  {
     slug: "the-other-side-of-the-transaction",
     title: "The Other Side of the Transaction",
     excerpt: "Why legitimate customers can become invisible across borders, and how local trust infrastructure can connect markets without exporting their records.",
