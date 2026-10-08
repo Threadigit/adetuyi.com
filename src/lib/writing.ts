@@ -110,7 +110,7 @@ const posts: Post[] = [
       { type: "paragraph", text: "Rest restores proportion too. Some open loops need sleep, prayer, exercise or an unhurried conversation. More analysis would only enlarge them." },
 
       { type: "heading", text: "What matters" },
-      { type: "paragraph", text: "I value the range this mind gives me. Restraint is what turns that range into useful work. The world experiences the clarity of our decisions, the value we create and whether we finish what we begin." },
+      { type: "paragraph", text: "I value the range this mind gives me. Restraint is what turns that range into useful work." },
       { type: "paragraph", text: "An oversized mind is not proven by how far it travels in private. It is proven by how clearly it returns, how responsibly it chooses and what it finishes." },
     ],
   },
