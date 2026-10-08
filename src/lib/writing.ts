@@ -69,7 +69,7 @@ const posts: Post[] = [
   {
     slug: "the-pros-and-cons-of-an-oversized-mind",
     title: "The Gift and Cost of an Oversized Mind",
-    excerpt: "An oversized mind can hold unusual complexity, see deeply and imagine beyond the immediate frame. Its gift is range. Its duty is translation.",
+    excerpt: "An oversized mind keeps widening the frame around a problem, seeing systems, connections and longer horizons. Its gift is range. Its duty is translation.",
     date: "2026-10-08",
     category: "Leadership",
     ogImage: "/oversized-mind-og.jpg",
@@ -79,15 +79,15 @@ const posts: Post[] = [
       { type: "paragraph", text: "Some minds do not stop where the question ends." },
       { type: "paragraph", text: "Someone brings me a product decision that should take twenty minutes. Before the conversation ends, I have connected it to pricing, distribution, regulation, capital, the market we are becoming and what the decision could mean five years from now. Half the room is energised. The other half is trying to remember the decision we came to make." },
       { type: "paragraph", text: "A narrow question enters my head and returns as a system. Over time, I found a name for that tendency. An oversized mind." },
-      { type: "paragraph", text: "An oversized mind describes someone with exceptional cognitive capacity, unusual depth of insight, and a mind full of expansive ideas and imagination. It can hold several layers of a problem at once, recognise patterns early and keep constructing what could exist beyond the immediate frame." },
-      { type: "paragraph", text: "Calling it exceptional can sound self-important. That is a fair concern. Capacity is raw material. Without direction, the same mind that produces uncommon insight can also produce complexity, impatience and unfinished work." },
+      { type: "paragraph", text: "The term refers to the scale of a mind's attention. Its natural unit of thought is larger than the task sitting in front of it. It holds several layers of a problem at once, keeps widening the frame and imagines what could exist beyond it." },
+      { type: "paragraph", text: "That wider field does not guarantee a better conclusion. It can reveal useful connections, or produce complexity, impatience and unfinished work. Range is raw material. Direction determines what it becomes." },
       { type: "quote", text: "The responsibility of an oversized mind is to return from what it sees with something other people can use." },
       { type: "image", url: "/oversized-mind-og.jpg", width: 1200, height: 630, alt: "An expansive architectural structure connected by one clear orange path leading to a finished doorway", caption: "Range becomes useful when a clear path can run through it." },
 
       { type: "heading", text: "What makes the mind oversized" },
-      { type: "callout", text: "<strong>Capacity.</strong> It can hold more variables and competing truths without forcing an early answer.<br><br><strong>Insight.</strong> It can move beneath the visible event and recognise the structure producing it.<br><br><strong>Imagination.</strong> It can picture systems, institutions and futures that do not yet exist." },
+      { type: "callout", text: "<strong>Range.</strong> It holds more variables and competing possibilities in view.<br><br><strong>Connections.</strong> It moves between the visible event and the wider system around it.<br><br><strong>Horizon.</strong> It pictures systems, institutions and futures beyond the immediate task." },
       { type: "paragraph", text: "A customer complaint may expose a product flaw, a training gap, the wrong incentive, weak pricing or a change in the market. A delayed payment may reveal friction in trust, regulation, infrastructure or access to capital. One observation opens several doors at once." },
-      { type: "paragraph", text: "The mind then compares the problem with something read years ago, a pattern from another industry and an outcome that has yet to happen. This can produce unusual insight. It can also produce confident nonsense. Range generates possibilities. Evidence decides which ones are true." },
+      { type: "paragraph", text: "The mind then compares the problem with something read years ago, a pattern from another industry and an outcome that has yet to happen. This can expose a useful connection. It can also produce confident nonsense. Range generates possibilities. Evidence decides which ones are true." },
 
       { type: "heading", text: "What the range makes possible" },
       { type: "paragraph", text: "Range helps you see structure beneath events. You become less interested in isolated failures and more interested in what keeps producing them. That instinct becomes useful when the obvious fix has failed or when the problem crosses product, people, capital and policy." },
