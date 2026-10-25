@@ -34,9 +34,10 @@ export const speakingEntries: ProfileEntry[] = [
     external: true,
   },
   {
-    title: "Lagos Tech Fest 2022",
-    meta: "Speaker · February 2022",
-    href: "https://www.instagram.com/p/CgJ3f48sf4o/",
+    title:
+      "Regulating Nigeria's Fintech Industry; Building Investors Confidence Without Stifling Growth",
+    meta: "Nigeria Fintech Forum Panel · 2022",
+    href: "https://www.instagram.com/p/CggkddOMPWH/",
     external: true,
   },
 ];
