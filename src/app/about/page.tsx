@@ -257,9 +257,7 @@ export default function AboutPage() {
               </p>
               <p>
                 As the company grew, my work shifted from building the product
-                to building the teams and systems that build many products. It
-                is a different discipline from engineering, and I am still
-                learning it.
+                to building the teams and systems that build many products.
               </p>
             </div>
           </section>
