@@ -64,6 +64,25 @@ const services = [
   },
 ];
 
+const patterns = [
+  {
+    label: "A traction number can be a capacity limit",
+    desc: "Five customers transacting may mean the business could only serve five. Let orders exceed what you can fulfil, then show investors the gap.",
+  },
+  {
+    label: "A narrow niche is an advantage",
+    desc: "Depth in one segment is the route to the next. Pair it with a vision larger than the current product.",
+  },
+  {
+    label: "Fix cash-flow risk before you raise",
+    desc: "Structure sales so customers fund part of the work, through deposits and clear replacement terms.",
+  },
+  {
+    label: "Start with the partner's goals, not your product",
+    desc: "Partnerships stall when onboarding is a product pitch. Understand what the partner is trying to achieve, then fit the offer to their context.",
+  },
+];
+
 const engagementShapes = [
   {
     label: "Working session",
@@ -196,6 +215,28 @@ export default function WorkPage() {
                   <p className="text-[15px] leading-[1.75] text-muted">{desc}</p>
                 </div>
                 {i < services.length - 1 && (
+                  <div className="border-t border-accent/20" />
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* How I approach a problem */}
+        <section className="mb-14">
+          <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
+            How I tend to reframe a problem
+          </h2>
+          <div>
+            {patterns.map(({ label, desc }, i) => (
+              <div key={label}>
+                <div className="py-5">
+                  <p className="text-[16px] font-medium text-foreground mb-2">
+                    {label}
+                  </p>
+                  <p className="text-[15px] leading-[1.75] text-muted">{desc}</p>
+                </div>
+                {i < patterns.length - 1 && (
                   <div className="border-t border-accent/20" />
                 )}
               </div>
