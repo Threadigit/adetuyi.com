@@ -35,6 +35,10 @@ export const metadata: Metadata = {
 
 const infrastructureLayers = [
   {
+    title: "Create value the world will pay for",
+    text: "Participation starts with something worth exchanging. A person or business has to be able to make a product, service, or skill that customers beyond their own town or country will pay for. Without exportable value, access to trust, money, and markets has nothing to carry.",
+  },
+  {
     title: "Be recognised and trusted",
     text: "A person or business has to be able to prove who they are, check who they are dealing with, and transact without exposure to fraud. Trust is what opens the door to customers, credit, and commerce.",
   },
@@ -288,21 +292,22 @@ export default function EconomicParticipationThesisPage() {
 
           <div className="my-12 p-8 bg-accent/5 ring-1 ring-border rounded-xl">
             <p className="m-0 text-[12px] font-medium uppercase tracking-widest text-accent">
-              In formation
+              Investing and in formation
             </p>
             <h2 className="text-[20px] md:text-[24px] font-medium text-foreground tracking-tight mt-3 mb-4">
-              BuildX Capital Fund 1
+              BuildX Capital
             </h2>
             <p className="m-0 text-[14px] leading-[1.8] text-muted">
-              The fund is this thesis applied to physical infrastructure. For
-              years I have backed this deficit as an angel investor, one company
-              at a time. Angel cheques can prove a model. They cannot finance
-              the assets themselves. BuildX Capital Fund 1 carries that learning, and
-              the operating experience behind the distribution and trust
-              infrastructure work, into a structured vehicle. Energy is Fund
-              1&apos;s mandate, in Nigeria&apos;s distributed commercial and
-              industrial market, because power is the constraint sitting under
-              the rest.
+              BuildX Capital is this thesis applied to physical infrastructure
+              and to the founders building it. For years I have backed this
+              deficit as an angel investor and supported other founders, one
+              company at a time. Angel cheques can prove a model. They cannot
+              finance the assets themselves. The energy mandate of BuildX
+              Capital carries that learning, and the operating experience
+              behind the distribution and trust infrastructure work, into a
+              structured vehicle. Energy is its mandate, in Nigeria&apos;s
+              distributed commercial and industrial market, because power is
+              the constraint sitting under the rest.
             </p>
             <p className="m-0 mt-4 text-[14px] leading-[1.8] text-muted">
               It is being formed to finance distributed energy assets close to
@@ -319,10 +324,10 @@ export default function EconomicParticipationThesisPage() {
               access to income-generating assets.
             </p>
             <Link
-              href="/thesis/buildx-fund-1"
+              href="/thesis/buildx-capital"
               className="inline-flex items-center gap-2 mt-6 border border-accent text-accent px-5 py-2.5 rounded-full hover:bg-accent hover:text-white transition-all font-medium text-[14px] group"
             >
-              Read the fund thesis
+              Read the BuildX Capital thesis
               <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
             </Link>
           </div>

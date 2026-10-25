@@ -2,10 +2,14 @@ import { MetadataRoute } from 'next';
 import { getAllPosts } from '@/lib/writing';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const siteUpdated = new Date('2026-08-01');
-  const writingEntries = getAllPosts().map((post) => ({
+  const posts = getAllPosts();
+  // The site changes whenever an essay is published or edited, so derive the date from the content.
+  const siteUpdated = new Date(
+    Math.max(...posts.map((post) => new Date(post.modifiedDate ?? post.date).getTime()))
+  );
+  const writingEntries = posts.map((post) => ({
     url: `https://www.adetuyi.com/writing/${post.slug}`,
-    lastModified: new Date(post.date),
+    lastModified: new Date(post.modifiedDate ?? post.date),
     changeFrequency: 'yearly' as const,
     priority: 0.6,
   }));
@@ -16,6 +20,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: siteUpdated,
       changeFrequency: 'monthly',
       priority: 1,
+    },
+    {
+      url: 'https://www.adetuyi.com/press-kit',
+      lastModified: siteUpdated,
+      changeFrequency: 'yearly',
+      priority: 0.6,
     },
     {
       url: 'https://www.adetuyi.com/about',
@@ -30,7 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: 'https://www.adetuyi.com/thesis/buildx-fund-1',
+      url: 'https://www.adetuyi.com/thesis/buildx-capital',
       lastModified: siteUpdated,
       changeFrequency: 'yearly',
       priority: 0.7,

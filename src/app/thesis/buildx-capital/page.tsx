@@ -2,11 +2,11 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
-const title = "BuildX Capital Fund 1";
+const title = "BuildX Capital";
 const description =
-  "Tolu Adetuyi's thesis for financing distributed energy assets around commercial, industrial, and productive mobility demand in Nigeria.";
-const canonical = "https://www.adetuyi.com/thesis/buildx-fund-1";
-const lastUpdated = "2026-08-01";
+  "Tolu Adetuyi's investment platform for backing founders in mobility, payments, and infrastructure, and its energy mandate for financing distributed energy assets in Nigeria.";
+const canonical = "https://www.adetuyi.com/thesis/buildx-capital";
+const lastUpdated = "2026-10-25";
 
 const sources = [
   {
@@ -110,8 +110,8 @@ export default function ThesisPage() {
           { name: "Home", path: "/" },
           { name: "Thesis", path: "/thesis" },
           {
-            name: "BuildX Capital Fund 1",
-            path: "/thesis/buildx-fund-1",
+            name: "BuildX Capital",
+            path: "/thesis/buildx-capital",
           },
         ]}
       />
@@ -128,21 +128,23 @@ export default function ThesisPage() {
           <div className="flex items-center gap-3 mb-6">
             <div className="h-px w-8 bg-accent" />
             <span className="text-[13px] font-medium uppercase tracking-widest text-accent">
-              In formation
+              Investing and in formation
             </span>
           </div>
           <h1 className="text-[36px] md:text-[44px] font-medium tracking-tight leading-tight mb-6 text-foreground">
-            BuildX Capital Fund 1
+            BuildX Capital
           </h1>
           <p className="text-[18px] md:text-[20px] leading-relaxed text-muted">
-            BuildX Capital Fund 1 is the energy mandate, focused on private
-            capital for Nigeria&apos;s distributed commercial and industrial
-            energy infrastructure. Power is the constraint sitting under
-            everything else built here.
+            BuildX Capital is where I invest in and support founders building
+            mobility, payments, and infrastructure companies. Its energy
+            mandate, now in formation, focuses on private capital for
+            Nigeria&apos;s distributed commercial and industrial energy
+            infrastructure. Power is the constraint sitting under everything
+            else built here.
           </p>
           <p className="mt-5 text-[12px] uppercase tracking-widest text-muted">
             Last updated{" "}
-            <time dateTime={lastUpdated}>August 1, 2026</time>
+            <time dateTime={lastUpdated}>October 25, 2026</time>
           </p>
         </header>
 
@@ -174,7 +176,7 @@ export default function ThesisPage() {
             who they are dealing with and transact with greater confidence.
             Alongside the operating work, I have spent years investing
             privately as an angel in companies building on top of Nigeria&apos;s
-            physical constraints.
+            physical constraints, and supporting other founders as they build.
           </p>
           <p>
             Those experiences shaped a conviction. Digital infrastructure can
@@ -196,9 +198,7 @@ export default function ThesisPage() {
             finance the asset the model depends on, and the businesses that
             need power do not need another equity round. They need the
             equipment on site and a way to pay for it out of what it saves
-            them. BuildX Capital Fund 1 carries that learning, and the operating
-            experience above, into a structured vehicle built for the assets
-            themselves.
+            them. The energy mandate of BuildX Capital carries that learning, and the operating experience above, into a structured vehicle built for the assets themselves.
           </p>
 
           <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
@@ -284,7 +284,7 @@ export default function ThesisPage() {
             The investable wedge
           </h2>
           <p>
-            BuildX Capital Fund 1 is being formed around distributed power for
+            The BuildX Capital energy mandate is being formed around distributed power for
             commercial and industrial users. The initial focus is not utility
             scale generation built on speculative demand. It is energy
             infrastructure located close to businesses that already consume
@@ -508,7 +508,7 @@ export default function ThesisPage() {
           </p>
 
           <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
-            What this fund is not
+            What the energy fund is not
           </h2>
           <p>
             It is not a bet that one technology will solve Nigeria&apos;s power
@@ -541,7 +541,7 @@ export default function ThesisPage() {
             customer becomes more productive.
           </p>
           <p>
-            That alignment is the conviction behind BuildX Capital Fund 1. I
+            That alignment is the conviction behind BuildX Capital. I
             want to build infrastructure whose economic usefulness is visible
             in the cash flow of the businesses it powers.
           </p>
@@ -550,7 +550,7 @@ export default function ThesisPage() {
             Formation and execution
           </h2>
           <p>
-            The fund is currently sponsor-led by me. I bring a decade of work
+            The energy fund is currently sponsor-led by me. I bring a decade of work
             across software, financial-services distribution, identity,
             compliance, and company building in African markets. That operating
             background shapes how I assess demand, distribution, customer
@@ -571,8 +571,7 @@ export default function ThesisPage() {
               For investors, founders, operators, and project partners
             </h2>
             <p className="text-[14px] leading-relaxed text-background/75 mb-4">
-              BuildX Capital Fund 1 is in formation. You do
-              not need to run an energy company to participate. I want to hear
+              BuildX Capital is backing founders now, and its energy mandate is in formation. You do not need to run an energy company to participate. I want to hear
               from you if you are one of the following.
             </p>
             <ul className="m-0 mb-5 space-y-3 pl-0 list-none text-[14px] leading-relaxed text-background/75">

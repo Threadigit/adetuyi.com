@@ -8,7 +8,7 @@ const description =
 const canonical = "https://www.adetuyi.com/about";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About the Co-Founder of Prembly",
   description,
   alternates: { canonical },
   openGraph: {
@@ -50,9 +50,9 @@ const building = [
     external: true,
   },
   {
-    name: "BuildX Capital Fund 1",
-    note: "Being formed to finance distributed energy assets around productive demand.",
-    href: "/thesis/buildx-fund-1",
+    name: "BuildX Capital",
+    note: "Invests in and supports founders, and is forming an energy fund around productive demand.",
+    href: "/thesis/buildx-capital",
     external: false,
   },
 ];
@@ -88,9 +88,26 @@ const background = [
   },
 ];
 
+const aboutSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "@id": `${canonical}#about-page`,
+  url: canonical,
+  name: title,
+  description,
+  mainEntity: { "@id": "https://www.adetuyi.com/#person" },
+  isPartOf: { "@id": "https://www.adetuyi.com/#website" },
+};
+
 export default function AboutPage() {
   return (
     <main className="max-w-[680px] mx-auto px-6 py-16 md:py-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(aboutSchema).replace(/</g, "\\u003c"),
+        }}
+      />
       <BreadcrumbSchema
         items={[
           { name: "Home", path: "/" },
@@ -133,11 +150,15 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-[16px] leading-[1.85] text-muted">
               <p>
-                I was curious before I had a title. As a student, I kept noticing
-                problems and wondering whether software could remove them. That
-                led to an electronic voting platform, and to detecting
-                fraudulent school fee receipts instead of trusting them on
-                sight. It was my first foray into fraud detection.
+                I was curious before I had a title. As a student, I built
+                software that institutions used.
+              </p>
+              <p>
+                The electronic voting platform conducted the students&apos; union
+                government election for a student body of more than 20,000,
+                with the endorsement of the school management. The receipt forgery detector caught fraudulent
+                school fee receipts and saved the administration money. That was
+                my first work in fraud detection.
               </p>
               <p>
                 It also led to the Career Advancement Programme, where students
