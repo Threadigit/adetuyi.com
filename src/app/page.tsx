@@ -186,8 +186,8 @@ export default function Home() {
         <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
           In View
         </h2>
-        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-0.5">
-          <div className="flex flex-wrap items-center gap-2">
+        <div className="flex flex-col gap-1.5">
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
             <Link
               href="/thesis/buildx-capital"
               className="text-[15px] font-medium link-hover whitespace-nowrap"
@@ -196,7 +196,7 @@ export default function Home() {
             </Link>
             <span className="text-[11px] uppercase tracking-widest text-accent font-medium border border-accent/25 rounded-full px-2 py-0.5 whitespace-nowrap">Investing and Fund Formation</span>
           </div>
-          <span className="text-muted text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Mobility, Energy, Trade, Manufacturing &amp; Physical Infrastructure</span>
+          <span className="text-muted text-[13px] leading-relaxed">Mobility, Energy, Trade, Manufacturing &amp; Physical Infrastructure</span>
         </div>
           <p className="border-t border-accent/20 mt-5 pt-4 text-[13px] leading-relaxed text-muted">
             I also curate{" "}
