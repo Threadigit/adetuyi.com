@@ -128,6 +128,20 @@ export default function EconomicParticipationThesisPage() {
           </p>
         </header>
 
+        <aside
+          aria-label="The thesis in brief"
+          className="mb-12 rounded-xl border border-accent/25 bg-accent/5 p-6"
+        >
+          <p className="m-0 mb-3 text-[11px] font-medium uppercase tracking-[0.15em] text-accent">
+            In brief
+          </p>
+          <ul className="m-0 list-none space-y-2.5 p-0 text-[15px] leading-[1.7] text-foreground/85">
+            <li>Participation in the global economy begins with value the world will pay for.</li>
+            <li>It is held up by trust, knowledge, capital, and access to markets.</li>
+            <li>All of it rests on dependable infrastructure, which is what I build and back.</li>
+          </ul>
+        </aside>
+
         <div className="thesis-body max-w-none">
           <p className="first-letter:text-[48px] first-letter:font-bold first-letter:text-foreground first-letter:mr-3 first-letter:float-left first-letter:leading-[0.8]">
             Across my work, I keep returning to one question. What must exist

@@ -33,6 +33,12 @@ export const speakingEntries: ProfileEntry[] = [
     href: "https://programmes.podbean.com/e/tts-creating-a-positive-work-security-culture/",
     external: true,
   },
+  {
+    title: "Lagos Tech Fest 2022",
+    meta: "Speaker · 2022",
+    href: "https://www.instagram.com/p/CgJ3f48sf4o/",
+    external: true,
+  },
 ];
 
 export const pressEntries: ProfileEntry[] = [
