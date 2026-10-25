@@ -156,7 +156,7 @@ export default function AboutPage() {
               <p>
                 My background is software engineering. It is where I learned to
                 think in systems, even though my work has moved well beyond
-                writing code. Before Accounteer, I worked at Edves. Then I
+                writing code. Before Accounteer, I was an engineer at Edves. Then I
                 joined the early team at Accounteer, building tools for small
                 businesses that were still forming the habits and systems to
                 use them. Understanding software was not enough. We had to
