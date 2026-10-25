@@ -4,14 +4,59 @@ import { useState } from "react";
 import Link from "next/link";
 import { Post } from "@/lib/writing";
 
-export default function WritingList({ posts }: { posts: Post[] }) {
+export default function WritingList({ posts, startHere }: { posts: Post[]; startHere: Post[] }) {
   const categories = ["All", ...Array.from(new Set(posts.map((p) => p.category)))];
   const [active, setActive] = useState("All");
+  const [query, setQuery] = useState("");
 
-  const filtered = active === "All" ? posts : posts.filter((p) => p.category === active);
+  const needle = query.trim().toLowerCase();
+  const filtered = posts.filter(
+    (p) =>
+      (active === "All" || p.category === active) &&
+      (!needle ||
+        `${p.title} ${p.excerpt} ${p.category}`.toLowerCase().includes(needle))
+  );
+  const showStartHere = active === "All" && !needle && startHere.length > 0;
 
   return (
     <>
+      <div className="mb-6 animate-fade-up delay-150">
+        <label htmlFor="essay-search" className="sr-only">
+          Search essays
+        </label>
+        <input
+          id="essay-search"
+          type="search"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Search essays"
+          className="w-full rounded-full border border-accent/20 bg-transparent px-5 py-2.5 text-[14px] text-foreground placeholder:text-muted/70 focus:border-accent focus:outline-none"
+        />
+      </div>
+
+      {showStartHere && (
+        <section className="mb-12 animate-fade-up delay-150" aria-label="Start here">
+          <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-3">
+            Start here
+          </h2>
+          <div>
+            {startHere.map((post, index) => (
+              <div key={post.slug}>
+                <Link href={`/writing/${post.slug}`} className="group flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-6 py-3.5">
+                  <span className="text-[16px] text-foreground group-hover:text-accent transition-colors duration-300">
+                    {post.title}
+                  </span>
+                  <span className="text-[11px] uppercase tracking-widest text-accent font-medium whitespace-nowrap">
+                    {post.category}
+                  </span>
+                </Link>
+                {index < startHere.length - 1 && <div className="border-t border-accent/15" />}
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
       <div className="flex flex-wrap gap-2 mb-10 animate-fade-up delay-150">
         {categories.map((cat) => (
           <button
@@ -27,6 +72,10 @@ export default function WritingList({ posts }: { posts: Post[] }) {
           </button>
         ))}
       </div>
+
+      {filtered.length === 0 && (
+        <p className="text-[15px] text-muted">No essays match that search.</p>
+      )}
 
       <div className="space-y-0 animate-fade-up delay-200">
         {filtered.map((post, index) => (
