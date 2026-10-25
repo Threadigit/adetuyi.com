@@ -139,7 +139,7 @@ export default function AboutPage() {
             <a href="https://prembly.com/" target="_blank" rel="noopener noreferrer" className={externalLink}>
               Prembly
             </a>
-            , and my work sits where trust, money and markets meet.
+            , a trust infrastructure company.
           </p>
         </header>
 
@@ -150,21 +150,23 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-[16px] leading-[1.85] text-muted">
               <p>
-                I was curious before I had a title. As a student, I built
-                software that institutions used.
+                Leadership began early. As a student, I led on campus and built
+                software that my school put into live use.
               </p>
               <p>
-                The electronic voting platform conducted the students&apos; union
-                government election for a student body of more than 20,000,
-                with the endorsement of the school management. The receipt forgery detector caught fraudulent
-                school fee receipts and saved the administration money. That was
+                I was president of the Computer Science Students&apos; Association
+                and an active member of Enactus. I created the Career
+                Advancement Programme, which trained students in technology
+                skills, and the Developers Festival, where people pitched their
+                ideas to industry leaders.
+              </p>
+              <p>
+                An electronic voting platform I built conducted the students&apos;
+                union government election for a student body of more than
+                20,000, with the endorsement of the school management. A
+                detector I built for forged school fee receipts caught
+                fraudulent payments and saved the administration money. It was
                 my first work in fraud detection.
-              </p>
-              <p>
-                It also led to the Career Advancement Programme, where students
-                were trained in different tech skills, and to the Developers
-                Festival. None of it started because I already knew how to build
-                it. It started because I was willing to ask.
               </p>
             </div>
           </section>
@@ -188,18 +190,16 @@ export default function AboutPage() {
                 <a href="https://moniepoint.com/" target="_blank" rel="noopener noreferrer" className={externalLink}>
                   Moniepoint
                 </a>
-                , I led growth and helped build the distribution network that put
-                banking and payment terminals in the hands of merchants the
-                formal system had ignored. That work taught me that the best
-                product does not win on its own. The best distributed product
-                does.
+                , I helped build the product and led growth to build the
+                distribution network that put banking and payment terminals in
+                the hands of merchants the formal system had ignored. That work taught me that distribution
+                decides outcomes as much as the product does.
               </p>
               <p>
-                Not everything worked. I was a founding engineer, with shares,
-                at Hojah, a food delivery app that launched in Nigeria before
-                its time. It was one of several failures, and each taught me
-                something that success did not. Being right about a market is
-                not the same as being early to it.
+                Several early ventures did not succeed. At Hojah, a food
+                delivery app that launched in Nigeria before the market was
+                ready, I was a founding engineer with equity. The experience
+                taught me to treat timing as part of the product.
               </p>
             </div>
           </section>
@@ -211,9 +211,8 @@ export default function AboutPage() {
             <div className="space-y-4 text-[16px] leading-[1.85] text-muted">
               <p>
                 Prembly began with a narrow question about enabling payments
-                through biometrics and identity verification in Africa. It kept
-                widening into a bigger one. How does trust actually work in
-                digital markets?
+                through biometrics and identity verification in Africa. It widened into a larger question about how trust
+                works in digital markets.
               </p>
               <p>
                 Today we build identity verification, fraud prevention and

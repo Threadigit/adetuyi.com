@@ -138,13 +138,13 @@ export default function Home() {
           global businesses use it against fraud.
         </p>
         <p className="text-[15px] leading-[1.8] text-muted mt-3">
-          Before Prembly, I led growth at{" "}
+          Before Prembly, I helped build the product at{" "}
           <a href="https://moniepoint.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">
             Moniepoint
           </a>
-          , helping build the distribution network that moves billions of
-          dollars in transactions and now serves millions of businesses across
-          the continent. I hold a first-class degree in Computer Science and an
+          {" "}and led growth to build the distribution network that moves
+          billions of dollars in transactions and now serves millions of
+          businesses across the continent. I hold a first-class degree in Computer Science and an
           MBA in Finance from Morgan State University, and I am a fellow of{" "}
           <a href="https://joinodf.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">
             On Deck
@@ -185,7 +185,6 @@ export default function Home() {
                 In View
               </p>
               <span className="inline-flex items-center gap-1.5 rounded-full border border-border px-2.5 py-0.5 text-[10px] font-medium uppercase tracking-widest text-muted whitespace-nowrap">
-                <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-muted/60" />
                 In progress
               </span>
             </div>
@@ -267,17 +266,12 @@ export default function Home() {
           <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3">
             Writing
           </h2>
-          <div className="flex items-baseline gap-5">
-            <Link
-              href="/writing"
-              className="text-[13px] text-muted hover:text-accent transition-colors group flex items-center gap-1.5 whitespace-nowrap"
-            >
-              All {getAllPosts().length} essays <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
-            </Link>
-            <a href="/feed.xml" className="text-[13px] text-muted hover:text-accent transition-colors whitespace-nowrap">
-              RSS
-            </a>
-          </div>
+          <Link
+            href="/writing"
+            className="text-[13px] text-muted hover:text-accent transition-colors group flex items-center gap-1.5 whitespace-nowrap"
+          >
+            All {getAllPosts().length} essays <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
+          </Link>
         </div>
         <p className="text-[14px] leading-relaxed text-muted mb-4">
           Essays and frameworks on trust, capital, infrastructure, leadership,
@@ -327,9 +321,14 @@ export default function Home() {
 
       {/* ── Talks & Press ── */}
       <section className="mb-16 animate-fade-up delay-500">
-        <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
-          Talks &amp; Press
-        </h2>
+        <div className="flex justify-between items-baseline gap-6 mb-6">
+          <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3">
+            Talks &amp; Press
+          </h2>
+          <Link href="/press-kit" className="text-[13px] text-muted hover:text-accent transition-colors whitespace-nowrap">
+            Press kit →
+          </Link>
+        </div>
         <div className="flex justify-between items-baseline mb-1">
           <p className="text-[12px] uppercase tracking-widest text-muted/70">Speaking &amp; panels</p>
           <Link href="/speaking" className="text-[13px] text-muted hover:text-accent transition-colors">
@@ -427,8 +426,8 @@ export default function Home() {
         </div>
 
         {/* Footer Bottom */}
-        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-y-5 text-[13px] border-t border-border/50 pt-6">
-          <p className="text-muted max-w-[360px] leading-relaxed">
+        <div className="flex flex-col gap-y-4 text-[13px] border-t border-border/50 pt-6">
+          <p className="text-muted leading-relaxed">
             Building interconnected systems that expand economic participation and infrastructure across emerging markets.
           </p>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-3 text-muted">
@@ -438,7 +437,6 @@ export default function Home() {
             <a href="https://twitter.com/adetuyitolu" target="_blank" rel="me noopener noreferrer" className="link-hover hover:text-foreground transition-colors">Twitter</a>
             <a href="https://instagram.com/adetuyitolu" target="_blank" rel="me noopener noreferrer" className="link-hover hover:text-foreground transition-colors">Instagram</a>
             <a href="https://www.youtube.com/channel/UClEyfBprR1O1VANeLf6SnyA" target="_blank" rel="me noopener noreferrer" className="link-hover hover:text-foreground transition-colors">YouTube</a>
-            <a href="/feed.xml" className="link-hover hover:text-foreground transition-colors">RSS</a>
             <a href="https://scholar.google.com/citations?hl=en&user=IjIW4v0AAAAJ" rel="me" className="sr-only">Google Scholar</a>
             <a href="https://www.wikidata.org/wiki/Q140088103" rel="me" className="sr-only">Wikidata</a>
           </div>
