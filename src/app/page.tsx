@@ -100,9 +100,8 @@ export default function Home() {
           <span className="text-accent text-[13px] font-medium ml-1">(YC W22)</span>
         </p>
         <p className="text-[19px] md:text-[21px] leading-[1.55] tracking-[-0.01em] text-foreground max-w-[640px] mt-4">
-          I build the infrastructure people and businesses need to create and
-          exchange value, so they can earn, grow, and participate productively
-          in the global economy.
+          I build the infrastructure that lets people and businesses create
+          value, earn, and take part in the global economy.
         </p>
         <div className="flex flex-wrap items-center gap-x-5 gap-y-3 mt-7">
           <Link
@@ -116,7 +115,7 @@ export default function Home() {
             href="/thesis"
             className="inline-flex items-center gap-2 text-[14px] font-medium text-foreground hover:text-accent transition-colors group"
           >
-            Explore the thesis
+            Explore my thesis
             <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
           </Link>
         </div>
@@ -217,10 +216,11 @@ export default function Home() {
             Infrastructure for economic participation
           </h3>
           <p className="text-[15px] text-muted leading-relaxed mb-4">
-            My work is guided by a simple conviction. Economic participation
-            expands when people and businesses can prove who they are, move
-            money, reach markets, learn what works, access capital and
-            productive assets, and rely on dependable infrastructure.
+            My work is guided by a simple conviction. Economic participation,
+            in the global economy and not only the local one, expands when
+            people and businesses can prove who they are, move money, reach
+            markets, learn what works, access capital and productive assets,
+            and rely on dependable infrastructure.
           </p>
           <p className="text-[15px] text-muted leading-relaxed mb-6">
             Most of my work has been an expression of that thesis, from trust

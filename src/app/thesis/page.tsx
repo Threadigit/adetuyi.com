@@ -4,7 +4,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 const title = "Infrastructure for Economic Participation";
 const description =
-  "Tolu Adetuyi's thesis on building and supporting the systems that help more people and businesses participate productively in the economy.";
+  "Tolu Adetuyi's thesis on building and supporting the systems that help more people and businesses participate productively in the global economy.";
 const canonical = "https://www.adetuyi.com/thesis";
 
 export const metadata: Metadata = {
