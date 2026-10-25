@@ -13,20 +13,18 @@ export const speakingEntries: ProfileEntry[] = [
     href: "/resources/prosperity-engine",
   },
   {
+    title: "Transforming Police Training for a Safer America",
+    meta: "Harbor Bank, Maryland · November 2025",
+  },
+  {
+    title: "Using AI to Accelerate Startup Success in Africa",
+    meta: "Velocity Digital · August 2023",
+  },
+  {
     title: "Building a Collaborative Firewall Against Fraud",
     meta: "Lagos Tech Fest · 2023",
     href: "https://www.youtube.com/watch?v=7JIjYZJO5jQ",
     external: true,
-  },
-  {
-    title: "Closing the Compliance Gap for African Startups",
-    meta: "Slide deck",
-    href: "/resources/closing-the-compliance-gap",
-  },
-  {
-    title: "Bootstrapping & Making Your Idea Attractive to Investors",
-    meta: "Slide deck · 2023",
-    href: "/resources/bootstrapping-for-investors",
   },
   {
     title: "Creating a Positive Work Security Culture",
@@ -35,24 +33,26 @@ export const speakingEntries: ProfileEntry[] = [
     external: true,
   },
   {
-    title: "Using AI to Accelerate Startup Success in Africa",
-    meta: "Velocity Digital · August 2023",
+    title: "Bootstrapping & Making Your Idea Attractive to Investors",
+    meta: "Slide deck · 2023",
+    href: "/resources/bootstrapping-for-investors",
   },
   {
-    title: "Transforming Police Training for a Safer America",
-    meta: "An AI-driven, AR e-training and evaluation service · Harbor Bank, Maryland · November 2025",
+    title: "Closing the Compliance Gap for African Startups",
+    meta: "Slide deck",
+    href: "/resources/closing-the-compliance-gap",
+  },
+  {
+    title: "Kwarabuild Tech Conf '22",
+    meta: "Kwarabuild Tech Conf · December 2022",
+    href: "https://x.com/kwarabuild/status/1602980834310594561",
+    external: true,
   },
   {
     title:
       "Regulating Nigeria's Fintech Industry; Building Investors Confidence Without Stifling Growth",
     meta: "Nigeria Fintech Forum Panel · August 2022",
     href: "https://www.instagram.com/p/CggkddOMPWH/",
-    external: true,
-  },
-  {
-    title: "Kwarabuild Tech Conf '22",
-    meta: "Kwarabuild Tech Conf · December 2022",
-    href: "https://x.com/kwarabuild/status/1602980834310594561",
     external: true,
   },
 ];
@@ -85,12 +85,6 @@ export const pressEntries: ProfileEntry[] = [
     external: true,
   },
   {
-    title: "Digital Identity in the Electronic Wallet Era",
-    meta: "Secure Identity Alliance · 2022",
-    href: "https://secureidentityalliance.org/reports/on-the-road-to-user-centricity-digital-identity-in-the-electronic-wallet-era/",
-    external: true,
-  },
-  {
     title:
       "Strategies for Combating Synthetic Identity Fraud and Enhancing Financial Ecosystem Security",
     meta: "IJRES · 2024",
@@ -104,9 +98,27 @@ export const pressEntries: ProfileEntry[] = [
     external: true,
   },
   {
+    title: "Lagos Tech Fest 2023 speaker announcement",
+    meta: "Africa Tech Series on LinkedIn · 2023",
+    href: "https://www.linkedin.com/feed/update/urn:li:share:7026117879569727489/",
+    external: true,
+  },
+  {
+    title: "Digital Identity in the Electronic Wallet Era",
+    meta: "Secure Identity Alliance · 2022",
+    href: "https://secureidentityalliance.org/reports/on-the-road-to-user-centricity-digital-identity-in-the-electronic-wallet-era/",
+    external: true,
+  },
+  {
     title: "Building for the Unknown and the Risk to Product Adoption",
     meta: "Medium · 2022",
     href: "https://medium.com/@adetuyitolu/building-for-the-unknown-fd16622e6161",
+    external: true,
+  },
+  {
+    title: "Nigeria Fintech Forum 2022 speaker announcement",
+    meta: "Africa Tech Series on LinkedIn · 2022",
+    href: "https://www.linkedin.com/feed/update/urn:li:share:6954778543457189888/",
     external: true,
   },
   {
@@ -122,34 +134,9 @@ export const pressEntries: ProfileEntry[] = [
     external: true,
   },
   {
-    title:
-      "Suggesting Suitable Economic and Political Leaders Using Fuzzy Analytic Hierarchy Process",
-    meta: "IJCTT · 2019",
-    href: "https://ijcttjournal.org/Volume-67%20Issue-5/IJCTT-V67I5P115.pdf",
-    external: true,
-  },
-  {
-    title: "Design and Implementation of Mobile Pigeon-Hole Alert System",
-    meta: "Communications on Applied Electronics · 2018",
-    href: "https://www.caeaccess.org/archives/volume7/number16/810-2018652704/",
-    external: true,
-  },
-  {
     title: "Academic Research Publications",
     meta: "ResearchGate",
     href: "https://www.researchgate.net/profile/Tolu-Adetuyi",
-    external: true,
-  },
-  {
-    title: "Lagos Tech Fest 2023 speaker announcement",
-    meta: "Africa Tech Series on LinkedIn · 2023",
-    href: "https://www.linkedin.com/feed/update/urn:li:share:7026117879569727489/",
-    external: true,
-  },
-  {
-    title: "Nigeria Fintech Forum 2022 speaker announcement",
-    meta: "Africa Tech Series on LinkedIn · 2022",
-    href: "https://www.linkedin.com/feed/update/urn:li:share:6954778543457189888/",
     external: true,
   },
 ];

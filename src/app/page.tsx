@@ -348,7 +348,7 @@ export default function Home() {
         </div>
         <div>
           {speakingEntries
-            .filter((entry) => entry.href !== "https://www.youtube.com/watch?v=7JIjYZJO5jQ")
+            .filter((entry) => entry.href && entry.href !== "https://www.youtube.com/watch?v=7JIjYZJO5jQ")
             .slice(0, 3)
             .map((entry, index, entries) => (
             <div key={entry.title}>
