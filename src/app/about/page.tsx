@@ -135,9 +135,9 @@ export default function AboutPage() {
               <p>
                 I was curious before I had a title. As a student, I kept noticing
                 problems and wondering whether software could remove them. That
-                led to an electronic voting platform, and to asking how school
-                fee receipts could be verified properly instead of trusted on
-                sight.
+                led to an electronic voting platform, and to detecting
+                fraudulent school fee receipts instead of trusting them on
+                sight. It was my first foray into fraud detection.
               </p>
               <p>
                 It also led to the Career Advancement Programme, where students
