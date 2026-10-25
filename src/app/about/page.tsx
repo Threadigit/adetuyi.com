@@ -135,9 +135,9 @@ export default function AboutPage() {
               <p>
                 I was curious before I had a title. As a student, I kept noticing
                 problems and wondering whether software could remove them. That
-                led to an electronic voting platform, and to asking how school
-                fee receipts could be verified properly instead of trusted on
-                sight.
+                led to an electronic voting platform, and to detecting
+                fraudulent school fee receipts instead of trusting them on
+                sight. It was my first foray into fraud detection.
               </p>
               <p>
                 It also led to the Career Advancement Programme, where students
@@ -154,11 +154,13 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-[16px] leading-[1.85] text-muted">
               <p>
-                Before Accounteer, I worked at Edves. Then I joined the early team
-                at Accounteer, building tools for small businesses that were
-                still forming the habits and systems to use them. Understanding
-                software was not enough. We had to understand the daily reality
-                of the people we served.
+                My background is software engineering. It is where I learned to
+                think in systems, even though my work has moved well beyond
+                writing code. Before Accounteer, I was an engineer at Edves. Then I
+                joined the early team at Accounteer, building tools for small
+                businesses that were still forming the habits and systems to
+                use them. Understanding software was not enough. We had to
+                understand the daily reality of the people we served.
               </p>
               <p>
                 At{" "}
