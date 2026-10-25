@@ -150,10 +150,11 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-[16px] leading-[1.85] text-muted">
               <p>
-                I joined the early team at Accounteer, building tools for small
-                businesses that were still forming the habits and systems to use
-                them. Understanding software was not enough. We had to
-                understand the daily reality of the people we served.
+                Before Accounteer, I worked at Edves. Then I joined the early team
+                at Accounteer, building tools for small businesses that were
+                still forming the habits and systems to use them. Understanding
+                software was not enough. We had to understand the daily reality
+                of the people we served.
               </p>
               <p>
                 At{" "}
@@ -165,6 +166,13 @@ export default function AboutPage() {
                 formal system had ignored. That work taught me that the best
                 product does not win on its own. The best distributed product
                 does.
+              </p>
+              <p>
+                Not everything worked. I was a founding engineer, with shares,
+                at Hojah, a food delivery app that launched in Nigeria before
+                its time. It was one of several failures, and each taught me
+                something that success did not. Being right about a market is
+                not the same as being early to it.
               </p>
             </div>
           </section>
