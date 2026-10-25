@@ -398,10 +398,9 @@ export default function Home() {
           For founders, operators, and investors.
         </h2>
         <p className="text-[14px] text-muted mb-2">
-          I advise alongside my operating work, on a small number of engagements
-          where my experience can improve an important decision. The usual start
-          is a 60-minute working session on one decision, document, or market
-          question.
+          I advise a small number of founders, operators, and investors on
+          consequential decisions. The usual start is a 60-minute working
+          session on one decision, document, or market question.
         </p>
         <a href="/work" className="text-[13px] text-accent link-hover inline-block mb-7">
           View advisory and fit →
