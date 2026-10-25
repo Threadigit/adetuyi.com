@@ -37,31 +37,48 @@ export default function ProfileArchive({
       </header>
 
       <div>
-        {entries.map((entry, index) => (
-          <div key={entry.href}>
-            <a
-              href={entry.href}
-              target={entry.external ? "_blank" : undefined}
-              rel={entry.external ? "noopener noreferrer" : undefined}
-              className="group flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-6 py-5"
-            >
-              <span className="text-[15px] leading-relaxed text-foreground group-hover:text-accent transition-colors">
+        {entries.map((entry, index) => {
+          const rowClass =
+            "group flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-6 py-5";
+          const content = (
+            <>
+              <span
+                className={`text-[15px] leading-relaxed text-foreground ${
+                  entry.href ? "group-hover:text-accent transition-colors" : ""
+                }`}
+              >
                 {entry.title}
               </span>
               <span className="text-[13px] text-muted whitespace-nowrap">
                 {entry.meta}
-                {entry.external && (
+                {entry.href && entry.external && (
                   <span className="ml-1 transition-transform duration-300 inline-block group-hover:translate-x-1">
                     ↗
                   </span>
                 )}
               </span>
-            </a>
-            {index < entries.length - 1 && (
-              <div className="border-t border-accent/20" />
-            )}
-          </div>
-        ))}
+            </>
+          );
+          return (
+            <div key={entry.title}>
+              {entry.href ? (
+                <a
+                  href={entry.href}
+                  target={entry.external ? "_blank" : undefined}
+                  rel={entry.external ? "noopener noreferrer" : undefined}
+                  className={rowClass}
+                >
+                  {content}
+                </a>
+              ) : (
+                <div className={rowClass}>{content}</div>
+              )}
+              {index < entries.length - 1 && (
+                <div className="border-t border-accent/20" />
+              )}
+            </div>
+          );
+        })}
       </div>
 
       <p className="mt-12 pt-8 border-t border-border text-[14px] leading-relaxed text-muted">

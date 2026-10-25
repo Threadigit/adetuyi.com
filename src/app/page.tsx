@@ -351,7 +351,7 @@ export default function Home() {
             .filter((entry) => entry.href !== "https://www.youtube.com/watch?v=7JIjYZJO5jQ")
             .slice(0, 3)
             .map((entry, index, entries) => (
-            <div key={entry.href}>
+            <div key={entry.title}>
               <a
                 href={entry.href}
                 target={entry.external ? "_blank" : undefined}
@@ -378,7 +378,7 @@ export default function Home() {
         </div>
         <div>
           {pressEntries.slice(0, 3).map((entry, index, entries) => (
-            <div key={entry.href}>
+            <div key={entry.title}>
               <a
                 href={entry.href}
                 target="_blank"

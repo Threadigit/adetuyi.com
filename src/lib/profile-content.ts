@@ -1,7 +1,8 @@
 export type ProfileEntry = {
   title: string;
   meta: string;
-  href: string;
+  /** Entries without a link are shown as plain rows, for appearances with no public page. */
+  href?: string;
   external?: boolean;
 };
 
@@ -34,11 +35,23 @@ export const speakingEntries: ProfileEntry[] = [
     external: true,
   },
   {
+    title: "Using AI to Accelerate Startup Success in Africa",
+    meta: "Velocity Digital · August 2023",
+  },
+  {
+    title: "The Use of AI in Security",
+    meta: "Harbor Bank, Maryland",
+  },
+  {
     title:
       "Regulating Nigeria's Fintech Industry; Building Investors Confidence Without Stifling Growth",
     meta: "Nigeria Fintech Forum Panel · August 2022",
     href: "https://www.instagram.com/p/CggkddOMPWH/",
     external: true,
+  },
+  {
+    title: "Kwarabuild Tech Conf '22",
+    meta: "Speaker · 2022",
   },
 ];
 
