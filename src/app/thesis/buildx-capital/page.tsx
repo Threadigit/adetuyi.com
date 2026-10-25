@@ -58,10 +58,10 @@ export const metadata: Metadata = {
     modifiedTime: `${lastUpdated}T00:00:00-04:00`,
     images: [
       {
-        url: "/power-grid.png",
-        width: 1024,
-        height: 1536,
-        alt: "Electricity transmission infrastructure in Nigeria",
+        url: "/og/buildx-capital",
+        width: 1200,
+        height: 630,
+        alt: "BuildX Capital, investing and fund formation",
       },
     ],
   },
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title,
     description,
-    images: ["/power-grid.png"],
+    images: ["/og/buildx-capital"],
   },
 };
 
@@ -148,6 +148,20 @@ export default function ThesisPage() {
             <time dateTime={lastUpdated}>October 25, 2026</time>
           </p>
         </header>
+
+        <aside
+          aria-label="BuildX Capital in brief"
+          className="mb-12 rounded-xl border border-accent/25 bg-accent/5 p-6"
+        >
+          <p className="m-0 mb-3 text-[11px] font-medium uppercase tracking-[0.15em] text-accent">
+            In brief
+          </p>
+          <ul className="m-0 list-none space-y-2.5 p-0 text-[15px] leading-[1.7] text-foreground/85">
+            <li>Backing founders. I invest in and support founders across mobility, energy, trade, manufacturing, and physical infrastructure.</li>
+            <li>The energy mandate. A fund now in formation to finance distributed energy assets for commercial and industrial users in Nigeria.</li>
+            <li>Why energy. Power is the constraint sitting under everything else built here.</li>
+          </ul>
+        </aside>
 
         <div className="thesis-body max-w-none">
           <p className="first-letter:text-[48px] first-letter:font-bold first-letter:text-foreground first-letter:mr-3 first-letter:float-left first-letter:leading-[0.8]">
