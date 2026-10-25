@@ -35,6 +35,10 @@ export const metadata: Metadata = {
 
 const infrastructureLayers = [
   {
+    title: "Create value the world will pay for",
+    text: "Participation starts with something worth exchanging. A person or business has to be able to make a product, service, or skill that customers beyond their own town or country will pay for. Without exportable value, access to trust, money, and markets has nothing to carry.",
+  },
+  {
     title: "Be recognised and trusted",
     text: "A person or business has to be able to prove who they are, check who they are dealing with, and transact without exposure to fraud. Trust is what opens the door to customers, credit, and commerce.",
   },

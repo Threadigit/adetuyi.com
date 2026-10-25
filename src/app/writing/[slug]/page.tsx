@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const title = post.seoTitle ?? post.title;
   const description = toSeoDescription(post.excerpt);
-  const image = absoluteUrl(post.ogImage ?? "/tolu-og.jpg");
+  const image = absoluteUrl(post.ogImage ?? `/og/${post.slug}`);
   const canonical = `${siteUrl}/writing/${post.slug}`;
   const publishedTime = toIsoDateTime(post.date);
   const modifiedTime = toIsoDateTime(post.modifiedDate ?? post.date);
@@ -160,7 +160,7 @@ export default async function WritingPost({ params }: PageProps) {
   }
 
   const baseUrl = siteUrl;
-  const image = absoluteUrl(post.ogImage ?? "/tolu-og.jpg");
+  const image = absoluteUrl(post.ogImage ?? `/og/${post.slug}`);
   const publishedTime = toIsoDateTime(post.date);
   const modifiedTime = toIsoDateTime(post.modifiedDate ?? post.date);
   const related = getRelatedPosts(post.slug);

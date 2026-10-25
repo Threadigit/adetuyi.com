@@ -426,6 +426,8 @@ export default function Home() {
             Building interconnected systems that expand economic participation and infrastructure across emerging markets.
           </p>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-3 text-muted">
+            <Link href="/about" className="link-hover hover:text-foreground transition-colors">About</Link>
+            <Link href="/press-kit" className="link-hover hover:text-foreground transition-colors">Press kit</Link>
             <a href="https://www.linkedin.com/in/adetuyitolu/" target="_blank" rel="me noopener noreferrer" className="link-hover hover:text-foreground transition-colors">LinkedIn</a>
             <a href="https://twitter.com/adetuyitolu" target="_blank" rel="me noopener noreferrer" className="link-hover hover:text-foreground transition-colors">Twitter</a>
             <a href="https://instagram.com/adetuyitolu" target="_blank" rel="me noopener noreferrer" className="link-hover hover:text-foreground transition-colors">Instagram</a>

@@ -8,7 +8,7 @@ const description =
 const canonical = "https://www.adetuyi.com/about";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About the Co-Founder of Prembly",
   description,
   alternates: { canonical },
   openGraph: {
@@ -88,9 +88,26 @@ const background = [
   },
 ];
 
+const aboutSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "@id": `${canonical}#about-page`,
+  url: canonical,
+  name: title,
+  description,
+  mainEntity: { "@id": "https://www.adetuyi.com/#person" },
+  isPartOf: { "@id": "https://www.adetuyi.com/#website" },
+};
+
 export default function AboutPage() {
   return (
     <main className="max-w-[680px] mx-auto px-6 py-16 md:py-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(aboutSchema).replace(/</g, "\\u003c"),
+        }}
+      />
       <BreadcrumbSchema
         items={[
           { name: "Home", path: "/" },
@@ -138,8 +155,8 @@ export default function AboutPage() {
               </p>
               <p>
                 The electronic voting platform conducted the students&apos; union
-                government election, with the endorsement of the school
-                management. The receipt forgery detector caught fraudulent
+                government election for a student body of more than 20,000,
+                with the endorsement of the school management. The receipt forgery detector caught fraudulent
                 school fee receipts and saved the administration money. That was
                 my first work in fraud detection.
               </p>

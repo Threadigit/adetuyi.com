@@ -143,7 +143,7 @@ const posts: Post[] = [
   {
     slug: "a-letter-to-nigeria-at-66",
     title: "A Letter to Nigeria at 66",
-    excerpt: "Reform has begun to correct distortions, but investor interest is not yet prosperity. A letter on what would make building easier, from reliable power and credible lending records to letting competent people serve.",
+    excerpt: "What would make building easier in Nigeria, from reliable power and credible lending records to letting competent people serve. A letter at 66.",
     date: "2026-10-01",
     category: "Nation Building",
     ogImage: "/nigeria-at-66-og.jpg",
