@@ -38,12 +38,6 @@ const externalLink =
 
 const building = [
   {
-    name: "BuildX Capital Fund 1",
-    note: "Being formed to finance distributed energy assets around productive demand.",
-    href: "/thesis/buildx-fund-1",
-    external: false,
-  },
-  {
     name: "Chronicles of Innovation",
     note: "Shows how the world was built, so people can learn from the past.",
     href: "https://www.chroniclesofinnovation.com/",
@@ -54,6 +48,12 @@ const building = [
     note: "Weekly Signals on what is changing now, so people can act in the present.",
     href: "https://zerotoact.com/",
     external: true,
+  },
+  {
+    name: "BuildX Capital Fund 1",
+    note: "Being formed to finance distributed energy assets around productive demand.",
+    href: "/thesis/buildx-fund-1",
+    external: false,
   },
 ];
 
@@ -210,8 +210,8 @@ export default function AboutPage() {
               Other interests I am exploring
             </h2>
             <p className="text-[16px] leading-[1.85] text-muted mb-3">
-              Three efforts that carry the same thesis into energy, history and
-              weekly intelligence.
+              Three efforts that carry the same thesis into history, weekly
+              intelligence and energy.
             </p>
             <div>
               {building.map((item, index) => (
