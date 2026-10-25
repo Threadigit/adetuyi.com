@@ -685,7 +685,7 @@ const posts: Post[] = [
     excerpt: "The businesses that became impossible to displace were never the ones with the cleverest product. They were the ones everyone else needed in order to function. Real power, at the level of a nation or a single founder, is systemic utility.",
     date: "2026-07-20",
     modifiedDate: "2026-09-10",
-    category: "Venture Building",
+    category: "Nation Building",
     ogImage: "/greatness-through-service-og.jpg",
     readingTime: "6 min read",
     content: [
@@ -1700,7 +1700,7 @@ const posts: Post[] = [
     excerpt:
       "The \"leapfrog\" narrative is seductive but incomplete. Africa leapfrogged landlines for mobile. It leapfrogged bank branches for mobile money. But you cannot leapfrog electricity. You cannot leapfrog roads. Some things must simply be built.",
     date: "2026-05-18",
-    category: "Capital Formation",
+    category: "Nation Building",
     readingTime: "6 min read",
     content: [
       { type: "paragraph", text: "There is a story that gets told at every African tech conference, in every pitch deck, and in every development economics paper, Africa leapfrogs. We skipped landlines and went straight to mobile. We skipped bank branches and went straight to mobile money. The implication is always the same. Africa can skip the hard, expensive, physical stuff and jump straight to the digital future." },
