@@ -33,6 +33,13 @@ export const speakingEntries: ProfileEntry[] = [
     href: "https://programmes.podbean.com/e/tts-creating-a-positive-work-security-culture/",
     external: true,
   },
+  {
+    title:
+      "Regulating Nigeria's Fintech Industry; Building Investors Confidence Without Stifling Growth",
+    meta: "Nigeria Fintech Forum Panel · August 2022",
+    href: "https://www.instagram.com/p/CggkddOMPWH/",
+    external: true,
+  },
 ];
 
 export const pressEntries: ProfileEntry[] = [
