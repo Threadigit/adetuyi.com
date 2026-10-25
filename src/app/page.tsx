@@ -229,11 +229,12 @@ export default function Home() {
           <p className="text-[15px] text-muted leading-relaxed mb-6">
             Most of my work has been an expression of that thesis, from trust
             infrastructure to distribution to capital. The newest is BuildX
-            Capital, where I invest in and support founders building mobility,
-            payments, and infrastructure companies, and am forming an energy
-            fund to finance distributed assets around productive demand and
-            test how reliable power can strengthen earnings, operating
-            capacity, and economic inclusion.
+            Capital, where I invest in and support founders building across
+            mobility, energy, trade, manufacturing, and physical
+            infrastructure. I am also forming an energy fund to finance
+            distributed assets around productive demand and test how reliable
+            power can strengthen earnings, operating capacity, and economic
+            inclusion.
           </p>
           <div className="flex flex-wrap gap-2 mb-6">
             {[
