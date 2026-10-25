@@ -20,7 +20,8 @@ export default function WritingList({ posts, startHere }: { posts: Post[]; start
 
   return (
     <>
-      <div className="mb-6 animate-fade-up delay-150">
+      <div className="animate-fade-up delay-150" role="search" aria-label="Filter essays">
+      <div className="mb-4">
         <label htmlFor="essay-search" className="sr-only">
           Search essays
         </label>
@@ -32,6 +33,23 @@ export default function WritingList({ posts, startHere }: { posts: Post[]; start
           placeholder="Search essays"
           className="w-full rounded-full border border-accent/20 bg-transparent px-5 py-2.5 text-[14px] text-foreground placeholder:text-muted/70 focus:border-accent focus:outline-none"
         />
+      </div>
+
+      <div className="flex flex-wrap gap-2 mb-10">
+        {categories.map((cat) => (
+          <button
+            key={cat}
+            onClick={() => setActive(cat)}
+            className={`px-4 py-1.5 rounded-full text-[12px] uppercase tracking-widest font-medium transition-colors duration-200 border ${
+              active === cat
+                ? "bg-accent text-background border-accent"
+                : "bg-transparent text-muted border-accent/20 hover:border-accent/50 hover:text-foreground"
+            }`}
+          >
+            {cat}
+          </button>
+        ))}
+      </div>
       </div>
 
       {showStartHere && (
@@ -56,22 +74,6 @@ export default function WritingList({ posts, startHere }: { posts: Post[]; start
           </div>
         </section>
       )}
-
-      <div className="flex flex-wrap gap-2 mb-10 animate-fade-up delay-150">
-        {categories.map((cat) => (
-          <button
-            key={cat}
-            onClick={() => setActive(cat)}
-            className={`px-4 py-1.5 rounded-full text-[12px] uppercase tracking-widest font-medium transition-colors duration-200 border ${
-              active === cat
-                ? "bg-accent text-background border-accent"
-                : "bg-transparent text-muted border-accent/20 hover:border-accent/50 hover:text-foreground"
-            }`}
-          >
-            {cat}
-          </button>
-        ))}
-      </div>
 
       {filtered.length === 0 && (
         <p className="text-[15px] text-muted">No essays match that search.</p>
