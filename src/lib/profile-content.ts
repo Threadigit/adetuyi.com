@@ -35,7 +35,7 @@ export const speakingEntries: ProfileEntry[] = [
   },
   {
     title: "Lagos Tech Fest 2022",
-    meta: "Speaker · 2022",
+    meta: "Speaker · February 2022",
     href: "https://www.instagram.com/p/CgJ3f48sf4o/",
     external: true,
   },
