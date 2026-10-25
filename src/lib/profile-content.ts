@@ -19,6 +19,8 @@ export const speakingEntries: ProfileEntry[] = [
   {
     title: "Using AI to Accelerate Startup Success in Africa",
     meta: "Velocity Digital · August 2023",
+    href: "https://x.com/Velocityhq_/status/1694720312309649744",
+    external: true,
   },
   {
     title: "Building a Collaborative Firewall Against Fraud",
@@ -38,15 +40,15 @@ export const speakingEntries: ProfileEntry[] = [
     href: "/resources/bootstrapping-for-investors",
   },
   {
-    title: "Closing the Compliance Gap for African Startups",
-    meta: "Slide deck",
-    href: "/resources/closing-the-compliance-gap",
-  },
-  {
     title: "Kwarabuild Tech Conf '22",
     meta: "Kwarabuild Tech Conf · December 2022",
     href: "https://x.com/kwarabuild/status/1602980834310594561",
     external: true,
+  },
+  {
+    title: "Closing the Compliance Gap for African Startups",
+    meta: "Slide deck · 2022",
+    href: "/resources/closing-the-compliance-gap",
   },
   {
     title:
