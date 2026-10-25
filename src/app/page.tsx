@@ -222,8 +222,9 @@ export default function Home() {
             My work is guided by a simple conviction. Economic participation,
             in the global economy and not only the local one, expands when
             people and businesses can create exportable value, prove who they
-            are, move money, reach markets, learn what works, access capital
-            and productive assets, and rely on the dependable infrastructure that makes it all work.
+            are, move money, reach markets, learn what works, and access
+            capital and productive assets, all resting on the dependable
+            infrastructure that makes it work.
           </p>
           <p className="text-[15px] text-muted leading-relaxed mb-6">
             Most of my work has been an expression of that thesis, from trust
