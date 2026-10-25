@@ -85,12 +85,6 @@ export const pressEntries: ProfileEntry[] = [
     external: true,
   },
   {
-    title: "Digital Identity in the Electronic Wallet Era",
-    meta: "Secure Identity Alliance · 2022",
-    href: "https://secureidentityalliance.org/reports/on-the-road-to-user-centricity-digital-identity-in-the-electronic-wallet-era/",
-    external: true,
-  },
-  {
     title:
       "Strategies for Combating Synthetic Identity Fraud and Enhancing Financial Ecosystem Security",
     meta: "IJRES · 2024",
@@ -104,9 +98,27 @@ export const pressEntries: ProfileEntry[] = [
     external: true,
   },
   {
+    title: "Lagos Tech Fest 2023 speaker announcement",
+    meta: "Africa Tech Series on LinkedIn · 2023",
+    href: "https://www.linkedin.com/feed/update/urn:li:share:7026117879569727489/",
+    external: true,
+  },
+  {
+    title: "Digital Identity in the Electronic Wallet Era",
+    meta: "Secure Identity Alliance · 2022",
+    href: "https://secureidentityalliance.org/reports/on-the-road-to-user-centricity-digital-identity-in-the-electronic-wallet-era/",
+    external: true,
+  },
+  {
     title: "Building for the Unknown and the Risk to Product Adoption",
     meta: "Medium · 2022",
     href: "https://medium.com/@adetuyitolu/building-for-the-unknown-fd16622e6161",
+    external: true,
+  },
+  {
+    title: "Nigeria Fintech Forum 2022 speaker announcement",
+    meta: "Africa Tech Series on LinkedIn · 2022",
+    href: "https://www.linkedin.com/feed/update/urn:li:share:6954778543457189888/",
     external: true,
   },
   {
@@ -122,34 +134,9 @@ export const pressEntries: ProfileEntry[] = [
     external: true,
   },
   {
-    title:
-      "Suggesting Suitable Economic and Political Leaders Using Fuzzy Analytic Hierarchy Process",
-    meta: "IJCTT · 2019",
-    href: "https://ijcttjournal.org/Volume-67%20Issue-5/IJCTT-V67I5P115.pdf",
-    external: true,
-  },
-  {
-    title: "Design and Implementation of Mobile Pigeon-Hole Alert System",
-    meta: "Communications on Applied Electronics · 2018",
-    href: "https://www.caeaccess.org/archives/volume7/number16/810-2018652704/",
-    external: true,
-  },
-  {
     title: "Academic Research Publications",
     meta: "ResearchGate",
     href: "https://www.researchgate.net/profile/Tolu-Adetuyi",
-    external: true,
-  },
-  {
-    title: "Lagos Tech Fest 2023 speaker announcement",
-    meta: "Africa Tech Series on LinkedIn · 2023",
-    href: "https://www.linkedin.com/feed/update/urn:li:share:7026117879569727489/",
-    external: true,
-  },
-  {
-    title: "Nigeria Fintech Forum 2022 speaker announcement",
-    meta: "Africa Tech Series on LinkedIn · 2022",
-    href: "https://www.linkedin.com/feed/update/urn:li:share:6954778543457189888/",
     external: true,
   },
 ];
