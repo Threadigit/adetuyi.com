@@ -52,7 +52,7 @@ const services = [
   },
   {
     label: "Business model clarity",
-    desc: "I catch the gaps founders cannot see from inside the business. Unit economics that hold at the aggregate and break at the segment. Revenue that looks like profit. The wrong problem being solved very well.",
+    desc: "I help founders see the gaps that are hard to see from inside the business. Unit economics that hold at the aggregate and break at the segment. Revenue that looks like profit. The wrong problem being solved very well.",
   },
   {
     label: "Fundraising narrative",
@@ -129,13 +129,14 @@ export default function WorkPage() {
             </span>
           </div>
           <h1 className="text-[36px] md:text-[44px] font-medium tracking-tight leading-tight mb-5 text-foreground">
-            Advisory
+            Advisory for founders, operators, and investors
           </h1>
           <p className="text-[16px] leading-[1.75] text-muted">
-            I advise selectively alongside my operating work and accept only a
-            small number of engagements where I can be genuinely useful.
-            Founders, operators, and investors usually come with a product,
-            market, business-model, or capital decision. I identify the real
+            I advise a small number of clients on consequential decisions,
+            with a focus on African markets. My
+            experience spans North America, the United Kingdom, Europe, and
+            Africa. Clients usually arrive with a product, market,
+            business-model, or capital decision. I identify the real
             constraint, test the assumptions, and turn the ambiguity into a
             clear course of action.
           </p>
@@ -146,7 +147,7 @@ export default function WorkPage() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-accent text-white px-5 py-2.5 rounded-full hover:bg-accent/90 transition-all font-medium text-[14px] group"
             >
-              Book a free 15-minute call
+              Book a 15-minute introductory call
               <span className="transition-transform duration-300 group-hover:translate-x-1">↗</span>
             </a>
             <a
@@ -232,16 +233,20 @@ export default function WorkPage() {
             than a thousand local and global businesses to verify customers,
             manage compliance, and reduce fraud, across Nigeria, Kenya, and the
             United States.
-            Before Prembly, I helped build the distribution network at Moniepoint
-            that moves billions of dollars in transactions and now reaches
-            millions of businesses across the continent.
+            Before Prembly, I helped build the product at Moniepoint and led growth
+            to build the distribution network that moves billions of dollars in
+            transactions and now reaches millions of businesses across the
+            continent.
           </p>
           <p className="text-[15px] leading-[1.75] text-muted mt-4">
-            I have also worked with founders across sectors including
-            cross-border finance, mobility, and insurance, helping them sharpen
-            technology and product choices, distribution, positioning, and
-            capital decisions. The advisory work applies that operating range
-            to a specific decision in your business or investment process.
+            I also invest in and support founders through BuildX Capital, and I
+            have advised companies across North America, the United Kingdom,
+            Europe, and Africa, in sectors including cross-border finance,
+            mobility, energy, trade, manufacturing, and insurance. Some of my
+            own early ventures did not succeed, which is why I test timing and
+            assumptions before they become decisions. The advisory work applies
+            that operating range to a specific decision in your business or
+            investment process.
           </p>
         </section>
 
@@ -263,7 +268,7 @@ export default function WorkPage() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-accent text-white px-8 py-3.5 rounded-full hover:bg-accent/90 transition-all font-medium text-[15px] group shadow-sm hover:shadow-md"
             >
-              Book a free 15-minute call{" "}
+              Book a 15-minute introductory call{" "}
               <span className="transition-transform duration-300 group-hover:translate-x-1">
                 ↗
               </span>
