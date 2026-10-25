@@ -207,7 +207,7 @@ export default function AboutPage() {
 
           <section>
             <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-5">
-              Alongside Prembly
+              Other interests I am exploring
             </h2>
             <p className="text-[16px] leading-[1.85] text-muted mb-3">
               Three efforts that carry the same thesis into energy, history and
