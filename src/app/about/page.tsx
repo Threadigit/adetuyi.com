@@ -134,10 +134,17 @@ export default function AboutPage() {
             <div className="space-y-4 text-[16px] leading-[1.85] text-muted">
               <p>
                 I was curious before I had a title. As a student, I kept noticing
-                problems and wondering whether software could remove them. That
-                led to an electronic voting platform, and to detecting
-                fraudulent school fee receipts instead of trusting them on
-                sight. It was my first foray into fraud detection.
+                problems and wondering whether software could remove them, and
+                I built things that real institutions used.
+              </p>
+              <p>
+                The electronic voting platform was used to conduct the
+                students&apos; union government election, with the endorsement of
+                the school management. The receipt forgery detector caught
+                fraudulent school fee receipts and saved the school
+                administration a great deal of money. It was my first foray into
+                fraud detection. These were not laptop projects. They solved
+                real problems for a real institution.
               </p>
               <p>
                 It also led to the Career Advancement Programme, where students
