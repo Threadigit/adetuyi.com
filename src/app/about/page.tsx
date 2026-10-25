@@ -150,21 +150,22 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-[16px] leading-[1.85] text-muted">
               <p>
-                I was curious before I had a title. As a student, I built
-                software that institutions used.
+                My work began as a student, when software I built went into
+                live use at my school.
               </p>
               <p>
-                The electronic voting platform conducted the students&apos; union
-                government election for a student body of more than 20,000,
-                with the endorsement of the school management. The receipt forgery detector caught fraudulent
-                school fee receipts and saved the administration money. That was
+                An electronic voting platform I built conducted the students&apos;
+                union government election for a student body of more than
+                20,000, with the endorsement of the school management. A
+                detector I built for forged school fee receipts caught
+                fraudulent payments and saved the administration money. It was
                 my first work in fraud detection.
               </p>
               <p>
-                It also led to the Career Advancement Programme, where students
-                were trained in different tech skills, and to the Developers
-                Festival. None of it started because I already knew how to build
-                it. It started because I was willing to ask.
+                I also created the Career Advancement Programme, which trained
+                students in technology skills, and the Developers Festival. Each
+                began with a problem I could see and a willingness to learn how
+                to solve it.
               </p>
             </div>
           </section>

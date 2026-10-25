@@ -185,7 +185,6 @@ export default function Home() {
                 In View
               </p>
               <span className="inline-flex items-center gap-1.5 rounded-full border border-border px-2.5 py-0.5 text-[10px] font-medium uppercase tracking-widest text-muted whitespace-nowrap">
-                <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-muted/60" />
                 In progress
               </span>
             </div>
