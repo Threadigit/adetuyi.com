@@ -31,22 +31,22 @@ export const metadata: Metadata = {
 const bios = [
   {
     label: "One line",
-    text: "Tolu Adetuyi is Co-Founder and Chief Innovation Officer at Prembly, a trust infrastructure company working across Nigeria, Kenya and the United States.",
+    text: "Tolu Adetuyi is Co-Founder and Chief Innovation Officer at Prembly, which helps businesses verify customers, prevent fraud and meet compliance rules, working across Nigeria, Kenya and the United States.",
   },
   {
     label: "Short bio",
-    text: "Tolu Adetuyi is Co-Founder and Chief Innovation Officer at Prembly (YC W22), which builds identity verification, fraud prevention and compliance infrastructure used by more than a thousand businesses. Before Prembly, Tolu helped build the product at Moniepoint and led its growth. He writes and advises on trust infrastructure, distribution and capital formation in Africa.",
+    text: "Tolu Adetuyi is Co-Founder and Chief Innovation Officer at Prembly (YC W22), which builds identity verification, fraud prevention and compliance infrastructure used by more than a thousand businesses. Before Prembly, Tolu helped build the product at Moniepoint and led its growth. He writes and advises on identity, fraud, distribution and capital in Africa, and invests in founders across the continent.",
   },
   {
     label: "Full bio",
-    text: "Tolu Adetuyi is Co-Founder and Chief Innovation Officer at Prembly, a trust infrastructure company working across Nigeria, Kenya and the United States, and part of Y Combinator's Winter 2022 batch. Prembly builds identity verification, fraud prevention and compliance infrastructure, and more than a thousand local and global businesses use it against fraud.\n\nBefore Prembly, Tolu helped build the product at Moniepoint and led growth to build the distribution network that puts banking and payment terminals in the hands of merchants across Nigeria. He began as a software engineer at Edves, then joined the early team at Accounteer, first as a software engineer and later in product management.\n\nTolu holds an MBA in Finance from Morgan State University and a BSc in Computer Science from Adekunle Ajasin University. He is a Forbes Technology Council member (2024), an On Deck Founder Fellow, and a mentor in Nigeria's Student Venture Capital Grant. He writes at adetuyi.com, curates Chronicles of Innovation and ZeroToAct, and invests in and supports other founders through BuildX Capital, which is also forming an energy fund.",
+    text: "Tolu Adetuyi is Co-Founder and Chief Innovation Officer at Prembly, which helps businesses verify customers, prevent fraud and meet compliance rules. Prembly works across Nigeria, Kenya and the United States, was part of Y Combinator's Winter 2022 batch, and is relied on by more than a thousand local and global businesses.\n\nBefore Prembly, Tolu helped build the product at Moniepoint and led growth to build the distribution network that puts banking and payment terminals in the hands of merchants across Nigeria. He began as a software engineer at Edves, then joined the early team at Accounteer, first as a software engineer and later in product management.\n\nTolu holds an MBA in Finance from Morgan State University and a BSc in Computer Science from Adekunle Ajasin University. He is a Forbes Technology Council member (2024), an On Deck Founder Fellow, and a mentor in Nigeria's Student Venture Capital Grant. He writes at adetuyi.com, curates Chronicles of Innovation and ZeroToAct, and invests in and supports other founders through BuildX Capital, which is also forming an energy fund.",
   },
 ];
 
 const facts = [
   { label: "Name", value: "Tolu Adetuyi" },
   { label: "Title", value: "Co-Founder and Chief Innovation Officer, Prembly" },
-  { label: "Also described as", value: "Innovator and Venture Architect" },
+  { label: "Also described as", value: "Founder and investor" },
   { label: "Based", value: "United States, working across the United States, Nigeria and Kenya" },
   { label: "Website", value: "adetuyi.com" },
 ];

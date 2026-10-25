@@ -3,13 +3,13 @@ import { Metadata } from "next";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Advisory",
+  title: "Advisory for Founders, Operators and Investors",
   description: "Selective advisory by Tolu Adetuyi for founders, operators, and investors making product, technology, distribution, fundraising, and market decisions in Africa.",
   alternates: {
     canonical: "https://www.adetuyi.com/work",
   },
   openGraph: {
-    title: "Advisory | Tolu Adetuyi",
+    title: "Advisory for Founders, Operators and Investors | Tolu Adetuyi",
     description: "Selective advisory by Tolu Adetuyi for founders, operators, and investors making product, technology, distribution, fundraising, and market decisions in Africa.",
     url: "https://www.adetuyi.com/work",
     type: "website",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Advisory | Tolu Adetuyi",
+    title: "Advisory for Founders, Operators and Investors | Tolu Adetuyi",
     description: "Selective advisory by Tolu Adetuyi for founders, operators, and investors making product, technology, distribution, fundraising, and market decisions in Africa.",
     images: ["/tolu-og.jpg"],
   },
@@ -144,7 +144,7 @@ export default function WorkPage() {
           <div className="flex items-center gap-3 mb-6">
             <div className="h-[1px] w-8 bg-accent"></div>
             <span className="text-[13px] font-medium uppercase tracking-widest text-accent">
-              Work with Tolu
+              Advisory
             </span>
           </div>
           <h1 className="text-[36px] md:text-[44px] font-medium tracking-tight leading-tight mb-5 text-foreground">

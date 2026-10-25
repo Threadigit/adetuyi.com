@@ -9,7 +9,7 @@ export default function StructuredData() {
     "givenName": "Tolu",
     "familyName": "Adetuyi",
     "jobTitle": "Co-Founder & Chief Innovation Officer",
-    "description": "Co-Founder and Chief Innovation Officer at Prembly, a trust infrastructure company. Former growth leader at Moniepoint. Tolu builds financial, digital identity, compliance, distribution, and energy infrastructure across emerging markets.",
+    "description": "Co-Founder and Chief Innovation Officer at Prembly, which helps businesses verify customers, prevent fraud and meet compliance rules. Helped build the product at Moniepoint and led its growth. Invests in and supports founders across Africa through BuildX Capital.",
     "image": "https://www.adetuyi.com/tolu-og.jpg",
     "url": "https://www.adetuyi.com/",
     "mainEntityOfPage": {
@@ -20,7 +20,7 @@ export default function StructuredData() {
       "@id": "https://prembly.com/#organization",
       "name": "Prembly",
       "url": "https://prembly.com",
-      "description": "Trust infrastructure company helping businesses combat fraud and stay compliant across emerging markets."
+      "description": "Identity verification, fraud prevention and compliance technology for businesses across Nigeria, Kenya and the United States."
     },
     "hasOccupation": [
       {
@@ -30,8 +30,8 @@ export default function StructuredData() {
       },
       {
         "@type": "Occupation",
-        "name": "Venture Architect",
-        "description": "Builds and advises financial, distribution, and physical infrastructure ventures across emerging markets."
+        "name": "Investor and founder",
+        "description": "Invests in and supports founders building financial, distribution and physical infrastructure across Africa."
       }
     ],
     "sameAs": [
@@ -196,7 +196,7 @@ export default function StructuredData() {
     "@id": "https://www.adetuyi.com/#website",
     "name": "Tolu Adetuyi",
     "url": "https://www.adetuyi.com/",
-    "description": "The official website of Tolu Adetuyi, Co-Founder and Chief Innovation Officer at Prembly, former growth leader at Moniepoint, and venture architect building infrastructure across emerging markets.",
+    "description": "The official website of Tolu Adetuyi, Co-Founder and Chief Innovation Officer at Prembly, former growth leader at Moniepoint, and an investor in founders building infrastructure across Africa.",
     "publisher": {
       "@id": "https://www.adetuyi.com/#person"
     }
@@ -207,9 +207,9 @@ export default function StructuredData() {
     "@type": "ProfilePage",
     "@id": "https://www.adetuyi.com/#profile-page",
     "url": "https://www.adetuyi.com/",
-    "name": "Tolu Adetuyi | Co-Founder of Prembly and Venture Architect",
-    "description": "The official profile of Tolu Adetuyi, documenting his work at Prembly and Moniepoint, infrastructure ventures, writing, speaking, education, and professional recognition.",
-    "dateModified": "2026-08-01T12:00:00+00:00",
+    "name": "Tolu Adetuyi | Co-Founder of Prembly and Investor in Africa",
+    "description": "The official profile of Tolu Adetuyi, documenting his work at Prembly and Moniepoint, his investing, writing, speaking, education, and professional recognition.",
+    "dateModified": "2026-10-25T12:00:00+00:00",
     "isPartOf": {
       "@id": "https://www.adetuyi.com/#website"
     },

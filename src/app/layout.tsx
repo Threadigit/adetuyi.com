@@ -12,11 +12,11 @@ const lora = Lora({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.adetuyi.com"),
   title: {
-    default: "Tolu Adetuyi | Prembly Co-Founder & Venture Architect",
+    default: "Tolu Adetuyi | Co-Founder of Prembly and Investor in Africa",
     template: "%s | Tolu Adetuyi",
   },
   description:
-    "Tolu Adetuyi is Co-Founder and Chief Innovation Officer at Prembly and an infrastructure builder widening economic participation across Africa.",
+    "Tolu Adetuyi is Co-Founder of Prembly, which helps businesses verify customers and prevent fraud, and an investor backing founders across Africa.",
   authors: [{ name: "Tolu Adetuyi", url: "https://www.adetuyi.com" }],
   creator: "Tolu Adetuyi",
   openGraph: {
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://www.adetuyi.com",
     siteName: "Tolu Adetuyi",
-    title: "Tolu Adetuyi | Prembly Co-Founder & Venture Architect",
+    title: "Tolu Adetuyi | Co-Founder of Prembly and Investor in Africa",
     description:
-      "Tolu Adetuyi is Co-Founder and Chief Innovation Officer at Prembly and an infrastructure builder widening economic participation across Africa.",
+      "Tolu Adetuyi is Co-Founder of Prembly, which helps businesses verify customers and prevent fraud, and an investor backing founders across Africa.",
     images: [
       {
         url: "/tolu-og.jpg",
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tolu Adetuyi | Prembly Co-Founder & Venture Architect",
+    title: "Tolu Adetuyi | Co-Founder of Prembly and Investor in Africa",
     description:
-      "Tolu Adetuyi is Co-Founder and Chief Innovation Officer at Prembly and an infrastructure builder widening economic participation across Africa.",
+      "Tolu Adetuyi is Co-Founder of Prembly, which helps businesses verify customers and prevent fraud, and an investor backing founders across Africa.",
     creator: "@adetuyitolu",
     images: ["/tolu-og.jpg"],
   },
