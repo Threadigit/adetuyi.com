@@ -162,10 +162,11 @@ export default function AboutPage() {
                 my first work in fraud detection.
               </p>
               <p>
-                I also created the Career Advancement Programme, which trained
-                students in technology skills, and the Developers Festival. Each
-                began with a problem I could see and a willingness to learn how
-                to solve it.
+                On campus, I created the Career Advancement Programme, which
+                trained students in technology skills, and the Developers
+                Festival. I was also an active member of Enactus and president
+                of the Computer Science students, and I took part in much else
+                besides. Leadership began early for me.
               </p>
             </div>
           </section>
