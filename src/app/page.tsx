@@ -194,9 +194,9 @@ export default function Home() {
             >
               BuildX Capital
             </Link>
-            <span className="text-[11px] uppercase tracking-widest text-accent font-medium border border-accent/25 rounded-full px-2 py-0.5 whitespace-nowrap">Investing &amp; Fund Forming</span>
+            <span className="text-[11px] uppercase tracking-widest text-accent font-medium border border-accent/25 rounded-full px-2 py-0.5 whitespace-nowrap">Investing and Fund Formation</span>
           </div>
-          <span className="text-muted text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Mobility, Payments &amp; Physical Infrastructure</span>
+          <span className="text-muted text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Mobility, Energy, Trade, Manufacturing &amp; Physical Infrastructure</span>
         </div>
           <p className="border-t border-accent/20 mt-5 pt-4 text-[13px] leading-relaxed text-muted">
             I also curate{" "}
@@ -229,11 +229,12 @@ export default function Home() {
           <p className="text-[15px] text-muted leading-relaxed mb-6">
             Most of my work has been an expression of that thesis, from trust
             infrastructure to distribution to capital. The newest is BuildX
-            Capital, where I invest in and support founders building mobility,
-            payments, and infrastructure companies, and am forming an energy
-            fund to finance distributed assets around productive demand and
-            test how reliable power can strengthen earnings, operating
-            capacity, and economic inclusion.
+            Capital, where I invest in and support founders building across
+            mobility, energy, trade, manufacturing, and physical
+            infrastructure. I am also forming an energy fund to finance
+            distributed assets around productive demand and test how reliable
+            power can strengthen earnings, operating capacity, and economic
+            inclusion.
           </p>
           <div className="flex flex-wrap gap-2 mb-6">
             {[

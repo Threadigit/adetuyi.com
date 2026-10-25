@@ -4,7 +4,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 const title = "BuildX Capital";
 const description =
-  "Tolu Adetuyi's investment platform for backing founders in mobility, payments, and infrastructure, and its energy mandate for financing distributed energy assets in Nigeria.";
+  "Tolu Adetuyi's investment platform for backing founders across mobility, energy, trade, manufacturing, and physical infrastructure, and its energy mandate for financing distributed energy assets in Nigeria.";
 const canonical = "https://www.adetuyi.com/thesis/buildx-capital";
 const lastUpdated = "2026-10-25";
 
@@ -128,7 +128,7 @@ export default function ThesisPage() {
           <div className="flex items-center gap-3 mb-6">
             <div className="h-px w-8 bg-accent" />
             <span className="text-[13px] font-medium uppercase tracking-widest text-accent">
-              Investing and in formation
+              Investing and Fund Formation
             </span>
           </div>
           <h1 className="text-[36px] md:text-[44px] font-medium tracking-tight leading-tight mb-6 text-foreground">
@@ -136,8 +136,9 @@ export default function ThesisPage() {
           </h1>
           <p className="text-[18px] md:text-[20px] leading-relaxed text-muted">
             BuildX Capital is where I invest in and support founders building
-            mobility, payments, and infrastructure companies. Its energy
-            mandate, now in formation, focuses on private capital for
+            across mobility, energy, trade, manufacturing, and physical
+            infrastructure. Its energy mandate, now in formation, focuses on
+            private capital for
             Nigeria&apos;s distributed commercial and industrial energy
             infrastructure. Power is the constraint sitting under everything
             else built here.

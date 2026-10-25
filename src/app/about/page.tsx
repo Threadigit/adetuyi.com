@@ -51,7 +51,7 @@ const building = [
   },
   {
     name: "BuildX Capital",
-    note: "Invests in and supports founders, and is forming an energy fund around productive demand.",
+    note: "Invests in and supports founders across mobility, energy, trade, manufacturing and infrastructure, and is forming an energy fund.",
     href: "/thesis/buildx-capital",
     external: false,
   },

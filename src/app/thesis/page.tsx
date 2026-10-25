@@ -292,7 +292,7 @@ export default function EconomicParticipationThesisPage() {
 
           <div className="my-12 p-8 bg-accent/5 ring-1 ring-border rounded-xl">
             <p className="m-0 text-[12px] font-medium uppercase tracking-widest text-accent">
-              Investing and in formation
+              Investing and Fund Formation
             </p>
             <h2 className="text-[20px] md:text-[24px] font-medium text-foreground tracking-tight mt-3 mb-4">
               BuildX Capital
