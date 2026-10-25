@@ -210,8 +210,8 @@ export default function AboutPage() {
               Alongside Prembly
             </h2>
             <p className="text-[16px] leading-[1.85] text-muted mb-3">
-              Prembly is my main work. These are things I am exploring and
-              supporting alongside it.
+              Three efforts that carry the same thesis into energy, history and
+              weekly intelligence.
             </p>
             <div>
               {building.map((item, index) => (
