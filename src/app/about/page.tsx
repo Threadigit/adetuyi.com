@@ -295,8 +295,9 @@ export default function AboutPage() {
               Outside work
             </h2>
             <p className="text-[16px] leading-[1.85] text-muted">
-              I am a Christian and a father to a young daughter. Both shape how
-              I think about what we are building, and who it is for.
+              I am a Christian, a husband to a loving wife and a father to a young
+              daughter. All three shape how I think about what we are building,
+              and who it is for.
             </p>
           </section>
         </div>
