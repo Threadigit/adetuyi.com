@@ -100,9 +100,8 @@ export default function Home() {
           <span className="text-accent text-[13px] font-medium ml-1">(YC W22)</span>
         </p>
         <p className="text-[19px] md:text-[21px] leading-[1.55] tracking-[-0.01em] text-foreground max-w-[640px] mt-4">
-          I build the infrastructure people and businesses need to create and
-          exchange value, so they can earn, grow, and participate productively
-          in the global economy.
+          I build the infrastructure that lets people and businesses create
+          value, earn, and take part in the global economy.
         </p>
         <div className="flex flex-wrap items-center gap-x-5 gap-y-3 mt-7">
           <Link
@@ -116,7 +115,7 @@ export default function Home() {
             href="/thesis"
             className="inline-flex items-center gap-2 text-[14px] font-medium text-foreground hover:text-accent transition-colors group"
           >
-            Explore the thesis
+            Explore my thesis
             <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
           </Link>
         </div>
