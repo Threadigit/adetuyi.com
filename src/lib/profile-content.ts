@@ -1,7 +1,8 @@
 export type ProfileEntry = {
   title: string;
   meta: string;
-  href: string;
+  /** Entries without a link are shown as plain rows, for appearances with no public page. */
+  href?: string;
   external?: boolean;
 };
 
@@ -34,10 +35,24 @@ export const speakingEntries: ProfileEntry[] = [
     external: true,
   },
   {
+    title: "Using AI to Accelerate Startup Success in Africa",
+    meta: "Velocity Digital · August 2023",
+  },
+  {
+    title: "Transforming Police Training for a Safer America",
+    meta: "An AI-driven, AR e-training and evaluation service · Harbor Bank, Maryland · November 2025",
+  },
+  {
     title:
       "Regulating Nigeria's Fintech Industry; Building Investors Confidence Without Stifling Growth",
     meta: "Nigeria Fintech Forum Panel · August 2022",
     href: "https://www.instagram.com/p/CggkddOMPWH/",
+    external: true,
+  },
+  {
+    title: "Kwarabuild Tech Conf '22",
+    meta: "Kwarabuild Tech Conf · December 2022",
+    href: "https://x.com/kwarabuild/status/1602980834310594561",
     external: true,
   },
 ];
@@ -123,6 +138,18 @@ export const pressEntries: ProfileEntry[] = [
     title: "Academic Research Publications",
     meta: "ResearchGate",
     href: "https://www.researchgate.net/profile/Tolu-Adetuyi",
+    external: true,
+  },
+  {
+    title: "Lagos Tech Fest 2023 speaker announcement",
+    meta: "Africa Tech Series on LinkedIn · 2023",
+    href: "https://www.linkedin.com/feed/update/urn:li:share:7026117879569727489/",
+    external: true,
+  },
+  {
+    title: "Nigeria Fintech Forum 2022 speaker announcement",
+    meta: "Africa Tech Series on LinkedIn · 2022",
+    href: "https://www.linkedin.com/feed/update/urn:li:share:6954778543457189888/",
     external: true,
   },
 ];

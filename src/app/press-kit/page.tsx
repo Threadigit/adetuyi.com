@@ -39,7 +39,7 @@ const bios = [
   },
   {
     label: "Full bio",
-    text: "Tolu Adetuyi is Co-Founder and Chief Innovation Officer at Prembly, a trust infrastructure company working across Nigeria, Kenya and the United States, and part of Y Combinator's Winter 2022 batch. Prembly builds identity verification, fraud prevention and compliance infrastructure, and more than a thousand local and global businesses use it against fraud.\n\nBefore Prembly, Tolu helped build the product at Moniepoint and led growth to build the distribution network that puts banking and payment terminals in the hands of merchants across Nigeria. He began as a software engineer and joined early teams at Edves and Accounteer.\n\nTolu holds an MBA in Finance from Morgan State University and a BSc in Computer Science from Adekunle Ajasin University. He is a Forbes Technology Council member (2024), an On Deck Founder Fellow, and a mentor in Nigeria's Student Venture Capital Grant. He writes at adetuyi.com, curates Chronicles of Innovation and ZeroToAct, and invests in and supports other founders through BuildX Capital, which is also forming an energy fund.",
+    text: "Tolu Adetuyi is Co-Founder and Chief Innovation Officer at Prembly, a trust infrastructure company working across Nigeria, Kenya and the United States, and part of Y Combinator's Winter 2022 batch. Prembly builds identity verification, fraud prevention and compliance infrastructure, and more than a thousand local and global businesses use it against fraud.\n\nBefore Prembly, Tolu helped build the product at Moniepoint and led growth to build the distribution network that puts banking and payment terminals in the hands of merchants across Nigeria. He began as a software engineer at Edves, then joined the early team at Accounteer, first as a software engineer and later in product management.\n\nTolu holds an MBA in Finance from Morgan State University and a BSc in Computer Science from Adekunle Ajasin University. He is a Forbes Technology Council member (2024), an On Deck Founder Fellow, and a mentor in Nigeria's Student Venture Capital Grant. He writes at adetuyi.com, curates Chronicles of Innovation and ZeroToAct, and invests in and supports other founders through BuildX Capital, which is also forming an energy fund.",
   },
 ];
 
@@ -131,7 +131,7 @@ export default function PressKitPage() {
                   key={fact.label}
                   className={`flex flex-col sm:flex-row sm:justify-between gap-1 sm:gap-6 py-3.5 ${index > 0 ? "border-t border-accent/20" : ""}`}
                 >
-                  <dt className="text-[13px] uppercase tracking-widest text-muted/80">{fact.label}</dt>
+                  <dt className="text-[13px] uppercase tracking-widest text-muted">{fact.label}</dt>
                   <dd className="text-[15px] text-foreground sm:text-right sm:max-w-[400px]">{fact.value}</dd>
                 </div>
               ))}

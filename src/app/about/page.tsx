@@ -219,9 +219,10 @@ export default function AboutPage() {
               <p>
                 I began my career as a software engineer, and that training
                 still shapes how I think about systems. I worked as an engineer
-                at Edves before joining the early team at Accounteer, where we
-                built tools for small businesses that were still forming the
-                habits and systems to use them. The lesson was that
+                at Edves, then joined the early team at Accounteer as a software
+                engineer and later moved into product management. We built
+                tools for small businesses that were still forming the habits
+                and systems to use them. The lesson was that
                 understanding software is not enough. You have to understand the
                 daily reality of the people you serve.
               </p>

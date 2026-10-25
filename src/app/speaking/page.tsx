@@ -47,9 +47,13 @@ export default function SpeakingPage() {
         "@type": "ListItem",
         position: index + 1,
         name: entry.title,
-        url: entry.href.startsWith("/")
-          ? `https://www.adetuyi.com${entry.href}`
-          : entry.href,
+        ...(entry.href
+          ? {
+              url: entry.href.startsWith("/")
+                ? `https://www.adetuyi.com${entry.href}`
+                : entry.href,
+            }
+          : {}),
       })),
     },
   };

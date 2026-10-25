@@ -344,7 +344,7 @@ export default async function WritingPost({ params }: PageProps) {
                   <p className="text-[13px] leading-relaxed text-muted mt-1.5 line-clamp-2">
                     {next.excerpt}
                   </p>
-                  <span className="inline-flex items-center gap-1.5 text-[12px] text-muted/60 mt-2 group-hover:text-accent transition-colors duration-300">
+                  <span className="inline-flex items-center gap-1.5 text-[12px] text-muted mt-2 group-hover:text-accent transition-colors duration-300">
                     {next.readingTime}
                     <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">
                       →

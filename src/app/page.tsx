@@ -277,7 +277,7 @@ export default function Home() {
           Essays and frameworks on trust, capital, infrastructure, leadership,
           and how emerging markets work.
         </p>
-        <p className="text-[12px] uppercase tracking-widest text-muted/70 mb-1">Start here</p>
+        <p className="text-[12px] uppercase tracking-widest text-muted mb-1">Start here</p>
         <div className="space-y-0 mb-6">
           {getStartHerePosts().filter((post) => post.slug !== getLatestPosts(1)[0]?.slug).slice(0, 4).map((post, index, arr) => (
             <div key={post.slug}>
@@ -291,7 +291,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <p className="text-[12px] uppercase tracking-widest text-muted/70 mb-3">Latest</p>
+        <p className="text-[12px] uppercase tracking-widest text-muted mb-3">Latest</p>
         {getLatestPosts(1).map((post) => (
           <Link key={post.slug} href={`/writing/${post.slug}`} className="group block rounded-xl border border-border bg-surface/60 p-5 transition-colors hover:border-accent/40">
             <div className="flex items-center gap-2.5 mb-2.5">
@@ -307,7 +307,7 @@ export default function Home() {
             <p className="text-[14px] leading-relaxed text-muted line-clamp-2">
               {post.excerpt}
             </p>
-            <span className="mt-3 inline-flex items-center gap-1.5 text-[13px] text-muted/70 group-hover:text-accent transition-colors duration-300">
+            <span className="mt-3 inline-flex items-center gap-1.5 text-[13px] text-muted group-hover:text-accent transition-colors duration-300">
               {post.readingTime}
               <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
             </span>
@@ -341,7 +341,7 @@ export default function Home() {
           </Link>
         </div>
         <div className="flex justify-between items-baseline mb-1">
-          <p className="text-[12px] uppercase tracking-widest text-muted/70">Speaking &amp; panels</p>
+          <p className="text-[12px] uppercase tracking-widest text-muted">Speaking &amp; panels</p>
           <Link href="/speaking" className="text-[13px] text-muted hover:text-accent transition-colors">
             View all →
           </Link>
@@ -351,7 +351,7 @@ export default function Home() {
             .filter((entry) => entry.href !== "https://www.youtube.com/watch?v=7JIjYZJO5jQ")
             .slice(0, 3)
             .map((entry, index, entries) => (
-            <div key={entry.href}>
+            <div key={entry.title}>
               <a
                 href={entry.href}
                 target={entry.external ? "_blank" : undefined}
@@ -371,14 +371,14 @@ export default function Home() {
             ))}
         </div>
         <div className="flex justify-between items-baseline mt-8 mb-1">
-          <p className="text-[12px] uppercase tracking-widest text-muted/70">Press &amp; publications</p>
+          <p className="text-[12px] uppercase tracking-widest text-muted">Press &amp; publications</p>
           <Link href="/press" className="text-[13px] text-muted hover:text-accent transition-colors">
             View all →
           </Link>
         </div>
         <div>
           {pressEntries.slice(0, 3).map((entry, index, entries) => (
-            <div key={entry.href}>
+            <div key={entry.title}>
               <a
                 href={entry.href}
                 target="_blank"
