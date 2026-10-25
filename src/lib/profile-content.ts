@@ -19,6 +19,8 @@ export const speakingEntries: ProfileEntry[] = [
   {
     title: "Using AI to Accelerate Startup Success in Africa",
     meta: "Velocity Digital · August 2023",
+    href: "https://x.com/Velocityhq_/status/1694720312309649744",
+    external: true,
   },
   {
     title: "Building a Collaborative Firewall Against Fraud",
