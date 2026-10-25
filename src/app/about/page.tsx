@@ -207,8 +207,12 @@ export default function AboutPage() {
 
           <section>
             <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-5">
-              What I am building now
+              Alongside Prembly
             </h2>
+            <p className="text-[16px] leading-[1.85] text-muted mb-3">
+              Prembly is my main work. These are things I am exploring and
+              supporting alongside it.
+            </p>
             <div>
               {building.map((item, index) => (
                 <div key={item.name}>
@@ -291,8 +295,9 @@ export default function AboutPage() {
               Outside work
             </h2>
             <p className="text-[16px] leading-[1.85] text-muted">
-              I am a Christian and a father to a young daughter. Both shape how
-              I think about what we are building, and who it is for.
+              I am a Christian, a husband to a loving wife and a father to a young
+              daughter. All three shape how I think about what we are building,
+              and who it is for.
             </p>
           </section>
         </div>
