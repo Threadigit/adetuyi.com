@@ -223,7 +223,7 @@ export default function Home() {
             in the global economy and not only the local one, expands when
             people and businesses can create exportable value, prove who they
             are, move money, reach markets, learn what works, access capital
-            and productive assets, and rely on dependable infrastructure.
+            and productive assets, and rely on the dependable infrastructure that makes it all work.
           </p>
           <p className="text-[15px] text-muted leading-relaxed mb-6">
             Most of my work has been an expression of that thesis, from trust

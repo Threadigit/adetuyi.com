@@ -241,8 +241,8 @@ export default function AboutPage() {
                 One conviction guides my work. Economic participation, in the
                 global economy and not only the local one, expands when people
                 and businesses can create exportable value, prove who they are,
-                move money, reach markets, access capital and rely on
-                dependable infrastructure.
+                move money, reach markets, access capital and rely on the
+                dependable infrastructure that makes it all work.
                 You can read it in full in{" "}
                 <Link href="/thesis" className={externalLink}>
                   my thesis
