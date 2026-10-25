@@ -14,7 +14,7 @@ export async function GET() {
           justifyContent: "space-between",
           background: "#fdfcf9",
           padding: "72px 80px",
-          borderLeft: "16px solid #d95c2e",
+          borderLeft: "16px solid #b94618",
         }}
       >
         <div
@@ -23,7 +23,7 @@ export async function GET() {
             fontSize: 26,
             letterSpacing: 4,
             textTransform: "uppercase",
-            color: "#d95c2e",
+            color: "#b94618",
           }}
         >
           Investing &amp; Fund Formation

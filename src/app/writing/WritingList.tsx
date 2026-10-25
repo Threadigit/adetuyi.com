@@ -31,7 +31,7 @@ export default function WritingList({ posts, startHere }: { posts: Post[]; start
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search essays"
-          className="w-full rounded-full border border-accent/20 bg-transparent px-5 py-2.5 text-[14px] text-foreground placeholder:text-muted/70 focus:border-accent focus:outline-none"
+          className="w-full rounded-full border border-accent/20 bg-transparent px-5 py-2.5 text-[14px] text-foreground placeholder:text-muted focus:border-accent focus:outline-none"
         />
       </div>
 
@@ -90,7 +90,7 @@ export default function WritingList({ posts, startHere }: { posts: Post[]; start
                 <span className="text-muted/40 text-[10px]">·</span>
                 <time
                   dateTime={post.date}
-                  className="text-[12px] uppercase tracking-widest text-muted/60"
+                  className="text-[12px] uppercase tracking-widest text-muted"
                 >
                   {new Date(post.date).toLocaleDateString("en-US", {
                     year: "numeric",
@@ -106,7 +106,7 @@ export default function WritingList({ posts, startHere }: { posts: Post[]; start
               <p className="text-[14px] leading-relaxed text-muted line-clamp-2">
                 {post.excerpt}
               </p>
-              <span className="inline-flex items-center gap-1.5 text-[13px] text-muted/60 mt-3 group-hover:text-accent transition-colors duration-300">
+              <span className="inline-flex items-center gap-1.5 text-[13px] text-muted mt-3 group-hover:text-accent transition-colors duration-300">
                 {post.readingTime}
                 <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">
                   →
