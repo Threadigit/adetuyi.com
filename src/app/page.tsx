@@ -281,7 +281,7 @@ export default function Home() {
           and how emerging markets work.
         </p>
         <p className="text-[12px] uppercase tracking-widest text-muted/70 mb-1">Start here</p>
-        <div className="space-y-0 mb-8">
+        <div className="space-y-0 mb-6">
           {getStartHerePosts().slice(0, 4).map((post, index, arr) => (
             <div key={post.slug}>
               <Link href={`/writing/${post.slug}`} className="group flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-0.5 sm:gap-6 py-3">
@@ -295,24 +295,16 @@ export default function Home() {
           ))}
         </div>
         <p className="text-[12px] uppercase tracking-widest text-muted/70 mb-1">Latest</p>
-        <div className="space-y-0">
-          {getLatestPosts(3).map((post, index, arr) => (
-            <div key={post.slug}>
-              <Link href={`/writing/${post.slug}`} className="group block py-4">
-                <div className="flex items-center gap-2.5 mb-2">
-                  <span className="text-[11px] uppercase tracking-widest text-accent font-medium">{post.category}</span>
-                </div>
-                <h3 className="text-[15px] font-medium text-foreground tracking-tight leading-snug mb-1.5 group-hover:text-accent transition-colors duration-300">
-                  {post.title}
-                </h3>
-                <p className="text-[13px] leading-relaxed text-muted line-clamp-1">
-                  {post.excerpt}
-                </p>
-              </Link>
-              {index < arr.length - 1 && <div className="border-t border-accent/15" />}
-            </div>
-          ))}
-        </div>
+        {getLatestPosts(1).map((post) => (
+          <Link key={post.slug} href={`/writing/${post.slug}`} className="group flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-0.5 sm:gap-6 py-3">
+            <span className="text-[15px] text-foreground group-hover:text-accent transition-colors duration-300">
+              {post.title}
+            </span>
+            <time dateTime={post.date} className="text-[13px] text-muted whitespace-nowrap">
+              {new Date(post.date).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" })}
+            </time>
+          </Link>
+        ))}
       </section>
 
       {/* ── Featured Video ── */}
