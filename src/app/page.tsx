@@ -369,7 +369,7 @@ export default function Home() {
           </Link>
         </div>
         <div>
-          {pressEntries.slice(0, 4).map((entry, index, entries) => (
+          {pressEntries.slice(0, 3).map((entry, index, entries) => (
             <div key={entry.href}>
               <a
                 href={entry.href}
