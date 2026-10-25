@@ -133,9 +133,9 @@ export default function EconomicParticipationThesisPage() {
             Across my work, I keep returning to one question. What must exist
             for more people and businesses to contribute meaningfully to the
             economy and benefit from its growth? The answer is not simply
-            access to one product. It is a dependable path from identity and
-            trust to knowledge, money, capital, production, markets, and the
-            global economy.
+            access to one product. It is a dependable path that starts with the ability to
+            create exportable value, and runs through identity and trust,
+            knowledge, money, and capital, to markets and the global economy.
           </p>
           <p>
             Opportunity becomes real only when that path works. A bank account
@@ -197,6 +197,19 @@ export default function EconomicParticipationThesisPage() {
           </div>
 
           <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
+            Why the global economy
+          </h2>
+          <p>
+            Local access is not the test. A business that cannot sell beyond
+            its own market stays exposed to the limits of that market, and a
+            country that only buys what others make stays dependent. The aim
+            is for Africa to become productively valuable to the world, and to
+            move from dependence to genuine collaboration. That is not a
+            quarrel over the past. It is a question of what Africa can offer,
+            and whether the systems exist to let it be paid for.
+          </p>
+
+          <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
             How this focus appears in my work
           </h2>
           <p>
@@ -231,9 +244,9 @@ export default function EconomicParticipationThesisPage() {
             >
               Moniepoint
             </a>
-            , I helped build the distribution network that moves billions of
-            dollars in transactions and now reaches millions of businesses
-            across the continent. That work showed me where participation
+            , I helped build the product and led growth to build the
+            distribution network that moves billions of dollars in transactions
+            and now reaches millions of businesses across the continent. That work showed me where participation
             actually begins. Financial technology only becomes
             useful when someone takes it the last mile, into the markets and
             neighbourhoods where people already earn and trade, in a form that
