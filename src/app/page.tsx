@@ -41,6 +41,9 @@ export default function Home() {
           TA<span className="text-accent">.</span>
         </Link>
         <div className="flex items-center gap-4 sm:gap-6 text-[13px] text-muted">
+          <Link href="/about" className="hover:text-foreground transition-colors">
+            About
+          </Link>
           <Link href="/writing" className="hover:text-foreground transition-colors">
             Writing
           </Link>
