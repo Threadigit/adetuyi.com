@@ -39,8 +39,8 @@ export const speakingEntries: ProfileEntry[] = [
     meta: "Velocity Digital · August 2023",
   },
   {
-    title: "The Use of AI in Security",
-    meta: "Harbor Bank, Maryland · November 2025",
+    title: "Transforming Police Training for a Safer America",
+    meta: "An AI-driven, AR e-training and evaluation service · Harbor Bank, Maryland · November 2025",
   },
   {
     title:
