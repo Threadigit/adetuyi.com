@@ -189,9 +189,9 @@ export default function AboutPage() {
                 <a href="https://moniepoint.com/" target="_blank" rel="noopener noreferrer" className={externalLink}>
                   Moniepoint
                 </a>
-                , I led growth and helped build the distribution network that put
-                banking and payment terminals in the hands of merchants the
-                formal system had ignored. That work taught me that the best
+                , I helped build the product and led growth to build the
+                distribution network that put banking and payment terminals in
+                the hands of merchants the formal system had ignored. That work taught me that the best
                 product does not win on its own. The best distributed product
                 does.
               </p>

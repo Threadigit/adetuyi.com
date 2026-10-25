@@ -138,13 +138,13 @@ export default function Home() {
           global businesses use it against fraud.
         </p>
         <p className="text-[15px] leading-[1.8] text-muted mt-3">
-          Before Prembly, I led growth at{" "}
+          Before Prembly, I helped build the product at{" "}
           <a href="https://moniepoint.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">
             Moniepoint
           </a>
-          , helping build the distribution network that moves billions of
-          dollars in transactions and now serves millions of businesses across
-          the continent. I hold a first-class degree in Computer Science and an
+          {" "}and led growth to build the distribution network that moves
+          billions of dollars in transactions and now serves millions of
+          businesses across the continent. I hold a first-class degree in Computer Science and an
           MBA in Finance from Morgan State University, and I am a fellow of{" "}
           <a href="https://joinodf.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">
             On Deck
