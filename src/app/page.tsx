@@ -41,6 +41,9 @@ export default function Home() {
           TA<span className="text-accent">.</span>
         </Link>
         <div className="flex items-center gap-4 sm:gap-6 text-[13px] text-muted">
+          <Link href="/about" className="hover:text-foreground transition-colors">
+            About
+          </Link>
           <Link href="/writing" className="hover:text-foreground transition-colors">
             Writing
           </Link>
@@ -218,9 +221,9 @@ export default function Home() {
           <p className="text-[15px] text-muted leading-relaxed mb-4">
             My work is guided by a simple conviction. Economic participation,
             in the global economy and not only the local one, expands when
-            people and businesses can prove who they are, move money, reach
-            markets, learn what works, access capital and productive assets,
-            and rely on dependable infrastructure.
+            people and businesses can create exportable value, prove who they
+            are, move money, reach markets, learn what works, access capital
+            and productive assets, and rely on dependable infrastructure.
           </p>
           <p className="text-[15px] text-muted leading-relaxed mb-6">
             Most of my work has been an expression of that thesis, from trust

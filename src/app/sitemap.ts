@@ -18,6 +18,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: 'https://www.adetuyi.com/about',
+      lastModified: siteUpdated,
+      changeFrequency: 'yearly',
+      priority: 0.8,
+    },
+    {
       url: 'https://www.adetuyi.com/thesis',
       lastModified: siteUpdated,
       changeFrequency: 'yearly',
