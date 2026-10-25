@@ -222,8 +222,9 @@ export default function AboutPage() {
               <p>
                 One conviction guides my work. Economic participation, in the
                 global economy and not only the local one, expands when people
-                and businesses can prove who they are, move money, reach
-                markets, access capital and rely on dependable infrastructure.
+                and businesses can create exportable value, prove who they are,
+                move money, reach markets, access capital and rely on
+                dependable infrastructure.
                 You can read it in full in{" "}
                 <Link href="/thesis" className={externalLink}>
                   my thesis
