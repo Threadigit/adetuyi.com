@@ -153,59 +153,54 @@ export default function Home() {
         </p>
       </section>
 
-      {/* ── Current Work ── */}
-      <section className="mb-10 animate-fade-up delay-300">
-        <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
-          Current Work
-        </h2>
-        <div className="space-y-5">
-          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-0.5">
-            <div className="flex flex-wrap items-baseline gap-x-3">
-              <span>
-                <a
-                  href="https://prembly.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[15px] font-medium link-hover"
-                >
-                  Prembly
-                </a>
-                <span className="text-accent text-[13px] font-medium ml-1">(YC W22)</span>
-              </span>
-              <span className="text-muted text-[13px]">
-                Co-Founder & CIO
-              </span>
-            </div>
-            <span className="text-muted text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Identity, Fraud Prevention & Compliance</span>
+      {/* ── Current Work and In View ── */}
+      <section className="mb-16 animate-fade-up delay-300" aria-label="Current work and ventures">
+        <div className="grid gap-4 sm:grid-cols-2">
+          <div className="flex flex-col rounded-xl border border-border bg-surface/60 p-5">
+            <p className="text-[11px] font-medium uppercase tracking-widest text-accent mb-3">
+              Current Work
+            </p>
+            <h2 className="text-[18px] font-medium text-foreground leading-snug">
+              <a
+                href="https://prembly.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-hover"
+              >
+                Prembly
+              </a>
+              <span className="text-accent text-[13px] font-medium ml-1.5">(YC W22)</span>
+            </h2>
+            <p className="mt-1 text-[13px] text-muted">Co-Founder &amp; CIO</p>
+            <p className="mt-4 pt-4 border-t border-accent/15 text-[13px] leading-relaxed text-muted">
+              Identity, Fraud Prevention &amp; Compliance
+            </p>
           </div>
-        </div>
-      </section>
 
-      {/* ── In View ── */}
-      <section className="mb-16 animate-fade-up delay-300">
-        <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
-          In View
-        </h2>
-        <div className="flex flex-col gap-1.5">
-          <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
-            <Link
-              href="/thesis/buildx-capital"
-              className="text-[15px] font-medium link-hover whitespace-nowrap"
-            >
-              BuildX Capital
-            </Link>
-            <span className="text-[11px] uppercase tracking-widest text-accent font-medium border border-accent/25 rounded-full px-2 py-0.5 whitespace-nowrap">Investing &amp; Fund Formation</span>
+          <div className="flex flex-col rounded-xl border border-border bg-surface/60 p-5">
+            <p className="text-[11px] font-medium uppercase tracking-widest text-accent mb-3">
+              In View
+            </p>
+            <h2 className="text-[18px] font-medium text-foreground leading-snug">
+              <Link href="/thesis/buildx-capital" className="link-hover">
+                BuildX Capital
+              </Link>
+            </h2>
+            <p className="mt-1 text-[13px] text-muted">Investing &amp; Fund Formation</p>
+            <p className="mt-4 pt-4 border-t border-accent/15 text-[13px] leading-relaxed text-muted">
+              Mobility, Energy, Trade, Manufacturing &amp; Physical Infrastructure
+            </p>
           </div>
-          <span className="text-muted text-[13px] leading-relaxed">Mobility, Energy, Trade, Manufacturing &amp; Physical Infrastructure</span>
         </div>
-          <p className="border-t border-accent/20 mt-5 pt-4 text-[13px] leading-relaxed text-muted">
-            I also curate{" "}
-            <a href="https://www.chroniclesofinnovation.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">Chronicles of Innovation</a>
-            {" "}to show how the world was built, and{" "}
-            <a href="https://zerotoact.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">ZeroToAct</a>
-            &apos;s weekly Signals to show what is changing now, so people can
-            learn from the past and act in the present.
-          </p>
+
+        <p className="mt-5 text-[13px] leading-relaxed text-muted">
+          I also curate{" "}
+          <a href="https://www.chroniclesofinnovation.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">Chronicles of Innovation</a>
+          {" "}to show how the world was built, and{" "}
+          <a href="https://zerotoact.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">ZeroToAct</a>
+          &apos;s weekly Signals to show what is changing now, so people can
+          learn from the past and act in the present.
+        </p>
       </section>
 
       {/* ── Enduring Thesis ── */}
