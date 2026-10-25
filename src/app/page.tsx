@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import VideoPreview from "@/components/VideoPreview";
 import StructuredData from "@/components/StructuredData";
-import { getAllPosts, getLatestPosts } from "@/lib/writing";
+import { getAllPosts, getLatestPosts, getStartHerePosts } from "@/lib/writing";
 import { pressEntries, speakingEntries } from "@/lib/profile-content";
 
 const featuredVideoSchema = {
@@ -231,43 +231,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Latest Writing ── */}
-      <section className="mb-16 animate-fade-up delay-400">
-        <div className="flex justify-between items-baseline gap-6 mb-3">
-          <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3">
-            Writing
-          </h2>
-          <Link
-            href="/writing"
-            className="text-[13px] text-muted hover:text-accent transition-colors group flex items-center gap-1.5 whitespace-nowrap"
-          >
-            All {getAllPosts().length} essays <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
-          </Link>
-        </div>
-        <p className="text-[14px] leading-relaxed text-muted mb-4">
-          Essays and frameworks on trust, capital, infrastructure, leadership,
-          and how emerging markets work.
-        </p>
-        <div className="space-y-0">
-          {getLatestPosts(3).map((post, index, arr) => (
-            <div key={post.slug}>
-              <Link href={`/writing/${post.slug}`} className="group block py-4">
-                <div className="flex items-center gap-2.5 mb-2">
-                  <span className="text-[11px] uppercase tracking-widest text-accent font-medium">{post.category}</span>
-                </div>
-                <h3 className="text-[15px] font-medium text-foreground tracking-tight leading-snug mb-1.5 group-hover:text-accent transition-colors duration-300">
-                  {post.title}
-                </h3>
-                <p className="text-[13px] leading-relaxed text-muted line-clamp-1">
-                  {post.excerpt}
-                </p>
-              </Link>
-              {index < arr.length - 1 && <div className="border-t border-accent/15" />}
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* ── Enduring Thesis ── */}
       <section className="mb-16 animate-fade-up delay-500">
         <div className="p-8 bg-accent/5 ring-1 ring-border rounded-xl relative overflow-hidden">
@@ -297,6 +260,58 @@ export default function Home() {
           >
             Read my thesis <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
           </Link>
+        </div>
+      </section>
+
+      {/* ── Latest Writing ── */}
+      <section className="mb-16 animate-fade-up delay-400">
+        <div className="flex justify-between items-baseline gap-6 mb-3">
+          <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3">
+            Writing
+          </h2>
+          <Link
+            href="/writing"
+            className="text-[13px] text-muted hover:text-accent transition-colors group flex items-center gap-1.5 whitespace-nowrap"
+          >
+            All {getAllPosts().length} essays <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
+          </Link>
+        </div>
+        <p className="text-[14px] leading-relaxed text-muted mb-4">
+          Essays and frameworks on trust, capital, infrastructure, leadership,
+          and how emerging markets work.
+        </p>
+        <p className="text-[12px] uppercase tracking-widest text-muted/70 mb-1">Start here</p>
+        <div className="space-y-0 mb-8">
+          {getStartHerePosts().slice(0, 4).map((post, index, arr) => (
+            <div key={post.slug}>
+              <Link href={`/writing/${post.slug}`} className="group flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-0.5 sm:gap-6 py-3">
+                <span className="text-[15px] text-foreground group-hover:text-accent transition-colors duration-300">
+                  {post.title}
+                </span>
+                <span className="text-[11px] uppercase tracking-widest text-accent font-medium whitespace-nowrap">{post.category}</span>
+              </Link>
+              {index < arr.length - 1 && <div className="border-t border-accent/15" />}
+            </div>
+          ))}
+        </div>
+        <p className="text-[12px] uppercase tracking-widest text-muted/70 mb-1">Latest</p>
+        <div className="space-y-0">
+          {getLatestPosts(3).map((post, index, arr) => (
+            <div key={post.slug}>
+              <Link href={`/writing/${post.slug}`} className="group block py-4">
+                <div className="flex items-center gap-2.5 mb-2">
+                  <span className="text-[11px] uppercase tracking-widest text-accent font-medium">{post.category}</span>
+                </div>
+                <h3 className="text-[15px] font-medium text-foreground tracking-tight leading-snug mb-1.5 group-hover:text-accent transition-colors duration-300">
+                  {post.title}
+                </h3>
+                <p className="text-[13px] leading-relaxed text-muted line-clamp-1">
+                  {post.excerpt}
+                </p>
+              </Link>
+              {index < arr.length - 1 && <div className="border-t border-accent/15" />}
+            </div>
+          ))}
         </div>
       </section>
 
@@ -429,6 +444,7 @@ export default function Home() {
             <a href="https://twitter.com/adetuyitolu" target="_blank" rel="me noopener noreferrer" className="link-hover hover:text-foreground transition-colors">Twitter</a>
             <a href="https://instagram.com/adetuyitolu" target="_blank" rel="me noopener noreferrer" className="link-hover hover:text-foreground transition-colors">Instagram</a>
             <a href="https://www.youtube.com/channel/UClEyfBprR1O1VANeLf6SnyA" target="_blank" rel="me noopener noreferrer" className="link-hover hover:text-foreground transition-colors">YouTube</a>
+            <a href="/feed.xml" className="link-hover hover:text-foreground transition-colors">RSS</a>
             <a href="https://scholar.google.com/citations?hl=en&user=IjIW4v0AAAAJ" rel="me" className="sr-only">Google Scholar</a>
             <a href="https://www.wikidata.org/wiki/Q140088103" rel="me" className="sr-only">Wikidata</a>
           </div>

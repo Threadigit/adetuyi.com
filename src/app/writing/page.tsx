@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
-import { getAllPosts } from "@/lib/writing";
+import { getAllPosts, getStartHerePosts } from "@/lib/writing";
 import WritingList from "./WritingList";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
@@ -94,7 +94,7 @@ export default function WritingPage() {
         </p>
       </header>
 
-      <WritingList posts={posts} />
+      <WritingList posts={posts} startHere={getStartHerePosts()} />
     </main>
   );
 }

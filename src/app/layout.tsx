@@ -57,6 +57,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://www.adetuyi.com",
+    types: {
+      "application/rss+xml": [{ url: "/feed.xml", title: "Tolu Adetuyi, Writing" }],
+    },
   },
 };
 

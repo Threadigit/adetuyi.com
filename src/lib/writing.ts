@@ -34,6 +34,8 @@ export interface Post {
   readingTime: string;
   /** Slugs to surface first under "Read next". Same-category posts fill any remaining slots. */
   related?: string[];
+  /** Skip the large first letter, for openings such as a letter salutation. */
+  noDropCap?: boolean;
   content: ContentBlock[];
 }
 
@@ -145,6 +147,7 @@ const posts: Post[] = [
     date: "2026-10-01",
     category: "Nation Building",
     ogImage: "/nigeria-at-66-og.jpg",
+    noDropCap: true,
     readingTime: "4 min read",
     content: [
       { type: "paragraph", text: "Dear Nigeria," },
@@ -738,7 +741,7 @@ const posts: Post[] = [
     excerpt: "A few weeks ago I tried to send a routine wire transfer between two U.S. bank accounts. The bank cancelled it. Not for fraud, not for missing funds. My friend happened to be physically in Nigeria. That phone call is the clearest explanation I have of Africa's real infrastructure problem.",
     date: "2026-07-11",
     modifiedDate: "2026-09-10",
-    category: "Capital Formation",
+    category: "Nation Building",
     ogImage: "/wire-transfer-og.jpg",
     readingTime: "6 min read",
     content: [
@@ -1067,7 +1070,7 @@ const posts: Post[] = [
     seoTitle: "The Accept Always Trap in Autonomous AI",
     excerpt: "I woke up at 4:00 AM with my mind absolutely racing. I’d just had a vivid, highly specific dream. In it, I wasn’t just designing systems, nor was I orchestrating deals or looking at lines of code; I was experiencing a full scale jailbreak event.",
     date: "2026-06-13",
-    category: "Technology",
+    category: "Trust Infrastructure",
     readingTime: "5 min read",
     content: [
       { type: "paragraph", text: "I woke up at 4:00 AM with my mind absolutely racing." },
@@ -1678,7 +1681,7 @@ const posts: Post[] = [
     excerpt:
       "Every founder in Africa obsesses over product. Very few obsess over distribution. But distribution, the ability to reach your customer at the last mile, is what separates the companies that scale from the ones that stall at Series A.",
     date: "2025-09-04",
-    category: "Distribution Infrastructure",
+    category: "Nation Building",
     readingTime: "4 min read",
     content: [
       { type: "paragraph", text: "I spent years at Moniepoint building one of the largest financial agent networks in Africa. What I learned in those years fundamentally reshaped how I think about technology companies on the continent." },
@@ -1724,7 +1727,7 @@ const posts: Post[] = [
     excerpt:
       "I've worked as both a product manager and a software engineer. They're both solving the same problem, just from opposite ends. The biggest bottlenecks almost always come from communication debt, not tech debt.",
     date: "2025-06-03",
-    category: "Product & Engineering",
+    category: "Execution",
     readingTime: "3 min read",
     content: [
       { type: "paragraph", text: "I've worked as both a product manager and a software engineer. And here's what I've learned. They're both solving the same problem, just from opposite ends. PMs think in terms of users, market, and timelines. Engineers think in terms of systems, edge cases, and constraints." },
@@ -1748,6 +1751,21 @@ export function getAllPosts(): Post[] {
 
 export function getPostBySlug(slug: string): Post | undefined {
   return posts.find((p) => p.slug === slug);
+}
+
+/** Hand-picked entry points for new readers, in display order. */
+const startHereSlugs = [
+  "the-ancient-wisdom-of-joseph",
+  "sound-judgement-when-the-rules-keep-changing",
+  "effort-at-the-wrong-level",
+  "the-other-side-of-the-transaction",
+  "starboy-does-not-scale",
+];
+
+export function getStartHerePosts(): Post[] {
+  return startHereSlugs
+    .map((slug) => posts.find((p) => p.slug === slug))
+    .filter((p): p is Post => Boolean(p));
 }
 
 export function getLatestPosts(count: number = 3): Post[] {

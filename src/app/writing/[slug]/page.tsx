@@ -55,14 +55,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-function renderBlock(block: ContentBlock, index: number) {
+function renderBlock(block: ContentBlock, index: number, dropCap: boolean) {
   switch (block.type) {
     case "paragraph":
       return (
         <p
           key={index}
-          className={`text-[15px] leading-[1.85] text-muted ${
-            index === 0
+          className={`text-[16px] md:text-[17px] leading-[1.85] text-muted ${
+            index === 0 && dropCap
               ? "first-letter:text-[48px] first-letter:font-bold first-letter:text-foreground first-letter:mr-3 first-letter:float-left first-letter:leading-[0.8] after:content-[''] after:block after:clear-both"
               : ""
           }`}
@@ -73,7 +73,7 @@ function renderBlock(block: ContentBlock, index: number) {
       return (
         <h2
           key={index}
-          className="text-[18px] font-medium text-foreground mt-8 mb-3 tracking-tight"
+          className="text-[19px] md:text-[20px] font-semibold text-foreground mt-10 mb-3 tracking-tight"
           dangerouslySetInnerHTML={{ __html: block.text }}
         />
       );
@@ -81,7 +81,7 @@ function renderBlock(block: ContentBlock, index: number) {
       return (
         <blockquote
           key={index}
-          className="my-6 pl-6 border-l-[3px] border-accent text-[15px] md:text-[16px] italic text-foreground/80 leading-relaxed whitespace-pre-line"
+          className="my-6 pl-6 border-l-[3px] border-accent text-[16px] md:text-[17px] italic text-foreground/80 leading-relaxed whitespace-pre-line"
           dangerouslySetInnerHTML={{ __html: block.text }}
         />
       );
@@ -322,7 +322,7 @@ export default async function WritingPost({ params }: PageProps) {
         </header>
 
         <div className="mb-16 space-y-4">
-          {post.content.map((block, index) => renderBlock(block, index))}
+          {post.content.map((block, index) => renderBlock(block, index, !post.noDropCap))}
         </div>
 
         {/* Read next */}
