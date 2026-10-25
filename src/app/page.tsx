@@ -234,7 +234,8 @@ export default function Home() {
               "Trust, Financial & Cross-Border Infrastructure",
               "Distribution & Market Access",
               "Energy, Manufacturing & Productive Infrastructure",
-              "Knowledge, Media, Venture & Capital Formation",
+              "Research, Knowledge & Media",
+              "Venture & Capital Formation",
             ].map((area) => (
               <span key={area} className="inline-flex items-center px-2.5 py-1.5 rounded bg-background/70 border border-accent/15 text-muted text-[12px] leading-none">
                 {area}
