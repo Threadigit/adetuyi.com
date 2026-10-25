@@ -356,6 +356,21 @@ export default async function WritingPost({ params }: PageProps) {
           </div>
         )}
 
+        {/* Follow */}
+        <div className="pt-8 pb-8 border-t border-border">
+          <p className="text-[11px] font-medium uppercase tracking-[0.15em] text-accent mb-2">
+            Follow along
+          </p>
+          <p className="text-[14px] text-muted leading-relaxed">
+            Get new essays in your feed reader, such as Feedly or NetNewsWire.
+            Add{" "}
+            <a href="/feed.xml" className="text-foreground link-hover font-medium">
+              adetuyi.com/feed.xml
+            </a>{" "}
+            and new writing will arrive as it is published.
+          </p>
+        </div>
+
         {/* Work with me */}
         <div className="pt-8 pb-8 border-t border-border">
           <p className="text-[11px] font-medium uppercase tracking-[0.15em] text-accent mb-2">

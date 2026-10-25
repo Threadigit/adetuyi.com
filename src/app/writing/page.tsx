@@ -92,6 +92,17 @@ export default function WritingPage() {
           leadership, venture building, distribution, capital formation, and
           the systems that power economic participation across emerging markets.
         </p>
+        <a
+          href="/feed.xml"
+          className="mt-5 inline-flex items-center gap-2 rounded-full border border-accent/30 px-4 py-1.5 text-[12px] font-medium uppercase tracking-widest text-accent hover:bg-accent hover:text-white transition-colors"
+        >
+          <svg aria-hidden="true" viewBox="0 0 24 24" className="h-3.5 w-3.5 fill-current">
+            <circle cx="5" cy="19" r="2.2" />
+            <path d="M3 10.5v3.2a7.3 7.3 0 0 1 7.3 7.3h3.2A10.5 10.5 0 0 0 3 10.5Z" />
+            <path d="M3 3.5v3.2A14.3 14.3 0 0 1 17.3 21h3.2A17.5 17.5 0 0 0 3 3.5Z" />
+          </svg>
+          Follow by RSS
+        </a>
       </header>
 
       <WritingList posts={posts} startHere={getStartHerePosts()} />
