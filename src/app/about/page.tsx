@@ -154,11 +154,13 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-[16px] leading-[1.85] text-muted">
               <p>
-                Before Accounteer, I worked at Edves. Then I joined the early team
-                at Accounteer, building tools for small businesses that were
-                still forming the habits and systems to use them. Understanding
-                software was not enough. We had to understand the daily reality
-                of the people we served.
+                My background is software engineering. It is where I learned to
+                think in systems, even though my work has moved well beyond
+                writing code. Before Accounteer, I worked at Edves. Then I
+                joined the early team at Accounteer, building tools for small
+                businesses that were still forming the habits and systems to
+                use them. Understanding software was not enough. We had to
+                understand the daily reality of the people we served.
               </p>
               <p>
                 At{" "}
