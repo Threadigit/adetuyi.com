@@ -240,8 +240,7 @@ export default function EconomicParticipationThesisPage() {
             helps businesses verify customers, meet compliance requirements,
             prevent fraud, and transact with confidence. We work across
             emerging markets, with presence in Nigeria, Kenya, and the United
-            States, and more than a thousand local and global businesses use it
-            against fraud, across millions of verifications. That count is an
+            States, and more than a thousand local and global businesses rely on it, across millions of verifications. That count is an
             input, not a result. What it buys is a business able to deal with a
             customer it could not otherwise trust. Prembly is my primary
             operating work and the clearest case of this thesis in practice.
@@ -326,9 +325,7 @@ export default function EconomicParticipationThesisPage() {
             </h2>
             <p className="m-0 text-[14px] leading-[1.8] text-muted">
               BuildX Capital is this thesis applied to physical infrastructure
-              and to the founders building it. For years I have backed this
-              deficit as an angel investor and supported other founders, one
-              company at a time. Angel cheques can prove a model. They cannot
+              and to the founders building it. For years I have backed founders working on this gap as an angel investor and supported them, one company at a time. Angel cheques can prove a model. They cannot
               finance the assets themselves. The energy mandate of BuildX
               Capital carries that learning, and the operating experience
               behind the distribution and trust infrastructure work, into a

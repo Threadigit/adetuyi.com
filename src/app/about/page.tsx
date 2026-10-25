@@ -5,7 +5,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 const title = "About the Co-Founder of Prembly";
 const description =
-  "Tolu Adetuyi is a Nigerian engineer turned founder and investor, and Co-Founder and Chief Innovation Officer at Prembly. The path from campus software to trust infrastructure and investing in founders across Africa.";
+  "Tolu Adetuyi is a Nigerian engineer turned founder and investor. Co-Founder of Prembly, he now also backs founders across Africa.";
 const canonical = "https://www.adetuyi.com/about";
 
 export const metadata: Metadata = {
@@ -92,7 +92,7 @@ const affiliations = [
   },
   {
     label: "Fintech Takes",
-    detail: "Member of the network, in the US.",
+    detail: "Member of the network in the United States.",
   },
 ];
 
@@ -158,18 +158,14 @@ export default function AboutPage() {
           <div className="flex flex-col-reverse gap-8 sm:flex-row sm:items-start sm:justify-between">
             <div className="sm:max-w-[420px]">
               <h1 className="text-[34px] md:text-[42px] font-medium tracking-tight leading-[1.15] mb-6 text-foreground">
-                Building infrastructure for economic participation
+                Engineer, founder and investor
               </h1>
               <p className="text-[17px] leading-[1.8] text-muted">
-                I am a Nigerian engineer turned founder and investor. I live in
-                the United States and work across the United States, Nigeria
-                and Kenya. I am Co-Founder and Chief Innovation Officer at{" "}
+                I am a Nigerian engineer turned founder and investor. I live in the United States and work across the United States, Nigeria and Kenya. I am Co-Founder and Chief Innovation Officer at{" "}
                 <a href="https://prembly.com/" target="_blank" rel="noopener noreferrer" className={inlineLink}>
                   Prembly
                 </a>
-                , a trust infrastructure company, and I invest in and support
-                founders building the financial and physical systems that let
-                people and businesses take part in the global economy.
+                , which helps businesses verify customers, prevent fraud and meet compliance rules. I also invest in and support founders building the financial and physical systems that let people and businesses take part in the global economy.
               </p>
             </div>
             <div className="w-[150px] sm:w-[170px] shrink-0 overflow-hidden rounded-xl border border-border">
@@ -256,8 +252,7 @@ export default function AboutPage() {
                 widened into a larger question about how trust works in digital
                 markets. Today we build identity verification, fraud prevention
                 and compliance infrastructure from Nigeria, Kenya and the United
-                States, and more than a thousand local and global businesses use
-                it against fraud. We were part of Y Combinator&apos;s Winter 2022
+                States, and more than a thousand local and global businesses rely on it. We were part of Y Combinator&apos;s Winter 2022
                 batch.
               </p>
               <p>

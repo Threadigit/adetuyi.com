@@ -6,7 +6,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 const canonical = "https://www.adetuyi.com/writing";
 const postCount = getAllPosts().length;
-const description = `Read ${postCount} essays by Tolu Adetuyi on trust infrastructure, venture building, distribution, capital formation, technology, and economic participation in Africa.`;
+const description = `Read ${postCount} essays by Tolu Adetuyi on leadership, building companies, trust, capital and economic participation in Africa.`;
 
 export const metadata: Metadata = {
   title: "Writing",

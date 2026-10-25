@@ -78,7 +78,7 @@ export default function Home() {
                 Tolu Adetuyi
               </h1>
               <p className="text-[13px] leading-relaxed text-muted">
-                Innovator &amp; Venture Architect
+                Founder &amp; Investor
               </p>
               <p className="flex items-center justify-center gap-2 mt-1.5 text-[11px] leading-none">
                 <span aria-hidden="true" className="w-4 h-px bg-accent" />
@@ -132,10 +132,7 @@ export default function Home() {
           <a href="https://prembly.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">
             Prembly
           </a>
-          , I am building the trust infrastructure that enables businesses to
-          verify, transact, and grow with confidence. We work from Nigeria,
-          Kenya, and the United States, and more than a thousand local and
-          global businesses use it against fraud.
+          , I am building the technology that lets businesses confirm who they are dealing with, prevent fraud, and meet compliance rules. We work from Nigeria, Kenya, and the United States, and more than a thousand local and global businesses rely on it.
         </p>
         <p className="text-[15px] leading-[1.8] text-muted mt-3">
           Before Prembly, I helped build the product at{" "}
@@ -324,8 +321,7 @@ export default function Home() {
           <VideoPreview />
         </div>
         <p className="text-muted text-[13px] mt-3">
-          Lagos Tech Fest 2023: Identity verification, compliance, and reducing
-          fraud for African startups.
+          Speaking at Lagos Tech Fest 2023 on identity verification, compliance, and reducing fraud for African startups.
         </p>
       </section>
 
@@ -438,13 +434,13 @@ export default function Home() {
         {/* Footer Bottom */}
         <div className="flex flex-col gap-y-4 text-[13px] border-t border-border/50 pt-6">
           <p className="text-muted leading-relaxed">
-            Building interconnected systems that expand economic participation and infrastructure across emerging markets.
+            Building the infrastructure that widens economic participation across Africa.
           </p>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-3 text-muted">
             <Link href="/about" className="link-hover hover:text-foreground transition-colors">About</Link>
             <Link href="/press-kit" className="link-hover hover:text-foreground transition-colors">Press kit</Link>
             <a href="https://www.linkedin.com/in/adetuyitolu/" target="_blank" rel="me noopener noreferrer" className="link-hover hover:text-foreground transition-colors">LinkedIn</a>
-            <a href="https://twitter.com/adetuyitolu" target="_blank" rel="me noopener noreferrer" className="link-hover hover:text-foreground transition-colors">Twitter</a>
+            <a href="https://twitter.com/adetuyitolu" target="_blank" rel="me noopener noreferrer" className="link-hover hover:text-foreground transition-colors">X</a>
             <a href="https://instagram.com/adetuyitolu" target="_blank" rel="me noopener noreferrer" className="link-hover hover:text-foreground transition-colors">Instagram</a>
             <a href="https://www.youtube.com/channel/UClEyfBprR1O1VANeLf6SnyA" target="_blank" rel="me noopener noreferrer" className="link-hover hover:text-foreground transition-colors">YouTube</a>
             <a href="/feed.xml" className="link-hover hover:text-foreground transition-colors">RSS</a>
