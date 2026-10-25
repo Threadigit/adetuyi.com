@@ -82,7 +82,7 @@ export default function ClosingTheComplianceGapPage() {
             <span className="text-[11px] uppercase tracking-widest text-accent font-medium">
               Trust infrastructure
             </span>
-            <span className="text-[13px] text-muted">Slide deck</span>
+            <span className="text-[13px] text-muted">Slide deck · 2022</span>
           </div>
           <h1 className="text-[34px] md:text-[44px] font-medium tracking-tight leading-[1.12] mb-5 text-foreground">
             {title}
