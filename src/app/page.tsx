@@ -326,9 +326,14 @@ export default function Home() {
 
       {/* ── Talks & Press ── */}
       <section className="mb-16 animate-fade-up delay-500">
-        <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
-          Talks &amp; Press
-        </h2>
+        <div className="flex justify-between items-baseline gap-6 mb-6">
+          <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3">
+            Talks &amp; Press
+          </h2>
+          <Link href="/press-kit" className="text-[13px] text-muted hover:text-accent transition-colors whitespace-nowrap">
+            Press kit →
+          </Link>
+        </div>
         <div className="flex justify-between items-baseline mb-1">
           <p className="text-[12px] uppercase tracking-widest text-muted/70">Speaking &amp; panels</p>
           <Link href="/speaking" className="text-[13px] text-muted hover:text-accent transition-colors">

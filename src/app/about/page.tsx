@@ -165,8 +165,8 @@ export default function AboutPage() {
                 On campus, I created the Career Advancement Programme, which
                 trained students in technology skills, and the Developers
                 Festival. I was also an active member of Enactus and president
-                of the Computer Science students, and I took part in much else
-                besides. Leadership began early for me.
+                of the Computer Science Students&apos; Association, and I took part
+                in much else besides. Leadership began early for me.
               </p>
             </div>
           </section>

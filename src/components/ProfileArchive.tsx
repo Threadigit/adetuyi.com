@@ -63,6 +63,14 @@ export default function ProfileArchive({
           </div>
         ))}
       </div>
+
+      <p className="mt-12 pt-8 border-t border-border text-[14px] leading-relaxed text-muted">
+        Need a bio, headshot or topics for an event or a story? See the{" "}
+        <Link href="/press-kit" className="text-foreground link-hover font-medium">
+          press kit
+        </Link>
+        .
+      </p>
     </main>
   );
 }
