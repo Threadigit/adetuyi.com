@@ -48,11 +48,13 @@ const posts: Post[] = [
     excerpt: "Nigeria's next Dangote will grow food, and growing it will not be enough. Joseph's story shows why the nation that holds the reserves holds the power, and what Nigeria must build to become the granary instead of the supplier.",
     date: "2026-10-24",
     category: "Nation Building",
+    ogImage: "/ancient-wisdom-joseph-og.jpg",
     readingTime: "4 min read",
     related: ["why-africa-cannot-skip-physical-infrastructure", "greatness-through-service"],
     content: [
       { type: "paragraph", text: "Nigeria's next Dangote will grow food. Growing it will not be enough. That company will process it, store it, brand it and sell it to nations that cannot feed themselves." },
       { type: "paragraph", text: "The idea is older than oil. It sits in the story of a Hebrew prisoner who became the most consequential economic mind Egypt ever had." },
+      { type: "image", url: "/ancient-wisdom-joseph-og.jpg", width: 1600, height: 837, alt: "An ancient granary evolving into modern Nigerian grain silos, processing facilities, rail and port infrastructure", caption: "The granary is more than the harvest. It is the system that stores, transforms and moves it." },
       { type: "heading", text: "The dream and the plan" },
       { type: "paragraph", text: "Pharaoh dreamt of seven fat cows eaten by seven thin ones, and nobody in his court could read it. Joseph could. Seven years of plenty were coming, followed by seven years of famine so severe that abundance would be forgotten." },
       { type: "paragraph", text: "Joseph did not stop at interpretation. He gave the king a plan. Set aside a fifth of the harvest in the good years, store it in the cities close to the fields, and put a discerning manager in charge with real authority. Do the hard work while everyone else is celebrating. When the famine came, Egypt had grain and the world did not." },
