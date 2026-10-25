@@ -156,10 +156,12 @@ export default function Home() {
       {/* ── Current Work and In View ── */}
       <section className="mb-16 animate-fade-up delay-300" aria-label="Current work and ventures">
         <div className="grid gap-4 sm:grid-cols-2">
-          <div className="flex flex-col rounded-xl border border-border bg-surface/60 p-5">
-            <p className="text-[11px] font-medium uppercase tracking-widest text-accent mb-3">
-              Current Work
-            </p>
+          <div className="flex flex-col rounded-xl border border-accent/30 bg-accent/5 p-5">
+            <div className="flex items-center justify-between gap-3 mb-3 min-h-[22px]">
+              <p className="text-[11px] font-medium uppercase tracking-widest text-accent">
+                Current Work
+              </p>
+            </div>
             <h2 className="text-[18px] font-medium text-foreground leading-snug">
               <a
                 href="https://prembly.com/"
@@ -178,16 +180,22 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col rounded-xl border border-border bg-surface/60 p-5">
-            <p className="text-[11px] font-medium uppercase tracking-widest text-accent mb-3">
-              In View
-            </p>
+            <div className="flex items-center justify-between gap-3 mb-3 min-h-[22px]">
+              <p className="text-[11px] font-medium uppercase tracking-widest text-muted">
+                In View
+              </p>
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-border px-2.5 py-0.5 text-[10px] font-medium uppercase tracking-widest text-muted whitespace-nowrap">
+                <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-muted/60" />
+                In progress
+              </span>
+            </div>
             <h2 className="text-[18px] font-medium text-foreground leading-snug">
               <Link href="/thesis/buildx-capital" className="link-hover">
                 BuildX Capital
               </Link>
             </h2>
             <p className="mt-1 text-[13px] text-muted">Investing &amp; Fund Formation</p>
-            <p className="mt-4 pt-4 border-t border-accent/15 text-[13px] leading-relaxed text-muted">
+            <p className="mt-4 pt-4 border-t border-border text-[13px] leading-relaxed text-muted">
               Mobility, Energy, Trade, Manufacturing &amp; Physical Infrastructure
             </p>
           </div>
