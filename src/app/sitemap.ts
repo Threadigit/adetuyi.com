@@ -40,7 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: 'https://www.adetuyi.com/thesis/buildx-fund-1',
+      url: 'https://www.adetuyi.com/thesis/buildx-capital',
       lastModified: siteUpdated,
       changeFrequency: 'yearly',
       priority: 0.7,

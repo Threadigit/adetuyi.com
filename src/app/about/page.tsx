@@ -50,9 +50,9 @@ const building = [
     external: true,
   },
   {
-    name: "BuildX Capital Fund 1",
-    note: "Being formed to finance distributed energy assets around productive demand.",
-    href: "/thesis/buildx-fund-1",
+    name: "BuildX Capital",
+    note: "Invests in and supports founders, and is forming an energy fund around productive demand.",
+    href: "/thesis/buildx-capital",
     external: false,
   },
 ];

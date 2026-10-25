@@ -189,14 +189,14 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-0.5">
           <div className="flex flex-wrap items-center gap-2">
             <Link
-              href="/thesis/buildx-fund-1"
+              href="/thesis/buildx-capital"
               className="text-[15px] font-medium link-hover whitespace-nowrap"
             >
               BuildX Capital
             </Link>
-            <span className="text-[11px] uppercase tracking-widest text-accent font-medium border border-accent/25 rounded-full px-2 py-0.5 whitespace-nowrap">Fund 1 In Formation</span>
+            <span className="text-[11px] uppercase tracking-widest text-accent font-medium border border-accent/25 rounded-full px-2 py-0.5 whitespace-nowrap">Investing &amp; Fund Forming</span>
           </div>
-          <span className="text-muted text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Energy, Manufacturing &amp; Physical Infrastructure</span>
+          <span className="text-muted text-[13px] sm:text-right italic sm:not-italic pt-0.5 sm:pt-0">Mobility, Payments &amp; Physical Infrastructure</span>
         </div>
           <p className="border-t border-accent/20 mt-5 pt-4 text-[13px] leading-relaxed text-muted">
             I also curate{" "}
@@ -229,9 +229,11 @@ export default function Home() {
           <p className="text-[15px] text-muted leading-relaxed mb-6">
             Most of my work has been an expression of that thesis, from trust
             infrastructure to distribution to capital. The newest is BuildX
-            Capital Fund 1, being formed to finance distributed energy
-            assets around productive demand and test how reliable power can
-            strengthen earnings, operating capacity, and economic inclusion.
+            Capital, where I invest in and support founders building mobility,
+            payments, and infrastructure companies, and am forming an energy
+            fund to finance distributed assets around productive demand and
+            test how reliable power can strengthen earnings, operating
+            capacity, and economic inclusion.
           </p>
           <div className="flex flex-wrap gap-2 mb-6">
             {[
