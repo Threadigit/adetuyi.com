@@ -217,10 +217,11 @@ export default function Home() {
             Infrastructure for economic participation
           </h3>
           <p className="text-[15px] text-muted leading-relaxed mb-4">
-            My work is guided by a simple conviction. Economic participation
-            expands when people and businesses can prove who they are, move
-            money, reach markets, learn what works, access capital and
-            productive assets, and rely on dependable infrastructure.
+            My work is guided by a simple conviction. Economic participation,
+            in the global economy and not only the local one, expands when
+            people and businesses can prove who they are, move money, reach
+            markets, learn what works, access capital and productive assets,
+            and rely on dependable infrastructure.
           </p>
           <p className="text-[15px] text-muted leading-relaxed mb-6">
             Most of my work has been an expression of that thesis, from trust
