@@ -150,8 +150,15 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-[16px] leading-[1.85] text-muted">
               <p>
-                My work began as a student, when software I built went into
-                live use at my school.
+                Leadership began early. As a student, I led on campus and built
+                software that my school put into live use.
+              </p>
+              <p>
+                I was president of the Computer Science Students&apos; Association
+                and an active member of Enactus. I created the Career
+                Advancement Programme, which trained students in technology
+                skills, and the Developers Festival, where people pitched their
+                ideas to industry leaders.
               </p>
               <p>
                 An electronic voting platform I built conducted the students&apos;
@@ -160,14 +167,6 @@ export default function AboutPage() {
                 detector I built for forged school fee receipts caught
                 fraudulent payments and saved the administration money. It was
                 my first work in fraud detection.
-              </p>
-              <p>
-                On campus, I created the Career Advancement Programme, which
-                trained students in technology skills, and the Developers
-                Festival, where people pitched their ideas to industry
-                leaders. I was also an active member of Enactus and president
-                of the Computer Science Students&apos; Association, and I took part
-                in much else besides. Leadership began early for me.
               </p>
             </div>
           </section>

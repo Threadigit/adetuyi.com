@@ -266,17 +266,12 @@ export default function Home() {
           <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3">
             Writing
           </h2>
-          <div className="flex items-baseline gap-5">
-            <Link
-              href="/writing"
-              className="text-[13px] text-muted hover:text-accent transition-colors group flex items-center gap-1.5 whitespace-nowrap"
-            >
-              All {getAllPosts().length} essays <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
-            </Link>
-            <a href="/feed.xml" className="text-[13px] text-muted hover:text-accent transition-colors whitespace-nowrap">
-              RSS
-            </a>
-          </div>
+          <Link
+            href="/writing"
+            className="text-[13px] text-muted hover:text-accent transition-colors group flex items-center gap-1.5 whitespace-nowrap"
+          >
+            All {getAllPosts().length} essays <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
+          </Link>
         </div>
         <p className="text-[14px] leading-relaxed text-muted mb-4">
           Essays and frameworks on trust, capital, infrastructure, leadership,
@@ -431,8 +426,8 @@ export default function Home() {
         </div>
 
         {/* Footer Bottom */}
-        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-y-5 text-[13px] border-t border-border/50 pt-6">
-          <p className="text-muted max-w-[360px] leading-relaxed">
+        <div className="flex flex-col gap-y-4 text-[13px] border-t border-border/50 pt-6">
+          <p className="text-muted leading-relaxed">
             Building interconnected systems that expand economic participation and infrastructure across emerging markets.
           </p>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-3 text-muted">
@@ -442,7 +437,6 @@ export default function Home() {
             <a href="https://twitter.com/adetuyitolu" target="_blank" rel="me noopener noreferrer" className="link-hover hover:text-foreground transition-colors">Twitter</a>
             <a href="https://instagram.com/adetuyitolu" target="_blank" rel="me noopener noreferrer" className="link-hover hover:text-foreground transition-colors">Instagram</a>
             <a href="https://www.youtube.com/channel/UClEyfBprR1O1VANeLf6SnyA" target="_blank" rel="me noopener noreferrer" className="link-hover hover:text-foreground transition-colors">YouTube</a>
-            <a href="/feed.xml" className="link-hover hover:text-foreground transition-colors">RSS</a>
             <a href="https://scholar.google.com/citations?hl=en&user=IjIW4v0AAAAJ" rel="me" className="sr-only">Google Scholar</a>
             <a href="https://www.wikidata.org/wiki/Q140088103" rel="me" className="sr-only">Wikidata</a>
           </div>
