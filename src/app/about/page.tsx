@@ -139,7 +139,7 @@ export default function AboutPage() {
             <a href="https://prembly.com/" target="_blank" rel="noopener noreferrer" className={externalLink}>
               Prembly
             </a>
-            , and my work sits where trust, money and markets meet.
+            , a trust infrastructure company.
           </p>
         </header>
 
@@ -192,16 +192,14 @@ export default function AboutPage() {
                 </a>
                 , I helped build the product and led growth to build the
                 distribution network that put banking and payment terminals in
-                the hands of merchants the formal system had ignored. That work taught me that the best
-                product does not win on its own. The best distributed product
-                does.
+                the hands of merchants the formal system had ignored. That work taught me that distribution
+                decides outcomes as much as the product does.
               </p>
               <p>
-                Not everything worked. I was a founding engineer, with shares,
-                at Hojah, a food delivery app that launched in Nigeria before
-                its time. It was one of several failures, and each taught me
-                something that success did not. Being right about a market is
-                not the same as being early to it.
+                Several early ventures did not succeed. At Hojah, a food
+                delivery app that launched in Nigeria before the market was
+                ready, I was a founding engineer with equity. The experience
+                taught me to treat timing as part of the product.
               </p>
             </div>
           </section>
@@ -213,9 +211,8 @@ export default function AboutPage() {
             <div className="space-y-4 text-[16px] leading-[1.85] text-muted">
               <p>
                 Prembly began with a narrow question about enabling payments
-                through biometrics and identity verification in Africa. It kept
-                widening into a bigger one. How does trust actually work in
-                digital markets?
+                through biometrics and identity verification in Africa. It widened into a larger question about how trust
+                works in digital markets.
               </p>
               <p>
                 Today we build identity verification, fraud prevention and
