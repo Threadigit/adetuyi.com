@@ -142,18 +142,12 @@ export default function Home() {
           </a>
           , helping build the distribution network that moves billions of
           dollars in transactions and now serves millions of businesses across
-          the continent.
-        </p>
-        <p className="text-[15px] leading-[1.8] text-muted mt-3">
-          I hold a first-class degree in Computer Science and an MBA with a
-          concentration in Finance from Morgan State University, where I graduated as a GSBM Scholar
-          and was inducted as a lifetime member of Beta Gamma Sigma, the
-          international honour society for business. I am also a fellow of{" "}
+          the continent. I hold a first-class degree in Computer Science and an
+          MBA in Finance from Morgan State University, and I am a fellow of{" "}
           <a href="https://joinodf.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">
             On Deck
           </a>
-          {" "}(ODF), a global community of technology founders and ambitious
-          people.
+          .
         </p>
       </section>
 
@@ -212,25 +206,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Core Areas of Focus ── */}
-      <section className="mb-16 animate-fade-up delay-300">
-        <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
-          Focus
-        </h2>
-        <div className="flex flex-wrap gap-2.5">
-          {[
-            "Trust, Financial & Cross-Border Infrastructure",
-            "Distribution & Market Access",
-            "Energy, Manufacturing & Productive Infrastructure",
-            "Knowledge, Media, Venture & Capital Formation"
-          ].map((area) => (
-            <span key={area} className="inline-flex items-center px-3 py-1.5 rounded bg-accent/5 border border-accent/10 text-muted text-[13px] leading-none">
-              {area}
-            </span>
-          ))}
-        </div>
-      </section>
-
       {/* ── Enduring Thesis ── */}
       <section className="mb-16 animate-fade-up delay-500">
         <div className="p-8 bg-accent/5 ring-1 ring-border rounded-xl relative overflow-hidden">
@@ -254,6 +229,18 @@ export default function Home() {
             assets around productive demand and test how reliable power can
             strengthen earnings, operating capacity, and economic inclusion.
           </p>
+          <div className="flex flex-wrap gap-2 mb-6">
+            {[
+              "Trust, Financial & Cross-Border Infrastructure",
+              "Distribution & Market Access",
+              "Energy, Manufacturing & Productive Infrastructure",
+              "Knowledge, Media, Venture & Capital Formation",
+            ].map((area) => (
+              <span key={area} className="inline-flex items-center px-2.5 py-1.5 rounded bg-background/70 border border-accent/15 text-muted text-[12px] leading-none">
+                {area}
+              </span>
+            ))}
+          </div>
           <Link
             href="/thesis"
             className="inline-flex items-center gap-2 border border-accent text-accent px-5 py-2.5 rounded-full hover:bg-accent hover:text-white transition-all font-medium text-[14px] group"
@@ -269,12 +256,17 @@ export default function Home() {
           <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3">
             Writing
           </h2>
-          <Link
-            href="/writing"
-            className="text-[13px] text-muted hover:text-accent transition-colors group flex items-center gap-1.5 whitespace-nowrap"
-          >
-            All {getAllPosts().length} essays <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
-          </Link>
+          <div className="flex items-baseline gap-5">
+            <Link
+              href="/writing"
+              className="text-[13px] text-muted hover:text-accent transition-colors group flex items-center gap-1.5 whitespace-nowrap"
+            >
+              All {getAllPosts().length} essays <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
+            </Link>
+            <a href="/feed.xml" className="text-[13px] text-muted hover:text-accent transition-colors whitespace-nowrap">
+              RSS
+            </a>
+          </div>
         </div>
         <p className="text-[14px] leading-relaxed text-muted mb-4">
           Essays and frameworks on trust, capital, infrastructure, leadership,
@@ -322,12 +314,13 @@ export default function Home() {
       </section>
 
 
-      {/* ── Speaking ── */}
+      {/* ── Talks & Press ── */}
       <section className="mb-16 animate-fade-up delay-500">
-        <div className="flex justify-between items-baseline mb-6">
-          <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3">
-            Speaking &amp; Panels
-          </h2>
+        <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-6">
+          Talks &amp; Press
+        </h2>
+        <div className="flex justify-between items-baseline mb-1">
+          <p className="text-[12px] uppercase tracking-widest text-muted/70">Speaking &amp; panels</p>
           <Link href="/speaking" className="text-[13px] text-muted hover:text-accent transition-colors">
             View all →
           </Link>
@@ -356,14 +349,8 @@ export default function Home() {
             </div>
             ))}
         </div>
-      </section>
-
-      {/* ── Press & Writing ── */}
-      <section className="mb-16 animate-fade-up delay-600">
-        <div className="flex justify-between items-baseline mb-6">
-          <h2 className="text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3">
-            Featured Press &amp; Publications
-          </h2>
+        <div className="flex justify-between items-baseline mt-8 mb-1">
+          <p className="text-[12px] uppercase tracking-widest text-muted/70">Press &amp; publications</p>
           <Link href="/press" className="text-[13px] text-muted hover:text-accent transition-colors">
             View all →
           </Link>
@@ -402,7 +389,9 @@ export default function Home() {
         </h2>
         <p className="text-[14px] text-muted mb-2">
           I advise alongside my operating work, on a small number of engagements
-          where my experience can improve an important decision.
+          where my experience can improve an important decision. The usual start
+          is a 60-minute working session on one decision, document, or market
+          question.
         </p>
         <a href="/work" className="text-[13px] text-accent link-hover inline-block mb-7">
           View advisory and fit →
