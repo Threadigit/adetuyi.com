@@ -20,10 +20,10 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/tolu-og.jpg",
-        width: 1374,
-        height: 1145,
-        alt: "Tolu Adetuyi",
+        url: "/og/resources/closing-the-compliance-gap",
+        width: 1200,
+        height: 630,
+        alt: title,
       },
     ],
   },
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${title} | Tolu Adetuyi`,
     description,
-    images: ["/tolu-og.jpg"],
+    images: ["/og/resources/closing-the-compliance-gap"],
   },
 };
 
@@ -82,7 +82,7 @@ export default function ClosingTheComplianceGapPage() {
             <span className="text-[11px] uppercase tracking-widest text-accent font-medium">
               Trust infrastructure
             </span>
-            <span className="text-[13px] text-muted">Slide deck</span>
+            <span className="text-[13px] text-muted">Slide deck · 2022</span>
           </div>
           <h1 className="text-[34px] md:text-[44px] font-medium tracking-tight leading-[1.12] mb-5 text-foreground">
             {title}
