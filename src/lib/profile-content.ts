@@ -13,8 +13,8 @@ export const speakingEntries: ProfileEntry[] = [
     href: "/resources/prosperity-engine",
   },
   {
-    title: "Transforming Police Training for a Safer America",
-    meta: "Harbor Bank, Maryland · November 2025",
+    title: "Transforming Police Training for a Safer America Using AI",
+    meta: "Maryland, USA · November 2025",
   },
   {
     title: "Using AI to Accelerate Startup Success in Africa",
