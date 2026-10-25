@@ -72,11 +72,15 @@ const background = [
   },
   {
     label: "Forbes Technology Council",
-    detail: "Member since 2024.",
+    detail: "Official Member, 2024.",
   },
   {
     label: "On Deck Founder Fellowship",
     detail: "Fellow, in a global community of technology founders.",
+  },
+  {
+    label: "Student Venture Capital Grant (S-VCG)",
+    detail: "Mentor. Nigeria's programme that gives student founders equity-free funding to build.",
   },
 ];
 
