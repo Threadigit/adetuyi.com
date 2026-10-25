@@ -40,7 +40,7 @@ export const speakingEntries: ProfileEntry[] = [
   },
   {
     title: "The Use of AI in Security",
-    meta: "Harbor Bank, Maryland",
+    meta: "Harbor Bank, Maryland · November 2025",
   },
   {
     title:
@@ -51,7 +51,9 @@ export const speakingEntries: ProfileEntry[] = [
   },
   {
     title: "Kwarabuild Tech Conf '22",
-    meta: "Speaker · 2022",
+    meta: "Kwarabuild Tech Conf · December 2022",
+    href: "https://x.com/kwarabuild/status/1602980834310594561",
+    external: true,
   },
 ];
 
@@ -136,6 +138,18 @@ export const pressEntries: ProfileEntry[] = [
     title: "Academic Research Publications",
     meta: "ResearchGate",
     href: "https://www.researchgate.net/profile/Tolu-Adetuyi",
+    external: true,
+  },
+  {
+    title: "Lagos Tech Fest 2023 speaker announcement",
+    meta: "Africa Tech Series on LinkedIn · 2023",
+    href: "https://www.linkedin.com/feed/update/urn:li:share:7026117879569727489/",
+    external: true,
+  },
+  {
+    title: "Nigeria Fintech Forum 2022 speaker announcement",
+    meta: "Africa Tech Series on LinkedIn · 2022",
+    href: "https://www.linkedin.com/feed/update/urn:li:share:6954778543457189888/",
     external: true,
   },
 ];
