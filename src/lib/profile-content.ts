@@ -36,7 +36,7 @@ export const speakingEntries: ProfileEntry[] = [
   {
     title:
       "Regulating Nigeria's Fintech Industry; Building Investors Confidence Without Stifling Growth",
-    meta: "Nigeria Fintech Forum Panel · 2022",
+    meta: "Nigeria Fintech Forum Panel · August 2022",
     href: "https://www.instagram.com/p/CggkddOMPWH/",
     external: true,
   },
