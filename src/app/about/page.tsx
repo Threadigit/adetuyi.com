@@ -82,6 +82,10 @@ const background = [
     label: "Student Venture Capital Grant (S-VCG)",
     detail: "Mentor. Nigeria's programme that gives student founders equity-free funding to build.",
   },
+  {
+    label: "Fintech Takes",
+    detail: "Member of the network, in the US.",
+  },
 ];
 
 export default function AboutPage() {
