@@ -194,7 +194,7 @@ export default function Home() {
             >
               BuildX Capital
             </Link>
-            <span className="text-[11px] uppercase tracking-widest text-accent font-medium border border-accent/25 rounded-full px-2 py-0.5 whitespace-nowrap">Investing and Fund Formation</span>
+            <span className="text-[11px] uppercase tracking-widest text-accent font-medium border border-accent/25 rounded-full px-2 py-0.5 whitespace-nowrap">Investing &amp; Fund Formation</span>
           </div>
           <span className="text-muted text-[13px] leading-relaxed">Mobility, Energy, Trade, Manufacturing &amp; Physical Infrastructure</span>
         </div>
