@@ -189,9 +189,9 @@ export default async function WritingPost({ params }: PageProps) {
       "@id": `${baseUrl}/writing/${post.slug}`,
     },
     "image": image,
-    "keywords": post.category,
+    "keywords": post.note ? `${post.category}, Note` : post.category,
     "articleSection": post.category,
-    "inLanguage": "en-US",
+    "inLanguage": "en-GB",
   };
 
   const breadcrumbSchema = {
