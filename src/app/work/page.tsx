@@ -4,13 +4,13 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Advisory for Founders, Operators and Investors",
-  description: "Selective advisory by Tolu Adetuyi for founders, operators, and investors making product, technology, distribution, fundraising, and market decisions in Africa.",
+  description: "Selective advisory by Tolu Adetuyi on cross-border payments, African trade, compliance, fraud, and investing into Africa, for founders, operators, and investors.",
   alternates: {
     canonical: "https://www.adetuyi.com/work",
   },
   openGraph: {
     title: "Advisory for Founders, Operators and Investors | Tolu Adetuyi",
-    description: "Selective advisory by Tolu Adetuyi for founders, operators, and investors making product, technology, distribution, fundraising, and market decisions in Africa.",
+    description: "Selective advisory by Tolu Adetuyi on cross-border payments, African trade, compliance, fraud, and investing into Africa, for founders, operators, and investors.",
     url: "https://www.adetuyi.com/work",
     type: "website",
     images: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Advisory for Founders, Operators and Investors | Tolu Adetuyi",
-    description: "Selective advisory by Tolu Adetuyi for founders, operators, and investors making product, technology, distribution, fundraising, and market decisions in Africa.",
+    description: "Selective advisory by Tolu Adetuyi on cross-border payments, African trade, compliance, fraud, and investing into Africa, for founders, operators, and investors.",
     images: ["/og/page/advisory"],
   },
 };
@@ -151,9 +151,9 @@ export default function WorkPage() {
           <h1 className="text-[36px] md:text-[44px] font-medium tracking-tight leading-tight mb-5 text-foreground">
             Advisory for founders, operators, and investors
           </h1>          <p className="text-[18px] leading-[1.6] text-foreground mb-4">
-            Advising pre-seed to Series A founders, and the investors who back
-            them, on identity and compliance, fraud prevention, distribution,
-            and capital across African markets.
+            Advising technology founders, operators, and investors on cross-border
+            payments, African trade, compliance and fraud prevention, and
+            investing into Africa.
           </p>
           <p className="text-[16px] leading-[1.75] text-muted">
             I advise a small number of clients on consequential decisions. My
