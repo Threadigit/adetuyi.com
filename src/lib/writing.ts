@@ -1169,6 +1169,7 @@ const posts: Post[] = [
       { type: "paragraph", text: "Borrowed from pragmatic engineering, a tracer bullet is an ultra lean skeleton of a system. Instead of building each component perfectly in isolation, you build a thin, unpolished pipe that connects every single stage of the process from trigger to final delivery. Building in isolation creates massive execution anxiety, but the tracer bullet forces you to focus only on the flow." },
       { type: "paragraph", text: "The principle. It does not need to be scalable, pretty, or automated. It just needs to prove that data, capital, or goods can move from Point A to Point Z without the whole structure collapsing." },
       { type: "paragraph", text: "An example. If you are building a B2B cross border settlement platform, a tracer bullet is not an automated API with a slick dashboard. It is a manual Google Form that collects client info, a manual bank transfer you make yourself, and a WhatsApp message notifying the supplier. It is unscalable, but it proves the operational rails exist." },
+      { type: "paragraph", text: "That is close to how Prembly began. The first line of code looked nothing like the infrastructure that exists today, and it did not need to." },
       { type: "heading", text: "2. The Time Boxed Spike" },
       { type: "paragraph", text: "A Spike is a tool used by systems designers to de-risk the unknown. When an individual gets stuck in the optimism phase, it is usually because they are staring at a massive, ambiguous block of work or technical uncertainty." },
       { type: "paragraph", text: "A Spike isolates one single assumption and attacks it within a strict, non negotiable time limit. I usually set this to two or four hours." },
@@ -1188,6 +1189,7 @@ const posts: Post[] = [
       { type: "heading", text: "The 70% Rule of Certainty" },
       { type: "paragraph", text: "A great guiding metric for this transition is the 70% Rule popularized by top tier operators. If you wait until you have 90% of the information to act, you are moving too slowly. Your competitors will out learn you." },
       { type: "paragraph", text: "If you are at 70% certainty, your strategy is sound enough. Any information gained by waiting for the remaining 30% is vastly inferior to the data you will collect by simply launching a tracer bullet and watching where it lands." },
+      { type: "paragraph", text: "These tools have limits. Speed can prove that something can be built without proving that anyone is ready for it. I was a founding engineer at Hojah, a food delivery app that launched in Nigeria before the market was ready. Test timing and demand as well as feasibility, and avoid a tracer bullet where a mistake cannot be undone, as in regulated work." },
       { type: "paragraph", text: "Action produces information that thinking simply cannot mirror. Turn the key. If the blocker is not methodological but psychological, a loop that survives good frameworks, <a href=\"/writing/the-spectrum-of-agency\" class=\"link-hover text-accent\">The 5 Mindsets of Real Progress</a> speaks to that directly." }
     ]
   },
@@ -1222,6 +1224,7 @@ const posts: Post[] = [
       { type: "heading", text: "5. Initiative: The Builder's Reality" },
       { type: "quote", "text": "We have a problem. Here is how I am solving it!" },
       { type: "paragraph", text: "Initiative is the final realization of agency. The question mark disappears. It is no longer about asking for permission, waiting for a committee, or writing a white paper. It is the messy, unglamorous work of shipping the first iteration, funding the pilot, or building the infrastructure." },
+      { type: "paragraph", text: "I saw this at university. School fee receipts were being forged, and agreeing that it was a problem was the easy part. I built a detector instead, and it caught fraudulent payments and saved the administration money." },
       { type: "heading", text: "Why Smart People Get Stuck" },
       { type: "paragraph", text: "You would think the hardest leap is moving away from the dark cloud of cynicism and pessimism. It isn't. For highly driven, analytical, and ambitious individuals, the heaviest lifting occurs in the gap between Optimism and Initiative." },
       { type: "paragraph", text: "Optimism is comfortable. For a smart person, proving that a problem can be solved is an intellectual victory. You can map out the architecture, design the workflows, or build the theoretical model in your head. Because the theory is flawless, it satisfies the brain's craving for achievement without demanding any actual skin in the game." },
