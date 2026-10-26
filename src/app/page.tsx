@@ -99,11 +99,6 @@ export default function Home() {
           I build the infrastructure that lets people and businesses create
           value, earn, and take part in the global economy.
         </p>
-        <p className="text-[15px] leading-[1.7] text-muted max-w-[640px] mt-3">
-          At Prembly, I help businesses stop fraud and trust their customers. Through
-          BuildX Capital, I invest in the founders and infrastructure, starting
-          with power, that keep businesses running.
-        </p>
         <div className="flex flex-wrap items-center gap-x-5 gap-y-3 mt-7">
           <Link
             href="/writing"
@@ -216,8 +211,7 @@ export default function Home() {
             Infrastructure for economic participation
           </h3>
           <p className="text-[15px] text-muted leading-relaxed mb-4">
-            My work is guided by a simple conviction. Economic participation,
-            in the global economy and not only the local one, expands when
+            My work is guided by a simple conviction. Economic participation in the global economy expands when
             people and businesses can create exportable value, prove who they
             are, move money, reach markets, learn what works, and access
             capital and productive assets, all resting on the dependable
