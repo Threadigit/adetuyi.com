@@ -324,17 +324,10 @@ export default function EconomicParticipationThesisPage() {
               BuildX Capital
             </h2>
             <p className="m-0 text-[14px] leading-[1.8] text-muted">
-              BuildX Capital is this thesis applied to physical infrastructure
-              and to the founders building it. For years I have backed founders working on this gap as an angel investor and supported them, one company at a time. Angel cheques can prove a model. They cannot
-              finance the assets themselves. The energy mandate of BuildX
-              Capital carries that learning, and the operating experience
-              behind the distribution and trust infrastructure work, into a
-              structured vehicle. Energy is its mandate, in Nigeria&apos;s
-              distributed commercial and industrial market, because power is
-              the constraint sitting under the rest.
+              BuildX Capital is where I invest in and support founders building across mobility, energy, trade, manufacturing, and physical infrastructure. For years I have done this as an angel investor, one company at a time. Angel cheques can prove a model. They cannot finance the assets themselves. That learning, and the operating experience behind the distribution and trust infrastructure work, is why BuildX Capital is also forming an energy mandate in Nigeria&apos;s distributed commercial and industrial market, because power is the constraint sitting under the rest.
             </p>
             <p className="m-0 mt-4 text-[14px] leading-[1.8] text-muted">
-              It is being formed to finance distributed energy assets close to
+              The energy mandate is being formed to finance distributed energy assets close to
               productive users who already bear the cost of unreliable power.
               The work begins with proven demand and asks whether better
               infrastructure can lower operating costs, strengthen earnings, and
