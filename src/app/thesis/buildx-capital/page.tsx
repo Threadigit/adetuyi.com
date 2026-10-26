@@ -4,7 +4,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 const title = "BuildX Capital";
 const description =
-  "Tolu Adetuyi's investment platform for founders in mobility, energy, trade and manufacturing, and its plan to finance distributed energy in Nigeria.";
+  "Tolu Adetuyi's investment platform for founders in mobility, energy, trade and manufacturing, and its energy mandate for distributed power in Nigeria.";
 const canonical = "https://www.adetuyi.com/thesis/buildx-capital";
 const lastUpdated = "2026-10-26";
 
@@ -137,11 +137,7 @@ export default function ThesisPage() {
           <p className="text-[18px] md:text-[20px] leading-relaxed text-muted">
             BuildX Capital is where I invest in and support founders building
             across mobility, energy, trade, manufacturing, and physical
-            infrastructure. Its energy mandate, now in formation, focuses on
-            private capital for
-            Nigeria&apos;s distributed commercial and industrial energy
-            infrastructure. Power is the constraint sitting under everything
-            else built here.
+            infrastructure. The energy mandate, now in formation, is one part of it. It is a dedicated vehicle for private capital in Nigeria&apos;s distributed commercial and industrial energy infrastructure.
           </p>
           <p className="mt-5 text-[12px] uppercase tracking-widest text-muted">
             Last updated{" "}
@@ -158,7 +154,7 @@ export default function ThesisPage() {
           </p>
           <ul className="m-0 list-none space-y-2.5 p-0 text-[15px] leading-[1.7] text-foreground/85">
             <li>Backing founders. I invest in and support founders across mobility, energy, trade, manufacturing, and physical infrastructure.</li>
-            <li>The energy mandate. A fund now in formation to finance distributed energy assets for commercial and industrial users in Nigeria.</li>
+            <li>The energy mandate. One part of BuildX Capital, a fund now in formation to finance distributed energy assets for commercial and industrial users in Nigeria.</li>
             <li>Where it stands. Backing founders now. The energy fund is still in formation and is not yet open to investors.</li>
           </ul>
         </aside>
@@ -208,6 +204,12 @@ export default function ThesisPage() {
             need power do not need another equity round. They need the
             equipment on site and a way to pay for it out of what it saves
             them. The energy mandate of BuildX Capital carries that learning, and the operating experience above, into a structured vehicle built for the assets themselves.
+          </p>
+
+          <p>
+            BuildX Capital&apos;s investing is not limited to energy. The rest
+            of this page covers the energy mandate, because it is the part now
+            being structured and it needs the most explanation.
           </p>
 
           <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
