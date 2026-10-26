@@ -4,13 +4,13 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Advisory for Founders, Operators and Investors",
-  description: "Selective advisory by Tolu Adetuyi on cross-border payments, African trade, compliance, fraud, and investing into Africa, for founders, operators, and investors.",
+  description: "Selective advisory by Tolu Adetuyi on cross-border payments, African trade, compliance, fraud, and investing in Africa, for founders, operators, and investors.",
   alternates: {
     canonical: "https://www.adetuyi.com/work",
   },
   openGraph: {
     title: "Advisory for Founders, Operators and Investors | Tolu Adetuyi",
-    description: "Selective advisory by Tolu Adetuyi on cross-border payments, African trade, compliance, fraud, and investing into Africa, for founders, operators, and investors.",
+    description: "Selective advisory by Tolu Adetuyi on cross-border payments, African trade, compliance, fraud, and investing in Africa, for founders, operators, and investors.",
     url: "https://www.adetuyi.com/work",
     type: "website",
     images: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Advisory for Founders, Operators and Investors | Tolu Adetuyi",
-    description: "Selective advisory by Tolu Adetuyi on cross-border payments, African trade, compliance, fraud, and investing into Africa, for founders, operators, and investors.",
+    description: "Selective advisory by Tolu Adetuyi on cross-border payments, African trade, compliance, fraud, and investing in Africa, for founders, operators, and investors.",
     images: ["/og/page/advisory"],
   },
 };
