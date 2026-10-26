@@ -137,7 +137,7 @@ export default function ThesisPage() {
           <p className="text-[18px] md:text-[20px] leading-relaxed text-muted">
             BuildX Capital is where I invest in and support founders building
             across mobility, energy, trade, manufacturing, and physical
-            infrastructure. The energy mandate, now in formation, is one part of it. It is a dedicated vehicle for private capital in Nigeria&apos;s distributed commercial and industrial energy infrastructure.
+            infrastructure. The energy mandate, now in formation, is one part of it. It exists because power is the constraint sitting under everything else, and it is a dedicated vehicle for private capital in Nigeria&apos;s distributed commercial and industrial energy infrastructure.
           </p>
           <p className="mt-5 text-[12px] uppercase tracking-widest text-muted">
             Last updated{" "}
@@ -154,7 +154,7 @@ export default function ThesisPage() {
           </p>
           <ul className="m-0 list-none space-y-2.5 p-0 text-[15px] leading-[1.7] text-foreground/85">
             <li>Backing founders. I invest in and support founders across mobility, energy, trade, manufacturing, and physical infrastructure.</li>
-            <li>The energy mandate. One part of BuildX Capital, a fund now in formation to finance distributed energy assets for commercial and industrial users in Nigeria.</li>
+            <li>The energy mandate. One part of BuildX Capital, a fund now in formation to finance distributed energy assets for commercial and industrial users in Nigeria, because power is the constraint sitting under everything else.</li>
             <li>Where it stands. Backing founders now. The energy fund is still in formation.</li>
           </ul>
         </aside>
