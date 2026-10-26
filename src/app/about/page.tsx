@@ -296,8 +296,7 @@ export default function AboutPage() {
             <div className={bodyText}>
               <p>One conviction guides my work.</p>
               <blockquote className="my-2 border-l-[3px] border-accent pl-6 text-[17px] leading-[1.75] italic text-foreground/80">
-                Economic participation, in the global economy and not only the
-                local one, expands when people and businesses can create
+                Economic participation in the global economy expands when people and businesses can create
                 exportable value, prove who they are, move money, reach markets,
                 and access capital, all resting on the dependable infrastructure
                 that makes it work.

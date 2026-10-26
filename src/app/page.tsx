@@ -211,8 +211,7 @@ export default function Home() {
             Infrastructure for economic participation
           </h3>
           <p className="text-[15px] text-muted leading-relaxed mb-4">
-            My work is guided by a simple conviction. Economic participation,
-            in the global economy and not only the local one, expands when
+            My work is guided by a simple conviction. Economic participation in the global economy expands when
             people and businesses can create exportable value, prove who they
             are, move money, reach markets, learn what works, and access
             capital and productive assets, all resting on the dependable
