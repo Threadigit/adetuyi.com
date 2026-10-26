@@ -164,7 +164,7 @@ export default function ThesisPage() {
           className="mb-12 rounded-xl border border-border p-6"
         >
           <p className="m-0 mb-3 text-[11px] font-medium uppercase tracking-[0.15em] text-muted">
-            BuildX Energy mandate in plain terms
+            Energy mandate in plain terms
           </p>
           <ul className="m-0 list-none space-y-2 p-0 text-[14px] leading-[1.7] text-muted">
             <li><strong className="font-medium text-foreground">Mandate.</strong> A dedicated investment focus with its own rules and capital.</li>
