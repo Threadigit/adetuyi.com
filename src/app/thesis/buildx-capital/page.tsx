@@ -159,6 +159,21 @@ export default function ThesisPage() {
           </ul>
         </aside>
 
+        <aside
+          aria-label="Key terms in plain language"
+          className="mb-12 rounded-xl border border-border p-6"
+        >
+          <p className="m-0 mb-3 text-[11px] font-medium uppercase tracking-[0.15em] text-muted">
+            In plain terms
+          </p>
+          <ul className="m-0 list-none space-y-2 p-0 text-[14px] leading-[1.7] text-muted">
+            <li><strong className="font-medium text-foreground">Mandate.</strong> A dedicated investment focus with its own rules and capital.</li>
+            <li><strong className="font-medium text-foreground">Distributed energy.</strong> Power systems placed next to the customer, not a national grid.</li>
+            <li><strong className="font-medium text-foreground">Anchor load.</strong> A customer whose steady power use can support the equipment.</li>
+            <li><strong className="font-medium text-foreground">Underwriting.</strong> Checking that a customer can pay and a project can work before money is committed.</li>
+          </ul>
+        </aside>
+
         <div className="thesis-body max-w-none">
           <p className="first-letter:text-[48px] first-letter:font-bold first-letter:text-foreground first-letter:mr-3 first-letter:float-left first-letter:leading-[0.8]">
             Over the past decade, I have built systems that help African
@@ -206,6 +221,9 @@ export default function ThesisPage() {
             them. The energy mandate of BuildX Capital carries that learning, and the operating experience above, into a structured vehicle built for the assets themselves.
           </p>
 
+          <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
+            The energy mandate in detail
+          </h2>
           <p>
             BuildX Capital&apos;s investing is not limited to energy. The rest
             of this page covers the energy mandate, because it is the part now

@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/tolu-og.jpg",
-        width: 1374,
-        height: 1145,
+        url: "/og/page/writing",
+        width: 1200,
+        height: 630,
         alt: "Writing by Tolu Adetuyi",
       },
     ],
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Writing | Tolu Adetuyi",
     description,
-    images: ["/tolu-og.jpg"],
+    images: ["/og/page/writing"],
   },
   alternates: {
     canonical,

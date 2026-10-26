@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/tolu-og.jpg",
-        width: 1374,
-        height: 1145,
+        url: "/og/page/thesis",
+        width: 1200,
+        height: 630,
         alt: "Tolu Adetuyi",
       },
     ],
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title,
     description,
-    images: ["/tolu-og.jpg"],
+    images: ["/og/page/thesis"],
   },
 };
 
@@ -240,15 +240,11 @@ export default function EconomicParticipationThesisPage() {
             >
               Prembly
             </a>
-            , I co-founded and continue to build the trust infrastructure that
-            helps businesses verify customers, meet compliance requirements,
-            prevent fraud, and transact with confidence. We work across
-            emerging markets, with presence in Nigeria, Kenya, and the United
-            States, and more than a thousand local and global businesses rely on it, across millions of verifications. Those numbers are inputs, not results. What it buys is a business able to deal with a
-            customer it could not otherwise trust. Prembly is my primary
-            operating work and the clearest case of this thesis in practice.
-            People and businesses cannot participate fully when systems cannot
-            trust them.
+            , I co-founded and continue to build the technology that helps
+            businesses verify customers, prevent fraud, and meet compliance
+            rules. More than a thousand local and global businesses rely on it,
+            but that number is an input, not a result. What matters is a
+            business able to deal with a customer it could not otherwise trust.
           </p>
           <p>
             At{" "}
@@ -261,13 +257,11 @@ export default function EconomicParticipationThesisPage() {
               Moniepoint
             </a>
             , I helped build the product and led growth to build the
-            distribution network that moves billions of dollars in transactions
-            and now reaches millions of businesses across the continent. That work showed me where participation
-            actually begins. Financial technology only becomes
-            useful when someone takes it the last mile, into the markets and
-            neighbourhoods where people already earn and trade, in a form that
-            fits how they work. The product did not widen access on its own.
-            The network did.
+            distribution network. That work showed me where participation
+            actually begins. Financial technology only becomes useful when
+            someone takes it the last mile, in a form that fits how people
+            already earn and trade. The product did not widen access on its
+            own. The network did.
           </p>
           <p>
             Through{" "}
@@ -288,35 +282,21 @@ export default function EconomicParticipationThesisPage() {
             >
               Chronicles of Innovation
             </a>
-            , I make practical knowledge easier to find and use. They are not
-            separate operating ambitions. They are ways to share useful ideas,
-            lessons, and examples with people who are building and making
-            consequential decisions.
-          </p>
-          <p>
-            I also support a small number of founders whose companies can
-            remove real barriers to taking part. The industry may
-            differ, but the reason for engaging does not. The company must solve
-            a real problem and give more people or businesses a practical way
-            to move forward.
+            , I make practical knowledge easier to find and use. I also support
+            a small number of founders whose companies remove real barriers to
+            taking part.
           </p>
 
           <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
             Where this goes next
           </h2>
           <p>
-            My experience began with digital and financial systems, but the
-            same conviction leads naturally to physical infrastructure. A
+            The same conviction leads naturally to physical infrastructure. A
             trusted business that can move money still cannot produce without
-            reliable power, productive assets, and the ability to reach its
-            market.
-          </p>
-          <p>
-            I am interested in work whose value can be seen in what changes for
-            the user. A rider retains more income. A manufacturer adds a shift.
-            A small business serves more customers. A capable founder gets the
-            support and capital needed to build something useful. These are
-            different outcomes of the same focus.
+            reliable power, productive assets, and a route to its market. I am
+            interested in work whose value shows in what changes for the user.
+            A rider retains more income. A manufacturer adds a shift. A small
+            business serves more customers.
           </p>
 
           <div className="my-12 p-8 bg-accent/5 ring-1 ring-border rounded-xl">
@@ -327,21 +307,15 @@ export default function EconomicParticipationThesisPage() {
               BuildX Capital
             </h2>
             <p className="m-0 text-[14px] leading-[1.8] text-muted">
-              BuildX Capital is where I invest in and support early stage founders building across mobility, energy, trade, manufacturing, and physical infrastructure. For years I have done this as an angel investor, one company at a time. Angel cheques can prove a model. They cannot finance the assets themselves. That learning, and the operating experience behind the distribution and trust infrastructure work, led BuildX Capital to form a dedicated energy mandate in Nigeria&apos;s distributed commercial and industrial market. Power is the constraint sitting under the rest.
+              BuildX Capital is where I invest in and support early stage
+              founders across mobility, energy, trade, manufacturing, and
+              physical infrastructure. Its dedicated energy mandate, now in
+              formation, exists because power is the constraint sitting under
+              the rest.
             </p>
             <p className="m-0 mt-4 text-[14px] leading-[1.8] text-muted">
-              The energy mandate is being formed to finance distributed energy assets close to
-              productive users who already bear the cost of unreliable power.
-              The work begins with proven demand and asks whether better
-              infrastructure can lower operating costs, strengthen earnings, and
-              widen economic participation while producing disciplined returns.
-            </p>
-            <p className="m-0 mt-4 text-[14px] leading-[1.8] text-muted">
-              The first test begins with productive electric mobility. Deployed
-              assets are being tracked for utilisation, repayments, battery
-              behaviour, and maintenance as we test whether mobility can provide
-              the starting demand for distributed energy stations and widen
-              access to income-generating assets.
+              The first test is productive electric mobility, tracked for
+              utilisation, repayments, battery behaviour, and maintenance.
             </p>
             <Link
               href="/thesis/buildx-capital"
