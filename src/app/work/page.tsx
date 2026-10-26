@@ -76,6 +76,9 @@ const patterns = [
   {
     label: "Fix cash-flow risk before you raise",
     desc: "Structure sales so customers fund part of the work, through deposits and clear replacement terms.",
+  },  {
+    label: "Use online to amplify what works offline",
+    desc: "In many African cities, trust is still built offline. One insurance technology company grew faster once offline activity won the trust, and online channels then amplified it to reach both kinds of customer.",
   },
   {
     label: "Start with the partner's goals, not your product",
@@ -89,12 +92,10 @@ const engagementShapes = [
     desc: "A focused 60-minute review of one decision, document, market question, or operating problem. You leave with the gaps, the decision, and the next actions.",
   },
   {
-    label: "Advisory sprint",
-    desc: "A defined engagement for a business model, fundraising narrative, distribution strategy, or investment question. Scope, outputs, timing, and fee are agreed before work begins.",
+    label: "Advisory sprint",    desc: "A defined engagement on one major question, such as a fundraising narrative, a distribution strategy, a compliance or cross-border design, or a fund structure. Scope, outputs, timing, and fee are agreed before work begins.",
   },
-  {
-    label: "Ongoing counsel",
-    desc: "Selective support for founders, operators, and investors who need a consistent practitioner in the room as decisions compound.",
+  {    label: "Strategic sounding board",
+    desc: "A monthly arrangement for founders, operators, and investors who want a consistent practitioner on architecture, regulatory, or scaling decisions as they compound.",
   },
 ];
 
@@ -149,10 +150,13 @@ export default function WorkPage() {
           </div>
           <h1 className="text-[36px] md:text-[44px] font-medium tracking-tight leading-tight mb-5 text-foreground">
             Advisory for founders, operators, and investors
-          </h1>
+          </h1>          <p className="text-[18px] leading-[1.6] text-foreground mb-4">
+            Advising pre-seed to Series A founders, and the investors who back
+            them, on identity and compliance, fraud prevention, distribution,
+            and capital across African markets.
+          </p>
           <p className="text-[16px] leading-[1.75] text-muted">
-            I advise a small number of clients on consequential decisions,
-            with a focus on African markets. My
+            I advise a small number of clients on consequential decisions. My
             experience spans North America, the United Kingdom, Europe, and
             Africa. Clients usually arrive with a product, market,
             business-model, or capital decision. I identify the real
@@ -259,8 +263,7 @@ export default function WorkPage() {
               </div>
             ))}
           </div>
-          <p className="mt-5 text-[13px] leading-relaxed text-muted">
-            Fees are quoted against the scope before you commit. No open-ended engagement begins without a written outcome, timeline, and price.
+          <p className="mt-5 text-[13px] leading-relaxed text-muted">            Fees are quoted against the scope before you commit. No open-ended engagement begins without a written outcome, timeline, and price. Board or observer roles are considered selectively, for a small number of ventures where I have high conviction.
           </p>
         </section>
 
