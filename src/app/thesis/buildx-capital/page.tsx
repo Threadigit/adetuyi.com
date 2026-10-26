@@ -154,8 +154,8 @@ export default function ThesisPage() {
           </p>
           <ul className="m-0 list-none space-y-2.5 p-0 text-[15px] leading-[1.7] text-foreground/85">
             <li>Backing founders. I invest in and support founders across mobility, energy, trade, manufacturing, and physical infrastructure.</li>
-            <li>The energy mandate. One part of BuildX Capital, a fund now in formation to finance distributed energy assets for commercial and industrial users in Nigeria, because power is the constraint sitting under everything else.</li>
-            <li>Where it stands. Backing founders now. The energy fund is still in formation.</li>
+            <li>The energy mandate. One part of BuildX Capital, a dedicated fund to finance distributed energy assets for commercial and industrial users in Nigeria, formed because power is the constraint sitting under everything else.</li>
+            <li>Where it stands. Founder investing is active. The energy fund is still being formed, and a small electric mobility test is under way.</li>
           </ul>
         </aside>
 

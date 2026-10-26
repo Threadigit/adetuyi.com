@@ -160,23 +160,6 @@ export default function EconomicParticipationThesisPage() {
             put it to productive use.
           </p>
           <p>
-            The account is where the measurement usually goes wrong. Inclusion
-            is counted in accounts opened, but an account is only a container.
-            Open one for somebody with no way to earn and the statistics improve
-            while the person does not. They are recorded as included and remain
-            unable to make the account work for them. That is how access can
-            rise for years while livelihoods stay where they were.
-          </p>
-          <p>
-            The same error repeats at every layer. Identities verified. Loans
-            disbursed. Terminals deployed. Each one gets counted because each
-            one is easy to count, and none of them says whether a person ended
-            up better able to earn. Institutions report what they did. Whether
-            it changed anybody&apos;s position is harder to see, so it is
-            watched less, and the two can drift apart for years before anyone
-            says so.
-          </p>
-          <p>
             My role is deliberate. I build where my operating experience is
             strongest, support a small number of founders advancing the same
             vision, and help capital reach opportunities that can expand
@@ -211,6 +194,27 @@ export default function EconomicParticipationThesisPage() {
           </div>
 
           <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
+            Why counting access misleads
+          </h2>
+          <p>
+            The account is where the measurement usually goes wrong. Inclusion
+            is counted in accounts opened, but an account is only a container.
+            Open one for somebody with no way to earn and the statistics improve
+            while the person does not. They are recorded as included and remain
+            unable to make the account work for them. That is how access can
+            rise for years while livelihoods stay where they were.
+          </p>
+          <p>
+            The same error repeats at every layer. Identities verified. Loans
+            disbursed. Terminals deployed. Each one gets counted because each
+            one is easy to count, and none of them says whether a person ended
+            up better able to earn. Institutions report what they did. Whether
+            it changed anybody&apos;s position is harder to see, so it is
+            watched less, and the two can drift apart for years before anyone
+            says so.
+          </p>
+
+          <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
             Why the global economy
           </h2>
           <p>
@@ -240,8 +244,7 @@ export default function EconomicParticipationThesisPage() {
             helps businesses verify customers, meet compliance requirements,
             prevent fraud, and transact with confidence. We work across
             emerging markets, with presence in Nigeria, Kenya, and the United
-            States, and more than a thousand local and global businesses rely on it, across millions of verifications. That count is an
-            input, not a result. What it buys is a business able to deal with a
+            States, and more than a thousand local and global businesses rely on it, across millions of verifications. Those numbers are inputs, not results. What it buys is a business able to deal with a
             customer it could not otherwise trust. Prembly is my primary
             operating work and the clearest case of this thesis in practice.
             People and businesses cannot participate fully when systems cannot
@@ -324,7 +327,7 @@ export default function EconomicParticipationThesisPage() {
               BuildX Capital
             </h2>
             <p className="m-0 text-[14px] leading-[1.8] text-muted">
-              BuildX Capital is where I invest in and support founders building across mobility, energy, trade, manufacturing, and physical infrastructure. For years I have done this as an angel investor, one company at a time. Angel cheques can prove a model. They cannot finance the assets themselves. That learning, and the operating experience behind the distribution and trust infrastructure work, is why BuildX Capital is also forming an energy mandate in Nigeria&apos;s distributed commercial and industrial market, because power is the constraint sitting under the rest.
+              BuildX Capital is where I invest in and support founders building across mobility, energy, trade, manufacturing, and physical infrastructure. For years I have done this as an angel investor, one company at a time. Angel cheques can prove a model. They cannot finance the assets themselves. That learning, and the operating experience behind the distribution and trust infrastructure work, led BuildX Capital to form a dedicated energy mandate in Nigeria&apos;s distributed commercial and industrial market. Power is the constraint sitting under the rest.
             </p>
             <p className="m-0 mt-4 text-[14px] leading-[1.8] text-muted">
               The energy mandate is being formed to finance distributed energy assets close to
