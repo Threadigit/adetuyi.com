@@ -46,7 +46,7 @@ const bios = [
 const facts = [
   { label: "Name", value: "Tolu Adetuyi" },
   { label: "Title", value: "Co-Founder and Chief Innovation Officer, Prembly" },
-  { label: "Also described as", value: "Founder and investor" },
+  { label: "Also described as", value: "Technology entrepreneur and investor" },
   { label: "Based", value: "United States, working across the United States, Nigeria and Kenya" },
   { label: "Website", value: "adetuyi.com" },
 ];

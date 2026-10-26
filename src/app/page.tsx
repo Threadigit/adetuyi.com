@@ -78,7 +78,7 @@ export default function Home() {
                 Tolu Adetuyi
               </h1>
               <p className="text-[13px] leading-relaxed text-muted">
-                Founder &amp; Investor
+                Technology Entrepreneur &amp; Investor
               </p>
             </div>
           </div>
