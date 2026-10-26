@@ -99,11 +99,6 @@ export default function Home() {
           I build the infrastructure that lets people and businesses create
           value, earn, and take part in the global economy.
         </p>
-        <p className="text-[15px] leading-[1.7] text-muted max-w-[640px] mt-3">
-          At Prembly, I help businesses stop fraud and trust their customers. Through
-          BuildX Capital, I invest in the founders and infrastructure, starting
-          with power, that keep businesses running.
-        </p>
         <div className="flex flex-wrap items-center gap-x-5 gap-y-3 mt-7">
           <Link
             href="/writing"
