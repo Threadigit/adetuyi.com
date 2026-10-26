@@ -327,7 +327,7 @@ export default function EconomicParticipationThesisPage() {
               BuildX Capital
             </h2>
             <p className="m-0 text-[14px] leading-[1.8] text-muted">
-              BuildX Capital is where I invest in and support founders building across mobility, energy, trade, manufacturing, and physical infrastructure. For years I have done this as an angel investor, one company at a time. Angel cheques can prove a model. They cannot finance the assets themselves. That learning, and the operating experience behind the distribution and trust infrastructure work, led BuildX Capital to form a dedicated energy mandate in Nigeria&apos;s distributed commercial and industrial market. Power is the constraint sitting under the rest.
+              BuildX Capital is where I invest in and support early stage founders building across mobility, energy, trade, manufacturing, and physical infrastructure. For years I have done this as an angel investor, one company at a time. Angel cheques can prove a model. They cannot finance the assets themselves. That learning, and the operating experience behind the distribution and trust infrastructure work, led BuildX Capital to form a dedicated energy mandate in Nigeria&apos;s distributed commercial and industrial market. Power is the constraint sitting under the rest.
             </p>
             <p className="m-0 mt-4 text-[14px] leading-[1.8] text-muted">
               The energy mandate is being formed to finance distributed energy assets close to
