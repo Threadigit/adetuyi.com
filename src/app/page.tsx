@@ -78,7 +78,7 @@ export default function Home() {
                 Tolu Adetuyi
               </h1>
               <p className="text-[13px] leading-relaxed text-muted">
-                Technology Entrepreneur &amp; Investor
+                Founder &amp; Investor
               </p>
             </div>
           </div>
@@ -120,7 +120,7 @@ export default function Home() {
       {/* ── About ── */}
       <section className="mb-12 pt-8 border-t border-border/70 animate-fade-up delay-200">
         <p className="text-[15px] leading-[1.8] text-muted">
-          I am a technology entrepreneur, investor, and student of how things
+          I am a founder, investor, and student of how things
           work. Over the past decade, I have built across identity, compliance,
           financial infrastructure, and capital in Africa. At{" "}
           <a href="https://prembly.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">
