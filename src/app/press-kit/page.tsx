@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     description,
     url: canonical,
     type: "website",
-    images: [{ url: "/press-kit/tolu-adetuyi-headshot-studio.jpg", width: 1374, height: 1145, alt: "Tolu Adetuyi" }],
+    images: [{ url: "/og/page/press-kit", width: 1200, height: 630, alt: "Tolu Adetuyi press kit" }],
   },
   twitter: {
     card: "summary_large_image",
     title: `${title} | Tolu Adetuyi`,
     description,
-    images: ["/press-kit/tolu-adetuyi-headshot-studio.jpg"],
+    images: ["/og/page/press-kit"],
   },
 };
 
@@ -85,8 +85,25 @@ const sectionHeading =
   "text-[13px] font-medium uppercase tracking-widest text-foreground border-l-[3px] border-accent pl-3 mb-5";
 
 export default function PressKitPage() {
+  const pageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${canonical}#press-kit`,
+    url: canonical,
+    name: `${title} | Tolu Adetuyi`,
+    description,
+    about: { "@id": "https://www.adetuyi.com/#person" },
+    isPartOf: { "@id": "https://www.adetuyi.com/#website" },
+  };
+
   return (
     <main className="max-w-[680px] mx-auto px-6 py-16 md:py-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(pageSchema).replace(/</g, "\\u003c"),
+        }}
+      />
       <BreadcrumbSchema
         items={[
           { name: "Home", path: "/" },

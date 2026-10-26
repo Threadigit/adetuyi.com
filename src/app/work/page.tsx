@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/tolu-og.jpg",
-        width: 1374,
-        height: 1145,
+        url: "/og/page/advisory",
+        width: 1200,
+        height: 630,
         alt: "Tolu Adetuyi",
       },
     ],
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Advisory for Founders, Operators and Investors | Tolu Adetuyi",
     description: "Selective advisory by Tolu Adetuyi for founders, operators, and investors making product, technology, distribution, fundraising, and market decisions in Africa.",
-    images: ["/tolu-og.jpg"],
+    images: ["/og/page/advisory"],
   },
 };
 

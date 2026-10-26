@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   creator: "Tolu Adetuyi",
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "en_GB",
     url: "https://www.adetuyi.com",
     siteName: "Tolu Adetuyi",
     title: "Tolu Adetuyi | Co-Founder of Prembly and Investor in Africa",
