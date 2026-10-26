@@ -155,7 +155,7 @@ export default function ThesisPage() {
           <ul className="m-0 list-none space-y-2.5 p-0 text-[15px] leading-[1.7] text-foreground/85">
             <li>Backing founders. I invest in and support founders across mobility, energy, trade, manufacturing, and physical infrastructure.</li>
             <li>The energy mandate. One part of BuildX Capital, a fund now in formation to finance distributed energy assets for commercial and industrial users in Nigeria.</li>
-            <li>Where it stands. Backing founders now. The energy fund is still in formation and is not yet open to investors.</li>
+            <li>Where it stands. Backing founders now. The energy fund is still in formation.</li>
           </ul>
         </aside>
 
@@ -527,8 +527,7 @@ export default function ThesisPage() {
             </h2>
             <p className="text-[14px] leading-relaxed text-background/75 mb-4">
               BuildX Capital is backing founders now. Its energy mandate is
-              still in formation and is not yet open to investors, and nothing
-              on this page is an offer. I am glad to hear from:
+              still in formation, and nothing on this page is an offer. I am glad to hear from:
             </p>
             <ul className="m-0 mb-5 space-y-3 pl-0 list-none text-[14px] leading-relaxed text-background/75">
               <li className="flex gap-3">
