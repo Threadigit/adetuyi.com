@@ -30,7 +30,7 @@ export default function StructuredData() {
       },
       {
         "@type": "Occupation",
-        "name": "Investor and founder",
+        "name": "Technology entrepreneur and investor",
         "description": "Invests in and supports founders building financial, distribution and physical infrastructure across Africa."
       }
     ],

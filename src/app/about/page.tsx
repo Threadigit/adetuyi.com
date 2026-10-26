@@ -5,7 +5,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 const title = "About the Co-Founder of Prembly";
 const description =
-  "Tolu Adetuyi is a Nigerian engineer turned founder and investor. Co-Founder of Prembly, he now also backs founders across Africa.";
+  "Tolu Adetuyi is a Nigerian engineer turned technology entrepreneur and investor. Co-Founder of Prembly, he now also backs founders across Africa.";
 const canonical = "https://www.adetuyi.com/about";
 
 export const metadata: Metadata = {
@@ -158,10 +158,11 @@ export default function AboutPage() {
           <div className="flex flex-col-reverse gap-8 sm:flex-row sm:items-start sm:justify-between">
             <div className="sm:max-w-[420px]">
               <h1 className="text-[34px] md:text-[42px] font-medium tracking-tight leading-[1.15] mb-6 text-foreground">
-                Engineer, founder and investor
+                Engineer, entrepreneur and investor
               </h1>
               <p className="text-[17px] leading-[1.8] text-muted">
-                I am a Nigerian engineer turned founder and investor. I live in the United States and work across the United States, Nigeria and Kenya. I am Co-Founder and Chief Innovation Officer at{" "}
+                I am a Nigerian engineer turned technology entrepreneur and
+                investor. I live in the United States and work across the United States, Nigeria and Kenya. I am Co-Founder and Chief Innovation Officer at{" "}
                 <a href="https://prembly.com/" target="_blank" rel="noopener noreferrer" className={inlineLink}>
                   Prembly
                 </a>
