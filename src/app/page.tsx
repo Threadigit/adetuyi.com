@@ -120,8 +120,9 @@ export default function Home() {
       {/* ── About ── */}
       <section className="mb-12 pt-8 border-t border-border/70 animate-fade-up delay-200">
         <p className="text-[15px] leading-[1.8] text-muted">
-          Over the past decade, I have built across identity, compliance,
-          financial infrastructure, and capital formation in Africa. At{" "}
+          I am a technology entrepreneur, investor, and student of how things
+          work. Over the past decade, I have built across identity, compliance,
+          financial infrastructure, and capital in Africa. At{" "}
           <a href="https://prembly.com/" target="_blank" rel="noopener noreferrer" className="text-foreground link-hover font-medium">
             Prembly
           </a>
@@ -140,6 +141,10 @@ export default function Home() {
             On Deck
           </a>
           .
+        </p>
+        <p className="text-[15px] leading-[1.8] text-muted mt-3">
+          Here, I share what I&apos;m learning, what I believe, and the ideas
+          shaping what I build.
         </p>
       </section>
 
