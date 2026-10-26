@@ -240,8 +240,7 @@ export default function EconomicParticipationThesisPage() {
             helps businesses verify customers, meet compliance requirements,
             prevent fraud, and transact with confidence. We work across
             emerging markets, with presence in Nigeria, Kenya, and the United
-            States, and more than a thousand local and global businesses rely on it, across millions of verifications. That count is an
-            input, not a result. What it buys is a business able to deal with a
+            States, and more than a thousand local and global businesses rely on it, across millions of verifications. Those numbers are inputs, not results. What it buys is a business able to deal with a
             customer it could not otherwise trust. Prembly is my primary
             operating work and the clearest case of this thesis in practice.
             People and businesses cannot participate fully when systems cannot
@@ -324,7 +323,7 @@ export default function EconomicParticipationThesisPage() {
               BuildX Capital
             </h2>
             <p className="m-0 text-[14px] leading-[1.8] text-muted">
-              BuildX Capital is where I invest in and support founders building across mobility, energy, trade, manufacturing, and physical infrastructure. For years I have done this as an angel investor, one company at a time. Angel cheques can prove a model. They cannot finance the assets themselves. That learning, and the operating experience behind the distribution and trust infrastructure work, is why BuildX Capital is also forming an energy mandate in Nigeria&apos;s distributed commercial and industrial market, because power is the constraint sitting under the rest.
+              BuildX Capital is where I invest in and support founders building across mobility, energy, trade, manufacturing, and physical infrastructure. For years I have done this as an angel investor, one company at a time. Angel cheques can prove a model. They cannot finance the assets themselves. That learning, and the operating experience behind the distribution and trust infrastructure work, led BuildX Capital to form a dedicated energy mandate in Nigeria&apos;s distributed commercial and industrial market. Power is the constraint sitting under the rest.
             </p>
             <p className="m-0 mt-4 text-[14px] leading-[1.8] text-muted">
               The energy mandate is being formed to finance distributed energy assets close to
