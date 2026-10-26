@@ -160,23 +160,6 @@ export default function EconomicParticipationThesisPage() {
             put it to productive use.
           </p>
           <p>
-            The account is where the measurement usually goes wrong. Inclusion
-            is counted in accounts opened, but an account is only a container.
-            Open one for somebody with no way to earn and the statistics improve
-            while the person does not. They are recorded as included and remain
-            unable to make the account work for them. That is how access can
-            rise for years while livelihoods stay where they were.
-          </p>
-          <p>
-            The same error repeats at every layer. Identities verified. Loans
-            disbursed. Terminals deployed. Each one gets counted because each
-            one is easy to count, and none of them says whether a person ended
-            up better able to earn. Institutions report what they did. Whether
-            it changed anybody&apos;s position is harder to see, so it is
-            watched less, and the two can drift apart for years before anyone
-            says so.
-          </p>
-          <p>
             My role is deliberate. I build where my operating experience is
             strongest, support a small number of founders advancing the same
             vision, and help capital reach opportunities that can expand
@@ -209,6 +192,27 @@ export default function EconomicParticipationThesisPage() {
               </div>
             ))}
           </div>
+
+          <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
+            Why counting access misleads
+          </h2>
+          <p>
+            The account is where the measurement usually goes wrong. Inclusion
+            is counted in accounts opened, but an account is only a container.
+            Open one for somebody with no way to earn and the statistics improve
+            while the person does not. They are recorded as included and remain
+            unable to make the account work for them. That is how access can
+            rise for years while livelihoods stay where they were.
+          </p>
+          <p>
+            The same error repeats at every layer. Identities verified. Loans
+            disbursed. Terminals deployed. Each one gets counted because each
+            one is easy to count, and none of them says whether a person ended
+            up better able to earn. Institutions report what they did. Whether
+            it changed anybody&apos;s position is harder to see, so it is
+            watched less, and the two can drift apart for years before anyone
+            says so.
+          </p>
 
           <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
             Why the global economy
