@@ -80,13 +80,6 @@ export default function Home() {
               <p className="text-[13px] leading-relaxed text-muted">
                 Founder &amp; Investor
               </p>
-              <p className="flex items-center justify-center gap-2 mt-1.5 text-[11px] leading-none">
-                <span aria-hidden="true" className="w-4 h-px bg-accent" />
-                <span className="text-accent font-medium tracking-[0.04em]">
-                  Forbes Tech Council
-                </span>
-                <span className="text-muted">&apos;24</span>
-              </p>
             </div>
           </div>
         </div>
@@ -105,6 +98,11 @@ export default function Home() {
         <p className="text-[19px] md:text-[21px] leading-[1.55] tracking-[-0.01em] text-foreground max-w-[640px] mt-4">
           I build the infrastructure that lets people and businesses create
           value, earn, and take part in the global economy.
+        </p>
+        <p className="text-[15px] leading-[1.7] text-muted max-w-[640px] mt-3">
+          At Prembly, I help businesses stop fraud and trust their customers. Through
+          BuildX Capital, I invest in the founders and infrastructure, starting
+          with power, that keep businesses running.
         </p>
         <div className="flex flex-wrap items-center gap-x-5 gap-y-3 mt-7">
           <Link
@@ -226,28 +224,10 @@ export default function Home() {
             infrastructure that makes it work.
           </p>
           <p className="text-[15px] text-muted leading-relaxed mb-6">
-            Most of my work has been an expression of that thesis, from trust
-            infrastructure to distribution to capital. The newest is BuildX
-            Capital, where I invest in and support founders building across
-            mobility, energy, trade, manufacturing, and physical
-            infrastructure. I am also forming an energy fund to finance
-            distributed assets around productive demand and test how reliable
-            power can strengthen earnings, operating capacity, and economic
-            inclusion.
+            It runs through my work, from identity and fraud prevention at
+            Prembly, to distribution at Moniepoint, to investing in founders
+            through BuildX Capital.
           </p>
-          <div className="flex flex-wrap gap-2 mb-6">
-            {[
-              "Trust, Financial & Cross-Border Infrastructure",
-              "Distribution & Market Access",
-              "Energy, Manufacturing & Productive Infrastructure",
-              "Research, Knowledge & Media",
-              "Venture & Capital Formation",
-            ].map((area) => (
-              <span key={area} className="inline-flex items-center px-2.5 py-1.5 rounded bg-background/70 border border-accent/15 text-muted text-[12px] leading-none">
-                {area}
-              </span>
-            ))}
-          </div>
           <Link
             href="/thesis"
             className="inline-flex items-center gap-2 border border-accent text-accent px-5 py-2.5 rounded-full hover:bg-accent hover:text-white transition-all font-medium text-[14px] group"

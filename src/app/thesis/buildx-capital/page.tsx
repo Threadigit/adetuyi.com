@@ -6,7 +6,7 @@ const title = "BuildX Capital";
 const description =
   "Tolu Adetuyi's investment platform for founders in mobility, energy, trade and manufacturing, and its plan to finance distributed energy in Nigeria.";
 const canonical = "https://www.adetuyi.com/thesis/buildx-capital";
-const lastUpdated = "2026-10-25";
+const lastUpdated = "2026-10-26";
 
 const sources = [
   {
@@ -145,7 +145,7 @@ export default function ThesisPage() {
           </p>
           <p className="mt-5 text-[12px] uppercase tracking-widest text-muted">
             Last updated{" "}
-            <time dateTime={lastUpdated}>October 25, 2026</time>
+            <time dateTime={lastUpdated}>October 26, 2026</time>
           </p>
         </header>
 
@@ -159,7 +159,7 @@ export default function ThesisPage() {
           <ul className="m-0 list-none space-y-2.5 p-0 text-[15px] leading-[1.7] text-foreground/85">
             <li>Backing founders. I invest in and support founders across mobility, energy, trade, manufacturing, and physical infrastructure.</li>
             <li>The energy mandate. A fund now in formation to finance distributed energy assets for commercial and industrial users in Nigeria.</li>
-            <li>Why energy. Power is the constraint sitting under everything else built here.</li>
+            <li>Where it stands. Backing founders now. The energy fund is still in formation and is not yet open to investors.</li>
           </ul>
         </aside>
 
@@ -200,12 +200,6 @@ export default function ThesisPage() {
             data centre is only as reliable as the power beneath it. Nigeria has
             built remarkable businesses on top of an energy system that still
             asks each enterprise to become its own utility.
-          </p>
-          <p>
-            I do not see that only as a development problem. I see recurring,
-            financeable demand for infrastructure that lowers operating costs,
-            strengthens earnings, and expands what businesses and workers can
-            produce.
           </p>
           <p>
             Backing that view one company at a time taught me where the
@@ -307,21 +301,7 @@ export default function ThesisPage() {
             operating need to sign a credible long-term contract.
           </p>
           <p>
-            The systems may combine solar generation, storage, efficient
-            thermal backup, and energy management technology. The final design
-            should follow the customer&apos;s load profile, operating hours,
-            service requirement, site conditions, and fuel economics. I am not
-            attached to a technology slogan. I am attached to dependable
-            electrons, disciplined underwriting, and assets that solve a
-            measured problem.
-          </p>
-          <p>
-            Commercial and industrial demand is an underwriting discipline,
-            not simply a description of buildings. An anchor load may come from
-            a factory, cold room, clinic, logistics facility, or a fleet of
-            productive electric assets. In each case, demand must be recurring,
-            measurable, and concentrated enough to support the infrastructure.
-            It must also be visible before capital is deployed.
+            The systems may combine solar, storage, efficient backup, and energy management. The design follows the customer&apos;s load and site, not a technology preference. I am attached to dependable power, disciplined underwriting, and assets that solve a measured problem.
           </p>
           <p>
             The commercial model is straightforward. A project company finances
@@ -345,13 +325,6 @@ export default function ThesisPage() {
             system includes batteries, solar-enabled charging or swapping
             stations, controls, metering, maintenance, and software that makes
             energy use and payment performance visible.
-          </p>
-          <p>
-            An active fleet can provide the initial demand needed to support a
-            charging station. The same site may later serve nearby businesses
-            or communities where the economics and regulation allow it. That
-            expansion should follow measured demand. Future community use
-            should not be required to make the first installation viable.
           </p>
           <p>
             The current operating test is deliberately small. Deployed electric
@@ -476,14 +449,6 @@ export default function ThesisPage() {
             without weakening the fund&apos;s discipline.
           </p>
           <p>
-            Portfolio value can also be created after installation. Better
-            procurement, remote monitoring, preventive maintenance, load
-            optimisation, common spare parts, insurance, and disciplined
-            collections can improve performance across several sites. Once a
-            portfolio has operating history and contracted revenue, it may also
-            become suitable for lower-cost refinancing.
-          </p>
-          <p>
             This is why the strategy begins with commercial and industrial
             anchor loads. The{" "}
             <a
@@ -531,46 +496,19 @@ export default function ThesisPage() {
             customers. It is not dependent on a single subsidy programme. It is
             not an attempt to rebuild the national grid privately.
           </p>
-          <p>
-            It is a focused effort to finance useful assets close to proven
-            demand, one bankable project at a time, and to compound the
-            operating knowledge required to build a durable portfolio.
-          </p>
 
           <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
             Why I am building it
           </h2>
           <p>
-            My career has moved from code to products, from products to
-            distribution, and from distribution to infrastructure. The pattern
-            is consistent. The most valuable systems are the ones other people
-            can build on.
-          </p>
-          <p>
-            At Moniepoint, distribution turned software into financial access.
-            At Prembly, trust infrastructure allows digital businesses to
-            transact safely. Power is more fundamental. When electricity is
-            reliable, a factory can add a shift, a clinic can protect its cold
-            chain, a logistics operator can plan, and a technology company can
-            keep its systems online. An asset can earn a return when the
-            customer becomes more productive.
-          </p>
-          <p>
-            That alignment is the conviction behind BuildX Capital. I
-            want to build infrastructure whose economic usefulness is visible
-            in the cash flow of the businesses it powers.
+            The conviction behind BuildX Capital is simple. When electricity is reliable, a factory can add a shift, a clinic can protect its cold chain, and a logistics operator can plan. I want to build infrastructure whose usefulness is visible in the cash flow of the businesses it powers.
           </p>
 
           <h2 className="text-[22px] md:text-[26px] font-medium text-foreground tracking-tight mt-14 mb-5">
             Formation and execution
           </h2>
           <p>
-            The energy fund is currently sponsor-led by me. I bring a decade of work
-            across software, financial-services distribution, identity,
-            compliance, and company building in African markets. That operating
-            background shapes how I assess demand, distribution, customer
-            quality, and whether infrastructure creates measurable economic
-            value.
+            The energy fund is currently sponsor-led by me, drawing on a decade of building in African markets.
           </p>
           <p>
             Formation includes assembling the investment and operating
@@ -583,36 +521,33 @@ export default function ThesisPage() {
 
           <div className="my-12 p-8 bg-foreground text-background rounded-xl">
             <h2 className="text-[19px] font-medium text-background mt-0 mb-4">
-              For investors, founders, operators, and project partners
+              Get in touch
             </h2>
             <p className="text-[14px] leading-relaxed text-background/75 mb-4">
-              BuildX Capital is backing founders now, and its energy mandate is in formation. You do not need to run an energy company to participate. I want to hear
-              from you if you are one of the following.
+              BuildX Capital is backing founders now. Its energy mandate is
+              still in formation and is not yet open to investors, and nothing
+              on this page is an offer. I am glad to hear from:
             </p>
             <ul className="m-0 mb-5 space-y-3 pl-0 list-none text-[14px] leading-relaxed text-background/75">
               <li className="flex gap-3">
                 <span className="text-accent" aria-hidden="true">•</span>
-                <span><strong className="text-background font-medium">An investor or high-net-worth individual</strong> seeking disciplined exposure to distributed energy and productive infrastructure.</span>
+                <span><strong className="text-background font-medium">Founders and operators</strong> with a viable site, productive fleet, anchor load, or technology platform with measurable energy demand.</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-accent" aria-hidden="true">•</span>
-                <span><strong className="text-background font-medium">A founder or operator</strong> with a viable site, productive fleet, anchor load, or technology platform with measurable energy demand.</span>
+                <span><strong className="text-background font-medium">Delivery partners</strong> who can contribute distribution, technology, equipment, development, or execution.</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-accent" aria-hidden="true">•</span>
-                <span><strong className="text-background font-medium">A project or delivery partner</strong> who can contribute distribution, technology, equipment, financing, development, or execution.</span>
+                <span><strong className="text-background font-medium">Investors and institutions</strong> interested in following the work. Any future offering would be made only to eligible investors, through formal documents.</span>
               </li>
             </ul>
-            <p className="text-[14px] leading-relaxed text-background/75 mb-6">
-              If one of these describes you, let us discuss where you fit in the
-              first portfolio.
-            </p>
             <div className="flex flex-col sm:flex-row sm:items-center gap-3">
               <a
-                href="mailto:tolu@adetuyi.com?subject=Powering%20Nigeria%20IF1%20project%20or%20investment"
+                href="mailto:tolu@adetuyi.com?subject=BuildX%20Capital%20conversation"
                 className="inline-flex items-center justify-center gap-2 bg-accent text-white px-6 py-3 rounded-full hover:bg-accent/90 transition-colors font-medium text-[14px]"
               >
-                Discuss a project or investment <span>↗</span>
+                Start a conversation <span>↗</span>
               </a>
               <a
                 href="https://calendly.com/toluadetuyi/one-on-one"
