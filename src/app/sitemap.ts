@@ -11,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `https://www.adetuyi.com/writing/${post.slug}`,
     lastModified: new Date(post.modifiedDate ?? post.date),
     changeFrequency: 'yearly' as const,
-    priority: 0.6,
+    priority: post.note ? 0.4 : 0.6,
   }));
 
   return [

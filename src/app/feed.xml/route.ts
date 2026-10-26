@@ -50,7 +50,7 @@ export function GET() {
       <link>${url}</link>
       <guid isPermaLink="true">${url}</guid>
       <pubDate>${new Date(`${post.date}T12:00:00Z`).toUTCString()}</pubDate>
-      <category>${escapeXml(post.category)}</category>
+      <category>${escapeXml(post.category)}</category>${post.note ? "\n      <category>Note</category>" : ""}
       <description>${escapeXml(post.excerpt)}</description>
       <content:encoded><![CDATA[${html}]]></content:encoded>
     </item>`;
@@ -63,8 +63,8 @@ export function GET() {
     <title>Tolu Adetuyi, Writing</title>
     <link>${siteUrl}/writing</link>
     <atom:link href="${siteUrl}/feed.xml" rel="self" type="application/rss+xml" />
-    <description>Essays by Tolu Adetuyi on trust infrastructure, nation building, leadership, capital formation and economic participation in Africa.</description>
-    <language>en</language>
+    <description>Essays and notes by Tolu Adetuyi on trust infrastructure, nation building, leadership, capital formation and economic participation in Africa.</description>
+    <language>en-gb</language>
     <lastBuildDate>${updated}</lastBuildDate>
 ${items}
   </channel>

@@ -20,17 +20,17 @@ export default function WritingList({ posts, startHere }: { posts: Post[]; start
 
   return (
     <>
-      <div className="animate-fade-up delay-150" role="search" aria-label="Filter essays">
+      <div className="animate-fade-up delay-150" role="search" aria-label="Filter essays and notes">
       <div className="mb-4">
         <label htmlFor="essay-search" className="sr-only">
-          Search essays
+          Search essays and notes
         </label>
         <input
           id="essay-search"
           type="search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search essays"
+          placeholder="Search essays and notes"
           className="w-full rounded-full border border-accent/20 bg-transparent px-5 py-2.5 text-[14px] text-foreground placeholder:text-muted focus:border-accent focus:outline-none"
         />
       </div>
@@ -65,7 +65,7 @@ export default function WritingList({ posts, startHere }: { posts: Post[]; start
                     {post.title}
                   </span>
                   <span className="text-[11px] uppercase tracking-widest text-accent font-medium whitespace-nowrap">
-                    {post.category}
+                    {post.note ? `Note · ${post.category}` : post.category}
                   </span>
                 </Link>
                 {index < startHere.length - 1 && <div className="border-t border-accent/15" />}
@@ -76,7 +76,7 @@ export default function WritingList({ posts, startHere }: { posts: Post[]; start
       )}
 
       {filtered.length === 0 && (
-        <p className="text-[15px] text-muted">No essays match that search.</p>
+        <p className="text-[15px] text-muted">Nothing matches that search.</p>
       )}
 
       <div className="space-y-0 animate-fade-up delay-200">
@@ -85,7 +85,7 @@ export default function WritingList({ posts, startHere }: { posts: Post[]; start
             <Link href={`/writing/${post.slug}`} className="group block py-7">
               <div className="flex items-center gap-3 mb-3">
                 <span className="text-[12px] uppercase tracking-widest text-accent font-medium">
-                  {post.category}
+                  {post.note ? `Note · ${post.category}` : post.category}
                 </span>
                 <span className="text-muted/40 text-[10px]">·</span>
                 <time

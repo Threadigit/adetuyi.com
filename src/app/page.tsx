@@ -246,7 +246,7 @@ export default function Home() {
             href="/writing"
             className="text-[13px] text-muted hover:text-accent transition-colors group flex items-center gap-1.5 whitespace-nowrap"
           >
-            All {getAllPosts().length} essays <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
+            All {getAllPosts().length} essays and notes <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
           </Link>
         </div>
         <p className="text-[14px] leading-relaxed text-muted mb-4">
