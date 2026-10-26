@@ -36,6 +36,8 @@ export interface Post {
   related?: string[];
   /** Skip the large first letter, for openings such as a letter salutation. */
   noDropCap?: boolean;
+  /** Short pieces under about 600 words, labelled "Note" in lists and on the page. */
+  note?: boolean;
   content: ContentBlock[];
 }
 
@@ -1755,6 +1757,30 @@ const posts: Post[] = [
     ],
   },
 ];
+
+/** Short pieces shown with a "Note" label. Part One of a series stays an essay. */
+const noteSlugs = [
+  "three-ingredients-for-sound-judgement",
+  "the-closed-loop-trust-system",
+  "from-code-to-bedrock",
+  "trust-infrastructure-is-the-new-moat",
+  "why-africa-cannot-skip-physical-infrastructure",
+  "the-deepest-moats-are-built-in-the-dirt",
+  "seven-things-gen-z-gets-right",
+  "architecture-of-innovation",
+  "culture-is-what-keeps-a-team-alive",
+  "systems-over-discipline",
+  "from-labor-to-leverage",
+  "why-trust-infrastructure-matters",
+  "the-magic-of-a-nimble-team",
+  "every-company-is-a-finance-company",
+  "the-distribution-problem-nobody-talks-about",
+  "communication-debt-is-worse-than-tech-debt",
+  "actuators-and-mitigators",
+];
+for (const post of posts) {
+  if (noteSlugs.includes(post.slug)) post.note = true;
+}
 
 // ── Helpers ────────────────────────────────────────────
 

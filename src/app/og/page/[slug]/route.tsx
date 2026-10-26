@@ -47,7 +47,7 @@ export async function GET(
   const card = cards[slug] ?? { kicker: "Tolu Adetuyi", title: "Tolu Adetuyi" };
   const subtitle =
     slug === "writing"
-      ? `${getAllPosts().length} essays on leadership, building companies, trust and capital`
+      ? `${getAllPosts().length} essays and notes on leadership, building companies, trust and capital`
       : card.subtitle;
   const fontSize = card.title.length > 40 ? 68 : 84;
 

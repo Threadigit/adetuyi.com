@@ -301,7 +301,7 @@ export default async function WritingPost({ params }: PageProps) {
           <div className="flex items-center gap-3 mb-6">
             <div className="h-[1px] w-8 bg-accent"></div>
             <span className="text-[12px] font-medium uppercase tracking-widest text-accent">
-              {post.category}
+              {post.note ? `Note · ${post.category}` : post.category}
             </span>
           </div>
           <h1 className="text-[32px] md:text-[40px] font-medium tracking-tight leading-tight mb-5 text-foreground">

@@ -6,7 +6,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 const canonical = "https://www.adetuyi.com/writing";
 const postCount = getAllPosts().length;
-const description = `Read ${postCount} essays by Tolu Adetuyi on leadership, building companies, trust, capital and economic participation in Africa.`;
+const description = `Read ${postCount} essays and notes by Tolu Adetuyi on leadership, building companies, trust, capital and economic participation in Africa.`;
 
 export const metadata: Metadata = {
   title: "Writing",
@@ -88,7 +88,7 @@ export default function WritingPage() {
           Essays &amp; Perspectives
         </h1>
         <p className="text-[15px] leading-relaxed text-muted max-w-[520px]">
-          A collection of {posts.length} essays on trust infrastructure,
+          A collection of {posts.length} essays and notes on trust infrastructure,
           leadership, venture building, distribution, capital formation, and
           the systems that power economic participation across emerging markets.
         </p>
