@@ -69,6 +69,7 @@ const posts: Post[] = [
       { type: "paragraph", text: "My parents had no land worth fighting over and very little cash. They had to decide where the little they had would go." },
       { type: "paragraph", text: "They bet on their children." },
       { type: "paragraph", text: "They did it the way many families did, through Ajo, Esusu and cooperative thrift societies, where people pool money and take turns to receive it. A small part met urgent needs at home. Most went to school fees and textbooks." },
+      { type: "paragraph", text: "In my case, they paid my education fees through their labour. I was the asset they chose to build." },
       { type: "paragraph", text: "The reasoning was simple. When money is that tight, you back the asset you trust most. They trusted that children do not forget their parents." },
       { type: "heading", text: "Read the ledger again" },
       { type: "paragraph", text: "Now read it again from where many of us stand. We have laptops, global bank accounts, company shares and jobs that pay in strong currencies. From up here it is easy to look back and judge. We call the monthly transfer black tax. We decide our parents were poor with money because they left no portfolio." },
