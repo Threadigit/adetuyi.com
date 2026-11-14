@@ -61,7 +61,7 @@ const posts: Post[] = [
       { type: "paragraph", text: "That habit worked for a long time. It matters less now. When AI can produce a draft, a snippet or a summary in seconds, being able to produce is no longer what sets a new hire apart. What sets them apart is knowing which problem is worth solving, making others understand it, and taking responsibility for the result." },
       { type: "paragraph", text: "I have found three skills that do this, and all three can be learned before graduation. I learned them on campus, mostly outside the lecture hall." },
       { type: "heading", text: "What I learned outside the lecture hall" },
-      { type: "paragraph", text: "At Adekunle Ajasin University, I studied computer science and served as president of the Computer Science Students' Association. Around that, I built things the school actually used." },
+      { type: "paragraph", text: "While in college, during my undergraduate studies in computer science, I served as president of the Computer Science Students' Association. Around that, I built things the school actually used." },
       { type: "paragraph", text: "School fee receipts were being forged. I built a detector, and it caught fraudulent payments and saved the administration money. I built an electronic voting platform that ran the students' union election for a student body of more than 20,000. I created the Career Advancement Programme, which trained students in technology skills, and the Developers Festival, where people pitched their ideas to industry leaders." },
       { type: "paragraph", text: "I did not see it then, but each of those was a lesson in one of three skills. Fixing, telling and owning." },
       { type: "heading", text: "One. Learn to fix things" },
