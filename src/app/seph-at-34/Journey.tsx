@@ -481,10 +481,13 @@ function CardStep() {
             </div>
           </div>
         </article>
-        <a className={s.save} href="/seph/card.png" download="Seph-at-34-card.png">
-          Save this card
-        </a>
       </div>
+      <a className={s.saveTop} href="/seph/card.png" download="Seph-at-34-card.png">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M12 4v11M7 11l5 5 5-5M5 20h14" />
+        </svg>
+        Save card
+      </a>
       {hint.rail && (
         <div className={s.rail} aria-hidden="true">
           <span className={s.thumb} style={{ top: `${hint.thumb.top}%`, height: `${hint.thumb.height}%` }} />

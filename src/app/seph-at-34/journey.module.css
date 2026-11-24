@@ -986,3 +986,23 @@
     animation: none;
   }
 }
+
+.saveTop {
+  position: absolute;
+  z-index: 8;
+  top: calc(env(safe-area-inset-top, 0px) + 26px);
+  right: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 40px;
+  padding: 0 15px;
+  border-radius: 999px;
+  background: var(--gold);
+  color: #1b1303;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.45);
+}
