@@ -858,3 +858,29 @@
   place-items: center;
   cursor: pointer;
 }
+
+.sharp {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 10px;
+  padding: 18px 12px;
+  margin-bottom: 24px;
+  border-radius: 18px;
+  background: linear-gradient(160deg, rgba(242, 182, 50, 0.22), rgba(242, 182, 50, 0.06));
+  border: 1px solid rgba(242, 182, 50, 0.55);
+  color: var(--gold);
+  box-shadow: 0 0 50px rgba(242, 182, 50, 0.16);
+}
+.sharp span {
+  font-size: 58px;
+  line-height: 1;
+  font-weight: 700;
+}
+.sharp small {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
