@@ -908,3 +908,23 @@
 .next {
   white-space: nowrap;
 }
+
+.tiny {
+  width: min(96px, 12dvh);
+  margin-bottom: clamp(14px, 3dvh, 28px);
+}
+.thanks {
+  font-size: clamp(21px, min(6.4vw, 3.3dvh), 28px);
+  line-height: 1.35;
+  font-weight: 600;
+  margin: 0 0 clamp(12px, 2.4dvh, 20px);
+  max-width: 17em;
+}
+.thanksBig {
+  font-size: clamp(34px, min(11.5vw, 5.8dvh), 50px);
+  line-height: 1.1;
+  font-weight: 700;
+  color: var(--gold);
+  margin: clamp(8px, 2dvh, 18px) 0 0;
+  text-shadow: 0 0 40px rgba(242, 182, 50, 0.35);
+}
