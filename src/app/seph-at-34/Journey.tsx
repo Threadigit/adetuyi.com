@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Fragment, useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
 import type { RefObject } from "react";
 import s from "./journey.module.css";
-import { MUSIC_YOUTUBE_ID, mapsUrl, prettyDate, stops } from "./data";
+import { MUSIC_START_SECONDS, MUSIC_YOUTUBE_ID, mapsUrl, prettyDate, stops } from "./data";
 
 const MESSAGE = [
   "Happy birthday to the woman who makes everything in my life better.",
@@ -24,6 +24,7 @@ const TOTAL = 13;
 
 type YTPlayer = {
   playVideo: () => void;
+  seekTo: (seconds: number, allowSeekAhead: boolean) => void;
   mute: () => void;
   unMute: () => void;
   setVolume: (n: number) => void;
@@ -66,12 +67,17 @@ function useMusic(id: string) {
         height: "1",
         width: "1",
         videoId: id,
-        playerVars: { controls: 0, loop: 1, playlist: id, playsinline: 1, rel: 0, modestbranding: 1 },
+        playerVars: { controls: 0, start: MUSIC_START_SECONDS, playsinline: 1, rel: 0, modestbranding: 1 },
         events: {
           onReady: (e) => e.target.setVolume(75),
           onStateChange: (e) => {
             playing.current = e.data === 1;
             setOn(e.data === 1);
+            // Ended: go back to the chosen line and keep singing.
+            if (e.data === 0) {
+              player.current?.seekTo(MUSIC_START_SECONDS, true);
+              player.current?.playVideo();
+            }
           },
         },
       });
