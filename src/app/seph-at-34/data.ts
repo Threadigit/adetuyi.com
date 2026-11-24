@@ -1,7 +1,7 @@
 // Everything that can change about the day lives here. Edit this file and the page,
 // the calendar file and the countdown all follow.
 
-export const BIRTHDAY_DATE = "2026-11-28"; // YYYY-MM-DD, local to the timezone below
+export const BIRTHDAY_DATE = "2026-11-25"; // YYYY-MM-DD, local to the timezone below
 export const TIMEZONE = "America/New_York";
 
 export type Stop = {
