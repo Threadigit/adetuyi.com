@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Fragment, useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
 import type { RefObject } from "react";
 import s from "./journey.module.css";
-import { BIRTHDAY_DATE, MUSIC_YOUTUBE_ID, TIMEZONE, googleCalendarUrl, mapsUrl, prettyDate, stops } from "./data";
+import { MUSIC_YOUTUBE_ID, googleCalendarUrl, mapsUrl, prettyDate, stops } from "./data";
 
 const MESSAGE = [
   "Happy birthday to the woman who makes everything in my life better.",
@@ -345,20 +345,6 @@ function clock(time: string) {
   return { t: `${h % 12 || 12}:${String(m).padStart(2, "0")}`, ap: h >= 12 ? "pm" : "am" };
 }
 
-// The first stop's start, as a real moment in time, whatever the viewer's own timezone.
-function startsAt(): number {
-  const [y, m, d] = BIRTHDAY_DATE.split("-").map(Number);
-  const [h, mi] = stops[0].start.split(":").map(Number);
-  const guess = Date.UTC(y, m - 1, d, h, mi);
-  const label =
-    new Intl.DateTimeFormat("en-US", { timeZone: TIMEZONE, timeZoneName: "longOffset" })
-      .formatToParts(new Date(guess))
-      .find((p) => p.type === "timeZoneName")?.value ?? "GMT";
-  const m2 = /GMT([+-])(\d{2}):(\d{2})/.exec(label);
-  const offset = m2 ? (m2[1] === "-" ? -1 : 1) * (Number(m2[2]) * 60 + Number(m2[3])) : 0;
-  return guess - offset * 60000;
-}
-
 function StopStep({ index, apple }: { index: number; apple: boolean }) {
   const stop = stops[index];
   const start = clock(stop.start);
@@ -402,45 +388,6 @@ function StopStep({ index, apple }: { index: number; apple: boolean }) {
   );
 }
 
-function Countdown() {
-  const [now, setNow] = useState(0);
-  useEffect(() => {
-    const tick = () => setNow(Date.now());
-    const first = window.setTimeout(tick, 0);
-    const id = window.setInterval(tick, 1000);
-    return () => {
-      window.clearTimeout(first);
-      window.clearInterval(id);
-    };
-  }, []);
-
-  const target = startsAt();
-  const diff = now ? target - now : null;
-  if (diff === null) return <div className={s.cd} aria-hidden="true" />;
-  if (diff <= 0) {
-    return (
-      <p className={s.cdNow}>{now - target < 6 * 3600 * 1000 ? "It is time. Go, go, go." : "What a day."}</p>
-    );
-  }
-  const sec = Math.floor(diff / 1000);
-  const parts = [
-    ["Days", Math.floor(sec / 86400)],
-    ["Hours", Math.floor((sec % 86400) / 3600)],
-    ["Min", Math.floor((sec % 3600) / 60)],
-    ["Sec", sec % 60],
-  ] as const;
-  return (
-    <div className={s.cd} role="timer" aria-label="Time until the first stop">
-      {parts.map(([label, value]) => (
-        <div key={label} className={s.cdCell}>
-          <span className={s.cdNum}>{String(value).padStart(2, "0")}</span>
-          <span className={s.cdLabel}>{label}</span>
-        </div>
-      ))}
-    </div>
-  );
-}
-
 function Finale({ onAgain }: { onAgain: () => void }) {
   const ref = useRef<HTMLDivElement>(null);
   const hint = useScrollHint(ref);
@@ -454,7 +401,10 @@ function Finale({ onAgain }: { onAgain: () => void }) {
           First stop is {clock(stops[0].start).t} {clock(stops[0].start).ap} sharp at {stops[0].place}.
         </p>
 
-        <Countdown />
+        <div className={s.sharp}>
+          <span>{clock(stops[0].start).t}</span>
+          <small>{clock(stops[0].start).ap} sharp</small>
+        </div>
 
         <ol className={s.rows}>
           {stops.map((stop, i) => {
