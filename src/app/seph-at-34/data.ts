@@ -17,10 +17,21 @@ export type Stop = {
   title: string;
   place: string;
   address: string;
+  home?: boolean; // no directions needed
   note?: string;
 };
 
 export const stops: Stop[] = [
+  {
+    id: "breakfast",
+    start: "07:10",
+    end: "08:10",
+    label: "7:10 am to 8:10 am",
+    title: "Light breakfast",
+    place: "Home",
+    address: "At home",
+    home: true,
+  },
   {
     id: "main-event",
     start: "16:00",
@@ -63,10 +74,10 @@ const stamp = (date: string, time: string) =>
 export function googleCalendarUrl(stop: Stop): string {
   const params = new URLSearchParams({
     action: "TEMPLATE",
-    text: `${stop.title} at ${stop.place}`,
+    text: stop.home ? stop.title : `${stop.title} at ${stop.place}`,
     dates: `${stamp(BIRTHDAY_DATE, stop.start)}/${stamp(BIRTHDAY_DATE, stop.end)}`,
     ctz: TIMEZONE,
-    location: `${stop.place}, ${stop.address}`,
+    location: stop.home ? stop.place : `${stop.place}, ${stop.address}`,
     details: "Seph at 34. Please don't be late.",
   });
   return `https://calendar.google.com/calendar/render?${params.toString()}`;
@@ -123,8 +134,8 @@ export function buildIcs(selected: Stop[]): string {
       `DTSTAMP:${now}`,
       `DTSTART;TZID=${TIMEZONE}:${stamp(BIRTHDAY_DATE, stop.start)}`,
       `DTEND;TZID=${TIMEZONE}:${stamp(BIRTHDAY_DATE, stop.end)}`,
-      `SUMMARY:${esc(`${stop.title} at ${stop.place}`)}`,
-      `LOCATION:${esc(`${stop.place}, ${stop.address}`)}`,
+      `SUMMARY:${esc(stop.home ? stop.title : `${stop.title} at ${stop.place}`)}`,
+      `LOCATION:${esc(stop.home ? stop.place : `${stop.place}, ${stop.address}`)}`,
       `DESCRIPTION:${esc("Seph at 34. Please don't be late.")}`,
       "BEGIN:VALARM",
       "TRIGGER:-PT1H",
