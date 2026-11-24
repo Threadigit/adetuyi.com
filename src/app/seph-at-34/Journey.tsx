@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Fragment, useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
 import type { RefObject } from "react";
 import s from "./journey.module.css";
-import { MUSIC_YOUTUBE_ID, googleCalendarUrl, mapsUrl, prettyDate, stops } from "./data";
+import { MUSIC_YOUTUBE_ID, mapsUrl, prettyDate, stops } from "./data";
 
 const MESSAGE = [
   "Happy birthday to the woman who makes everything in my life better.",
@@ -389,66 +389,41 @@ function StopStep({ index, apple }: { index: number; apple: boolean }) {
 }
 
 function Finale({ onAgain }: { onAgain: () => void }) {
-  const ref = useRef<HTMLDivElement>(null);
-  const hint = useScrollHint(ref);
   return (
-    <>
-      <div className={s.day} ref={ref}>
-        <Confetti />
-        <p className={s.eyebrow}>{prettyDate()}</p>
-        <h2 className={s.finalTitle}>Please don&apos;t be late.</h2>
-        <p className={s.finalSub}>
-          First stop is {clock(stops[0].start).t} {clock(stops[0].start).ap} sharp at {stops[0].place}.
-        </p>
+    <div className={s.finale}>
+      <Confetti />
+      <button type="button" className={s.again} onClick={onAgain}>
+        Start again
+      </button>
+      <p className={s.eyebrow}>{prettyDate()}</p>
+      <h2 className={s.finalTitle}>Please don&apos;t be late.</h2>
 
-        <div className={s.sharp}>
-          <span>{clock(stops[0].start).t}</span>
-          <small>{clock(stops[0].start).ap} sharp</small>
-        </div>
+      <ol className={s.rows}>
+        {stops.map((stop, i) => {
+          const a = clock(stop.start);
+          return (
+            <li key={stop.id} className={s.row} style={{ ["--d" as string]: `${0.3 + i * 0.2}s` }}>
+              <span className={s.rowTime}>
+                {a.t} <small>{a.ap}</small>
+              </span>
+              <span className={s.rowText}>
+                <strong>{stop.place}</strong>
+                <em>{stop.title}</em>
+              </span>
+            </li>
+          );
+        })}
+      </ol>
 
-        <ol className={s.rows}>
-          {stops.map((stop, i) => {
-            const a = clock(stop.start);
-            return (
-              <li key={stop.id} className={s.row} style={{ ["--d" as string]: `${0.4 + i * 0.25}s` }}>
-                <span className={s.rowTime}>
-                  {a.t} <small>{a.ap}</small>
-                </span>
-                <span className={s.rowText}>
-                  <strong>{stop.place}</strong>
-                  <em>{stop.title}</em>
-                </span>
-              </li>
-            );
-          })}
-        </ol>
-
-        <a className={s.primary} href="/seph-at-34/birthday.ics">
-          Add all three to my calendar
-        </a>
-        <details className={s.gcal}>
-          <summary>Use Google Calendar instead</summary>
-          {stops.map((stop) => (
-            <a key={stop.id} href={googleCalendarUrl(stop)} target="_blank" rel="noopener noreferrer">
-              {stop.title}, {clock(stop.start).t} {clock(stop.start).ap}
-            </a>
-          ))}
-        </details>
-
-        <p className={s.sign}>
-          With all our love,
-          <br />
-          Tolu and Eden
-        </p>
-        <div className={s.finalSig}>
-          <Signature />
-        </div>
-        <button type="button" className={s.again} onClick={onAgain}>
-          Start again
-        </button>
+      <p className={s.sign}>
+        With all our love,
+        <br />
+        Tolu and Eden
+      </p>
+      <div className={s.finalSig}>
+        <Signature />
       </div>
-      {hint.show && <Hint label="Scroll for the rest" />}
-    </>
+    </div>
   );
 }
 
@@ -631,25 +606,28 @@ export default function Journey() {
           {step === 12 && <Finale onAgain={() => setStep(0)} />}
         </section>
 
-        {!isLast && (
-          <div className={s.bar}>
-            <button
-              type="button"
-              className={s.back}
-              onClick={() => go(-1)}
-              disabled={step === 0}
-              aria-label="Back"
-            >
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <path d="M15 5l-7 7 7 7" />
-              </svg>
-            </button>
+        <div className={s.bar}>
+          <button
+            type="button"
+            className={s.back}
+            onClick={() => go(-1)}
+            disabled={step === 0}
+            aria-label="Back"
+          >
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M15 5l-7 7 7 7" />
+            </svg>
+          </button>
+          {isLast ? (
+            <a className={s.next} href="/seph-at-34/birthday.ics">
+              Add all to my calendar
+            </a>
+          ) : (
             <button type="button" className={s.next} onClick={() => go(1)}>
               {labels[step]}
             </button>
-          </div>
-        )}
-
+          )}
+        </div>
       </div>
     </main>
   );
