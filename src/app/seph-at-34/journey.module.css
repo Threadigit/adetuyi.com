@@ -19,6 +19,7 @@
 
 .frame {
   position: relative;
+  height: 100vh;
   height: 100dvh;
   width: 100%;
   max-width: 460px;
@@ -81,6 +82,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   justify-content: safe center;
   text-align: center;
   padding: 72px 28px 130px;
@@ -224,8 +226,8 @@
   gap: 18px;
   justify-content: flex-start;
   padding-top: 40px;
-  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 150px), transparent calc(100% - 112px));
-  mask-image: linear-gradient(to bottom, #000 calc(100% - 150px), transparent calc(100% - 112px));
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 44px, #000 calc(100% - 150px), transparent calc(100% - 112px));
+  mask-image: linear-gradient(to bottom, transparent 0, #000 44px, #000 calc(100% - 150px), transparent calc(100% - 112px));
 }
 .card {
   flex: none;
@@ -610,7 +612,7 @@
   position: absolute;
   z-index: 7;
   left: 50%;
-  bottom: calc(env(safe-area-inset-bottom, 0px) + 24px);
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 100px);
   transform: translateX(-50%);
   display: flex;
   align-items: center;
@@ -671,6 +673,7 @@
   padding: 72px 28px 130px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   justify-content: safe center;
   overflow-y: auto;
 }
@@ -857,8 +860,8 @@
 .sound {
   position: absolute;
   z-index: 8;
-  top: calc(env(safe-area-inset-top, 0px) + 28px);
-  right: 14px;
+  top: calc(env(safe-area-inset-top, 0px) + 26px);
+  left: 14px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
