@@ -41,7 +41,7 @@ export const stops: Stop[] = [
     label: "7:00 pm to 9:00 pm",
     title: "Dinner",
     place: "Blackwall Barn & Lodge",
-    address: "329 Gambrills Road, Gambrills, MD 21054",
+    address: "6000 Merriweather Drive, Suite B140, Columbia, MD 21044",
   },
 ];
 

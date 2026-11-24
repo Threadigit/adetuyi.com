@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Fragment, useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
+import type { RefObject } from "react";
 import s from "./journey.module.css";
 import { BIRTHDAY_DATE, googleCalendarUrl, mapsUrl, prettyDate, stops } from "./data";
 
@@ -10,6 +11,7 @@ const MESSAGE = [
   "Every idea I chase, every dream I build, you see it first and cheer it on, even when you don't fully understand it. You're sharp, ambitious and smart. You're easily one of the best decisions I ever made.",
   "When I count my blessings, I count you twice. Not because you're not troublesome 😄 but because you complement and complete me. I couldn't have asked for a better partner.",
   "You're my peace and my favorite person. And don't worry, we go still tour the country! 🌍",
+  "And it's so much fun parenting with you. Eden and I are so lucky to have you.",
   "I love you more than words can hold. Here's to you today and always.",
 ];
 
@@ -24,6 +26,47 @@ const noopSubscribe = () => () => {};
 // Values that only exist in the browser, read without touching state inside an effect.
 const useBrowserValue = <T,>(read: () => T, server: T): T =>
   useSyncExternalStore(noopSubscribe, read, () => server);
+
+// Shows a "scroll" cue while a step has more below the fold, and hides it once she scrolls.
+function useScrollHint(ref: RefObject<HTMLDivElement | null>) {
+  const [overflowing, setOverflowing] = useState(false);
+  const [moved, setMoved] = useState(false);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const check = () => setOverflowing(el.scrollHeight - el.clientHeight > 24);
+    const onScroll = () => {
+      if (el.scrollTop > 24) setMoved(true);
+      check();
+    };
+    check();
+    const late = window.setTimeout(check, 1500);
+    const ro = new ResizeObserver(check);
+    ro.observe(el);
+    el.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.clearTimeout(late);
+      ro.disconnect();
+      el.removeEventListener("scroll", onScroll);
+    };
+  }, [ref]);
+  const atEnd = () => {
+    const el = ref.current;
+    return !!el && el.scrollTop + el.clientHeight >= el.scrollHeight - 24;
+  };
+  return { show: overflowing && !moved, atEnd };
+}
+
+function Hint({ label }: { label: string }) {
+  return (
+    <div className={s.hint} aria-hidden="true">
+      <span>{label}</span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M6 9l6 6 6-6" />
+      </svg>
+    </div>
+  );
+}
 
 function Words({ text, start = 0 }: { text: string; start?: number }) {
   return (
@@ -231,8 +274,12 @@ function Day({ apple, onAgain }: { apple: boolean; onAgain: () => void }) {
           ? "That is tomorrow"
           : `That is in ${days} days`;
 
+  const ref = useRef<HTMLDivElement>(null);
+  const hint = useScrollHint(ref);
+
   return (
-    <div className={s.day}>
+    <>
+    <div className={s.day} ref={ref}>
       <Confetti />
       <p className={s.eyebrow}>Your day</p>
       <h2 className={s.dayTitle}>{prettyDate()}</h2>
@@ -287,6 +334,45 @@ function Day({ apple, onAgain }: { apple: boolean; onAgain: () => void }) {
         Start again
       </button>
     </div>
+    {hint.show && <Hint label="Scroll for your day" />}
+    </>
+  );
+}
+
+function CardStep() {
+  const ref = useRef<HTMLDivElement>(null);
+  const hint = useScrollHint(ref);
+  return (
+    <>
+      <div className={`${s.center} ${s.cardWrap}`} ref={ref}>
+        <article className={s.card} aria-label="Birthday card from Tolu">
+          <div className={s.cardPhoto}>
+            <Image
+              src="/seph/sunflower.jpg"
+              alt="Seph in a golden gown with sunflowers"
+              fill
+              sizes="460px"
+              style={{ objectFit: "cover", objectPosition: "50% 6%" }}
+            />
+          </div>
+          <div className={s.cardBody}>
+            <p className={s.cardKicker}>Happy 34th birthday, Seph</p>
+            {MESSAGE.map((para) => (
+              <p key={para} className={s.cardText}>
+                {para}
+              </p>
+            ))}
+            <div className={s.cardSign}>
+              <Signature />
+            </div>
+          </div>
+        </article>
+        <a className={s.save} href="/seph/card.png" download="Seph-at-34-card.png">
+          Save this card
+        </a>
+      </div>
+      {hint.show && <Hint label="Scroll to read it all" />}
+    </>
   );
 }
 
@@ -393,35 +479,7 @@ export default function Journey() {
             </div>
           )}
 
-          {step === 7 && (
-            <div className={`${s.center} ${s.cardWrap}`}>
-              <article className={s.card} aria-label="Birthday card from Tolu">
-                <div className={s.cardPhoto}>
-                  <Image
-                    src="/seph/sunflower.jpg"
-                    alt="Seph in a golden gown with sunflowers"
-                    fill
-                    sizes="460px"
-                    style={{ objectFit: "cover", objectPosition: "50% 6%" }}
-                  />
-                </div>
-                <div className={s.cardBody}>
-                  <p className={s.cardKicker}>Happy 34th birthday, Seph</p>
-                  {MESSAGE.map((para) => (
-                    <p key={para} className={s.cardText}>
-                      {para}
-                    </p>
-                  ))}
-                  <div className={s.cardSign}>
-                    <Signature />
-                  </div>
-                </div>
-              </article>
-              <a className={s.save} href="/seph/card.png" download="Seph-at-34-card.png">
-                Save this card
-              </a>
-            </div>
-          )}
+          {step === 7 && <CardStep />}
 
           {step === 8 && (
             <div className={s.center}>
@@ -430,7 +488,7 @@ export default function Journey() {
                 <Words text="Eden and I love you." />
               </h2>
               <p className={s.hello}>
-                <Words text="Today is all about you." start={5} />
+                <Words text="It is so much fun parenting with you." start={5} />
               </p>
             </div>
           )}
