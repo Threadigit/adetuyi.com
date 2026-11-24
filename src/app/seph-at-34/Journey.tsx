@@ -10,14 +10,14 @@ const MESSAGE = [
   "Happy birthday to the woman who makes everything in my life better.",
   "Every idea I chase, every dream I build, you see it first and cheer it on, even when you don't fully understand it. You're sharp, ambitious and smart. You're easily one of the best decisions I ever made.",
   "When I count my blessings, I count you twice. Not because you're not troublesome 😄 but because you complement and complete me. I couldn't have asked for a better partner.",
-  "You're my peace and my favorite person. And don't worry, we go still tour the country! 🌍",
+  "You're my peace and my favorite person. And don't worry, we go still tour the world! 🌍",
   "And it's so much fun parenting with you. Eden and I are so lucky to have you.",
   "I love you more than words can hold. Here's to you today and always.",
 ];
 
 const TEXT_STEPS = [
   "When I count my blessings, I count you twice. Not because you're not troublesome 😄 but because you complement and complete me. I couldn't have asked for a better partner.",
-  "You're my peace and my favorite person. And don't worry, we go still tour the country! 🌍",
+  "You're my peace and my favorite person. And don't worry, we go still tour the world! 🌍",
 ];
 
 const TOTAL = 10;
