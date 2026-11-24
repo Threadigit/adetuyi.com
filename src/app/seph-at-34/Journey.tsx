@@ -20,7 +20,7 @@ const TEXT_STEPS = [
   "You're my peace and my favorite person. And don't worry, we go still tour the world! 🌍",
 ];
 
-const TOTAL = 13;
+const TOTAL = 14;
 
 type YTPlayer = {
   playVideo: () => void;
@@ -507,7 +507,7 @@ export default function Journey() {
 
   const isLast = step === TOTAL - 1;
   const photo = step >= 2 && step <= 4 ? photoSteps[step - 2] : null;
-  const labels = ["Open", "Continue", "Continue", "Continue", "Continue", "Continue", "Continue", "Continue", "See your day", "Next stop", "Next stop", "One more thing"];
+  const labels = ["Open", "Continue", "Continue", "Continue", "Continue", "Continue", "Continue", "Continue", "Continue", "See your day", "Next stop", "Next stop", "One more thing"];
 
   return (
     <main
@@ -607,9 +607,24 @@ export default function Journey() {
             </div>
           )}
 
-          {step >= 9 && step <= 11 && <StopStep index={step - 9} apple={apple} />}
+          {step === 9 && (
+            <div className={s.center}>
+              <Sunflower className={`${s.bloom} ${s.tiny}`} />
+              <p className={s.thanks}>
+                <Words text="On your special day, the only thing we will do is give thanks." />
+              </p>
+              <p className={s.thanks}>
+                <Words text="Do not let anything weigh you down." start={13} />
+              </p>
+              <p className={s.thanksBig}>
+                <Words text="God is in control." start={20} />
+              </p>
+            </div>
+          )}
 
-          {step === 12 && <Finale onAgain={() => setStep(0)} />}
+          {step >= 10 && step <= 12 && <StopStep index={step - 10} apple={apple} />}
+
+          {step === 13 && <Finale onAgain={() => setStep(0)} />}
         </section>
 
         <div className={s.bar}>
