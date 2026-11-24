@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Seph at 34",
     description: "A little something for Seph. Open it.",
     url: "https://www.adetuyi.com/seph-at-34",
-    images: [{ url: "/seph/card.png", width: 1080, height: 1350, alt: "A birthday card for Seph" }],
+    images: [{ url: "/seph/card.png", width: 1080, height: 1920, alt: "A birthday card for Seph" }],
   },
   twitter: {
     card: "summary_large_image",

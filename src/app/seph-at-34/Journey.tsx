@@ -5,10 +5,20 @@ import { Fragment, useCallback, useEffect, useRef, useState, useSyncExternalStor
 import s from "./journey.module.css";
 import { BIRTHDAY_DATE, googleCalendarUrl, mapsUrl, prettyDate, stops } from "./data";
 
-const MESSAGE =
-  "Every idea I chase, every dream I build, you see it first and make it better. You're my sharpest thinker, my safest place, and the best decision I ever made.";
+const MESSAGE = [
+  "Happy birthday to the woman who makes everything in my life better.",
+  "Every idea I chase, every dream I build, you see it first and cheer it on, even when you don't fully understand it. You're sharp, ambitious and smart. You're easily one of the best decisions I ever made.",
+  "When I count my blessings, I count you twice. Not because you're not troublesome 😄 but because you complement and complete me. I couldn't have asked for a better partner.",
+  "You're my peace and my favorite person. And don't worry, we go still tour the country! 🌍",
+  "I love you more than words can hold. Here's to you today and always.",
+];
 
-const TOTAL = 8;
+const TEXT_STEPS = [
+  "When I count my blessings, I count you twice. Not because you're not troublesome 😄 but because you complement and complete me. I couldn't have asked for a better partner.",
+  "You're my peace and my favorite person. And don't worry, we go still tour the country! 🌍",
+];
+
+const TOTAL = 10;
 
 const noopSubscribe = () => () => {};
 // Values that only exist in the browser, read without touching state inside an effect.
@@ -183,20 +193,20 @@ const photoSteps: PhotoStep[] = [
   {
     src: "/seph/courtyard.jpg",
     alt: "Seph in a blue striped top, smiling softly in a sunlit courtyard",
-    line: "Every idea I chase, every dream I build, you see it first and make it better.",
+    line: "Happy birthday to the woman who makes everything in my life better.",
     pos: "50% 60%",
     top: true,
   },
   {
     src: "/seph/arches.jpg",
     alt: "Seph in a soft neutral outfit, smiling under brick arches",
-    line: "You're my sharpest thinker, my safest place,",
+    line: "Every idea I chase, every dream I build, you see it first and cheer it on, even when you don't fully understand it.",
     pos: "50% 40%",
   },
   {
     src: "/seph/sunflower.jpg",
     alt: "Seph in a golden gown with sunflowers, smiling on a forest road",
-    line: "and the best decision I ever made.",
+    line: "You're sharp, ambitious and smart. You're easily one of the best decisions I ever made.",
     pos: "50% 30%",
   },
 ];
@@ -311,7 +321,7 @@ export default function Journey() {
 
   const isLast = step === TOTAL - 1;
   const photo = step >= 2 && step <= 4 ? photoSteps[step - 2] : null;
-  const labels = ["Open", "Continue", "Continue", "Continue", "Continue", "Continue", "See your day"];
+  const labels = ["Open", "Continue", "Continue", "Continue", "Continue", "Continue", "Continue", "Continue", "See your day"];
 
   return (
     <main
@@ -374,7 +384,16 @@ export default function Journey() {
             </div>
           )}
 
-          {step === 5 && (
+          {(step === 5 || step === 6) && (
+            <div className={s.center}>
+              <span className={s.rule} aria-hidden="true" />
+              <p className={s.quote}>
+                <Words text={TEXT_STEPS[step - 5]} />
+              </p>
+            </div>
+          )}
+
+          {step === 7 && (
             <div className={`${s.center} ${s.cardWrap}`}>
               <article className={s.card} aria-label="Birthday card from Tolu">
                 <div className={s.cardPhoto}>
@@ -388,7 +407,11 @@ export default function Journey() {
                 </div>
                 <div className={s.cardBody}>
                   <p className={s.cardKicker}>Happy 34th birthday, Seph</p>
-                  <p className={s.cardText}>{MESSAGE}</p>
+                  {MESSAGE.map((para) => (
+                    <p key={para} className={s.cardText}>
+                      {para}
+                    </p>
+                  ))}
                   <div className={s.cardSign}>
                     <Signature />
                   </div>
@@ -400,7 +423,7 @@ export default function Journey() {
             </div>
           )}
 
-          {step === 6 && (
+          {step === 8 && (
             <div className={s.center}>
               <Sunflower className={`${s.bloom} ${s.small}`} />
               <h2 className={s.love}>
@@ -412,7 +435,7 @@ export default function Journey() {
             </div>
           )}
 
-          {step === 7 && <Day apple={apple} onAgain={() => setStep(0)} />}
+          {step === 9 && <Day apple={apple} onAgain={() => setStep(0)} />}
         </section>
 
         {!isLast && (

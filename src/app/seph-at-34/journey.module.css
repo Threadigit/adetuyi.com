@@ -224,6 +224,8 @@
   justify-content: flex-start;
   overflow-y: auto;
   padding-top: 40px;
+  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 150px), transparent calc(100% - 112px));
+  mask-image: linear-gradient(to bottom, #000 calc(100% - 150px), transparent calc(100% - 112px));
 }
 .card {
   width: 100%;
@@ -249,7 +251,7 @@
 }
 .cardPhoto {
   position: relative;
-  aspect-ratio: 5 / 4;
+  aspect-ratio: 16 / 10;
 }
 .cardBody {
   padding: 22px 24px 20px;
@@ -265,12 +267,29 @@
   margin: 0 0 12px;
 }
 .cardText {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
-  margin: 0;
+  margin: 0 0 12px;
+}
+.cardText:first-of-type {
+  font-size: 19px;
+  font-weight: 600;
+}
+.quote {
+  font-size: clamp(25px, 7.4vw, 31px);
+  line-height: 1.32;
+  font-weight: 600;
+  margin: 22px 0 0;
+  max-width: 17em;
+}
+.rule {
+  width: 56px;
+  height: 3px;
+  border-radius: 3px;
+  background: var(--gold);
 }
 .cardSign {
-  margin-top: 22px;
+  margin-top: 14px;
   display: flex;
   justify-content: flex-end;
 }
