@@ -511,14 +511,17 @@
 }
 .sign {
   text-align: center;
-  font-size: 19px;
-  line-height: 1.5;
-  margin: 34px 0 0;
+  font-size: clamp(16px, 2.4dvh, 19px);
+  line-height: 1.45;
+  margin: clamp(14px, 3.4dvh, 30px) 0 0;
 }
 
 .again {
-  display: block;
-  margin: 28px auto 0;
+  position: absolute;
+  top: calc(env(safe-area-inset-top, 0px) + 26px);
+  right: 16px;
+  z-index: 6;
+  margin: 0;
   font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -526,8 +529,8 @@
   background: transparent;
   border: 1px solid rgba(253, 252, 249, 0.3);
   border-radius: 999px;
-  padding: 10px 18px;
-  min-height: 44px;
+  padding: 6px 14px;
+  min-height: 36px;
   cursor: pointer;
 }
 
@@ -736,11 +739,20 @@
 }
 
 /* finale */
+.finale {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 72px 24px 130px;
+  overflow: hidden;
+}
 .finalTitle {
-  font-size: clamp(34px, min(10.5vw, 5dvh), 44px);
+  font-size: clamp(28px, min(9vw, 4.6dvh), 40px);
   line-height: 1.1;
   font-weight: 700;
-  margin: 10px 0 10px;
+  margin: 8px 0 18px;
 }
 .finalSub {
   font-size: 18px;
@@ -787,7 +799,7 @@
 }
 .rows {
   list-style: none;
-  margin: 0 0 24px;
+  margin: 0;
   padding: 0;
   border-top: 1px solid rgba(253, 252, 249, 0.16);
 }
@@ -795,7 +807,7 @@
   display: flex;
   gap: 16px;
   align-items: baseline;
-  padding: 14px 0;
+  padding: clamp(8px, 1.8dvh, 14px) 0;
   border-bottom: 1px solid rgba(253, 252, 249, 0.16);
   animation: rise 0.8s var(--d, 0.4s) cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
@@ -826,7 +838,7 @@
 .finalSig {
   display: flex;
   justify-content: center;
-  margin-top: 16px;
+  margin-top: 12px;
 }
 .finalSig .ta {
   color: var(--cream);
@@ -859,28 +871,40 @@
   cursor: pointer;
 }
 
-.sharp {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  gap: 10px;
-  padding: 18px 12px;
-  margin-bottom: 24px;
-  border-radius: 18px;
-  background: linear-gradient(160deg, rgba(242, 182, 50, 0.22), rgba(242, 182, 50, 0.06));
-  border: 1px solid rgba(242, 182, 50, 0.55);
-  color: var(--gold);
-  box-shadow: 0 0 50px rgba(242, 182, 50, 0.16);
+
+@media (max-height: 620px) {
+  .finale {
+    padding: 64px 22px 100px;
+  }
+  .finalTitle {
+    font-size: 26px;
+    margin: 6px 0 10px;
+  }
+  .row {
+    padding: 7px 0;
+  }
+  .rowTime {
+    font-size: 19px;
+    width: 84px;
+  }
+  .rowText {
+    font-size: 15px;
+  }
+  .sign {
+    font-size: 15px;
+    margin-top: 12px;
+  }
+  .finalSig {
+    margin-top: 8px;
+  }
+  .bar {
+    padding-bottom: 14px;
+  }
+  .next {
+    height: 50px;
+  }
 }
-.sharp span {
-  font-size: 58px;
-  line-height: 1;
-  font-weight: 700;
-}
-.sharp small {
-  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+
+.next {
+  white-space: nowrap;
 }
