@@ -7,7 +7,7 @@ export const TIMEZONE = "America/New_York";
 // YouTube video ID of the background song. Leave empty and the page stays silent.
 export const MUSIC_YOUTUBE_ID = "xOyWfN-nftk";
 // Where in the song to begin and to return to when it ends, in seconds.
-export const MUSIC_START_SECONDS = 0;
+export const MUSIC_START_SECONDS = 41;
 
 export type Stop = {
   id: string;
