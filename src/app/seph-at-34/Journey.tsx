@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Fragment, useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
 import type { RefObject } from "react";
 import s from "./journey.module.css";
-import { BIRTHDAY_DATE, googleCalendarUrl, mapsUrl, prettyDate, stops } from "./data";
+import { BIRTHDAY_DATE, MUSIC_YOUTUBE_ID, TIMEZONE, googleCalendarUrl, mapsUrl, prettyDate, stops } from "./data";
 
 const MESSAGE = [
   "Happy birthday to the woman who makes everything in my life better.",
@@ -20,7 +20,90 @@ const TEXT_STEPS = [
   "You're my peace and my favorite person. And don't worry, we go still tour the world! 🌍",
 ];
 
-const TOTAL = 10;
+const TOTAL = 13;
+
+type YTPlayer = {
+  playVideo: () => void;
+  mute: () => void;
+  unMute: () => void;
+  setVolume: (n: number) => void;
+  destroy: () => void;
+};
+type YTApi = {
+  Player: new (
+    el: string,
+    opts: {
+      height: string;
+      width: string;
+      videoId: string;
+      playerVars: Record<string, number | string>;
+      events: {
+        onReady: (e: { target: YTPlayer }) => void;
+        onStateChange: (e: { data: number }) => void;
+      };
+    }
+  ) => YTPlayer;
+};
+declare global {
+  interface Window {
+    YT?: YTApi;
+    onYouTubeIframeAPIReady?: () => void;
+  }
+}
+
+// Background song through YouTube's own player, started by her first tap.
+function useMusic(id: string) {
+  const player = useRef<YTPlayer | null>(null);
+  const playing = useRef(false);
+  const [on, setOn] = useState(false);
+  const [muted, setMuted] = useState(false);
+
+  useEffect(() => {
+    if (!id) return;
+    const make = () => {
+      if (!window.YT) return;
+      player.current = new window.YT.Player("seph-music", {
+        height: "1",
+        width: "1",
+        videoId: id,
+        playerVars: { controls: 0, loop: 1, playlist: id, playsinline: 1, rel: 0, modestbranding: 1 },
+        events: {
+          onReady: (e) => e.target.setVolume(75),
+          onStateChange: (e) => {
+            playing.current = e.data === 1;
+            setOn(e.data === 1);
+          },
+        },
+      });
+    };
+    if (window.YT?.Player) make();
+    else {
+      window.onYouTubeIframeAPIReady = make;
+      if (!document.getElementById("yt-api")) {
+        const sc = document.createElement("script");
+        sc.id = "yt-api";
+        sc.src = "https://www.youtube.com/iframe_api";
+        document.head.appendChild(sc);
+      }
+    }
+    return () => {
+      player.current?.destroy();
+      player.current = null;
+    };
+  }, [id]);
+
+  const start = useCallback(() => {
+    if (id && !playing.current) player.current?.playVideo();
+  }, [id]);
+  const toggle = useCallback(() => {
+    setMuted((m) => {
+      if (m) player.current?.unMute();
+      else player.current?.mute();
+      return !m;
+    });
+  }, []);
+  return { start, toggle, on, muted, enabled: !!id };
+}
 
 const noopSubscribe = () => () => {};
 // Values that only exist in the browser, read without touching state inside an effect.
@@ -254,87 +337,167 @@ const photoSteps: PhotoStep[] = [
   },
 ];
 
-function daysUntil(): number {
-  const now = new Date();
-  const today = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
-  const [y, m, d] = BIRTHDAY_DATE.split("-").map(Number);
-  const diff = Math.round((Date.UTC(y, m - 1, d) - today) / 86400000);
-  return diff >= 0 ? diff : -1;
+const STOP_PHOTOS = ["/seph/sunflower.jpg", "/seph/courtyard.jpg", "/seph/arches.jpg"];
+const STOP_POS = ["50% 30%", "50% 55%", "50% 40%"];
+
+function clock(time: string) {
+  const [h, m] = time.split(":").map(Number);
+  return { t: `${h % 12 || 12}:${String(m).padStart(2, "0")}`, ap: h >= 12 ? "pm" : "am" };
 }
 
-function Day({ apple, onAgain }: { apple: boolean; onAgain: () => void }) {
-  // -2 means "not known yet" (server render), -1 means the day has passed.
-  const days = useBrowserValue(() => daysUntil(), -2);
-  const when =
-    days < 0
-      ? null
-      : days === 0
-        ? "That is today"
-        : days === 1
-          ? "That is tomorrow"
-          : `That is in ${days} days`;
+// The first stop's start, as a real moment in time, whatever the viewer's own timezone.
+function startsAt(): number {
+  const [y, m, d] = BIRTHDAY_DATE.split("-").map(Number);
+  const [h, mi] = stops[0].start.split(":").map(Number);
+  const guess = Date.UTC(y, m - 1, d, h, mi);
+  const label =
+    new Intl.DateTimeFormat("en-US", { timeZone: TIMEZONE, timeZoneName: "longOffset" })
+      .formatToParts(new Date(guess))
+      .find((p) => p.type === "timeZoneName")?.value ?? "GMT";
+  const m2 = /GMT([+-])(\d{2}):(\d{2})/.exec(label);
+  const offset = m2 ? (m2[1] === "-" ? -1 : 1) * (Number(m2[2]) * 60 + Number(m2[3])) : 0;
+  return guess - offset * 60000;
+}
 
+function StopStep({ index, apple }: { index: number; apple: boolean }) {
+  const stop = stops[index];
+  const start = clock(stop.start);
+  const end = clock(stop.end);
+  return (
+    <div className={s.stopStep}>
+      <div className={s.stopBg}>
+        <Image
+          src={STOP_PHOTOS[index]}
+          alt=""
+          fill
+          sizes="(max-width: 520px) 100vw, 460px"
+          style={{ objectFit: "cover", objectPosition: STOP_POS[index] }}
+        />
+        <div className={s.stopScrim} />
+      </div>
+      <div className={s.stopBody}>
+        <p className={s.eyebrow}>
+          Stop {index + 1} of {stops.length}
+        </p>
+        <p className={s.bigTime}>
+          {start.t}
+          <small>{start.ap}</small>
+        </p>
+        <p className={s.until}>
+          until {end.t} {end.ap}
+        </p>
+        <h2 className={s.stopName}>{stop.title}</h2>
+        <p className={s.stopPlace}>{stop.place}</p>
+        <p className={s.stopAddr}>{stop.address}</p>
+        <div className={s.stopActions}>
+          <a className={s.gold} href={mapsUrl(stop, apple)} target="_blank" rel="noopener noreferrer">
+            Get directions
+          </a>
+          <a className={s.ghost} href={`/seph-at-34/birthday.ics?stop=${index + 1}`}>
+            Add to calendar
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Countdown() {
+  const [now, setNow] = useState(0);
+  useEffect(() => {
+    const tick = () => setNow(Date.now());
+    const first = window.setTimeout(tick, 0);
+    const id = window.setInterval(tick, 1000);
+    return () => {
+      window.clearTimeout(first);
+      window.clearInterval(id);
+    };
+  }, []);
+
+  const target = startsAt();
+  const diff = now ? target - now : null;
+  if (diff === null) return <div className={s.cd} aria-hidden="true" />;
+  if (diff <= 0) {
+    return (
+      <p className={s.cdNow}>{now - target < 6 * 3600 * 1000 ? "It is time. Go, go, go." : "What a day."}</p>
+    );
+  }
+  const sec = Math.floor(diff / 1000);
+  const parts = [
+    ["Days", Math.floor(sec / 86400)],
+    ["Hours", Math.floor((sec % 86400) / 3600)],
+    ["Min", Math.floor((sec % 3600) / 60)],
+    ["Sec", sec % 60],
+  ] as const;
+  return (
+    <div className={s.cd} role="timer" aria-label="Time until the first stop">
+      {parts.map(([label, value]) => (
+        <div key={label} className={s.cdCell}>
+          <span className={s.cdNum}>{String(value).padStart(2, "0")}</span>
+          <span className={s.cdLabel}>{label}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function Finale({ onAgain }: { onAgain: () => void }) {
   const ref = useRef<HTMLDivElement>(null);
   const hint = useScrollHint(ref);
-
   return (
     <>
-    <div className={s.day} ref={ref}>
-      <Confetti />
-      <p className={s.eyebrow}>Your day</p>
-      <h2 className={s.dayTitle}>{prettyDate()}</h2>
-
-      <ol className={s.timeline}>
-        {stops.map((stop, i) => (
-          <li key={stop.id} className={s.stop} style={{ ["--d" as string]: `${0.5 + i * 0.35}s` }}>
-            <span className={s.dot} aria-hidden="true" />
-            <p className={s.time}>{stop.label}</p>
-            <h3 className={s.stopTitle}>{stop.title}</h3>
-            <p className={s.place}>{stop.place}</p>
-            <p className={s.addr}>{stop.address}</p>
-            <div className={s.actions}>
-              <a className={s.ghost} href={mapsUrl(stop, apple)} target="_blank" rel="noopener noreferrer">
-                Directions
-              </a>
-              <a className={s.ghost} href={`/seph-at-34/birthday.ics?stop=${i + 1}`}>
-                Add to calendar
-              </a>
-            </div>
-          </li>
-        ))}
-      </ol>
-
-      <a className={s.primary} href="/seph-at-34/birthday.ics">
-        Add all three to my calendar
-      </a>
-      <details className={s.gcal}>
-        <summary>Use Google Calendar instead</summary>
-        {stops.map((stop) => (
-          <a key={stop.id} href={googleCalendarUrl(stop)} target="_blank" rel="noopener noreferrer">
-            {stop.title}, {stop.label.split(" to ")[0]}
-          </a>
-        ))}
-      </details>
-
-      <div className={s.late}>
-        <p className={s.lateKicker}>One more thing</p>
-        <h3 className={s.lateTitle}>Please don&apos;t be late.</h3>
-        <p className={s.lateText}>
-          First stop is 4:00 pm sharp at The Mall in Columbia.
-          {when ? ` ${when}.` : ""}
+      <div className={s.day} ref={ref}>
+        <Confetti />
+        <p className={s.eyebrow}>{prettyDate()}</p>
+        <h2 className={s.finalTitle}>Please don&apos;t be late.</h2>
+        <p className={s.finalSub}>
+          First stop is {clock(stops[0].start).t} {clock(stops[0].start).ap} sharp at {stops[0].place}.
         </p>
-      </div>
 
-      <p className={s.sign}>
-        With all our love,
-        <br />
-        Tolu and Eden
-      </p>
-      <button type="button" className={s.again} onClick={onAgain}>
-        Start again
-      </button>
-    </div>
-    {hint.show && <Hint label="Scroll for your day" />}
+        <Countdown />
+
+        <ol className={s.rows}>
+          {stops.map((stop, i) => {
+            const a = clock(stop.start);
+            return (
+              <li key={stop.id} className={s.row} style={{ ["--d" as string]: `${0.4 + i * 0.25}s` }}>
+                <span className={s.rowTime}>
+                  {a.t} <small>{a.ap}</small>
+                </span>
+                <span className={s.rowText}>
+                  <strong>{stop.place}</strong>
+                  <em>{stop.title}</em>
+                </span>
+              </li>
+            );
+          })}
+        </ol>
+
+        <a className={s.primary} href="/seph-at-34/birthday.ics">
+          Add all three to my calendar
+        </a>
+        <details className={s.gcal}>
+          <summary>Use Google Calendar instead</summary>
+          {stops.map((stop) => (
+            <a key={stop.id} href={googleCalendarUrl(stop)} target="_blank" rel="noopener noreferrer">
+              {stop.title}, {clock(stop.start).t} {clock(stop.start).ap}
+            </a>
+          ))}
+        </details>
+
+        <p className={s.sign}>
+          With all our love,
+          <br />
+          Tolu and Eden
+        </p>
+        <div className={s.finalSig}>
+          <Signature />
+        </div>
+        <button type="button" className={s.again} onClick={onAgain}>
+          Start again
+        </button>
+      </div>
+      {hint.show && <Hint label="Scroll for the rest" />}
     </>
   );
 }
@@ -380,6 +543,7 @@ export default function Journey() {
   const [step, setStep] = useState(0);
   const apple = useBrowserValue(() => /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent), false);
   const touch = useRef<number | null>(null);
+  const music = useMusic(MUSIC_YOUTUBE_ID);
 
   useEffect(() => {
     // Warm the next photos so each slide opens without a flash.
@@ -389,9 +553,14 @@ export default function Journey() {
     });
   }, []);
 
-  const go = useCallback((delta: number) => {
-    setStep((cur) => Math.max(0, Math.min(TOTAL - 1, cur + delta)));
-  }, []);
+  const { start: startMusic } = music;
+  const go = useCallback(
+    (delta: number) => {
+      if (delta > 0) startMusic();
+      setStep((cur) => Math.max(0, Math.min(TOTAL - 1, cur + delta)));
+    },
+    [startMusic]
+  );
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -407,7 +576,7 @@ export default function Journey() {
 
   const isLast = step === TOTAL - 1;
   const photo = step >= 2 && step <= 4 ? photoSteps[step - 2] : null;
-  const labels = ["Open", "Continue", "Continue", "Continue", "Continue", "Continue", "Continue", "Continue", "See your day"];
+  const labels = ["Open", "Continue", "Continue", "Continue", "Continue", "Continue", "Continue", "Continue", "See your day", "Next stop", "Next stop", "One more thing"];
 
   return (
     <main
@@ -423,7 +592,21 @@ export default function Journey() {
       }}
     >
       <Petals />
+      {music.enabled && <div id="seph-music" className={s.musicHost} aria-hidden="true" />}
       <div className={s.frame}>
+        {music.enabled && music.on && (
+          <button
+            type="button"
+            className={s.sound}
+            onClick={music.toggle}
+            aria-label={music.muted ? "Turn the music on" : "Turn the music off"}
+          >
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M11 5L6 9H3v6h3l5 4V5z" />
+              {music.muted ? <path d="M22 9l-6 6M16 9l6 6" /> : <path d="M15.5 8.5a5 5 0 010 7M18.5 5.5a9 9 0 010 13" />}
+            </svg>
+          </button>
+        )}
         <div className={s.progress} aria-hidden="true">
           {Array.from({ length: TOTAL }, (_, i) => (
             <span key={i} className={i <= step ? s.on : undefined} />
@@ -493,7 +676,9 @@ export default function Journey() {
             </div>
           )}
 
-          {step === 9 && <Day apple={apple} onAgain={() => setStep(0)} />}
+          {step >= 9 && step <= 11 && <StopStep index={step - 9} apple={apple} />}
+
+          {step === 12 && <Finale onAgain={() => setStep(0)} />}
         </section>
 
         {!isLast && (
