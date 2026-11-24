@@ -125,21 +125,28 @@ const noopSubscribe = () => () => {};
 const useBrowserValue = <T,>(read: () => T, server: T): T =>
   useSyncExternalStore(noopSubscribe, read, () => server);
 
-// Shows a "scroll" cue while a step has more below the fold, and hides it once she scrolls.
+// Tracks how far a step has been scrolled, so a quiet cue and a thin gold rail can show it.
 function useScrollHint(ref: RefObject<HTMLDivElement | null>) {
   const [overflowing, setOverflowing] = useState(false);
   const [moved, setMoved] = useState(false);
+  const [thumb, setThumb] = useState({ top: 0, height: 100 });
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    const check = () => setOverflowing(el.scrollHeight - el.clientHeight > 24);
+    const measure = () => {
+      const extra = el.scrollHeight - el.clientHeight;
+      setOverflowing(extra > 24);
+      const height = Math.max(14, (el.clientHeight / el.scrollHeight) * 100);
+      const top = extra > 0 ? (el.scrollTop / extra) * (100 - height) : 0;
+      setThumb({ top, height });
+    };
     const onScroll = () => {
       if (el.scrollTop > 24) setMoved(true);
-      check();
+      measure();
     };
-    check();
-    const late = window.setTimeout(check, 1500);
-    const ro = new ResizeObserver(check);
+    measure();
+    const late = window.setTimeout(measure, 1500);
+    const ro = new ResizeObserver(measure);
     ro.observe(el);
     el.addEventListener("scroll", onScroll, { passive: true });
     return () => {
@@ -148,19 +155,15 @@ function useScrollHint(ref: RefObject<HTMLDivElement | null>) {
       el.removeEventListener("scroll", onScroll);
     };
   }, [ref]);
-  const atEnd = () => {
-    const el = ref.current;
-    return !!el && el.scrollTop + el.clientHeight >= el.scrollHeight - 24;
-  };
-  return { show: overflowing && !moved, atEnd };
+  return { show: overflowing && !moved, rail: overflowing, thumb };
 }
 
-function Hint({ label }: { label: string }) {
+function Cue() {
   return (
-    <div className={s.hint} aria-hidden="true">
-      <span>{label}</span>
-      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M6 9l6 6 6-6" />
+    <div className={s.cue} aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M6 5l6 6 6-6" />
+        <path d="M6 12l6 6 6-6" />
       </svg>
     </div>
   );
@@ -482,7 +485,12 @@ function CardStep() {
           Save this card
         </a>
       </div>
-      {hint.show && <Hint label="Scroll to read it all" />}
+      {hint.rail && (
+        <div className={s.rail} aria-hidden="true">
+          <span className={s.thumb} style={{ top: `${hint.thumb.top}%`, height: `${hint.thumb.height}%` }} />
+        </div>
+      )}
+      {hint.show && <Cue />}
     </>
   );
 }
