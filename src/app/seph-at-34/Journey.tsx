@@ -20,7 +20,14 @@ const TEXT_STEPS = [
   "You're my peace and my favorite person. And don't worry, we go still tour the world! 🌍",
 ];
 
-const STOPS_AT = 10; // first stop screen
+// Step layout: gate, 34, photos, two text screens, card, Eden, thanks, stops, finale.
+const PHOTO_COUNT = 4;
+const PHOTO_END = 1 + PHOTO_COUNT;
+const TEXT_AT = PHOTO_END + 1;
+const CARD_AT = TEXT_AT + 2;
+const EDEN_AT = CARD_AT + 1;
+const THANKS_AT = EDEN_AT + 1;
+const STOPS_AT = THANKS_AT + 1; // first stop screen
 const FINALE_AT = STOPS_AT + stops.length;
 const TOTAL = FINALE_AT + 1;
 
@@ -338,9 +345,15 @@ const photoSteps: PhotoStep[] = [
     pos: "50% 40%",
   },
   {
+    src: "/seph/wall.jpg",
+    alt: "Seph with long braids and a pink top, smiling with her arms behind her",
+    line: "You're sharp, ambitious and smart.",
+    pos: "50% 22%",
+  },
+  {
     src: "/seph/sunflower.jpg",
     alt: "Seph in a golden gown with sunflowers, smiling on a forest road",
-    line: "You're sharp, ambitious and smart. You're easily one of the best decisions I ever made.",
+    line: "You're easily one of the best decisions I ever made.",
     pos: "50% 30%",
   },
 ];
@@ -510,10 +523,10 @@ export default function Journey() {
   }, [go]);
 
   const isLast = step === TOTAL - 1;
-  const photo = step >= 2 && step <= 4 ? photoSteps[step - 2] : null;
+  const photo = step >= 2 && step <= PHOTO_END ? photoSteps[step - 2] : null;
   const labels = [
     "Open",
-    ...Array.from({ length: 8 }, () => "Continue"),
+    ...Array.from({ length: THANKS_AT - 1 }, () => "Continue"),
     "See your day",
     ...Array.from({ length: stops.length - 1 }, () => "Next stop"),
     "One more thing",
@@ -594,18 +607,18 @@ export default function Journey() {
             </div>
           )}
 
-          {(step === 5 || step === 6) && (
+          {(step === TEXT_AT || step === TEXT_AT + 1) && (
             <div className={s.center}>
               <span className={s.rule} aria-hidden="true" />
               <p className={s.quote}>
-                <Words text={TEXT_STEPS[step - 5]} />
+                <Words text={TEXT_STEPS[step - TEXT_AT]} />
               </p>
             </div>
           )}
 
-          {step === 7 && <CardStep />}
+          {step === CARD_AT && <CardStep />}
 
-          {step === 8 && (
+          {step === EDEN_AT && (
             <div className={s.center}>
               <Sunflower className={`${s.bloom} ${s.small}`} />
               <h2 className={s.love}>
@@ -617,7 +630,7 @@ export default function Journey() {
             </div>
           )}
 
-          {step === 9 && (
+          {step === THANKS_AT && (
             <div className={s.center}>
               <Sunflower className={`${s.bloom} ${s.tiny}`} />
               <p className={s.thanks}>
