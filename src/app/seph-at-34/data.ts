@@ -4,6 +4,9 @@
 export const BIRTHDAY_DATE = "2026-11-25"; // YYYY-MM-DD, local to the timezone below
 export const TIMEZONE = "America/New_York";
 
+// YouTube video ID of the background song. Leave empty and the page stays silent.
+export const MUSIC_YOUTUBE_ID = "";
+
 export type Stop = {
   id: string;
   start: string; // 24 hour HH:MM
