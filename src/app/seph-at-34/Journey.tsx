@@ -20,7 +20,9 @@ const TEXT_STEPS = [
   "You're my peace and my favorite person. And don't worry, we go still tour the world! 🌍",
 ];
 
-const TOTAL = 14;
+const STOPS_AT = 10; // first stop screen
+const FINALE_AT = STOPS_AT + stops.length;
+const TOTAL = FINALE_AT + 1;
 
 type YTPlayer = {
   playVideo: () => void;
@@ -343,8 +345,8 @@ const photoSteps: PhotoStep[] = [
   },
 ];
 
-const STOP_PHOTOS = ["/seph/sunflower.jpg", "/seph/courtyard.jpg", "/seph/arches.jpg"];
-const STOP_POS = ["50% 30%", "50% 55%", "50% 40%"];
+const STOP_PHOTOS = ["/seph/courtyard.jpg", "/seph/sunflower.jpg", "/seph/arches.jpg", "/seph/courtyard.jpg"];
+const STOP_POS = ["50% 55%", "50% 30%", "50% 40%", "50% 55%"];
 
 function clock(time: string) {
   const [h, m] = time.split(":").map(Number);
@@ -380,12 +382,14 @@ function StopStep({ index, apple }: { index: number; apple: boolean }) {
         </p>
         <h2 className={s.stopName}>{stop.title}</h2>
         <p className={s.stopPlace}>{stop.place}</p>
-        <p className={s.stopAddr}>{stop.address}</p>
-        <div className={s.stopActions}>
-          <a className={s.gold} href={mapsUrl(stop, apple)} target="_blank" rel="noopener noreferrer">
-            Get directions
-          </a>
-          <a className={s.ghost} href={`/seph-at-34/birthday.ics?stop=${index + 1}`}>
+        {!stop.home && <p className={s.stopAddr}>{stop.address}</p>}
+        <div className={s.stopActions} style={stop.home ? { marginTop: 22 } : undefined}>
+          {!stop.home && (
+            <a className={s.gold} href={mapsUrl(stop, apple)} target="_blank" rel="noopener noreferrer">
+              Get directions
+            </a>
+          )}
+          <a className={stop.home ? s.gold : s.ghost} href={`/seph-at-34/birthday.ics?stop=${index + 1}`}>
             Add to calendar
           </a>
         </div>
@@ -413,8 +417,8 @@ function Finale({ onAgain }: { onAgain: () => void }) {
                 {a.t} <small>{a.ap}</small>
               </span>
               <span className={s.rowText}>
-                <strong>{stop.place}</strong>
-                <em>{stop.title}</em>
+                <strong>{stop.home ? stop.title : stop.place}</strong>
+                <em>{stop.home ? "At home" : stop.title}</em>
               </span>
             </li>
           );
@@ -507,7 +511,13 @@ export default function Journey() {
 
   const isLast = step === TOTAL - 1;
   const photo = step >= 2 && step <= 4 ? photoSteps[step - 2] : null;
-  const labels = ["Open", "Continue", "Continue", "Continue", "Continue", "Continue", "Continue", "Continue", "Continue", "See your day", "Next stop", "Next stop", "One more thing"];
+  const labels = [
+    "Open",
+    ...Array.from({ length: 8 }, () => "Continue"),
+    "See your day",
+    ...Array.from({ length: stops.length - 1 }, () => "Next stop"),
+    "One more thing",
+  ];
 
   return (
     <main
@@ -622,9 +632,9 @@ export default function Journey() {
             </div>
           )}
 
-          {step >= 10 && step <= 12 && <StopStep index={step - 10} apple={apple} />}
+          {step >= STOPS_AT && step < FINALE_AT && <StopStep index={step - STOPS_AT} apple={apple} />}
 
-          {step === 13 && <Finale onAgain={() => setStep(0)} />}
+          {step === FINALE_AT && <Finale onAgain={() => setStep(0)} />}
         </section>
 
         <div className={s.bar}>

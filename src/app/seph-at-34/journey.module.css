@@ -872,7 +872,7 @@
 }
 
 
-@media (max-height: 620px) {
+@media (max-height: 700px) {
   .finale {
     padding: 64px 22px 100px;
   }
@@ -927,4 +927,11 @@
   color: var(--gold);
   margin: clamp(8px, 2dvh, 18px) 0 0;
   text-shadow: 0 0 40px rgba(242, 182, 50, 0.35);
+}
+
+@media (max-height: 700px) {
+  .stopBody,
+  .center {
+    padding-bottom: 104px;
+  }
 }
