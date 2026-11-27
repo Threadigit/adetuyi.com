@@ -1,6 +1,10 @@
 import { ImageResponse } from "next/og";
 
 const decks: Record<string, { title: string; kicker: string }> = {
+  "prove-your-startup-is-legitimate": {
+    title: "What Does It Take to Prove Your Startup Is Legitimate?",
+    kicker: "Slide deck · Compliance and payments",
+  },
   "prosperity-engine": {
     title: "The Prosperity Engine",
     kicker: "Slide deck · Economic systems",

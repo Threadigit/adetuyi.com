@@ -70,6 +70,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     },
     {
+      url: 'https://www.adetuyi.com/resources/prove-your-startup-is-legitimate',
+      lastModified: siteUpdated,
+      changeFrequency: 'yearly',
+      priority: 0.7,
+    },
+    {
       url: 'https://www.adetuyi.com/resources/prosperity-engine',
       lastModified: siteUpdated,
       changeFrequency: 'yearly',
