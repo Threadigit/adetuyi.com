@@ -8,6 +8,11 @@ export type ProfileEntry = {
 
 export const speakingEntries: ProfileEntry[] = [
   {
+    title: "What Does It Take to Prove Your Startup Is Legitimate?",
+    meta: "Student Venture Capital Grant · November 2026",
+    href: "/resources/prove-your-startup-is-legitimate",
+  },
+  {
     title: "The Prosperity Engine",
     meta: "Slide deck · 2026",
     href: "/resources/prosperity-engine",
