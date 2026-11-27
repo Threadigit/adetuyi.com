@@ -120,7 +120,7 @@ export default function ProveYourStartupIsLegitimatePage() {
               "Why payment providers say no, and how to get a yes",
               "Getting paid by customers abroad without losing your margin",
               "What investors look for in a first diligence call",
-              "Five actions to take this week",
+              "Five actions to take to move things forward",
             ].map((item) => (
               <li key={item} className="flex gap-3">
                 <span className="text-accent" aria-hidden="true">
